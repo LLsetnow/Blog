@@ -140,27 +140,27 @@ const days = computed<CalendarDay[]>(() => {
   &__weekdays {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 2px;
+    gap: 4px;
     margin-bottom: $spacing-sm;
   }
 
   &__weekday {
     text-align: center;
-    font-size: $font-size-xs;
+    font-size: $font-size-base;
     color: $text-muted;
-    padding: 4px 0;
+    padding: 8px 0;
   }
 
   &__days {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 2px;
+    gap: 4px;
   }
 
   &__day {
     text-align: center;
-    padding: 6px 0;
-    font-size: $font-size-sm;
+    padding: 10px 0;
+    font-size: $font-size-base;
     border-radius: $radius-sm;
     cursor: default;
 

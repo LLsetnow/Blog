@@ -1,7 +1,7 @@
 <template>
   <div class="home-page">
     <div class="home-page__container">
-      <!-- Row 1: Greeting | Clock -->
+      <!-- Row 1: Greeting (2fr) | Clock (1fr) -->
       <div class="home-page__row home-page__row--1">
         <div class="home-page__cell home-page__cell--greeting">
           <TiltEffect>
@@ -15,11 +15,29 @@
         </div>
       </div>
 
-      <!-- Row 2: Calendar | Nav -->
+      <!-- Row 2: Calendar (full width) -->
       <div class="home-page__row home-page__row--2">
         <div class="home-page__cell home-page__cell--calendar">
           <TiltEffect>
             <CalendarWidget />
+          </TiltEffect>
+        </div>
+      </div>
+
+      <!-- Row 3: Music (full width) -->
+      <div class="home-page__row home-page__row--3">
+        <div class="home-page__cell home-page__cell--music">
+          <TiltEffect>
+            <MusicPlayer />
+          </TiltEffect>
+        </div>
+      </div>
+
+      <!-- Row 4: Gallery (2fr) | Nav (1fr) -->
+      <div class="home-page__row home-page__row--4">
+        <div class="home-page__cell home-page__cell--gallery">
+          <TiltEffect>
+            <ImageGallery />
           </TiltEffect>
         </div>
         <div class="home-page__cell home-page__cell--nav">
@@ -29,22 +47,8 @@
         </div>
       </div>
 
-      <!-- Row 3: Music | Gallery -->
-      <div class="home-page__row home-page__row--3">
-        <div class="home-page__cell home-page__cell--music">
-          <TiltEffect>
-            <MusicPlayer />
-          </TiltEffect>
-        </div>
-        <div class="home-page__cell home-page__cell--gallery">
-          <TiltEffect>
-            <ImageGallery />
-          </TiltEffect>
-        </div>
-      </div>
-
-      <!-- Row 4: GitHub (centered) -->
-      <div class="home-page__row home-page__row--4">
+      <!-- Row 5: GitHub (centered) -->
+      <div class="home-page__row home-page__row--5">
         <div class="home-page__cell home-page__cell--github">
           <TiltEffect>
             <GitHubCard />
@@ -90,14 +94,18 @@ import ImageGallery from '@/components/home/ImageGallery.vue'
     }
 
     &--2 {
-      grid-template-columns: 2fr 1fr;
+      grid-template-columns: 1fr;
     }
 
     &--3 {
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: 1fr;
     }
 
     &--4 {
+      grid-template-columns: 2fr 1fr;
+    }
+
+    &--5 {
       grid-template-columns: 1fr;
       justify-items: center;
 

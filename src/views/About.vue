@@ -165,7 +165,7 @@ const skills: string[] = [
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    border: 1px solid $glass-border;
+    border: 1px solid rgba(255, 255, 255, 0.5);
     color: $text-secondary;
     font-size: $font-size-sm;
   }

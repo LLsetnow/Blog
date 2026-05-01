@@ -11,9 +11,10 @@
         <span
           v-if="mark.isNumber"
           class="clock-widget__number"
-          :style="{ transform: 'rotate(' + (-mark.angle) + 'deg)' }"
+          :style="{ transform: 'translateX(-50%) rotate(' + (-mark.angle) + 'deg)' }"
         >{{ mark.value }}</span>
-        <span v-else class="clock-widget__tick" />
+        <span v-else class="clock-widget__tick"
+              :style="{ transform: 'translateX(-50%)' }" />
       </div>
 
       <!-- Hands -->
@@ -97,7 +98,7 @@ const secondDeg = computed<number>(() => {
   width: 100%;
   aspect-ratio: 1;
   border-radius: 50%;
-  padding: 24px;
+  padding: 12px;
 
   &__face {
     position: relative;
@@ -123,7 +124,6 @@ const secondDeg = computed<number>(() => {
     position: absolute;
     top: 10px;
     left: 50%;
-    transform: translateX(-50%);
     font-size: 14px;
     font-weight: 600;
     color: $text-primary;
@@ -137,7 +137,6 @@ const secondDeg = computed<number>(() => {
     width: 2px;
     height: 8px;
     background: $text-secondary;
-    transform: translateX(-50%);
     border-radius: 1px;
   }
 

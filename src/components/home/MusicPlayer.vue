@@ -1,16 +1,17 @@
 <template>
   <div class="music-player glass-card">
-    <div class="music-player__header">
-      <h3 class="music-player__title">音乐播放器</h3>
-      <span class="music-player__status">{{ isPlaying ? '正在播放' : '已暂停' }}</span>
+    <!-- Left: icon -->
+    <div class="music-player__icon">
+      <span class="music-player__icon-symbol">&#x1F3B5;</span>
     </div>
 
+    <!-- Center-left: track info -->
     <div class="music-player__info">
       <p class="music-player__track">{{ currentTrack.title }}</p>
       <p class="music-player__artist">{{ currentTrack.artist }}</p>
     </div>
 
-    <!-- Progress bar -->
+    <!-- Center: progress -->
     <div class="music-player__progress" @click="seekTo">
       <div class="music-player__progress-track">
         <div
@@ -24,12 +25,13 @@
       </div>
     </div>
 
+    <!-- Right: controls -->
     <div class="music-player__controls">
-      <button class="music-player__btn" @click="prevTrack">⏮</button>
+      <button class="music-player__btn" @click="prevTrack">&#x23EE;</button>
       <button class="music-player__btn music-player__btn--play" @click="togglePlay">
-        {{ isPlaying ? '⏸' : '▶' }}
+        {{ isPlaying ? '&#x23F8;' : '&#x25B6;' }}
       </button>
-      <button class="music-player__btn" @click="nextTrack">⏭</button>
+      <button class="music-player__btn" @click="nextTrack">&#x23ED;</button>
     </div>
 
     <audio
@@ -131,42 +133,55 @@ function seekTo(event: MouseEvent): void {
 .music-player {
   @include glass-card;
   width: 100%;
+  aspect-ratio: 4 / 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: $spacing-md;
+  padding: $spacing-md;
 
-  &__header {
+  &__icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: $spacing-md;
-  }
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: $radius-md;
 
-  &__title {
-    font-size: $font-size-base;
-    font-weight: 600;
-  }
-
-  &__status {
-    font-size: $font-size-xs;
-    color: $text-muted;
+    &-symbol {
+      font-size: 24px;
+      line-height: 1;
+    }
   }
 
   &__info {
-    text-align: center;
-    margin-bottom: $spacing-md;
+    flex-shrink: 0;
+    min-width: 0;
   }
 
   &__track {
     font-size: $font-size-base;
-    font-weight: 500;
-    margin-bottom: $spacing-xs;
+    font-weight: 600;
+    line-height: 1.3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   &__artist {
     font-size: $font-size-sm;
     color: $text-secondary;
+    line-height: 1.3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   &__progress {
-    margin-bottom: $spacing-md;
+    flex: 1;
+    min-width: 0;
     cursor: pointer;
 
     &-track {
@@ -194,21 +209,21 @@ function seekTo(event: MouseEvent): void {
   }
 
   &__controls {
+    flex-shrink: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: $spacing-md;
+    gap: $spacing-sm;
   }
 
   &__btn {
     @include glass-button;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1;
-    padding: 8px 12px;
+    padding: 6px 10px;
 
     &--play {
-      font-size: 24px;
-      padding: 10px 16px;
+      font-size: 22px;
+      padding: 8px 14px;
     }
   }
 }

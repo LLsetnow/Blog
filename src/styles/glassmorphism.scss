@@ -6,19 +6,19 @@
   background: $glass-bg;
   backdrop-filter: blur($glass-blur);
   -webkit-backdrop-filter: blur($glass-blur);
-  border: 1px solid $glass-border;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: $glass-shadow;
 }
 
 @mixin glass-card {
   @include glass;
-  border-radius: $radius-lg;
+  border-radius: 24px;
   padding: $spacing-lg;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
     background: $bg-card-hover;
-    border-color: $border-hover;
+    border-color: rgba(255, 255, 255, 0.7);
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
   }
 }
@@ -34,7 +34,7 @@
 
   &:hover {
     background: rgba(255, 255, 255, 0.1);
-    border-color: $border-hover;
+    border-color: rgba(255, 255, 255, 0.7);
   }
 
   &:active {
