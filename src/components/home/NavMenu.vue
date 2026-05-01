@@ -8,7 +8,6 @@
     >
       <span class="nav-menu__icon" v-html="item.icon"></span>
       <span class="nav-menu__label">{{ item.label }}</span>
-      <span class="nav-menu__arrow">→</span>
     </router-link>
   </nav>
 </template>
@@ -83,16 +82,6 @@ const menuItems: MenuItem[] = [
     flex: 1;
     font-size: $font-size-base;
     font-weight: 500;
-  }
-
-  &__arrow {
-    font-size: $font-size-sm;
-    color: $text-muted;
-    transition: transform 0.3s ease;
-  }
-
-  &__item:hover &__arrow {
-    color: #7ec8e3;
   }
 }
 </style>

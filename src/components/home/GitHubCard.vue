@@ -11,7 +11,6 @@
       </svg>
     </span>
     <span class="github-card__label">GitHub</span>
-    <span class="github-card__arrow">→</span>
   </a>
 </template>
 
@@ -42,17 +41,6 @@
     flex: 1;
     font-size: $font-size-lg;
     font-weight: 600;
-  }
-
-  &__arrow {
-    font-size: $font-size-lg;
-    color: $text-muted;
-    transition: transform 0.3s ease;
-  }
-
-  &:hover &__arrow {
-    color: #7ec8e3;
-    transform: translateX(4px);
   }
 }
 </style>

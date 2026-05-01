@@ -5,33 +5,24 @@
       <img src="@/assets/音乐.svg" alt="music" class="music-player__icon-svg" />
     </div>
 
-    <!-- Center-left: track info -->
-    <div class="music-player__info">
+    <!-- Center: title above, progress below -->
+    <div class="music-player__center">
       <p class="music-player__track">{{ currentTrack.title }}</p>
-      <p class="music-player__artist">{{ currentTrack.artist }}</p>
-    </div>
-
-    <!-- Center: progress -->
-    <div class="music-player__progress" @click="seekTo">
-      <div class="music-player__progress-track">
-        <div
-          class="music-player__progress-fill"
-          :style="{ width: progressPercent + '%' }"
-        />
-      </div>
-      <div class="music-player__progress-time">
-        <span>{{ currentTimeStr }}</span>
-        <span>{{ durationStr }}</span>
+      <div class="music-player__progress" @click="seekTo">
+        <div class="music-player__progress-track">
+          <div
+            class="music-player__progress-fill"
+            :style="{ width: progressPercent + '%' }"
+          />
+        </div>
       </div>
     </div>
 
-    <!-- Right: controls -->
+    <!-- Right: play/pause only -->
     <div class="music-player__controls">
-      <button class="music-player__btn" @click="prevTrack">&#x23EE;</button>
       <button class="music-player__btn music-player__btn--play" @click="togglePlay">
-        {{ isPlaying ? '&#x23F8;' : '&#x25B6;' }}
+        {{ isPlaying ? '⏸' : '▶' }}
       </button>
-      <button class="music-player__btn" @click="nextTrack">&#x23ED;</button>
     </div>
 
     <audio
@@ -62,15 +53,6 @@ const progressPercent = computed<number>(() => {
   return (currentTime.value / duration.value) * 100
 })
 
-const currentTimeStr = computed<string>(() => formatTime(currentTime.value))
-const durationStr = computed<string>(() => formatTime(duration.value))
-
-function formatTime(seconds: number): string {
-  const m = Math.floor(seconds / 60)
-  const s = Math.floor(seconds % 60)
-  return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`
-}
-
 function onTimeUpdate(): void {
   if (audioRef.value) {
     currentTime.value = audioRef.value.currentTime
@@ -88,28 +70,15 @@ function togglePlay(): void {
   if (isPlaying.value) {
     audioRef.value.pause()
   } else {
-    audioRef.value.play().catch(() => {
-      // Autoplay may be blocked
-    })
+    audioRef.value.play().catch(() => {})
   }
   isPlaying.value = !isPlaying.value
-}
-
-function prevTrack(): void {
-  if (musicList.length === 0) return
-  currentIndex.value = (currentIndex.value - 1 + musicList.length) % musicList.length
-  currentTrack.value = musicList[currentIndex.value]
-  resetPlayer()
 }
 
 function nextTrack(): void {
   if (musicList.length === 0) return
   currentIndex.value = (currentIndex.value + 1) % musicList.length
   currentTrack.value = musicList[currentIndex.value]
-  resetPlayer()
-}
-
-function resetPlayer(): void {
   currentTime.value = 0
   duration.value = 0
   if (isPlaying.value && audioRef.value) {
@@ -154,9 +123,12 @@ function seekTo(event: MouseEvent): void {
     }
   }
 
-  &__info {
-    flex-shrink: 0;
+  &__center {
+    flex: 1;
     min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
   }
 
   &__track {
@@ -168,18 +140,7 @@ function seekTo(event: MouseEvent): void {
     text-overflow: ellipsis;
   }
 
-  &__artist {
-    font-size: $font-size-sm;
-    color: $text-secondary;
-    line-height: 1.3;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
   &__progress {
-    flex: 1;
-    min-width: 0;
     cursor: pointer;
 
     &-track {
@@ -195,30 +156,15 @@ function seekTo(event: MouseEvent): void {
       border-radius: 2px;
       transition: width 0.3s linear;
     }
-
-    &-time {
-      display: flex;
-      justify-content: space-between;
-      margin-top: $spacing-xs;
-      font-size: $font-size-xs;
-      color: $text-muted;
-      font-family: $font-mono;
-    }
   }
 
   &__controls {
     flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    gap: $spacing-sm;
   }
 
   &__btn {
     background: none;
     border: none;
-    font-size: 18px;
-    line-height: 1;
-    padding: 6px 10px;
     cursor: pointer;
     color: $text-primary;
     transition: color $transition-fast;
@@ -228,8 +174,8 @@ function seekTo(event: MouseEvent): void {
     }
 
     &--play {
-      font-size: 22px;
-      padding: 8px 14px;
+      font-size: 28px;
+      padding: 8px;
     }
   }
 }
