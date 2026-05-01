@@ -1,4 +1,4 @@
-import { ref, computed, watch } from 'vue'
+import { ref, shallowRef } from 'vue'
 import type { WidgetLayout, WidgetOffset } from '@/types'
 
 export const WIDGETS: WidgetLayout[] = [
@@ -36,9 +36,8 @@ export function useLayoutEditor() {
   const isSettingsOpen = ref(false)
   const isDragMode = ref(false)
   const draggingId = ref<string | null>(null)
-  const dragStart = ref<{ x: number; y: number; offsetX: number; offsetY: number } | null>(null)
 
-  // Reactive layouts — merge saved sizes with defaults
+  // Merge saved sizes with defaults
   const savedSizes = loadSizes()
   const layouts = ref<WidgetLayout[]>(
     WIDGETS.map(w => ({
@@ -48,24 +47,27 @@ export function useLayoutEditor() {
     }))
   )
 
-  const offsets = ref<Record<string, WidgetOffset>>(loadOffsets())
+  // Use shallowRef: offsets only trigger re-render on drag end, not during drag
+  const offsets = shallowRef<Record<string, WidgetOffset>>(loadOffsets())
 
-  const containerStyle = computed(() => ({
-    position: 'relative' as const,
-    width: '1100px',
-    margin: '0 auto' as const,
-  }))
+  // Internal drag state — not exposed to template
+  let dragState: {
+    id: string
+    startX: number
+    startY: number
+    baseX: number
+    baseY: number
+    el: HTMLElement
+  } | null = null
 
   function getWidgetStyle(id: string): Record<string, string | number> {
     const widget = layouts.value.find(w => w.id === id)
     if (!widget) return { display: 'none' }
     const offset = offsets.value[id]
-    const left = widget.left + (offset?.x ?? 0)
-    const top = widget.top + (offset?.y ?? 0)
     return {
       position: 'absolute',
-      left: `${left}px`,
-      top: `${top}px`,
+      left: `${widget.left + (offset?.x ?? 0)}px`,
+      top: `${widget.top + (offset?.y ?? 0)}px`,
       width: `${widget.width}px`,
       height: `${widget.height}px`,
     }
@@ -76,39 +78,59 @@ export function useLayoutEditor() {
     if (!widget) return
     widget.width = width
     widget.height = height
-    // Persist to localStorage
     const sizes = loadSizes()
     sizes[id] = { width, height }
     localStorage.setItem(STORAGE_KEY_SIZES, JSON.stringify(sizes))
   }
 
+  // === Drag with Pointer Capture + direct DOM manipulation ===
   function startDrag(id: string, event: PointerEvent) {
-    draggingId.value = id
+    const el = event.currentTarget as HTMLElement
+    el.setPointerCapture(event.pointerId)
+
     const offset = offsets.value[id] ?? { x: 0, y: 0 }
-    dragStart.value = {
-      x: event.clientX,
-      y: event.clientY,
-      offsetX: offset.x,
-      offsetY: offset.y,
+    dragState = {
+      id,
+      startX: event.clientX,
+      startY: event.clientY,
+      baseX: offset.x,
+      baseY: offset.y,
+      el,
     }
+    draggingId.value = id
+
+    // Remove CSS transition for responsive dragging
+    el.style.transition = 'none'
   }
 
   function onDrag(event: PointerEvent) {
-    if (!draggingId.value || !dragStart.value) return
-    const dx = event.clientX - dragStart.value.x
-    const dy = event.clientY - dragStart.value.y
-    offsets.value = {
-      ...offsets.value,
-      [draggingId.value]: {
-        x: dragStart.value.offsetX + dx,
-        y: dragStart.value.offsetY + dy,
-      },
-    }
+    if (!dragState) return
+    const dx = event.clientX - dragState.startX
+    const dy = event.clientY - dragState.startY
+    // Direct DOM transform — bypasses Vue reactivity entirely
+    dragState.el.style.transform = `translate(${dx}px, ${dy}px)`
   }
 
-  function endDrag() {
+  function endDrag(event: PointerEvent) {
+    if (!dragState) return
+    const dx = event.clientX - dragState.startX
+    const dy = event.clientY - dragState.startY
+
+    // Commit final offset to Vue state (one single update)
+    offsets.value = {
+      ...offsets.value,
+      [dragState.id]: {
+        x: dragState.baseX + dx,
+        y: dragState.baseY + dy,
+      },
+    }
+
+    // Clean up direct DOM modifications
+    dragState.el.style.transform = ''
+    dragState.el.style.transition = ''
+
     draggingId.value = null
-    dragStart.value = null
+    dragState = null
   }
 
   function saveOffsets() {
@@ -128,11 +150,10 @@ export function useLayoutEditor() {
     isSettingsOpen.value = false
     isDragMode.value = true
     draggingId.value = null
-    dragStart.value = null
+    dragState = null
   }
 
   function cancelDrag() {
-    // Reload offsets from storage (discard unsaved changes)
     offsets.value = loadOffsets()
     isDragMode.value = false
   }
@@ -143,7 +164,6 @@ export function useLayoutEditor() {
     draggingId,
     layouts,
     offsets,
-    containerStyle,
     getWidgetStyle,
     updateSize,
     startDrag,

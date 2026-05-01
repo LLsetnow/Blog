@@ -58,28 +58,24 @@
         </svg>
       </button>
 
-      <!-- Drag overlay (in drag mode) -->
-      <div
-        v-if="isDragMode"
-        class="home-page__drag-overlay"
-        @pointermove="onDrag"
-        @pointerup="endDrag"
-        @pointercancel="endDrag"
-      />
+      <!-- Drag overlay (visual only, covers page to prevent clicks) -->
+      <div v-if="isDragMode" class="home-page__drag-overlay" />
 
-      <!-- Widget drag handles (in drag mode) -->
+      <!-- Drag handles (in drag mode) -->
       <div
         v-for="w in layouts"
         :key="'handle-' + w.id"
         v-show="isDragMode"
         class="home-page__drag-handle"
         :class="{ 'home-page__drag-handle--active': draggingId === w.id }"
-        :style="{ left: w.left + (offsets[w.id]?.x ?? 0) + 'px', top: w.top + (offsets[w.id]?.y ?? 0) + 'px', width: w.width + 'px', height: w.height + 'px' }"
+        :style="dragHandleStyle(w)"
         @pointerdown.prevent="startDrag(w.id, $event)"
-        :data-widget="w.id"
+        @pointermove="onDrag"
+        @pointerup="endDrag"
+        @pointercancel="endDrag"
       />
 
-      <!-- Save offset button -->
+      <!-- Save / Cancel buttons -->
       <div v-if="isDragMode" class="home-page__drag-actions">
         <button class="home-page__drag-btn home-page__drag-btn--save" @click="saveOffsets">
           保存偏移
@@ -102,6 +98,8 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
+import type { WidgetLayout } from '@/types'
 import GreetingCard from '@/components/home/GreetingCard.vue'
 import ClockWidget from '@/components/home/ClockWidget.vue'
 import MusicPlayer from '@/components/home/MusicPlayer.vue'
@@ -130,6 +128,17 @@ const {
   enterDragMode,
   cancelDrag,
 } = useLayoutEditor()
+
+/** Compute drag handle inline style from widget base + offset */
+function dragHandleStyle(w: WidgetLayout): Record<string, string> {
+  const off = offsets.value[w.id]
+  return {
+    left: `${w.left + (off?.x ?? 0)}px`,
+    top: `${w.top + (off?.y ?? 0)}px`,
+    width: `${w.width}px`,
+    height: `${w.height}px`,
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -150,7 +159,7 @@ const {
     position: absolute;
   }
 
-  // Settings gear button
+  // Settings gear button (fixed position, always visible)
   &__settings-btn {
     position: fixed;
     top: 16px;
@@ -176,36 +185,36 @@ const {
     }
   }
 
-  // Drag overlay — captures pointer events
+  // Drag overlay — prevents interaction with widgets
   &__drag-overlay {
     position: fixed;
     inset: 0;
     z-index: $z-drag-overlay;
-    background: rgba(0, 0, 0, 0.08);
-    cursor: grabbing;
+    background: rgba(0, 0, 0, 0.06);
   }
 
-  // Invisible drag handles on top of each widget
+  // Drag handles — transparent grab zones on top of each widget
   &__drag-handle {
     position: absolute;
     z-index: calc($z-drag-overlay + 1);
     cursor: grab;
-    border: 2px dashed rgba(126, 200, 227, 0.5);
-    border-radius: $radius-lg;
-    transition: border-color 0.2s ease;
+    border: 2px dashed rgba(126, 200, 227, 0.4);
+    border-radius: $radius-xl;
+    transition: border-color 0.2s ease, background 0.2s ease;
 
     &:hover {
       border-color: $accent-primary;
+      background: rgba(126, 200, 227, 0.06);
     }
 
     &--active {
       border-color: $accent-primary;
-      background: rgba(126, 200, 227, 0.08);
+      background: rgba(126, 200, 227, 0.1);
       cursor: grabbing;
     }
   }
 
-  // Floating action buttons in drag mode
+  // Drag mode action buttons
   &__drag-actions {
     position: fixed;
     bottom: 32px;
