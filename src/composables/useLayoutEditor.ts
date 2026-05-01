@@ -74,10 +74,9 @@ export function useLayoutEditor() {
   }
 
   function updateSize(id: string, width: number, height: number) {
-    const widget = layouts.value.find(w => w.id === id)
-    if (!widget) return
-    widget.width = width
-    widget.height = height
+    layouts.value = layouts.value.map(w =>
+      w.id === id ? { ...w, width, height } : { ...w }
+    )
     const sizes = loadSizes()
     sizes[id] = { width, height }
     localStorage.setItem(STORAGE_KEY_SIZES, JSON.stringify(sizes))

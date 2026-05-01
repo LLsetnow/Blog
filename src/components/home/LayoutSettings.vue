@@ -17,25 +17,33 @@
             <div class="layout-settings__inputs">
               <label class="layout-settings__field">
                 宽
-                <input
-                  type="number"
-                  min="50"
-                  max="1100"
-                  :value="widget.width"
-                  class="layout-settings__input"
-                  @input="onWidthInput(widget.id, ($event.target as HTMLInputElement).value)"
-                />
+                <div class="layout-settings__number">
+                  <button class="layout-settings__step" @click="emit('updateSize', widget.id, Math.max(50, widget.width - 10), widget.height)">−</button>
+                  <input
+                    type="number"
+                    :min="50"
+                    :max="1100"
+                    :value="widget.width"
+                    class="layout-settings__input"
+                    @change="onWidthChange(widget.id, ($event.target as HTMLInputElement).value, widget.height)"
+                  />
+                  <button class="layout-settings__step" @click="emit('updateSize', widget.id, Math.min(1100, widget.width + 10), widget.height)">+</button>
+                </div>
               </label>
               <label class="layout-settings__field">
                 高
-                <input
-                  type="number"
-                  min="50"
-                  max="800"
-                  :value="widget.height"
-                  class="layout-settings__input"
-                  @input="onHeightInput(widget.id, ($event.target as HTMLInputElement).value)"
-                />
+                <div class="layout-settings__number">
+                  <button class="layout-settings__step" @click="emit('updateSize', widget.id, widget.width, Math.max(50, widget.height - 10))">−</button>
+                  <input
+                    type="number"
+                    :min="50"
+                    :max="800"
+                    :value="widget.height"
+                    class="layout-settings__input"
+                    @change="onHeightChange(widget.id, ($event.target as HTMLInputElement).value, widget.width)"
+                  />
+                  <button class="layout-settings__step" @click="emit('updateSize', widget.id, widget.width, Math.min(800, widget.height + 10))">+</button>
+                </div>
               </label>
             </div>
           </div>
@@ -66,19 +74,17 @@ const emit = defineEmits<{
   updateSize: [id: string, width: number, height: number]
 }>()
 
-function onWidthInput(id: string, value: string): void {
+function onWidthChange(id: string, value: string, currentHeight: number): void {
   const w = parseInt(value, 10)
-  if (!isNaN(w) && w >= 50) {
-    const widget = props.widgets.find(wgt => wgt.id === id)
-    if (widget) emit('updateSize', id, w, widget.height)
+  if (!isNaN(w) && w >= 50 && w <= 1100) {
+    emit('updateSize', id, w, currentHeight)
   }
 }
 
-function onHeightInput(id: string, value: string): void {
+function onHeightChange(id: string, value: string, currentWidth: number): void {
   const h = parseInt(value, 10)
-  if (!isNaN(h) && h >= 50) {
-    const widget = props.widgets.find(wgt => wgt.id === id)
-    if (widget) emit('updateSize', id, widget.width, h)
+  if (!isNaN(h) && h >= 50 && h <= 800) {
+    emit('updateSize', id, currentWidth, h)
   }
 }
 </script>
@@ -87,7 +93,7 @@ function onHeightInput(id: string, value: string): void {
 .layout-settings {
   @include glass-card;
   position: relative;
-  width: 480px;
+  width: 520px;
   max-width: 90vw;
   max-height: 80vh;
   overflow-y: auto;
@@ -162,25 +168,67 @@ function onHeightInput(id: string, value: string): void {
 
   &__field {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     gap: $spacing-xs;
     font-size: $font-size-sm;
     color: $text-secondary;
   }
 
+  &__number {
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+
+  &__step {
+    width: 28px;
+    height: 28px;
+    border: 1px solid $glass-border;
+    background: rgba(255, 255, 255, 0.5);
+    color: $text-primary;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background $transition-fast;
+
+    &:first-child {
+      border-radius: $radius-sm 0 0 $radius-sm;
+    }
+
+    &:last-child {
+      border-radius: 0 $radius-sm $radius-sm 0;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.8);
+    }
+  }
+
   &__input {
     width: 64px;
-    padding: 4px 8px;
+    height: 28px;
+    padding: 0 4px;
     border: 1px solid $glass-border;
-    border-radius: $radius-sm;
+    border-left: none;
+    border-right: none;
     font-size: $font-size-sm;
     background: rgba(255, 255, 255, 0.6);
     color: $text-primary;
     text-align: center;
+    -moz-appearance: textfield;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
 
     &:focus {
       outline: none;
-      border-color: $accent-primary;
+      background: rgba(255, 255, 255, 0.85);
     }
   }
 
