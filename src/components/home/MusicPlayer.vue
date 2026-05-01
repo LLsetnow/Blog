@@ -2,7 +2,7 @@
   <div class="music-player glass-card">
     <!-- Left: icon -->
     <div class="music-player__icon">
-      <span class="music-player__icon-symbol">&#x1F3B5;</span>
+      <img src="@/assets/音乐.svg" alt="music" class="music-player__icon-svg" />
     </div>
 
     <!-- Center-left: track info -->
@@ -147,12 +147,10 @@ function seekTo(event: MouseEvent): void {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.4);
-    border-radius: $radius-md;
 
-    &-symbol {
-      font-size: 24px;
-      line-height: 1;
+    &-svg {
+      width: 32px;
+      height: 32px;
     }
   }
 
@@ -216,10 +214,18 @@ function seekTo(event: MouseEvent): void {
   }
 
   &__btn {
-    @include glass-button;
+    background: none;
+    border: none;
     font-size: 18px;
     line-height: 1;
     padding: 6px 10px;
+    cursor: pointer;
+    color: $text-primary;
+    transition: color $transition-fast;
+
+    &:hover {
+      color: $accent-primary;
+    }
 
     &--play {
       font-size: 22px;

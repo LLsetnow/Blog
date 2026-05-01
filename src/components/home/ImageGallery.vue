@@ -1,6 +1,5 @@
 <template>
   <div class="image-gallery glass-card">
-    <h3 class="image-gallery__title">图库</h3>
     <div class="image-gallery__grid">
       <div
         v-for="(img, index) in images"
@@ -35,12 +34,6 @@ const images: GalleryImage[] = [
 .image-gallery {
   @include glass-card;
   width: 100%;
-
-  &__title {
-    font-size: $font-size-base;
-    font-weight: 600;
-    margin-bottom: $spacing-md;
-  }
 
   &__grid {
     display: grid;
