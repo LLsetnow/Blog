@@ -30,6 +30,7 @@
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { Marked } from 'marked'
+import DOMPurify from 'dompurify'
 import AppLayout from '@/components/layout/AppLayout.vue'
 import { blogPosts } from '@/data/blog-posts'
 import type { BlogPost } from '@/types'
@@ -43,7 +44,8 @@ const post = computed<BlogPost | undefined>(() => {
 
 const renderedContent = computed<string>(() => {
   if (!post.value) return ''
-  return marked.parse(post.value.content) as string
+  const raw = marked.parse(post.value.content) as string
+  return DOMPurify.sanitize(raw)
 })
 </script>
 

@@ -24,8 +24,6 @@ const props = withDefaults(defineProps<TiltEffectProps>(), {
 
 const tiltRef = ref<HTMLElement | null>(null)
 
-let transitionTimeout: ReturnType<typeof setTimeout> | null = null
-
 function handleMouseMove(event: MouseEvent): void {
   const element = tiltRef.value
   if (!element) return

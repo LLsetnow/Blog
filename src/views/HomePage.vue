@@ -100,7 +100,7 @@ import ImageGallery from '@/components/home/ImageGallery.vue'
 
   @media (max-width: $breakpoint-md) {
     &__row {
-      grid-template-columns: 1fr !important;
+      grid-template-columns: 1fr;
     }
   }
 }
