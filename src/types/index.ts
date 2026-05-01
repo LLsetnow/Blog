@@ -42,3 +42,19 @@ export interface GalleryImage {
   alt: string
   thumbnail: string
 }
+
+/** Widget layout definition for pixel positioning */
+export interface WidgetLayout {
+  id: string
+  label: string
+  left: number
+  top: number
+  width: number
+  height: number
+}
+
+/** Drag offset applied on top of base position */
+export interface WidgetOffset {
+  x: number
+  y: number
+}

@@ -1,66 +1,107 @@
 <template>
   <div class="home-page">
     <div class="home-page__container">
-      <!-- Row 1: Greeting (2fr) | Clock (1fr) -->
-      <div class="home-page__row home-page__row--1">
-        <div class="home-page__cell home-page__cell--greeting">
-          <TiltEffect>
-            <GreetingCard />
-          </TiltEffect>
-        </div>
-        <div class="home-page__cell home-page__cell--clock">
-          <TiltEffect>
-            <ClockWidget />
-          </TiltEffect>
-        </div>
+      <!-- Greeting -->
+      <div class="home-page__cell" :style="getWidgetStyle('greeting')">
+        <TiltEffect :disabled="isDragMode">
+          <GreetingCard />
+        </TiltEffect>
       </div>
 
-      <!-- Row 2: Calendar (full width) -->
-      <div class="home-page__row home-page__row--2">
-        <div class="home-page__cell home-page__cell--calendar">
-          <TiltEffect>
-            <CalendarWidget />
-          </TiltEffect>
-        </div>
+      <!-- Calendar -->
+      <div class="home-page__cell" :style="getWidgetStyle('calendar')">
+        <TiltEffect :disabled="isDragMode">
+          <CalendarWidget />
+        </TiltEffect>
       </div>
 
-      <!-- Row 3: Music (full width) -->
-      <div class="home-page__row home-page__row--3">
-        <div class="home-page__cell home-page__cell--music">
-          <TiltEffect>
-            <MusicPlayer />
-          </TiltEffect>
-        </div>
+      <!-- GitHub -->
+      <div class="home-page__cell" :style="getWidgetStyle('github')">
+        <TiltEffect :disabled="isDragMode">
+          <GitHubCard />
+        </TiltEffect>
       </div>
 
-      <!-- Row 4: Gallery (2fr) | Nav (1fr) -->
-      <div class="home-page__row home-page__row--4">
-        <div class="home-page__cell home-page__cell--gallery">
-          <TiltEffect>
-            <ImageGallery />
-          </TiltEffect>
-        </div>
-        <div class="home-page__cell home-page__cell--nav">
-          <TiltEffect>
-            <NavMenu />
-          </TiltEffect>
-        </div>
+      <!-- Clock -->
+      <div class="home-page__cell" :style="getWidgetStyle('clock')">
+        <TiltEffect :disabled="isDragMode">
+          <ClockWidget />
+        </TiltEffect>
       </div>
 
-      <!-- Row 5: GitHub (centered) -->
-      <div class="home-page__row home-page__row--5">
-        <div class="home-page__cell home-page__cell--github">
-          <TiltEffect>
-            <GitHubCard />
-          </TiltEffect>
-        </div>
+      <!-- Music -->
+      <div class="home-page__cell" :style="getWidgetStyle('music')">
+        <TiltEffect :disabled="isDragMode">
+          <MusicPlayer />
+        </TiltEffect>
+      </div>
+
+      <!-- Gallery -->
+      <div class="home-page__cell" :style="getWidgetStyle('gallery')">
+        <TiltEffect :disabled="isDragMode">
+          <ImageGallery />
+        </TiltEffect>
+      </div>
+
+      <!-- Nav -->
+      <div class="home-page__cell" :style="getWidgetStyle('nav')">
+        <TiltEffect :disabled="isDragMode">
+          <NavMenu />
+        </TiltEffect>
+      </div>
+
+      <!-- Settings button -->
+      <button class="home-page__settings-btn" @click="openSettings">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="3"/>
+          <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+        </svg>
+      </button>
+
+      <!-- Drag overlay (in drag mode) -->
+      <div
+        v-if="isDragMode"
+        class="home-page__drag-overlay"
+        @pointermove="onDrag"
+        @pointerup="endDrag"
+        @pointercancel="endDrag"
+      />
+
+      <!-- Widget drag handles (in drag mode) -->
+      <div
+        v-for="w in layouts"
+        :key="'handle-' + w.id"
+        v-show="isDragMode"
+        class="home-page__drag-handle"
+        :class="{ 'home-page__drag-handle--active': draggingId === w.id }"
+        :style="{ left: w.left + (offsets[w.id]?.x ?? 0) + 'px', top: w.top + (offsets[w.id]?.y ?? 0) + 'px', width: w.width + 'px', height: w.height + 'px' }"
+        @pointerdown.prevent="startDrag(w.id, $event)"
+        :data-widget="w.id"
+      />
+
+      <!-- Save offset button -->
+      <div v-if="isDragMode" class="home-page__drag-actions">
+        <button class="home-page__drag-btn home-page__drag-btn--save" @click="saveOffsets">
+          保存偏移
+        </button>
+        <button class="home-page__drag-btn home-page__drag-btn--cancel" @click="cancelDrag">
+          取消
+        </button>
       </div>
     </div>
+
+    <!-- Settings modal -->
+    <LayoutSettings
+      v-if="isSettingsOpen"
+      :widgets="layouts"
+      @close="closeSettings"
+      @drag="enterDragMode"
+      @update-size="updateSize"
+    />
   </div>
 </template>
 
 <script setup lang="ts">
-import TiltEffect from '@/components/common/TiltEffect.vue'
 import GreetingCard from '@/components/home/GreetingCard.vue'
 import ClockWidget from '@/components/home/ClockWidget.vue'
 import MusicPlayer from '@/components/home/MusicPlayer.vue'
@@ -68,6 +109,27 @@ import CalendarWidget from '@/components/home/CalendarWidget.vue'
 import NavMenu from '@/components/home/NavMenu.vue'
 import GitHubCard from '@/components/home/GitHubCard.vue'
 import ImageGallery from '@/components/home/ImageGallery.vue'
+import TiltEffect from '@/components/common/TiltEffect.vue'
+import LayoutSettings from '@/components/home/LayoutSettings.vue'
+import { useLayoutEditor } from '@/composables/useLayoutEditor'
+
+const {
+  isSettingsOpen,
+  isDragMode,
+  draggingId,
+  layouts,
+  offsets,
+  getWidgetStyle,
+  updateSize,
+  startDrag,
+  onDrag,
+  endDrag,
+  saveOffsets,
+  openSettings,
+  closeSettings,
+  enterDragMode,
+  cancelDrag,
+} = useLayoutEditor()
 </script>
 
 <style lang="scss" scoped>
@@ -77,52 +139,110 @@ import ImageGallery from '@/components/home/ImageGallery.vue'
   background-attachment: fixed;
 
   &__container {
-    max-width: 960px;
+    position: relative;
+    width: 1100px;
     margin: 0 auto;
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-
-  &__row {
-    display: grid;
-    gap: 24px;
-
-    &--1 {
-      grid-template-columns: 2fr 1fr;
-    }
-
-    &--2 {
-      grid-template-columns: 1fr;
-    }
-
-    &--3 {
-      grid-template-columns: 1fr;
-    }
-
-    &--4 {
-      grid-template-columns: 2fr 1fr;
-    }
-
-    &--5 {
-      grid-template-columns: 1fr;
-      justify-items: center;
-
-      .home-page__cell--github {
-        max-width: 360px;
-        width: 100%;
-      }
-    }
+    padding: 40px 0;
+    min-height: 800px;
   }
 
   &__cell {
-    display: flex;
+    position: absolute;
   }
 
-  @media (max-width: $breakpoint-md) {
-    &__row {
-      grid-template-columns: 1fr;
+  // Settings gear button
+  &__settings-btn {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 290;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid $glass-border;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    color: $text-secondary;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all $transition-fast;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.6);
+      color: $text-primary;
+      transform: rotate(30deg);
+    }
+  }
+
+  // Drag overlay — captures pointer events
+  &__drag-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: $z-drag-overlay;
+    background: rgba(0, 0, 0, 0.08);
+    cursor: grabbing;
+  }
+
+  // Invisible drag handles on top of each widget
+  &__drag-handle {
+    position: absolute;
+    z-index: calc($z-drag-overlay + 1);
+    cursor: grab;
+    border: 2px dashed rgba(126, 200, 227, 0.5);
+    border-radius: $radius-lg;
+    transition: border-color 0.2s ease;
+
+    &:hover {
+      border-color: $accent-primary;
+    }
+
+    &--active {
+      border-color: $accent-primary;
+      background: rgba(126, 200, 227, 0.08);
+      cursor: grabbing;
+    }
+  }
+
+  // Floating action buttons in drag mode
+  &__drag-actions {
+    position: fixed;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: calc($z-drag-overlay + 2);
+    display: flex;
+    gap: $spacing-md;
+  }
+
+  &__drag-btn {
+    padding: 12px 32px;
+    border: none;
+    border-radius: $radius-md;
+    font-size: $font-size-base;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all $transition-fast;
+
+    &--save {
+      background: $accent-gradient;
+      color: white;
+
+      &:hover {
+        opacity: 0.9;
+        transform: translateY(-1px);
+      }
+    }
+
+    &--cancel {
+      background: rgba(255, 255, 255, 0.6);
+      color: $text-primary;
+      backdrop-filter: blur(8px);
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.8);
+      }
     }
   }
 }
