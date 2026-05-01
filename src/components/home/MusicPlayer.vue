@@ -5,47 +5,40 @@
       <span class="music-player__status">{{ isPlaying ? '正在播放' : '已暂停' }}</span>
     </div>
 
-    <template v-if="!currentTrack.src">
-      <div class="music-player__unavailable">
-        <p>暂无音频文件</p>
-      </div>
-    </template>
-    <template v-else>
-      <div class="music-player__info">
-        <p class="music-player__track">{{ currentTrack.title }}</p>
-        <p class="music-player__artist">{{ currentTrack.artist }}</p>
-      </div>
+    <div class="music-player__info">
+      <p class="music-player__track">{{ currentTrack.title }}</p>
+      <p class="music-player__artist">{{ currentTrack.artist }}</p>
+    </div>
 
-      <!-- Progress bar -->
-      <div class="music-player__progress" @click="seekTo">
-        <div class="music-player__progress-track">
-          <div
-            class="music-player__progress-fill"
-            :style="{ width: progressPercent + '%' }"
-          />
-        </div>
-        <div class="music-player__progress-time">
-          <span>{{ currentTimeStr }}</span>
-          <span>{{ durationStr }}</span>
-        </div>
+    <!-- Progress bar -->
+    <div class="music-player__progress" @click="seekTo">
+      <div class="music-player__progress-track">
+        <div
+          class="music-player__progress-fill"
+          :style="{ width: progressPercent + '%' }"
+        />
       </div>
-
-      <div class="music-player__controls">
-        <button class="music-player__btn" @click="prevTrack">⏮</button>
-        <button class="music-player__btn music-player__btn--play" @click="togglePlay">
-          {{ isPlaying ? '⏸' : '▶' }}
-        </button>
-        <button class="music-player__btn" @click="nextTrack">⏭</button>
+      <div class="music-player__progress-time">
+        <span>{{ currentTimeStr }}</span>
+        <span>{{ durationStr }}</span>
       </div>
+    </div>
 
-      <audio
-        ref="audioRef"
-        :src="currentTrack.src"
-        @ended="nextTrack"
-        @timeupdate="onTimeUpdate"
-        @loadedmetadata="onLoadedMetadata"
-      />
-    </template>
+    <div class="music-player__controls">
+      <button class="music-player__btn" @click="prevTrack">⏮</button>
+      <button class="music-player__btn music-player__btn--play" @click="togglePlay">
+        {{ isPlaying ? '⏸' : '▶' }}
+      </button>
+      <button class="music-player__btn" @click="nextTrack">⏭</button>
+    </div>
+
+    <audio
+      ref="audioRef"
+      :src="currentTrack.src"
+      @ended="nextTrack"
+      @timeupdate="onTimeUpdate"
+      @loadedmetadata="onLoadedMetadata"
+    />
   </div>
 </template>
 
@@ -60,9 +53,7 @@ const currentIndex = ref(0)
 const currentTime = ref(0)
 const duration = ref(0)
 
-const currentTrack = ref<MusicTrack>(
-  musicList[0] ?? { id: '', title: '暂无音乐', artist: '', src: '' }
-)
+const currentTrack = ref<MusicTrack>(musicList[0])
 
 const progressPercent = computed<number>(() => {
   if (duration.value === 0) return 0
@@ -200,13 +191,6 @@ function seekTo(event: MouseEvent): void {
       color: $text-muted;
       font-family: $font-mono;
     }
-  }
-
-  &__unavailable {
-    text-align: center;
-    padding: $spacing-lg 0;
-    color: $text-muted;
-    font-size: $font-size-sm;
   }
 
   &__controls {

@@ -1,7 +1,7 @@
 <template>
   <div class="home-page">
     <div class="home-page__container">
-      <!-- Row 1: Greeting | Clock | Music -->
+      <!-- Row 1: Greeting | Clock -->
       <div class="home-page__row home-page__row--1">
         <div class="home-page__cell home-page__cell--greeting">
           <TiltEffect>
@@ -11,11 +11,6 @@
         <div class="home-page__cell home-page__cell--clock">
           <TiltEffect>
             <ClockWidget />
-          </TiltEffect>
-        </div>
-        <div class="home-page__cell home-page__cell--music">
-          <TiltEffect>
-            <MusicPlayer />
           </TiltEffect>
         </div>
       </div>
@@ -34,16 +29,25 @@
         </div>
       </div>
 
-      <!-- Row 3: GitHub | Gallery -->
+      <!-- Row 3: Music | Gallery -->
       <div class="home-page__row home-page__row--3">
-        <div class="home-page__cell home-page__cell--github">
+        <div class="home-page__cell home-page__cell--music">
           <TiltEffect>
-            <GitHubCard />
+            <MusicPlayer />
           </TiltEffect>
         </div>
         <div class="home-page__cell home-page__cell--gallery">
           <TiltEffect>
             <ImageGallery />
+          </TiltEffect>
+        </div>
+      </div>
+
+      <!-- Row 4: GitHub (centered) -->
+      <div class="home-page__row home-page__row--4">
+        <div class="home-page__cell home-page__cell--github">
+          <TiltEffect>
+            <GitHubCard />
           </TiltEffect>
         </div>
       </div>
@@ -82,15 +86,25 @@ import ImageGallery from '@/components/home/ImageGallery.vue'
     gap: 24px;
 
     &--1 {
-      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-columns: 2fr 1fr;
     }
 
     &--2 {
-      grid-template-columns: 1.5fr 1fr;
+      grid-template-columns: 2fr 1fr;
     }
 
     &--3 {
       grid-template-columns: 1fr 2fr;
+    }
+
+    &--4 {
+      grid-template-columns: 1fr;
+      justify-items: center;
+
+      .home-page__cell--github {
+        max-width: 360px;
+        width: 100%;
+      }
     }
   }
 

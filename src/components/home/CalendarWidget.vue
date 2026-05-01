@@ -32,7 +32,7 @@
 import { ref, computed } from 'vue'
 import type { CalendarDay } from '@/types'
 
-const weekdays = ['日', '一', '二', '三', '四', '五', '六']
+const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 
 const today = new Date()
 const year = ref(today.getFullYear())
@@ -123,18 +123,17 @@ const days = computed<CalendarDay[]>(() => {
   }
 
   &__nav {
-    @include glass-button;
-    padding: 4px 10px;
-    font-size: $font-size-sm;
-    border: 1px solid $border-color;
     background: transparent;
+    border: none;
     color: $text-secondary;
     cursor: pointer;
-    border-radius: $radius-sm;
+    font-size: $font-size-base;
+    padding: 4px 8px;
+    transition: color $transition-fast;
+    line-height: 1;
 
     &:hover {
       color: $text-primary;
-      background: rgba(255, 255, 255, 0.2);
     }
   }
 

@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav-menu">
+  <nav class="nav-menu glass-card">
     <router-link
       v-for="item in menuItems"
       :key="item.path"
@@ -46,12 +46,13 @@ const menuItems: MenuItem[] = [
 
 <style lang="scss" scoped>
 .nav-menu {
+  @include glass-card;
   display: flex;
   flex-direction: column;
-  gap: $spacing-sm;
   width: 100%;
 
   &__item {
+    background: transparent;
     display: flex;
     align-items: center;
     gap: $spacing-md;
