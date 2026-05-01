@@ -1,0 +1,43 @@
+@use 'variables' as *;
+
+// Glassmorphism mixins
+
+@mixin glass {
+  background: $glass-bg;
+  backdrop-filter: blur($glass-blur);
+  -webkit-backdrop-filter: blur($glass-blur);
+  border: 1px solid $glass-border;
+  box-shadow: $glass-shadow;
+}
+
+@mixin glass-card {
+  @include glass;
+  border-radius: $radius-lg;
+  padding: $spacing-lg;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    background: $bg-card-hover;
+    border-color: $border-hover;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+  }
+}
+
+@mixin glass-button {
+  @include glass;
+  border-radius: $radius-md;
+  padding: $spacing-sm $spacing-md;
+  cursor: pointer;
+  color: $text-primary;
+  font-size: $font-size-sm;
+  transition: all $transition-fast;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: $border-hover;
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
+}
