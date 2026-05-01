@@ -97,6 +97,8 @@ const secondDeg = computed<number>(() => {
   justify-content: center;
   width: 100%;
   aspect-ratio: 1;
+  flex-shrink: 0;
+  align-self: flex-start;
   border-radius: 50%;
   padding: 12px;
 

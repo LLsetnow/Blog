@@ -55,6 +55,8 @@ function handleMouseLeave(): void {
 
 <style lang="scss" scoped>
 .tilt-effect {
+  width: 100%;
+  flex-shrink: 0;
   transition: transform 0.5s ease;
   transform-style: preserve-3d;
   will-change: transform;
