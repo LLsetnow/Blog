@@ -92,9 +92,11 @@ const filteredProjects = computed(() => {
   return projects.value.filter(p => p.tech.includes(selectedTag.value))
 })
 
+const baseUrl = import.meta.env.BASE_URL || '/'
+
 onMounted(async () => {
   try {
-    const res = await fetch('/projects-data/projects.json')
+    const res = await fetch(`${baseUrl}projects-data/projects.json`)
     if (!res.ok) throw new Error(`HTTP ${res.status}`)
     projects.value = await res.json()
   } catch (e) {

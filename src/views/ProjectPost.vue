@@ -147,9 +147,11 @@ function parseAndRender(markdown: string) {
   renderedContent.value = DOMPurify.sanitize(raw)
 }
 
+const baseUrl = import.meta.env.BASE_URL || '/'
+
 onMounted(async () => {
   try {
-    const res = await fetch('/projects-data/projects.json')
+    const res = await fetch(`${baseUrl}projects-data/projects.json`)
     if (!res.ok) throw new Error(`HTTP ${res.status}`)
     allProjects.value = await res.json()
 
