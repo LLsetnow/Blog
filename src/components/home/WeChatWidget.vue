@@ -1,12 +1,14 @@
 <template>
   <div class="wechat-widget glass-card" :class="{ 'wechat-widget--copied': copied }" @click="copy">
-    <img src="/docs/微信.svg" alt="微信" class="wechat-widget__icon" width="36" height="36" />
+    <img :src="`${baseUrl}docs/微信.svg`" alt="微信" class="wechat-widget__icon" width="36" height="36" />
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useToast } from '@/composables/useToast'
+
+const baseUrl = import.meta.env.BASE_URL || '/'
 
 const emit = defineEmits<{
   copied: [text: string]

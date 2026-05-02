@@ -23,7 +23,7 @@
       @transitionend="onTransitionEnd"
     >
       <router-link to="/" class="nav-menu__avatar">
-        <img src="/docs/avatar.jpg" alt="home" />
+        <img :src="`${baseUrl}docs/avatar.jpg`" alt="home" />
       </router-link>
       <router-link
         v-for="item in menuItems"
@@ -40,6 +40,8 @@
 <script setup lang="ts">
 import { ref, nextTick } from 'vue'
 import { useRouter } from 'vue-router'
+
+const baseUrl = import.meta.env.BASE_URL || '/'
 
 interface MenuItem {
   path: string

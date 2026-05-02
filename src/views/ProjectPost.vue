@@ -144,7 +144,12 @@ function parseAndRender(markdown: string) {
   })
 
   const raw = marked.parse(markdown) as string
-  renderedContent.value = DOMPurify.sanitize(raw)
+  const sanitized = DOMPurify.sanitize(raw)
+  // Prepend BASE_URL to absolute image paths (adapts to GitHub Pages subpath)
+  renderedContent.value = sanitized.replace(
+    /(<img[^>]*src\s*=\s*["'])\//g,
+    `$1${baseUrl}`
+  )
 }
 
 const baseUrl = import.meta.env.BASE_URL || '/'
