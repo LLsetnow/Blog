@@ -35,9 +35,9 @@
           class="projects__card glass-card"
         >
           <router-link :to="`/projects/${project.id}`" class="projects__card-title-link">
-            <h2 class="projects__card-name">{{ project.info?.name ?? project.name }}</h2>
+            <h2 class="projects__card-name">{{ project.name }}</h2>
           </router-link>
-          <p class="projects__card-description">{{ project.info?.description ?? project.description }}</p>
+          <p class="projects__card-description">{{ project.description }}</p>
           <div class="projects__card-techs">
             <span
               v-for="tech in project.tech"
@@ -65,62 +65,17 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
 import AppLayout from '@/components/layout/AppLayout.vue'
-import { fetchRepoInfo } from '@/composables/useGitHubRepo'
-import type { GitHubRepoInfo } from '@/composables/useGitHubRepo'
 
-interface ProjectSource {
+interface ProjectData {
   id: string
   name: string
   description: string
   tech: string[]
   url: string
+  readme: string
 }
 
-const projectSources: ProjectSource[] = [
-  {
-    id: 'agent-bot',
-    name: 'AgentBot',
-    description: '正在加载...',
-    tech: ['Agent', 'ComfyUI', 'AIGC', 'Python'],
-    url: 'https://github.com/LLsetnow/AgentBot',
-  },
-  {
-    id: 'personal-blog',
-    name: '个人博客',
-    description: '正在加载...',
-    tech: ['Vue 3', 'TypeScript', 'SCSS'],
-    url: 'https://github.com/LLsetnow/Blog',
-  },
-  {
-    id: 'mio-chat',
-    name: 'MioChat',
-    description: '正在加载...',
-    tech: ['Python', 'LLM', 'RTS', 'TTS'],
-    url: 'https://github.com/LLsetnow/MioChat.git',
-  },
-  {
-    id: 'graph-rag',
-    name: 'GraphRag',
-    description: '正在加载...',
-    tech: ['RAG', 'GraphRAG', 'LLM', 'Python'],
-    url: 'https://github.com/LLsetnow/GraphRag.git',
-  },
-  {
-    id: 'hdu-baidu',
-    name: 'HDU_19_Baidu',
-    description: '正在加载...',
-    tech: ['C++', '机器视觉', '目标检测'],
-    url: 'https://github.com/LLsetnow/HDU_19_Baidu.git',
-  },
-]
-
-interface ProjectWithInfo extends ProjectSource {
-  info: GitHubRepoInfo | null
-}
-
-const projectsWithInfo = ref<ProjectWithInfo[]>(
-  projectSources.map(p => ({ ...p, info: null }))
-)
+const projects = ref<ProjectData[]>([])
 const loading = ref(true)
 const error = ref<string | null>(null)
 const selectedTag = ref('全部')
@@ -128,25 +83,21 @@ const selectedTag = ref('全部')
 const allTags = computed(() => {
   const tags = new Set<string>()
   tags.add('全部')
-  projectSources.forEach(p => p.tech.forEach(t => tags.add(t)))
+  projects.value.forEach(p => p.tech.forEach(t => tags.add(t)))
   return Array.from(tags)
 })
 
 const filteredProjects = computed(() => {
-  if (selectedTag.value === '全部') return projectsWithInfo.value
-  return projectsWithInfo.value.filter(p => p.tech.includes(selectedTag.value))
+  if (selectedTag.value === '全部') return projects.value
+  return projects.value.filter(p => p.tech.includes(selectedTag.value))
 })
 
 onMounted(async () => {
   try {
-    const results = await Promise.allSettled(
-      projectSources.map(p => fetchRepoInfo(p.url))
-    )
-    projectsWithInfo.value = projectSources.map((p, i) => ({
-      ...p,
-      info: results[i].status === 'fulfilled' ? results[i].value : null,
-    }))
-  } catch {
+    const res = await fetch('/projects-data/projects.json')
+    if (!res.ok) throw new Error(`HTTP ${res.status}`)
+    projects.value = await res.json()
+  } catch (e) {
     error.value = '无法加载项目数据'
   } finally {
     loading.value = false
