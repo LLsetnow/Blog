@@ -11,7 +11,8 @@
 </template>
 
 <script setup lang="ts">
-import avatarSrc from '@/assets/avatar.jpg'
+const baseUrl = import.meta.env.BASE_URL || '/'
+const avatarSrc = `${baseUrl}assets/avatar.jpg`
 </script>
 
 <style lang="scss" scoped>

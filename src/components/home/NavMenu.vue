@@ -23,7 +23,7 @@
       @transitionend="onTransitionEnd"
     >
       <router-link to="/" class="nav-menu__avatar">
-        <img :src="`${baseUrl}docs/avatar.jpg`" alt="home" />
+        <img :src="`${baseUrl}assets/avatar.jpg`" alt="home" />
       </router-link>
       <router-link
         v-for="item in menuItems"

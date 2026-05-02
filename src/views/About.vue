@@ -52,7 +52,9 @@
 
 <script setup lang="ts">
 import AppLayout from '@/components/layout/AppLayout.vue'
-import avatarSrc from '@/assets/avatar.jpg'
+
+const baseUrl = import.meta.env.BASE_URL || '/'
+const avatarSrc = `${baseUrl}assets/avatar.jpg`
 
 const skills: string[] = [
   'Vue 3',

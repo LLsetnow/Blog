@@ -3,7 +3,7 @@
     <!-- Top row: info + controls -->
     <div class="music-player__row">
       <div class="music-player__icon">
-        <img src="@/assets/音乐.svg" alt="music" class="music-player__icon-svg" />
+        <img :src="`${baseUrl}assets/音乐.svg`" alt="music" class="music-player__icon-svg" />
       </div>
 
       <div class="music-player__info">
@@ -115,6 +115,8 @@
 import { ref, computed } from 'vue'
 import { musicList } from '@/data/music'
 import type { MusicTrack } from '@/types'
+
+const baseUrl = import.meta.env.BASE_URL || '/'
 
 const audioRef = ref<HTMLAudioElement | null>(null)
 const isPlaying = ref(false)
