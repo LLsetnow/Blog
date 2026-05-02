@@ -99,7 +99,7 @@
 
     <audio
       ref="audioRef"
-      :src="currentTrack.src"
+      :src="trackSrc"
       @ended="nextTrack"
       @timeupdate="onTimeUpdate"
       @loadedmetadata="onLoadedMetadata"
@@ -140,6 +140,7 @@ let fadeRAF: number | null = null
 const FADE_DURATION = 400 // ms
 
 const currentTrack = computed<MusicTrack>(() => musicList[currentIndex.value] ?? musicList[0])
+const trackSrc = computed(() => `${baseUrl}${currentTrack.value.src.replace(/^\//, '')}`)
 
 const progressPercent = computed(() => {
   if (duration.value === 0) return 0
