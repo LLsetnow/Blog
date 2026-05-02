@@ -108,7 +108,8 @@ const secondDeg = computed<number>(() => {
     height: 100%;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.6);
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    border: none;
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
   }

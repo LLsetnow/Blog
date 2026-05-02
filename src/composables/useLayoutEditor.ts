@@ -2,13 +2,15 @@ import { ref, shallowRef } from 'vue'
 import type { WidgetLayout, WidgetOffset } from '@/types'
 
 export const WIDGETS: WidgetLayout[] = [
-  { id: 'greeting',  label: '问候卡',     left: 0,   top: 0,   width: 300, height: 170 },
-  { id: 'calendar',  label: '日历',       left: 0,   top: 194, width: 300, height: 260 },
-  { id: 'github',    label: 'GitHub',     left: 0,   top: 478, width: 300, height: 90  },
-  { id: 'clock',     label: '时钟',       left: 325, top: 0,   width: 200, height: 200 },
-  { id: 'music',     label: '音乐播放器', left: 325, top: 224, width: 590, height: 130 },
-  { id: 'gallery',   label: '图片画廊',   left: 325, top: 378, width: 590, height: 300 },
-  { id: 'nav',       label: '导航菜单',   left: 940, top: 378, width: 160, height: 300 },
+  { id: 'greeting',  label: '问候卡',     left:  -78, top:   84, width: 480, height: 170 },
+  { id: 'calendar',  label: '日历',       left:  -83, top:  293, width: 420, height: 450 },
+  { id: 'github',    label: 'GitHub',     left:  -84, top:  823, width: 100, height: 100 },
+  { id: 'clock',     label: '时钟',       left:  718, top:  112, width: 230, height: 200 },
+  { id: 'music',     label: '音乐播放器',  left:  438, top:  448, width: 430, height: 160 },
+  { id: 'gallery',   label: '图片画廊',    left:  385, top:  673, width: 590, height: 260 },
+  { id: 'nav',       label: '导航菜单',    left: 1022, top:  383, width: 200, height: 330 },
+  { id: 'email',     label: '邮箱',       left:   26, top:  823, width: 100, height: 100 },
+  { id: 'wechat',    label: '微信',       left:  136, top:  823, width: 100, height: 100 },
 ]
 
 const STORAGE_KEY_OFFSETS = 'blog-layout-offsets'
@@ -32,7 +34,53 @@ function loadSizes(): Record<string, { width: number; height: number }> {
   }
 }
 
+/**
+ * Read current offsets + sizes from localStorage, merge with WIDGETS base,
+ * and return a TypeScript code string ready to paste into useLayoutEditor.ts
+ */
+export function generateLayoutCode(): string {
+  const offs = loadOffsets()
+  const sizes = loadSizes()
+
+  const merged = WIDGETS.map(w => {
+    const off = offs[w.id]
+    const sz = sizes[w.id]
+    return {
+      ...w,
+      left: Math.round(w.left + (off?.x ?? 0)),
+      top: Math.round(w.top + (off?.y ?? 0)),
+      width: sz?.width ?? w.width,
+      height: sz?.height ?? w.height,
+    }
+  })
+
+  const lines = merged.map(w => {
+    const id = `'${w.id}'`.padEnd(13)
+    const label = `'${w.label}'`.padEnd(10)
+    const left = String(w.left).padStart(5)
+    const top = String(w.top).padStart(5)
+    const width = String(w.width).padStart(4)
+    const height = String(w.height).padStart(4)
+    return `  { id: ${id}, label: ${label}, left: ${left}, top: ${top}, width: ${width}, height: ${height} },`
+  })
+
+  return [
+    "import type { WidgetLayout } from '@/types'",
+    '',
+    'export const WIDGETS: WidgetLayout[] = [',
+    ...lines,
+    ']',
+    '',
+  ].join('\n')
+}
+
 export function useLayoutEditor() {
+  // Clear stale localStorage offsets/sizes — WIDGETS already includes them
+  try {
+    localStorage.removeItem(STORAGE_KEY_OFFSETS)
+    localStorage.removeItem(STORAGE_KEY_SIZES)
+  } catch { /* noop */ }
+
   const isSettingsOpen = ref(false)
   const isDragMode = ref(false)
   const draggingId = ref<string | null>(null)

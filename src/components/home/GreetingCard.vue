@@ -21,15 +21,18 @@ import avatarSrc from '@/assets/avatar.jpg'
   align-items: center;
   gap: $spacing-lg;
   width: 100%;
+  height: 100%;
 
   &__avatar {
-    width: 72px;
-    height: 72px;
+    width: 96px;
+    height: 96px;
     border-radius: 50%;
     overflow: hidden;
     flex-shrink: 0;
-    border: 2px solid rgba(255, 255, 255, 0.6);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: none;
+    box-shadow:
+      inset 0 0 0 2px rgba(255, 255, 255, 0.6),
+      0 4px 12px rgba(0, 0, 0, 0.08);
 
     img {
       width: 100%;
@@ -40,10 +43,15 @@ import avatarSrc from '@/assets/avatar.jpg'
 
   &__text {
     flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   &__greeting {
-    font-size: $font-size-2xl;
+    font-size: $font-size-3xl;
     font-weight: 700;
     margin-bottom: $spacing-xs;
     background: $accent-gradient;

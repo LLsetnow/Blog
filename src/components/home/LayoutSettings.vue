@@ -53,6 +53,9 @@
           <button class="layout-settings__btn layout-settings__btn--drag" @click="$emit('drag')">
             拖拽布局
           </button>
+          <button class="layout-settings__btn layout-settings__btn--export" @click="doExport">
+            {{ copied ? '已复制!' : '导出布局到代码' }}
+          </button>
         </div>
       </div>
     </div>
@@ -60,7 +63,9 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
 import type { WidgetLayout } from '@/types'
+import { generateLayoutCode } from '@/composables/useLayoutEditor'
 
 interface LayoutSettingsProps {
   widgets: WidgetLayout[]
@@ -74,6 +79,8 @@ const emit = defineEmits<{
   updateSize: [id: string, width: number, height: number]
 }>()
 
+const copied = ref(false)
+
 function onWidthChange(id: string, value: string, currentHeight: number): void {
   const w = parseInt(value, 10)
   if (!isNaN(w) && w >= 50 && w <= 1100) {
@@ -85,6 +92,27 @@ function onHeightChange(id: string, value: string, currentWidth: number): void {
   const h = parseInt(value, 10)
   if (!isNaN(h) && h >= 50 && h <= 800) {
     emit('updateSize', id, currentWidth, h)
+  }
+}
+
+async function doExport(): Promise<void> {
+  const code = generateLayoutCode()
+  try {
+    await navigator.clipboard.writeText(code)
+    copied.value = true
+    setTimeout(() => { copied.value = false }, 2000)
+  } catch {
+    // Fallback: select the text for manual copy
+    const textarea = document.createElement('textarea')
+    textarea.value = code
+    textarea.style.position = 'fixed'
+    textarea.style.opacity = '0'
+    document.body.appendChild(textarea)
+    textarea.select()
+    document.execCommand('copy')
+    document.body.removeChild(textarea)
+    copied.value = true
+    setTimeout(() => { copied.value = false }, 2000)
   }
 }
 </script>
@@ -236,6 +264,8 @@ function onHeightChange(id: string, value: string, currentWidth: number): void {
     margin-top: $spacing-lg;
     display: flex;
     justify-content: center;
+    gap: $spacing-md;
+    flex-wrap: wrap;
   }
 
   &__btn {
@@ -253,6 +283,17 @@ function onHeightChange(id: string, value: string, currentWidth: number): void {
 
       &:hover {
         opacity: 0.9;
+        transform: translateY(-1px);
+      }
+    }
+
+    &--export {
+      background: rgba(255, 255, 255, 0.4);
+      color: $text-primary;
+      backdrop-filter: blur(8px);
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.6);
         transform: translateY(-1px);
       }
     }

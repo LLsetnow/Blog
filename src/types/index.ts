@@ -58,3 +58,13 @@ export interface WidgetOffset {
   x: number
   y: number
 }
+
+/** Project metadata */
+export interface ProjectItem {
+  id: string
+  name: string
+  description: string
+  tech: string[]
+  url: string
+  content: string
+}

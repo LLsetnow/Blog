@@ -44,14 +44,28 @@
       </div>
 
       <!-- Nav -->
-      <div class="home-page__cell" :style="getWidgetStyle('nav')">
+      <div v-if="!navCollapsed" class="home-page__cell" :style="getWidgetStyle('nav')">
         <TiltEffect :disabled="isDragMode">
-          <NavMenu />
+          <NavMenu @collapse="navCollapsed = true" />
+        </TiltEffect>
+      </div>
+
+      <!-- Email -->
+      <div class="home-page__cell" :style="getWidgetStyle('email')">
+        <TiltEffect :disabled="isDragMode">
+          <EmailWidget />
+        </TiltEffect>
+      </div>
+
+      <!-- WeChat -->
+      <div class="home-page__cell" :style="getWidgetStyle('wechat')">
+        <TiltEffect :disabled="isDragMode">
+          <WeChatWidget />
         </TiltEffect>
       </div>
 
       <!-- Settings button -->
-      <button class="home-page__settings-btn" @click="openSettings">
+      <button v-if="!navCollapsed" class="home-page__settings-btn" @click="openSettings">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="12" cy="12" r="3"/>
           <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
@@ -86,6 +100,9 @@
       </div>
     </div>
 
+    <!-- Toast notifications -->
+    <ToastNotification :toasts="toasts" />
+
     <!-- Settings modal -->
     <LayoutSettings
       v-if="isSettingsOpen"
@@ -98,7 +115,8 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, ref, watch } from 'vue'
+import { useRoute } from 'vue-router'
 import type { WidgetLayout } from '@/types'
 import GreetingCard from '@/components/home/GreetingCard.vue'
 import ClockWidget from '@/components/home/ClockWidget.vue'
@@ -107,8 +125,12 @@ import CalendarWidget from '@/components/home/CalendarWidget.vue'
 import NavMenu from '@/components/home/NavMenu.vue'
 import GitHubCard from '@/components/home/GitHubCard.vue'
 import ImageGallery from '@/components/home/ImageGallery.vue'
+import EmailWidget from '@/components/home/EmailWidget.vue'
+import WeChatWidget from '@/components/home/WeChatWidget.vue'
 import TiltEffect from '@/components/common/TiltEffect.vue'
 import LayoutSettings from '@/components/home/LayoutSettings.vue'
+import ToastNotification from '@/components/common/ToastNotification.vue'
+import { useToast } from '@/composables/useToast'
 import { useLayoutEditor } from '@/composables/useLayoutEditor'
 
 const {
@@ -129,6 +151,18 @@ const {
   cancelDrag,
 } = useLayoutEditor()
 
+const { toasts } = useToast()
+
+const navCollapsed = ref(false)
+
+// Reset nav when returning to home page
+const route = useRoute()
+watch(() => route.path, (path) => {
+  if (path === '/') {
+    navCollapsed.value = false
+  }
+})
+
 /** Compute drag handle inline style from widget base + offset */
 function dragHandleStyle(w: WidgetLayout): Record<string, string> {
   const off = offsets.value[w.id]
@@ -146,11 +180,30 @@ function dragHandleStyle(w: WidgetLayout): Record<string, string> {
   min-height: 100vh;
   background: $bg-gradient;
   background-attachment: fixed;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: auto;
+
+  &::before,
+  &::after {
+    content: '';
+    flex: 1;
+    min-height: 0;
+    pointer-events: none;
+  }
+
+  &::before {
+    flex: 0.42;
+  }
 
   &__container {
     position: relative;
     width: 1100px;
-    margin: 0 auto;
+    flex-shrink: 0;
     padding: 40px 0;
     min-height: 800px;
   }
@@ -168,9 +221,12 @@ function dragHandleStyle(w: WidgetLayout): Record<string, string> {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 1px solid $glass-border;
+    border: none;
     background: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(10px);
+    box-shadow:
+      inset 0 0 0 1px rgba(255, 255, 255, 0.65),
+      inset 0 0 8px 2px rgba(255, 255, 255, 0.12);
     color: $text-secondary;
     cursor: pointer;
     display: flex;
@@ -180,6 +236,9 @@ function dragHandleStyle(w: WidgetLayout): Record<string, string> {
 
     &:hover {
       background: rgba(255, 255, 255, 0.6);
+      box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.8),
+        inset 0 0 12px 3px rgba(255, 255, 255, 0.2);
       color: $text-primary;
       transform: rotate(30deg);
     }

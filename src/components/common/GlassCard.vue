@@ -23,9 +23,11 @@ withDefaults(defineProps<GlassCardProps>(), {
 
   &--hover:hover {
     background: $bg-card-hover;
-    border-color: rgba(255, 255, 255, 0.7);
+    box-shadow:
+      inset 0 0 0 1px rgba(255, 255, 255, 0.8),
+      inset 0 0 14px 4px rgba(255, 255, 255, 0.2),
+      0 12px 40px rgba(0, 0, 0, 0.4);
     transform: translateY(-2px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
   }
 }
 </style>

@@ -109,16 +109,20 @@ const days = computed<CalendarDay[]>(() => {
 .calendar-widget {
   @include glass-card;
   width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 
   &__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: $spacing-md;
+    margin-bottom: $spacing-sm;
   }
 
   &__title {
-    font-size: $font-size-base;
+    font-size: $font-size-lg;
     font-weight: 600;
   }
 
@@ -141,25 +145,29 @@ const days = computed<CalendarDay[]>(() => {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 4px;
-    margin-bottom: $spacing-sm;
+    margin-bottom: $spacing-xs;
   }
 
   &__weekday {
     text-align: center;
     font-size: $font-size-base;
     color: $text-muted;
-    padding: 8px 0;
+    padding: 6px 0;
   }
 
   &__days {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 4px;
+    gap: 6px;
+    flex: 1;
+    align-content: stretch;
   }
 
   &__day {
     text-align: center;
-    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: $font-size-base;
     border-radius: $radius-sm;
     cursor: default;
