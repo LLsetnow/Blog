@@ -36,6 +36,13 @@
         </TiltEffect>
       </div>
 
+      <!-- Live2D -->
+      <div class="home-page__cell" :style="getWidgetStyle('live2d')">
+        <TiltEffect :disabled="isDragMode">
+          <Live2DWidget />
+        </TiltEffect>
+      </div>
+
       <!-- Gallery -->
       <div class="home-page__cell" :style="getWidgetStyle('gallery')">
         <TiltEffect :disabled="isDragMode">
@@ -124,6 +131,7 @@ import MusicPlayer from '@/components/home/MusicPlayer.vue'
 import CalendarWidget from '@/components/home/CalendarWidget.vue'
 import NavMenu from '@/components/home/NavMenu.vue'
 import GitHubCard from '@/components/home/GitHubCard.vue'
+import Live2DWidget from '@/components/home/Live2DWidget.vue'
 import ImageGallery from '@/components/home/ImageGallery.vue'
 import EmailWidget from '@/components/home/EmailWidget.vue'
 import WeChatWidget from '@/components/home/WeChatWidget.vue'
