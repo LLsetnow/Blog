@@ -407,6 +407,7 @@ function toggleMute(): void {
     color: $text-primary;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
     user-select: none;
   }
 

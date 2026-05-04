@@ -59,13 +59,6 @@ export interface WidgetOffset {
   y: number
 }
 
-/** Live2D model rendering config */
-export interface Live2DConfig {
-  modelScale: number
-  offsetX: number
-  offsetY: number
-}
-
 /** Project metadata */
 export interface ProjectItem {
   id: string

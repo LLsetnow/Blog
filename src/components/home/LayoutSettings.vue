@@ -49,56 +49,6 @@
           </div>
         </div>
 
-        <!-- Live2D 独立控制 -->
-        <div v-if="hasLive2D" class="layout-settings__live2d">
-          <h3 class="layout-settings__live2d-title">看板娘设置</h3>
-          <div class="layout-settings__live2d-row">
-            <span class="layout-settings__live2d-label">模型大小</span>
-            <div class="layout-settings__live2d-control">
-              <input
-                type="range"
-                min="0.5"
-                max="3"
-                step="0.1"
-                :value="live2dConfig.modelScale"
-                class="layout-settings__live2d-slider"
-                @input="onLive2DInput('modelScale', ($event.target as HTMLInputElement).value)"
-              />
-              <span class="layout-settings__live2d-value">{{ live2dConfig.modelScale.toFixed(1) }}</span>
-            </div>
-          </div>
-          <div class="layout-settings__live2d-row">
-            <span class="layout-settings__live2d-label">X 偏移</span>
-            <div class="layout-settings__live2d-control">
-              <input
-                type="range"
-                min="-100"
-                max="100"
-                step="1"
-                :value="live2dConfig.offsetX"
-                class="layout-settings__live2d-slider"
-                @input="onLive2DInput('offsetX', ($event.target as HTMLInputElement).value)"
-              />
-              <span class="layout-settings__live2d-value">{{ live2dConfig.offsetX }}</span>
-            </div>
-          </div>
-          <div class="layout-settings__live2d-row">
-            <span class="layout-settings__live2d-label">Y 偏移</span>
-            <div class="layout-settings__live2d-control">
-              <input
-                type="range"
-                min="-200"
-                max="100"
-                step="1"
-                :value="live2dConfig.offsetY"
-                class="layout-settings__live2d-slider"
-                @input="onLive2DInput('offsetY', ($event.target as HTMLInputElement).value)"
-              />
-              <span class="layout-settings__live2d-value">{{ live2dConfig.offsetY }}</span>
-            </div>
-          </div>
-        </div>
-
         <div class="layout-settings__actions">
           <button class="layout-settings__btn layout-settings__btn--drag" @click="$emit('drag')">
             拖拽布局
@@ -113,13 +63,12 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
-import type { WidgetLayout, Live2DConfig } from '@/types'
+import { ref } from 'vue'
+import type { WidgetLayout } from '@/types'
 import { generateLayoutCode } from '@/composables/useLayoutEditor'
 
 interface LayoutSettingsProps {
   widgets: WidgetLayout[]
-  live2dConfig: Live2DConfig
 }
 
 const props = defineProps<LayoutSettingsProps>()
@@ -128,10 +77,7 @@ const emit = defineEmits<{
   close: []
   drag: []
   updateSize: [id: string, width: number, height: number]
-  updateLive2DConfig: [config: Partial<Live2DConfig>]
 }>()
-
-const hasLive2D = computed(() => props.widgets.some(w => w.id === 'live2d'))
 
 const copied = ref(false)
 
@@ -146,13 +92,6 @@ function onHeightChange(id: string, value: string, currentWidth: number): void {
   const h = parseInt(value, 10)
   if (!isNaN(h) && h >= 50 && h <= 800) {
     emit('updateSize', id, currentWidth, h)
-  }
-}
-
-function onLive2DInput(key: keyof Live2DConfig, raw: string): void {
-  const val = parseFloat(raw)
-  if (!isNaN(val)) {
-    emit('updateLive2DConfig', { [key]: val })
   }
 }
 
@@ -318,87 +257,6 @@ async function doExport(): Promise<void> {
     &:focus {
       outline: none;
       background: rgba(255, 255, 255, 0.85);
-    }
-  }
-
-  // Live2D specific controls
-  &__live2d {
-    margin-top: $spacing-lg;
-    padding: $spacing-md;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: $radius-lg;
-
-    &-title {
-      font-size: $font-size-base;
-      font-weight: 700;
-      color: $text-primary;
-      margin: 0 0 $spacing-sm;
-    }
-
-    &-row {
-      display: flex;
-      align-items: center;
-      gap: $spacing-sm;
-      margin-top: $spacing-xs;
-    }
-
-    &-label {
-      font-size: $font-size-sm;
-      color: $text-secondary;
-      min-width: 56px;
-      flex-shrink: 0;
-    }
-
-    &-control {
-      display: flex;
-      align-items: center;
-      gap: $spacing-sm;
-      flex: 1;
-    }
-
-    &-slider {
-      flex: 1;
-      height: 4px;
-      -webkit-appearance: none;
-      appearance: none;
-      background: rgba(255, 255, 255, 0.35);
-      border-radius: 2px;
-      outline: none;
-      cursor: pointer;
-
-      &::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-        background: $accent-primary;
-        border: 2px solid white;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-        transition: transform 0.1s ease;
-
-        &:hover {
-          transform: scale(1.15);
-        }
-      }
-
-      &::-moz-range-thumb {
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-        background: $accent-primary;
-        border: 2px solid white;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-      }
-    }
-
-    &-value {
-      font-size: $font-size-sm;
-      color: $text-primary;
-      font-variant-numeric: tabular-nums;
-      min-width: 36px;
-      text-align: right;
     }
   }
 

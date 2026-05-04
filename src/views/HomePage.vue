@@ -39,7 +39,7 @@
       <!-- Live2D -->
       <div class="home-page__cell" :style="getWidgetStyle('live2d')">
         <TiltEffect :disabled="isDragMode">
-          <Live2DWidget :key="'l2d-' + live2dVersion" :config="live2dConfig" />
+          <Live2DWidget />
         </TiltEffect>
       </div>
 
@@ -114,11 +114,9 @@
     <LayoutSettings
       v-if="isSettingsOpen"
       :widgets="layouts"
-      :live2d-config="live2dConfig"
       @close="closeSettings"
       @drag="enterDragMode"
       @update-size="updateSize"
-      @update-live2d-config="updateLive2DConfig"
     />
   </div>
 </template>
@@ -159,9 +157,6 @@ const {
   closeSettings,
   enterDragMode,
   cancelDrag,
-  live2dConfig,
-  live2dVersion,
-  updateLive2DConfig,
 } = useLayoutEditor()
 
 const { toasts } = useToast()
