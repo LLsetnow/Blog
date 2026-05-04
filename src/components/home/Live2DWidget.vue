@@ -51,7 +51,10 @@ onMounted(async () => {
     resolution: window.devicePixelRatio || 1,
   })
 
-  // 3. Wait for model to finish loading
+  // 3. Add sprite to stage FIRST so the Pixi renderer can call onRender
+  app.stage.addChild(sprite)
+
+  // 4. Wait for model to finish loading (triggered by onRender)
   try {
     await sprite.ready
   } catch {
@@ -60,13 +63,13 @@ onMounted(async () => {
     return
   }
 
-  // 4. Scale sprite to fill container
+  // 5. Scale sprite to fill container
   const { width: cw, height: ch } = containerRef.value.getBoundingClientRect()
   const dpr = window.devicePixelRatio || 1
   sprite.width = cw * dpr
   sprite.height = ch * dpr
 
-  // 5. Center model — offset so the model sits roughly centered in the widget
+  // 6. Center model — offset so the model sits roughly centered in the widget
   const canvasSize = sprite.getModelCanvasSize()
   if (canvasSize) {
     // The model canvas is in pixels; we need to offset so it's centered
@@ -83,9 +86,7 @@ onMounted(async () => {
     sprite.y = 0
   }
 
-  app.stage.addChild(sprite)
-
-  // 6. Click → play TapBody motion
+  // 7. Click → play TapBody motion
   sprite.onLive2D('hit', () => {
     sprite?.startRandomMotion({
       group: 'TapBody',
