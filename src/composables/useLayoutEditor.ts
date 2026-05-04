@@ -1,5 +1,5 @@
 import { ref, shallowRef } from 'vue'
-import type { WidgetLayout, WidgetOffset } from '@/types'
+import type { WidgetLayout, WidgetOffset, Live2DConfig } from '@/types'
 
 export const WIDGETS: WidgetLayout[] = [
   { id: 'greeting',  label: '问候卡',     left:  -78, top:   84, width: 480, height: 170 },
@@ -16,6 +16,13 @@ export const WIDGETS: WidgetLayout[] = [
 
 const STORAGE_KEY_OFFSETS = 'blog-layout-offsets'
 const STORAGE_KEY_SIZES = 'blog-layout-sizes'
+const STORAGE_KEY_LIVE2D = 'blog-live2d-config'
+
+const DEFAULT_LIVE2D_CONFIG: Live2DConfig = {
+  modelScale: 2.0,
+  offsetX: 0,
+  offsetY: -30,
+}
 
 function loadOffsets(): Record<string, WidgetOffset> {
   try {
@@ -33,6 +40,21 @@ function loadSizes(): Record<string, { width: number; height: number }> {
   } catch {
     return {}
   }
+}
+
+function loadLive2DConfig(): Live2DConfig {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY_LIVE2D)
+    return raw ? { ...DEFAULT_LIVE2D_CONFIG, ...JSON.parse(raw) } : { ...DEFAULT_LIVE2D_CONFIG }
+  } catch {
+    return { ...DEFAULT_LIVE2D_CONFIG }
+  }
+}
+
+function saveLive2DConfig(config: Live2DConfig): void {
+  try {
+    localStorage.setItem(STORAGE_KEY_LIVE2D, JSON.stringify(config))
+  } catch { /* noop */ }
 }
 
 /**
@@ -98,6 +120,17 @@ export function useLayoutEditor() {
 
   // Use shallowRef: offsets only trigger re-render on drag end, not during drag
   const offsets = shallowRef<Record<string, WidgetOffset>>(loadOffsets())
+
+  // Live2D config
+  const live2dConfig = ref<Live2DConfig>(loadLive2DConfig())
+  const live2dVersion = ref(0)
+
+  function updateLive2DConfig(partial: Partial<Live2DConfig>) {
+    const next = { ...live2dConfig.value, ...partial }
+    live2dConfig.value = next
+    saveLive2DConfig(next)
+    live2dVersion.value++
+  }
 
   // Internal drag state — not exposed to template
   let dragState: {
@@ -222,5 +255,8 @@ export function useLayoutEditor() {
     closeSettings,
     enterDragMode,
     cancelDrag,
+    live2dConfig,
+    live2dVersion,
+    updateLive2DConfig,
   }
 }
