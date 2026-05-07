@@ -110,7 +110,7 @@ const currentYear: number = new Date().getFullYear()
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding: $spacing-xl $spacing-lg;
+    padding: $spacing-xl $spacing-lg 100px;
   }
 
   &__footer {

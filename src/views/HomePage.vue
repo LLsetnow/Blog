@@ -29,13 +29,6 @@
         </TiltEffect>
       </div>
 
-      <!-- Music -->
-      <div class="home-page__cell" :style="getWidgetStyle('music')">
-        <TiltEffect :disabled="isDragMode">
-          <MusicPlayer />
-        </TiltEffect>
-      </div>
-
       <!-- Live2D -->
       <div class="home-page__cell" :style="getWidgetStyle('live2d')">
         <TiltEffect :disabled="isDragMode">
@@ -127,7 +120,6 @@ import { useRoute } from 'vue-router'
 import type { WidgetLayout } from '@/types'
 import GreetingCard from '@/components/home/GreetingCard.vue'
 import ClockWidget from '@/components/home/ClockWidget.vue'
-import MusicPlayer from '@/components/home/MusicPlayer.vue'
 import CalendarWidget from '@/components/home/CalendarWidget.vue'
 import NavMenu from '@/components/home/NavMenu.vue'
 import GitHubCard from '@/components/home/GitHubCard.vue'
@@ -212,7 +204,8 @@ function dragHandleStyle(w: WidgetLayout): Record<string, string> {
     position: relative;
     width: 1100px;
     flex-shrink: 0;
-    padding: 40px 0;
+    margin: 0 auto;
+    padding: 40px 0 100px;
     min-height: 800px;
   }
 

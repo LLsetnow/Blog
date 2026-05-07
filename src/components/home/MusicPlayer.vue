@@ -1,5 +1,5 @@
 <template>
-  <div class="music-player glass-card">
+  <div class="music-player glass-card" :class="{ 'music-player--global': global }">
     <!-- Top row: info + controls -->
     <div class="music-player__row">
       <div class="music-player__icon">
@@ -117,6 +117,9 @@ import { musicList } from '@/data/music'
 import type { MusicTrack } from '@/types'
 
 const baseUrl = import.meta.env.BASE_URL || '/'
+const props = withDefaults(defineProps<{ global?: boolean }>(), {
+  global: false,
+})
 
 const audioRef = ref<HTMLAudioElement | null>(null)
 const isPlaying = ref(false)
@@ -374,6 +377,17 @@ function toggleMute(): void {
     align-items: center;
     gap: $spacing-sm;
     min-width: 0;
+  }
+
+  // Global mode: compact fixed bar at bottom
+  &--global {
+    aspect-ratio: auto;
+    height: 60px;
+    padding: 0 $spacing-lg;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
   }
 
   &__icon {
