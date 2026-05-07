@@ -45,7 +45,7 @@ async function apiJson(url, cookies, params = {}) {
     u.searchParams.set(k, String(v))
   }
   const cookieStr = Object.entries(cookies)
-    .map(([k, v]) => `${k}=${v}`)
+    .map(([k, v]) => `${k}=${/[^\x00-\x7F]/.test(v) ? encodeURIComponent(v) : v}`)
     .join('; ')
 
   const res = await fetch(u.toString(), {
