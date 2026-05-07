@@ -90,7 +90,6 @@ function animateLeaveHome() {
         position: 'fixed',
       })
       setTimeout(() => {
-        isMini.value = true
         applyStyle({ transition: 'none' })
       }, 370)
     })

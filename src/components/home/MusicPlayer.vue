@@ -181,7 +181,7 @@ function endSeek(_event: PointerEvent) {
   user-select: none;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
-  transition: all $transition-base;
+  transition: background $transition-base, box-shadow $transition-base;
 
   &:hover {
     background: $bg-card-hover;
