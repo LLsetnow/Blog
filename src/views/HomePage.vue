@@ -43,12 +43,8 @@
         </TiltEffect>
       </div>
 
-      <!-- Music Player -->
-      <div class="home-page__cell" :style="getWidgetStyle('music')">
-        <TiltEffect :disabled="isDragMode">
-          <MusicPlayer />
-        </TiltEffect>
-      </div>
+      <!-- Music Player (position anchor for global player) -->
+      <div data-widget="music" class="home-page__cell" :style="getWidgetStyle('music')" />
 
       <!-- Nav -->
       <div v-if="!navCollapsed" class="home-page__cell" :style="getWidgetStyle('nav')">
@@ -133,7 +129,6 @@ import GitHubCard from '@/components/home/GitHubCard.vue'
 import Live2DWidget from '@/components/home/Live2DWidget.vue'
 import ImageGallery from '@/components/home/ImageGallery.vue'
 import EmailWidget from '@/components/home/EmailWidget.vue'
-import MusicPlayer from '@/components/home/MusicPlayer.vue'
 import WeChatWidget from '@/components/home/WeChatWidget.vue'
 import TiltEffect from '@/components/common/TiltEffect.vue'
 import LayoutSettings from '@/components/home/LayoutSettings.vue'

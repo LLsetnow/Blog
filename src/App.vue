@@ -1,43 +1,170 @@
 <template>
   <router-view />
 
-  <!-- Non-home pages: floating mini player with animation -->
-  <Transition name="player-float">
-    <div v-if="!isHome" class="player-float">
-      <MusicPlayer mini />
-    </div>
-  </Transition>
+  <!-- Single MusicPlayer instance — positioned via JS for FLIP animation -->
+  <div class="player-wrapper" ref="playerRef">
+    <MusicPlayer :mini="isMini" />
+  </div>
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
+import { ref, watch, nextTick, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
 import MusicPlayer from '@/components/home/MusicPlayer.vue'
 
 const route = useRoute()
-const isHome = computed(() => route.path === '/')
+const playerRef = ref<HTMLElement | null>(null)
+const isMini = ref(false)
+
+// Direct DOM manipulation for positioning (avoids Vue reactive timing issues)
+const POS = {
+  cornerW: 220,
+  cornerH: 56,
+  margin: 24,
+}
+
+function el(): HTMLElement | null {
+  return playerRef.value
+}
+
+function applyStyle(styles: Partial<CSSStyleDeclaration>) {
+  const e = el()
+  if (!e) return
+  for (const [key, val] of Object.entries(styles)) {
+    (e.style as any)[key] = val
+  }
+}
+
+function syncToGrid() {
+  const anchor = document.querySelector<HTMLElement>('[data-widget="music"]')
+  if (!anchor) return false
+  const r = anchor.getBoundingClientRect()
+  isMini.value = false
+  applyStyle({
+    position: 'fixed',
+    left: r.left + 'px',
+    top: r.top + 'px',
+    width: r.width + 'px',
+    height: r.height + 'px',
+    overflow: 'hidden',
+    zIndex: '260',
+    borderRadius: '12px',
+    transition: 'none',
+  })
+  return true
+}
+
+function syncToCorner() {
+  isMini.value = true
+  applyStyle({
+    position: 'fixed',
+    left: (window.innerWidth - POS.cornerW - POS.margin) + 'px',
+    top: (window.innerHeight - POS.cornerH - POS.margin) + 'px',
+    width: POS.cornerW + 'px',
+    height: POS.cornerH + 'px',
+    overflow: 'hidden',
+    zIndex: '260',
+    borderRadius: '40px',
+    transition: 'none',
+  })
+}
+
+// ── FLIP animations ──
+
+function animateLeaveHome() {
+  if (!syncToGrid()) return
+  nextTick(() => {
+    requestAnimationFrame(() => {
+      applyStyle({
+        left: (window.innerWidth - POS.cornerW - POS.margin) + 'px',
+        top: (window.innerHeight - POS.cornerH - POS.margin) + 'px',
+        width: POS.cornerW + 'px',
+        height: POS.cornerH + 'px',
+        borderRadius: '40px',
+        transition: 'all 0.45s cubic-bezier(0.34, 1.56, 0.64, 1)',
+        overflow: 'hidden',
+        zIndex: '260',
+        position: 'fixed',
+      })
+      setTimeout(() => {
+        isMini.value = true
+        applyStyle({ transition: 'none' })
+      }, 420)
+    })
+  })
+}
+
+function animateEnterHome() {
+  syncToCorner()
+  isMini.value = false
+  nextTick(() => {
+    requestAnimationFrame(() => {
+      syncToGrid()
+      applyStyle({
+        transition: 'all 0.45s cubic-bezier(0.34, 1.56, 0.64, 1)',
+        borderRadius: '12px',
+      })
+    })
+  })
+}
+
+// ── Route watcher ──
+
+watch(() => route.path, (path, oldPath) => {
+  if (oldPath === '/' && path !== '/') {
+    animateLeaveHome()
+  } else if (path === '/') {
+    animateEnterHome()
+  } else {
+    syncToCorner()
+  }
+})
+
+// ── Initialise ──
+
+function initPosition() {
+  if (route.path === '/') {
+    if (!syncToGrid()) {
+      // Grid anchor not ready yet — retry
+      requestAnimationFrame(initPosition)
+      return
+    }
+  } else {
+    syncToCorner()
+  }
+}
+
+onMounted(() => {
+  window.addEventListener('resize', onResize)
+  initPosition()
+})
+
+onUnmounted(() => window.removeEventListener('resize', onResize))
+
+// ── Resize ──
+
+let resizeTimer: ReturnType<typeof setTimeout>
+function onResize() {
+  clearTimeout(resizeTimer)
+  resizeTimer = setTimeout(() => {
+    if (route.path === '/') {
+      syncToGrid()
+    } else {
+      syncToCorner()
+    }
+  }, 150)
+}
 </script>
 
 <style lang="scss" scoped>
-.player-float {
+.player-wrapper {
   position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 1000;
+  overflow: hidden;
+  z-index: 260;
+  will-change: left, top, width, height;
 }
 
-// Transition: slide up + fade
-.player-float-enter-active {
-  transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-.player-float-leave-active {
-  transition: all 0.2s ease;
-}
-
-.player-float-enter-from,
-.player-float-leave-to {
-  opacity: 0;
-  transform: translateY(16px) scale(0.9);
+.player-wrapper :deep(.music-player--mini) {
+  border-radius: 40px;
 }
 </style>
