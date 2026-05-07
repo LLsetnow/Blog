@@ -65,6 +65,8 @@ function onMouseLeave(): void {
   width: 100%;
   height: 100%;
   flex-shrink: 0;
+  border-radius: inherit;
+  overflow: hidden;
   transition: transform 0.5s ease;
 
   &--disabled {
