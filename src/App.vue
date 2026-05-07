@@ -4,7 +4,7 @@
   <!-- Single MusicPlayer instance — positioned via JS for FLIP animation -->
   <div class="player-wrapper" ref="playerRef">
     <TiltEffect :disabled="isMini">
-      <MusicPlayer />
+      <MusicPlayer :mini="isMini" />
     </TiltEffect>
   </div>
 </template>
@@ -90,6 +90,7 @@ function animateLeaveHome() {
         position: 'fixed',
       })
       setTimeout(() => {
+        isMini.value = true
         applyStyle({ transition: 'none' })
       }, 370)
     })

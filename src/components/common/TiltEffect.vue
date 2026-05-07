@@ -32,6 +32,8 @@ function onMouseMove(event: MouseEvent): void {
   const element = tiltRef.value
   if (!element) return
 
+  element.style.transformStyle = 'preserve-3d'
+  element.style.willChange = 'transform'
   element.style.transition = 'transform 0.1s ease-out'
 
   const rect = element.getBoundingClientRect()
@@ -53,6 +55,8 @@ function onMouseLeave(): void {
   if (!element) return
   element.style.transition = 'transform 0.5s ease'
   element.style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)'
+  element.style.transformStyle = ''
+  element.style.willChange = ''
 }
 </script>
 
@@ -62,14 +66,10 @@ function onMouseLeave(): void {
   height: 100%;
   flex-shrink: 0;
   transition: transform 0.5s ease;
-  transform-style: preserve-3d;
-  will-change: transform;
 
   &--disabled {
     transform: none !important;
     transition: none !important;
-    transform-style: flat !important;
-    will-change: auto !important;
   }
 }
 </style>
