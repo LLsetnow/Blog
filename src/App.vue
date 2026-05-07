@@ -67,7 +67,7 @@ function syncToCorner() {
     height: POS.cornerH + 'px',
     overflow: 'hidden',
     zIndex: '260',
-    borderRadius: '40px',
+    borderRadius: '12px',
     transition: 'none',
   })
 }
@@ -83,7 +83,7 @@ function animateLeaveHome() {
         top: (window.innerHeight - POS.cornerH - POS.margin) + 'px',
         width: POS.cornerW + 'px',
         height: POS.cornerH + 'px',
-        borderRadius: '40px',
+        borderRadius: '12px',
         transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
         overflow: 'hidden',
         zIndex: '260',
