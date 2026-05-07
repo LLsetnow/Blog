@@ -35,22 +35,30 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
+const baseUrl = import.meta.env.BASE_URL || '/'
+
 interface GalleryImage {
   thumb: string
   full: string
   alt: string
 }
 
-const images: GalleryImage[] = [
-  { thumb: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=200&h=200&fit=crop', full: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=900&fit=crop', alt: 'Mountains' },
-  { thumb: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=200&h=200&fit=crop', full: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&h=900&fit=crop', alt: 'Beach' },
-  { thumb: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=200&h=200&fit=crop', full: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200&h=900&fit=crop', alt: 'Stars' },
-  { thumb: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=200&h=200&fit=crop', full: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&h=900&fit=crop', alt: 'Forest' },
-  { thumb: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=200&h=200&fit=crop', full: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&h=900&fit=crop', alt: 'Trees' },
-  { thumb: 'https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=200&h=200&fit=crop', full: 'https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1200&h=900&fit=crop', alt: 'Ocean' },
-  { thumb: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=200&h=200&fit=crop', full: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&h=900&fit=crop', alt: 'Sunset' },
-  { thumb: 'https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=200&h=200&fit=crop', full: 'https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=1200&h=900&fit=crop', alt: 'Waterfall' },
+const imageFiles = [
+  '0f068ff38e8886968d1c3d7bad3dd3fa.jpg',
+  '1a08ca749fe362f5c1a8fe12a34c046d.jpg',
+  '250d05939b7707c00fcdbf0954dd4aab.jpg',
+  '2dfa9ac1040bfc61423e341eb4eea8db.jpg',
+  '567a7b906eb50dc9f0fcdb9cba007a47.jpg',
+  '90909f68a40d1efbbd42910cb4dbd2f8.jpg',
+  '9d45ebdcaa221489e0362d661b660e8e.jpg',
+  'ab30291ca94bb013c8a6121aa7c22764.jpg',
 ]
+
+const images: GalleryImage[] = imageFiles.map((file, i) => ({
+  thumb: `${baseUrl}img/${file}`,
+  full: `${baseUrl}img/${file}`,
+  alt: `Gallery ${i + 1}`,
+}))
 
 const previewIndex = ref<number | null>(null)
 const previewRef = ref<HTMLElement | null>(null)
