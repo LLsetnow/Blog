@@ -78,12 +78,6 @@ export function generateLayoutCode(): string {
 }
 
 export function useLayoutEditor() {
-  // Clear stale localStorage offsets/sizes — WIDGETS already includes them
-  try {
-    localStorage.removeItem(STORAGE_KEY_OFFSETS)
-    localStorage.removeItem(STORAGE_KEY_SIZES)
-  } catch { /* noop */ }
-
   const isSettingsOpen = ref(false)
   const isDragMode = ref(false)
   const draggingId = ref<string | null>(null)
