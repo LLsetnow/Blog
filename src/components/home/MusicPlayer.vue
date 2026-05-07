@@ -6,13 +6,14 @@
       'music-player--mini': mini,
     }"
   >
-    <!-- Mini mode: icon + title + play button (v-show for instant switching, no DOM flicker) -->
-    <div v-show="mini" class="music-player__mini-content">
+    <!-- Mini mode: compact floating layout -->
+    <template v-if="mini">
       <div class="music-player__mini-icon">
         <img :src="`${baseUrl}assets/音乐.svg`" alt="music" class="music-player__icon-svg" />
       </div>
       <div class="music-player__mini-info">
         <span class="music-player__mini-title">{{ currentTrack.title }}</span>
+        <span class="music-player__mini-artist">{{ currentTrack.artist }}</span>
       </div>
       <button
         class="music-player__mini-btn"
@@ -31,10 +32,11 @@
           <polygon points="6 3 20 12 6 21 6 3" />
         </svg>
       </button>
-    </div>
+    </template>
 
-    <!-- Full mode: original layout (v-show, always in DOM) -->
-    <div v-show="!mini" class="music-player__full-content">
+    <!-- Full mode: original layout -->
+    <template v-else>
+      <!-- Top row: info + controls -->
       <div class="music-player__row">
         <div class="music-player__icon">
           <img :src="`${baseUrl}assets/音乐.svg`" alt="music" class="music-player__icon-svg" />
@@ -130,7 +132,7 @@
       <div v-if="hasError && !isLoading" class="music-player__error">
         无法加载音频文件
       </div>
-    </div>
+    </template>
   </div>
 </template>
 
@@ -202,23 +204,26 @@ function endSeek(_event: PointerEvent) {
 </script>
 
 <style lang="scss" scoped>
-// ===== Mini glass mode (same visual, compact layout) =====
+// ===== Mini floating mode =====
 .music-player--mini {
-  @include glass;
-  border-radius: $radius-xl;
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 8px 14px;
-  height: 100%;
-  overflow: hidden;
+  padding: 10px 16px;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.12),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+  user-select: none;
+  -webkit-user-select: none;
 
   &:hover {
-    background: $bg-card-hover;
+    background: rgba(255, 255, 255, 0.92);
     box-shadow:
-      inset 0 0 0 1px rgba(255, 255, 255, 0.8),
-      inset 0 0 14px 4px rgba(255, 255, 255, 0.2),
-      0 12px 40px rgba(0, 0, 0, 0.12);
+      0 6px 32px rgba(0, 0, 0, 0.16),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.7);
   }
 }
 
@@ -237,15 +242,24 @@ function endSeek(_event: PointerEvent) {
 }
 
 .music-player__mini-info {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
   min-width: 0;
-  overflow: hidden;
+  max-width: 120px;
 }
 
 .music-player__mini-title {
-  font-size: $font-size-sm;
+  font-size: 13px;
   font-weight: 600;
   color: $text-primary;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.music-player__mini-artist {
+  font-size: 11px;
+  color: $text-secondary;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -286,23 +300,7 @@ function endSeek(_event: PointerEvent) {
   }
 }
 
-// ===== Content wrappers for v-show switching =====
-.music-player__mini-content {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  height: 100%;
-}
-
-.music-player__full-content {
-  display: flex;
-  flex-direction: column;
-  gap: $spacing-sm;
-  flex: 1;
-  overflow: hidden;
-}
-
-// ===== Full glass mode =====
+// ===== Full glass mode (original) =====
 .music-player--glass {
   @include glass;
   border-radius: $radius-xl;
@@ -315,7 +313,7 @@ function endSeek(_event: PointerEvent) {
   user-select: none;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
-  transition: background $transition-base, box-shadow $transition-base;
+  transition: all $transition-base;
 
   &:hover {
     background: $bg-card-hover;

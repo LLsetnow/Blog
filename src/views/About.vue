@@ -11,7 +11,7 @@
         <h2 class="about__name">LLsetnow</h2>
         <p class="about__handle">@LLsetnow</p>
         <p class="about__description">
-          热爱技术，喜欢探索新事物。这个博客使用 Vue 3 + TypeScript 构建，采用毛玻璃设计风格。
+          喜歡研究技術，偶爾搞搞二次元
         </p>
 
         <div class="about__info">

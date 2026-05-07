@@ -32,6 +32,8 @@ function onMouseMove(event: MouseEvent): void {
   const element = tiltRef.value
   if (!element) return
 
+  element.style.transition = 'transform 0.1s ease-out'
+
   const rect = element.getBoundingClientRect()
   const centerX = rect.left + rect.width / 2
   const centerY = rect.top + rect.height / 2
@@ -42,14 +44,15 @@ function onMouseMove(event: MouseEvent): void {
   const tiltX = deltaY * -props.maxTilt
   const tiltY = deltaX * props.maxTilt
 
-  element.style.transform = `perspective(800px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`
+  element.style.transform = `perspective(800px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale3d(${props.scale}, ${props.scale}, ${props.scale})`
 }
 
 function onMouseLeave(): void {
   if (props.disabled) return
   const element = tiltRef.value
   if (!element) return
-  element.style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg)'
+  element.style.transition = 'transform 0.5s ease'
+  element.style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)'
 }
 </script>
 
@@ -59,6 +62,8 @@ function onMouseLeave(): void {
   height: 100%;
   flex-shrink: 0;
   transition: transform 0.5s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
 
   &--disabled {
     transform: none !important;

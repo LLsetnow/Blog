@@ -1,7 +1,6 @@
 <template>
   <router-view />
 
-  <!-- Single MusicPlayer instance — positioned via JS for FLIP animation -->
   <div class="player-wrapper" ref="playerRef">
     <TiltEffect :disabled="isMini">
       <MusicPlayer :mini="isMini" />
@@ -10,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch, nextTick, onMounted, onUnmounted } from 'vue'
+import { ref, watch, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
 import MusicPlayer from '@/components/home/MusicPlayer.vue'
 import TiltEffect from '@/components/common/TiltEffect.vue'
@@ -19,19 +18,14 @@ const route = useRoute()
 const playerRef = ref<HTMLElement | null>(null)
 const isMini = ref(false)
 
-// Direct DOM manipulation for positioning (avoids Vue reactive timing issues)
 const POS = {
-  cornerW: 170,
-  cornerH: 80,
+  cornerW: 160,
+  cornerH: 56,
   margin: 24,
 }
 
-function el(): HTMLElement | null {
-  return playerRef.value
-}
-
 function applyStyle(styles: Partial<CSSStyleDeclaration>) {
-  const e = el()
+  const e = playerRef.value
   if (!e) return
   for (const [key, val] of Object.entries(styles)) {
     (e.style as any)[key] = val
@@ -49,10 +43,7 @@ function syncToGrid() {
     top: r.top + 'px',
     width: r.width + 'px',
     height: r.height + 'px',
-    overflow: 'hidden',
     zIndex: '260',
-    borderRadius: '12px',
-    transition: 'none',
   })
   return true
 }
@@ -65,73 +56,31 @@ function syncToCorner() {
     top: (window.innerHeight - POS.cornerH - POS.margin) + 'px',
     width: POS.cornerW + 'px',
     height: POS.cornerH + 'px',
-    overflow: 'hidden',
     zIndex: '260',
-    borderRadius: '12px',
-    transition: 'none',
-  })
-}
-
-// ── FLIP animations ──
-
-function animateLeaveHome() {
-  if (!syncToGrid()) return
-  nextTick(() => {
-    requestAnimationFrame(() => {
-      applyStyle({
-        left: (window.innerWidth - POS.cornerW - POS.margin) + 'px',
-        top: (window.innerHeight - POS.cornerH - POS.margin) + 'px',
-        width: POS.cornerW + 'px',
-        height: POS.cornerH + 'px',
-        borderRadius: '12px',
-        transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
-        overflow: 'hidden',
-        zIndex: '260',
-        position: 'fixed',
-      })
-      setTimeout(() => {
-        isMini.value = true
-        applyStyle({ transition: 'none' })
-      }, 370)
-    })
-  })
-}
-
-function animateEnterHome() {
-  syncToCorner()
-  isMini.value = false
-  nextTick(() => {
-    requestAnimationFrame(() => {
-      syncToGrid()
-      applyStyle({
-        transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
-        borderRadius: '12px',
-      })
-    })
   })
 }
 
 // ── Route watcher ──
 
-watch(() => route.path, (path, oldPath) => {
-  if (oldPath === '/' && path !== '/') {
-    animateLeaveHome()
-  } else if (path === '/') {
-    animateEnterHome()
+watch(() => route.path, (path) => {
+  if (path === '/') {
+    retrySyncGrid()
   } else {
     syncToCorner()
   }
 })
 
+function retrySyncGrid() {
+  if (!syncToGrid()) {
+    if (route.path === '/') requestAnimationFrame(retrySyncGrid)
+  }
+}
+
 // ── Initialise ──
 
 function initPosition() {
   if (route.path === '/') {
-    if (!syncToGrid()) {
-      // Grid anchor not ready yet — retry
-      requestAnimationFrame(initPosition)
-      return
-    }
+    retrySyncGrid()
   } else {
     syncToCorner()
   }
@@ -162,9 +111,11 @@ function onResize() {
 <style lang="scss" scoped>
 .player-wrapper {
   position: fixed;
-  overflow: hidden;
   z-index: 260;
   will-change: left, top, width, height;
 }
 
+.player-wrapper :deep(.music-player--mini) {
+  border-radius: 40px;
+}
 </style>
