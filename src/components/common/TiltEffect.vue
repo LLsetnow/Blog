@@ -68,6 +68,8 @@ function onMouseLeave(): void {
   &--disabled {
     transform: none !important;
     transition: none !important;
+    transform-style: flat !important;
+    will-change: auto !important;
   }
 }
 </style>
