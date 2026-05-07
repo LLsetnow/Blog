@@ -3,7 +3,9 @@
 
   <!-- Single MusicPlayer instance — positioned via JS for FLIP animation -->
   <div class="player-wrapper" ref="playerRef">
-    <MusicPlayer :mini="isMini" />
+    <TiltEffect :disabled="isMini">
+      <MusicPlayer />
+    </TiltEffect>
   </div>
 </template>
 
@@ -11,6 +13,7 @@
 import { ref, watch, nextTick, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
 import MusicPlayer from '@/components/home/MusicPlayer.vue'
+import TiltEffect from '@/components/common/TiltEffect.vue'
 
 const route = useRoute()
 const playerRef = ref<HTMLElement | null>(null)
@@ -18,8 +21,8 @@ const isMini = ref(false)
 
 // Direct DOM manipulation for positioning (avoids Vue reactive timing issues)
 const POS = {
-  cornerW: 220,
-  cornerH: 56,
+  cornerW: 170,
+  cornerH: 80,
   margin: 24,
 }
 
@@ -81,7 +84,7 @@ function animateLeaveHome() {
         width: POS.cornerW + 'px',
         height: POS.cornerH + 'px',
         borderRadius: '40px',
-        transition: 'all 0.45s cubic-bezier(0.34, 1.56, 0.64, 1)',
+        transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
         overflow: 'hidden',
         zIndex: '260',
         position: 'fixed',
@@ -89,7 +92,7 @@ function animateLeaveHome() {
       setTimeout(() => {
         isMini.value = true
         applyStyle({ transition: 'none' })
-      }, 420)
+      }, 370)
     })
   })
 }
@@ -101,7 +104,7 @@ function animateEnterHome() {
     requestAnimationFrame(() => {
       syncToGrid()
       applyStyle({
-        transition: 'all 0.45s cubic-bezier(0.34, 1.56, 0.64, 1)',
+        transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
         borderRadius: '12px',
       })
     })
@@ -164,7 +167,4 @@ function onResize() {
   will-change: left, top, width, height;
 }
 
-.player-wrapper :deep(.music-player--mini) {
-  border-radius: 40px;
-}
 </style>
