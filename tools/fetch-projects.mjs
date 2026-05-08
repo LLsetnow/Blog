@@ -19,10 +19,11 @@ const IMAGES_DIR = path.join(OUTPUT_DIR, 'images')
 
 const repos = [
   { id: 'agent-bot',      name: 'AgentBot',     tech: ['Agent', 'ComfyUI', 'AIGC', 'Python'],           url: 'https://github.com/LLsetnow/AgentBot' },
-  { id: 'personal-blog',  name: '个人博客',       tech: ['Vue 3', 'TypeScript', 'SCSS'],                  url: 'https://github.com/LLsetnow/Blog' },
   { id: 'mio-chat',       name: 'MioChat',      tech: ['Python', 'LLM', 'RTS', 'TTS'],                   url: 'https://github.com/LLsetnow/MioChat.git' },
   { id: 'graph-rag',      name: 'GraphRag',     tech: ['RAG', 'GraphRAG', 'LLM', 'Python'],             url: 'https://github.com/LLsetnow/GraphRag.git' },
+  { id: 'personal-blog',  name: '个人博客',       tech: ['Vue 3', 'TypeScript', 'SCSS'],                  url: 'https://github.com/LLsetnow/Blog' },
   { id: 'hdu-baidu',      name: 'HDU_19_Baidu', tech: ['C++', '机器视觉', '目标检测'],                     url: 'https://github.com/LLsetnow/HDU_19_Baidu.git' },
+  { id: 'todolist-web',   name: 'TodoListWeb',  tech: ['全栈', 'MongoDB', 'Vue 3', 'Express'],         url: 'https://github.com/LLsetnow/TodoListWeb.git' },
 ]
 
 // ---------- helpers ----------
