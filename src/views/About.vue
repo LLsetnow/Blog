@@ -8,16 +8,16 @@
           <img :src="avatarSrc" alt="avatar" class="about__avatar" />
         </div>
 
-        <h2 class="about__name">LLsetnow</h2>
+        <h2 class="about__name">Akai</h2>
         <p class="about__handle">@LLsetnow</p>
         <p class="about__description">
-          喜歡研究技術，偶爾搞搞二次元
+          喜欢研究技术，偶尔搞搞二次元
         </p>
 
         <div class="about__info">
           <div class="about__info-item">
             <span class="about__info-label">兴趣</span>
-            <span class="about__info-value">Web 开发, 开源, 技术写作, AI</span>
+            <span class="about__info-value">摄影、健身、跑步</span>
           </div>
         </div>
 
