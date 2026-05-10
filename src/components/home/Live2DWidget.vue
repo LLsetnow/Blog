@@ -25,13 +25,43 @@ const loaded = ref(false)
 
 const MODEL_PATH = `${baseUrl}live2d-models/Hiyori/Hiyori.model3.json`
 
+// Voice files placed in public/Voice/ — add new filenames here
+const VOICE_DIR = `${baseUrl}Voice/`
+const VOICE_FILES = [
+  'hello-1.wav',
+  'hello-2.wav',
+  'hello-3.wav',
+  'hello-4.wav',
+  'hello-5.wav',
+  'hello-6.wav',
+  'hello-7.wav',
+  'hello-8.wav',
+  'hello-9.wav',
+  'hello-10.wav',
+]
+
 let app: Application | null = null
 let sprite: Live2DSprite | null = null
 let ro: ResizeObserver | null = null
+let voiceAudio: HTMLAudioElement | null = null
+let isSpeaking = false
 
 Config.MotionGroupIdle = 'Idle'
 Config.MouseFollow = true
 Config.CubismLoggingLevel = LogLevel.LogLevel_Off
+
+function playRandomVoice() {
+  if (isSpeaking || VOICE_FILES.length === 0) return
+  const file = VOICE_FILES[Math.floor(Math.random() * VOICE_FILES.length)]
+  if (!voiceAudio) {
+    voiceAudio = new Audio()
+    voiceAudio.addEventListener('ended', () => { isSpeaking = false })
+    voiceAudio.addEventListener('error', () => { isSpeaking = false })
+  }
+  voiceAudio.src = VOICE_DIR + file
+  isSpeaking = true
+  voiceAudio.play().catch(() => { isSpeaking = false })
+}
 
 function applyModelLayout() {
   if (!sprite || !sprite.ready || !containerRef.value) return
@@ -80,6 +110,7 @@ onMounted(async () => {
   applyModelLayout()
 
   sprite.onLive2D('hit', () => {
+    playRandomVoice()
     sprite?.startRandomMotion({
       group: 'TapBody',
       priority: Priority.Normal,
@@ -98,6 +129,13 @@ onMounted(async () => {
 })
 
 onUnmounted(() => {
+  if (voiceAudio) {
+    voiceAudio.pause()
+    voiceAudio.removeEventListener('ended', () => {})
+    voiceAudio.removeEventListener('error', () => {})
+    voiceAudio = null
+  }
+  isSpeaking = false
   ro?.disconnect()
   ro = null
   if (app) {
