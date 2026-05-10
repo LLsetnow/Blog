@@ -95,16 +95,12 @@ onUnmounted(() => window.removeEventListener('resize', onResize))
 
 // ── Resize ──
 
-let resizeTimer: ReturnType<typeof setTimeout>
 function onResize() {
-  clearTimeout(resizeTimer)
-  resizeTimer = setTimeout(() => {
-    if (route.path === '/') {
-      syncToGrid()
-    } else {
-      syncToCorner()
-    }
-  }, 150)
+  if (route.path === '/') {
+    syncToGrid()
+  } else {
+    syncToCorner()
+  }
 }
 </script>
 

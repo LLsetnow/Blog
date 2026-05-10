@@ -153,6 +153,7 @@ onUnmounted(() => {
   height: 100%;
   overflow: hidden;
   pointer-events: auto;
+  cursor: pointer;
 
   &__canvas {
     display: block;
