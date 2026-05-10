@@ -15,7 +15,7 @@ import { ref, onMounted, onUnmounted, nextTick } from 'vue'
 import { Application, Ticker } from 'pixi.js'
 import { Config, Live2DSprite, LogLevel, Priority } from 'easy-live2d'
 
-const HARDCODED_SCALE = 1.0
+const HARDCODED_SCALE = 2.0
 const HARDCODED_OFFSET_Y = 0
 
 const baseUrl = import.meta.env.BASE_URL || '/'

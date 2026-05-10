@@ -2,16 +2,16 @@ import { ref, shallowRef } from 'vue'
 import type { WidgetLayout, WidgetOffset } from '@/types'
 
 export const WIDGETS: WidgetLayout[] = [
-  { id: 'greeting',  label: '问候卡',     left:     7, top:    59, width:  480, height:  170 },
-  { id: 'calendar',  label: '日历',       left:  -217, top:   289, width:  420, height:  450 },
-  { id: 'github',    label: 'GitHub',     left:   -84, top:   823, width:  100, height:  100 },
-  { id: 'clock',     label: '时钟',       left:   709, top:   112, width:  230, height:  200 },
-  { id: 'live2d',    label: '看板娘',     left:    85, top:   219, width:  500, height:  600 },
-  { id: 'music',     label: '音乐播放器',  left:   461, top:   449, width:  470, height:  160 },
-  { id: 'gallery',   label: '图片画廊',    left:   404, top:   696, width:  590, height:  310 },
-  { id: 'nav',       label: '导航菜单',    left:  1040, top:   391, width:  190, height:  360 },
-  { id: 'email',     label: '邮箱',       left:    26, top:   823, width:  100, height:  100 },
-  { id: 'wechat',    label: '微信',       left:   136, top:   823, width:  100, height:  100 },
+  { id: 'greeting'   , label: '问候卡'     , left:     7, top:    59, width:  480, height:  170 },
+  { id: 'calendar'   , label: '日历'      , left:  -217, top:   289, width:  420, height:  450 },
+  { id: 'github'     , label: 'GitHub'  , left:   -84, top:   823, width:  100, height:  100 },
+  { id: 'clock'      , label: '时钟'      , left:   709, top:   112, width:  230, height:  200 },
+  { id: 'live2d'     , label: '看板娘'     , left:   218, top:   219, width:  200, height:  520 },
+  { id: 'music'      , label: '音乐播放器'   , left:   461, top:   449, width:  470, height:  160 },
+  { id: 'gallery'    , label: '图片画廊'    , left:   404, top:   696, width:  590, height:  310 },
+  { id: 'nav'        , label: '导航菜单'    , left:  1040, top:   391, width:  190, height:  360 },
+  { id: 'email'      , label: '邮箱'      , left:    26, top:   823, width:  100, height:  100 },
+  { id: 'wechat'     , label: '微信'      , left:   136, top:   823, width:  100, height:  100 },
 ]
 
 const STORAGE_KEY_OFFSETS = 'blog-layout-offsets'
