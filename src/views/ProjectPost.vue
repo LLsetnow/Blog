@@ -146,10 +146,19 @@ function parseAndRender(markdown: string) {
   const raw = marked.parse(markdown) as string
   const sanitized = DOMPurify.sanitize(raw)
   // Prepend BASE_URL to absolute image paths (adapts to GitHub Pages subpath)
-  renderedContent.value = sanitized.replace(
+  let html = sanitized.replace(
     /(<img[^>]*src\s*=\s*["'])\//g,
     `$1${baseUrl}`
   )
+  // Add lazy loading, async decoding, and wrap in <picture> with WebP source
+  html = html.replace(
+    /<img ([^>]*src\s*=\s*["'])([^"']+)(["'][^>]*>)/g,
+    (match, beforeSrc, src, afterSrc) => {
+      const webpSrc = src.replace(/\.(png|jpg|jpeg)$/i, '.webp')
+      return `<picture><source srcset="${webpSrc}" type="image/webp" /><img loading="lazy" decoding="async" ${beforeSrc}${src}${afterSrc}</picture>`
+    }
+  )
+  renderedContent.value = html
 }
 
 const baseUrl = import.meta.env.BASE_URL || '/'
@@ -374,12 +383,23 @@ function scrollToHeading(id: string) {
       color: $accent-primary;
     }
 
+    :deep(picture) {
+      display: block;
+      margin: $spacing-md auto;
+    }
+
     :deep(img) {
       max-width: 100%;
       height: auto;
       border-radius: $radius-md;
       display: block;
-      margin: $spacing-md auto;
+      margin: 0 auto;
+      opacity: 0;
+      animation: pj-img-fadein 0.4s ease forwards;
+    }
+
+    @keyframes pj-img-fadein {
+      to { opacity: 1; }
     }
 
     :deep(table) {

@@ -11,6 +11,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import sharp from 'sharp'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const OUTPUT_DIR = path.resolve(__dirname, '../public/projects-data')
@@ -62,6 +63,34 @@ async function downloadFile(url, destPath) {
   fs.mkdirSync(path.dirname(destPath), { recursive: true })
   fs.writeFileSync(destPath, Buffer.from(buf))
   return true
+}
+
+/**
+ * Compress a downloaded image and generate WebP variant.
+ * Returns the new file size for logging.
+ */
+async function optimizeImage(filePath) {
+  const ext = path.extname(filePath).toLowerCase()
+  if (!['.png', '.jpg', '.jpeg'].includes(ext)) return
+
+  const webpPath = filePath.replace(ext, '.webp')
+  const pipeline = sharp(filePath).resize(1200, 1200, { fit: 'inside', withoutEnlargement: true })
+
+  await Promise.all([
+    // Compress original format in-place
+    ext === '.png'
+      ? pipeline.clone().png({ quality: 80 }).toFile(filePath + '.tmp')
+      : pipeline.clone().jpeg({ quality: 80 }).toFile(filePath + '.tmp'),
+    // WebP variant
+    pipeline.clone().webp({ quality: 75 }).toFile(webpPath),
+  ])
+
+  // Replace original with compressed version
+  fs.renameSync(filePath + '.tmp', filePath)
+
+  const { size: origSize } = fs.statSync(filePath)
+  const { size: webpSize } = fs.statSync(webpPath)
+  return { origKB: (origSize / 1024).toFixed(0), webpKB: (webpSize / 1024).toFixed(0) }
 }
 
 /**
@@ -196,6 +225,25 @@ async function main() {
       }
     }
     console.log(`\n  ${ok}/${totalImages} downloaded`)
+
+    // Optimize images (compress + WebP)
+    console.log(`\nOptimizing images …`)
+    let optOk = 0
+    let totalSavings = 0
+    for (const p of projects) {
+      for (const img of p._images || []) {
+        const filePath = path.join(IMAGES_DIR, img.projectId, img.name)
+        if (!fs.existsSync(filePath)) continue
+        try {
+          const sizes = await optimizeImage(filePath)
+          if (sizes) {
+            process.stdout.write(`  ${img.projectId}/${img.name}: ${sizes.origKB}KB + ${sizes.webpKB}KB (webp)\n`)
+            optOk++
+          }
+        } catch { process.stdout.write('✗') }
+      }
+    }
+    console.log(`  ${optOk} images optimized`)
   }
 
   console.log('\nDone.')
