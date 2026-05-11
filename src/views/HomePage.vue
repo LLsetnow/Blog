@@ -29,11 +29,16 @@
         </TiltEffect>
       </div>
 
-      <!-- Live2D -->
-      <div class="home-page__cell" :style="getWidgetStyle('live2d')">
+      <!-- Live2D (lazy loaded after page idle) -->
+      <div v-if="showLive2D" class="home-page__cell" :style="getWidgetStyle('live2d')">
         <TiltEffect :disabled="isDragMode">
-          <Live2DWidget />
+          <Live2DLazy />
         </TiltEffect>
+      </div>
+      <div v-else class="home-page__cell" :style="getWidgetStyle('live2d')">
+        <div class="home-page__live2d-placeholder">
+          <div class="home-page__live2d-shimmer" />
+        </div>
       </div>
 
       <!-- Gallery -->
@@ -118,7 +123,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue'
+import { computed, defineAsyncComponent, onMounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import type { WidgetLayout } from '@/types'
 import GreetingCard from '@/components/home/GreetingCard.vue'
@@ -126,8 +131,9 @@ import ClockWidget from '@/components/home/ClockWidget.vue'
 import CalendarWidget from '@/components/home/CalendarWidget.vue'
 import NavMenu from '@/components/home/NavMenu.vue'
 import GitHubCard from '@/components/home/GitHubCard.vue'
-import Live2DWidget from '@/components/home/Live2DWidget.vue'
 import ImageGallery from '@/components/home/ImageGallery.vue'
+
+const Live2DLazy = defineAsyncComponent(() => import('@/components/home/Live2DWidget.vue'))
 import EmailWidget from '@/components/home/EmailWidget.vue'
 import WeChatWidget from '@/components/home/WeChatWidget.vue'
 import TiltEffect from '@/components/common/TiltEffect.vue'
@@ -157,6 +163,13 @@ const {
 const { toasts } = useToast()
 
 const navCollapsed = ref(false)
+const showLive2D = ref(false)
+
+onMounted(() => {
+  // Defer Live2D loading to avoid blocking first paint
+  const schedule = window.requestIdleCallback || ((cb) => setTimeout(cb, 600))
+  schedule(() => { showLive2D.value = true })
+})
 
 // Reset nav when returning to home page
 const route = useRoute()
@@ -286,6 +299,33 @@ function dragHandleStyle(w: WidgetLayout): Record<string, string> {
     z-index: calc($z-drag-overlay + 2);
     display: flex;
     gap: $spacing-md;
+  }
+
+  // Live2D lazy-load placeholder
+  &__live2d-placeholder {
+    width: 100%;
+    height: 100%;
+    border-radius: $radius-xl;
+    overflow: hidden;
+    @include glass-card;
+  }
+
+  &__live2d-shimmer {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.03) 25%,
+      rgba(255, 255, 255, 0.06) 50%,
+      rgba(255, 255, 255, 0.03) 75%
+    );
+    background-size: 200% 100%;
+    animation: l2d-shimmer 1.5s ease-in-out infinite;
+  }
+
+  @keyframes l2d-shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
   }
 
   &__drag-btn {
