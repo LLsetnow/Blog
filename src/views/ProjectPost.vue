@@ -59,6 +59,7 @@
             v-if="lightboxSrc"
             class="project-post__lightbox"
             @click="closeLightbox"
+            @wheel.prevent="onLightboxWheel"
           >
             <button class="project-post__lightbox-close" @click="closeLightbox" title="关闭">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -69,6 +70,7 @@
               :src="lightboxSrc"
               :alt="lightboxAlt"
               class="project-post__lightbox-img"
+              :style="{ transform: `scale(${lightboxScale})` }"
               @click.stop
             />
           </div>
@@ -114,17 +116,28 @@ const tocItems = ref<TocItem[]>([])
 const renderedContent = ref('')
 const lightboxSrc = ref<string | null>(null)
 const lightboxAlt = ref('')
+const lightboxScale = ref(1)
+const MIN_SCALE = 0.5
+const MAX_SCALE = 5
+const ZOOM_STEP = 0.15
 
 function onContentClick(e: MouseEvent) {
   const target = e.target as HTMLElement
   if (target.tagName !== 'IMG') return
   lightboxSrc.value = (target as HTMLImageElement).src
   lightboxAlt.value = (target as HTMLImageElement).alt
+  lightboxScale.value = 1
 }
 
 function closeLightbox() {
   lightboxSrc.value = null
   lightboxAlt.value = ''
+  lightboxScale.value = 1
+}
+
+function onLightboxWheel(e: WheelEvent) {
+  const delta = e.deltaY > 0 ? -ZOOM_STEP : ZOOM_STEP
+  lightboxScale.value = Math.min(MAX_SCALE, Math.max(MIN_SCALE, lightboxScale.value + delta))
 }
 
 function onKeydown(e: KeyboardEvent) {
