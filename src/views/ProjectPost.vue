@@ -50,15 +50,36 @@
             </div>
           </header>
 
-          <div class="project-post__body" v-html="renderedContent" />
+          <div class="project-post__body" v-html="renderedContent" @click="onContentClick" />
         </article>
+
+        <!-- Image lightbox -->
+        <Teleport to="body">
+          <div
+            v-if="lightboxSrc"
+            class="project-post__lightbox"
+            @click="closeLightbox"
+          >
+            <button class="project-post__lightbox-close" @click="closeLightbox" title="关闭">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </button>
+            <img
+              :src="lightboxSrc"
+              :alt="lightboxAlt"
+              class="project-post__lightbox-img"
+              @click.stop
+            />
+          </div>
+        </Teleport>
       </div>
     </div>
   </AppLayout>
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { Marked } from 'marked'
 import DOMPurify from 'dompurify'
@@ -91,6 +112,26 @@ interface TocItem {
 
 const tocItems = ref<TocItem[]>([])
 const renderedContent = ref('')
+const lightboxSrc = ref<string | null>(null)
+const lightboxAlt = ref('')
+
+function onContentClick(e: MouseEvent) {
+  const target = e.target as HTMLElement
+  if (target.tagName !== 'IMG') return
+  lightboxSrc.value = (target as HTMLImageElement).src
+  lightboxAlt.value = (target as HTMLImageElement).alt
+}
+
+function closeLightbox() {
+  lightboxSrc.value = null
+  lightboxAlt.value = ''
+}
+
+function onKeydown(e: KeyboardEvent) {
+  if (e.key === 'Escape' && lightboxSrc.value) {
+    closeLightbox()
+  }
+}
 
 // Slug function that handles Chinese text
 function slugify(text: string): string {
@@ -164,6 +205,7 @@ function parseAndRender(markdown: string) {
 const baseUrl = import.meta.env.BASE_URL || '/'
 
 onMounted(async () => {
+  document.addEventListener('keydown', onKeydown)
   try {
     const res = await fetch(`${baseUrl}projects-data/projects.json`)
     if (!res.ok) throw new Error(`HTTP ${res.status}`)
@@ -180,6 +222,10 @@ onMounted(async () => {
   } finally {
     loading.value = false
   }
+})
+
+onUnmounted(() => {
+  document.removeEventListener('keydown', onKeydown)
 })
 
 function scrollToHeading(id: string) {
@@ -425,6 +471,65 @@ function scrollToHeading(id: string) {
     :deep(tr:nth-child(even)) {
       background: rgba(0, 0, 0, 0.02);
     }
+
+    :deep(img) {
+      cursor: zoom-in;
+    }
+  }
+
+  // == Image Lightbox ==
+  &__lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: $z-modal;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pj-lb-fadein 0.2s ease;
+  }
+
+  &__lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &__lightbox-img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: $radius-md;
+    box-shadow: 0 16px 64px rgba(0, 0, 0, 0.3);
+    animation: pj-lb-zoomin 0.25s ease;
+  }
+
+  @keyframes pj-lb-fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes pj-lb-zoomin {
+    from { opacity: 0; transform: scale(0.92); }
+    to { opacity: 1; transform: scale(1); }
   }
 
   &__github-btn {
