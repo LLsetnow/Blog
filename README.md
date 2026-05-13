@@ -62,10 +62,7 @@ GITHUB_TOKEN=your_token node tools/fetch-projects.mjs
 
 推送 `main` 分支后，GitHub Actions 自动执行构建并通过 rsync 部署到阿里云 ECS：
 
-```yaml
-# .github/workflows/deploy.yml
-git push main → npm ci → npm run build → rsync dist/ → deploy@ECS:/var/www/blog/
-```
+![CI/CD 流程图](./assert/actions-flow.png)
 
 Nginx 托管静态文件，Let's Encrypt 提供 HTTPS 证书并自动续期。
 
