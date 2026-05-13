@@ -14,7 +14,7 @@
 
 ## 整体架构
 
-![架构图](./assets/architecture.png)
+![架构图](./assert/architecture.png)
 
 ## 技术栈
 
