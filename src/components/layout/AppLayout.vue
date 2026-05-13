@@ -22,6 +22,13 @@
 
     <footer class="app-layout__footer">
       <p>&copy; {{ currentYear }} Akai's Blog. All rights reserved.</p>
+      <div class="app-layout__beian">
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">
+          浙ICP备2026031312号-1
+        </a>
+        <span>|</span>
+        <span>京公网安备 XXXXXXXXXXXX号</span>
+      </div>
     </footer>
   </div>
 </template>
@@ -118,6 +125,25 @@ const currentYear: number = new Date().getFullYear()
     padding: $spacing-lg;
     color: $text-muted;
     font-size: $font-size-sm;
+  }
+
+  &__beian {
+    margin-top: $spacing-sm;
+    font-size: 12px;
+    color: #666;
+
+    a {
+      color: #666;
+      text-decoration: none;
+
+      &:hover {
+        color: $text-primary;
+      }
+    }
+
+    span {
+      margin: 0 5px;
+    }
   }
 }
 </style>
