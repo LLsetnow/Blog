@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prebuild": "node tools/generate-thumbnails.mjs && node tools/optimize-live2d.mjs",
+    "prebuild": "(node tools/fetch-projects.mjs || true) && (node tools/fetch-bilibili-fav.mjs || true) && node tools/generate-thumbnails.mjs && node tools/optimize-live2d.mjs",
     "build": "vue-tsc && npm run prebuild && vite build",
     "preview": "vite preview"
   },

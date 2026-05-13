@@ -11,7 +11,13 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
+      - name: Setup fetch credentials
+        run: echo "${{ secrets.BILIBILI_COOKIES }}" > cookies.txt
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: npm run build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Deploy to ECS
         run: |
           mkdir -p ~/.ssh
