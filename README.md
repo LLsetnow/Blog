@@ -2,6 +2,34 @@
 
 基于 Vue 3 + TypeScript 的个人博客网站，毛玻璃（Glassmorphism）设计风格，支持拖拽布局、3D 悬浮效果、音乐播放、图片画廊等功能。
 
+## 项目概况
+
+| 项目 | 详情 |
+|------|------|
+| **域名** | [akai.ink](https://akai.ink) \| [blog.akai.ink](https://blog.akai.ink) |
+| **服务器** | 阿里云 ECS，上海，Ubuntu 24.04 |
+| **Web 服务** | Nginx 1.24 |
+| **HTTPS** | Let's Encrypt 免费证书，certbot 自动续期 |
+| **CI/CD** | GitHub Actions → rsync 自动部署 |
+
+## 整体架构
+
+```
+git push main
+    │
+    ▼
+GitHub Actions (ubuntu-latest)
+    ├── npm ci            （安装依赖）
+    ├── npm run build     （vue-tsc → 预处理 → vite build）
+    └── rsync dist/ ────► deploy@ECS:/var/www/blog/
+                                    │
+                                    ▼
+                              Nginx (:80/:443)
+                                    │
+                                    ▼
+                          https://akai.ink
+```
+
 ## 技术栈
 
 - **框架**：Vue 3 + TypeScript + Vue Router
@@ -46,11 +74,14 @@ GITHUB_TOKEN=your_token node tools/fetch-projects.mjs
 
 ## 部署
 
-项目通过 GitHub Actions 自动部署到 GitHub Pages：
+推送 `main` 分支后，GitHub Actions 自动执行构建并通过 rsync 部署到阿里云 ECS：
 
-1. 推送 `main` 分支
-2. GitHub Actions 自动执行构建
-3. 发布到 `https://llsetnow.github.io/Blog/`
+```yaml
+# .github/workflows/deploy.yml
+git push main → npm ci → npm run build → rsync dist/ → deploy@ECS:/var/www/blog/
+```
+
+Nginx 托管静态文件，Let's Encrypt 提供 HTTPS 证书并自动续期。
 
 ## 项目结构
 
