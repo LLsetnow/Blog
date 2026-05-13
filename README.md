@@ -14,21 +14,7 @@
 
 ## 整体架构
 
-```
-git push main
-    │
-    ▼
-GitHub Actions (ubuntu-latest)
-    ├── npm ci            （安装依赖）
-    ├── npm run build     （vue-tsc → 预处理 → vite build）
-    └── rsync dist/ ────► deploy@ECS:/var/www/blog/
-                                    │
-                                    ▼
-                              Nginx (:80/:443)
-                                    │
-                                    ▼
-                          https://akai.ink
-```
+![架构图](./assets/architecture.png)
 
 ## 技术栈
 
