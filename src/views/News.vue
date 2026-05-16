@@ -213,7 +213,7 @@ function formatDateTime(dateStr: string): string {
 
   &__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: 1fr;
     gap: $spacing-lg;
   }
 
@@ -288,7 +288,7 @@ function formatDateTime(dateStr: string): string {
     }
 
     &__grid {
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      grid-template-columns: 1fr;
     }
   }
 }
