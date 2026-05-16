@@ -127,7 +127,7 @@ async function main() {
 
   const folders = folderData.data?.list ?? []
   if (folders.length === 0) {
-    console.log('  No favorite folders found.')
+    if (keepExisting('未找到收藏夹（session 可能已过期）')) return
     writeEmpty()
     return
   }
