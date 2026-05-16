@@ -1,10 +1,194 @@
 {
   "date": "2026-05-16",
-  "updatedAt": "2026-05-16T00:00:00+08:00",
+  "updatedAt": "2026-05-16T13:27:11.720Z",
   "sections": [
-    { "name": "AI 技术新闻", "items": [] },
-    { "name": "时政金融新闻", "items": [] },
-    { "name": "AI 学术论文", "items": [] },
-    { "name": "AI 开源项目", "items": [] }
+    {
+      "name": "AI 技术新闻",
+      "items": [
+        {
+          "id": 1,
+          "title": "阿里健康正式发布医学AI助手“氢离子”",
+          "description": "阿里健康发布医学AI助手，聚焦循证医学，采用四层架构并独家接入BMJ集团70本医学期刊十年内容资源。",
+          "url": "https://36kr.com/newsflashes/3811712103423746?f=rss",
+          "stars": null
+        },
+        {
+          "id": 2,
+          "title": "网易新闻、网易小蜜蜂宣布已接入DeepSeek-V4",
+          "description": "网易传媒旗下产品接入DeepSeek-V4大模型，升级新闻资讯分发、智能内容创作、个性化推荐等场景，并推出“校园龙虾养成计划”。",
+          "url": "https://36kr.com/newsflashes/3811663965560329?f=rss",
+          "stars": null
+        },
+        {
+          "id": 3,
+          "title": "OpenAI再次重组高管团队：布罗克曼正式接管产品",
+          "description": "OpenAI联合创始人Greg Brockman将负责公司产品战略和AI基础设施，同时旗下AI编码代理C等产品线进行整合。",
+          "url": "https://36kr.com/newsflashes/3811623947476489?f=rss",
+          "stars": null
+        },
+        {
+          "id": 4,
+          "title": "OpenAI和苹果的“联盟”即将破裂",
+          "description": "OpenAI已聘请外部律所计划对苹果发起违约诉讼，双方自2024年开启的合作可能就此终结。",
+          "url": "https://www.huxiu.com/article/4858946.html?f=rss",
+          "stars": null
+        },
+        {
+          "id": 5,
+          "title": "这一次，不比炫技，比谁更能“干活”",
+          "description": "杭州云栖小镇举办具身智能机器人挑战赛，四足机器人等设备在碎石路等复杂场景中展示实用作业能力，体现AI与机器人融合进展。",
+          "url": "https://www.huxiu.com/article/4858933.html?f=rss",
+          "stars": null
+        },
+        {
+          "id": 6,
+          "title": "长安计划入股千里科技，千里智驾与奥迪推进合作",
+          "description": "千里科技正与长安、奥迪、奇瑞等车企洽谈智能化合作，长安拟入股并搭载其辅助驾驶方案，北汽为确定性外部客户。",
+          "url": "https://36kr.com/p/3810091479293449?f=rss",
+          "stars": null
+        },
+        {
+          "id": 7,
+          "title": "三星电子开发下一代HBM封装技术，或用于智能手机等移动设备",
+          "description": "三星推进下一代高带宽内存（HBM）封装技术研发，有望将其应用于移动设备，支持AI端侧推理。",
+          "url": "https://36kr.com/p/3811265856626440?f=rss",
+          "stars": null
+        },
+        {
+          "id": 8,
+          "title": "前苹果工程师跨界骨传导耳机，独创技术路线，推进AI智能化研发",
+          "description": "苏州索迩电子（Mojawa母公司）完成A+轮融资，资金将用于海外渠道和产品AI智能化研发。",
+          "url": "https://36kr.com/p/3810520138243593?f=rss",
+          "stars": null
+        },
+        {
+          "id": 9,
+          "title": "OpenAI正考虑采取法律手段起诉苹果公司",
+          "description": "据综合新闻，OpenAI计划起诉苹果，涉及双方合作纠纷，引发业界关注。",
+          "url": "https://36kr.com/p/3811265856626440?f=rss",
+          "stars": null
+        },
+        {
+          "id": 10,
+          "title": "36氪联合PureblueAI清蓝发布「2026消费品牌AI推荐力名册」",
+          "description": "名册聚焦AI如何重塑消费品牌推荐力，反映大模型在推荐场景的应用趋势。",
+          "url": "https://36kr.com/p/3810308239465986?f=rss",
+          "stars": null
+        }
+      ]
+    },
+    {
+      "name": "时政金融新闻",
+      "items": [
+        {
+          "id": 1,
+          "title": "综合快讯：英伟达市值超德国GDP、iPhone 17 Pro降价及OpenAI起诉苹果",
+          "description": "当日热点涵盖：央视6000万美元获世界杯版权，英伟达市值超越德国GDP，iPhone 17 Pro系列全线下调1000元，以及OpenAI考虑起诉苹果，反映版权、科技巨头市值、消费电子定价及国际商业竞争等多领域动态。",
+          "url": "https://36kr.com/p/3811265856626440",
+          "stars": null
+        },
+        {
+          "id": 2,
+          "title": "长安计划入股千里科技，千里智驾与奥迪推进合作",
+          "description": "长安汽车拟入股千里科技并搭载其智驾方案，同时千里科技正与奥迪、奇瑞等车企洽谈合作，北汽或成为其最确定的外部客户。此举体现中国车企联合科技公司加速智能化布局的战略趋势。",
+          "url": "https://36kr.com/p/3810091479293449",
+          "stars": null
+        },
+        {
+          "id": 3,
+          "title": "海南自贸港封关以来“零关税”进口货值超过22亿元",
+          "description": "海南自贸港封关后，零关税政策效果显著，累计进口货值已超22亿元。官方表示将进一步优化政策清单、对接国际高标准经贸规则，对区域经济及跨境贸易产生深远影响。",
+          "url": "https://36kr.com/newsflashes/3811800705555975",
+          "stars": null
+        },
+        {
+          "id": 4,
+          "title": "比特币跌破78000美元，日内跌1.42%",
+          "description": "比特币价格下破78000美元关口，单日下跌1.42%，显示全球加密货币市场持续波动，投资者风险偏好再度收紧。",
+          "url": "https://36kr.com/newsflashes/3811773519683330",
+          "stars": null
+        }
+      ]
+    },
+    {
+      "name": "AI 学术论文",
+      "items": [
+        {
+          "id": 1,
+          "title": "FutureSim: Replaying World Events to Evaluate Adaptive Agents",
+          "description": "提出一种通过回放真实世界事件来评估AI代理适应性的新方法，专注于动态开放环境中的性能度量。",
+          "url": "https://arxiv.org/pdf/2605.15188v1",
+          "stars": null
+        },
+        {
+          "id": 2,
+          "title": "Position: Behavioural Assurance Cannot Verify the Safety Claims Governance Now Demands",
+          "description": "论证行为保证方法无法满足当前AI治理框架所需的安全验证要求，对政策制定具有警示意义。",
+          "url": "https://arxiv.org/pdf/2605.15164v1",
+          "stars": null
+        },
+        {
+          "id": 3,
+          "title": "Causal Forcing++: Scalable Few-Step Autoregressive Diffusion Distillation for Real-Time Interactive Video Generation",
+          "description": "提出一种因果强制机制结合扩散蒸馏的方法，实现了低延迟、流式可控的实时交互视频生成。",
+          "url": "https://arxiv.org/pdf/2605.15141v1",
+          "stars": null
+        },
+        {
+          "id": 4,
+          "title": "Understanding How International Students in the U.S. Are Using Conversational AI to Support Cross-Cultural Adaptation",
+          "description": "调查美国国际学生如何利用对话式AI辅助跨文化适应，揭示了AI在人文关怀领域的实际应用价值。",
+          "url": "https://arxiv.org/pdf/2605.15127v1",
+          "stars": null
+        },
+        {
+          "id": 5,
+          "title": "Usable but Conventional: An Empirical Study on the UX of AI-Generated Interface Prototypes",
+          "description": "通过92位参与者的实证研究，评估AI生成界面原型与传统设计在用户体验上的差异，发现可用性虽高但创新性不足。",
+          "url": "https://arxiv.org/pdf/2605.15124v1",
+          "stars": null
+        }
+      ]
+    },
+    {
+      "name": "AI 开源项目",
+      "items": [
+        {
+          "id": 1,
+          "title": "WatchSnap",
+          "description": "AI驱动的腕表真伪鉴定应用，通过图像识别技术自动验证手表身份。",
+          "url": "https://github.com/EyaTtalias/watchsnap",
+          "stars": 0
+        },
+        {
+          "id": 2,
+          "title": "FinBridge",
+          "description": "AI赋能的金融数据交换平台，支持Claude Vision发票提取、会计师审核工作流及财务报告生成。",
+          "url": "https://github.com/NaveedSuhail17/FinBridge",
+          "stars": 0
+        },
+        {
+          "id": 3,
+          "title": "Farhodoff/study_planner",
+          "description": "智能学习管理平台，结合AI优化生产力、游戏化体验，专注提升学习效果。",
+          "url": "https://github.com/Farhodoff/study_planner",
+          "stars": 2
+        },
+        {
+          "id": 4,
+          "title": "mila1515/hospital-risk-prediction",
+          "description": "医院患者风险预测AI管道，集成ETL与智能监控面板，专注医疗健康分析。",
+          "url": "https://github.com/mila1515/hospital-risk-prediction",
+          "stars": 0
+        },
+        {
+          "id": 5,
+          "title": "tienlt2406/browser-pilot",
+          "description": "浏览器AI助手，理解网页内容并自动化复杂交互，提升在线体验效率。",
+          "url": "https://github.com/tienlt2406/browser-pilot",
+          "stars": 0
+        }
+      ]
+    }
   ]
 }
