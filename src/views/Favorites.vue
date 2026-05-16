@@ -57,7 +57,7 @@
           <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
         </svg>
         <p class="favorites__empty-text">暂无收藏</p>
-        <p class="favorites__empty-hint">请先在项目根目录放置 cookies.txt 后重新构建</p>
+        <p class="favorites__empty-hint">部署后自动从 B站 拉取，请稍后刷新</p>
       </div>
 
       <div v-else>
