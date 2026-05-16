@@ -5,6 +5,7 @@
  * Output: public/bilibili-fav/favorites.json
  *
  * Requires cookies.txt in Netscape format in the project root.
+ * Fault-tolerant: keeps existing data on any failure.
  */
 
 import fs from 'node:fs'
@@ -14,12 +15,33 @@ import { fileURLToPath } from 'node:url'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const ROOT_DIR = path.resolve(__dirname, '..')
 const OUTPUT_DIR = path.join(ROOT_DIR, 'public/bilibili-fav')
+const OUTPUT_FILE = path.join(OUTPUT_DIR, 'favorites.json')
 const COOKIE_PATH = path.join(ROOT_DIR, 'cookies.txt')
 
 const USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
 const REFERER = 'https://www.bilibili.com/'
 
-// ---------- cookie parser ----------
+// ---------- helpers ----------
+
+function keepExisting(reason) {
+  if (fs.existsSync(OUTPUT_FILE)) {
+    try {
+      const existing = JSON.parse(fs.readFileSync(OUTPUT_FILE, 'utf-8'))
+      if (existing && existing.videos && existing.videos.length > 0) {
+        console.warn(`⚠ ${reason}，保留现有 ${existing.videos.length} 条收藏数据`)
+        return true
+      }
+    } catch {}
+  }
+  console.warn(`⚠ ${reason}，无可用缓存`)
+  return false
+}
+
+function writeEmpty() {
+  fs.mkdirSync(OUTPUT_DIR, { recursive: true })
+  fs.writeFileSync(OUTPUT_FILE, JSON.stringify({ folder: null, videos: [], updated_at: new Date().toISOString() }, null, 2))
+  console.log(`✓ ${OUTPUT_FILE} (empty placeholder)`)
+}
 
 function parseNetscapeCookies(filePath) {
   const text = fs.readFileSync(filePath, 'utf-8')
@@ -27,7 +49,6 @@ function parseNetscapeCookies(filePath) {
   for (const line of text.split('\n')) {
     const trimmed = line.trim()
     if (!trimmed || trimmed.startsWith('#')) continue
-    // format: domain flag path secure expires name value
     const parts = trimmed.split('\t')
     if (parts.length < 7) continue
     const name = parts[5]
@@ -62,38 +83,52 @@ async function apiJson(url, cookies, params = {}) {
 // ---------- main ----------
 
 async function main() {
+  // Check cookies
   if (!fs.existsSync(COOKIE_PATH)) {
-    console.error('✗ cookies.txt not found in project root')
-    process.exit(1)
+    if (keepExisting('cookies.txt 未找到')) return
+    writeEmpty()
+    return
   }
 
   console.log('Parsing cookies …')
-  const cookies = parseNetscapeCookies(COOKIE_PATH)
+  let cookies
+  try {
+    cookies = parseNetscapeCookies(COOKIE_PATH)
+  } catch (e) {
+    if (keepExisting('cookies.txt 解析失败')) return
+    writeEmpty()
+    return
+  }
 
   const uid = cookies['DedeUserID']
   if (!uid) {
-    console.error('✗ DedeUserID cookie not found — session may be expired')
-    process.exit(1)
+    if (keepExisting('DedeUserID cookie 未找到（session 可能已过期）')) return
+    writeEmpty()
+    return
   }
   console.log(`  uid: ${uid}`)
 
   // Step 1: get favorite folder list
   console.log('\nFetching favorite folders …')
-  const folderUrl = 'https://api.bilibili.com/x/v3/fav/folder/created/list-all'
-  const folderData = await apiJson(folderUrl, cookies, { type: 2, up_mid: uid })
+  let folderData
+  try {
+    folderData = await apiJson('https://api.bilibili.com/x/v3/fav/folder/created/list-all', cookies, { type: 2, up_mid: uid })
+  } catch (e) {
+    if (keepExisting(`获取收藏夹列表失败: ${e.message}`)) return
+    writeEmpty()
+    return
+  }
 
   if (folderData.code !== 0) {
-    console.error(`✗ API error ${folderData.code}: ${folderData.message}`)
-    console.error('  Cookie may have expired. Update cookies.txt from browser.')
-    process.exit(1)
+    if (keepExisting(`B站 API 错误 ${folderData.code}: ${folderData.message}`)) return
+    writeEmpty()
+    return
   }
 
   const folders = folderData.data?.list ?? []
   if (folders.length === 0) {
     console.log('  No favorite folders found.')
-    fs.mkdirSync(OUTPUT_DIR, { recursive: true })
-    fs.writeFileSync(path.join(OUTPUT_DIR, 'favorites.json'), JSON.stringify({ folders: [], videos: [] }, null, 2))
-    console.log(`\n✓ ${OUTPUT_DIR}/favorites.json (empty)`)
+    writeEmpty()
     return
   }
 
@@ -104,38 +139,48 @@ async function main() {
   const folder = folders[0]
   console.log(`\nFetching videos from "${folder.title}" …`)
 
-  // Step 2: fetch all videos (rate-limited to ~60 req/min to avoid tripwire)
-  const resourceUrl = 'https://api.bilibili.com/x/v3/fav/resource/list'
+  // Step 2: fetch all videos (rate-limited)
   const allMedias = []
   const totalPages = Math.ceil(folder.media_count / 20)
 
-  for (let pn = 1; ; pn++) {
-    const resourceData = await apiJson(resourceUrl, cookies, {
-      media_id: folder.id,
-      ps: 20,
-      pn,
-      platform: 'web',
-    })
+  try {
+    for (let pn = 1; ; pn++) {
+      const resourceData = await apiJson('https://api.bilibili.com/x/v3/fav/resource/list', cookies, {
+        media_id: folder.id,
+        ps: 20,
+        pn,
+        platform: 'web',
+      })
 
-    if (resourceData.code !== 0) {
-      console.error(`✗ API error ${resourceData.code}: ${resourceData.message}`)
-      process.exit(1)
+      if (resourceData.code !== 0) {
+        throw new Error(`API error ${resourceData.code}: ${resourceData.message}`)
+      }
+
+      const pageItems = resourceData.data?.medias ?? []
+      allMedias.push(...pageItems)
+      process.stdout.write(`\r  page ${pn}/${totalPages}  (${allMedias.length} / ${folder.media_count})`)
+
+      if (!resourceData.data?.has_more || pageItems.length === 0) break
+
+      await new Promise((r) => setTimeout(r, 1200))
     }
-
-    const pageItems = resourceData.data?.medias ?? []
-    allMedias.push(...pageItems)
-    process.stdout.write(`\r  page ${pn}/${totalPages}  (${allMedias.length} / ${folder.media_count})`)
-
-    if (!resourceData.data?.has_more || pageItems.length === 0) break
-
-    // 1.2s delay between pages to stay under B站 rate limit
-    await new Promise((r) => setTimeout(r, 1200))
+  } catch (e) {
+    console.error(`\n✗ 获取视频列表失败: ${e.message}`)
+    if (allMedias.length > 0) {
+      console.warn(`  已获取 ${allMedias.length} 条，保存部分数据`)
+    } else {
+      if (keepExisting('无新数据')) return
+      writeEmpty()
+      return
+    }
   }
 
   const medias = allMedias
   console.log(`\n  Got ${medias.length} video(s)`)
-  medias.slice(0, 5).forEach((m, i) => console.log(`    ${i + 1}. [${m.title}] BV${m.bvid} — ${m.upper?.name}`))
-  if (medias.length > 5) console.log(`    ... and ${medias.length - 5} more`)
+  if (medias.length > 0) {
+    medias.slice(0, 5).forEach((m, i) => console.log(`    ${i + 1}. [${m.title}] BV${m.bvid} — ${m.upper?.name}`))
+    if (medias.length > 5) console.log(`    ... and ${medias.length - 5} more`)
+  }
 
   // Build output
   const videos = medias.map((m) => ({
@@ -173,9 +218,27 @@ async function main() {
   }
 
   fs.mkdirSync(OUTPUT_DIR, { recursive: true })
-  fs.writeFileSync(path.join(OUTPUT_DIR, 'favorites.json'), JSON.stringify(output, null, 2))
-  console.log(`\n✓ ${OUTPUT_DIR}/favorites.json`)
+  const tmp = OUTPUT_FILE + '.tmp'
+  fs.writeFileSync(tmp, JSON.stringify(output, null, 2))
+  // Validate before rename
+  JSON.parse(fs.readFileSync(tmp, 'utf-8'))
+  fs.renameSync(tmp, OUTPUT_FILE)
+  console.log(`\n✓ ${OUTPUT_FILE}  (${videos.length} videos)`)
   console.log('Done.')
 }
 
-main().catch((e) => { console.error(e); process.exit(1) })
+main().catch((e) => {
+  console.error(e)
+  // Last-resort: keep existing data
+  if (fs.existsSync(OUTPUT_FILE)) {
+    try {
+      const existing = JSON.parse(fs.readFileSync(OUTPUT_FILE, 'utf-8'))
+      if (existing && existing.videos && existing.videos.length > 0) {
+        console.warn(`⚠ 发生未预期错误，保留现有 ${existing.videos.length} 条收藏数据`)
+        process.exit(0)
+      }
+    } catch {}
+  }
+  writeEmpty()
+  process.exit(0)
+})
