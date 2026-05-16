@@ -68,3 +68,25 @@ export interface ProjectItem {
   url: string
   content: string
 }
+
+/** Single news item */
+export interface NewsItem {
+  id: number
+  title: string
+  description: string
+  url: string
+  stars: number | null
+}
+
+/** A section (category) of news items */
+export interface NewsSection {
+  name: string
+  items: NewsItem[]
+}
+
+/** Top-level news data structure */
+export interface NewsData {
+  date: string
+  updatedAt: string
+  sections: NewsSection[]
+}
