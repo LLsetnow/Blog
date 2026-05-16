@@ -10,6 +10,7 @@
           <router-link to="/" class="app-layout__nav-item">首页</router-link>
           <router-link to="/blog" class="app-layout__nav-item">博客</router-link>
           <router-link to="/projects" class="app-layout__nav-item">项目</router-link>
+          <router-link to="/news" class="app-layout__nav-item">新闻</router-link>
           <router-link to="/about" class="app-layout__nav-item">关于</router-link>
           <router-link to="/favorites" class="app-layout__nav-item">收藏</router-link>
         </nav>
