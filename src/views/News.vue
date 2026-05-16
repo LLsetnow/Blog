@@ -234,7 +234,7 @@ function formatDateTime(dateStr: string): string {
   }
 
   &__card-title {
-    font-size: $font-size-lg;
+    font-size: 22px;
     font-weight: 600;
     color: $text-primary;
     line-height: 1.4;
@@ -258,7 +258,7 @@ function formatDateTime(dateStr: string): string {
 
   &__card-description {
     color: $text-secondary;
-    font-size: $font-size-sm;
+    font-size: $font-size-lg;
     line-height: 1.6;
     margin: 0;
     display: -webkit-box;
@@ -276,7 +276,7 @@ function formatDateTime(dateStr: string): string {
     background: rgba($accent-primary, 0.25);
     color: #4a8ba8;
     font-weight: 500;
-    font-size: $font-size-xs;
+    font-size: $font-size-sm;
   }
 }
 
