@@ -290,7 +290,7 @@ function onCoverError(e: Event): void {
 
 onMounted(async () => {
   try {
-    const res = await fetch(`${baseUrl}bilibili-fav/favorites.json`)
+    const res = await fetch(`${baseUrl}bilibili-fav/favorites.json?t=${Date.now()}`)
     if (!res.ok) throw new Error(`HTTP ${res.status}`)
     data.value = await res.json()
   } catch (e) {

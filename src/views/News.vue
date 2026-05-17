@@ -102,7 +102,7 @@ const baseUrl = import.meta.env.BASE_URL || '/'
 
 onMounted(async () => {
   try {
-    const res = await fetch(`${baseUrl}news/today.json`)
+    const res = await fetch(`${baseUrl}news/today.json?t=${Date.now()}`)
     if (!res.ok) throw new Error(`HTTP ${res.status}`)
     data.value = await res.json()
   } catch (e: any) {
