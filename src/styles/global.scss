@@ -67,3 +67,10 @@ a {
 .glass-card {
   @include glass-card;
 }
+
+// Mobile tap highlight suppression
+@media (max-width: $breakpoint-md) {
+  button, a, [role="button"] {
+    -webkit-tap-highlight-color: transparent;
+  }
+}

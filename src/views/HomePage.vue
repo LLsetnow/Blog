@@ -8,22 +8,41 @@
         </TiltEffect>
       </div>
 
-      <!-- Calendar -->
-      <div class="home-page__cell" :style="getWidgetStyle('calendar')">
+      <!-- Calendar (hidden on mobile) -->
+      <div v-if="!isMobile" class="home-page__cell" data-widget="calendar" :style="getWidgetStyle('calendar')">
         <TiltEffect :disabled="isDragMode">
           <CalendarWidget />
         </TiltEffect>
       </div>
 
-      <!-- GitHub -->
-      <div class="home-page__cell" :style="getWidgetStyle('github')">
+      <!-- GitHub + Email + WeChat (horizontal row on mobile) -->
+      <div class="home-page__icon-row">
+        <div class="home-page__cell" :style="getWidgetStyle('github')">
+          <TiltEffect :disabled="isDragMode">
+            <GitHubCard />
+          </TiltEffect>
+        </div>
+        <div class="home-page__cell" :style="getWidgetStyle('email')">
+          <TiltEffect :disabled="isDragMode">
+            <EmailWidget />
+          </TiltEffect>
+        </div>
+        <div class="home-page__cell" :style="getWidgetStyle('wechat')">
+          <TiltEffect :disabled="isDragMode">
+            <WeChatWidget />
+          </TiltEffect>
+        </div>
+      </div>
+
+      <!-- Nav (horizontal on mobile) -->
+      <div v-if="!navCollapsed" class="home-page__cell home-page__nav-cell" data-widget="nav" :style="getWidgetStyle('nav')">
         <TiltEffect :disabled="isDragMode">
-          <GitHubCard />
+          <NavMenu @collapse="navCollapsed = true" />
         </TiltEffect>
       </div>
 
-      <!-- Clock -->
-      <div class="home-page__cell" :style="getWidgetStyle('clock')">
+      <!-- Clock (hidden on mobile) -->
+      <div v-if="!isMobile" class="home-page__cell" :style="getWidgetStyle('clock')">
         <TiltEffect :disabled="isDragMode">
           <ClockWidget />
         </TiltEffect>
@@ -51,29 +70,8 @@
       <!-- Music Player (position anchor for global player) -->
       <div data-widget="music" class="home-page__cell" :style="getWidgetStyle('music')" />
 
-      <!-- Nav -->
-      <div v-if="!navCollapsed" class="home-page__cell" :style="getWidgetStyle('nav')">
-        <TiltEffect :disabled="isDragMode">
-          <NavMenu @collapse="navCollapsed = true" />
-        </TiltEffect>
-      </div>
-
-      <!-- Email -->
-      <div class="home-page__cell" :style="getWidgetStyle('email')">
-        <TiltEffect :disabled="isDragMode">
-          <EmailWidget />
-        </TiltEffect>
-      </div>
-
-      <!-- WeChat -->
-      <div class="home-page__cell" :style="getWidgetStyle('wechat')">
-        <TiltEffect :disabled="isDragMode">
-          <WeChatWidget />
-        </TiltEffect>
-      </div>
-
-      <!-- Settings button -->
-      <button v-if="!navCollapsed" class="home-page__settings-btn" @click="openSettings">
+      <!-- Settings button (hidden on mobile) -->
+      <button v-if="!navCollapsed && !isMobile" class="home-page__settings-btn" @click="openSettings">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="12" cy="12" r="3"/>
           <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
@@ -123,7 +121,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, defineAsyncComponent, onMounted, ref, watch } from 'vue'
+import { computed, defineAsyncComponent, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import type { WidgetLayout } from '@/types'
 import GreetingCard from '@/components/home/GreetingCard.vue'
@@ -164,6 +162,16 @@ const { toasts } = useToast()
 
 const navCollapsed = ref(false)
 const showLive2D = ref(false)
+const isMobile = ref(window.innerWidth < 768)
+
+function onResize() {
+  isMobile.value = window.innerWidth < 768
+}
+window.addEventListener('resize', onResize)
+
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', onResize)
+})
 
 onMounted(() => {
   // Defer Live2D loading to avoid blocking first paint
@@ -355,6 +363,71 @@ function dragHandleStyle(w: WidgetLayout): Record<string, string> {
       &:hover {
         background: rgba(255, 255, 255, 0.8);
       }
+    }
+  }
+}
+
+// Mobile: switch from absolute canvas to flex column
+@media (max-width: $breakpoint-md) {
+  .home-page {
+    overflow-x: hidden;
+
+    &::before {
+      flex: 0;
+    }
+
+    &__container {
+      width: 100%;
+      position: static;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      padding: 16px 16px 80px;
+      min-height: auto;
+    }
+
+    &__cell {
+      position: static !important;
+      left: auto !important;
+      top: auto !important;
+      width: auto !important;
+      height: auto !important;
+    }
+
+    &__icon-row {
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+      justify-content: center;
+
+      .home-page__cell {
+        flex: 1;
+        min-width: 0;
+        max-width: 100px;
+      }
+    }
+
+    [data-widget="music"] {
+      min-height: 160px;
+    }
+
+    &__nav-cell :deep(.nav-menu) {
+      flex-direction: row;
+      padding: 6px;
+      gap: 4px;
+    }
+
+    &__nav-cell :deep(.nav-menu__item) {
+      flex: 1;
+      padding: 12px 4px;
+      border-radius: 14px;
+      justify-content: center;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    &__nav-cell :deep(.nav-menu__label) {
+      font-size: 13px;
     }
   }
 }

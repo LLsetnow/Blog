@@ -285,22 +285,93 @@ function formatDateTime(dateStr: string): string {
     &__header {
       flex-direction: column;
       align-items: flex-start;
+      margin-bottom: $spacing-md;
+    }
+
+    &__title {
+      font-size: $font-size-xl;
+    }
+
+    &__date {
+      font-size: $font-size-sm;
+    }
+
+    &__tags {
+      margin-bottom: $spacing-md;
+    }
+
+    &__tag {
+      padding: 8px 16px;
+      min-height: 36px;
+      display: inline-flex;
+      align-items: center;
     }
 
     &__grid {
-      grid-template-columns: 1fr;
+      gap: $spacing-md;
+    }
+
+    &__card-title {
+      font-size: $font-size-lg;
+    }
+
+    &__card-description {
+      font-size: $font-size-base;
+      -webkit-line-clamp: 4;
+    }
+
+    &__loading,
+    &__error,
+    &__empty {
+      padding: $spacing-xl;
     }
   }
 }
 
 @media (max-width: $breakpoint-sm) {
   .news {
-    &__grid {
-      grid-template-columns: 1fr;
+    &__header {
+      gap: $spacing-xs;
+    }
+
+    &__title {
+      font-size: 22px;
+    }
+
+    &__header-titles {
+      gap: $spacing-xs;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__tags {
+      gap: $spacing-xs;
     }
 
     &__tag {
-      padding: 4px 12px;
+      padding: 6px 14px;
+      font-size: 13px;
+      min-height: 32px;
+    }
+
+    &__grid {
+      gap: $spacing-sm;
+    }
+
+    &__card {
+      padding: $spacing-md;
+    }
+
+    &__card-title {
+      font-size: 17px;
+    }
+
+    &__card-description {
+      font-size: $font-size-sm;
+      -webkit-line-clamp: 5;
+    }
+
+    &__card-category {
       font-size: $font-size-xs;
     }
   }

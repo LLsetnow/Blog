@@ -88,12 +88,16 @@ function initPosition() {
 
 onMounted(() => {
   window.addEventListener('resize', onResize)
+  window.addEventListener('scroll', onScroll, { passive: true })
   initPosition()
 })
 
-onUnmounted(() => window.removeEventListener('resize', onResize))
+onUnmounted(() => {
+  window.removeEventListener('resize', onResize)
+  window.removeEventListener('scroll', onScroll)
+})
 
-// ── Resize ──
+// ── Resize / Scroll ──
 
 function onResize() {
   if (route.path === '/') {
@@ -101,6 +105,16 @@ function onResize() {
   } else {
     syncToCorner()
   }
+}
+
+let scrollRaf = 0
+function onScroll() {
+  if (route.path !== '/') return
+  if (scrollRaf) return
+  scrollRaf = requestAnimationFrame(() => {
+    scrollRaf = 0
+    syncToGrid()
+  })
 }
 </script>
 
