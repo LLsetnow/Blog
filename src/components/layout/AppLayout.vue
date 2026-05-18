@@ -53,6 +53,7 @@
         </a>
         <span>|</span>
         <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33019202002996" target="_blank" rel="noopener noreferrer">
+          <img src="/assets/备案图标.png" class="app-layout__beian-icon" alt="公安备案" />
           浙公网安备33019202002996号
         </a>
       </div>
@@ -179,6 +180,13 @@ watch(() => route.path, () => {
 
     span {
       margin: 0 5px;
+    }
+
+    &-icon {
+      width: 16px;
+      height: 16px;
+      vertical-align: -3px;
+      margin-right: 2px;
     }
   }
 
