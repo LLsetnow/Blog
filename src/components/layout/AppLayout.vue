@@ -48,7 +48,7 @@
     <footer class="app-layout__footer">
       <p>&copy; {{ currentYear }} Akai's Blog. All rights reserved.</p>
       <div class="app-layout__beian">
-        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">
+        <a href="https://beian.miit.gov.cn/#/Integrated/recordQuery?keyword=%E6%B5%99ICP%E5%A4%872026031312%E5%8F%B7-1" target="_blank" rel="noopener noreferrer">
           浙ICP备2026031312号-1
         </a>
         <span>|</span>
