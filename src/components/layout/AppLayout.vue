@@ -52,7 +52,9 @@
           浙ICP备2026031312号-1
         </a>
         <span>|</span>
-        <span>浙公网安备33019202002996号</span>
+        <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33019202002996" target="_blank" rel="noopener noreferrer">
+          浙公网安备33019202002996号
+        </a>
       </div>
     </footer>
   </div>
