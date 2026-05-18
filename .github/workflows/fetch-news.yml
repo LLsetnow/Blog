@@ -48,6 +48,18 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Commit news data to repo
+        run: |
+          git config user.name "news-bot"
+          git config user.email "news-bot@users.noreply.github.com"
+          git add public/news/today.json
+          if git diff --cached --quiet; then
+            echo "No news changes to commit"
+          else
+            git commit -m "chore: update daily news data"
+            git push
+          fi
+
       - name: Deploy to ECS
         run: |
           mkdir -p ~/.ssh
