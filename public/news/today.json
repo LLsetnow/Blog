@@ -1,76 +1,76 @@
 {
-  "date": "2026-05-18",
+  "date": "2026-05-19",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "百度：一季度营收321亿元，AI业务收入136亿元",
-          "description": "百度发布一季度财报，AI业务收入136亿元，同时旗下索辰科技物理AI业务尚处布局初期。",
-          "url": "https://36kr.com/p/3814695536336387?f=rss",
+          "title": "鲸跃动力获星海图数千万元种子轮投资，用「数据+模型+末端执行」打造开箱即用的Robo Labor",
+          "description": "鲸跃动力以数据、模型和末端执行为核心，提供可订阅、弹性扩容的机器人劳动力（Robo Labor），替代人类从事高危、繁重等工作。",
+          "url": "https://36kr.com/p/3814860909600261?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "番茄小说正推动 AI 动漫上院线，开放头部IP改编权限",
-          "description": "字节旗下番茄小说推动AI动漫上院线，开放头部IP改编权限，探索AIGC在影视领域的商业化。",
-          "url": "https://36kr.com/p/3810598875307780?f=rss",
+          "title": "高瓴出手了一家AI体育科技公司，曾获李泽湘天使轮融资｜硬氪首发",
+          "description": "AI体育科技公司SportVision完成天使+轮融资，高瓴创投领投，资金将用于核心技术和AI网球训练相机的研发与量产。",
+          "url": "https://36kr.com/p/3805660478184966?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "对话万成云商：发文章≠GEO优化，大模型不是喂什么就推什么",
-          "description": "探讨GEO（生成引擎优化）与大模型的关系，指出大模型并非简单喂数据，而是需要精细优化。",
-          "url": "https://36kr.com/p/3814337101111044?f=rss",
+          "title": "氪星晚报 ｜百度：一季度营收321亿元，AI业务收入136亿元",
+          "description": "百度一季度AI业务收入达136亿元，同时索辰科技披露物理AI业务尚处布局初期，显示AI业务在财报中的重要性。",
+          "url": "https://36kr.com/p/3814695536336387?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "科士达：液冷相关产品当前形成收入占公司整体收入规模不到1%",
-          "description": "科士达公告提示AIDC概念风险，液冷产品收入占比低，但引发市场对AI数据中心冷却技术的关注。",
-          "url": "https://36kr.com/newsflashes/3814803728097030?f=rss",
+          "title": "番茄小说正推动 AI 动漫上院线，开放头部IP改编权限｜36氪独家",
+          "description": "字节跳动旗下番茄小说推动AI动漫上院线，开放头部IP改编权限，探索AIGC在影视内容领域的商业化。",
+          "url": "https://36kr.com/p/3810598875307780?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "何立峰会见美国超威半导体公司董事会主席兼首席执行官苏姿丰",
-          "description": "国务院副总理何立峰会见AMD CEO苏姿丰，讨论中美经贸合作，AMD在AI芯片领域扮演关键角色。",
-          "url": "https://36kr.com/newsflashes/3814802899230465?f=rss",
+          "title": "Agent、多模态、应用、算力一天看尽，峰会亮点在此｜5.20日，来现场一起AI",
+          "description": "报道聚焦即将到来的AI峰会，盘点Agent、多模态、应用和算力等热门技术方向，为行业提供前瞻视角。",
+          "url": "https://36kr.com/p/3814408307711492?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "670亿美元创下“史上最大电力收购案”，新纪元能源吞并道明尼能源剑指AI算力电网霸主",
-          "description": "新纪元能源以670亿美元收购道明尼能源，打造巨型公用事业公司以满足AI设施电力需求。",
-          "url": "https://36kr.com/newsflashes/3814800262373120?f=rss",
+          "title": "对话万成云商：发文章≠GEO优化，大模型不是喂什么就推什么",
+          "description": "探讨大模型在搜索优化中的应用，指出GEO需超越传统发文章模式，强调大模型理解与推理的复杂性。",
+          "url": "https://36kr.com/p/3814337101111044?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "京东：今年京东体系的AI相关研发投入增长将超200%",
-          "description": "京东宣布6·18首次全场景融入AI，AI研发投入增长超200%，并构建了多行业垂类大模型。",
-          "url": "https://36kr.com/newsflashes/3814777548627719?f=rss",
+          "title": "酷赛智能亮相全球人工智能终端展，斩获“最佳人气产品奖”",
+          "description": "酷赛智能展示AI NAS、AI桌面机器人、AI萌宠助手等产品，凭借软硬件融合创新获行业认可。",
+          "url": "https://36kr.com/newsflashes/3815848452611842?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "网易有道旗下多项产品服务接入DeepSeek-V4",
-          "description": "网易有道宣布词典、翻译、AI答疑笔等产品全面接入DeepSeek-V4大模型，升级AI学习体验。",
-          "url": "https://36kr.com/newsflashes/3814758816587523?f=rss",
+          "title": "渣打银行拟未来四年裁员超7000人，加速采用人工智能",
+          "description": "渣打银行计划裁员7000人以加速AI应用，成为首批正式公布大规模裁员计划以拥抱AI的大型银行之一。",
+          "url": "https://36kr.com/newsflashes/3815838410202633?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "百度：其他没指望，全靠昆仑芯了",
-          "description": "分析百度Q1业绩，强调AI云、昆仑芯等业务是百度未来增长关键，芯片战略受关注。",
-          "url": "https://www.huxiu.com/article/4859386.html?f=rss",
+          "title": "月之暗面据悉将重组公司架构，为香港IPO铺路",
+          "description": "AI大模型公司月之暗面传闻将重组架构以筹备香港上市，反映AI创业公司在资本市场的动向。",
+          "url": "https://36kr.com/newsflashes/3815835235557127?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "好莱坞合同vs中国的个案：在AI替代潮中，人类“席位”的两种保卫战",
-          "description": "对比中美在AI替代艺人和版权方面的争议，涉及爱奇艺AI艺人库及美国演员工会谈判。",
-          "url": "https://www.huxiu.com/article/4859363.html?f=rss",
+          "title": "9000亿天价索赔微软、OpenAI失败，马斯克输了，原因只有一个……",
+          "description": "马斯克对OpenAI和微软的9000亿天价索赔因诉讼时效被法院驳回，此案引发对AI开源与商业化的广泛讨论。",
+          "url": "https://www.huxiu.com/article/4859532.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "4月社零点评：消费怎么办？",
-          "description": "4月社会消费品零售总额同比仅增长0.2%，创2022年后最差月度表现，线上实物增速也仅0.2%，显示消费压力明显加大。",
-          "url": "https://www.huxiu.com/article/4859384.html?f=rss",
+          "title": "渣打银行拟未来四年裁员超7000人，加速采用人工智能",
+          "description": "渣打银行宣布计划在未来四年内裁员超过7000人，以加速人工智能应用并精简运营，成为首批正式公布大规模裁员计划的大型全球银行之一。",
+          "url": "https://36kr.com/newsflashes/3815838410202633?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "证监会李超：更大力度支持科技创新与北交所改革",
-          "description": "证监会副主席李超提出支持上市公司用好并购重组、科创板改革等政策红利，并强调北交所改革方向，以服务科技创新与产业融合。",
-          "url": "https://36kr.com/newsflashes/3814771815046918?f=rss",
+          "title": "月之暗面据悉将重组公司架构，为香港IPO铺路",
+          "description": "市场消息称，AI初创公司月之暗面（Moonshot AI）计划重组架构，为赴香港上市做准备。",
+          "url": "https://36kr.com/newsflashes/3815835235557127?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "何立峰会见美国超威半导体公司董事会主席兼首席执行官苏姿丰",
-          "description": "国务院副总理何立峰会见AMD CEO，指出中美元首会晤达成重要共识，将推动两国经贸合作，为半导体领域注入确定性。",
-          "url": "https://36kr.com/newsflashes/3814802899230465?f=rss",
+          "title": "本周47只新基密集启募，权益产品占比超七成",
+          "description": "公募排排网数据显示，本周共有47只新基金开启募集，创近18周新高，其中权益基金34只，科技主题基金数量最多。",
+          "url": "https://36kr.com/newsflashes/3815825380679427?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "这个男人上台，黄金美股狂跌",
-          "description": "新任美联储主席凯文·沃什获提名后，全球市场剧烈反应：黄金跌、美股调整、美元上涨，市场在测试其政策边界。",
-          "url": "https://www.huxiu.com/article/4859373.html?f=rss",
+          "title": "科创50指数午后涨超2%",
+          "description": "36氪获悉，科创50指数在5月19日下午交易时段涨幅超过2%，显示科技板块走强。",
+          "url": "https://36kr.com/newsflashes/3815822254268166?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "670亿美元创下“史上最大电力收购案”，新纪元能源吞并道明尼能源剑指AI算力电网霸主",
-          "description": "新纪元能源以约670亿美元股票收购道明尼能源，组成从佛罗里达延伸至弗吉尼亚的电力巨头，满足AI设施电力需求。",
-          "url": "https://36kr.com/newsflashes/3814800262373120?f=rss",
+          "title": "韩国央行估计三星罢工造成损失达30万亿韩元",
+          "description": "韩国央行官员表示，若三星电子发生全面罢工，可能导致韩国今年GDP下降0.5个百分点，损失约30万亿韩元（约200亿美元）。",
+          "url": "https://36kr.com/newsflashes/3815816967396865?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "氪星晚报 ｜百度：一季度营收321亿元，AI业务收入136亿元",
-          "description": "百度发布Q1财报，营收321亿元，AI业务收入136亿元，展示其AI云和昆仑芯等新业务板块增长情况。",
-          "url": "https://36kr.com/p/3814695536336387?f=rss",
+          "title": "中韩半导体ETF再提示溢价风险，年内已提示140次",
+          "description": "中韩半导体ETF华泰柏瑞再次发布溢价风险提示，该ETF年内已累计提示140次，盘中溢价率仍超过23%。",
+          "url": "https://36kr.com/newsflashes/3815813667086080?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "又诞生一位千亿女富豪",
-          "description": "立讯精密股价4月以来上涨超55%，市值创历史新高5542亿元，董事长王来春持股市值突破千亿元，成为白手起家女首富。",
-          "url": "https://36kr.com/p/3813040859258373?f=rss",
+          "title": "腾讯音乐正式“吞下”喜马拉雅，交易额最高12.6亿美元",
+          "description": "腾讯音乐宣布对喜马拉雅的并购交易正式完成交割，交易总额最高为12.6亿美元，重塑在线音频行业格局。",
+          "url": "https://www.huxiu.com/article/4859533.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "京东：今年京东体系的AI相关研发投入增长将超200%",
-          "description": "京东宣布2026年618将首次全场景融入AI，AI研发投入同比增超200%，已构建全栈AI产品矩阵和多个垂直大模型。",
-          "url": "https://36kr.com/newsflashes/3814777548627719?f=rss",
+          "title": "虚拟电厂是什么？中国三大数据中心首次以虚拟电厂身份进入电力现货市场",
+          "description": "三大数据中心首次以虚拟电厂形式参与电力现货市场交易，此举可能影响电费、AI服务及双碳目标落地。",
+          "url": "https://www.huxiu.com/article/4858994.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "铝加工行业订单爆了，多家铝加工企业已经开启了新一轮的产能扩张",
-          "description": "今年以来铝加工行业产销两旺，新能源电池铝箔等产品订单大幅增长，企业满产运行并开启扩产以满足市场需求。",
-          "url": "https://36kr.com/newsflashes/3814789632925188?f=rss",
+          "title": "670亿美元，AI崛起促成美国最大能源并购案",
+          "description": "由于AI需求推动电力需求激增，美国发生670亿美元的能源并购案，重塑电力版图。",
+          "url": "https://www.huxiu.com/article/4859510.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "量化私募不好赚了",
-          "description": "国内头部量化私募近期超额收益转负，尽管管理规模仍在增长，但策略瓶颈和竞争加剧导致投资者收益下滑。",
-          "url": "https://www.huxiu.com/article/4859369.html?f=rss",
+          "title": "百度一季度营收321亿元，AI业务收入136亿元",
+          "description": "百度发布2026年第一季度财报，营收321亿元，其中AI业务收入达136亿元，占比显著。",
+          "url": "https://36kr.com/p/3814695536336387?f=rss",
           "stars": null,
           "id": 10
         }
@@ -155,37 +155,37 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "Attention Is All You Need",
-          "description": "提出了Transformer架构，奠定了现代NLP和大模型的基础。",
-          "url": "https://arxiv.org/abs/1706.03762",
+          "title": "Traditional statistical representations outperform generative AI in identifying expert peer reviewers",
+          "description": "研究比较了传统统计方法和生成式AI在识别同行评审专家方面的表现，发现统计方法更优。",
+          "url": "https://arxiv.org/pdf/2605.18752v1",
           "stars": null,
           "id": 1
         },
         {
-          "title": "Generative Adversarial Nets",
-          "description": "提出了GAN，开启了生成对抗网络研究。",
-          "url": "https://arxiv.org/abs/1406.2661",
+          "title": "Code as Agent Harness",
+          "description": "提出利用大语言模型理解和生成代码能力构建智能体框架，应用于软件工程等领域。",
+          "url": "https://arxiv.org/pdf/2605.18747v1",
           "stars": null,
           "id": 2
         },
         {
-          "title": "Deep Residual Learning for Image Recognition",
-          "description": "提出了ResNet，解决了深层网络退化问题。",
-          "url": "https://arxiv.org/abs/1512.03385",
+          "title": "What Does the AI Doctor Value? Auditing Pluralism in the Clinical Ethics of Language Models",
+          "description": "审计语言模型在临床伦理中的多元价值冲突，评估其伦理决策的合理性。",
+          "url": "https://arxiv.org/pdf/2605.18738v1",
           "stars": null,
           "id": 3
         },
         {
-          "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
-          "description": "提出了预训练语言模型BERT，革新了NLP任务。",
-          "url": "https://arxiv.org/abs/1810.04805",
+          "title": "Dexora: Open-source VLA for High-DoF Bimanual Dexterity",
+          "description": "开源视觉-语言-动作模型，实现高自由度双臂灵巧操作，推动具身智能发展。",
+          "url": "https://arxiv.org/pdf/2605.18722v1",
           "stars": null,
           "id": 4
         },
         {
-          "title": "ImageNet Classification with Deep Convolutional Neural Networks",
-          "description": "提出AlexNet，推动了深度学习在视觉领域的爆发。",
-          "url": "https://arxiv.org/abs/1102.0183",
+          "title": "PopPy: Opportunistically Exploiting Parallelism in Python Compound AI Applications",
+          "description": "提出PopPy框架，在基于Python的复合AI应用中机会性地利用并行性提升性能。",
+          "url": "https://arxiv.org/pdf/2605.18697v1",
           "stars": null,
           "id": 5
         }
@@ -195,42 +195,42 @@
       "name": "AI 开源项目",
       "items": [
         {
-          "title": "SilentGuard",
-          "description": "AI驱动的静默救援平台，支持隐藏紧急激活、自适应危险检测和实时应急监控。",
-          "url": "https://github.com/siddhtyagi18/SilentGuard",
-          "stars": 0,
+          "title": "crawl4ai",
+          "description": "Open-source LLM friendly web crawler and scraper for AI applications.",
+          "url": "https://github.com/unclecode/crawl4ai",
+          "stars": 65859,
           "id": 1
         },
         {
-          "title": "ai-investment",
-          "description": "基于LLM的AI产业链投资分析工具，自动抓取新闻并输出结构化投资报告。",
-          "url": "https://github.com/liyu1201/ai-investment",
-          "stars": 0,
+          "title": "ai-hedge-fund",
+          "description": "An AI-powered hedge fund team simulation tool.",
+          "url": "https://github.com/virattt/ai-hedge-fund",
+          "stars": 58978,
           "id": 2
         },
         {
-          "title": "ai-agent-debug-kit",
-          "description": "零依赖浏览器工具，将AI代理日志转换为可读的调试报告。",
-          "url": "https://github.com/butianhua4/ai-agent-debug-kit",
-          "stars": 0,
+          "title": "daytona",
+          "description": "Secure and elastic infrastructure for running AI-generated code.",
+          "url": "https://github.com/daytonaio/daytona",
+          "stars": 72444,
           "id": 3
         },
         {
-          "title": "youtube_ai_summarizer_bot",
-          "description": "AI驱动的Telegram机器人，将YouTube视频转换为结构化波斯语摘要和可下载PDF笔记。",
-          "url": "https://github.com/mahtabkarami/youtube_ai_summarizer_bot",
-          "stars": 0,
+          "title": "litellm",
+          "description": "Python SDK and proxy server to call 100+ LLM APIs with cost tracking and load balancing.",
+          "url": "https://github.com/BerriAI/litellm",
+          "stars": 47503,
           "id": 4
         },
         {
-          "title": "fullstack-ai-context",
-          "description": "为AI提供高质量的全栈开发上下文，涵盖架构、设计模式和业务逻辑。",
-          "url": "https://github.com/rouguangruye/fullstack-ai-context",
-          "stars": 0,
+          "title": "aider",
+          "description": "AI pair programming in your terminal for code generation and refactoring.",
+          "url": "https://github.com/Aider-AI/aider",
+          "stars": 44999,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-05-18T23:07:18.289+08:00"
+  "updatedAt": "2026-05-19T14:45:13.006+08:00"
 }
