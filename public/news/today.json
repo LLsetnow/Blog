@@ -1,76 +1,76 @@
 {
-  "date": "2026-05-19",
+  "date": "2026-05-21",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "鲸跃动力获星海图数千万元种子轮投资，用「数据+模型+末端执行」打造开箱即用的Robo Labor",
-          "description": "鲸跃动力以数据、模型和末端执行为核心，提供可订阅、弹性扩容的机器人劳动力（Robo Labor），替代人类从事高危、繁重等工作。",
-          "url": "https://36kr.com/p/3814860909600261?f=rss",
+          "title": "9亿次点击背后，AI应用的真实江湖｜2026中国AI应用全景图谱报告",
+          "description": "报告指出2026年AI应用从‘聊天’走向‘做事’，产品范式正在转变，并提供了背后的数据支撑。",
+          "url": "https://36kr.com/p/3818450346738823?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "高瓴出手了一家AI体育科技公司，曾获李泽湘天使轮融资｜硬氪首发",
-          "description": "AI体育科技公司SportVision完成天使+轮融资，高瓴创投领投，资金将用于核心技术和AI网球训练相机的研发与量产。",
-          "url": "https://36kr.com/p/3805660478184966?f=rss",
+          "title": "8点1氪丨英伟达Q1净利润583亿美元；谷歌CEO：Gemini月活跃用户达9亿",
+          "description": "英伟达发布2027财年第一季度财报，净利润583亿美元同比增长211%；谷歌CEO透露Gemini月活用户达9亿。",
+          "url": "https://36kr.com/p/3818280989443202?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "氪星晚报 ｜百度：一季度营收321亿元，AI业务收入136亿元",
-          "description": "百度一季度AI业务收入达136亿元，同时索辰科技披露物理AI业务尚处布局初期，显示AI业务在财报中的重要性。",
-          "url": "https://36kr.com/p/3814695536336387?f=rss",
+          "title": "氪星晚报｜2026福布斯中国人工智能科技企业TOP 50发布，中关村科金入选",
+          "description": "福布斯发布中国AI科技企业TOP50榜单；英伟达将在新加坡设立研发中心，加码AI布局。",
+          "url": "https://36kr.com/p/3816942423000196?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "番茄小说正推动 AI 动漫上院线，开放头部IP改编权限｜36氪独家",
-          "description": "字节跳动旗下番茄小说推动AI动漫上院线，开放头部IP改编权限，探索AIGC在影视内容领域的商业化。",
-          "url": "https://36kr.com/p/3810598875307780?f=rss",
+          "title": "第四届中国AIGC产业峰会在京顺利举办！近20位行业大咖解码Agent与非共识机遇",
+          "description": "峰会聚焦AI Agent、非共识机遇等前沿话题，多位行业大咖分享对AI产业发展的见解。",
+          "url": "https://36kr.com/p/3817353357968516?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "Agent、多模态、应用、算力一天看尽，峰会亮点在此｜5.20日，来现场一起AI",
-          "description": "报道聚焦即将到来的AI峰会，盘点Agent、多模态、应用和算力等热门技术方向，为行业提供前瞻视角。",
-          "url": "https://36kr.com/p/3814408307711492?f=rss",
+          "title": "ArtificialAnalysis：千问3.7问鼎国产模型冠军，全球前五",
+          "description": "阿里新模型Qwen3.7-Max在ArtificialAnalysis榜单中得分56.6，位列全球第五、国产第一，即将通过阿里云百炼提供API服务。",
+          "url": "https://36kr.com/newsflashes/3818678530507905?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "对话万成云商：发文章≠GEO优化，大模型不是喂什么就推什么",
-          "description": "探讨大模型在搜索优化中的应用，指出GEO需超越传统发文章模式，强调大模型理解与推理的复杂性。",
-          "url": "https://36kr.com/p/3814337101111044?f=rss",
+          "title": "AI时代人类第一场大规模罢工，来自造AI的工厂里",
+          "description": "三星电子与工会工资谈判一度破裂，工会曾计划发动18天罢工，最终达成临时协议，反映了AI制造业中的劳资矛盾。",
+          "url": "https://www.huxiu.com/article/4860145.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "酷赛智能亮相全球人工智能终端展，斩获“最佳人气产品奖”",
-          "description": "酷赛智能展示AI NAS、AI桌面机器人、AI萌宠助手等产品，凭借软硬件融合创新获行业认可。",
-          "url": "https://36kr.com/newsflashes/3815848452611842?f=rss",
+          "title": "最快本周五，OpenAI紧随SpaceX递招股书，Anthropic提前两年盈利",
+          "description": "OpenAI最快本周五秘密提交IPO招股书，Anthropic提前两年实现盈利，AI巨头资本化加速。",
+          "url": "https://www.huxiu.com/article/4860164.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "渣打银行拟未来四年裁员超7000人，加速采用人工智能",
-          "description": "渣打银行计划裁员7000人以加速AI应用，成为首批正式公布大规模裁员计划以拥抱AI的大型银行之一。",
-          "url": "https://36kr.com/newsflashes/3815838410202633?f=rss",
+          "title": "CPU，或成英伟达下一增长引擎",
+          "description": "黄仁勋在业绩会上表示今年CPU收入有望达200亿美元，Vera CPU使英伟达进入价值2000亿美元的CPU市场。",
+          "url": "https://www.huxiu.com/article/4860154.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "月之暗面据悉将重组公司架构，为香港IPO铺路",
-          "description": "AI大模型公司月之暗面传闻将重组架构以筹备香港上市，反映AI创业公司在资本市场的动向。",
-          "url": "https://36kr.com/newsflashes/3815835235557127?f=rss",
+          "title": "豆包们收费只是开始，一套运行30年的定价理论正在被颠覆",
+          "description": "豆包开启付费服务引发热议，文章探讨AI定价模式变革以及传统定价理论在AI时代面临的挑战。",
+          "url": "https://www.huxiu.com/article/4860148.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "9000亿天价索赔微软、OpenAI失败，马斯克输了，原因只有一个……",
-          "description": "马斯克对OpenAI和微软的9000亿天价索赔因诉讼时效被法院驳回，此案引发对AI开源与商业化的广泛讨论。",
-          "url": "https://www.huxiu.com/article/4859532.html?f=rss",
+          "title": "两条腿还是四条腿？云深处和宇树的不同选择",
+          "description": "云深处科技科创板IPO获受理，成为继宇树科技后第二家申请的具身智能公司，两家杭州公司展现不同技术路线。",
+          "url": "https://www.huxiu.com/article/4860141.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "渣打银行拟未来四年裁员超7000人，加速采用人工智能",
-          "description": "渣打银行宣布计划在未来四年内裁员超过7000人，以加速人工智能应用并精简运营，成为首批正式公布大规模裁员计划的大型全球银行之一。",
-          "url": "https://36kr.com/newsflashes/3815838410202633?f=rss",
+          "title": "英伟达Q1净利润583亿美元，同比增长211%",
+          "description": "英伟达发布2027财年第一季度财报，营收816.2亿美元创历史新高，净利润583亿美元，数据中心业务占比九成。",
+          "url": "https://36kr.com/p/3818280989443202?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "月之暗面据悉将重组公司架构，为香港IPO铺路",
-          "description": "市场消息称，AI初创公司月之暗面（Moonshot AI）计划重组架构，为赴香港上市做准备。",
-          "url": "https://36kr.com/newsflashes/3815835235557127?f=rss",
+          "title": "沪深两市成交额突破3万亿元",
+          "description": "A股市场交投活跃，沪深两市成交额突破3万亿元，显示市场情绪高涨。",
+          "url": "https://36kr.com/newsflashes/3818672355672962?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "本周47只新基密集启募，权益产品占比超七成",
-          "description": "公募排排网数据显示，本周共有47只新基金开启募集，创近18周新高，其中权益基金34只，科技主题基金数量最多。",
-          "url": "https://36kr.com/newsflashes/3815825380679427?f=rss",
+          "title": "国际资本持续流出印度股市，今年以来撤出约230亿美元",
+          "description": "据彭博社报道，全球投资者今年已从印度股市撤出约230亿美元，超过去年全年流出总量，加大卢比贬值压力。",
+          "url": "https://36kr.com/newsflashes/3818681110086529?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "科创50指数午后涨超2%",
-          "description": "36氪获悉，科创50指数在5月19日下午交易时段涨幅超过2%，显示科技板块走强。",
-          "url": "https://36kr.com/newsflashes/3815822254268166?f=rss",
+          "title": "A股三大股指午后持续下挫，沪指跌超1%",
+          "description": "A股午后走弱，沪指跌超1%，存储芯片、光刻机等板块跌幅居前，下跌个股超4200只。",
+          "url": "https://36kr.com/newsflashes/3818660257793153?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "韩国央行估计三星罢工造成损失达30万亿韩元",
-          "description": "韩国央行官员表示，若三星电子发生全面罢工，可能导致韩国今年GDP下降0.5个百分点，损失约30万亿韩元（约200亿美元）。",
-          "url": "https://36kr.com/newsflashes/3815816967396865?f=rss",
+          "title": "海关总署发布《海关支持粤港澳大湾区建设若干措施》20项举措",
+          "description": "海关总署出台20项具体措施，从融合发展、科创高地、新业态等5方面支持粤港澳大湾区建设。",
+          "url": "https://36kr.com/newsflashes/3818668007736452?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "中韩半导体ETF再提示溢价风险，年内已提示140次",
-          "description": "中韩半导体ETF华泰柏瑞再次发布溢价风险提示，该ETF年内已累计提示140次，盘中溢价率仍超过23%。",
-          "url": "https://36kr.com/newsflashes/3815813667086080?f=rss",
+          "title": "韩国公布全球人工智能枢纽愿景",
+          "description": "韩国政府宣布计划建设全球人工智能中心，与九个全球性组织和五家多边开发银行合作，促进AI跨境合作。",
+          "url": "https://36kr.com/newsflashes/3818666623943556?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "腾讯音乐正式“吞下”喜马拉雅，交易额最高12.6亿美元",
-          "description": "腾讯音乐宣布对喜马拉雅的并购交易正式完成交割，交易总额最高为12.6亿美元，重塑在线音频行业格局。",
-          "url": "https://www.huxiu.com/article/4859533.html?f=rss",
+          "title": "SpaceX启动史上最大规模IPO计划",
+          "description": "SpaceX向美国证券监管机构递交招股说明书，目标估值1.75万亿至2万亿美元，融资规模最高达800亿美元。",
+          "url": "https://36kr.com/newsflashes/3818654166434945?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "虚拟电厂是什么？中国三大数据中心首次以虚拟电厂身份进入电力现货市场",
-          "description": "三大数据中心首次以虚拟电厂形式参与电力现货市场交易，此举可能影响电费、AI服务及双碳目标落地。",
-          "url": "https://www.huxiu.com/article/4858994.html?f=rss",
+          "title": "AMD宣布采用台积电2nm工艺量产下一代霄龙处理器",
+          "description": "AMD代号“Venice”的下一代霄龙CPU基于台积电2nm工艺正式量产，为业界首款2nm高性能计算产品。",
+          "url": "https://36kr.com/newsflashes/3818652181971843?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "670亿美元，AI崛起促成美国最大能源并购案",
-          "description": "由于AI需求推动电力需求激增，美国发生670亿美元的能源并购案，重塑电力版图。",
-          "url": "https://www.huxiu.com/article/4859510.html?f=rss",
+          "title": "三星劳资谈判破裂，威刚董事长称DRAM、NAND恐再掀涨价潮",
+          "description": "三星电子与工会工资谈判破裂，存储芯片行业面临供应紧张，威刚董事长预警DRAM和NAND Flash可能再度涨价。",
+          "url": "https://36kr.com/p/3816942423000196?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "百度一季度营收321亿元，AI业务收入136亿元",
-          "description": "百度发布2026年第一季度财报，营收321亿元，其中AI业务收入达136亿元，占比显著。",
-          "url": "https://36kr.com/p/3814695536336387?f=rss",
+          "title": "霍尔木兹海峡变局的持续不确定性带来系统性风险",
+          "description": "伊朗封锁霍尔木兹海峡引发全球能源和关键材料供应链冲击，中国企业在短期应急与长期韧性建设上面临挑战。",
+          "url": "https://www.huxiu.com/article/4860173.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -153,84 +153,48 @@
     },
     {
       "name": "AI 学术论文",
-      "items": [
-        {
-          "title": "Traditional statistical representations outperform generative AI in identifying expert peer reviewers",
-          "description": "研究比较了传统统计方法和生成式AI在识别同行评审专家方面的表现，发现统计方法更优。",
-          "url": "https://arxiv.org/pdf/2605.18752v1",
-          "stars": null,
-          "id": 1
-        },
-        {
-          "title": "Code as Agent Harness",
-          "description": "提出利用大语言模型理解和生成代码能力构建智能体框架，应用于软件工程等领域。",
-          "url": "https://arxiv.org/pdf/2605.18747v1",
-          "stars": null,
-          "id": 2
-        },
-        {
-          "title": "What Does the AI Doctor Value? Auditing Pluralism in the Clinical Ethics of Language Models",
-          "description": "审计语言模型在临床伦理中的多元价值冲突，评估其伦理决策的合理性。",
-          "url": "https://arxiv.org/pdf/2605.18738v1",
-          "stars": null,
-          "id": 3
-        },
-        {
-          "title": "Dexora: Open-source VLA for High-DoF Bimanual Dexterity",
-          "description": "开源视觉-语言-动作模型，实现高自由度双臂灵巧操作，推动具身智能发展。",
-          "url": "https://arxiv.org/pdf/2605.18722v1",
-          "stars": null,
-          "id": 4
-        },
-        {
-          "title": "PopPy: Opportunistically Exploiting Parallelism in Python Compound AI Applications",
-          "description": "提出PopPy框架，在基于Python的复合AI应用中机会性地利用并行性提升性能。",
-          "url": "https://arxiv.org/pdf/2605.18697v1",
-          "stars": null,
-          "id": 5
-        }
-      ]
+      "items": []
     },
     {
       "name": "AI 开源项目",
       "items": [
         {
-          "title": "crawl4ai",
-          "description": "Open-source LLM friendly web crawler and scraper for AI applications.",
-          "url": "https://github.com/unclecode/crawl4ai",
-          "stars": 65859,
+          "title": "FlowiseAI/Flowise",
+          "description": "可视化构建AI Agents的平台",
+          "url": "https://github.com/FlowiseAI/Flowise",
+          "stars": 52967,
           "id": 1
         },
         {
-          "title": "ai-hedge-fund",
-          "description": "An AI-powered hedge fund team simulation tool.",
-          "url": "https://github.com/virattt/ai-hedge-fund",
-          "stars": 58978,
+          "title": "exo-explore/exo",
+          "description": "在本地运行前沿AI模型",
+          "url": "https://github.com/exo-explore/exo",
+          "stars": 44832,
           "id": 2
         },
         {
-          "title": "daytona",
-          "description": "Secure and elastic infrastructure for running AI-generated code.",
-          "url": "https://github.com/daytonaio/daytona",
-          "stars": 72444,
+          "title": "JuliusBrussee/caveman",
+          "description": "Claude Code技能，通过类似原始人的对话减少65%的token使用",
+          "url": "https://github.com/JuliusBrussee/caveman",
+          "stars": 62897,
           "id": 3
         },
         {
-          "title": "litellm",
-          "description": "Python SDK and proxy server to call 100+ LLM APIs with cost tracking and load balancing.",
-          "url": "https://github.com/BerriAI/litellm",
-          "stars": 47503,
+          "title": "code-yeongyu/oh-my-openagent",
+          "description": "最佳的agent工具（原oh-my-opencode）",
+          "url": "https://github.com/code-yeongyu/oh-my-openagent",
+          "stars": 58799,
           "id": 4
         },
         {
-          "title": "aider",
-          "description": "AI pair programming in your terminal for code generation and refactoring.",
-          "url": "https://github.com/Aider-AI/aider",
-          "stars": 44999,
+          "title": "safishamsi/graphify",
+          "description": "AI编码助手技能，可将代码、SQL模式等转化为图形",
+          "url": "https://github.com/safishamsi/graphify",
+          "stars": 50386,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-05-19T14:45:13.006+08:00"
+  "updatedAt": "2026-05-21T14:48:31.659+08:00"
 }
