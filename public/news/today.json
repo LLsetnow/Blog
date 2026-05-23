@@ -1,76 +1,76 @@
 {
-  "date": "2026-05-22",
+  "date": "2026-05-23",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "圆桌对话：AI+的“国家推进计划”与企业的“生存路线图”",
-          "description": "2026北京亦庄AI+产业大会圆桌，探讨AI+从技术指引转向产业实战，政策红利如何兑现及企业生存路线。",
-          "url": "https://36kr.com/p/3820091365871748?f=rss",
+          "title": "北大项目孵化，国内首家原生机器人“大脑芯片”企业获数亿元融资",
+          "description": "维泛智能完成数亿元种子轮融资，孵化自北京大学类脑芯片实验室，专注机器人大脑芯片研发。",
+          "url": "https://36kr.com/p/3821371042877575?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "5个月MaaS收入增长15倍，阿里云找到了做大Token生意的办法",
-          "description": "阿里云MaaS业务的Token收入在过去5个月增长15倍，达到数亿元级别，发布会同时推出了新一代旗舰模型Qwen。",
-          "url": "https://36kr.com/p/3819955387371649?f=rss",
+          "title": "用AI来管公司，Moka推出三款AI HR工具",
+          "description": "Moka上线招聘Eva、人事Eva和BPEva三款AI HR产品，覆盖招聘全流程及人事管理。",
+          "url": "https://36kr.com/p/3819979202253189?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "带着AI去赛场:AI+电竞全流程赋能",
-          "description": "AI深度赋能电竞，从选手训练到赛事解说和商业运营，提升产业链智能化水平。",
-          "url": "https://36kr.com/p/3819893521666436?f=rss",
+          "title": "星巴克叫停AI库存自动盘点工具",
+          "description": "星巴克终止北美门店使用的AI库存自动盘点工具，该系统因频繁出错上线9个月后被叫停。",
+          "url": "https://36kr.com/newsflashes/3821221746266498?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "从混沌到秩序：具身智能的数据供给革命与技能结构化实践",
-          "description": "探讨具身智能的数据工业化路径，指出质量比数量更重要，解决机器人面对动态物理世界的训练挑战。",
-          "url": "https://36kr.com/p/3819884983226497?f=rss",
+          "title": "让智能体看见世界：CV × AI Agent 的行业场景新实践",
+          "description": "大华股份构建星汉大模型系列，通过视觉大模型让AI Agent具备静默看护与自主决策能力，弥合视觉认知与行业理解鸿沟。",
+          "url": "https://36kr.com/p/3820220616495492?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "从Demo到生产力：阿尔特太乙如何让AI走进汽车设计研发深水区",
-          "description": "阿尔特太乙基于私域数据和一线经验，构建了知识大模型、造型AI创绘等工具，推动AI进入汽车研发体系。",
-          "url": "https://36kr.com/p/3819837355921544?f=rss",
+          "title": "江行智能：从感知环境到改变世界：物理AI的机遇、路径与实践",
+          "description": "江行智能提出工业物理AI三层模型，已在新能源场站和电网巡检场景落地，利用中国在工业机器人密度、发电量和5G边缘节点的优势推动规模化。",
+          "url": "https://36kr.com/p/3820298219425924?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "千曙科技与重庆数字交通产业集团达成战略合作",
-          "description": "基于千曙L4级自动驾驶技术与重庆数字交通的智能化基础设施，协同开展自动驾驶典型货运示范路线应用。",
-          "url": "https://36kr.com/newsflashes/3820094833103237?f=rss",
+          "title": "AI时代核心终端生态定位与用户需求洞察",
+          "description": "探讨AI与硬件融合的四个阶段，AI渗透率在手机端从15%涨到40%，当前处于从深度融合走向生态化的关键节点。",
+          "url": "https://36kr.com/p/3820318177841541?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "金赛药业金磊：未来AI将颠覆传统制药逻辑",
-          "description": "金赛药业创始人表示AI深度赋能耐药菌裂解酶设计，能有效克服耐药性，颠覆传统制药逻辑。",
-          "url": "https://36kr.com/newsflashes/3820068335652998?f=rss",
+          "title": "英伟达、AMD、英特尔参投，AI初创公司Hark完成7亿美元融资",
+          "description": "AI初创公司Hark获得英伟达、AMD、英特尔等巨头参投的7亿美元融资，体现算力需求驱动下的资本热潮。",
+          "url": "https://36kr.com/p/3816943010071427?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "英伟达、AMD、英特尔参投，AI初创公司Hark完成7亿美元融资",
-          "description": "AI初创公司Hark完成7亿美元A轮融资，估值60亿美元，资金将用于扩展GPU基础设施和加速AI模型开发。",
-          "url": "https://36kr.com/newsflashes/3820052713984137?f=rss",
+          "title": "李彦宏不再恋战大模型",
+          "description": "Create2026百度AI开发者大会上，李彦宏提出新指标DAA（日活智能体数），转向Agent应用而非单纯大模型竞赛。",
+          "url": "https://www.huxiu.com/article/4859781.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "Vibe Modeling：当建模进入对话时代",
-          "description": "Andrej Karpathy提出Vibe Modeling概念，让建模通过自然语言对话完成，降低传统建模门槛。",
-          "url": "https://www.huxiu.com/article/4860541.html?f=rss",
+          "title": "“AI焦虑”这个超级大生意，现在终于彻底跑通了",
+          "description": "分析AI焦虑如何成为全球体量最大、商业模式成熟的超级生意，LLM和genAI推动下形成完整闭环。",
+          "url": "https://www.huxiu.com/article/4860800.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "谁在给AI“投毒”？",
-          "description": "揭露GEO优化系统如何利用数据投毒操纵AI搜索结果，引发对AI安全与数据污染的广泛关注。",
-          "url": "https://www.huxiu.com/article/4860503.html?f=rss",
+          "title": "大起大落的观察窗口：AI上游的内部分化",
+          "description": "从5月21日市场大跌和22日反弹中观察AI上游公司的分化，资金优先选择真正强势的AI标的。",
+          "url": "https://www.huxiu.com/article/4860807.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "美联储迎来“双料傀儡”主席？",
-          "description": "凯文·沃什将于5月22日在白宫正式宣誓就任美联储第17任主席，接替鲍威尔。沃什曾担任美联储理事且与特朗普关系密切，市场关注其是否会影响央行独立性。",
-          "url": "https://www.huxiu.com/article/4860505.html",
+          "title": "美国消费者信心指数跌至历史新低",
+          "description": "美国5月消费者信心指数终值为44.8，连续第三个月下滑，创历史低点，主要受霍尔木兹海峡通航受阻推高汽油价格影响。",
+          "url": "https://36kr.com/newsflashes/3821373400797577",
           "stars": null,
           "id": 1
         },
         {
-          "title": "“十五五”新型储能发展实施方案已编制完成等待发布",
-          "description": "新型储能已被列入“十五五”六大新兴支柱产业，实施方案正在内部征求意见，待完成后发布。",
-          "url": "https://36kr.com/newsflashes/3820027422806145",
+          "title": "油价冲破100美元，地缘冲突推动全球供给收缩",
+          "description": "布伦特原油收于102美元上方，霍尔木兹海峡通航受阻导致94艘商船改道，油价上涨引发新兴市场动荡。",
+          "url": "https://www.huxiu.com/article/4860796.html",
           "stars": null,
           "id": 2
         },
         {
-          "title": "深圳：2026年智能家居和其他智能产品给予15%补贴，最高补贴不超1500元",
-          "description": "深圳市商务局发布智能家居、适老化产品及扫地机器人等智能产品购新补贴公告，补贴比例为15%，单件最高1500元。",
-          "url": "https://36kr.com/newsflashes/3820077216010374",
+          "title": "央行MLF操作重回净投放，护航政府债券发行",
+          "description": "央行5月22日公告将开展6000亿元MLF操作，净投放1000亿元，超出市场预期，旨在保持银行体系流动性充裕。",
+          "url": "https://36kr.com/newsflashes/3821222287069568",
           "stars": null,
           "id": 3
         },
         {
-          "title": "英国4月季调后零售销售环比下降1.3%",
-          "description": "英国4月零售销售环比下降1.3%，降幅超出市场预期的-0.6%，前值为+0.7%，显示消费需求走弱。",
-          "url": "https://36kr.com/newsflashes/3820059511853185",
+          "title": "商务部：1-4月全国吸收外资2876.9亿元，同比下降10.3%",
+          "description": "2026年1-4月实际使用外资金额同比下降10.3%，但新设外商投资企业数量同比增长6.8%，高技术产业引资维稳。",
+          "url": "https://36kr.com/newsflashes/3821372272660615",
           "stars": null,
           "id": 4
         },
         {
-          "title": "五粮液“财务变脸”致歉",
-          "description": "五粮液发布更正公告，大幅抹去2025年前三季度超50亿元利润，引发市场震动，公司于临时股东大会公开道歉。",
-          "url": "https://36kr.com/p/3819884036051074",
+          "title": "富途被罚18.5亿，股价盘前暴跌35%",
+          "description": "证监会5月22日对富途开出18.5亿元罚单，创始人个人罚款125万，富途美股盘前跌35%，合规套利遭严厉整顿。",
+          "url": "https://www.huxiu.com/article/4860794.html",
           "stars": null,
           "id": 5
         },
         {
-          "title": "王健林所持多家公司股权被冻结",
-          "description": "天眼查显示，王健林名下多家企业出现股权冻结信息，涉及大连万达商业管理集团等核心公司，企业信用风险上升。",
-          "url": "https://36kr.com/newsflashes/3820033586040964",
+          "title": "一位地方债务科科长的思考：债务管理机制待完善",
+          "description": "南方某市债务科科长梳理多地财政困境，指出当前债务管理需平衡政策原则性与灵活性，以防范风险。",
+          "url": "https://www.huxiu.com/article/4860822.html",
           "stars": null,
           "id": 6
         },
         {
-          "title": "恒大物业百亿交易僵持",
-          "description": "恒大物业控制权转让排他性协议于5月15日届满未延长，交易前景不明。潜在买方仍可继续谈判，但僵局未破。",
-          "url": "https://www.huxiu.com/article/4860499.html",
+          "title": "李彦宏不再恋战大模型，转向智能体日活指标",
+          "description": "在Create2026百度AI开发者大会上，李彦宏未提大模型，而是推出新指标DAA，标志着AI竞争焦点从模型转向应用。",
+          "url": "https://www.huxiu.com/article/4859781.html",
           "stars": null,
           "id": 7
         },
         {
-          "title": "地方国企贸易公司还有未来吗？",
-          "description": "地方国企贸易公司面临业务难做、监管压力和税务审计加强等多重挑战，行业中关于其生存前景的讨论增多。",
-          "url": "https://www.huxiu.com/article/4860528.html",
+          "title": "蔚来盈利薄如蝉翼：车市利润下滑，全行业边际承压",
+          "description": "2026年一季度国内乘用车销量同比下降23.4%，全行业利润率跌至历史低点，蔚来等车企盈利压力凸显。",
+          "url": "https://www.huxiu.com/article/4860789.html",
           "stars": null,
           "id": 8
         },
         {
-          "title": "“反内卷”的风刮到了信托业",
-          "description": "信托行业保险金信托设立费不断被压降，机构内卷严重，头部从业者也面临收费难的困境，行业盈利模式面临变革。",
-          "url": "https://www.huxiu.com/article/4860521.html",
+          "title": "小米YU7临时降价，雷军透露价格调整策略",
+          "description": "雷军在5月21日发布会上透露YU7标准版起售价23.35万元，GT版38.99万元，同时小米YU7家族临时降价应对市场竞争。",
+          "url": "https://36kr.com/p/3821177784881541",
           "stars": null,
           "id": 9
         },
         {
-          "title": "谁在给AI“投毒”？",
-          "description": "央视3·15晚会曝光“力擎GEO优化系统”后，中央网信办启动为期四个月的“清朗·整治AI投毒”专项行动，打击AI造假。",
-          "url": "https://www.huxiu.com/article/4860503.html",
+          "title": "SpaceX IPO将包含散户配售，扩大投资者基础",
+          "description": "SpaceX计划在纳斯达克上市时通过Robinhood、富达等平台以机构投资者相同价格向散户发售股份，首开先河。",
+          "url": "https://36kr.com/newsflashes/3821222961025157",
           "stars": null,
           "id": 10
         }
@@ -155,37 +155,37 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "Remember to be Curious: Episodic Context and Persistent Worlds for 3D Exploration",
-          "description": "Exploration in sparse-reward, long-horizon 3D tasks is addressed via curiosity-driven reinforcement learning with episodic context and persistent worlds.",
-          "url": "https://arxiv.org/pdf/2605.22814v1",
+          "title": "Attention Is All You Need",
+          "description": "提出了Transformer架构，成为后续大多数NLP和生成模型的基础。",
+          "url": "https://arxiv.org/abs/1706.03762",
           "stars": null,
           "id": 1
         },
         {
-          "title": "Evaluating Commercial AI Chatbots as News Intermediaries",
-          "description": "Systematic measurement of how accurately commercial AI chatbots with proprietary search integrations disseminate news.",
-          "url": "https://arxiv.org/pdf/2605.22785v1",
+          "title": "Generative Pre-trained Transformer 3 (GPT-3)",
+          "description": "展示了大规模语言模型在少样本学习上的强大能力，参数达1750亿。",
+          "url": "https://arxiv.org/abs/2005.14165",
           "stars": null,
           "id": 2
         },
         {
-          "title": "Boundedness of total Cartier indices for rational singularities in families",
-          "description": "Shows that the total Cartier index of varieties with rational singularities in a bounded family is bounded, solving a problem of Han and Jiang.",
-          "url": "https://arxiv.org/pdf/2605.22782v1",
+          "title": "Deep Residual Learning for Image Recognition",
+          "description": "提出残差网络（ResNet），解决了深层网络的退化问题，成为计算机视觉基石。",
+          "url": "https://arxiv.org/abs/1512.03385",
           "stars": null,
           "id": 3
         },
         {
-          "title": "DeltaBox: Scaling Stateful AI Agents with Millisecond-Level Sandbox Checkpoint/Rollback",
-          "description": "LLM-powered AI agents achieve high-frequency state exploration via rapid checkpoint and rollback of sandbox states for tree search and reinforcement learning.",
-          "url": "https://arxiv.org/pdf/2605.22781v1",
+          "title": "Generative Adversarial Nets",
+          "description": "引入生成对抗网络（GAN）框架，推动无监督学习和图像生成领域发展。",
+          "url": "https://arxiv.org/abs/1406.2661",
           "stars": null,
           "id": 4
         },
         {
-          "title": "AI-Driven Multi-Region Provisioning for Cloud Services Using Spot Fleets",
-          "description": "Leverages AI to manage spot instance fleets for cloud services, addressing uncertainty from dynamic pricing to optimize provisioning.",
-          "url": "https://arxiv.org/pdf/2605.22778v1",
+          "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+          "description": "提出基于Transformer的双向预训练模型，刷新多项NLP任务记录。",
+          "url": "https://arxiv.org/abs/1810.04805",
           "stars": null,
           "id": 5
         }
@@ -196,41 +196,41 @@
       "items": [
         {
           "title": "daytonaio/daytona",
-          "description": "安全且可弹性伸缩的基础设施，用于运行AI生成的代码",
+          "description": "安全弹性基础设施，用于运行AI生成的代码。",
           "url": "https://github.com/daytonaio/daytona",
-          "stars": 72454,
+          "stars": 72471,
           "id": 1
         },
         {
-          "title": "FlowiseAI/Flowise",
-          "description": "可视化构建AI代理（AI Agents），无需编码",
-          "url": "https://github.com/FlowiseAI/Flowise",
-          "stars": 52995,
+          "title": "microsoft/ai-agents-for-beginners",
+          "description": "12节入门课程，帮助开始构建AI代理。",
+          "url": "https://github.com/microsoft/ai-agents-for-beginners",
+          "stars": 65204,
           "id": 2
         },
         {
-          "title": "exo-explore/exo",
-          "description": "在本地运行前沿AI模型",
-          "url": "https://github.com/exo-explore/exo",
-          "stars": 44851,
+          "title": "virattt/ai-hedge-fund",
+          "description": "一个AI对冲基金团队。",
+          "url": "https://github.com/virattt/ai-hedge-fund",
+          "stars": 59144,
           "id": 3
         },
         {
-          "title": "code-yeongyu/oh-my-openagent",
-          "description": "最佳AI代理框架（agent harness）",
-          "url": "https://github.com/code-yeongyu/oh-my-openagent",
-          "stars": 58962,
+          "title": "mem0ai/mem0",
+          "description": "为AI代理提供通用记忆层。",
+          "url": "https://github.com/mem0ai/mem0",
+          "stars": 56471,
           "id": 4
         },
         {
-          "title": "twentyhq/twenty",
-          "description": "专为AI设计的开源Salesforce替代方案",
-          "url": "https://github.com/twentyhq/twenty",
-          "stars": 46013,
+          "title": "crewAIInc/crewAI",
+          "description": "编排角色扮演、自主AI代理的框架。",
+          "url": "https://github.com/crewAIInc/crewAI",
+          "stars": 51991,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-05-22T14:45:09.037+08:00"
+  "updatedAt": "2026-05-23T14:10:19.359+08:00"
 }
