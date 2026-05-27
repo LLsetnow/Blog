@@ -1,76 +1,76 @@
 {
-  "date": "2026-05-26",
+  "date": "2026-05-27",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "OpenAI被超越了，全球AI新王诞生",
-          "description": "Anthropic完成300亿美元融资，估值超9000亿美元，超越OpenAI的8520亿，成为全球最高估值AI公司。",
-          "url": "https://www.huxiu.com/article/4861547.html?f=rss",
+          "title": "前两天，我们在亦庄听到了AI最真实的声音｜2026 AI Partner大会金句实录",
+          "description": "当大模型API调用成本一年内骤降超过80%，百万Token仅需几分钱时，产业竞争回归到能否在实际场景中降本增效。行业的聚光灯从实验室转向了生产线、医院诊室等真实场景。",
+          "url": "https://36kr.com/p/3826932509364869?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "xAI解散，但Grok还在上新，马斯克官宣新模型",
-          "description": "马斯克透露Grok基础模型V9-Medium已完成训练，参数量达1.5T，评估结果不错。",
-          "url": "https://www.huxiu.com/article/4861569.html?f=rss",
+          "title": "硅谷AI一线观察：一人花掉50万美金Token背后的大厂焦虑",
+          "description": "硅谷持续两个多月的Token-Maxxing（Token军备竞赛）焦虑，在Meta以戏谑方式按下休止符。Meta曾上线“Claudeonomics”激励员工使用AI。",
+          "url": "https://36kr.com/p/3826390617870984?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "支付宝：“AI支付”已完成3亿笔AI智能体支付",
-          "description": "支付宝宣布AI支付已完成3亿笔智能体支付，发布全球首个Token Pay服务和AI钱包产品，构建全栈AI原生支付体系。",
-          "url": "https://36kr.com/newsflashes/3825749031244419?f=rss",
+          "title": "红杉、华兴投了「AI产品的大众点评」，我们与它的02年创始人聊了聊",
+          "description": "“观猹”是一个AI产品社区，展示不同于机构榜单的AI创业生态，由02年创始人仲泰创立，红杉、华兴参与投资。",
+          "url": "https://36kr.com/p/3826385821192841?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "营销内容从“用AI”到“管AI”的10倍提效",
-          "description": "集思科技积累超60亿GMV实战，认为2026年是营销内容Agent真正落地节点，品牌核心资产是上下文。",
-          "url": "https://36kr.com/p/3824179485233541?f=rss",
+          "title": "机器人启蒙，需要一所能“犯错”的幼儿园",
+          "description": "强化学习奠基人理查德·萨顿获图灵奖，其理论支撑了AlphaGo、ChatGPT等系统。2023年起具身智能行业真正理解智能体需从试错中学习。",
+          "url": "https://36kr.com/p/3825969453699970?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "两部AI剧集闯入戛纳，水母智能要做AI内容工业化的破局者",
-          "description": "水母映画出品的竖屏剧集《摸金之天机入梦》和《饿塔》入选戛纳电影节Fantastic Pavilion单元，展示AI影视内容生成能力。",
-          "url": "https://36kr.com/p/3823033729061253?f=rss",
+          "title": "毕马威效仿四大会计师事务所模式，赴硅谷挖掘人工智能领域创新企业",
+          "description": "毕马威美国高管团队走访硅谷，寻找AI初创企业合作，希望通过合作或收购锁定技术资源，四大会计师事务所均在转型业务模式。",
+          "url": "https://36kr.com/newsflashes/3827177894417281?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "消除“罪证”：给写作去除“AI味”的不完全手册",
-          "description": "探讨如何识别和去除AI生成文本的“AI味”，涉及“豆包体”等语言模型输出特征。",
-          "url": "https://36kr.com/p/3824601267196037?f=rss",
+          "title": "多点数智联合灵心巧手成立灵美智能",
+          "description": "灵美智能数核（北京）科技有限公司成立，注册资本3000万，经营范围包括人工智能应用软件开发、智能机器人销售与研发等。",
+          "url": "https://36kr.com/newsflashes/3827162275877768?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "搞定工业质检：AI视觉如何重构高端制造质量防线",
-          "description": "广州因特智能展示AI视觉在半导体光罩检测、玻璃基板钻孔等场景的应用，解决卡脖子问题。",
-          "url": "https://36kr.com/p/3824158896312709?f=rss",
+          "title": "三星达成人工智能利润分成协议，员工人均将获 40 万美元奖金",
+          "description": "三星电子员工表决通过利润分成协议，受益于存储芯片业务（AI热潮），员工人均奖金预计接近40万美元，劳资纠纷落幕。",
+          "url": "https://36kr.com/newsflashes/3827160188228225?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "算力租赁，遭传闻突袭，上市公司回应",
-          "description": "DeepSeek宣布V4-Pro API永久降价至原价的25%，创全球大模型价格新低，同时市场传闻影响算力租赁板块。",
-          "url": "https://36kr.com/newsflashes/3825717281149825?f=rss",
+          "title": "英伟达最新AI服务器拆解：GPU占比降低，这些芯片机会正在爆发",
+          "description": "摩根士丹利报告拆解英伟达下一代AI服务器架构Vera Rubin，机柜价格约780万美元，GPU占比有所降低，带来其他芯片机会。",
+          "url": "https://www.huxiu.com/article/4861940.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "日本云服务商樱花互联网计划资本开支或增近6倍",
-          "description": "为满足日本国内AI需求，樱花互联网2026财年计划采购新GPU，资本开支最高达300亿日元。",
-          "url": "https://36kr.com/newsflashes/3825704144327305?f=rss",
+          "title": "谷歌全家桶，都被新模型“污染”了",
+          "description": "谷歌Gemini 3.5 Flash发布后，性能被指比3.1 Pro更强，但网上对其表现存在质疑，该模型被视为Agent时代的底座。",
+          "url": "https://www.huxiu.com/article/4861898.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "别再无脑装豆包了，实测五款国产AI App，最强的竟是...",
-          "description": "根据QuestMobile数据，2026年Q1 AI原生App月均用户达4.13亿，文章实测对比五款国产AI应用性能。",
-          "url": "https://www.huxiu.com/article/4861550.html?f=rss",
+          "title": "硅谷开始怀疑GPU",
+          "description": "英伟达之外的重要AI芯片变量Cerebras上市，硅谷开始质疑GPU在AI计算的唯一性，探讨其他芯片架构的可能性。",
+          "url": "https://www.huxiu.com/article/4861916.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "美媒：美伊已就全面开放霍尔木兹海峡达成一致",
-          "description": "美媒报道称，伊朗与美国已就全面开放霍尔木兹海峡达成一致，这将影响全球能源供应与地缘政治格局。",
-          "url": "https://36kr.com/p/3825357879497346?f=rss",
+          "title": "恒生科技指数跌幅扩大至1%",
+          "description": "恒生科技指数跌幅扩大至1%，恒生指数现跌1.15%。",
+          "url": "https://36kr.com/newsflashes/3827181433295490",
           "stars": null,
           "id": 1
         },
         {
-          "title": "*ST闻泰多次因证券虚假陈述被起诉",
-          "description": "*ST闻泰公告称控股股东所持股份被全部司法冻结，天眼查显示公司涉多起证券虚假陈述责任纠纷案。",
-          "url": "https://36kr.com/newsflashes/3825753555161992?f=rss",
+          "title": "沪深两市成交额连续第3个交易日突破3万亿元",
+          "description": "沪深两市成交额连续第3个交易日突破3万亿元，显示市场交投活跃。",
+          "url": "https://36kr.com/newsflashes/3827173711237765",
           "stars": null,
           "id": 2
         },
         {
-          "title": "支付宝：“AI支付”已完成3亿笔AI智能体支付",
-          "description": "支付宝宣布AI支付完成3亿笔订单，发布全球首个Token Pay服务和AI钱包产品，构建全栈AI原生支付体系。",
-          "url": "https://36kr.com/newsflashes/3825749031244419?f=rss",
+          "title": "德国工商大会大幅下调今年德国增长预期至0.3%",
+          "description": "德国工商大会将2026年德国经济增长预期从1.0%大幅下调至0.3%，超过四分之一企业认为自身状况不佳。",
+          "url": "https://36kr.com/newsflashes/3827152946631302",
           "stars": null,
           "id": 3
         },
         {
-          "title": "算力租赁，遭传闻突袭，上市公司回应",
-          "description": "市场传闻“未来一切上市公司禁止披露没有发票的海外卡部署”，涉事算力租赁企业回应称不知信息出处，正核实影响。",
-          "url": "https://36kr.com/newsflashes/3825717281149825?f=rss",
+          "title": "黄奇帆建议降低贸易顺差，支持人民币升值",
+          "description": "黄奇帆在成都演讲指出中国贸易顺差过高，应采取措施降低顺差，支持人民币升值。",
+          "url": "https://www.huxiu.com/article/4861921.html",
           "stars": null,
           "id": 4
         },
         {
-          "title": "日本对外净资产规模降为全球第三",
-          "description": "日本财务省数据显示，截至2025年末日本对外净资产为561.75万亿日元，全球排名从第二降至第三。",
-          "url": "https://36kr.com/newsflashes/3825713712992896?f=rss",
+          "title": "三星达成人工智能利润分成协议，员工人均将获40万美元奖金",
+          "description": "三星电子员工表决通过利润分成协议，受益于存储芯片业务，员工人均奖金预计接近40万美元，劳资纠纷结束。",
+          "url": "https://36kr.com/newsflashes/3827160188228225",
           "stars": null,
           "id": 5
         },
         {
-          "title": "日本云服务商樱花互联网计划资本开支或增近6倍",
-          "description": "为应对AI需求，樱花互联网2026财年资本开支计划提高至原计划近7倍，最多投资200亿-300亿日元采购GPU。",
-          "url": "https://36kr.com/newsflashes/3825704144327305?f=rss",
+          "title": "深科技回应股价“抢跑”质疑：扩产计划非突然释放",
+          "description": "深科技子公司拟14.7亿元扩充高端存储芯片封测产能，公告前股价异动被质疑内幕交易，公司回应称扩产计划已释放数月。",
+          "url": "https://36kr.com/newsflashes/3827167196828547",
           "stars": null,
           "id": 6
         },
         {
-          "title": "广州：加快启动二手房收购盘活试点工作",
-          "description": "广州市宣布“穗八条”新政后公积金贷款量同比增长超56%，将加快启动二手房收购盘活试点，优化楼市调控。",
-          "url": "https://36kr.com/newsflashes/3825701905158786?f=rss",
+          "title": "英伟达最新AI服务器拆解：GPU占比降低，其他芯片机会爆发",
+          "description": "摩根士丹利报告显示英伟达下一代AI服务器Vera Rubin中GPU成本占比降低，其他电子元器件迎来新机会。",
+          "url": "https://www.huxiu.com/article/4861940.html",
           "stars": null,
           "id": 7
         },
         {
-          "title": "汇率企稳产业托举，人民币国际化驶入快车道",
-          "description": "人民币国际化在经历调整后步入稳步发展期，汇率双向波动常态化，产业托举推动人民币国际使用。",
-          "url": "https://www.huxiu.com/article/4861576.html?f=rss",
+          "title": "硅谷开始怀疑GPU：Cerebras上市成重要变量",
+          "description": "被视为英伟达之外最重要AI芯片变量之一的Cerebras上市，引发硅谷对GPU垄断地位的思考。",
+          "url": "https://www.huxiu.com/article/4861916.html",
           "stars": null,
           "id": 8
         },
         {
-          "title": "字节跳动计划大幅增加AI基础设施支出",
-          "description": "字节跳动计划2026年将AI基础设施支出提升25%，投入约2000亿元人民币，以应对算力需求增长。",
-          "url": "https://www.huxiu.com/article/4861581.html?f=rss",
+          "title": "光纤连接器一哥IPO前巨额分红，账上现金仅4749万",
+          "description": "光纤连接器企业在IPO前突然分红3亿元，而账上现金仅4749万元，引发市场对其套现动机的质疑。",
+          "url": "https://www.huxiu.com/article/4861945.html",
           "stars": null,
           "id": 9
         },
         {
-          "title": "OpenAI被超越，全球AI新王诞生",
-          "description": "Anthropic完成300亿美元融资，估值突破9000亿美元，超越OpenAI成为全球估值最高的AI公司。",
-          "url": "https://www.huxiu.com/article/4861547.html?f=rss",
+          "title": "字节跳动向Seed员工开放“豆包股”认购权",
+          "description": "字节跳动为首个特定业务单元（Seed AI部门）发行低价股票期权，让员工分享部门成长收益。",
+          "url": "https://36kr.com/p/3825928694846085",
           "stars": null,
           "id": 10
         }
@@ -153,84 +153,48 @@
     },
     {
       "name": "AI 学术论文",
-      "items": [
-        {
-          "title": "From Model Scaling to System Scaling: Scaling the Harness in Agentic AI",
-          "description": "探讨了智能AI中系统扩展而非仅模型扩展的重要性，提出了可审计、持久化、模块化和可验证的架构设计。",
-          "url": "https://arxiv.org/pdf/2605.26112v1",
-          "stars": null,
-          "id": 1
-        },
-        {
-          "title": "Beyond Summaries: Structure-Aware Labeling of Code Changes with Large Language Models",
-          "description": "利用大语言模型进行代码变更的结构感知标注，以应对现代软件工程中代码审查的规模与频率挑战。",
-          "url": "https://arxiv.org/pdf/2605.26100v1",
-          "stars": null,
-          "id": 2
-        },
-        {
-          "title": "Automated Benchmark Auditing for AI Agents and Large Language Models",
-          "description": "针对复杂AI基准测试的自动化审计方法，解决传统验证方法无法应对的隐含假设与不完整环境规范问题。",
-          "url": "https://arxiv.org/pdf/2605.26079v1",
-          "stars": null,
-          "id": 3
-        },
-        {
-          "title": "AI-Powered Sustainable Finance: An Integrative Taxonomy and Framework of AI Applications for Sustainable Investment Decision-Making",
-          "description": "提出AI在可持续金融中的应用综合分类与框架，用于分析、预测和整合环境、社会和治理因素的投资决策。",
-          "url": "https://arxiv.org/pdf/2605.26076v1",
-          "stars": null,
-          "id": 4
-        },
-        {
-          "title": "Retrying vs Resampling in AI Control",
-          "description": "从AI控制视角研究重试与重采样策略，针对AI编程脚手架（如Claude Code）中标记为风险动作的阻断与继续轨迹。",
-          "url": "https://arxiv.org/pdf/2605.26047v1",
-          "stars": null,
-          "id": 5
-        }
-      ]
+      "items": []
     },
     {
       "name": "AI 开源项目",
       "items": [
         {
-          "title": "netdata",
-          "description": "The fastest path to AI-powered full stack observability, even for lean teams.",
+          "title": "netdata/netdata",
+          "description": "最快的AI驱动全栈可观测性解决方案，适合精简团队。",
           "url": "https://github.com/netdata/netdata",
-          "stars": 78942,
+          "stars": 78945,
           "id": 1
         },
         {
-          "title": "daytonaio",
-          "description": "Secure and Elastic Infrastructure for Running AI-Generated Code.",
+          "title": "daytonaio/daytona",
+          "description": "安全弹性的基础设施，用于运行AI生成的代码。",
           "url": "https://github.com/daytonaio/daytona",
-          "stars": 72453,
+          "stars": 72452,
           "id": 2
         },
         {
-          "title": "crawl4ai",
-          "description": "Open-source LLM Friendly Web Crawler & Scraper.",
+          "title": "unclecode/crawl4ai",
+          "description": "开源、LLM友好的网络爬虫与抓取工具。",
           "url": "https://github.com/unclecode/crawl4ai",
-          "stars": 66274,
+          "stars": 66475,
           "id": 3
         },
         {
-          "title": "docling",
-          "description": "Get your documents ready for gen AI.",
+          "title": "docling-project/docling",
+          "description": "让文档为生成式AI做好准备。",
           "url": "https://github.com/docling-project/docling",
-          "stars": 60368,
+          "stars": 60434,
           "id": 4
         },
         {
-          "title": "meilisearch",
-          "description": "A lightning-fast search engine API bringing AI-powered hybrid search to your sites and applications.",
-          "url": "https://github.com/meilisearch/meilisearch",
-          "stars": 57735,
+          "title": "mem0ai/mem0",
+          "description": "AI agents的通用记忆层。",
+          "url": "https://github.com/mem0ai/mem0",
+          "stars": 56841,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-05-26T14:42:47.142+08:00"
+  "updatedAt": "2026-05-27T15:00:43.396+08:00"
 }
