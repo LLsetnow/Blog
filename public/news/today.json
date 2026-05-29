@@ -1,76 +1,76 @@
 {
-  "date": "2026-05-28",
+  "date": "2026-05-29",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "AI内容共创平台「FunloomAI」再获数千万Pre-A轮融资，让创作回归创意本身",
-          "description": "AI内容共创平台公司库兰织梦完成数千万元Pre-A融资，由晴澜家族办公室领投，上海天使会跟投，此前投资方包括奇绩创坛、陈大年等。",
-          "url": "https://36kr.com/p/3827585618154118?f=rss",
+          "title": "8点1氪丨Anthropic完成650亿融资，估值9650亿首次反超OpenAI；售卖不合格足银手镯，周六福被罚；黄仁勋加入清华大学，任经管学院顾问",
+          "description": "Anthropic完成巨额融资，估值首次超越OpenAI；黄仁勋加入清华大学经管学院顾问委员会，体现AI领域资本与学术动态。",
+          "url": "https://36kr.com/p/3829622140593288?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "腾讯游戏的One More Thing，是AI",
-          "description": "2026年腾讯游戏发布会展示42款游戏动态，其中AI成为重要主题，从制作、发行、投资等板块体现AI技术应用。",
-          "url": "https://36kr.com/p/3827658881323649?f=rss",
+          "title": "快手基本面韧性凸显，可灵AI成第二增长曲线",
+          "description": "快手2026年一季度财报显示，可灵AI成为公司第二增长曲线，体现AI在短视频平台的应用。",
+          "url": "https://36kr.com/p/3828915666441090?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "程一笑：可灵AI 3月ARR近5亿美元，较去年同期增长4倍",
-          "description": "快手CEO程一笑在业绩电话会上表示，可灵AI年化收入运行率（ARR）在2026年3月达到近5亿美元，同比增长4倍，收入高速增长。",
-          "url": "https://36kr.com/p/3827497128465287?f=rss",
+          "title": "科氪 | 雷神联合AMD发布覆盖三大形态AI工作站产品矩阵",
+          "description": "雷神发布覆盖塔式、迷你PC和移动三大类别的AI工作站全场景产品矩阵，推动AI算力硬件发展。",
+          "url": "https://36kr.com/p/3828898785858185?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "前两天，我们在亦庄听到了AI最真实的声音｜2026 AI Partner大会金句实录",
-          "description": "AI Partner大会聚焦大模型API成本骤降背景下的产业价值，强调AI在真实场景中的降本增效作用，来自生产线、医院、物流等领域的实践。",
-          "url": "https://36kr.com/p/3826932509364869?f=rss",
+          "title": "7次碰壁、4个版本：我在一个浏览器插件里看到Agent该有的样子",
+          "description": "IBM发布ITBench-AA基准测试，将AI模型置于真实服务器环境中评估Agent能力，探讨AI Agent的未来方向。",
+          "url": "https://www.huxiu.com/article/4862677.html?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "经过华为、传音、拓竹历练，95后打造AI母婴界特斯拉",
-          "description": "AI母婴智能硬件品牌珂迪Coddie完成数千万元天使轮融资，由钟鼎资本投资，团队由95后连续创业者何鋡威创立，开发AI驱动的母婴产品。",
-          "url": "https://36kr.com/p/3826922264286083?f=rss",
+          "title": "深度对话：后龙虾时代，企业Agent从“能用”到“生产级”差距在哪里？",
+          "description": "与顺丰、深信服CIO对话，探讨企业AI Agent从概念到生产级落地的关键差距与实践。",
+          "url": "https://www.huxiu.com/article/4862675.html?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "硅谷AI一线观察：一人花掉50万美金Token背后的大厂焦虑",
-          "description": "报道硅谷持续两个月的Token-Maxxing军备竞赛，Meta曾内部上线“Claudeonomics”项目以推销自身AI能力，反映大厂在AI投入上的焦虑。",
-          "url": "https://36kr.com/p/3826390617870984?f=rss",
+          "title": "多模态Agent 到底能干啥？我用Step3.7 Flash 跑了一遍",
+          "description": "测试Step3.7 Flash多模态AI模型的图片识别能力，展示其在产品介绍页生成等任务中的应用。",
+          "url": "https://www.huxiu.com/article/4862666.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "阿里达摩院首次发布GPU版本求解器",
-          "description": "阿里巴巴达摩院“敏迭”求解器（MindOpt）发布GPU版本，利用GPU并行加速解决长尾效应，可稳定求解亿级变量线性规划问题，覆盖99%以上算例。",
-          "url": "https://36kr.com/newsflashes/3828594146955913?f=rss",
+          "title": "拉里·埃里森的48年：一家老软件公司，如何等来AI时代的重新定价",
+          "description": "分析Oracle如何在AI时代获得重新估值，体现传统软件公司借助AI实现转型的历程。",
+          "url": "https://www.huxiu.com/article/4862664.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "美团发布首个即时零售商家经营专属AI解决方案“牵牛花Claw”",
-          "description": "美团发布行业首个AI全域解决方案“牵牛花Claw”，针对多门店管理、精细化运营等痛点，提供AI服务与系统结合的解决方案，服务即时零售商家。",
-          "url": "https://36kr.com/newsflashes/3828524929913481?f=rss",
+          "title": "AI能写出基因组了，离它能合成生命还有多久？",
+          "description": "探讨AI在人工合成基因组方面的进展，以及其向合成生命迈进的可能性。",
+          "url": "https://www.huxiu.com/article/4862660.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "在游戏里塞进600个AI NPC，它们自己能把日子过好吗？",
-          "description": "探讨AI技术在游戏领域的应用，以《竞拍之王》等为例，分析AI生成的NPC如何实现自主生活行为，以及商业成品中的两种主要模式。",
-          "url": "https://www.huxiu.com/article/4862150.html?f=rss",
+          "title": "人类的缺爱程度超乎想象，和陆弘毅聊AI数字生命“蕾伊”",
+          "description": "与AI数字生命产品“蕾伊”的创始人陆弘毅对谈，探讨情感AI与人类情感需求。",
+          "url": "https://www.huxiu.com/article/4862652.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "刚刚，国产预训练具身大模型开源了，让后训练不再是必选项",
-          "description": "2026年初，国内具身智能赛道掀起开源潮，国产视觉-语言-动作（VLA）模型、数据集与训练框架公开，推动预训练具身大模型的发展。",
-          "url": "https://www.huxiu.com/article/4862274.html?f=rss",
+          "title": "95%的AI投入为何难见成效？复旦管院北欧营销日聚焦增长新逻辑",
+          "description": "讨论企业在AI投入中遇到的成效问题，聚焦AI在营销和增长中的实际逻辑与挑战。",
+          "url": "https://www.huxiu.com/article/4862656.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "高盛上调标普500指数目标至8000点",
-          "description": "高盛策略师将标普500指数目标点位上调至8000点，受AI和盈利所推动。",
-          "url": "https://36kr.com/p/3827497128465287?f=rss",
+          "title": "沪深两市成交额突破3万亿",
+          "description": "沪深两市成交额突破3万亿元，较上日放量超2900亿，市场交易活跃。",
+          "url": "https://36kr.com/newsflashes/3830005431133833?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "沪深两市成交额突破2.5万亿",
-          "description": "沪深两市成交额突破2.5万亿，市场交投活跃。",
-          "url": "https://36kr.com/newsflashes/3828561246737283?f=rss",
+          "title": "A股三大指数集体下跌，科创板大幅回调",
+          "description": "沪指跌超1%，深成指、创业板指跌超2%，科创50指数跌超5%，半导体、光伏等板块跌幅居前。",
+          "url": "https://36kr.com/newsflashes/3829981424035458?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "南向资金净买入额超100亿港元",
-          "description": "南向资金净买入额超100亿港元，显示内地资金持续流入港股。",
-          "url": "https://36kr.com/newsflashes/3828548493365894?f=rss",
+          "title": "我国牵头修订的金融业通用报文方案国际标准正式发布",
+          "description": "我国牵头修订的两项金融业通用报文方案国际标准经ISO批准发布，提升金融标准化水平。",
+          "url": "https://36kr.com/newsflashes/3829996142962312?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "创业板指涨幅扩大至2%",
-          "description": "创业板指涨幅扩大至2%，早盘一度跌1.8%，深证成指涨0.85%，沪指涨0.2%。",
-          "url": "https://36kr.com/newsflashes/3828567141520008?f=rss",
+          "title": "国际航协：今年4月航空客运需求下降3.4%",
+          "description": "2026年4月全球航空客运需求同比下降3.4%，总运力下降2.9%，载客率微降0.4个百分点。",
+          "url": "https://36kr.com/newsflashes/3830003958065033?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "“易中天”股价齐创历史新高",
-          "description": "中际旭创、新易盛、天孚通信等光模块龙头股价均刷新历史新高，分别涨超7%和4%。",
-          "url": "https://36kr.com/newsflashes/3828576447550341?f=rss",
+          "title": "硅业分会：本周工业硅市场期货小幅反弹、现货整体持稳",
+          "description": "受宏观情绪回暖及煤炭价格反弹带动，工业硅期货价格小幅上移，现货报价未出现明显波动。",
+          "url": "https://36kr.com/newsflashes/3829994414647171?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "市场监管总局部署整治“内卷式”竞争",
-          "description": "聚焦直播带货、外卖等领域，市场监管总局部署整治“内卷式”竞争，释放监管信号。",
-          "url": "https://36kr.com/p/3828191630348934?f=rss",
+          "title": "智利国家铜业公司新掌门强调利润优先，或放慢扩产步伐",
+          "description": "智利铜业新任董事长表示公司将从产量导向转向盈利导向，优先考虑安全、高效和盈利的生产。",
+          "url": "https://36kr.com/newsflashes/3829988383008648?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "美光、三星、SK海力士集体市值破万亿",
-          "description": "美光、三星、SK海力士三家存储芯片巨头在21天内集体市值突破万亿，全球存储芯片行业暴涨。",
-          "url": "https://www.huxiu.com/article/4862019.html?f=rss",
+          "title": "小鹏市值反超理想，新势力两大路线的分野与推演",
+          "description": "小鹏汽车市值阶段性超越理想汽车，终结理想长期稳居新势力市值榜首的格局，反映新能源产业路线分化。",
+          "url": "https://www.huxiu.com/article/4862665.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "拼多多一季度净利润同比跌15%",
-          "description": "拼多多一季度净利润125亿元，同比跌15%，Non-GAAP下141亿元，远低于市场预期的246亿元。",
-          "url": "https://www.huxiu.com/article/4862284.html?f=rss",
+          "title": "从凯文沃什的榜样，看美联储未来政策走向",
+          "description": "凯文·沃什在白宫宣誓就职，其独立性受市场质疑，分析其以格林斯潘为偶像可能影响美联储未来决策。",
+          "url": "https://www.huxiu.com/article/4862605.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "韩国一季度出生人口同比增长14.8%",
-          "description": "韩国今年1~3月出生7.5万人，同比增长14.8%，创近7年新高，总和生育率从0.78回升至0.93。",
-          "url": "https://www.huxiu.com/article/4862266.html?f=rss",
+          "title": "Anthropic完成650亿融资，估值9650亿首次反超OpenAI",
+          "description": "AI公司Anthropic完成650亿美元融资，估值达9650亿元，首次反超OpenAI；黄仁勋加入清华大学经管学院顾问委员会。",
+          "url": "https://36kr.com/p/3829622140593288?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "中国风投大出清：48%机构零退出",
-          "description": "中国一级市场6529家存量机构中，48%公开退出率为零，1500多家机构“僵死”，十年间出手机构数下降55.6%。",
-          "url": "https://www.huxiu.com/article/4862282.html?f=rss",
+          "title": "快手2026年一季度财报：营收337亿元，利润承压",
+          "description": "快手一季度营收337亿元同比增长3.4%，经营利润36亿元同比减少15.6%，可灵AI成第二增长曲线。",
+          "url": "https://36kr.com/p/3828915666441090?f=rss",
           "stars": null,
           "id": 10
         }
@@ -160,41 +160,41 @@
       "items": [
         {
           "title": "claude-mem",
-          "description": "为AI代理提供跨会话的持久上下文，自动压缩并注入相关记忆。",
+          "description": "Captures everything your agent does during sessions, compresses it with AI, and injects relevant context for persistent memory across sessions.",
           "url": "https://github.com/thedotmack/claude-mem",
-          "stars": 79231,
+          "stars": 79471,
           "id": 1
         },
         {
           "title": "daytona",
-          "description": "安全且弹性的基础设施，专门用于运行AI生成的代码。",
+          "description": "A secure and elastic infrastructure for running AI-generated code.",
           "url": "https://github.com/daytonaio/daytona",
-          "stars": 72463,
+          "stars": 72499,
           "id": 2
         },
         {
-          "title": "crawl4ai",
-          "description": "开源且对LLM友好的网络爬虫与抓取工具，支持AI场景。",
-          "url": "https://github.com/unclecode/crawl4ai",
-          "stars": 66638,
+          "title": "MoneyPrinterTurbo",
+          "description": "利用AI大模型一键生成高清短视频，Generate short videos with one click using AI LLM.",
+          "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+          "stars": 67443,
           "id": 3
         },
         {
           "title": "docling",
-          "description": "让文档为生成式AI做好准备，实现高效文档处理。",
+          "description": "Get your documents ready for gen AI by processing and preparing them for AI workflows.",
           "url": "https://github.com/docling-project/docling",
-          "stars": 60507,
+          "stars": 60566,
           "id": 4
         },
         {
-          "title": "mem0",
-          "description": "AI代理的通用记忆层，提供统一的记忆管理。",
-          "url": "https://github.com/mem0ai/mem0",
-          "stars": 56935,
+          "title": "pi",
+          "description": "AI agent toolkit including coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, and vLLM pods.",
+          "url": "https://github.com/earendil-works/pi",
+          "stars": 57135,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-05-28T14:49:19.307+08:00"
+  "updatedAt": "2026-05-29T14:49:33.785+08:00"
 }
