@@ -1,76 +1,76 @@
 {
-  "date": "2026-05-29",
+  "date": "2026-05-30",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "8点1氪丨Anthropic完成650亿融资，估值9650亿首次反超OpenAI；售卖不合格足银手镯，周六福被罚；黄仁勋加入清华大学，任经管学院顾问",
-          "description": "Anthropic完成巨额融资，估值首次超越OpenAI；黄仁勋加入清华大学经管学院顾问委员会，体现AI领域资本与学术动态。",
-          "url": "https://36kr.com/p/3829622140593288?f=rss",
+          "title": "36氪首发 | 服务富士康，半年营收超两千万的机器人解决方案商完成天使轮融资",
+          "description": "乘物机器人专注工业具身智能技术研发，近日完成天使轮融资，由和椿科技战略投资。",
+          "url": "https://36kr.com/p/3831135917107075?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "快手基本面韧性凸显，可灵AI成第二增长曲线",
-          "description": "快手2026年一季度财报显示，可灵AI成为公司第二增长曲线，体现AI在短视频平台的应用。",
-          "url": "https://36kr.com/p/3828915666441090?f=rss",
+          "title": "最前线｜中科创星第十二期“好望角科学沙龙”聚焦“太空智驾”，卫星将从被动响应走向自主决策",
+          "description": "西安光机所副所长邵晓鹏提出太空智驾时代将到来，卫星将具备自主环境感知、任务规划和机动决策能力，类似L4级自动驾驶。",
+          "url": "https://36kr.com/p/3831071878358659?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "科氪 | 雷神联合AMD发布覆盖三大形态AI工作站产品矩阵",
-          "description": "雷神发布覆盖塔式、迷你PC和移动三大类别的AI工作站全场景产品矩阵，推动AI算力硬件发展。",
-          "url": "https://36kr.com/p/3828898785858185?f=rss",
+          "title": "千里科技再添筹码，或将整合吉利辅助驾驶团队｜36氪独家",
+          "description": "吉利中央研究院辅助驾驶团队将被整合入千里科技，以增强其自动驾驶技术能力。",
+          "url": "https://36kr.com/p/3830580716365449?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "7次碰壁、4个版本：我在一个浏览器插件里看到Agent该有的样子",
-          "description": "IBM发布ITBench-AA基准测试，将AI模型置于真实服务器环境中评估Agent能力，探讨AI Agent的未来方向。",
-          "url": "https://www.huxiu.com/article/4862677.html?f=rss",
+          "title": "氪星晚报 ｜联想创投等入股诺仕机器人；苹果据悉将在WWDC重点展示端侧AI能力",
+          "description": "苹果计划在WWDC重点展示端侧AI能力；同时联想创投等入股诺仕机器人，涉及AI/具身智能领域。",
+          "url": "https://36kr.com/p/3830194503526277?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "深度对话：后龙虾时代，企业Agent从“能用”到“生产级”差距在哪里？",
-          "description": "与顺丰、深信服CIO对话，探讨企业AI Agent从概念到生产级落地的关键差距与实践。",
-          "url": "https://www.huxiu.com/article/4862675.html?f=rss",
+          "title": "海光信息完成阶跃星辰Step 3.7 Flash适配",
+          "description": "海光团队依托DTK异构计算平台于发布当天完成阶跃星辰Step 3.7 Flash大模型的适配与调优，实现发布即适配。",
+          "url": "https://36kr.com/newsflashes/3831356538529409?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "多模态Agent 到底能干啥？我用Step3.7 Flash 跑了一遍",
-          "description": "测试Step3.7 Flash多模态AI模型的图片识别能力，展示其在产品介绍页生成等任务中的应用。",
-          "url": "https://www.huxiu.com/article/4862666.html?f=rss",
+          "title": "天津发布2025年度人工智能十大应用标杆场景，总投资超6亿元",
+          "description": "天津发布涵盖科研、制造、医疗等9大领域的人工智能十大应用标杆场景，总投资超6亿元。",
+          "url": "https://36kr.com/newsflashes/3831325232670338?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "拉里·埃里森的48年：一家老软件公司，如何等来AI时代的重新定价",
-          "description": "分析Oracle如何在AI时代获得重新估值，体现传统软件公司借助AI实现转型的历程。",
-          "url": "https://www.huxiu.com/article/4862664.html?f=rss",
+          "title": "李笛：AI最终拼的，不是智商，而是情商",
+          "description": "前微软小冰负责人李笛探讨人与AI交互中的情商重要性，以及AI发展的未来方向。",
+          "url": "https://www.huxiu.com/article/4862956.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "AI能写出基因组了，离它能合成生命还有多久？",
-          "description": "探讨AI在人工合成基因组方面的进展，以及其向合成生命迈进的可能性。",
-          "url": "https://www.huxiu.com/article/4862660.html?f=rss",
+          "title": "两大AI“妖股”，杀回A 股",
+          "description": "智谱在港股市场股价异动，市值一度突破8810亿港元，短暂超越小米，AI大模型公司受到市场关注。",
+          "url": "https://www.huxiu.com/article/4862950.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "人类的缺爱程度超乎想象，和陆弘毅聊AI数字生命“蕾伊”",
-          "description": "与AI数字生命产品“蕾伊”的创始人陆弘毅对谈，探讨情感AI与人类情感需求。",
-          "url": "https://www.huxiu.com/article/4862652.html?f=rss",
+          "title": "红杉对话Serval创始人：入职时你以为的工作，80%都是不该存在的流程：AI原生思维如何吃掉企业软件",
+          "description": "Serval创始人认为AI原生思维将重塑企业软件，淘汰大量非必要流程。",
+          "url": "https://www.huxiu.com/article/4862944.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "95%的AI投入为何难见成效？复旦管院北欧营销日聚焦增长新逻辑",
-          "description": "讨论企业在AI投入中遇到的成效问题，聚焦AI在营销和增长中的实际逻辑与挑战。",
-          "url": "https://www.huxiu.com/article/4862656.html?f=rss",
+          "title": "7805个人类作家，输给一段提示词",
+          "description": "顶级文学杂志Granta年度作品被揭露为AI生成，引发关于AIGC与人类创作能力的广泛讨论。",
+          "url": "https://www.huxiu.com/article/4862934.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "沪深两市成交额突破3万亿",
-          "description": "沪深两市成交额突破3万亿元，较上日放量超2900亿，市场交易活跃。",
-          "url": "https://36kr.com/newsflashes/3830005431133833?f=rss",
+          "title": "国家能源局：2026年4月核发绿证2.37亿个",
+          "description": "国家能源局发布2026年4月绿证核发数据，共核发2.37亿个绿证，其中可交易绿证1.77亿个，占比74.85%。",
+          "url": "https://36kr.com/newsflashes/3831212862137990?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "A股三大指数集体下跌，科创板大幅回调",
-          "description": "沪指跌超1%，深成指、创业板指跌超2%，科创50指数跌超5%，半导体、光伏等板块跌幅居前。",
-          "url": "https://36kr.com/newsflashes/3829981424035458?f=rss",
+          "title": "宁德时代首席科学家吴凯：新国标实施后新能源车自燃率将低于燃油车一个数量级",
+          "description": "中国工程院院士、宁德时代首席科学家吴凯在2026装备强国论坛上表示，强制性国标实施后，新能源车自燃率将大幅降低。",
+          "url": "https://36kr.com/newsflashes/3831211012335237?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "我国牵头修订的金融业通用报文方案国际标准正式发布",
-          "description": "我国牵头修订的两项金融业通用报文方案国际标准经ISO批准发布，提升金融标准化水平。",
-          "url": "https://36kr.com/newsflashes/3829996142962312?f=rss",
+          "title": "国务院正式批复同意粤港澳游艇自由行",
+          "description": "国务院批复自即日起在粤港澳大湾区内地九市暂时调整相关政策，对港澳游艇实行免担保和临时船舶国籍登记，促进自由行。",
+          "url": "https://36kr.com/newsflashes/3831271278569089?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "国际航协：今年4月航空客运需求下降3.4%",
-          "description": "2026年4月全球航空客运需求同比下降3.4%，总运力下降2.9%，载客率微降0.4个百分点。",
-          "url": "https://36kr.com/newsflashes/3830003958065033?f=rss",
+          "title": "集采百元一盒药，药店竟卖3960元，央视调查高价药疑云",
+          "description": "第十一批国家药品集采落地后，记者发现同一款集采药品在呼和浩特药店售价高达3960元，与百元线上价差近40倍。",
+          "url": "https://36kr.com/newsflashes/3831277475030918?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "硅业分会：本周工业硅市场期货小幅反弹、现货整体持稳",
-          "description": "受宏观情绪回暖及煤炭价格反弹带动，工业硅期货价格小幅上移，现货报价未出现明显波动。",
-          "url": "https://36kr.com/newsflashes/3829994414647171?f=rss",
+          "title": "深圳网约车市场已饱和，官方发布风险提示",
+          "description": "深圳市交通运输局发布运营动态，4月网约车日均单车订单约13.01单，市场饱和，提醒从业者警惕六大风险。",
+          "url": "https://36kr.com/newsflashes/3831333621933705?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "智利国家铜业公司新掌门强调利润优先，或放慢扩产步伐",
-          "description": "智利铜业新任董事长表示公司将从产量导向转向盈利导向，优先考虑安全、高效和盈利的生产。",
-          "url": "https://36kr.com/newsflashes/3829988383008648?f=rss",
+          "title": "天津发布2025年度人工智能十大应用标杆场景，总投资超6亿元",
+          "description": "2026世界智能产业博览会期间，天津正式发布十大AI应用标杆场景，涵盖科研、制造、医疗等领域，总投资超6亿元。",
+          "url": "https://36kr.com/newsflashes/3831325232670338?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "小鹏市值反超理想，新势力两大路线的分野与推演",
-          "description": "小鹏汽车市值阶段性超越理想汽车，终结理想长期稳居新势力市值榜首的格局，反映新能源产业路线分化。",
-          "url": "https://www.huxiu.com/article/4862665.html?f=rss",
+          "title": "千里科技再添筹码，或将整合吉利辅助驾驶团队",
+          "description": "据36氪从产业人士处获悉，吉利中央研究院数百人的辅助驾驶团队将在近期被整合入千里科技，以助力其成为“第二个华为”。",
+          "url": "https://36kr.com/p/3830580716365449?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "从凯文沃什的榜样，看美联储未来政策走向",
-          "description": "凯文·沃什在白宫宣誓就职，其独立性受市场质疑，分析其以格林斯潘为偶像可能影响美联储未来决策。",
-          "url": "https://www.huxiu.com/article/4862605.html?f=rss",
+          "title": "资本竞逐新能源重卡赛道，2026年以来累计融资超80亿元",
+          "description": "新能源重卡企业零一汽车完成2亿美元B2轮融资，2026年以来新能源重卡赛道累计融资超80亿元，资本加速布局。",
+          "url": "https://www.huxiu.com/article/4862948.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "Anthropic完成650亿融资，估值9650亿首次反超OpenAI",
-          "description": "AI公司Anthropic完成650亿美元融资，估值达9650亿元，首次反超OpenAI；黄仁勋加入清华大学经管学院顾问委员会。",
-          "url": "https://36kr.com/p/3829622140593288?f=rss",
+          "title": "两大AI“妖股”杀回A股",
+          "description": "智谱在港股股价一度飙升23%至1993港元，总市值突破8810亿港元，短暂超越小米，随后回落。AI公司回归A股引发市场关注。",
+          "url": "https://www.huxiu.com/article/4862950.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "快手2026年一季度财报：营收337亿元，利润承压",
-          "description": "快手一季度营收337亿元同比增长3.4%，经营利润36亿元同比减少15.6%，可灵AI成第二增长曲线。",
-          "url": "https://36kr.com/p/3828915666441090?f=rss",
+          "title": "马斯克“夸下的海口”，值2万亿美元吗？",
+          "description": "SpaceX公布S-1招股书，计划募资约750亿美元，若成功将成全球史上最大IPO，其估值目标引发市场热议。",
+          "url": "https://www.huxiu.com/article/4862947.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -153,48 +153,84 @@
     },
     {
       "name": "AI 学术论文",
-      "items": []
+      "items": [
+        {
+          "title": "Physics Is All You Need? A Case Study in Physicist-Supervised AI Development of Scientific Software",
+          "description": "通过量化案例研究，探讨AI代理在科学软件开发中的角色，涉及物理学家监督AI编码代理的协作过程。",
+          "url": "https://arxiv.org/pdf/2605.30353v1",
+          "stars": null,
+          "id": 1
+        },
+        {
+          "title": "SchGen: PCB Schematic Generation with Semantic-Grounded Code Representations",
+          "description": "提出SchGen模型，利用语义代码表示自动生成PCB原理图，旨在减少手动设计依赖。",
+          "url": "https://arxiv.org/pdf/2605.30345v1",
+          "stars": null,
+          "id": 2
+        },
+        {
+          "title": "Locally Coherent, Globally Incoherent: Bounding Compositional Incoherence in Multi-Component LLM Agents",
+          "description": "分析多组件LLM代理中局部一致性与全局不一致性的问题，并给出组合不一致性的界限。",
+          "url": "https://arxiv.org/pdf/2605.30335v1",
+          "stars": null,
+          "id": 3
+        },
+        {
+          "title": "SoundnessBench: Can Your AI Scientist Really Tell Good Research Ideas from Bad Ones?",
+          "description": "提出SoundnessBench基准，评估AI研究代理区分研究想法好坏的能力，填补了相关评估空白。",
+          "url": "https://arxiv.org/pdf/2605.30329v1",
+          "stars": null,
+          "id": 4
+        },
+        {
+          "title": "In-Context Reward Adaptation for Robust Preference Modeling",
+          "description": "提出上下文奖励适应方法，使奖励模型能够动态适应多样化的人类偏好，提升RLHF的鲁棒性。",
+          "url": "https://arxiv.org/pdf/2605.30323v1",
+          "stars": null,
+          "id": 5
+        }
+      ]
     },
     {
       "name": "AI 开源项目",
       "items": [
         {
           "title": "claude-mem",
-          "description": "Captures everything your agent does during sessions, compresses it with AI, and injects relevant context for persistent memory across sessions.",
+          "description": "为AI代理提供跨会话的持久上下文记忆，自动捕获并压缩会话内容注入相关上下文。",
           "url": "https://github.com/thedotmack/claude-mem",
-          "stars": 79471,
+          "stars": 79641,
           "id": 1
         },
         {
-          "title": "daytona",
-          "description": "A secure and elastic infrastructure for running AI-generated code.",
-          "url": "https://github.com/daytonaio/daytona",
-          "stars": 72499,
+          "title": "Front-End-Checklist",
+          "description": "现代Web开发的必备清单，适用于人类和AI代理。",
+          "url": "https://github.com/thedaviddias/Front-End-Checklist",
+          "stars": 72748,
           "id": 2
         },
         {
-          "title": "MoneyPrinterTurbo",
-          "description": "利用AI大模型一键生成高清短视频，Generate short videos with one click using AI LLM.",
-          "url": "https://github.com/harry0703/MoneyPrinterTurbo",
-          "stars": 67443,
+          "title": "deer-flow",
+          "description": "开源的长期超级代理工具，可研究、编码和创造，集成沙箱、记忆、工具和子代理。",
+          "url": "https://github.com/bytedance/deer-flow",
+          "stars": 69973,
           "id": 3
         },
         {
           "title": "docling",
-          "description": "Get your documents ready for gen AI by processing and preparing them for AI workflows.",
+          "description": "将文档准备好用于生成式AI，高效处理文档转换。",
           "url": "https://github.com/docling-project/docling",
-          "stars": 60566,
+          "stars": 60624,
           "id": 4
         },
         {
           "title": "pi",
-          "description": "AI agent toolkit including coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, and vLLM pods.",
+          "description": "AI代理工具包，包括编码代理CLI、统一LLM API、TUI和Web UI库、Slack机器人等。",
           "url": "https://github.com/earendil-works/pi",
-          "stars": 57135,
+          "stars": 57546,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-05-29T14:49:33.785+08:00"
+  "updatedAt": "2026-05-30T14:19:54.902+08:00"
 }
