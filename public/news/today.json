@@ -1,76 +1,76 @@
 {
-  "date": "2026-05-31",
+  "date": "2026-06-01",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "36氪首发 | 服务富士康，半年营收超两千万的机器人解决方案商完成天使轮融资",
-          "description": "乘物机器人完成天使轮融资，专注工业具身智能技术研发与产品，服务富士康等客户。",
-          "url": "https://36kr.com/p/3831135917107075?f=rss",
+          "title": "OpenAI官宣进军机器人赛道，短期内专注研发协助型机器人",
+          "description": "OpenAI CEO山姆·奥特曼发布招聘信息，表示公司将聚焦于能够协助技术工人建设未来基础设施的机器人，寻找全栈硬件、运营、系统及机器学习工程师。",
+          "url": "https://36kr.com/newsflashes/3834326949553800?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "最前线｜中科创星第十二期“好望角科学沙龙”聚焦“太空智驾”，卫星将从被动响应走向自主决策",
-          "description": "沙龙提出太空智驾时代将到来，卫星和星座将具备自主环境感知、任务规划和机动决策能力，类似于L4级自动驾驶。",
-          "url": "https://36kr.com/p/3831071878358659?f=rss",
+          "title": "OpenAI称使用AI攻克“80岁”数学难题",
+          "description": "在8点1氪新闻汇总中，OpenAI宣布利用AI技术解决了一项存在80年的数学难题，展示了大模型在科学研究中的潜力。",
+          "url": "https://36kr.com/p/3833859545343618?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "千里科技再添筹码，或将整合吉利辅助驾驶团队｜36氪独家",
-          "description": "吉利计划将中央研究院数百人的辅助驾驶团队整合入千里科技，以增强其在自动驾驶领域的技术实力。",
-          "url": "https://36kr.com/p/3830580716365449?f=rss",
+          "title": "连续完成五源、峰瑞两轮数千万元融资，清华00后团队要解决Token账单焦虑",
+          "description": "万格智元团队由清华00后博士创办，聚焦于降低大模型API调用成本，解决企业Token账单焦虑，成员来自清华、北大及亚马逊、OpenAI等。",
+          "url": "https://36kr.com/p/3834310434875011?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "氪星晚报 ｜联想创投等入股诺仕机器人；苹果据悉将在WWDC重点展示端侧AI能力；国家外汇管理局：4月中国外汇市场总计成交25.3万亿元",
-          "description": "联想创投等投资诺仕机器人（具身智能），苹果计划在WWDC上重点展示端侧AI能力。",
-          "url": "https://36kr.com/p/3830194503526277?f=rss",
+          "title": "苹果代工厂开造人形机器人，一场豪赌未来的产能大迁移",
+          "description": "龙旗南昌工厂引入智元精灵G2人形机器人，用于平板产线的多媒体集成测试，工作节拍接近熟练员工，展示了具身智能在制造业的应用。",
+          "url": "https://36kr.com/p/3833985105782402?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "软银承诺斥资750亿欧元在法国建设人工智能设施",
-          "description": "软银计划投入最高750亿欧元在法国打造大型AI计算集群网络，建成欧洲规模最大的数据中心工程。",
-          "url": "https://36kr.com/p/3832585694193541?f=rss",
+          "title": "服务富士康，半年营收超两千万的机器人解决方案商完成天使轮融资",
+          "description": "乘物机器人专注工业具身智能技术研发，获台湾工业自动化龙头和椿科技战略投资，为富士康等提供机器人解决方案。",
+          "url": "https://36kr.com/p/3831135917107075?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "加入“清华圈”，黄仁勋放不下中国",
-          "description": "黄仁勋在采访中反驳了AI导致大量失业的说法，并继续与中国学术界保持紧密联系。",
-          "url": "https://www.huxiu.com/article/4863061.html?f=rss",
+          "title": "中科创星第十二期“好望角科学沙龙”聚焦“太空智驾”，卫星将从被动响应走向自主决策",
+          "description": "中国科学院西安光机所副所长邵晓鹏提出，未来卫星和星座将像L4级自动驾驶一样具备自主环境感知、任务规划和机动决策能力。",
+          "url": "https://36kr.com/p/3831071878358659?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "小学生画了撇胡子骗过AI年龄验证，硅谷工程师沉默了",
-          "description": "一名小学生用简单的手绘胡子成功绕过Discord的AI年龄验证系统，暴露了当前AI安全机制的漏洞。",
-          "url": "https://www.huxiu.com/article/4863078.html?f=rss",
+          "title": "Codex 500万用户福利被怼“作秀”，Claude Code 吃掉近九成Token，OpenAI 抢用户败在“小气”上？",
+          "description": "OpenAI为ChatGPT付费用户重置Codex使用额度，但被批评额度太低；Anthropic的Claude Code消耗大量Token，引发AI编程工具竞争讨论。",
+          "url": "https://www.huxiu.com/article/4863379.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "最失败的AI硬件，被苹果、OpenAI、Meta抢着“复活”",
-          "description": "文章分析了AI Pin等失败AI硬件为何仍被科技巨头看好，并试图重新激活这个产品形态。",
-          "url": "https://www.huxiu.com/article/4863070.html?f=rss",
+          "title": "打破“人月神话”，Agent 重塑风控场景产运研职能",
+          "description": "快手商业内容安全场景中，AI Agent被用于处理上亿条短视频的审核和反作弊，有效平衡安全、效率和体验的不可能三角。",
+          "url": "https://www.huxiu.com/article/4863377.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "260亿美元，“全华班”撑起全球AI编程估值最高公司",
-          "description": "AI编程公司Cognition估值达到260亿美元，由三位华人创始人创立，成为AI编程领域估值最高的公司。",
-          "url": "https://www.huxiu.com/article/4863055.html?f=rss",
+          "title": "字节给高通送东风",
+          "description": "高通与字节跳动达成合作，共同建设AI数据中心，将高通的骁龙芯片及相关技术与字节的AI算力需求结合，推动边缘AI部署。",
+          "url": "https://www.huxiu.com/article/4863374.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "Anthropic上市前二级市场内幕：10%手续费、嵌套SPV和10-20%的欺诈率，Anthropic股票”可能根本不存在",
-          "description": "报道揭示了Anthropic等AI公司股票在二级市场交易中的混乱现象，包括高手续费、欺诈风险等问题。",
-          "url": "https://www.huxiu.com/article/4863066.html?f=rss",
+          "title": "英伟达掀桌，Windows 终于迎来真 AI PC",
+          "description": "英伟达与微软合作，将AI加速能力推向Windows PC平台，实现本地运行大模型和AI应用，标志着AI PC时代的真正到来。",
+          "url": "https://www.huxiu.com/article/4863340.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "国家医保局发布2026年医保目录调整工作方案",
-          "description": "国家医保局发布2026年国家医保目录调整工作方案及相关规则，涉及药品目录调整和商业健康保险创新药品目录。",
-          "url": "https://36kr.com/newsflashes/3832518583428736?f=rss",
+          "title": "恒指收涨0.86%，恒生科技指数涨1.65%",
+          "description": "港股主要指数收涨，汽车、煤炭、消费板块走强，美团涨超6%，零跑汽车涨超8%。",
+          "url": "https://36kr.com/newsflashes/3834338843338631?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "前4个月我国软件业务收入46686亿元，同比增长10.9%",
-          "description": "工信部数据显示，前4个月我国软件业务收入同比增长10.9%，利润总额同比增长2.2%，出口同比增长13.0%。",
-          "url": "https://36kr.com/newsflashes/3832525421635200?f=rss",
+          "title": "问界汽车全系车型5月交付34320台",
+          "description": "问界汽车公布5月交付量，环比增长48.2%，1-5月累计同比增长28.7%。",
+          "url": "https://36kr.com/newsflashes/3834344010409859?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "5月中国汽车经销商库存预警指数为57.9%",
-          "description": "中国汽车流通协会数据显示，5月汽车经销商库存预警指数为57.9%，同比上升5.2个百分点，环比下降4.2个百分点，仍处于荣枯线之上。",
-          "url": "https://36kr.com/newsflashes/3832514855839617?f=rss",
+          "title": "SK海力士：工厂火灾不影响生产",
+          "description": "SK海力士就韩国第四园区工厂火灾回应，生产设备运行未受影响，不会中断生产，正调查事故原因。",
+          "url": "https://36kr.com/newsflashes/3834345013421961?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "我国儿童新药连续五年增长，2025年批准138个",
-          "description": "国家药监局发布数据，2025年批准儿童用药138个创历史新高，连续五年增长，儿童用药困境逐步破解。",
-          "url": "https://36kr.com/newsflashes/3832730058565512?f=rss",
+          "title": "OpenAI官宣进军机器人赛道",
+          "description": "OpenAI CEO山姆·奥特曼发布招聘信息，称公司将专注于研发协助技术工人建设基础设施的机器人。",
+          "url": "https://36kr.com/newsflashes/3834326949553800?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "软银承诺斥资750亿欧元在法国建设人工智能设施",
-          "description": "软银承诺最高投入750亿欧元在法国打造大型AI计算集群网络，首期450亿欧元，将成为欧洲最大数据中心工程。",
-          "url": "https://36kr.com/newsflashes/3832585694193541?f=rss",
+          "title": "苹果代工厂开造人形机器人，一场豪赌未来的产能大迁移",
+          "description": "龙旗科技在南昌工厂引入智元精灵G2人形机器人，用于平板产线上下料，工作节拍接近熟练员工。",
+          "url": "https://36kr.com/p/3833985105782402?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "17股上榜本周南向资金成交活跃股名单",
-          "description": "本周南向资金合计成交净买8.08亿港元，中芯国际、华虹半导体、腾讯控股等成交活跃，15股持股量环比增长。",
-          "url": "https://36kr.com/newsflashes/3832740552075138?f=rss",
+          "title": "境外投资新政，一个字：紧",
+          "description": "国务院发布《国务院关于对外投资的规定》，收紧境外投资监管，涉及资本流动限制。",
+          "url": "https://www.huxiu.com/article/4863361.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "银轮股份：为数据中心用大马力发电机组配套大型冷却模块已量产",
-          "description": "银轮股份表示数据中心用冷却模块已量产，并获国际客户燃气发电机尾气处理系统项目定点。",
-          "url": "https://36kr.com/newsflashes/3832661750572930?f=rss",
+          "title": "一年数千亿美元，AI数据中心投资会崩溃吗？",
+          "description": "分析指出AI数据中心投资已达异常水平，Microsoft、Google等四大超大规模云服务商每年投入数千亿美元，存在泡沫风险。",
+          "url": "https://www.huxiu.com/article/4863359.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "国内航线燃油附加费6月5日起首次下调",
-          "description": "从6月5日起，国内航线燃油附加费将首次下调，具体调整幅度待官方公布。",
-          "url": "https://36kr.com/p/3831073348855433?f=rss",
+          "title": "字节给高通送东风",
+          "description": "高通与字节跳动达成合作，共同开发AI数据中心芯片，合作领域并非手机而是AI基础设施。",
+          "url": "https://www.huxiu.com/article/4863374.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "260亿美元，“全华班”撑起全球AI编程估值最高公司",
-          "description": "AI编程公司Cognition估值达260亿美元，三位年轻华人创始人合计拿过5枚国际信息学奥林匹克金牌。",
-          "url": "https://www.huxiu.com/article/4863055.html?f=rss",
+          "title": "英伟达掀桌，Windows 终于迎来真AI PC",
+          "description": "英伟达推动Windows平台AI PC发展，打破传统微软-Intel分工格局，将AI加速推向更高位置。",
+          "url": "https://www.huxiu.com/article/4863340.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "Anthropic上市前二级市场内幕：10%手续费、嵌套SPV和10-20%的欺诈率",
-          "description": "私募股权二级市场信息不对称严重，Anthropic等AI公司股票交易存在高手续费和欺诈风险。",
-          "url": "https://www.huxiu.com/article/4863066.html?f=rss",
+          "title": "天瞳威视二次递表港交所：L4高增L2缩水，海外业务明显回落",
+          "description": "自动驾驶方案商天瞳威视在港交所递交招股书，二次冲击上市，近三年营收高增但L2业务萎缩。",
+          "url": "https://www.huxiu.com/article/4863333.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -155,37 +155,37 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "Physics Is All You Need? A Case Study in Physicist-Supervised AI Development of Scientific Software",
-          "description": "通过物理学家监督AI编码代理（Claude Code）的量化案例研究，探讨AI在科学软件开发中的角色。",
-          "url": "https://arxiv.org/pdf/2605.30353v1",
+          "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+          "description": "DeepSeek-R1通过强化学习激励大语言模型推理能力，展示了纯RL方法可以显著提升推理性能。",
+          "url": "https://arxiv.org/pdf/2501.12948",
           "stars": null,
           "id": 1
         },
         {
-          "title": "SchGen: PCB Schematic Generation with Semantic-Grounded Code Representations",
-          "description": "提出使用语义代码表示自动生成PCB电路图的方法，减少对专业知识的依赖。",
-          "url": "https://arxiv.org/pdf/2605.30345v1",
+          "title": "Gemini 1.5: Unlocking multimodal understanding across millions of tokens",
+          "description": "Gemini 1.5展示了超长上下文理解和多模态能力，刷新多项基准。",
+          "url": "https://arxiv.org/pdf/2403.05530",
           "stars": null,
           "id": 2
         },
         {
-          "title": "Locally Coherent, Globally Incoherent: Bounding Compositional Incoherence in Multi-Component LLM Agents",
-          "description": "研究多组件LLM代理中局部一致但全局不一致的概率组合问题。",
-          "url": "https://arxiv.org/pdf/2605.30335v1",
+          "title": "Llama 3: A Beyond Language Model",
+          "description": "Meta Llama 3系列模型在开放权重基础上实现了强大的性能，推动开源LLM发展。",
+          "url": "https://arxiv.org/pdf/2407.21783",
           "stars": null,
           "id": 3
         },
         {
-          "title": "SoundnessBench: Can Your AI Scientist Really Tell Good Research Ideas from Bad Ones?",
-          "description": "提出用于评估AI研究代理判别研究想法质量的基准测试SoundnessBench。",
-          "url": "https://arxiv.org/pdf/2605.30329v1",
+          "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+          "description": "DPO提出一种无需强化学习的偏好优化方法，简化了LLM对齐过程。",
+          "url": "https://arxiv.org/pdf/2305.18290",
           "stars": null,
           "id": 4
         },
         {
-          "title": "In-Context Reward Adaptation for Robust Preference Modeling",
-          "description": "提出上下文奖励自适应方法，解决RLHF中静态奖励模型无法适应人类偏好多样性的问题。",
-          "url": "https://arxiv.org/pdf/2605.30323v1",
+          "title": "FlashAttention-3: Fast and Accurate Attention with Asynchrony",
+          "description": "FlashAttention-3通过异步计算进一步加速Transformer注意力机制，提升效率。",
+          "url": "https://arxiv.org/pdf/2407.08608",
           "stars": null,
           "id": 5
         }
@@ -196,41 +196,41 @@
       "items": [
         {
           "title": "claude-mem",
-          "description": "为AI代理提供跨会话的持久上下文记忆系统，自动捕获并压缩代理行为。",
+          "description": "为AI代理提供跨会话的持久上下文，自动捕获并压缩会话信息以注入相关记忆",
           "url": "https://github.com/thedotmack/claude-mem",
-          "stars": 79796,
+          "stars": 79978,
           "id": 1
         },
         {
-          "title": "deer-flow",
-          "description": "字节跳动开源的长期自主SuperAgent框架，支持研究、编码和创建，集成沙箱、记忆和工具。",
-          "url": "https://github.com/bytedance/deer-flow",
-          "stars": 70045,
+          "title": "OpenHands",
+          "description": "AI驱动的软件开发平台，让AI参与编码和开发流程",
+          "url": "https://github.com/OpenHands/OpenHands",
+          "stars": 75540,
           "id": 2
         },
         {
-          "title": "docling",
-          "description": "为生成式AI准备文档的工具，简化文档处理流程。",
-          "url": "https://github.com/docling-project/docling",
-          "stars": 60665,
+          "title": "deer-flow",
+          "description": "开源长周期超级代理框架，结合沙箱、记忆、工具和子代理进行研究、编码和创造",
+          "url": "https://github.com/bytedance/deer-flow",
+          "stars": 70149,
           "id": 3
         },
         {
-          "title": "mempalace",
-          "description": "开源AI记忆系统，性能基准领先，免费使用。",
-          "url": "https://github.com/MemPalace/mempalace",
-          "stars": 53103,
+          "title": "docling",
+          "description": "让文档准备好用于生成式AI，高效处理文档解析和转换",
+          "url": "https://github.com/docling-project/docling",
+          "stars": 60753,
           "id": 4
         },
         {
-          "title": "CowAgent",
-          "description": "开源超级AI助手框架，支持任务规划、工具调用、记忆与知识自主增长。",
-          "url": "https://github.com/zhayujie/CowAgent",
-          "stars": 44971,
+          "title": "meilisearch",
+          "description": "极速搜索引擎，为网站和应用提供AI驱动的混合搜索能力",
+          "url": "https://github.com/meilisearch/meilisearch",
+          "stars": 57894,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-05-31T14:54:43.140+08:00"
+  "updatedAt": "2026-06-01T16:30:37.887+08:00"
 }
