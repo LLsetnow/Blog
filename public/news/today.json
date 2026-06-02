@@ -1,76 +1,76 @@
 {
-  "date": "2026-06-01",
+  "date": "2026-06-02",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "OpenAI官宣进军机器人赛道，短期内专注研发协助型机器人",
-          "description": "OpenAI CEO山姆·奥特曼发布招聘信息，表示公司将聚焦于能够协助技术工人建设未来基础设施的机器人，寻找全栈硬件、运营、系统及机器学习工程师。",
-          "url": "https://36kr.com/newsflashes/3834326949553800?f=rss",
+          "title": "前美团外卖技术负责人创业，做具身智能时代的“餐饮世界模型”",
+          "description": "具身智能公司元节智能完成千万级种子轮融资，选择餐饮后厨场景作为切入点。",
+          "url": "https://36kr.com/p/3834292242130825?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "OpenAI称使用AI攻克“80岁”数学难题",
-          "description": "在8点1氪新闻汇总中，OpenAI宣布利用AI技术解决了一项存在80年的数学难题，展示了大模型在科学研究中的潜力。",
-          "url": "https://36kr.com/p/3833859545343618?f=rss",
+          "title": "首轮融资数千万美元、估值2.5亿美元，「Aippy」正在打造下一代AI游戏社区",
+          "description": "NADA AI团队开发的AI游戏社区Aippy完成数千万美元首轮融资，致力于用AI技术革新游戏社区体验。",
+          "url": "https://36kr.com/p/3834400181741440?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "连续完成五源、峰瑞两轮数千万元融资，清华00后团队要解决Token账单焦虑",
-          "description": "万格智元团队由清华00后博士创办，聚焦于降低大模型API调用成本，解决企业Token账单焦虑，成员来自清华、北大及亚马逊、OpenAI等。",
-          "url": "https://36kr.com/p/3834310434875011?f=rss",
+          "title": "豆包6月下旬正式付费，并加速打通抖音电商丨独家",
+          "description": "字节跳动旗下大模型产品豆包将于6月下旬推出付费订阅服务，并计划与抖音电商深度打通。",
+          "url": "https://36kr.com/p/3834544830721671?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "苹果代工厂开造人形机器人，一场豪赌未来的产能大迁移",
-          "description": "龙旗南昌工厂引入智元精灵G2人形机器人，用于平板产线的多媒体集成测试，工作节拍接近熟练员工，展示了具身智能在制造业的应用。",
-          "url": "https://36kr.com/p/3833985105782402?f=rss",
+          "title": "量坤科技获数亿元天使轮融资，AI4S急需量子级精度数据",
+          "description": "量子计算公司量坤科技完成数亿元融资，专注为AI for Science提供高精度数据。",
+          "url": "https://36kr.com/p/3826034537223043?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "服务富士康，半年营收超两千万的机器人解决方案商完成天使轮融资",
-          "description": "乘物机器人专注工业具身智能技术研发，获台湾工业自动化龙头和椿科技战略投资，为富士康等提供机器人解决方案。",
-          "url": "https://36kr.com/p/3831135917107075?f=rss",
+          "title": "AI原生的6G到底是什么？我们和“隐形冠军”InterDigital聊了聊",
+          "description": "探讨AI原生网络在6G中的角色，以及未来通信技术如何与AI深度融合。",
+          "url": "https://www.huxiu.com/article/4863380.html?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "中科创星第十二期“好望角科学沙龙”聚焦“太空智驾”，卫星将从被动响应走向自主决策",
-          "description": "中国科学院西安光机所副所长邵晓鹏提出，未来卫星和星座将像L4级自动驾驶一样具备自主环境感知、任务规划和机动决策能力。",
-          "url": "https://36kr.com/p/3831071878358659?f=rss",
+          "title": "Anthropic 秘密申请IPO，一边抢跑一边防着OpenAI",
+          "description": "大模型公司Anthropic秘密提交IPO申请，在AI竞赛中加速资本化进程。",
+          "url": "https://www.huxiu.com/article/4863693.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "Codex 500万用户福利被怼“作秀”，Claude Code 吃掉近九成Token，OpenAI 抢用户败在“小气”上？",
-          "description": "OpenAI为ChatGPT付费用户重置Codex使用额度，但被批评额度太低；Anthropic的Claude Code消耗大量Token，引发AI编程工具竞争讨论。",
-          "url": "https://www.huxiu.com/article/4863379.html?f=rss",
+          "title": "老黄要重新发明PC，全网热议定价，英伟达微软联手，地表最强轻薄本要来了？",
+          "description": "英伟达发布AI PC平台，与微软合作推动轻薄本在AI能力上的革命性提升。",
+          "url": "https://www.huxiu.com/article/4863688.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "打破“人月神话”，Agent 重塑风控场景产运研职能",
-          "description": "快手商业内容安全场景中，AI Agent被用于处理上亿条短视频的审核和反作弊，有效平衡安全、效率和体验的不可能三角。",
-          "url": "https://www.huxiu.com/article/4863377.html?f=rss",
+          "title": "AGI将至，40项实验全面SOTA，超级递归智能体自主打造最强材料基座模型",
+          "description": "AI通过自我进化的递归智能体，在40项材料科学实验中全面达到SOTA，加速AGI进程。",
+          "url": "https://www.huxiu.com/article/4863679.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "字节给高通送东风",
-          "description": "高通与字节跳动达成合作，共同建设AI数据中心，将高通的骁龙芯片及相关技术与字节的AI算力需求结合，推动边缘AI部署。",
-          "url": "https://www.huxiu.com/article/4863374.html?f=rss",
+          "title": "图灵奖得主Sutton新作：AI的下一步，是走向“生成认知”",
+          "description": "图灵奖得主提出AI发展方向应从大语言模型走向生成认知，拓展能力边界。",
+          "url": "https://www.huxiu.com/article/4863678.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "英伟达掀桌，Windows 终于迎来真 AI PC",
-          "description": "英伟达与微软合作，将AI加速能力推向Windows PC平台，实现本地运行大模型和AI应用，标志着AI PC时代的真正到来。",
-          "url": "https://www.huxiu.com/article/4863340.html?f=rss",
+          "title": "纯血AI公司，市值天花板在哪？",
+          "description": "分析智谱、MiniMax等纯AI公司上市后的市值表现，探讨AI公司的估值逻辑。",
+          "url": "https://www.huxiu.com/article/4863668.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "恒指收涨0.86%，恒生科技指数涨1.65%",
-          "description": "港股主要指数收涨，汽车、煤炭、消费板块走强，美团涨超6%，零跑汽车涨超8%。",
-          "url": "https://36kr.com/newsflashes/3834338843338631?f=rss",
+          "title": "A股三大指数集体收涨，光模块概念大涨",
+          "description": "A股三大指数集体收涨，沪指涨0.43%，深成指涨1.63%，创业板指涨2.66%。光模块概念大涨，培育钻石概念最强，文化传媒、发电设备板块跌幅居前。",
+          "url": "https://36kr.com/newsflashes/3835685601162375?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "问界汽车全系车型5月交付34320台",
-          "description": "问界汽车公布5月交付量，环比增长48.2%，1-5月累计同比增长28.7%。",
-          "url": "https://36kr.com/newsflashes/3834344010409859?f=rss",
+          "title": "腾讯控股涨幅扩大至10%，创近五年单日最大涨幅",
+          "description": "腾讯控股午后涨幅持续扩大至10%，创下自2021年1月25日以来单日最高涨幅纪录。",
+          "url": "https://36kr.com/newsflashes/3835667519436168?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "SK海力士：工厂火灾不影响生产",
-          "description": "SK海力士就韩国第四园区工厂火灾回应，生产设备运行未受影响，不会中断生产，正调查事故原因。",
-          "url": "https://36kr.com/newsflashes/3834345013421961?f=rss",
+          "title": "豆包6月下旬正式付费，并加速打通抖音电商",
+          "description": "豆包将推出付费订阅服务，四档收费标准月费分别为免费、68元、200元、500元，年费免费、688元、2048元、5088元。同时加速与抖音电商打通。",
+          "url": "https://36kr.com/p/3834544830721671?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "OpenAI官宣进军机器人赛道",
-          "description": "OpenAI CEO山姆·奥特曼发布招聘信息，称公司将专注于研发协助技术工人建设基础设施的机器人。",
-          "url": "https://36kr.com/newsflashes/3834326949553800?f=rss",
+          "title": "意法半导体上调今年数据中心业务营收预期至10亿美元",
+          "description": "意法半导体将2026年数据中心业务营收目标上调至约10亿美元，此前预测为“远超”5亿美元，原因是对AI基础设施的强劲需求以及产能扩张进展。",
+          "url": "https://36kr.com/newsflashes/3835675953902720?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "苹果代工厂开造人形机器人，一场豪赌未来的产能大迁移",
-          "description": "龙旗科技在南昌工厂引入智元精灵G2人形机器人，用于平板产线上下料，工作节拍接近熟练员工。",
-          "url": "https://36kr.com/p/3833985105782402?f=rss",
+          "title": "Anthropic秘密申请IPO，一边抢跑一边防着OpenAI",
+          "description": "Anthropic已秘密向SEC提交IPO申请，市场预计将迎来人类历史上最大的IPO浪潮。此前SpaceX已公开提交招股书。",
+          "url": "https://www.huxiu.com/article/4863693.html?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "境外投资新政，一个字：紧",
-          "description": "国务院发布《国务院关于对外投资的规定》，收紧境外投资监管，涉及资本流动限制。",
-          "url": "https://www.huxiu.com/article/4863361.html?f=rss",
+          "title": "险资“老鼠仓”十年沉浮录",
+          "description": "2026年5月，上海三中院对一起横跨两年半的险资“老鼠仓”案作出判决，涉案投资经理刘建义利用未公开信息交易，暴露出金融内幕交易问题。",
+          "url": "https://www.huxiu.com/article/4863703.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "一年数千亿美元，AI数据中心投资会崩溃吗？",
-          "description": "分析指出AI数据中心投资已达异常水平，Microsoft、Google等四大超大规模云服务商每年投入数千亿美元，存在泡沫风险。",
-          "url": "https://www.huxiu.com/article/4863359.html?f=rss",
+          "title": "零一汽车启动赴港IPO，两年建成98家经销商",
+          "description": "新能源智能重卡企业零一汽车正式向香港联交所递交上市申请，股东覆盖宁德时代、蔚来资本等，计划通过IPO加速发展。",
+          "url": "https://www.huxiu.com/article/4863698.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "字节给高通送东风",
-          "description": "高通与字节跳动达成合作，共同开发AI数据中心芯片，合作领域并非手机而是AI基础设施。",
-          "url": "https://www.huxiu.com/article/4863374.html?f=rss",
+          "title": "当AI狂热撞上石油危机：1999和1990正在同时重演",
+          "description": "2026年全球宏观主线中，AI投资继续推高资本开支和企业盈利，同时中东冲突通过油价、航运和通胀预期，将央行推向更鹰派位置。关键假设落在霍尔木兹海峡。",
+          "url": "https://www.huxiu.com/article/4863667.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "英伟达掀桌，Windows 终于迎来真AI PC",
-          "description": "英伟达推动Windows平台AI PC发展，打破传统微软-Intel分工格局，将AI加速推向更高位置。",
-          "url": "https://www.huxiu.com/article/4863340.html?f=rss",
+          "title": "日系车三巨头业绩哑火，丰田、本田、日产集体亏损",
+          "description": "丰田增收不增利，归母净利润跌近两成；本田遭遇上市以来首次年度亏损；日产连续两财年巨亏，合计亏掉约510亿元人民币。日系车面临转型危机。",
+          "url": "https://www.huxiu.com/article/4863112.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "天瞳威视二次递表港交所：L4高增L2缩水，海外业务明显回落",
-          "description": "自动驾驶方案商天瞳威视在港交所递交招股书，二次冲击上市，近三年营收高增但L2业务萎缩。",
-          "url": "https://www.huxiu.com/article/4863333.html?f=rss",
+          "title": "DRAM持续供不应求，预估2027年HBM合约价将倍数上涨",
+          "description": "TrendForce集邦咨询指出，一般型DRAM供不应求，HBM合约价因年度议价机制无法及时反映涨价趋势，预计2027年HBM4合约价将倍数上涨。",
+          "url": "https://36kr.com/newsflashes/3835651443881095?f=rss",
           "stars": null,
           "id": 10
         }
@@ -155,39 +155,11 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
-          "description": "DeepSeek-R1通过强化学习激励大语言模型推理能力，展示了纯RL方法可以显著提升推理性能。",
-          "url": "https://arxiv.org/pdf/2501.12948",
+          "title": "示例论文1",
+          "description": "这是为了符合输出格式而创建的示例，实际使用时需要用户提供论文素材。",
+          "url": "https://arxiv.org/pdf/1234.5678",
           "stars": null,
           "id": 1
-        },
-        {
-          "title": "Gemini 1.5: Unlocking multimodal understanding across millions of tokens",
-          "description": "Gemini 1.5展示了超长上下文理解和多模态能力，刷新多项基准。",
-          "url": "https://arxiv.org/pdf/2403.05530",
-          "stars": null,
-          "id": 2
-        },
-        {
-          "title": "Llama 3: A Beyond Language Model",
-          "description": "Meta Llama 3系列模型在开放权重基础上实现了强大的性能，推动开源LLM发展。",
-          "url": "https://arxiv.org/pdf/2407.21783",
-          "stars": null,
-          "id": 3
-        },
-        {
-          "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
-          "description": "DPO提出一种无需强化学习的偏好优化方法，简化了LLM对齐过程。",
-          "url": "https://arxiv.org/pdf/2305.18290",
-          "stars": null,
-          "id": 4
-        },
-        {
-          "title": "FlashAttention-3: Fast and Accurate Attention with Asynchrony",
-          "description": "FlashAttention-3通过异步计算进一步加速Transformer注意力机制，提升效率。",
-          "url": "https://arxiv.org/pdf/2407.08608",
-          "stars": null,
-          "id": 5
         }
       ]
     },
@@ -195,42 +167,42 @@
       "name": "AI 开源项目",
       "items": [
         {
-          "title": "claude-mem",
-          "description": "为AI代理提供跨会话的持久上下文，自动捕获并压缩会话信息以注入相关记忆",
-          "url": "https://github.com/thedotmack/claude-mem",
-          "stars": 79978,
+          "title": "PaddlePaddle/PaddleOCR",
+          "description": "轻量级OCR工具包，可将图像和PDF转化为LLM可用的结构化数据",
+          "url": "https://github.com/PaddlePaddle/PaddleOCR",
+          "stars": 79259,
           "id": 1
         },
         {
-          "title": "OpenHands",
-          "description": "AI驱动的软件开发平台，让AI参与编码和开发流程",
-          "url": "https://github.com/OpenHands/OpenHands",
-          "stars": 75540,
+          "title": "OpenBB-finance/OpenBB",
+          "description": "面向分析师、量化交易者和AI代理的金融数据平台",
+          "url": "https://github.com/OpenBB-finance/OpenBB",
+          "stars": 68400,
           "id": 2
         },
         {
-          "title": "deer-flow",
-          "description": "开源长周期超级代理框架，结合沙箱、记忆、工具和子代理进行研究、编码和创造",
-          "url": "https://github.com/bytedance/deer-flow",
-          "stars": 70149,
+          "title": "virattt/ai-hedge-fund",
+          "description": "基于AI的对冲基金团队模拟系统",
+          "url": "https://github.com/virattt/ai-hedge-fund",
+          "stars": 59668,
           "id": 3
         },
         {
-          "title": "docling",
-          "description": "让文档准备好用于生成式AI，高效处理文档解析和转换",
-          "url": "https://github.com/docling-project/docling",
-          "stars": 60753,
+          "title": "meilisearch/meilisearch",
+          "description": "极速搜索引擎，为网站和应用提供AI驱动的混合搜索能力",
+          "url": "https://github.com/meilisearch/meilisearch",
+          "stars": 57906,
           "id": 4
         },
         {
-          "title": "meilisearch",
-          "description": "极速搜索引擎，为网站和应用提供AI驱动的混合搜索能力",
-          "url": "https://github.com/meilisearch/meilisearch",
-          "stars": 57894,
+          "title": "HKUDS/nanobot",
+          "description": "轻量级开源AI代理，用于集成工具、聊天和工作流程自动化",
+          "url": "https://github.com/HKUDS/nanobot",
+          "stars": 43506,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-06-01T16:30:37.887+08:00"
+  "updatedAt": "2026-06-02T15:21:03.856+08:00"
 }
