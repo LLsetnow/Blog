@@ -1,76 +1,76 @@
 {
-  "date": "2026-06-03",
+  "date": "2026-06-04",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "36氪独家 | 火山引擎提升MaaS营收目标至全年150亿元，Seedance 2.0单月营收已超10亿元",
-          "description": "字节跳动火山引擎将MaaS业务营收目标上调至150亿元，显示出大模型服务市场的强劲增长。",
-          "url": "https://36kr.com/p/3836973710423429?f=rss",
+          "title": "36氪独家｜2026 年字节 AI 的四个关键命题",
+          "description": "字节AI在2026年将重点投入世界模型训练，目标年底前达到全球SOTA，并保持视频模型领先地位，探索动态生成等新方向。",
+          "url": "https://36kr.com/p/3838454229027072?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "深圳具身公司星尘智能完成超10亿B轮融资，估值破百亿｜硬氪首发",
-          "description": "绳驱AI机器人公司星尘智能完成B轮系列融资，累计超10亿元，估值破百亿，具身智能赛道持续火热。",
-          "url": "https://36kr.com/p/3836068296209537?f=rss",
+          "title": "36氪独家 | 火山引擎提升MaaS营收目标至全年150亿元，Seedance 2.0单月营收已超10亿元",
+          "description": "字节跳动火山引擎将MaaS业务营收目标上调至150亿元，Seedance 2.0单月营收超10亿元，反映AI大模型商业化加速。",
+          "url": "https://36kr.com/p/3836973710423429?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "36氪首发 | 浙大教授团队获财通、商汤投资，做高危场景具身机器人大脑",
-          "description": "专注高危工业场景的具身智能公司旷行科技完成数千万元Pre-A轮融资，由财通资本和商汤国香投资。",
-          "url": "https://36kr.com/p/3836744788014208?f=rss",
+          "title": "深圳具身公司星尘智能完成超10亿B轮融资，估值破百亿｜硬氪首发",
+          "description": "绳驱AI机器人公司星尘智能完成B轮系列融资，累计超10亿元，估值破百亿，专注于具身智能机器人研发。",
+          "url": "https://36kr.com/p/3836068296209537?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "豆包6月下旬正式付费，并加速打通抖音电商丨36氪独家",
-          "description": "字节跳动豆包将推出付费订阅服务，四档价格对标ChatGPT，并加速与抖音电商整合。",
-          "url": "https://36kr.com/p/3835814391100550?f=rss",
+          "title": "36氪首发 | 浙大教授团队获财通、商汤国香资本投资，做高危场景具身机器人大脑",
+          "description": "旷行科技完成数千万元Pre-A融资，专注高危作业领域的具身智能算法和产品，投资方包括商汤国香资本。",
+          "url": "https://36kr.com/p/3836744788014208?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "中国联通在杭州成立智算科技公司，注册资本10亿",
-          "description": "中国联通成立智算科技公司，注册资本10亿元，经营范围包括人工智能应用软件开发、云计算装备技术服务等。",
-          "url": "https://36kr.com/newsflashes/3837159422473349?f=rss",
+          "title": "3个月狂揽近50亿元，马云、雷军都投了，这家具身智能“独角兽”爆火，但商业化落地仍存多重挑战",
+          "description": "具身智能初创企业千寻智能自研基座模型Spirit v1.6，入围北美具身智能排行榜，公司估值飙升但面临商业化挑战。",
+          "url": "https://www.huxiu.com/article/4864437.html?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "上海：有序推进政务领域人工智能应用，促进城市治理现代化水平不断优化提升",
-          "description": "上海市政务智能工作推进会强调加快政务领域AI应用，推动算力共用、语料等基础设施建设。",
-          "url": "https://36kr.com/newsflashes/3837150323094918?f=rss",
+          "title": "Agent 交付结果,难在哪里?",
+          "description": "探讨2026年Agent落地元年中Agent架构产品的实际交付难题，分析技术瓶颈与工程挑战。",
+          "url": "https://www.huxiu.com/article/4864435.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "机器人进校潮背后：AI产业正在争夺“真实世界入口”",
-          "description": "人形机器人和具身智能实验室进入校园，AI产业通过教育场景获取真实世界数据和应用入口。",
-          "url": "https://www.huxiu.com/article/4864072.html?f=rss",
+          "title": "Cursor自研编程模型训练全揭秘：把模型权重100%押注软件工程，模型会作弊、环境要逼真、基础设施要跨大洲分布式部署",
+          "description": "Cursor公开自研编程模型Composer 2的训练细节，强调模型权重全部用于软件工程，并披露分布式部署等关键技术。",
+          "url": "https://www.huxiu.com/article/4864434.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "黄仁勋掀桌了！英伟达杀入PC芯片，英特尔的铁饭碗要碎了?",
-          "description": "英伟达在台北发布RTX Spark，正式杀入PC芯片市场，可能颠覆英特尔长期主导的格局。",
-          "url": "https://www.huxiu.com/article/4863735.html?f=rss",
+          "title": "Nature：大模型的潜意识学习引发行为偏好传递风险",
+          "description": "Nature论文揭示大模型通过数据中的隐藏信号传递行为特征，存在潜意识学习带来的行为偏好扩散风险。",
+          "url": "https://www.huxiu.com/article/4864425.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "扣子3.0实测：手机就能远程遥控你电脑里的Agent",
-          "description": "字节跳动扣子3.0平台支持手机远程控制电脑上的AI Agent，实现AI热点追踪等复杂任务自动生成。",
-          "url": "https://www.huxiu.com/article/4864044.html?f=rss",
+          "title": "把四个AI扔进虚拟世界，究竟谁的犯罪率更高？",
+          "description": "通过AI小镇实验，将多个AI智能体置于虚拟环境中观察其行为，模拟犯罪率等社会现象。",
+          "url": "https://www.huxiu.com/article/4864288.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "宇树科技IPO过会，哪些大佬赢麻了？",
-          "description": "人形机器人公司宇树科技IPO过会，雷军、黄仁勋等资本大佬与公司合作，共谋机器人产业大事。",
-          "url": "https://www.huxiu.com/article/4864051.html?f=rss",
+          "title": "10亿人的超级Agent来了？一夜之间，ChatGPT与Codex为何官宣合体",
+          "description": "OpenAI宣布将Codex整合进ChatGPT，打造超级Agent，有望服务10亿用户，推动AI编程和自动化应用。",
+          "url": "https://www.huxiu.com/article/4864408.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "外交部：关税战、贸易战不符合任何一方的利益",
-          "description": "针对特朗普政府提议加征额外进口关税，外交部发言人毛宁表示中方一贯反对单边关税措施，经贸问题应通过对话协商解决。",
-          "url": "https://36kr.com/newsflashes/3837132482770050?f=rss",
+          "title": "国家发改委：自今日24时起国内汽柴油价格每吨分别下调525元、505元",
+          "description": "国家发改委宣布根据国际市场油价变化，下调国内成品油价格，其中汽、柴油每吨分别下调525元和505元。",
+          "url": "https://36kr.com/newsflashes/3838526328179203?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "恒指收跌1.56%，恒生科技指数跌2.74%",
-          "description": "6月3日港股收跌，零跑汽车跌超6%，美团、小鹏跌超5%，传媒、汽车领跌，半导体涨幅居前，南向资金净买入186.82亿港元。",
-          "url": "https://36kr.com/newsflashes/3837169665111174?f=rss",
+          "title": "A股三大指数集体收跌，电子元器件板块走强",
+          "description": "A股三大指数收跌，沪指收于4057.78点，深成指收于15661.57点，创业板指收于4088.88点；电子元器件、半导体等板块领涨，沪深两市成交额超2.5万亿元。",
+          "url": "https://36kr.com/newsflashes/3838519119874565?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "火山引擎提升MaaS营收目标至全年150亿元",
-          "description": "字节跳动旗下火山引擎4月将MaaS业务营收目标上调至150亿元，Seedance 2.0单月营收已超10亿元，2025年全年MaaS收入约15亿。",
-          "url": "https://36kr.com/p/3836973710423429?f=rss",
+          "title": "欧盟委员会表态对华贸易关系已“不可持续”",
+          "description": "欧盟委员会在闭门会议后发表声明称欧盟与中国的贸易和投资关系“不可持续”，此前多国联合施压要求调整对华贸易政策。",
+          "url": "https://www.huxiu.com/article/4864432.html?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "中国联通在杭州成立智算科技公司，注册资本10亿",
-          "description": "联通智算科技（杭州）有限公司成立，由联通全资持股，经营范围包括AI应用软件开发、云计算装备技术服务等。",
-          "url": "https://36kr.com/newsflashes/3837159422473349?f=rss",
+          "title": "DeepSeek计划募集约500亿元人民币，估值达3500至4000亿元",
+          "description": "DeepSeek首次融资规模约500亿元，投后估值超3500亿元，创始人梁文锋承诺投入200亿元，引发市场广泛关注。",
+          "url": "https://www.huxiu.com/article/4864426.html?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "中央财政下达育儿补贴补助资金999亿元支持实施育儿补贴制度",
-          "description": "中央财政下达999亿元育儿补贴补助资金，预计今年安排约1100亿元育儿补贴，支持各地落实育儿补贴制度。",
-          "url": "https://36kr.com/p/3834354708031111?f=rss",
+          "title": "火山引擎提升MaaS营收目标至全年150亿元",
+          "description": "字节跳动火山引擎在2026年4月将MaaS业务营收目标上调至150亿元，Seedance 2.0单月营收已超10亿元，显示AI云服务业务快速增长。",
+          "url": "https://36kr.com/p/3836973710423429?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "英伟达杀入PC芯片：RTX Spark发布，英特尔40年统治面临挑战",
-          "description": "黄仁勋在台北发布RTX Spark，英伟达正式进入PC芯片领域，此举可能颠覆英特尔长期主导的CPU市场格局。",
-          "url": "https://www.huxiu.com/article/4863735.html?f=rss",
+          "title": "腾讯股价暴涨，创2021年后单日最高涨幅",
+          "description": "腾讯股价出现大幅上涨，单日涨幅创2021年以来新高，市场对科技股情绪回暖。",
+          "url": "https://36kr.com/p/3836703946257542?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "宇树科技IPO过会，估值或超百亿",
-          "description": "人形机器人公司宇树科技IPO过会，雷军、黄仁勳等大佬参与投资，公司成为具身智能赛道标志性上市企业。",
-          "url": "https://www.huxiu.com/article/4864051.html?f=rss",
+          "title": "美国原油库存连续六周下降",
+          "description": "美国能源信息局数据显示，截至5月29日美国商业石油库存和战略石油储备较前一周减少约800万桶，远超预期，原油库存连续六周下降。",
+          "url": "https://36kr.com/newsflashes/3838498294172166?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "4000亿公募产品率先“换锚”",
-          "description": "自《公开募集证券投资基金业绩比较基准指引》3月施行后，首批存量基金基准调整于6月1日集中落地，涉及约4000亿规模。",
-          "url": "https://www.huxiu.com/article/4864053.html?f=rss",
+          "title": "摩根士丹利下调澳大利亚2026年GDP增速至1.2%",
+          "description": "摩根士丹利预计澳大利亚2026年GDP增速将由2025年的2.6%大幅回落至1.2%，不及澳储行预期。",
+          "url": "https://36kr.com/newsflashes/3838512731802116?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "香港超越瑞士成为全球最大跨境财富管理中心",
-          "description": "波士顿咨询报告显示，香港首次超越瑞士登顶全球最大跨境财富管理中心，2025年财富管理规模增长2840亿美元。",
-          "url": "https://www.huxiu.com/article/4864068.html?f=rss",
+          "title": "小红书发布金融类专项治理公告，集中整治诱导开户等内容",
+          "description": "小红书宣布对金融领域认证专业号开展专项治理，重点整治“抓紧港美股开通”诱导贴等违规内容，维护平台金融信息生态。",
+          "url": "https://www.huxiu.com/article/4864410.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "上海：有序推进政务领域人工智能应用",
-          "description": "上海市长龚正指出要加强系统化推进政务智能工作，推动算力共用、语料共享，促进城市治理现代化。",
-          "url": "https://36kr.com/newsflashes/3837150323094918?f=rss",
+          "title": "黄仁勋称Vera CPU将比GPU更受欢迎，成为英伟达新增长动力",
+          "description": "英伟达CEO黄仁勋在近期的活动中表示，其新一代Vera CPU将比GPU更受市场欢迎，并预计成为公司的新主要增长动力。",
+          "url": "https://36kr.com/p/3836703946257542?f=rss",
           "stars": null,
           "id": 10
         }
@@ -159,42 +159,42 @@
       "name": "AI 开源项目",
       "items": [
         {
-          "title": "PaddleOCR",
-          "description": "强大的轻量级OCR工具包，可将图像/PDF转换为结构化数据，桥接LLM与文档处理。",
+          "title": "PaddlePaddle/PaddleOCR",
+          "description": "A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs, enabling extraction of structured data from documents.",
           "url": "https://github.com/PaddlePaddle/PaddleOCR",
-          "stars": 79413,
+          "stars": 79510,
           "id": 1
         },
         {
-          "title": "OpenBB",
-          "description": "面向分析师、量化专家和AI代理的金融数据平台。",
-          "url": "https://github.com/OpenBB-finance/OpenBB",
-          "stars": 68487,
+          "title": "unclecode/crawl4ai",
+          "description": "Open-source LLM-friendly web crawler and scraper for AI applications.",
+          "url": "https://github.com/unclecode/crawl4ai",
+          "stars": 67735,
           "id": 2
         },
         {
-          "title": "ruflo",
-          "description": "领先的Claude代理元框架，用于部署多智能体集群、协调自主工作流和构建对话AI系统。",
-          "url": "https://github.com/ruvnet/ruflo",
-          "stars": 57598,
+          "title": "earendil-works/pi",
+          "description": "AI agent toolkit including coding agent CLI, unified LLM API, TUI/web UI, Slack bot, and vLLM pods.",
+          "url": "https://github.com/earendil-works/pi",
+          "stars": 59540,
           "id": 3
         },
         {
-          "title": "worldmonitor",
-          "description": "实时全球情报仪表板，提供AI驱动的新闻聚合、地缘政治监控和基础设施跟踪。",
-          "url": "https://github.com/koala73/worldmonitor",
-          "stars": 55548,
+          "title": "ruvnet/ruflo",
+          "description": "Leading agent meta-harness for Claude, enabling deployment of intelligent multi-agent swarms and autonomous workflows.",
+          "url": "https://github.com/ruvnet/ruflo",
+          "stars": 57758,
           "id": 4
         },
         {
-          "title": "agent-skills",
-          "description": "面向AI编码代理的生产级工程技能集。",
-          "url": "https://github.com/addyosmani/agent-skills",
-          "stars": 47870,
+          "title": "Fission-AI/OpenSpec",
+          "description": "Spec-driven development (SDD) for AI coding assistants, improving code generation accuracy.",
+          "url": "https://github.com/Fission-AI/OpenSpec",
+          "stars": 52725,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-06-03T16:12:04.831+08:00"
+  "updatedAt": "2026-06-04T15:20:56.931+08:00"
 }
