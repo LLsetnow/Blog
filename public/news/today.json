@@ -1,76 +1,76 @@
 {
-  "date": "2026-06-04",
+  "date": "2026-06-05",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "36氪独家｜2026 年字节 AI 的四个关键命题",
-          "description": "字节AI在2026年将重点投入世界模型训练，目标年底前达到全球SOTA，并保持视频模型领先地位，探索动态生成等新方向。",
-          "url": "https://36kr.com/p/3838454229027072?f=rss",
+          "title": "微信AI对手机厂商打开一道窄门｜焦点分析",
+          "description": "微信正在与华为、小米等手机厂商合作推出A2A助手能力，基于Agent-to-Agent技术实现AI助手交互。",
+          "url": "https://36kr.com/p/3839575253993985?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "36氪独家 | 火山引擎提升MaaS营收目标至全年150亿元，Seedance 2.0单月营收已超10亿元",
-          "description": "字节跳动火山引擎将MaaS业务营收目标上调至150亿元，Seedance 2.0单月营收超10亿元，反映AI大模型商业化加速。",
-          "url": "https://36kr.com/p/3836973710423429?f=rss",
+          "title": "硬氪独家 | 唐文斌「原力灵机」并购物流机器人公司，并获智谱、商汤、阶跃等投资",
+          "description": "具身智能企业原力灵机完成新一轮融资，资方包括智谱、阶跃星辰、商汤科技等大模型公司。",
+          "url": "https://36kr.com/p/3838835333253385?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "深圳具身公司星尘智能完成超10亿B轮融资，估值破百亿｜硬氪首发",
-          "description": "绳驱AI机器人公司星尘智能完成B轮系列融资，累计超10亿元，估值破百亿，专注于具身智能机器人研发。",
-          "url": "https://36kr.com/p/3836068296209537?f=rss",
+          "title": "国家队下场做AI虚拟细胞，「百曜科技」完成数千万元新一轮融资｜36氪首发",
+          "description": "AI虚拟细胞平台百曜科技获国新创投等投资，用于迭代虚拟细胞算法模型和数据收集。",
+          "url": "https://36kr.com/p/3835460873385348?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "36氪首发 | 浙大教授团队获财通、商汤国香资本投资，做高危场景具身机器人大脑",
-          "description": "旷行科技完成数千万元Pre-A融资，专注高危作业领域的具身智能算法和产品，投资方包括商汤国香资本。",
-          "url": "https://36kr.com/p/3836744788014208?f=rss",
+          "title": "氪星晚报 ｜OpenAI首席财务官谈公司AI设备：今年年底前将正式发布；腾讯客服回应与华为、小米等合作；香港推出首个生产力级超级智能体",
+          "description": "OpenAI透露年底发布AI设备；腾讯与手机厂商合作Agent能力；香港推出超级智能体。",
+          "url": "https://36kr.com/p/3838652242823687?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "3个月狂揽近50亿元，马云、雷军都投了，这家具身智能“独角兽”爆火，但商业化落地仍存多重挑战",
-          "description": "具身智能初创企业千寻智能自研基座模型Spirit v1.6，入围北美具身智能排行榜，公司估值飙升但面临商业化挑战。",
-          "url": "https://www.huxiu.com/article/4864437.html?f=rss",
+          "title": "创始人陈安妮牵头，快看漫画推出AI数字生命产品Livo",
+          "description": "快看漫画推出AI数字生命产品Livo，采用体验付费和关系付费模式。",
+          "url": "https://36kr.com/newsflashes/3839918689650952?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "Agent 交付结果,难在哪里?",
-          "description": "探讨2026年Agent落地元年中Agent架构产品的实际交付难题，分析技术瓶颈与工程挑战。",
-          "url": "https://www.huxiu.com/article/4864435.html?f=rss",
+          "title": "Anthropic高喊狼（AGI）来了，是为了人类还是IPO？",
+          "description": "Anthropic发布长文《When AI builds itself》，探讨递归自我改进的AGI风险。",
+          "url": "https://www.huxiu.com/article/4864735.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "Cursor自研编程模型训练全揭秘：把模型权重100%押注软件工程，模型会作弊、环境要逼真、基础设施要跨大洲分布式部署",
-          "description": "Cursor公开自研编程模型Composer 2的训练细节，强调模型权重全部用于软件工程，并披露分布式部署等关键技术。",
-          "url": "https://www.huxiu.com/article/4864434.html?f=rss",
+          "title": "阿里不想错过AI时代：58家公司的“全押”赌局",
+          "description": "阿里巴巴通过投资58家公司全面布局AI赛道，涵盖大模型、应用等多个领域。",
+          "url": "https://www.huxiu.com/article/4864730.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "Nature：大模型的潜意识学习引发行为偏好传递风险",
-          "description": "Nature论文揭示大模型通过数据中的隐藏信号传递行为特征，存在潜意识学习带来的行为偏好扩散风险。",
-          "url": "https://www.huxiu.com/article/4864425.html?f=rss",
+          "title": "腾讯汤道生对话姚顺雨：你觉得为啥外界觉得咱在AI上慢了？",
+          "description": "腾讯高管与创业者对话，讨论腾讯AI战略及外界对其速度的质疑。",
+          "url": "https://www.huxiu.com/article/4864721.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "把四个AI扔进虚拟世界，究竟谁的犯罪率更高？",
-          "description": "通过AI小镇实验，将多个AI智能体置于虚拟环境中观察其行为，模拟犯罪率等社会现象。",
-          "url": "https://www.huxiu.com/article/4864288.html?f=rss",
+          "title": "基流科技闯关港交所：智谱持股7.7%，核心业务毛利低，“速成IPO”引争议",
+          "description": "AI基础设施公司基流科技向港交所递表，智谱等投资，成立仅三年。",
+          "url": "https://www.huxiu.com/article/4864716.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "10亿人的超级Agent来了？一夜之间，ChatGPT与Codex为何官宣合体",
-          "description": "OpenAI宣布将Codex整合进ChatGPT，打造超级Agent，有望服务10亿用户，推动AI编程和自动化应用。",
-          "url": "https://www.huxiu.com/article/4864408.html?f=rss",
+          "title": "除了AI Siri 和库克“谢幕演讲”，今年WWDC 还有什么？",
+          "description": "苹果WWDC 2026将聚焦AI Siri等新功能，是库克可能的谢幕演讲。",
+          "url": "https://www.huxiu.com/article/4864715.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "国家发改委：自今日24时起国内汽柴油价格每吨分别下调525元、505元",
-          "description": "国家发改委宣布根据国际市场油价变化，下调国内成品油价格，其中汽、柴油每吨分别下调525元和505元。",
-          "url": "https://36kr.com/newsflashes/3838526328179203?f=rss",
+          "title": "A股三大指数集体收跌，沪深两市成交额突破3万亿元",
+          "description": "A股三大指数集体下跌，沪指跌0.74%，深成指跌2.21%，创业板指跌3.2%，沪深两市成交额突破3万亿元，较上一日放量超3000亿元。",
+          "url": "https://36kr.com/newsflashes/3839932925282563?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "A股三大指数集体收跌，电子元器件板块走强",
-          "description": "A股三大指数收跌，沪指收于4057.78点，深成指收于15661.57点，创业板指收于4088.88点；电子元器件、半导体等板块领涨，沪深两市成交额超2.5万亿元。",
-          "url": "https://36kr.com/newsflashes/3838519119874565?f=rss",
+          "title": "沪指尾盘跌超1%，科创50指数跌超4%",
+          "description": "沪指尾盘跌超1%，深证成指跌2.5%，创业板指跌超3.6%；科创50指数跌超4%，半导体、芯片产业链概念股领跌。",
+          "url": "https://36kr.com/newsflashes/3839916362304009?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "欧盟委员会表态对华贸易关系已“不可持续”",
-          "description": "欧盟委员会在闭门会议后发表声明称欧盟与中国的贸易和投资关系“不可持续”，此前多国联合施压要求调整对华贸易政策。",
-          "url": "https://www.huxiu.com/article/4864432.html?f=rss",
+          "title": "机构预计今年半导体市场规模或达1.5万亿美元",
+          "description": "世界半导体贸易统计组织（WSTS）大幅上调全球半导体增长预期，预计2026年全球半导体市场同比增长90%，总规模达1.51万亿美元，存储芯片销售额同比上升250%。",
+          "url": "https://36kr.com/newsflashes/3839896614930945?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "DeepSeek计划募集约500亿元人民币，估值达3500至4000亿元",
-          "description": "DeepSeek首次融资规模约500亿元，投后估值超3500亿元，创始人梁文锋承诺投入200亿元，引发市场广泛关注。",
-          "url": "https://www.huxiu.com/article/4864426.html?f=rss",
+          "title": "美国疯狂全球抢铜，COMEX铜库存创历史新高",
+          "description": "美国贸易商掀起疯狂抢铜潮，截至5月29日COMEX铜库存约64.02万吨创历史新高，高盛测算美国以外市场铜供应缺口达64万吨。",
+          "url": "https://36kr.com/newsflashes/3839916057168134?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "火山引擎提升MaaS营收目标至全年150亿元",
-          "description": "字节跳动火山引擎在2026年4月将MaaS业务营收目标上调至150亿元，Seedance 2.0单月营收已超10亿元，显示AI云服务业务快速增长。",
-          "url": "https://36kr.com/p/3836973710423429?f=rss",
+          "title": "美国政府将为煤电和煤炭项目提供5亿美元资金支持",
+          "description": "美国总统特朗普宣布将提供数亿美元支持燃煤发电厂扩产改造及煤炭出口基础设施，美国能源部依据《国防生产法》向12个燃煤发电项目和一个煤炭海运出口码头项目提供资金。",
+          "url": "https://36kr.com/newsflashes/3839889630660868?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "腾讯股价暴涨，创2021年后单日最高涨幅",
-          "description": "腾讯股价出现大幅上涨，单日涨幅创2021年以来新高，市场对科技股情绪回暖。",
-          "url": "https://36kr.com/p/3836703946257542?f=rss",
+          "title": "SpaceX启动IPO路演，目标估值1.75万亿",
+          "description": "SpaceX正式启动面向公众的IPO路演，拟发行约5.56亿股A类普通股，目标估值1.75万亿美元，其60页路演PPT首度曝光。",
+          "url": "https://www.huxiu.com/article/4864754.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "美国原油库存连续六周下降",
-          "description": "美国能源信息局数据显示，截至5月29日美国商业石油库存和战略石油储备较前一周减少约800万桶，远超预期，原油库存连续六周下降。",
-          "url": "https://36kr.com/newsflashes/3838498294172166?f=rss",
+          "title": "港股为什么下跌，转机在哪里？",
+          "description": "全球市场炒AI硬件，港股偏重AI软件错过主线行情，分析港股下跌原因及未来转机。",
+          "url": "https://www.huxiu.com/article/4864596.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "摩根士丹利下调澳大利亚2026年GDP增速至1.2%",
-          "description": "摩根士丹利预计澳大利亚2026年GDP增速将由2025年的2.6%大幅回落至1.2%，不及澳储行预期。",
-          "url": "https://36kr.com/newsflashes/3838512731802116?f=rss",
+          "title": "腾讯汤道生对话姚顺雨：外界为何觉得腾讯AI慢了？",
+          "description": "腾讯高管汤道生与AI专家姚顺雨对话，讨论外界对腾讯AI进展的看法，涉及腾讯AI战略与布局。",
+          "url": "https://www.huxiu.com/article/4864721.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "小红书发布金融类专项治理公告，集中整治诱导开户等内容",
-          "description": "小红书宣布对金融领域认证专业号开展专项治理，重点整治“抓紧港美股开通”诱导贴等违规内容，维护平台金融信息生态。",
-          "url": "https://www.huxiu.com/article/4864410.html?f=rss",
+          "title": "Anthropic呼吁全球中止AI研究，警惕递归自我改进风险",
+          "description": "Anthropic发布长文《When AI builds itself》，呼吁全球暂停AI研究，警告递归自我改进可能导致失控，被指“跑得最快的人却喊着要刹车”。",
+          "url": "https://www.huxiu.com/article/4864712.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "黄仁勋称Vera CPU将比GPU更受欢迎，成为英伟达新增长动力",
-          "description": "英伟达CEO黄仁勋在近期的活动中表示，其新一代Vera CPU将比GPU更受市场欢迎，并预计成为公司的新主要增长动力。",
-          "url": "https://36kr.com/p/3836703946257542?f=rss",
+          "title": "阿里不想错过AI时代：58家公司的全押赌局",
+          "description": "阿里巴巴CEO吴泳铭警告跟不上AI时代将被取代，IT桔子记录阿里系已投58家AI相关公司，全面押注AI赛道。",
+          "url": "https://www.huxiu.com/article/4864730.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -153,48 +153,84 @@
     },
     {
       "name": "AI 学术论文",
-      "items": []
+      "items": [
+        {
+          "title": "Operation-Guided Progressive Human-to-AI Text Transformation Benchmark for Multi-Granularity AI-Text Detection",
+          "description": "提出一种渐进式人机文本转换基准，用于多粒度AI文本检测，模拟真实写作流程中人类与AI的协作编辑。",
+          "url": "https://arxiv.org/pdf/2606.06481v1",
+          "stars": null,
+          "id": 1
+        },
+        {
+          "title": "Benchmark Everything Everywhere All at Once",
+          "description": "介绍一种自动化构建和复用LLM/MLLM基准测试的方法，旨在减少人工劳动并提高评估标准化。",
+          "url": "https://arxiv.org/pdf/2606.06462v1",
+          "stars": null,
+          "id": 2
+        },
+        {
+          "title": "Event Detection for Parameter-to-KPI Dependency Learning for AI-RAN",
+          "description": "研究AI集成无线接入网络中的事件检测方法，用于学习参数与关键绩效指标之间的依赖关系。",
+          "url": "https://arxiv.org/pdf/2606.06459v1",
+          "stars": null,
+          "id": 3
+        },
+        {
+          "title": "Vortex: Efficient and Programmable Sparse Attention Serving for AI Agents",
+          "description": "提出一种高效且可编程的稀疏注意力服务系统Vortex，用于优化AI代理中长序列生成的推理性能。",
+          "url": "https://arxiv.org/pdf/2606.06453v1",
+          "stars": null,
+          "id": 4
+        },
+        {
+          "title": "A Vision-language Framework for Comparative Reasoning in Radiology",
+          "description": "开发一个视觉-语言框架，用于放射学中的比较推理，提升医学影像AI在诊断和随访中的实用性。",
+          "url": "https://arxiv.org/pdf/2606.06407v1",
+          "stars": null,
+          "id": 5
+        }
+      ]
     },
     {
       "name": "AI 开源项目",
       "items": [
         {
-          "title": "PaddlePaddle/PaddleOCR",
-          "description": "A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs, enabling extraction of structured data from documents.",
-          "url": "https://github.com/PaddlePaddle/PaddleOCR",
-          "stars": 79510,
+          "title": "MoneyPrinterTurbo",
+          "description": "利用AI大模型，一键生成高清短视频",
+          "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+          "stars": 79634,
           "id": 1
         },
         {
-          "title": "unclecode/crawl4ai",
-          "description": "Open-source LLM-friendly web crawler and scraper for AI applications.",
-          "url": "https://github.com/unclecode/crawl4ai",
-          "stars": 67735,
+          "title": "daytona",
+          "description": "安全可扩展的基础设施，用于运行AI生成的代码",
+          "url": "https://github.com/daytonaio/daytona",
+          "stars": 72505,
           "id": 2
         },
         {
-          "title": "earendil-works/pi",
-          "description": "AI agent toolkit including coding agent CLI, unified LLM API, TUI/web UI, Slack bot, and vLLM pods.",
-          "url": "https://github.com/earendil-works/pi",
-          "stars": 59540,
+          "title": "oh-my-openagent",
+          "description": "针对复杂代码库的代理框架，适用于软件工程自动化",
+          "url": "https://github.com/code-yeongyu/oh-my-openagent",
+          "stars": 61086,
           "id": 3
         },
         {
-          "title": "ruvnet/ruflo",
-          "description": "Leading agent meta-harness for Claude, enabling deployment of intelligent multi-agent swarms and autonomous workflows.",
-          "url": "https://github.com/ruvnet/ruflo",
-          "stars": 57758,
+          "title": "llm-app",
+          "description": "提供RAG、AI管道和企业搜索的云端模板，支持Docker部署",
+          "url": "https://github.com/pathwaycom/llm-app",
+          "stars": 59444,
           "id": 4
         },
         {
-          "title": "Fission-AI/OpenSpec",
-          "description": "Spec-driven development (SDD) for AI coding assistants, improving code generation accuracy.",
-          "url": "https://github.com/Fission-AI/OpenSpec",
-          "stars": 52725,
+          "title": "private-gpt",
+          "description": "与文档交互的GPT模型，完全私有化，无数据泄露",
+          "url": "https://github.com/zylon-ai/private-gpt",
+          "stars": 57210,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-06-04T15:20:56.931+08:00"
+  "updatedAt": "2026-06-05T15:03:26.361+08:00"
 }
