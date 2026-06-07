@@ -1,76 +1,76 @@
 {
-  "date": "2026-06-06",
+  "date": "2026-06-07",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "豆包推出付费后月活减少610万；Anthropic呼吁全球放缓AI开发；B站宣布启动AI创造公开赛",
-          "description": "豆包付费后月活减少610万；Anthropic警告AI自我改进风险，呼吁全球放缓开发；B站启动AI创造公开赛。",
+          "title": "豆包推出付费后月活减少610万",
+          "description": "数据显示，豆包推出付费后月活减少610万，引发对AI产品付费模式的讨论。",
           "url": "https://36kr.com/p/3840996342073604?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "Token大战中，华为云选择了第三条路",
-          "description": "华为云强调不太在乎Token总量，更关注国产化算力系统产出Tokens的健康度和生产力提升。",
-          "url": "https://36kr.com/p/3840016255126016?f=rss",
+          "title": "英诺科创三期基金聚焦早期科技投资，重点布局人工智能领域",
+          "description": "英诺基金旗下科创三期基金完成首轮关账，规模15亿元，聚焦前沿科技及人工智能领域。",
+          "url": "https://36kr.com/p/3840267945969929?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "微信AI对手机厂商打开一道窄门",
-          "description": "微信与华为、小米等手机厂商合作推出A2A助手能力，支持通过手机AI助手发起微信音视频通话或发送消息。",
-          "url": "https://36kr.com/p/3839575253993985?f=rss",
+          "title": "Token大战中，华为云选择了第三条路",
+          "description": "华为云表示不在乎Token总量，更关注国产化算力系统所生产Tokens的健康度和生产力提升。",
+          "url": "https://36kr.com/p/3840016255126016?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "唐文斌「原力灵机」并购物流机器人公司，并获智谱、商汤、阶跃等投资",
-          "description": "具身智能企业原力灵机完成新一轮融资，资方包括智谱、阶跃星辰、商汤科技等，并购物流机器人公司。",
-          "url": "https://36kr.com/p/3838835333253385?f=rss",
+          "title": "微信AI对手机厂商打开一道窄门",
+          "description": "微信正与华为、小米等手机厂商合作推出A2A助手能力，让手机AI助手发起微信音视频通话等。",
+          "url": "https://36kr.com/p/3839575253993985?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "国家队下场做AI虚拟细胞，「百曜科技」完成数千万元新一轮融资",
-          "description": "AI虚拟细胞平台公司百曜科技完成数千万元融资，由国新创投领投，用于迭代虚拟细胞算法模型。",
-          "url": "https://36kr.com/p/3835460873385348?f=rss",
+          "title": "原力灵机并购物流机器人公司，并获得智谱、商汤、阶跃等投资",
+          "description": "具身智能企业原力灵机完成新一轮融资，多名大模型公司（智谱、阶跃星辰、商汤）参投。",
+          "url": "https://36kr.com/p/3838835333253385?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "算得更快更准 全球海洋现象智能预报大模型“琅琊”2.0发布",
-          "description": "中科院海洋所发布“琅琊”2.0海洋智能预报大模型，推动海洋预报向更快速、更精细发展。",
-          "url": "https://36kr.com/newsflashes/3841255177079303?f=rss",
+          "title": "国家队下场做AI虚拟细胞，「百曜科技」完成数千万元新一轮融资",
+          "description": "AI虚拟细胞平台公司百曜科技完成融资，由国新创投基金领投，用于虚拟细胞算法模型迭代等。",
+          "url": "https://36kr.com/p/3835460873385348?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "英伟达新品被指内存容量“缩水”海内外存储股应声重挫",
-          "description": "调研机构报告称英伟达新一代Vera Rubin AI服务器平台内存降配，引发存储概念股回调。",
-          "url": "https://36kr.com/newsflashes/3841116245854468?f=rss",
+          "title": "AI等机器网络请求量首超人类",
+          "description": "云网络安全服务公司数据显示，约57.4%的网络访问请求来自AI和自动化程序，首次超过人类用户。",
+          "url": "https://36kr.com/newsflashes/3842694357092869?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "产品定位陷深层矛盾，人员流动频繁，钉钉离职员工发105页长文复盘AI时代的钉钉困局",
-          "description": "钉钉离职员工发布105页长文，系统性复盘钉钉在AI时代的产品定位、设计等深层问题。",
-          "url": "https://www.huxiu.com/article/4864992.html?f=rss",
+          "title": "多家供给方下调算力价格，算力普惠再提速",
+          "description": "多家模型厂商宣布永久下调算力价格，DeepSeek与小米MiMo降价尤为显著，最高降幅接近99%。",
+          "url": "https://36kr.com/newsflashes/3842626008647945?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "腾讯AI，终于等来一张新牌",
-          "description": "腾讯高级执行副总裁汤道生回应外界质疑，指出腾讯在年初龙虾热的AI浪潮中反应最快。",
-          "url": "https://www.huxiu.com/article/4864991.html?f=rss",
+          "title": "OpenAI正准备对ChatGPT进行上线以来最大幅度升级",
+          "description": "OpenAI计划将ChatGPT转型为“超级应用”，整合编程工具与AI智能体，寻找新增长引擎。",
+          "url": "https://36kr.com/newsflashes/3842621948233991?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "DeepSeek V4做数学证明，500倍成本优势：智能体系统刷新多项纪录",
-          "description": "DeepSeek V4在数学证明领域展现500倍成本优势，智能体系统刷新多项纪录。",
-          "url": "https://www.huxiu.com/article/4864984.html?f=rss",
+          "title": "500亿，梁文锋“不学”任正非了",
+          "description": "DeepSeek预计在首轮融资中筹集约500亿元，估值可能达3500-4000亿元，成为AI领域大额融资事件。",
+          "url": "https://www.huxiu.com/article/4865118.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "隔夜美股重挫市值蒸发2.3万亿美元，科技股集体暴跌",
-          "description": "强劲就业报告推高美联储加息押注，纳斯达克100指数创逾一年最大跌幅，英伟达跌超6%，市值跌去3000亿美元。",
-          "url": "https://36kr.com/newsflashes/3841127080970503?f=rss",
+          "title": "Anthropic呼吁全球放缓AI开发，警告AI“自我改进”风险",
+          "description": "Anthropic公开呼吁全球暂停AI开发，称AI正在以惊人速度加速自身开发进程，存在潜在风险。",
+          "url": "https://36kr.com/p/3840996342073604?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "黑色星期五：纳指创纪录暴跌1121点，AI大牛市遭当头棒喝",
-          "description": "5月非农数据超预期，市场对美联储降息预期破灭，转而对2026年加息担忧加剧，引发科技股抛售。",
-          "url": "https://www.huxiu.com/article/4865001.html?f=rss",
+          "title": "日本或通过抛售美债为创纪录的日元汇市干预筹资",
+          "description": "日本可能通过抛售美国国债来筹集资金，以干预日元汇率，应对近期日元大幅波动。",
+          "url": "https://36kr.com/p/3840267945969929?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "美联储今年还会降息吗？华尔街仅花旗仍坚持降息三次",
-          "description": "5月非农数据超预期后，利率互换市场已完全定价美联储年内加息一次，绝大多数投行放弃降息预测。",
-          "url": "https://www.huxiu.com/article/4865000.html?f=rss",
+          "title": "中国银河证券：非农走强并不意味着美联储年内加息",
+          "description": "中国银河宏观研报认为，5月非农数据虽好于预期但不支撑加息，短期缺乏降息理由，无需过度定价加息风险。",
+          "url": "https://36kr.com/newsflashes/3842691789654273?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "国际金价跌破4400美元/盎司，金饰克价一夜降近40元",
-          "description": "受国际金价下行影响，周大福等品牌足金饰品价格同步回落，每克下跌约37-39元。",
-          "url": "https://36kr.com/newsflashes/3841258653649156?f=rss",
+          "title": "DeepSeek预计首轮融资约500亿元，估值超过3500亿元",
+          "description": "据消息人士称，DeepSeek将在首轮融资中筹集约500亿元，估值在3500亿至4000亿元之间。",
+          "url": "https://www.huxiu.com/article/4865118.html?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "日本或通过抛售美债为创纪录规模的日元汇市干预筹资",
-          "description": "日本可能抛售所持美国国债，以筹集资金干预外汇市场稳定日元汇率。",
-          "url": "https://36kr.com/p/3840267945969929?f=rss",
+          "title": "OpenAI准备对ChatGPT进行上线以来最大幅度升级",
+          "description": "OpenAI计划将ChatGPT转型为“超级应用”，整合编程工具与AI智能体，新增多款高收入产品，为IPO寻找新增长引擎。",
+          "url": "https://36kr.com/newsflashes/3842621948233991?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "英伟达新品被指内存缩量，海内外存储股应声重挫",
-          "description": "调研机构称英伟达新一代Vera Rubin平台内存降配、成本下降，引发存储概念股集体回调。",
-          "url": "https://36kr.com/newsflashes/3841116245854468?f=rss",
+          "title": "沪市下周近千亿分红来袭，超8000亿“红包”待发放",
+          "description": "未来一周沪市近200家公司实施年度分红，合计919亿元，其中中国平安、中信银行等大额派现。",
+          "url": "https://36kr.com/newsflashes/3842593852344833?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "华为云：不在乎Token总量，在乎国产算力系统健康度",
-          "description": "华为云表示更关注国产化算力系统的生产力提升，而不是Token总量和收入。",
-          "url": "https://36kr.com/p/3840016255126016?f=rss",
+          "title": "多家供给方下调算力价格，算力普惠再提速",
+          "description": "多家模型厂商宣布永久下调算力价格，DeepSeek与小米MiMo降幅接近99%，极大降低用户使用成本。",
+          "url": "https://36kr.com/newsflashes/3842626008647945?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "国家队下场做AI虚拟细胞，百曜科技完成数千万元新一轮融资",
-          "description": "国家级国有资本运营平台领投百曜科技，用于虚拟细胞算法模型迭代和数据收集。",
-          "url": "https://36kr.com/p/3835460873385348?f=rss",
+          "title": "我国已构建四级智能工厂体系，实现规模化建设智能工厂",
+          "description": "工信部表示，我国已累计建成3.5万家基础级、8200余家先进级、500余家卓越级智能工厂，15家入选领航级。",
+          "url": "https://36kr.com/newsflashes/3842591334205956?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "苹果WWDC26即将开幕，库克送Siri最后一程",
-          "description": "苹果2026年度全球开发者大会将开场，是库克作为CEO主持的最后一届，苹果AI战略面临补考。",
-          "url": "https://www.huxiu.com/article/4864973.html?f=rss",
+          "title": "AI等机器网络请求量首超人类",
+          "description": "全球最大互联网托管服务商数据显示，约57.4%的网络访问请求来自AI和自动化程序，人类请求量首次被机器超越。",
+          "url": "https://36kr.com/newsflashes/3842694357092869?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "财通基金“一年四倍基”场内溢价51%，上交所出手重点监控",
-          "description": "财通福鑫定开混合因高溢价被上交所重点监控，市场关注LOF基金溢价风险。",
-          "url": "https://www.huxiu.com/article/4864975.html?f=rss",
+          "title": "沃尔沃汽车金融解散，汽车金融“大逃杀”开始了",
+          "description": "国家金融监督管理总局批复同意解散沃尔沃汽车金融（中国）有限公司，该公司成立于2006年，由沃尔沃集团全资控股。",
+          "url": "https://www.huxiu.com/article/4865114.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -155,37 +155,37 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "Benchmark Everything Everywhere All at Once",
-          "description": "提出了一种自动构建和管理LLM/MLLM基准测试的方法，以减轻人工劳动并提高复用性。",
-          "url": "https://arxiv.org/pdf/2606.06462v1",
+          "title": "Operation-Guided Progressive Human-to-AI Text Transformation Benchmark for Multi-Granularity AI-Text Detection",
+          "description": "提出一个逐步将人类文本转化为AI文本的基准，用于多粒度AI文本检测，模拟现实中的协作写作流程。",
+          "url": "https://arxiv.org/pdf/2606.06481v1",
           "stars": null,
           "id": 1
         },
         {
-          "title": "Vortex: Efficient and Programmable Sparse Attention Serving for AI Agents",
-          "description": "设计了一种高效可编程的稀疏注意力服务系统，用于支持长序列生成场景下的大语言模型推理。",
-          "url": "https://arxiv.org/pdf/2606.06453v1",
+          "title": "Benchmark Everything Everywhere All at Once",
+          "description": "提出一种高效构建和复用LLM/MLLM基准的方法，旨在降低人工成本并提高评估标准化程度。",
+          "url": "https://arxiv.org/pdf/2606.06462v1",
           "stars": null,
           "id": 2
         },
         {
-          "title": "Operation-Guided Progressive Human-to-AI Text Transformation Benchmark for Multi-Granularity AI-Text Detection",
-          "description": "构建了一个渐进式人机文本转换基准，用于多粒度AI文本检测，反映真实协作写作场景。",
-          "url": "https://arxiv.org/pdf/2606.06481v1",
+          "title": "Event Detection for Parameter-to-KPI Dependency Learning for AI-RAN",
+          "description": "面向AI集成无线接入网络的事件检测方法，用于学习参数与关键性能指标之间的依赖关系，优化多目标AI控制。",
+          "url": "https://arxiv.org/pdf/2606.06459v1",
           "stars": null,
           "id": 3
         },
         {
-          "title": "A Vision-language Framework for Comparative Reasoning in Radiology",
-          "description": "提出一种视觉语言框架，实现放射学中的比较推理，对齐AI与临床实践中的序列影像分析。",
-          "url": "https://arxiv.org/pdf/2606.06407v1",
+          "title": "Vortex: Efficient and Programmable Sparse Attention Serving for AI Agents",
+          "description": "设计Vortex系统以实现高效且可编程的稀疏注意力服务，支持长序列生成场景下LLM的部署与评估。",
+          "url": "https://arxiv.org/pdf/2606.06453v1",
           "stars": null,
           "id": 4
         },
         {
-          "title": "Event Detection for Parameter-to-KPI Dependency Learning for AI-RAN",
-          "description": "研究了AI集成无线接入网中，通过事件检测学习参数与关键性能指标依赖关系的方法。",
-          "url": "https://arxiv.org/pdf/2606.06459v1",
+          "title": "A Vision-language Framework for Comparative Reasoning in Radiology",
+          "description": "提出视觉-语言框架用于放射学中的比较推理，弥合孤立图像解读与临床诊断实践之间的差距。",
+          "url": "https://arxiv.org/pdf/2606.06407v1",
           "stars": null,
           "id": 5
         }
@@ -196,41 +196,41 @@
       "items": [
         {
           "title": "netdata",
-          "description": "AI-powered全栈可观测性平台，快速实现系统监控与智能分析。",
+          "description": "The fastest path to AI-powered full stack observability for lean teams.",
           "url": "https://github.com/netdata/netdata",
-          "stars": 79074,
+          "stars": 79080,
           "id": 1
         },
         {
-          "title": "LlamaFactory",
-          "description": "统一高效微调100+大语言模型和视觉语言模型的框架，ACL 2024论文。",
-          "url": "https://github.com/hiyouga/LlamaFactory",
-          "stars": 71933,
+          "title": "AppFlowy",
+          "description": "AI collaborative workspace bringing projects, wikis, and teams together.",
+          "url": "https://github.com/AppFlowy-IO/AppFlowy",
+          "stars": 71980,
           "id": 2
         },
         {
-          "title": "pathwaycom/llm-app",
-          "description": "即用型云模板，支持RAG、AI管道和企业搜索，与实时数据同步。",
-          "url": "https://github.com/pathwaycom/llm-app",
-          "stars": 59432,
+          "title": "odysseus",
+          "description": "Self-hosted AI workspace.",
+          "url": "https://github.com/pewdiepie-archdaemon/odysseus",
+          "stars": 59629,
           "id": 3
         },
         {
-          "title": "private-gpt",
-          "description": "利用GPT能力与文档交互，完全私有化，无数据泄露风险。",
-          "url": "https://github.com/zylon-ai/private-gpt",
-          "stars": 57210,
+          "title": "mem0",
+          "description": "Universal memory layer for AI Agents.",
+          "url": "https://github.com/mem0ai/mem0",
+          "stars": 57919,
           "id": 4
         },
         {
           "title": "worldmonitor",
-          "description": "实时全球情报面板，AI驱动新闻聚合、地缘政治监控与基础设施跟踪。",
+          "description": "Real-time global intelligence dashboard with AI-powered news aggregation.",
           "url": "https://github.com/koala73/worldmonitor",
-          "stars": 55893,
+          "stars": 55943,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-06-06T14:24:31.801+08:00"
+  "updatedAt": "2026-06-07T15:02:39.213+08:00"
 }
