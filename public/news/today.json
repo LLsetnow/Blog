@@ -1,76 +1,76 @@
 {
-  "date": "2026-06-07",
+  "date": "2026-06-08",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "豆包推出付费后月活减少610万",
-          "description": "数据显示，豆包推出付费后月活减少610万，引发对AI产品付费模式的讨论。",
-          "url": "https://36kr.com/p/3840996342073604?f=rss",
+          "title": "小米创始员工范典创业AI硬件，做了台“无摩擦”的睡眠床头灯",
+          "description": "小米创始员工范典创业成立「格物科技」，专注于AI硬件，推出主打无摩擦体验的睡眠床头灯，融合AIoT技术。",
+          "url": "https://36kr.com/p/3844006775360002?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "英诺科创三期基金聚焦早期科技投资，重点布局人工智能领域",
-          "description": "英诺基金旗下科创三期基金完成首轮关账，规模15亿元，聚焦前沿科技及人工智能领域。",
-          "url": "https://36kr.com/p/3840267945969929?f=rss",
+          "title": "「华超神控」获亿元天使系列融资，加速打造新一代AI超声脑机接口平台",
+          "description": "AI超声脑机公司华超神控完成亿元级天使轮系列融资，由经纬创投、德联资本等投资，用于推动AI脑机接口技术验证与产业化。",
+          "url": "https://36kr.com/p/3841459663030532?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "Token大战中，华为云选择了第三条路",
-          "description": "华为云表示不在乎Token总量，更关注国产化算力系统所生产Tokens的健康度和生产力提升。",
-          "url": "https://36kr.com/p/3840016255126016?f=rss",
+          "title": "ChatGPT将迎来史上最大幅度升级；高考新增AI监考员",
+          "description": "ChatGPT即将进行重大升级；同时高考首次引入AI监考员，自动截取异常录像，体现AI在教育领域的应用。",
+          "url": "https://36kr.com/p/3843764238174729?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "微信AI对手机厂商打开一道窄门",
-          "description": "微信正与华为、小米等手机厂商合作推出A2A助手能力，让手机AI助手发起微信音视频通话等。",
-          "url": "https://36kr.com/p/3839575253993985?f=rss",
+          "title": "豆包推出付费后月活减少610万；Anthropic呼吁全球放缓AI开发",
+          "description": "AI产品豆包在推出付费模式后月活用户减少610万；Anthropic警告AI“自我改进”风险，呼吁暂停前沿AI开发。",
+          "url": "https://36kr.com/p/3840996342073604?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "原力灵机并购物流机器人公司，并获得智谱、商汤、阶跃等投资",
-          "description": "具身智能企业原力灵机完成新一轮融资，多名大模型公司（智谱、阶跃星辰、商汤）参投。",
-          "url": "https://36kr.com/p/3838835333253385?f=rss",
+          "title": "Token大战中，华为云选择了第三条路",
+          "description": "华为云在Token量竞争中不追求绝对数量，而是关注国产化算力生成Tokens的健康度和生产力提升，提出差异化策略。",
+          "url": "https://36kr.com/p/3840016255126016?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "国家队下场做AI虚拟细胞，「百曜科技」完成数千万元新一轮融资",
-          "description": "AI虚拟细胞平台公司百曜科技完成融资，由国新创投基金领投，用于虚拟细胞算法模型迭代等。",
-          "url": "https://36kr.com/p/3835460873385348?f=rss",
+          "title": "微信AI对手机厂商打开一道窄门",
+          "description": "微信与华为、小米等手机厂商合作推出A2A助手能力，通过手机AI助手发起微信音视频通话等，推动AI Agent间协作。",
+          "url": "https://36kr.com/p/3839575253993985?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "AI等机器网络请求量首超人类",
-          "description": "云网络安全服务公司数据显示，约57.4%的网络访问请求来自AI和自动化程序，首次超过人类用户。",
-          "url": "https://36kr.com/newsflashes/3842694357092869?f=rss",
+          "title": "日赚4291万，江西姐弟又要IPO了",
+          "description": "AI大模型竞赛催生存储芯片需求爆发，HBM、DDR5等价格飙升，存储芯片公司受益于AI算力饥渴，推动IPO。",
+          "url": "https://www.huxiu.com/article/4865331.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "多家供给方下调算力价格，算力普惠再提速",
-          "description": "多家模型厂商宣布永久下调算力价格，DeepSeek与小米MiMo降价尤为显著，最高降幅接近99%。",
-          "url": "https://36kr.com/newsflashes/3842626008647945?f=rss",
+          "title": "打上“零AI”，销量翻5倍，我却被困在“人味”里",
+          "description": "独立游戏开发者标注「零AI」纯手工创作反而销量翻5倍，反映用户对AI生成内容的复杂态度及对「人味」的追求。",
+          "url": "https://www.huxiu.com/article/4865318.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "OpenAI正准备对ChatGPT进行上线以来最大幅度升级",
-          "description": "OpenAI计划将ChatGPT转型为“超级应用”，整合编程工具与AI智能体，寻找新增长引擎。",
-          "url": "https://36kr.com/newsflashes/3842621948233991?f=rss",
+          "title": "从王小川的雄心，叹医疗AI征途漫漫",
+          "description": "百川智能全面转型医疗大模型赛道，医疗AI面临数据、监管等挑战，展现了AI在垂直领域落地的长期性。",
+          "url": "https://www.huxiu.com/article/4865311.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "500亿，梁文锋“不学”任正非了",
-          "description": "DeepSeek预计在首轮融资中筹集约500亿元，估值可能达3500-4000亿元，成为AI领域大额融资事件。",
-          "url": "https://www.huxiu.com/article/4865118.html?f=rss",
+          "title": "2026年科技裁员已超15万人，22%的员工被AI取代，Box创始人说CEO们患上了'AI精神病'",
+          "description": "科技行业裁员潮持续，22%被裁岗位因AI取代；同时用户对AI的抗拒情绪上升，DuckDuckGo安装量飙升30%。",
+          "url": "https://www.huxiu.com/article/4865309.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "Anthropic呼吁全球放缓AI开发，警告AI“自我改进”风险",
-          "description": "Anthropic公开呼吁全球暂停AI开发，称AI正在以惊人速度加速自身开发进程，存在潜在风险。",
-          "url": "https://36kr.com/p/3840996342073604?f=rss",
+          "title": "A股三大指数集体收跌，沪指失守4000点关口",
+          "description": "A股三大指数集体收跌，沪指跌1.7%失守4000点，深成指跌3.22%，创业板指跌3.69%；半导体、算力股领跌，银行、油气股逆势走强。",
+          "url": "https://36kr.com/newsflashes/3844180142934531?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "日本或通过抛售美债为创纪录的日元汇市干预筹资",
-          "description": "日本可能通过抛售美国国债来筹集资金，以干预日元汇率，应对近期日元大幅波动。",
-          "url": "https://36kr.com/p/3840267945969929?f=rss",
+          "title": "沪深两市成交额突破2.5万亿元",
+          "description": "沪深两市成交额突破2.5万亿元，较上一交易日缩量超1800亿元，显示市场交投活跃但有所降温。",
+          "url": "https://36kr.com/newsflashes/3844147706972416?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "中国银河证券：非农走强并不意味着美联储年内加息",
-          "description": "中国银河宏观研报认为，5月非农数据虽好于预期但不支撑加息，短期缺乏降息理由，无需过度定价加息风险。",
-          "url": "https://36kr.com/newsflashes/3842691789654273?f=rss",
+          "title": "交通运输部：上周港口货物吞吐量环比下降7.96%",
+          "description": "交通运输部发布6月1日至6月7日全国物流保通保畅运行情况，监测港口完成货物吞吐量25870.5万吨，环比下降7.96%。",
+          "url": "https://36kr.com/newsflashes/3844155896744449?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "DeepSeek预计首轮融资约500亿元，估值超过3500亿元",
-          "description": "据消息人士称，DeepSeek将在首轮融资中筹集约500亿元，估值在3500亿至4000亿元之间。",
-          "url": "https://www.huxiu.com/article/4865118.html?f=rss",
+          "title": "日韩股市收盘集体大跌",
+          "description": "日韩股市大幅下挫，日经225指数收跌3.85%，韩国KOSPI指数收跌8.29%，亚太市场情绪紧张。",
+          "url": "https://36kr.com/newsflashes/3844153438308866?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "OpenAI准备对ChatGPT进行上线以来最大幅度升级",
-          "description": "OpenAI计划将ChatGPT转型为“超级应用”，整合编程工具与AI智能体，新增多款高收入产品，为IPO寻找新增长引擎。",
-          "url": "https://36kr.com/newsflashes/3842621948233991?f=rss",
+          "title": "从“黑色星期五”到“黑色星期一”：全球市场在恐惧什么？",
+          "description": "全球市场遭遇剧烈抛售，始于博通财报和非农数据超预期，纳斯达克等指数暴跌，市场恐慌情绪蔓延。",
+          "url": "https://www.huxiu.com/article/4865300.html?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "沪市下周近千亿分红来袭，超8000亿“红包”待发放",
-          "description": "未来一周沪市近200家公司实施年度分红，合计919亿元，其中中国平安、中信银行等大额派现。",
-          "url": "https://36kr.com/newsflashes/3842593852344833?f=rss",
+          "title": "八家上市公司集中公告“补税”",
+          "description": "6月1日至6日，不到一周内八家上市公司集中发布补税公告，引发市场对税收政策执行力度变化的关注。",
+          "url": "https://36kr.com/p/3843764238174729?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "多家供给方下调算力价格，算力普惠再提速",
-          "description": "多家模型厂商宣布永久下调算力价格，DeepSeek与小米MiMo降幅接近99%，极大降低用户使用成本。",
-          "url": "https://36kr.com/newsflashes/3842626008647945?f=rss",
+          "title": "日本或通过抛售美债，为创纪录规模的日元汇市干预筹资",
+          "description": "日本可能通过减持美国国债为大规模干预日元汇率筹集资金，此举将对美债市场和国际资本流动产生影响。",
+          "url": "https://36kr.com/p/3840267945969929?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "我国已构建四级智能工厂体系，实现规模化建设智能工厂",
-          "description": "工信部表示，我国已累计建成3.5万家基础级、8200余家先进级、500余家卓越级智能工厂，15家入选领航级。",
-          "url": "https://36kr.com/newsflashes/3842591334205956?f=rss",
+          "title": "比起美国加税，欧盟的对华新规可能更“阴”",
+          "description": "美国贸易代表办公室提出对60个经济体加征301关税，中国被列入12.5%税率档；同时欧盟对华新规可能更具针对性。",
+          "url": "https://www.huxiu.com/article/4865295.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "AI等机器网络请求量首超人类",
-          "description": "全球最大互联网托管服务商数据显示，约57.4%的网络访问请求来自AI和自动化程序，人类请求量首次被机器超越。",
-          "url": "https://36kr.com/newsflashes/3842694357092869?f=rss",
+          "title": "存储市场今年将暴涨249.5%，但明年呢？",
+          "description": "WSTS大幅上调2026年半导体市场预测，存储市场同比增长率由26.3%上调至89.9%，行业超级周期延续。",
+          "url": "https://www.huxiu.com/article/4865312.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "沃尔沃汽车金融解散，汽车金融“大逃杀”开始了",
-          "description": "国家金融监督管理总局批复同意解散沃尔沃汽车金融（中国）有限公司，该公司成立于2006年，由沃尔沃集团全资控股。",
-          "url": "https://www.huxiu.com/article/4865114.html?f=rss",
+          "title": "2026年科技裁员已超15万人，22%的员工被AI取代",
+          "description": "硅谷CEO们高喊AI变革的同时，科技行业裁员潮持续，Box CEO称CEO们患上了'AI精神病'。",
+          "url": "https://www.huxiu.com/article/4865309.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -155,37 +155,37 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "Operation-Guided Progressive Human-to-AI Text Transformation Benchmark for Multi-Granularity AI-Text Detection",
-          "description": "提出一个逐步将人类文本转化为AI文本的基准，用于多粒度AI文本检测，模拟现实中的协作写作流程。",
-          "url": "https://arxiv.org/pdf/2606.06481v1",
+          "title": "Twelve quick tips for designing AI-driven HPC workflows",
+          "description": "提供设计AI驱动高性能计算工作流的12条快速建议，关注可预测性能的确定性线性管道优化。",
+          "url": "https://arxiv.org/pdf/2606.07491v1",
           "stars": null,
           "id": 1
         },
         {
-          "title": "Benchmark Everything Everywhere All at Once",
-          "description": "提出一种高效构建和复用LLM/MLLM基准的方法，旨在降低人工成本并提高评估标准化程度。",
-          "url": "https://arxiv.org/pdf/2606.06462v1",
+          "title": "How AI Agents Reshape Knowledge Work: Autonomy, Efficiency, and Scope",
+          "description": "基于生产数据分析AI代理如何从对话助手转向端到端自主执行，重塑知识工作的自主性、效率和范围。",
+          "url": "https://arxiv.org/pdf/2606.07489v1",
           "stars": null,
           "id": 2
         },
         {
-          "title": "Event Detection for Parameter-to-KPI Dependency Learning for AI-RAN",
-          "description": "面向AI集成无线接入网络的事件检测方法，用于学习参数与关键性能指标之间的依赖关系，优化多目标AI控制。",
-          "url": "https://arxiv.org/pdf/2606.06459v1",
+          "title": "Drifting Models for Surrogate Flow Modeling",
+          "description": "提出利用漂移模型作为替代流建模方法，解决计算流体动力学高成本问题，实现室内环境快速优化。",
+          "url": "https://arxiv.org/pdf/2606.07481v1",
           "stars": null,
           "id": 3
         },
         {
-          "title": "Vortex: Efficient and Programmable Sparse Attention Serving for AI Agents",
-          "description": "设计Vortex系统以实现高效且可编程的稀疏注意力服务，支持长序列生成场景下LLM的部署与评估。",
-          "url": "https://arxiv.org/pdf/2606.06453v1",
+          "title": "Act As a Real Researcher: A Suite of Benchmarks Evaluating Frontier LLMs and Agentic Harnesses in Research Lifecycle",
+          "description": "构建一套评估前沿大语言模型和代理框架在研究生命周期中的表现的基准，展示其在复杂长期任务中的能力。",
+          "url": "https://arxiv.org/pdf/2606.07462v1",
           "stars": null,
           "id": 4
         },
         {
-          "title": "A Vision-language Framework for Comparative Reasoning in Radiology",
-          "description": "提出视觉-语言框架用于放射学中的比较推理，弥合孤立图像解读与临床诊断实践之间的差距。",
-          "url": "https://arxiv.org/pdf/2606.06407v1",
+          "title": "A 65 nm Trustworthy Hypoglycemia Forecasting Engine Achieving 11.3 nJ per Inference",
+          "description": "设计一个65纳米制程的可信低血糖预测引擎，每次推理仅消耗11.3纳焦，兼顾准确性、能效和可靠性。",
+          "url": "https://arxiv.org/pdf/2606.07455v1",
           "stars": null,
           "id": 5
         }
@@ -196,41 +196,41 @@
       "items": [
         {
           "title": "netdata",
-          "description": "The fastest path to AI-powered full stack observability for lean teams.",
+          "description": "AI-powered full stack observability platform for real-time infrastructure monitoring.",
           "url": "https://github.com/netdata/netdata",
-          "stars": 79080,
+          "stars": 79088,
           "id": 1
         },
         {
           "title": "AppFlowy",
-          "description": "AI collaborative workspace bringing projects, wikis, and teams together.",
+          "description": "AI collaborative workspace integrating projects, wikis, and teams with AI assistance.",
           "url": "https://github.com/AppFlowy-IO/AppFlowy",
-          "stars": 71980,
+          "stars": 72058,
           "id": 2
         },
         {
-          "title": "odysseus",
-          "description": "Self-hosted AI workspace.",
-          "url": "https://github.com/pewdiepie-archdaemon/odysseus",
-          "stars": 59629,
+          "title": "graphify",
+          "description": "AI coding assistant skill compatible with multiple AI CLI tools for code analysis and generation.",
+          "url": "https://github.com/safishamsi/graphify",
+          "stars": 62466,
           "id": 3
         },
         {
-          "title": "mem0",
-          "description": "Universal memory layer for AI Agents.",
-          "url": "https://github.com/mem0ai/mem0",
-          "stars": 57919,
+          "title": "pi",
+          "description": "AI agent toolkit providing coding agent CLI, unified LLM API, and UI libraries.",
+          "url": "https://github.com/earendil-works/pi",
+          "stars": 60748,
           "id": 4
         },
         {
-          "title": "worldmonitor",
-          "description": "Real-time global intelligence dashboard with AI-powered news aggregation.",
-          "url": "https://github.com/koala73/worldmonitor",
-          "stars": 55943,
+          "title": "meilisearch",
+          "description": "Lightning-fast search API with AI-powered hybrid search capabilities.",
+          "url": "https://github.com/meilisearch/meilisearch",
+          "stars": 58008,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-06-07T15:02:39.213+08:00"
+  "updatedAt": "2026-06-08T15:27:23.884+08:00"
 }
