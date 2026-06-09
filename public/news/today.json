@@ -1,76 +1,76 @@
 {
-  "date": "2026-06-08",
+  "date": "2026-06-09",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "小米创始员工范典创业AI硬件，做了台“无摩擦”的睡眠床头灯",
-          "description": "小米创始员工范典创业成立「格物科技」，专注于AI硬件，推出主打无摩擦体验的睡眠床头灯，融合AIoT技术。",
-          "url": "https://36kr.com/p/3844006775360002?f=rss",
+          "title": "硬氪观察 | WWDC 2026：苹果终于在AI上迈出一小步，国内iPhone还是用不上",
+          "description": "苹果在WWDC 2026上重点展示了软件与AI进展，包括全新Siri AI，但国内iPhone用户暂时无法使用相关功能。",
+          "url": "https://36kr.com/p/3845356968839680?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "「华超神控」获亿元天使系列融资，加速打造新一代AI超声脑机接口平台",
-          "description": "AI超声脑机公司华超神控完成亿元级天使轮系列融资，由经纬创投、德联资本等投资，用于推动AI脑机接口技术验证与产业化。",
-          "url": "https://36kr.com/p/3841459663030532?f=rss",
+          "title": "36氪首发 | AI芯片处理器IP公司完成近亿元融资，核心团队来自Synopsys、ARM等顶尖半导体公司",
+          "description": "隼瞻科技完成近亿元天使+轮融资，专注芯片处理器IP设计，核心团队来自Synopsys、ARM等公司，涉及AI芯片技术。",
+          "url": "https://36kr.com/p/3845293120621057?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "ChatGPT将迎来史上最大幅度升级；高考新增AI监考员",
-          "description": "ChatGPT即将进行重大升级；同时高考首次引入AI监考员，自动截取异常录像，体现AI在教育领域的应用。",
-          "url": "https://36kr.com/p/3843764238174729?f=rss",
+          "title": "生殖学博士入局脑机接口，想做一款缓解女性经期情绪问题的脑机'发箍'｜早期项目",
+          "description": "一家初创公司开发用于缓解经前期综合征的脑机接口设备，采用非侵入式脑电技术，结合AI算法调节情绪。",
+          "url": "https://36kr.com/p/3843971153267208?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "豆包推出付费后月活减少610万；Anthropic呼吁全球放缓AI开发",
-          "description": "AI产品豆包在推出付费模式后月活用户减少610万；Anthropic警告AI“自我改进”风险，呼吁暂停前沿AI开发。",
-          "url": "https://36kr.com/p/3840996342073604?f=rss",
+          "title": "「百奥几何」完成数亿元战略融资，打造生命科学'微观世界模型'｜36氪首发",
+          "description": "AI原生生物科技公司百奥几何完成数亿元融资，其GeoFlow模型旨在构建生命科学的微观世界模型，加速药物研发。",
+          "url": "https://36kr.com/p/3839626642344454?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "Token大战中，华为云选择了第三条路",
-          "description": "华为云在Token量竞争中不追求绝对数量，而是关注国产化算力生成Tokens的健康度和生产力提升，提出差异化策略。",
-          "url": "https://36kr.com/p/3840016255126016?f=rss",
+          "title": "8点1氪丨苹果推出全新Siri AI；ROKID回应“智能眼镜偷拍空姐”事件；OpenAI秘密提交IPO文件",
+          "description": "聚合多条AI新闻：苹果发布新Siri AI、阿里巴巴成立Token Foundry事业部、微信开放AI生态、英伟达与LG合建AI工厂、OpenAI秘密提交IPO文件。",
+          "url": "https://36kr.com/p/3845196412193284?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "微信AI对手机厂商打开一道窄门",
-          "description": "微信与华为、小米等手机厂商合作推出A2A助手能力，通过手机AI助手发起微信音视频通话等，推动AI Agent间协作。",
-          "url": "https://36kr.com/p/3839575253993985?f=rss",
+          "title": "腾讯汤道生评价姚顺雨、混元3和元宝",
+          "description": "腾讯云AI产业应用大会上，汤道生与混元大模型负责人姚顺雨对话，讨论了混元3大模型和元宝应用的发展。",
+          "url": "https://36kr.com/p/3844018911889924?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "日赚4291万，江西姐弟又要IPO了",
-          "description": "AI大模型竞赛催生存储芯片需求爆发，HBM、DDR5等价格飙升，存储芯片公司受益于AI算力饥渴，推动IPO。",
-          "url": "https://www.huxiu.com/article/4865331.html?f=rss",
+          "title": "丰田入股日本自动驾驶企业Tier IV",
+          "description": "丰田通过旗下基金向自动驾驶系统开发商Tier IV出资10亿日元，持股1%，强化自动驾驶领域布局。",
+          "url": "https://36kr.com/newsflashes/3845570536573440?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "打上“零AI”，销量翻5倍，我却被困在“人味”里",
-          "description": "独立游戏开发者标注「零AI」纯手工创作反而销量翻5倍，反映用户对AI生成内容的复杂态度及对「人味」的追求。",
-          "url": "https://www.huxiu.com/article/4865318.html?f=rss",
+          "title": "三星拟面部署人工智能，重塑工作流程和企业文化",
+          "description": "三星电子宣布将在全公司运营中全面整合AI，旨在变革工作流程和企业文化，抢占AI时代增长机遇。",
+          "url": "https://36kr.com/newsflashes/3845568386910468?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "从王小川的雄心，叹医疗AI征途漫漫",
-          "description": "百川智能全面转型医疗大模型赛道，医疗AI面临数据、监管等挑战，展现了AI在垂直领域落地的长期性。",
-          "url": "https://www.huxiu.com/article/4865311.html?f=rss",
+          "title": "松延动力与孩子王达成战略合作",
+          "description": "人形机器人公司松延动力与孩子王合作，推动具身智能在亲子家庭场景规模化落地。",
+          "url": "https://36kr.com/newsflashes/3845547471374598?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "2026年科技裁员已超15万人，22%的员工被AI取代，Box创始人说CEO们患上了'AI精神病'",
-          "description": "科技行业裁员潮持续，22%被裁岗位因AI取代；同时用户对AI的抗拒情绪上升，DuckDuckGo安装量飙升30%。",
-          "url": "https://www.huxiu.com/article/4865309.html?f=rss",
+          "title": "Anthropic最新博客：生物学Agent的瓶颈不在模型，而在数据基础设施",
+          "description": "Anthropic博客指出，AI在生物学领域进展慢于编程领域，主要瓶颈在于数据基础设施不足，而非模型能力。",
+          "url": "https://www.huxiu.com/article/4865689.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "A股三大指数集体收跌，沪指失守4000点关口",
-          "description": "A股三大指数集体收跌，沪指跌1.7%失守4000点，深成指跌3.22%，创业板指跌3.69%；半导体、算力股领跌，银行、油气股逆势走强。",
-          "url": "https://36kr.com/newsflashes/3844180142934531?f=rss",
+          "title": "沪指收复4000点，A股全面上涨",
+          "description": "6月9日，A股市场强劲反弹，沪指收复4000点整数关口，深证成指涨2.45%，创业板指涨3.55%，科创50指数涨超4%，市场情绪显著回暖。",
+          "url": "https://36kr.com/newsflashes/3845555966724359?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "沪深两市成交额突破2.5万亿元",
-          "description": "沪深两市成交额突破2.5万亿元，较上一交易日缩量超1800亿元，显示市场交投活跃但有所降温。",
-          "url": "https://36kr.com/newsflashes/3844147706972416?f=rss",
+          "title": "全球第四次石油危机隐忧浮现",
+          "description": "当前中东战事对全球石油市场冲击巨大，分析称第四次石油危机可能已经出现，各国加紧应对。",
+          "url": "https://www.huxiu.com/article/4865680.html?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "交通运输部：上周港口货物吞吐量环比下降7.96%",
-          "description": "交通运输部发布6月1日至6月7日全国物流保通保畅运行情况，监测港口完成货物吞吐量25870.5万吨，环比下降7.96%。",
-          "url": "https://36kr.com/newsflashes/3844155896744449?f=rss",
+          "title": "苹果AI补考费2300亿美元：WWDC后股价暴跌",
+          "description": "苹果WWDC 2026发布全新Siri AI，但市场对AI进展失望，投资者以股价下跌表达不满，市值蒸发约2300亿美元。",
+          "url": "https://www.huxiu.com/article/4865686.html?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "日韩股市收盘集体大跌",
-          "description": "日韩股市大幅下挫，日经225指数收跌3.85%，韩国KOSPI指数收跌8.29%，亚太市场情绪紧张。",
-          "url": "https://36kr.com/newsflashes/3844153438308866?f=rss",
+          "title": "香港开户受阻，资金加速转向新加坡和美国",
+          "description": "内地投资者在香港开户难度加大，中介引导客户转向新加坡和美国金融机构，跨境资本流动格局生变。",
+          "url": "https://www.huxiu.com/article/4865700.html?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "从“黑色星期五”到“黑色星期一”：全球市场在恐惧什么？",
-          "description": "全球市场遭遇剧烈抛售，始于博通财报和非农数据超预期，纳斯达克等指数暴跌，市场恐慌情绪蔓延。",
-          "url": "https://www.huxiu.com/article/4865300.html?f=rss",
+          "title": "微信正式开放AI生态接入能力，与美团京东共建超级入口",
+          "description": "微信宣布向开发者开放AI生态接入，联合美团、京东等平台打造AI超级入口，腾讯AI战略加速落地。",
+          "url": "https://www.huxiu.com/article/4865696.html?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "八家上市公司集中公告“补税”",
-          "description": "6月1日至6日，不到一周内八家上市公司集中发布补税公告，引发市场对税收政策执行力度变化的关注。",
-          "url": "https://36kr.com/p/3843764238174729?f=rss",
+          "title": "三星全面部署AI，重塑工作流程和企业文化",
+          "description": "三星电子宣布将在运营中全面整合人工智能，从工作流程到企业文化进行根本变革，以抢占AI时代先机。",
+          "url": "https://36kr.com/newsflashes/3845568386910468?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "日本或通过抛售美债，为创纪录规模的日元汇市干预筹资",
-          "description": "日本可能通过减持美国国债为大规模干预日元汇率筹集资金，此举将对美债市场和国际资本流动产生影响。",
-          "url": "https://36kr.com/p/3840267945969929?f=rss",
+          "title": "芯联集成旗下股权投资公司增资至28亿元",
+          "description": "芯联集成电路制造旗下杭州股权投资公司注册资本由18亿元增至28亿元，增幅约56%，坚定加码半导体产业投资。",
+          "url": "https://36kr.com/newsflashes/3845563213171200?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "比起美国加税，欧盟的对华新规可能更“阴”",
-          "description": "美国贸易代表办公室提出对60个经济体加征301关税，中国被列入12.5%税率档；同时欧盟对华新规可能更具针对性。",
-          "url": "https://www.huxiu.com/article/4865295.html?f=rss",
+          "title": "赛力斯市值蒸发1700亿，弃华为投字节",
+          "description": "赛力斯（原小康股份）因问界销量不佳市值跌去1700亿元，转而与字节跳动合作，汽车产业格局再变动。",
+          "url": "https://www.huxiu.com/article/4865685.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "存储市场今年将暴涨249.5%，但明年呢？",
-          "description": "WSTS大幅上调2026年半导体市场预测，存储市场同比增长率由26.3%上调至89.9%，行业超级周期延续。",
-          "url": "https://www.huxiu.com/article/4865312.html?f=rss",
+          "title": "万达商业再售资产，转让泉州浦西万达广场",
+          "description": "万达商业旗下泉州浦西万达广场完成工商变更，原股东万达商业退出，新增上海安垭企业为全资股东，继续资产变现步伐。",
+          "url": "https://36kr.com/newsflashes/3845563565263363?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "2026年科技裁员已超15万人，22%的员工被AI取代",
-          "description": "硅谷CEO们高喊AI变革的同时，科技行业裁员潮持续，Box CEO称CEO们患上了'AI精神病'。",
-          "url": "https://www.huxiu.com/article/4865309.html?f=rss",
+          "title": "OpenAI秘密提交IPO文件，AI巨头筹谋上市",
+          "description": "OpenAI已秘密提交IPO文件，融资规模及估值未披露，该事件标志着AI商业化进入新阶段。",
+          "url": "https://36kr.com/p/3845196412193284?f=rss",
           "stars": null,
           "id": 10
         }
@@ -155,37 +155,37 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "Twelve quick tips for designing AI-driven HPC workflows",
-          "description": "提供设计AI驱动高性能计算工作流的12条快速建议，关注可预测性能的确定性线性管道优化。",
-          "url": "https://arxiv.org/pdf/2606.07491v1",
+          "title": "Evaluation Cards: An Interpretive Layer for AI Evaluation Reporting",
+          "description": "提出Evaluation Cards以规范AI评估报告，解决不同平台间评估结果不一致的问题。",
+          "url": "https://arxiv.org/pdf/2606.09809v1",
           "stars": null,
           "id": 1
         },
         {
-          "title": "How AI Agents Reshape Knowledge Work: Autonomy, Efficiency, and Scope",
-          "description": "基于生产数据分析AI代理如何从对话助手转向端到端自主执行，重塑知识工作的自主性、效率和范围。",
-          "url": "https://arxiv.org/pdf/2606.07489v1",
+          "title": "Principled Uncertainty in Clinical AI: End-to-End Bayesian Modelling and Algorithmic Equity Auditing Across Multimodal Patient Data",
+          "description": "针对临床AI缺乏不确定性量化的问题，提出端到端贝叶斯建模与公平性审计方法。",
+          "url": "https://arxiv.org/pdf/2606.09789v1",
           "stars": null,
           "id": 2
         },
         {
-          "title": "Drifting Models for Surrogate Flow Modeling",
-          "description": "提出利用漂移模型作为替代流建模方法，解决计算流体动力学高成本问题，实现室内环境快速优化。",
-          "url": "https://arxiv.org/pdf/2606.07481v1",
+          "title": "Cohort-based Semantic Labeling: AI-Enabled Recovery of Visualization Semantics from Deployed SVGs",
+          "description": "通过AI从SVG格式的可视化中恢复语义标签，提升网页可视化的可访问性和可重用性。",
+          "url": "https://arxiv.org/pdf/2606.09782v1",
           "stars": null,
           "id": 3
         },
         {
-          "title": "Act As a Real Researcher: A Suite of Benchmarks Evaluating Frontier LLMs and Agentic Harnesses in Research Lifecycle",
-          "description": "构建一套评估前沿大语言模型和代理框架在研究生命周期中的表现的基准，展示其在复杂长期任务中的能力。",
-          "url": "https://arxiv.org/pdf/2606.07462v1",
+          "title": "Human-Centred Risk Mitigation for AI-Mediated Information Manipulation: A SOCMINT Framework Based on Information Manipulation Sets",
+          "description": "提出以人为中心的风险缓解框架，基于信息操纵集应对AI中介的信息操纵攻击。",
+          "url": "https://arxiv.org/pdf/2606.09754v1",
           "stars": null,
           "id": 4
         },
         {
-          "title": "A 65 nm Trustworthy Hypoglycemia Forecasting Engine Achieving 11.3 nJ per Inference",
-          "description": "设计一个65纳米制程的可信低血糖预测引擎，每次推理仅消耗11.3纳焦，兼顾准确性、能效和可靠性。",
-          "url": "https://arxiv.org/pdf/2606.07455v1",
+          "title": "Hybrid Robustness Verification for Spatio-Temporal Neural Networks",
+          "description": "面向时空神经网络提出混合鲁棒性验证方法，融合形式化与统计技术以平衡精度和效率。",
+          "url": "https://arxiv.org/pdf/2606.09746v1",
           "stars": null,
           "id": 5
         }
@@ -196,41 +196,41 @@
       "items": [
         {
           "title": "netdata",
-          "description": "AI-powered full stack observability platform for real-time infrastructure monitoring.",
+          "description": "最快路径实现AI驱动的全栈可观测性，即使是精益团队。",
           "url": "https://github.com/netdata/netdata",
-          "stars": 79088,
+          "stars": 79090,
           "id": 1
         },
         {
           "title": "AppFlowy",
-          "description": "AI collaborative workspace integrating projects, wikis, and teams with AI assistance.",
+          "description": "AI协作工作空间，将项目、维基和团队结合在一起。",
           "url": "https://github.com/AppFlowy-IO/AppFlowy",
-          "stars": 72058,
+          "stars": 72138,
           "id": 2
         },
         {
-          "title": "graphify",
-          "description": "AI coding assistant skill compatible with multiple AI CLI tools for code analysis and generation.",
-          "url": "https://github.com/safishamsi/graphify",
-          "stars": 62466,
+          "title": "odysseus",
+          "description": "自托管的AI工作空间。",
+          "url": "https://github.com/pewdiepie-archdaemon/odysseus",
+          "stars": 64229,
           "id": 3
         },
         {
           "title": "pi",
-          "description": "AI agent toolkit providing coding agent CLI, unified LLM API, and UI libraries.",
+          "description": "AI代理工具包，包含编码代理CLI、统一LLM API、TUI及Web UI库、Slack机器人和vLLM pods。",
           "url": "https://github.com/earendil-works/pi",
-          "stars": 60748,
+          "stars": 61024,
           "id": 4
         },
         {
-          "title": "meilisearch",
-          "description": "Lightning-fast search API with AI-powered hybrid search capabilities.",
-          "url": "https://github.com/meilisearch/meilisearch",
-          "stars": 58008,
+          "title": "mem0",
+          "description": "为AI代理提供通用记忆层。",
+          "url": "https://github.com/mem0ai/mem0",
+          "stars": 58107,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-06-08T15:27:23.884+08:00"
+  "updatedAt": "2026-06-09T14:44:33.066+08:00"
 }
