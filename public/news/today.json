@@ -1,76 +1,76 @@
 {
-  "date": "2026-06-09",
+  "date": "2026-06-11",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "硬氪观察 | WWDC 2026：苹果终于在AI上迈出一小步，国内iPhone还是用不上",
-          "description": "苹果在WWDC 2026上重点展示了软件与AI进展，包括全新Siri AI，但国内iPhone用户暂时无法使用相关功能。",
-          "url": "https://36kr.com/p/3845356968839680?f=rss",
+          "title": "独家｜字节 AI 制药开启拆分融资，AI4S 进入产业化阶段",
+          "description": "字节跳动AI制药业务线启动拆分融资，AI for Science进入产业化阶段。",
+          "url": "https://36kr.com/p/3846956646124036?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "36氪首发 | AI芯片处理器IP公司完成近亿元融资，核心团队来自Synopsys、ARM等顶尖半导体公司",
-          "description": "隼瞻科技完成近亿元天使+轮融资，专注芯片处理器IP设计，核心团队来自Synopsys、ARM等公司，涉及AI芯片技术。",
-          "url": "https://36kr.com/p/3845293120621057?f=rss",
+          "title": "最前线｜AI跨境电商工具混战，StoreClaw想用“一个大脑”接管卖家的店",
+          "description": "AI跨境电商工具StoreClaw旨在通过统一AI系统管理多渠道店铺，降低运营成本。",
+          "url": "https://36kr.com/p/3846793046133257?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "生殖学博士入局脑机接口，想做一款缓解女性经期情绪问题的脑机'发箍'｜早期项目",
-          "description": "一家初创公司开发用于缓解经前期综合征的脑机接口设备，采用非侵入式脑电技术，结合AI算法调节情绪。",
-          "url": "https://36kr.com/p/3843971153267208?f=rss",
+          "title": "36氪首发 | 清华团队做出全球首个实时理解生理与情绪的基座模型",
+          "description": "微面科技获顺为投资，开发全球首个实时理解生理与情绪的基座模型，推动新一代人机交互。",
+          "url": "https://36kr.com/p/3846789531404549?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "「百奥几何」完成数亿元战略融资，打造生命科学'微观世界模型'｜36氪首发",
-          "description": "AI原生生物科技公司百奥几何完成数亿元融资，其GeoFlow模型旨在构建生命科学的微观世界模型，加速药物研发。",
-          "url": "https://36kr.com/p/3839626642344454?f=rss",
+          "title": "德国机器人公司Neura Robotics完成14亿美元融资，获亚马逊、英伟达等多方支持",
+          "description": "Neura Robotics完成C轮融资14亿美元，获得亚马逊和英伟达支持，加速构建物理AI平台。",
+          "url": "https://36kr.com/newsflashes/3848442560599301?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "8点1氪丨苹果推出全新Siri AI；ROKID回应“智能眼镜偷拍空姐”事件；OpenAI秘密提交IPO文件",
-          "description": "聚合多条AI新闻：苹果发布新Siri AI、阿里巴巴成立Token Foundry事业部、微信开放AI生态、英伟达与LG合建AI工厂、OpenAI秘密提交IPO文件。",
-          "url": "https://36kr.com/p/3845196412193284?f=rss",
+          "title": "百度爱采购发布AI经营助手“生意搭子”",
+          "description": "百度爱采购推出AI经营助手“生意搭子”，覆盖内容生产、商品运营等环节，提升商家经营效率。",
+          "url": "https://36kr.com/newsflashes/3848410549163269?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "腾讯汤道生评价姚顺雨、混元3和元宝",
-          "description": "腾讯云AI产业应用大会上，汤道生与混元大模型负责人姚顺雨对话，讨论了混元3大模型和元宝应用的发展。",
-          "url": "https://36kr.com/p/3844018911889924?f=rss",
+          "title": "科大讯飞在合肥成立词元星火科技公司，注册资本10亿",
+          "description": "科大讯飞全资持股成立词元星火科技，注册资本10亿，经营范围含人工智能应用软件开发等。",
+          "url": "https://36kr.com/newsflashes/3848395989357574?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "丰田入股日本自动驾驶企业Tier IV",
-          "description": "丰田通过旗下基金向自动驾驶系统开发商Tier IV出资10亿日元，持股1%，强化自动驾驶领域布局。",
-          "url": "https://36kr.com/newsflashes/3845570536573440?f=rss",
+          "title": "AI agent 能算清自己的账单吗？一次关于token 消耗的系统分析",
+          "description": "分析AI Agent的Token消耗模式，探讨如何预测和控制成本。",
+          "url": "https://www.huxiu.com/article/4866373.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "三星拟面部署人工智能，重塑工作流程和企业文化",
-          "description": "三星电子宣布将在全公司运营中全面整合AI，旨在变革工作流程和企业文化，抢占AI时代增长机遇。",
-          "url": "https://36kr.com/newsflashes/3845568386910468?f=rss",
+          "title": "Claude Code之父说的“Loop 工程”到底是怎么回事？就问咋变天的？",
+          "description": "Claude Code之父Boris Cherny访谈，解释“Loop工程”概念，讨论AI编程新范式。",
+          "url": "https://www.huxiu.com/article/4866372.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "松延动力与孩子王达成战略合作",
-          "description": "人形机器人公司松延动力与孩子王合作，推动具身智能在亲子家庭场景规模化落地。",
-          "url": "https://36kr.com/newsflashes/3845547471374598?f=rss",
+          "title": "微信AI不打算接管一切",
+          "description": "微信正式开放AI生态接入能力，但强调不会控制一切，探讨微信AI的策略。",
+          "url": "https://www.huxiu.com/article/4866356.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "Anthropic最新博客：生物学Agent的瓶颈不在模型，而在数据基础设施",
-          "description": "Anthropic博客指出，AI在生物学领域进展慢于编程领域，主要瓶颈在于数据基础设施不足，而非模型能力。",
-          "url": "https://www.huxiu.com/article/4865689.html?f=rss",
+          "title": "复杂业务场景下RCA Agent 的探索实践",
+          "description": "探讨在复杂业务中应用RCA（根因分析）Agent的实践，背景是AI已攻克编码工作后的新问题。",
+          "url": "https://www.huxiu.com/article/4866351.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "沪指收复4000点，A股全面上涨",
-          "description": "6月9日，A股市场强劲反弹，沪指收复4000点整数关口，深证成指涨2.45%，创业板指涨3.55%，科创50指数涨超4%，市场情绪显著回暖。",
-          "url": "https://36kr.com/newsflashes/3845555966724359?f=rss",
+          "title": "A股三大指数集体收跌，全市场超4000股下跌",
+          "description": "A股三大指数集体收跌，沪指跌0.16%，深成指跌0.68%，创业板指跌1.13%，全市场超4000股下跌。",
+          "url": "https://36kr.com/newsflashes/3848426581562370?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "全球第四次石油危机隐忧浮现",
-          "description": "当前中东战事对全球石油市场冲击巨大，分析称第四次石油危机可能已经出现，各国加紧应对。",
-          "url": "https://www.huxiu.com/article/4865680.html?f=rss",
+          "title": "花旗警告：金价或跌至3500美元",
+          "description": "花旗发布警告，认为金价可能跌至3500美元，引发市场关注。",
+          "url": "https://36kr.com/p/3848000003953926?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "苹果AI补考费2300亿美元：WWDC后股价暴跌",
-          "description": "苹果WWDC 2026发布全新Siri AI，但市场对AI进展失望，投资者以股价下跌表达不满，市值蒸发约2300亿美元。",
-          "url": "https://www.huxiu.com/article/4865686.html?f=rss",
+          "title": "韩国股市再度熔断",
+          "description": "韩国股市出现再度熔断，市场波动加剧。",
+          "url": "https://36kr.com/p/3848000003953926?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "香港开户受阻，资金加速转向新加坡和美国",
-          "description": "内地投资者在香港开户难度加大，中介引导客户转向新加坡和美国金融机构，跨境资本流动格局生变。",
-          "url": "https://www.huxiu.com/article/4865700.html?f=rss",
+          "title": "伊朗宣布对所有船只关闭霍尔木兹海峡",
+          "description": "伊朗宣布对所有船只关闭霍尔木兹海峡，全球能源运输通道面临重大威胁。",
+          "url": "https://36kr.com/p/3848000003953926?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "微信正式开放AI生态接入能力，与美团京东共建超级入口",
-          "description": "微信宣布向开发者开放AI生态接入，联合美团、京东等平台打造AI超级入口，腾讯AI战略加速落地。",
-          "url": "https://www.huxiu.com/article/4865696.html?f=rss",
+          "title": "台积电释放涨价信号",
+          "description": "台积电释放涨价信号，可能影响全球芯片供应链成本。",
+          "url": "https://36kr.com/p/3848000003953926?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "三星全面部署AI，重塑工作流程和企业文化",
-          "description": "三星电子宣布将在运营中全面整合人工智能，从工作流程到企业文化进行根本变革，以抢占AI时代先机。",
-          "url": "https://36kr.com/newsflashes/3845568386910468?f=rss",
+          "title": "访华转头竖起贸易壁垒，欧盟上演典型双标戏码",
+          "description": "欧洲各国联名要求对华竖起贸易壁垒，指责中国商品导致巨额逆差，但欧盟此前刚组团访华。",
+          "url": "https://www.huxiu.com/article/4866106.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "芯联集成旗下股权投资公司增资至28亿元",
-          "description": "芯联集成电路制造旗下杭州股权投资公司注册资本由18亿元增至28亿元，增幅约56%，坚定加码半导体产业投资。",
-          "url": "https://36kr.com/newsflashes/3845563213171200?f=rss",
+          "title": "字节 AI 制药开启拆分融资",
+          "description": "字节跳动AI制药业务线启动拆分与独立融资，拆分后字节仍将控股新公司。",
+          "url": "https://36kr.com/p/3846956646124036?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "赛力斯市值蒸发1700亿，弃华为投字节",
-          "description": "赛力斯（原小康股份）因问界销量不佳市值跌去1700亿元，转而与字节跳动合作，汽车产业格局再变动。",
-          "url": "https://www.huxiu.com/article/4865685.html?f=rss",
+          "title": "德国机器人公司Neura Robotics完成14亿美元融资，获亚马逊、英伟达支持",
+          "description": "德国机器人公司Neura Robotics完成14亿美元C轮融资，亚马逊、英伟达等参与投资。",
+          "url": "https://36kr.com/newsflashes/3848442560599301?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "万达商业再售资产，转让泉州浦西万达广场",
-          "description": "万达商业旗下泉州浦西万达广场完成工商变更，原股东万达商业退出，新增上海安垭企业为全资股东，继续资产变现步伐。",
-          "url": "https://36kr.com/newsflashes/3845563565263363?f=rss",
+          "title": "甲骨文CFO：预计2027财年资本净支出为700亿美元",
+          "description": "甲骨文首席财务官表示2027财年资本支出净现金流出预计为700亿美元，投资回报有保障。",
+          "url": "https://36kr.com/newsflashes/3848441095705857?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "OpenAI秘密提交IPO文件，AI巨头筹谋上市",
-          "description": "OpenAI已秘密提交IPO文件，融资规模及估值未披露，该事件标志着AI商业化进入新阶段。",
-          "url": "https://36kr.com/p/3845196412193284?f=rss",
+          "title": "港交所刘颖：2018年推出18A章以来，已有90家生物科技公司在港上市",
+          "description": "港交所董事总经理刘颖透露，自2018年推出18A章以来，已有90家生物科技公司在港上市，累计募资1429亿港元。",
+          "url": "https://36kr.com/newsflashes/3848431884735490?f=rss",
           "stars": null,
           "id": 10
         }
@@ -155,37 +155,37 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "Evaluation Cards: An Interpretive Layer for AI Evaluation Reporting",
-          "description": "提出Evaluation Cards以规范AI评估报告，解决不同平台间评估结果不一致的问题。",
-          "url": "https://arxiv.org/pdf/2606.09809v1",
+          "title": "Nonslop: A Gamified Experiment in Human-AI Collaborative Writing",
+          "description": "探索人类与AI协作写作中的创造性和个体表达，通过游戏化实验研究何时人类采纳AI建议。",
+          "url": "https://arxiv.org/pdf/2606.12350v1",
           "stars": null,
           "id": 1
         },
         {
-          "title": "Principled Uncertainty in Clinical AI: End-to-End Bayesian Modelling and Algorithmic Equity Auditing Across Multimodal Patient Data",
-          "description": "针对临床AI缺乏不确定性量化的问题，提出端到端贝叶斯建模与公平性审计方法。",
-          "url": "https://arxiv.org/pdf/2606.09789v1",
+          "title": "Atlas H&E-TME: Scalable AI-Based Tissue Profiling at Expert Pathologist-Level Accuracy",
+          "description": "提出可扩展的AI组织分析方法，在H&E全切片图像上达到病理学家级别的准确性。",
+          "url": "https://arxiv.org/pdf/2606.12346v1",
           "stars": null,
           "id": 2
         },
         {
-          "title": "Cohort-based Semantic Labeling: AI-Enabled Recovery of Visualization Semantics from Deployed SVGs",
-          "description": "通过AI从SVG格式的可视化中恢复语义标签，提升网页可视化的可访问性和可重用性。",
-          "url": "https://arxiv.org/pdf/2606.09782v1",
+          "title": "Fair Comparison of Scheduling Algorithms on Heterogeneous Edge Clusters: A Continuous Adaptive Benchmark",
+          "description": "针对异构边缘集群上的AI工作负载调度算法，提出连续自适应基准测试以实现公平比较。",
+          "url": "https://arxiv.org/pdf/2606.12343v1",
           "stars": null,
           "id": 3
         },
         {
-          "title": "Human-Centred Risk Mitigation for AI-Mediated Information Manipulation: A SOCMINT Framework Based on Information Manipulation Sets",
-          "description": "提出以人为中心的风险缓解框架，基于信息操纵集应对AI中介的信息操纵攻击。",
-          "url": "https://arxiv.org/pdf/2606.09754v1",
+          "title": "PROJECTMEM: A Local-First, Event-Sourced Memory and Judgment Layer for AI Coding Agents",
+          "description": "为AI编码助手设计本地优先、事件溯源的记忆与判断层，解决状态缺失问题。",
+          "url": "https://arxiv.org/pdf/2606.12329v1",
           "stars": null,
           "id": 4
         },
         {
-          "title": "Hybrid Robustness Verification for Spatio-Temporal Neural Networks",
-          "description": "面向时空神经网络提出混合鲁棒性验证方法，融合形式化与统计技术以平衡精度和效率。",
-          "url": "https://arxiv.org/pdf/2606.09746v1",
+          "title": "A Five-Plane Reference Architecture for Runtime Governance of Production AI Agents",
+          "description": "提出五平面参考架构，用于生产环境中AI代理的运行时治理，重点关注企业安全边界。",
+          "url": "https://arxiv.org/pdf/2606.12320v1",
           "stars": null,
           "id": 5
         }
@@ -195,42 +195,42 @@
       "name": "AI 开源项目",
       "items": [
         {
-          "title": "netdata",
-          "description": "最快路径实现AI驱动的全栈可观测性，即使是精益团队。",
+          "title": "netdata/netdata",
+          "description": "The fastest path to AI-powered full stack observability, even for lean teams.",
           "url": "https://github.com/netdata/netdata",
-          "stars": 79090,
+          "stars": 79111,
           "id": 1
         },
         {
-          "title": "AppFlowy",
-          "description": "AI协作工作空间，将项目、维基和团队结合在一起。",
+          "title": "AppFlowy-IO/AppFlowy",
+          "description": "AI collaborative workspace bringing projects, wikis, and teams together with AI.",
           "url": "https://github.com/AppFlowy-IO/AppFlowy",
-          "stars": 72138,
+          "stars": 72225,
           "id": 2
         },
         {
-          "title": "odysseus",
-          "description": "自托管的AI工作空间。",
+          "title": "pewdiepie-archdaemon/odysseus",
+          "description": "Self-hosted AI workspace.",
           "url": "https://github.com/pewdiepie-archdaemon/odysseus",
-          "stars": 64229,
+          "stars": 67436,
           "id": 3
         },
         {
-          "title": "pi",
-          "description": "AI代理工具包，包含编码代理CLI、统一LLM API、TUI及Web UI库、Slack机器人和vLLM pods。",
-          "url": "https://github.com/earendil-works/pi",
-          "stars": 61024,
+          "title": "docling-project/docling",
+          "description": "Get your documents ready for gen AI.",
+          "url": "https://github.com/docling-project/docling",
+          "stars": 61364,
           "id": 4
         },
         {
-          "title": "mem0",
-          "description": "为AI代理提供通用记忆层。",
+          "title": "mem0ai/mem0",
+          "description": "Universal memory layer for AI Agents.",
           "url": "https://github.com/mem0ai/mem0",
-          "stars": 58107,
+          "stars": 58314,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-06-09T14:44:33.066+08:00"
+  "updatedAt": "2026-06-11T15:26:03.901+08:00"
 }
