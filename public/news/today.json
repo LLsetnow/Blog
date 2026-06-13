@@ -1,76 +1,76 @@
 {
-  "date": "2026-06-11",
+  "date": "2026-06-13",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "独家｜字节 AI 制药开启拆分融资，AI4S 进入产业化阶段",
-          "description": "字节跳动AI制药业务线启动拆分融资，AI for Science进入产业化阶段。",
-          "url": "https://36kr.com/p/3846956646124036?f=rss",
+          "title": "突发！Anthropic全球停用Claude 5",
+          "description": "Anthropic突然下线了最强Claude Fable 5，全球禁用外籍人士使用，引发行业震动。",
+          "url": "https://36kr.com/p/3851015329027336?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "最前线｜AI跨境电商工具混战，StoreClaw想用“一个大脑”接管卖家的店",
-          "description": "AI跨境电商工具StoreClaw旨在通过统一AI系统管理多渠道店铺，降低运营成本。",
-          "url": "https://36kr.com/p/3846793046133257?f=rss",
+          "title": "9点1氪｜SpaceX市值破2.1万亿美元...Kimi与一国有银行合作，全球首张AI原生信用卡开放预约",
+          "description": "Kimi与国有银行合作推出全球首张AI原生信用卡，展示了AIGC在金融领域的应用。",
+          "url": "https://36kr.com/p/3850898430989577?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "36氪首发 | 清华团队做出全球首个实时理解生理与情绪的基座模型",
-          "description": "微面科技获顺为投资，开发全球首个实时理解生理与情绪的基座模型，推动新一代人机交互。",
-          "url": "https://36kr.com/p/3846789531404549?f=rss",
+          "title": "氪星晚报｜OpenAI CEO奥特曼推迟访韩计划",
+          "description": "OpenAI CEO山姆·奥特曼因个人原因推迟访韩，原计划会见三星等企业负责人。",
+          "url": "https://36kr.com/p/3849942472512769?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "德国机器人公司Neura Robotics完成14亿美元融资，获亚马逊、英伟达等多方支持",
-          "description": "Neura Robotics完成C轮融资14亿美元，获得亚马逊和英伟达支持，加速构建物理AI平台。",
-          "url": "https://36kr.com/newsflashes/3848442560599301?f=rss",
+          "title": "摩尔线程：完成MiniMax M3大模型适配",
+          "description": "摩尔线程旗舰级AI训推一体智算卡MTT S5000已完成对MiniMax M3大模型的Day-0极速适配。",
+          "url": "https://36kr.com/newsflashes/3851097260004610?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "百度爱采购发布AI经营助手“生意搭子”",
-          "description": "百度爱采购推出AI经营助手“生意搭子”，覆盖内容生产、商品运营等环节，提升商家经营效率。",
-          "url": "https://36kr.com/newsflashes/3848410549163269?f=rss",
+          "title": "蓝思科技：收购同昇光电，加速布局光通信",
+          "description": "蓝思科技收购同昇光电，后者为空芯光纤领先企业，产品覆盖AI算力等领域。",
+          "url": "https://36kr.com/newsflashes/3851096396322055?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "科大讯飞在合肥成立词元星火科技公司，注册资本10亿",
-          "description": "科大讯飞全资持股成立词元星火科技，注册资本10亿，经营范围含人工智能应用软件开发等。",
-          "url": "https://36kr.com/newsflashes/3848395989357574?f=rss",
+          "title": "严禁手写代码、一天烧不完10亿Token就是失职：OpenAI工程师揭秘“零人类编码”的激进实践",
+          "description": "OpenAI工程师分享零人类编码实践，揭示AI时代代码生成和Token消耗的激进要求。",
+          "url": "https://www.huxiu.com/article/4867006.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "AI agent 能算清自己的账单吗？一次关于token 消耗的系统分析",
-          "description": "分析AI Agent的Token消耗模式，探讨如何预测和控制成本。",
-          "url": "https://www.huxiu.com/article/4866373.html?f=rss",
+          "title": "Anthropic CEO：AI 是给人类的成人礼",
+          "description": "Anthropic CEO Dario Amodei发表《技术的青春期》观点，探讨AI对社会的深远影响。",
+          "url": "https://www.huxiu.com/article/4867000.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "Claude Code之父说的“Loop 工程”到底是怎么回事？就问咋变天的？",
-          "description": "Claude Code之父Boris Cherny访谈，解释“Loop工程”概念，讨论AI编程新范式。",
-          "url": "https://www.huxiu.com/article/4866372.html?f=rss",
+          "title": "“AI 押中率98%”？我们让8个AI 押了高考数学卷",
+          "description": "测试8个AI模型押题高考数学，揭示AI在教育领域的真实能力与营销夸大。",
+          "url": "https://www.huxiu.com/article/4866989.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "微信AI不打算接管一切",
-          "description": "微信正式开放AI生态接入能力，但强调不会控制一切，探讨微信AI的策略。",
-          "url": "https://www.huxiu.com/article/4866356.html?f=rss",
+          "title": "机器人开始“吃数据”：从印度数据工厂到百亿美元人形机器人的隐秘生产链",
+          "description": "揭露人形机器人训练依赖人类数据标注的产业链，涉及机器学习数据采集。",
+          "url": "https://www.huxiu.com/article/4866988.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "复杂业务场景下RCA Agent 的探索实践",
-          "description": "探讨在复杂业务中应用RCA（根因分析）Agent的实践，背景是AI已攻克编码工作后的新问题。",
-          "url": "https://www.huxiu.com/article/4866351.html?f=rss",
+          "title": "突发：美国政府下令，Anthropic最先进两款AI全球被限",
+          "description": "美国政府要求Anthropic对Fable 5和Mythos 5实施全面访问限制，涉及AI监管。",
+          "url": "https://www.huxiu.com/article/4866982.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "A股三大指数集体收跌，全市场超4000股下跌",
-          "description": "A股三大指数集体收跌，沪指跌0.16%，深成指跌0.68%，创业板指跌1.13%，全市场超4000股下跌。",
-          "url": "https://36kr.com/newsflashes/3848426581562370?f=rss",
+          "title": "SpaceX市值破2.1万亿美元，马斯克身家达巴菲特7倍",
+          "description": "SpaceX上市首日收盘报160.95美元，市值达2.1万亿美元，创历史最大IPO，马斯克个人财富突破万亿美元。",
+          "url": "https://36kr.com/p/3850898430989577?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "花旗警告：金价或跌至3500美元",
-          "description": "花旗发布警告，认为金价可能跌至3500美元，引发市场关注。",
-          "url": "https://36kr.com/p/3848000003953926?f=rss",
+          "title": "美国政府下令，Anthropic最先进两款AI全球被限",
+          "description": "Anthropic收到美国政府指令，被迫对Claude Fable 5和Mythos 5实施全面访问限制，涉及AI监管新动向。",
+          "url": "https://www.huxiu.com/article/4866982.html?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "韩国股市再度熔断",
-          "description": "韩国股市出现再度熔断，市场波动加剧。",
-          "url": "https://36kr.com/p/3848000003953926?f=rss",
+          "title": "印度政府出台汽柴油限购措施",
+          "description": "印度政府出台为期90天的汽油和柴油限购措施，禁止机构用户在零售加油站购买燃油，并对个人每日购买量设限，以防囤积倒卖加剧供应紧张。",
+          "url": "https://36kr.com/newsflashes/3851102420325382?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "伊朗宣布对所有船只关闭霍尔木兹海峡",
-          "description": "伊朗宣布对所有船只关闭霍尔木兹海峡，全球能源运输通道面临重大威胁。",
-          "url": "https://36kr.com/p/3848000003953926?f=rss",
+          "title": "11部门发文推动新能源重卡应用",
+          "description": "交通运输部等11部门联合发布方案，明确到2030年新能源重卡渗透率达40%，保有量突破160万辆，并规划3万公里零碳公路运输走廊。",
+          "url": "https://36kr.com/newsflashes/3851093396886529?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "台积电释放涨价信号",
-          "description": "台积电释放涨价信号，可能影响全球芯片供应链成本。",
-          "url": "https://36kr.com/p/3848000003953926?f=rss",
+          "title": "对下一阶段货币政策的展望",
+          "description": "自6月初起一年存单利率持续反弹，央行资金投放呈现“放短锁长”操作，引发对货币政策边际收紧的讨论。",
+          "url": "https://www.huxiu.com/article/4867005.html?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "访华转头竖起贸易壁垒，欧盟上演典型双标戏码",
-          "description": "欧洲各国联名要求对华竖起贸易壁垒，指责中国商品导致巨额逆差，但欧盟此前刚组团访华。",
-          "url": "https://www.huxiu.com/article/4866106.html?f=rss",
+          "title": "全球资本开始拆着买中国科技了",
+          "description": "美国杠杆ETF发行商ProShares向SEC提交9只中国A股杠杆ETF产品申请，显示外资正加速以结构化工具配置中国科技资产。",
+          "url": "https://www.huxiu.com/article/4867002.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "字节 AI 制药开启拆分融资",
-          "description": "字节跳动AI制药业务线启动拆分与独立融资，拆分后字节仍将控股新公司。",
-          "url": "https://36kr.com/p/3846956646124036?f=rss",
+          "title": "降价越狠，卖得越差，燃油车价格体系崩盘",
+          "description": "5月常规燃油乘用车零售量同比下滑39%，持续降价未能换来销量回暖，燃油车市场陷入价格与需求螺旋下行。",
+          "url": "https://www.huxiu.com/article/4866993.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "德国机器人公司Neura Robotics完成14亿美元融资，获亚马逊、英伟达支持",
-          "description": "德国机器人公司Neura Robotics完成14亿美元C轮融资，亚马逊、英伟达等参与投资。",
-          "url": "https://36kr.com/newsflashes/3848442560599301?f=rss",
+          "title": "美法院驳回上诉，维持肯尼迪中心移除特朗普名字裁决",
+          "description": "美国哥伦比亚特区巡回上诉法院驳回政府上诉，维持联邦地区法院要求限期将特朗普名字从肯尼迪表演艺术中心移除的裁决。",
+          "url": "https://36kr.com/newsflashes/3851188166137096?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "甲骨文CFO：预计2027财年资本净支出为700亿美元",
-          "description": "甲骨文首席财务官表示2027财年资本支出净现金流出预计为700亿美元，投资回报有保障。",
-          "url": "https://36kr.com/newsflashes/3848441095705857?f=rss",
+          "title": "今年前五个月全国铁路发送旅客19.69亿人次创历史新高",
+          "description": "1至5月全国铁路发送旅客19.69亿人次，同比增长5.7%，客流总量、单日客流量和跨境客流均创历史同期新高。",
+          "url": "https://36kr.com/newsflashes/3851003216418055?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "港交所刘颖：2018年推出18A章以来，已有90家生物科技公司在港上市",
-          "description": "港交所董事总经理刘颖透露，自2018年推出18A章以来，已有90家生物科技公司在港上市，累计募资1429亿港元。",
-          "url": "https://36kr.com/newsflashes/3848431884735490?f=rss",
+          "title": "摩尔线程：完成MiniMax M3大模型适配",
+          "description": "摩尔线程旗舰智能卡MTT S5000完成对MiniMax新一代原生多模态旗舰模型M3的Day-0适配，加速国产AI生态适配能力。",
+          "url": "https://36kr.com/newsflashes/3851097260004610?f=rss",
           "stars": null,
           "id": 10
         }
@@ -155,37 +155,37 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "Nonslop: A Gamified Experiment in Human-AI Collaborative Writing",
-          "description": "探索人类与AI协作写作中的创造性和个体表达，通过游戏化实验研究何时人类采纳AI建议。",
-          "url": "https://arxiv.org/pdf/2606.12350v1",
+          "title": "Before You Think: System 0, AI-Mediated Cognition and Cognitive Colonization",
+          "description": "Examines frameworks like System 0 and cognitive colonization to understand AI's impact on human cognition and epistemology.",
+          "url": "https://arxiv.org/pdf/2606.13658v1",
           "stars": null,
           "id": 1
         },
         {
-          "title": "Atlas H&E-TME: Scalable AI-Based Tissue Profiling at Expert Pathologist-Level Accuracy",
-          "description": "提出可扩展的AI组织分析方法，在H&E全切片图像上达到病理学家级别的准确性。",
-          "url": "https://arxiv.org/pdf/2606.12346v1",
+          "title": "The Moving Drone: Negotiating Agency Between the Voice and the Virtual",
+          "description": "Explores melodic material in Hindustani music and the concept of a 'moving drone' to negotiate agency between voice and virtual systems.",
+          "url": "https://arxiv.org/pdf/2606.13640v1",
           "stars": null,
           "id": 2
         },
         {
-          "title": "Fair Comparison of Scheduling Algorithms on Heterogeneous Edge Clusters: A Continuous Adaptive Benchmark",
-          "description": "针对异构边缘集群上的AI工作负载调度算法，提出连续自适应基准测试以实现公平比较。",
-          "url": "https://arxiv.org/pdf/2606.12343v1",
+          "title": "Valid Inference with Synthetic Data via Task Exchangeability",
+          "description": "Proposes using synthetic data for valid scientific inference, with applications in LLM-generated 'silicon samples' for pilot studies.",
+          "url": "https://arxiv.org/pdf/2606.13629v1",
           "stars": null,
           "id": 3
         },
         {
-          "title": "PROJECTMEM: A Local-First, Event-Sourced Memory and Judgment Layer for AI Coding Agents",
-          "description": "为AI编码助手设计本地优先、事件溯源的记忆与判断层，解决状态缺失问题。",
-          "url": "https://arxiv.org/pdf/2606.12329v1",
+          "title": "EpiBench: Verifiable Evaluation of AI Agents on Epigenomics Analysis",
+          "description": "Introduces a verifiable benchmark for epigenomics analysis, evaluating AI agents' ability to make analysis decisions from realistic workflow states.",
+          "url": "https://arxiv.org/pdf/2606.13602v1",
           "stars": null,
           "id": 4
         },
         {
-          "title": "A Five-Plane Reference Architecture for Runtime Governance of Production AI Agents",
-          "description": "提出五平面参考架构，用于生产环境中AI代理的运行时治理，重点关注企业安全边界。",
-          "url": "https://arxiv.org/pdf/2606.12320v1",
+          "title": "LabVLA: Grounding Vision-Language-Action Models in Scientific Laboratories",
+          "description": "Presents a vision-language-action model that enables AI to physically perform experiments in scientific laboratories.",
+          "url": "https://arxiv.org/pdf/2606.13578v1",
           "stars": null,
           "id": 5
         }
@@ -195,42 +195,42 @@
       "name": "AI 开源项目",
       "items": [
         {
-          "title": "netdata/netdata",
-          "description": "The fastest path to AI-powered full stack observability, even for lean teams.",
-          "url": "https://github.com/netdata/netdata",
-          "stars": 79111,
+          "title": "LlamaFactory",
+          "description": "统一高效微调100+大语言模型与视觉语言模型，ACL 2024论文成果。",
+          "url": "https://github.com/hiyouga/LlamaFactory",
+          "stars": 72126,
           "id": 1
         },
         {
-          "title": "AppFlowy-IO/AppFlowy",
-          "description": "AI collaborative workspace bringing projects, wikis, and teams together with AI.",
-          "url": "https://github.com/AppFlowy-IO/AppFlowy",
-          "stars": 72225,
+          "title": "graphify",
+          "description": "AI编码助手技能，支持多种AI工具，可将任何代码文件夹转化为可交互的结构。",
+          "url": "https://github.com/safishamsi/graphify",
+          "stars": 66390,
           "id": 2
         },
         {
-          "title": "pewdiepie-archdaemon/odysseus",
-          "description": "Self-hosted AI workspace.",
-          "url": "https://github.com/pewdiepie-archdaemon/odysseus",
-          "stars": 67436,
+          "title": "ai-hedge-fund",
+          "description": "AI驱动对冲基金团队，利用多智能体协作进行投资决策。",
+          "url": "https://github.com/virattt/ai-hedge-fund",
+          "stars": 60010,
           "id": 3
         },
         {
-          "title": "docling-project/docling",
-          "description": "Get your documents ready for gen AI.",
-          "url": "https://github.com/docling-project/docling",
-          "stars": 61364,
+          "title": "crewAI",
+          "description": "编排角色扮演自主AI智能体的框架，促进智能体协同工作。",
+          "url": "https://github.com/crewAIInc/crewAI",
+          "stars": 53394,
           "id": 4
         },
         {
-          "title": "mem0ai/mem0",
-          "description": "Universal memory layer for AI Agents.",
-          "url": "https://github.com/mem0ai/mem0",
-          "stars": 58314,
+          "title": "LocalAI",
+          "description": "开源AI引擎，支持运行任何模型（LLM、视觉、语音、图像、视频），无需GPU。",
+          "url": "https://github.com/mudler/LocalAI",
+          "stars": 46819,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-06-11T15:26:03.901+08:00"
+  "updatedAt": "2026-06-13T14:54:34.877+08:00"
 }
