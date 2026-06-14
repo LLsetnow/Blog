@@ -1,76 +1,76 @@
 {
-  "date": "2026-06-13",
+  "date": "2026-06-14",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "突发！Anthropic全球停用Claude 5",
-          "description": "Anthropic突然下线了最强Claude Fable 5，全球禁用外籍人士使用，引发行业震动。",
+          "title": "Anthropic全球停用Claude 5",
+          "description": "Anthropic突然将地表最强Claude Fable 5全球下架，并禁止外籍人士接触该模型，引发业界震惊。",
           "url": "https://36kr.com/p/3851015329027336?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "9点1氪｜SpaceX市值破2.1万亿美元...Kimi与一国有银行合作，全球首张AI原生信用卡开放预约",
-          "description": "Kimi与国有银行合作推出全球首张AI原生信用卡，展示了AIGC在金融领域的应用。",
-          "url": "https://36kr.com/p/3850898430989577?f=rss",
+          "title": "莱顿宣言：在人工智能时代，数学的未来不能只剩下机器的答案",
+          "description": "菲尔兹奖得主彼得·舒尔茨等学者发出《莱顿宣言》，呼吁在人工智能时代保持数学研究的人类思考独立性，避免完全依赖AI生成内容。",
+          "url": "https://www.huxiu.com/article/4867161.html?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "氪星晚报｜OpenAI CEO奥特曼推迟访韩计划",
-          "description": "OpenAI CEO山姆·奥特曼因个人原因推迟访韩，原计划会见三星等企业负责人。",
-          "url": "https://36kr.com/p/3849942472512769?f=rss",
+          "title": "GLM5.2：给国产模型追赶Anthropic 又提了一口气",
+          "description": "智谱AI发布GLM5.2模型，在性能上进一步逼近Anthropic的Claude系列，国产大模型追赶国际前沿再进一步。",
+          "url": "https://www.huxiu.com/article/4867137.html?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "摩尔线程：完成MiniMax M3大模型适配",
-          "description": "摩尔线程旗舰级AI训推一体智算卡MTT S5000已完成对MiniMax M3大模型的Day-0极速适配。",
-          "url": "https://36kr.com/newsflashes/3851097260004610?f=rss",
+          "title": "Codex和Claude Code负责人都不写提示词了，AI圈爆火的Loop到底是什么",
+          "description": "AI编程领域出现新范式“循环工程”（Loop Engineering），强调通过迭代反馈优化模型输出，取代传统提示词工程。",
+          "url": "https://www.huxiu.com/article/4867130.html?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "蓝思科技：收购同昇光电，加速布局光通信",
-          "description": "蓝思科技收购同昇光电，后者为空芯光纤领先企业，产品覆盖AI算力等领域。",
-          "url": "https://36kr.com/newsflashes/3851096396322055?f=rss",
+          "title": "德国数字化部长疑用AI写公文遭质疑",
+          "description": "德国数字化部长卡斯滕·维尔德贝格尔被检测系统发现多篇演讲稿和评论文章疑似由AI生成，引发公众对AI使用规范的质疑。",
+          "url": "https://36kr.com/newsflashes/3852553873462533?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "严禁手写代码、一天烧不完10亿Token就是失职：OpenAI工程师揭秘“零人类编码”的激进实践",
-          "description": "OpenAI工程师分享零人类编码实践，揭示AI时代代码生成和Token消耗的激进要求。",
-          "url": "https://www.huxiu.com/article/4867006.html?f=rss",
+          "title": "高瓴出手了一家消费级柔性机器人公司，要把“大白”从电影搬进现实家庭",
+          "description": "消费级柔性机器人公司SoulX完成数千万元天使轮融资，由高瓴创投领投，首款产品MoYa将于2026年下半年发布，主打家庭陪伴场景。",
+          "url": "https://36kr.com/p/3851572421432324?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "Anthropic CEO：AI 是给人类的成人礼",
-          "description": "Anthropic CEO Dario Amodei发表《技术的青春期》观点，探讨AI对社会的深远影响。",
-          "url": "https://www.huxiu.com/article/4867000.html?f=rss",
+          "title": "“白菜价”的人形机器人，没法进厂“打螺丝”",
+          "description": "人形机器人价格大幅下降至万元级别，但实际在工业场景中的应用仍面临成本、可靠性等挑战，难以替代传统工业机器人。",
+          "url": "https://www.huxiu.com/article/4867143.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "“AI 押中率98%”？我们让8个AI 押了高考数学卷",
-          "description": "测试8个AI模型押题高考数学，揭示AI在教育领域的真实能力与营销夸大。",
-          "url": "https://www.huxiu.com/article/4866989.html?f=rss",
+          "title": "Kimi与一国有银行合作，全球首张AI原生信用卡开放预约",
+          "description": "月之暗面旗下AI助手Kimi与某国有银行合作推出全球首张AI原生信用卡，预示着AI与金融服务的深度融合进入新阶段。",
+          "url": "https://36kr.com/p/3850898430989577?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "机器人开始“吃数据”：从印度数据工厂到百亿美元人形机器人的隐秘生产链",
-          "description": "揭露人形机器人训练依赖人类数据标注的产业链，涉及机器学习数据采集。",
-          "url": "https://www.huxiu.com/article/4866988.html?f=rss",
+          "title": "36氪研究院 | AI时代留学就业白皮书：中国留学生全球就业趋势与人才价值重塑",
+          "description": "报告指出AI浪潮正在重塑全球就业市场，传统留学路径面临挑战，人机协同时代需重新定义个人不可替代价值。",
+          "url": "https://36kr.com/p/3846972367866119?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "突发：美国政府下令，Anthropic最先进两款AI全球被限",
-          "description": "美国政府要求Anthropic对Fable 5和Mythos 5实施全面访问限制，涉及AI监管。",
-          "url": "https://www.huxiu.com/article/4866982.html?f=rss",
+          "title": "“你要做空NASA吗？”：华尔街如何对冲SpaceX",
+          "description": "文章探讨华尔街在SpaceX上市背景下如何利用AI和机器人技术进行投资对冲，并讨论人工智能对航天产业的深远影响。",
+          "url": "https://www.huxiu.com/article/4867164.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "SpaceX市值破2.1万亿美元，马斯克身家达巴菲特7倍",
-          "description": "SpaceX上市首日收盘报160.95美元，市值达2.1万亿美元，创历史最大IPO，马斯克个人财富突破万亿美元。",
-          "url": "https://36kr.com/p/3850898430989577?f=rss",
+          "title": "SpaceX市值突破2.1万亿美元，马斯克身家达巴菲特7倍",
+          "description": "6月12日SpaceX以史上最大估值完成IPO，市值突破2万亿美元，成为商业航天里程碑事件。",
+          "url": "https://36kr.com/p/3850902095336449?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "美国政府下令，Anthropic最先进两款AI全球被限",
-          "description": "Anthropic收到美国政府指令，被迫对Claude Fable 5和Mythos 5实施全面访问限制，涉及AI监管新动向。",
-          "url": "https://www.huxiu.com/article/4866982.html?f=rss",
+          "title": "央行发布人民币存贷款利率管理规定征求意见稿，利率规则重写",
+          "description": "央行6月5日发布《人民币存贷款利率管理规定（征求意见稿）》，对1999年旧规进行全面替代，利率管理从政策主导转向法律规范。",
+          "url": "https://www.huxiu.com/article/4867149.html?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "印度政府出台汽柴油限购措施",
-          "description": "印度政府出台为期90天的汽油和柴油限购措施，禁止机构用户在零售加油站购买燃油，并对个人每日购买量设限，以防囤积倒卖加剧供应紧张。",
-          "url": "https://36kr.com/newsflashes/3851102420325382?f=rss",
+          "title": "Anthropic全球停用Claude 5",
+          "description": "上线仅72小时的Claude Fable 5因安全原因被全球禁用，外籍人士亦不可使用，引发AI监管讨论。",
+          "url": "https://36kr.com/p/3851015329027336?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "11部门发文推动新能源重卡应用",
-          "description": "交通运输部等11部门联合发布方案，明确到2030年新能源重卡渗透率达40%，保有量突破160万辆，并规划3万公里零碳公路运输走廊。",
-          "url": "https://36kr.com/newsflashes/3851093396886529?f=rss",
+          "title": "香港股市1-5月日均成交额同比增长14%",
+          "description": "财政司司长陈茂波称前五个月日均成交额超2700亿港元，新经济公司占比约25%。",
+          "url": "https://36kr.com/newsflashes/3852554342962435?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "对下一阶段货币政策的展望",
-          "description": "自6月初起一年存单利率持续反弹，央行资金投放呈现“放短锁长”操作，引发对货币政策边际收紧的讨论。",
-          "url": "https://www.huxiu.com/article/4867005.html?f=rss",
+          "title": "英国和日本计划签署180亿英镑清洁能源投资协议",
+          "description": "协议涉及日本投资90亿英镑开发5.9GW漂浮式海上风电项目，预计为800万户家庭供电，创造就业机会。",
+          "url": "https://36kr.com/newsflashes/3852507306693637?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "全球资本开始拆着买中国科技了",
-          "description": "美国杠杆ETF发行商ProShares向SEC提交9只中国A股杠杆ETF产品申请，显示外资正加速以结构化工具配置中国科技资产。",
-          "url": "https://www.huxiu.com/article/4867002.html?f=rss",
+          "title": "南航第十一架C919国产大飞机正式入列",
+          "description": "南航在南昌瑶湖机场接收B-659X号C919，首次从商飞(江西)公司接收，国产大飞机交付提速。",
+          "url": "https://36kr.com/newsflashes/3852511183951106?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "降价越狠，卖得越差，燃油车价格体系崩盘",
-          "description": "5月常规燃油乘用车零售量同比下滑39%，持续降价未能换来销量回暖，燃油车市场陷入价格与需求螺旋下行。",
-          "url": "https://www.huxiu.com/article/4866993.html?f=rss",
+          "title": "“宁王系”排队IPO：宁德时代频繁出手投资",
+          "description": "宁德时代CVC持续扩张，投资中恒电气等公司，多家关联企业筹备IPO。",
+          "url": "https://36kr.com/p/3851106394117383?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "美法院驳回上诉，维持肯尼迪中心移除特朗普名字裁决",
-          "description": "美国哥伦比亚特区巡回上诉法院驳回政府上诉，维持联邦地区法院要求限期将特朗普名字从肯尼迪表演艺术中心移除的裁决。",
-          "url": "https://36kr.com/newsflashes/3851188166137096?f=rss",
+          "title": "H&M重组全球架构，大中华区降级为26个销售市场之一",
+          "description": "瑞典快时尚巨头H&M将全球9大区域拆分为26个销售市场，大中华区归属亚太洲级事业部，地位下降。",
+          "url": "https://36kr.com/p/3850942780838912?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "今年前五个月全国铁路发送旅客19.69亿人次创历史新高",
-          "description": "1至5月全国铁路发送旅客19.69亿人次，同比增长5.7%，客流总量、单日客流量和跨境客流均创历史同期新高。",
-          "url": "https://36kr.com/newsflashes/3851003216418055?f=rss",
+          "title": "中企承建马达加斯加12号国道部分竣工",
+          "description": "中铁十八局承建的马达加斯加12号国道一期一标段竣工，全长45公里，改善东南部交通，是“一带一路”重要成果。",
+          "url": "https://36kr.com/newsflashes/3852642326877446?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "摩尔线程：完成MiniMax M3大模型适配",
-          "description": "摩尔线程旗舰智能卡MTT S5000完成对MiniMax新一代原生多模态旗舰模型M3的Day-0适配，加速国产AI生态适配能力。",
-          "url": "https://36kr.com/newsflashes/3851097260004610?f=rss",
+          "title": "玻璃基板概念股火爆，京东方A、沃格光电大涨",
+          "description": "玻璃基板受益于产业支撑，京东方A在13个交易日涨58%，沃格光电44天涨380%，成为科技股热点。",
+          "url": "https://www.huxiu.com/article/4867151.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -156,35 +156,35 @@
       "items": [
         {
           "title": "Before You Think: System 0, AI-Mediated Cognition and Cognitive Colonization",
-          "description": "Examines frameworks like System 0 and cognitive colonization to understand AI's impact on human cognition and epistemology.",
+          "description": "Examines three frameworks (Tri-System Theory, Thinkframes, System 0) to understand AI's cognitive and epistemic consequences, highlighting risks of cognitive colonization.",
           "url": "https://arxiv.org/pdf/2606.13658v1",
           "stars": null,
           "id": 1
         },
         {
           "title": "The Moving Drone: Negotiating Agency Between the Voice and the Virtual",
-          "description": "Explores melodic material in Hindustani music and the concept of a 'moving drone' to negotiate agency between voice and virtual systems.",
+          "description": "Explores the role of a 'moving drone' in Hindustani music, blending traditional drone instruments with virtual agency.",
           "url": "https://arxiv.org/pdf/2606.13640v1",
           "stars": null,
           "id": 2
         },
         {
           "title": "Valid Inference with Synthetic Data via Task Exchangeability",
-          "description": "Proposes using synthetic data for valid scientific inference, with applications in LLM-generated 'silicon samples' for pilot studies.",
+          "description": "Proposes a method for valid statistical inference using synthetic data (e.g., LLM-generated 'silicon samples') based on task exchangeability.",
           "url": "https://arxiv.org/pdf/2606.13629v1",
           "stars": null,
           "id": 3
         },
         {
           "title": "EpiBench: Verifiable Evaluation of AI Agents on Epigenomics Analysis",
-          "description": "Introduces a verifiable benchmark for epigenomics analysis, evaluating AI agents' ability to make analysis decisions from realistic workflow states.",
+          "description": "Introduces a verifiable benchmark for evaluating AI agents on short-horizon epigenomics analysis tasks with realistic workflow states.",
           "url": "https://arxiv.org/pdf/2606.13602v1",
           "stars": null,
           "id": 4
         },
         {
           "title": "LabVLA: Grounding Vision-Language-Action Models in Scientific Laboratories",
-          "description": "Presents a vision-language-action model that enables AI to physically perform experiments in scientific laboratories.",
+          "description": "Proposes a Vision-Language-Action model that enables AI to physically perform scientific experiments in laboratories, bridging the gap between reasoning and action.",
           "url": "https://arxiv.org/pdf/2606.13578v1",
           "stars": null,
           "id": 5
@@ -195,42 +195,42 @@
       "name": "AI 开源项目",
       "items": [
         {
-          "title": "LlamaFactory",
-          "description": "统一高效微调100+大语言模型与视觉语言模型，ACL 2024论文成果。",
-          "url": "https://github.com/hiyouga/LlamaFactory",
-          "stars": 72126,
+          "title": "ai-hedge-fund",
+          "description": "An AI Hedge Fund Team, using AI to make trading decisions.",
+          "url": "https://github.com/virattt/ai-hedge-fund",
+          "stars": 60044,
           "id": 1
         },
         {
-          "title": "graphify",
-          "description": "AI编码助手技能，支持多种AI工具，可将任何代码文件夹转化为可交互的结构。",
-          "url": "https://github.com/safishamsi/graphify",
-          "stars": 66390,
+          "title": "mem0",
+          "description": "Universal memory layer for AI Agents, enabling persistent context.",
+          "url": "https://github.com/mem0ai/mem0",
+          "stars": 58510,
           "id": 2
         },
         {
-          "title": "ai-hedge-fund",
-          "description": "AI驱动对冲基金团队，利用多智能体协作进行投资决策。",
-          "url": "https://github.com/virattt/ai-hedge-fund",
-          "stars": 60010,
+          "title": "Flowise",
+          "description": "Build AI Agents visually with a low-code drag-and-drop interface.",
+          "url": "https://github.com/FlowiseAI/Flowise",
+          "stars": 53553,
           "id": 3
         },
         {
-          "title": "crewAI",
-          "description": "编排角色扮演自主AI智能体的框架，促进智能体协同工作。",
-          "url": "https://github.com/crewAIInc/crewAI",
-          "stars": 53394,
+          "title": "goose",
+          "description": "An open source extensible AI agent that installs, executes, edits, and tests with any LLM.",
+          "url": "https://github.com/aaif-goose/goose",
+          "stars": 49254,
           "id": 4
         },
         {
           "title": "LocalAI",
-          "description": "开源AI引擎，支持运行任何模型（LLM、视觉、语音、图像、视频），无需GPU。",
+          "description": "Open-source AI engine to run LLMs, vision, voice, image, video locally without GPU.",
           "url": "https://github.com/mudler/LocalAI",
-          "stars": 46819,
+          "stars": 46841,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-06-13T14:54:34.877+08:00"
+  "updatedAt": "2026-06-14T15:19:38.242+08:00"
 }
