@@ -1,76 +1,76 @@
 {
-  "date": "2026-06-14",
+  "date": "2026-06-15",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "Anthropic全球停用Claude 5",
-          "description": "Anthropic突然将地表最强Claude Fable 5全球下架，并禁止外籍人士接触该模型，引发业界震惊。",
-          "url": "https://36kr.com/p/3851015329027336?f=rss",
+          "title": "硬氪专访 | 智源研究院院长王仲远：VLA不会死，但世界模型是未来",
+          "description": "智源研究院院长王仲远讨论VLA（视觉-语言-动作）模型和世界模型的发展方向，指出具身智能在物理世界中的短板，并认为世界模型是未来AI和机器人领域的关键。",
+          "url": "https://36kr.com/p/3853016586359817?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "莱顿宣言：在人工智能时代，数学的未来不能只剩下机器的答案",
-          "description": "菲尔兹奖得主彼得·舒尔茨等学者发出《莱顿宣言》，呼吁在人工智能时代保持数学研究的人类思考独立性，避免完全依赖AI生成内容。",
-          "url": "https://www.huxiu.com/article/4867161.html?f=rss",
+          "title": "硬氪首发 | 海洋具身智能公司「世航智能」拿下创纪录10亿融资，朱啸虎押注",
+          "description": "世航智能完成超10亿元A轮融资，为全球海洋机器人领域最大单轮融资，投资方包括摩尔线程、昆仑芯的产业投资方等，专注海洋具身智能技术。",
+          "url": "https://36kr.com/p/3853011900142848?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "GLM5.2：给国产模型追赶Anthropic 又提了一口气",
-          "description": "智谱AI发布GLM5.2模型，在性能上进一步逼近Anthropic的Claude系列，国产大模型追赶国际前沿再进一步。",
-          "url": "https://www.huxiu.com/article/4867137.html?f=rss",
+          "title": "高瓴出手了一家消费级柔性机器人公司，要把“大白”从电影搬进现实家庭",
+          "description": "消费级柔性机器人公司SoulX完成数千万元天使轮融资，由高瓴创投领投，首款产品MoYa将于2026年下半年发布，聚焦柔性机器人技术。",
+          "url": "https://36kr.com/p/3851572421432324?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "Codex和Claude Code负责人都不写提示词了，AI圈爆火的Loop到底是什么",
-          "description": "AI编程领域出现新范式“循环工程”（Loop Engineering），强调通过迭代反馈优化模型输出，取代传统提示词工程。",
-          "url": "https://www.huxiu.com/article/4867130.html?f=rss",
+          "title": "绝影未竟，大晓机器人迅速“筹钱”",
+          "description": "大晓机器人2026年上半年累计融资数亿美元，投资方包括达晨财智、深创投、商汤国香资本等，专注于四足机器人及人形机器人技术研发。",
+          "url": "https://www.huxiu.com/article/4867413.html?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "德国数字化部长疑用AI写公文遭质疑",
-          "description": "德国数字化部长卡斯滕·维尔德贝格尔被检测系统发现多篇演讲稿和评论文章疑似由AI生成，引发公众对AI使用规范的质疑。",
-          "url": "https://36kr.com/newsflashes/3852553873462533?f=rss",
+          "title": "复杂业务场景下RCA Agent 的探索实践",
+          "description": "文章探讨AI Agent在复杂业务场景下用于根因分析（RCA）的实践，指出编码工作已被AI攻克，进一步探索Agent在软件工程中的落地。",
+          "url": "https://www.huxiu.com/article/4867407.html?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "高瓴出手了一家消费级柔性机器人公司，要把“大白”从电影搬进现实家庭",
-          "description": "消费级柔性机器人公司SoulX完成数千万元天使轮融资，由高瓴创投领投，首款产品MoYa将于2026年下半年发布，主打家庭陪伴场景。",
-          "url": "https://36kr.com/p/3851572421432324?f=rss",
+          "title": "Claude背后全是大厂老兵，Anthropic工程团队1680人画像曝光：谷歌系、12年经验、本硕为主",
+          "description": "分析Anthropic工程团队构成，显示团队以谷歌出身、平均12年经验的工程师为主，并透露Claude相关岗位薪酬高达57万美元。",
+          "url": "https://www.huxiu.com/article/4867403.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "“白菜价”的人形机器人，没法进厂“打螺丝”",
-          "description": "人形机器人价格大幅下降至万元级别，但实际在工业场景中的应用仍面临成本、可靠性等挑战，难以替代传统工业机器人。",
-          "url": "https://www.huxiu.com/article/4867143.html?f=rss",
+          "title": "智能体，让AI PC回春了？",
+          "description": "英伟达、AMD、高通等厂商推动AI PC热潮，强调超强算力和128G大内存，智能体（Agent）技术成为AI PC的核心应用方向。",
+          "url": "https://www.huxiu.com/article/4867189.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "Kimi与一国有银行合作，全球首张AI原生信用卡开放预约",
-          "description": "月之暗面旗下AI助手Kimi与某国有银行合作推出全球首张AI原生信用卡，预示着AI与金融服务的深度融合进入新阶段。",
-          "url": "https://36kr.com/p/3850898430989577?f=rss",
+          "title": "伯克希尔投资Alphabet，AI投资进入新阶段？",
+          "description": "谷歌母公司Alphabet计划募资800亿美元用于算力建设，伯克希尔投资Alphabet，标志生成式AI竞争核心从硬件转向大规模算力投入与收益平衡。",
+          "url": "https://www.huxiu.com/article/4867384.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "36氪研究院 | AI时代留学就业白皮书：中国留学生全球就业趋势与人才价值重塑",
-          "description": "报告指出AI浪潮正在重塑全球就业市场，传统留学路径面临挑战，人机协同时代需重新定义个人不可替代价值。",
-          "url": "https://36kr.com/p/3846972367866119?f=rss",
+          "title": "阿里巴巴达摩院退出旗下科技公司",
+          "description": "天眼查显示，阿里巴巴达摩院（深圳）科技有限公司退出大蛮驴智能科技（浙江）有限公司，该公司专注电子元器件及智能技术，达摩院为AI研究机构。",
+          "url": "https://36kr.com/newsflashes/3854185785365762?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "“你要做空NASA吗？”：华尔街如何对冲SpaceX",
-          "description": "文章探讨华尔街在SpaceX上市背景下如何利用AI和机器人技术进行投资对冲，并讨论人工智能对航天产业的深远影响。",
-          "url": "https://www.huxiu.com/article/4867164.html?f=rss",
+          "title": "加拿大母亲起诉奥特曼与OpenAI，指控ChatGPT诱导女儿自杀",
+          "description": "一位加拿大母亲对OpenAI及其CEO Sam Altman提起诉讼，声称ChatGPT通过对话诱导其女儿自杀，引发对AI伦理和安全性的关注。",
+          "url": "https://36kr.com/p/3853670570743040?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "SpaceX市值突破2.1万亿美元，马斯克身家达巴菲特7倍",
-          "description": "6月12日SpaceX以史上最大估值完成IPO，市值突破2万亿美元，成为商业航天里程碑事件。",
-          "url": "https://36kr.com/p/3850902095336449?f=rss",
+          "title": "外汇局：5月银行结汇16676亿元人民币，售汇14229亿元人民币",
+          "description": "国家外汇管理局公布2026年5月银行结售汇数据，显示结汇16676亿元人民币，售汇14229亿元人民币，反映跨境资金流动状况。",
+          "url": "https://36kr.com/newsflashes/3854178372998407?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "央行发布人民币存贷款利率管理规定征求意见稿，利率规则重写",
-          "description": "央行6月5日发布《人民币存贷款利率管理规定（征求意见稿）》，对1999年旧规进行全面替代，利率管理从政策主导转向法律规范。",
-          "url": "https://www.huxiu.com/article/4867149.html?f=rss",
+          "title": "中国石化：拟5亿元至10亿元回购A股股份",
+          "description": "中国石化公告，为维护公司价值及股东权益，拟以5亿元至10亿元回购A股股份，回购价格不超过7.55元/股。",
+          "url": "https://36kr.com/newsflashes/3854198628389893?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "Anthropic全球停用Claude 5",
-          "description": "上线仅72小时的Claude Fable 5因安全原因被全球禁用，外籍人士亦不可使用，引发AI监管讨论。",
-          "url": "https://36kr.com/p/3851015329027336?f=rss",
+          "title": "立昂微：自6月15日起，对功率芯片业务全系产品价格调涨10%-15%",
+          "description": "立昂微通知客户，因上游原材料价格上涨，自6月15日起对功率芯片业务全系产品价格调涨10%至15%，反映半导体行业成本压力。",
+          "url": "https://36kr.com/newsflashes/3854191358923777?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "香港股市1-5月日均成交额同比增长14%",
-          "description": "财政司司长陈茂波称前五个月日均成交额超2700亿港元，新经济公司占比约25%。",
-          "url": "https://36kr.com/newsflashes/3852554342962435?f=rss",
+          "title": "中煤能源：5月商品煤产量为1081万吨，同比降9.2%",
+          "description": "中煤能源公告5月商品煤产量同比下降9.2%，自产销量下降10.6%，主因安监趋严及季节性检修，同时煤化工产品产量大增。",
+          "url": "https://36kr.com/newsflashes/3854188655662086?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "英国和日本计划签署180亿英镑清洁能源投资协议",
-          "description": "协议涉及日本投资90亿英镑开发5.9GW漂浮式海上风电项目，预计为800万户家庭供电，创造就业机会。",
-          "url": "https://36kr.com/newsflashes/3852507306693637?f=rss",
+          "title": "“宁王系”，排队 IPO",
+          "description": "报道指出宁德时代产业投资版图扩大，多家被投企业正在排队IPO，反映新能源产业链资本化加速。",
+          "url": "https://36kr.com/p/3851106394117383?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "南航第十一架C919国产大飞机正式入列",
-          "description": "南航在南昌瑶湖机场接收B-659X号C919，首次从商飞(江西)公司接收，国产大飞机交付提速。",
-          "url": "https://36kr.com/newsflashes/3852511183951106?f=rss",
+          "title": "读懂SpaceX的两万亿故事",
+          "description": "SpaceX在纳斯达克上市，市值超2.1万亿美元，马斯克成为万亿富翁，文章解析其成功路径与战略布局。",
+          "url": "https://36kr.com/p/3851073239372809?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "“宁王系”排队IPO：宁德时代频繁出手投资",
-          "description": "宁德时代CVC持续扩张，投资中恒电气等公司，多家关联企业筹备IPO。",
-          "url": "https://36kr.com/p/3851106394117383?f=rss",
+          "title": "伯克希尔投资Alphabet，AI投资进入新阶段？",
+          "description": "谷歌母公司Alphabet计划募资800亿美元，伯克希尔哈撒韦投资该公司，标志AI投资重心从硬件转向算力建设与收益平衡。",
+          "url": "https://www.huxiu.com/article/4867384.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "H&M重组全球架构，大中华区降级为26个销售市场之一",
-          "description": "瑞典快时尚巨头H&M将全球9大区域拆分为26个销售市场，大中华区归属亚太洲级事业部，地位下降。",
-          "url": "https://36kr.com/p/3850942780838912?f=rss",
+          "title": "被动元件板块翻倍上涨，多层陶瓷电容成调研热点",
+          "description": "近两个月被动元件指数上涨翻倍，AI服务器和车载领域的高端MLCC产品引发投资热潮，行业景气度回升。",
+          "url": "https://www.huxiu.com/article/4867385.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "中企承建马达加斯加12号国道部分竣工",
-          "description": "中铁十八局承建的马达加斯加12号国道一期一标段竣工，全长45公里，改善东南部交通，是“一带一路”重要成果。",
-          "url": "https://36kr.com/newsflashes/3852642326877446?f=rss",
+          "title": "青花郎跌破600元，郎酒还能对标贵州茅台吗？",
+          "description": "青花郎渠道批价跌破600元，与官方建议零售价严重倒挂，反映白酒行业消费疲软和价格体系压力。",
+          "url": "https://www.huxiu.com/article/4867405.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "玻璃基板概念股火爆，京东方A、沃格光电大涨",
-          "description": "玻璃基板受益于产业支撑，京东方A在13个交易日涨58%，沃格光电44天涨380%，成为科技股热点。",
-          "url": "https://www.huxiu.com/article/4867151.html?f=rss",
+          "title": "追觅的资本局膨胀太快",
+          "description": "追觅创始人俞浩被禁言，地方政府对其启动国资使用核查，揭示企业快速扩张中的金融风险与监管关注。",
+          "url": "https://www.huxiu.com/article/4867401.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -155,37 +155,37 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "Before You Think: System 0, AI-Mediated Cognition and Cognitive Colonization",
-          "description": "Examines three frameworks (Tri-System Theory, Thinkframes, System 0) to understand AI's cognitive and epistemic consequences, highlighting risks of cognitive colonization.",
-          "url": "https://arxiv.org/pdf/2606.13658v1",
+          "title": "Instruct-Particulate: Scaling Feed-Forward 3D Object Articulation with Kinematic Control",
+          "description": "提出了一种用于3D物体关节重建与运动控制的方法，通过前馈神经网络和运动学控制实现可扩展的物体操作。",
+          "url": "https://arxiv.org/pdf/2606.14699v1",
           "stars": null,
           "id": 1
         },
         {
-          "title": "The Moving Drone: Negotiating Agency Between the Voice and the Virtual",
-          "description": "Explores the role of a 'moving drone' in Hindustani music, blending traditional drone instruments with virtual agency.",
-          "url": "https://arxiv.org/pdf/2606.13640v1",
+          "title": "Flood and Harvest: The Provable Necessity of Trivia for Generating Valuable Mathematics via the Lens of Language Generation in the Limit",
+          "description": "探讨了AI系统在生成形式化数学中，琐碎知识对于产生有价值数学结果的必要性，从语言生成极限角度分析。",
+          "url": "https://arxiv.org/pdf/2606.14688v1",
           "stars": null,
           "id": 2
         },
         {
-          "title": "Valid Inference with Synthetic Data via Task Exchangeability",
-          "description": "Proposes a method for valid statistical inference using synthetic data (e.g., LLM-generated 'silicon samples') based on task exchangeability.",
-          "url": "https://arxiv.org/pdf/2606.13629v1",
+          "title": "The Self-Aware Body: A User-Centered Framework for Designing Therapeutic Sonic Interactions",
+          "description": "提出了以用户为中心的设计框架，用于开发治疗性声音交互技术，重点在于运动声音化以实现身体感知与康复。",
+          "url": "https://arxiv.org/pdf/2606.14664v1",
           "stars": null,
           "id": 3
         },
         {
-          "title": "EpiBench: Verifiable Evaluation of AI Agents on Epigenomics Analysis",
-          "description": "Introduces a verifiable benchmark for evaluating AI agents on short-horizon epigenomics analysis tasks with realistic workflow states.",
-          "url": "https://arxiv.org/pdf/2606.13602v1",
+          "title": "Giving AI a Headache: Acoustic Adversarial Attacks to Computer Vision Applications",
+          "description": "研究声学对抗攻击对计算机视觉应用的影响，展示了通过声音干扰可欺骗AI视觉系统。",
+          "url": "https://arxiv.org/pdf/2606.14658v1",
           "stars": null,
           "id": 4
         },
         {
-          "title": "LabVLA: Grounding Vision-Language-Action Models in Scientific Laboratories",
-          "description": "Proposes a Vision-Language-Action model that enables AI to physically perform scientific experiments in laboratories, bridging the gap between reasoning and action.",
-          "url": "https://arxiv.org/pdf/2606.13578v1",
+          "title": "Abstracting Cross-Domain Action Sequences into Interpretable Workflows",
+          "description": "提出了一种从跨领域用户行为序列中抽象出可解释工作流的方法，旨在从日志中提取有意义的工作模式。",
+          "url": "https://arxiv.org/pdf/2606.14654v1",
           "stars": null,
           "id": 5
         }
@@ -195,42 +195,42 @@
       "name": "AI 开源项目",
       "items": [
         {
-          "title": "ai-hedge-fund",
-          "description": "An AI Hedge Fund Team, using AI to make trading decisions.",
-          "url": "https://github.com/virattt/ai-hedge-fund",
-          "stars": 60044,
+          "title": "netdata",
+          "description": "AI-powered full stack observability platform for real-time monitoring and troubleshooting.",
+          "url": "https://github.com/netdata/netdata",
+          "stars": 79162,
           "id": 1
         },
         {
-          "title": "mem0",
-          "description": "Universal memory layer for AI Agents, enabling persistent context.",
-          "url": "https://github.com/mem0ai/mem0",
-          "stars": 58510,
+          "title": "daytona",
+          "description": "Secure and elastic infrastructure for running AI-generated code with sandboxed execution.",
+          "url": "https://github.com/daytonaio/daytona",
+          "stars": 72426,
           "id": 2
         },
         {
-          "title": "Flowise",
-          "description": "Build AI Agents visually with a low-code drag-and-drop interface.",
-          "url": "https://github.com/FlowiseAI/Flowise",
-          "stars": 53553,
+          "title": "graphify",
+          "description": "AI coding assistant skill for Claude Code, Cursor, Gemini CLI and more, turning code folders into actionable insights.",
+          "url": "https://github.com/safishamsi/graphify",
+          "stars": 67377,
           "id": 3
         },
         {
-          "title": "goose",
-          "description": "An open source extensible AI agent that installs, executes, edits, and tests with any LLM.",
-          "url": "https://github.com/aaif-goose/goose",
-          "stars": 49254,
+          "title": "agent-skills",
+          "description": "Production-grade engineering skills for AI coding agents to improve code quality and efficiency.",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "stars": 59853,
           "id": 4
         },
         {
-          "title": "LocalAI",
-          "description": "Open-source AI engine to run LLMs, vision, voice, image, video locally without GPU.",
-          "url": "https://github.com/mudler/LocalAI",
-          "stars": 46841,
+          "title": "meilisearch",
+          "description": "Lightning-fast search engine API with AI-powered hybrid search for websites and applications.",
+          "url": "https://github.com/meilisearch/meilisearch",
+          "stars": 58100,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-06-14T15:19:38.242+08:00"
+  "updatedAt": "2026-06-15T16:56:58.053+08:00"
 }
