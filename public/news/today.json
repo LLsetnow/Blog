@@ -1,76 +1,76 @@
 {
-  "date": "2026-06-16",
+  "date": "2026-06-17",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "大晓机器人创始人揭开具身行业割裂一面，发布具身大脑世界模型",
-          "description": "大晓机器人发布具身大脑“世界模”，创始人王晓刚探讨具身智能行业的现状与挑战。",
-          "url": "https://36kr.com/p/3855262364488969?f=rss",
+          "title": "硬氪专访 | 罗剑岚：机器人真正的Scaling Law，发生在真实部署闭环里",
+          "description": "探讨具身智能领域机器人Scaling Law的实现路径，强调真实部署闭环的重要性。",
+          "url": "https://36kr.com/p/3856871787189252?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "智谱推出最新一代旗舰模型GLM-5.2",
-          "description": "智谱公司正式发布其最新一代旗舰大模型GLM-5.2，性能进一步提升。",
-          "url": "https://36kr.com/p/3854486447510535?f=rss",
+          "title": "「逆矩阵」完成超亿美元融资，创始人：通用世界基座模型窗口期已压至18个月",
+          "description": "世界模型公司逆矩阵科技完成超亿美元融资，通用世界基座模型窗口期缩短至18个月。",
+          "url": "https://36kr.com/p/3826129009234824?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "智源研究院院长王仲远：VLA不会死，但世界模型是未来",
-          "description": "智源研究院院长王仲远在专访中分析具身智能领域，认为VLA技术路线仍有前景，世界模型将是未来发展方向。",
-          "url": "https://36kr.com/p/3853016586359817?f=rss",
+          "title": "融了数亿美金的「大晓机器人」，其创始人揭开了具身行业的割裂一面",
+          "description": "大晓机器人发布世界模型具身大脑，揭示具身智能行业的技术与生态割裂。",
+          "url": "https://36kr.com/p/3855262364488969?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "海洋具身智能公司世航智能获10亿融资，朱啸虎押注",
-          "description": "海洋具身智能公司世航智能完成A轮融资超10亿元，由摩尔线程、昆仑芯等产业资本及国有平台投资，聚焦海洋机器人AI技术。",
-          "url": "https://36kr.com/p/3853011900142848?f=rss",
+          "title": "上交所发布人工智能大模型企业适用科创板第五套上市标准审核指引",
+          "description": "上交所发布指引，明确AI大模型企业适用科创板第五套上市标准的具体条件。",
+          "url": "https://36kr.com/newsflashes/3856995692909831?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "阿里云：平头哥自研真武AI芯片已部署超10万卡",
-          "description": "阿里云副总裁张翅透露，平头哥自研真武AI芯片在金融行业部署规模突破10万卡，覆盖银行、证券等超过150家机构。",
-          "url": "https://36kr.com/newsflashes/3855577828594688?f=rss",
+          "title": "智谱科创板IPO辅导状态变更为“辅导验收”",
+          "description": "AI大模型公司智谱华章科创板IPO辅导状态变更为辅导验收，上市进程推进。",
+          "url": "https://36kr.com/newsflashes/3856983777383684?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "理想汽车发布自研5纳米芯片马赫M100，算力1280TOPS",
-          "description": "理想汽车在Livis Day上发布自研5纳米芯片马赫M100（单芯算力1280TOPS），以及马赫VLA智能辅助驾驶系统和大模型，自研操作系统等。",
-          "url": "https://www.huxiu.com/article/4867762.html?f=rss",
+          "title": "国家超算互联网上线GLM-5.2模型服务",
+          "description": "智谱最新旗舰大模型GLM-5.2开源并上线国家超算互联网，提供API调用服务。",
+          "url": "https://36kr.com/newsflashes/3856972887971075?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "Sam Altman斯坦福对话：深度展望AGI和未来的一切",
-          "description": "OpenAI CEO Sam Altman在斯坦福对话中探讨AGI发展路径、创业逻辑从人力密集转向算力驱动等话题。",
-          "url": "https://www.huxiu.com/article/4867756.html?f=rss",
+          "title": "华为鸿蒙不只拼装机量",
+          "description": "华为推出HarmonyOS 7、小艺Agent、OpenPangu等AI能力，构建鸿蒙生态。",
+          "url": "https://www.huxiu.com/article/4868077.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "CPO大规模商业化时间表推迟，光通信板块震荡",
-          "description": "半导体研究机构SemiAnalysis报告指出CPO（共封装光学）大规模商业化时间表推迟，引发全球光通信板块波动。",
-          "url": "https://www.huxiu.com/article/4867747.html?f=rss",
+          "title": "Cursor1.5T新模型放弃Kimi基座，600亿美元股票换Cursor，马斯克第一刀砍向微软GitHub",
+          "description": "Cursor发布1.5T新模型并放弃Kimi基座，同时提出以600亿美元股票收购Cursor。",
+          "url": "https://www.huxiu.com/article/4868080.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "AI假文献事件：顶尖科学家差点被AI假文献蒙骗",
-          "description": "一篇AI生成的虚假参考文献险些骗过《柳叶刀》及顶尖科学家，引发对AI在科研中滥用和真实性的担忧。",
-          "url": "https://www.huxiu.com/article/4867738.html?f=rss",
+          "title": "大模型已经够聪明了，为什么95% 的AI 项目还是跑不出ROI？",
+          "description": "分析大模型能力提升与AI项目ROI低下的悖论，探讨落地困境。",
+          "url": "https://www.huxiu.com/article/4868075.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "中国外骨骼机器人爆单，杭州公司帮助瘫痪患者重新行走",
-          "description": "杭州一家小型公司开发的体外骨骼机器人产品在海外爆红，帮助轮椅患者重新站立行走，体现AI在具身智能领域的应用。",
-          "url": "https://www.huxiu.com/article/4867335.html?f=rss",
+          "title": "AI for Science 的拐点到了吗？",
+          "description": "讨论AI for Science从非共识赛道转变为全球资本和药企集中下注的方向。",
+          "url": "https://www.huxiu.com/article/4868063.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "美伊确认达成协议，国际油价显著下跌",
-          "description": "美国与伊朗确认达成协议，导致国际油价显著下跌，缓解地缘政治紧张局势。",
-          "url": "https://36kr.com/p/3855082873476102?f=rss",
+          "title": "深交所发布主动管理ETF业务指引，推动权益类基金产品创新发展",
+          "description": "深交所发布《深圳证券交易所证券投资基金业务指引第5号——主动管理交易型开放式基金》，旨在推动权益类基金产品创新发展，满足中长期资金配置需求。",
+          "url": "https://36kr.com/newsflashes/3856999385437447?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "山姆总部因食品安全问题被约谈",
-          "description": "市场监管总局就多发食品安全问题约谈山姆总部，强化食品安全监管。",
-          "url": "https://36kr.com/p/3855082873476102?f=rss",
+          "title": "上交所就科创板企业发行上市申报及推荐暂行规定征求意见",
+          "description": "上交所修订科创板企业发行上市申报及推荐暂行规定，新增“量子”等战略性新兴产业领域二级行业，向市场公开征求意见。",
+          "url": "https://36kr.com/newsflashes/3856997373187073?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "智谱股价暴涨，创上市以来单日成交新高",
-          "description": "智谱AI股价大幅上涨，创下上市以来单日成交额新高，反映市场对AI概念的追捧。",
-          "url": "https://36kr.com/p/3855082873476102?f=rss",
+          "title": "上交所发布人工智能大模型企业适用科创板第五套上市标准审核指引",
+          "description": "上交所发布AI大模型企业适用科创板第五套上市标准指引，对技术优势、阶段性成果等四方面作出具体规定，支持AI企业上市。",
+          "url": "https://36kr.com/newsflashes/3856995692909831?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "小红书或已准备好本月在香港提交IPO申请",
-          "description": "小红书的IPO进程加速，可能于本月在香港提交上市申请，引起资本市场关注。",
-          "url": "https://36kr.com/p/3854486447510535?f=rss",
+          "title": "恒指收跌0.74%，恒生科技指数涨0.22%",
+          "description": "港股收盘，恒指下跌0.74%，恒生科技指数上涨0.22%，半导体、传媒板块领涨，南向资金净卖出32.22亿港元。",
+          "url": "https://36kr.com/newsflashes/3856989226145029?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "意法半导体拟发行15亿美元可转换债券",
-          "description": "意法半导体计划发行15亿美元可转换债券，用于赎回旧债及一般公司用途，显示半导体行业融资动态。",
-          "url": "https://36kr.com/newsflashes/3855589941957636?f=rss",
+          "title": "智谱科创板IPO辅导状态变更为“辅导验收”",
+          "description": "北京智谱华章科技股份有限公司科创板IPO辅导状态变更为“辅导验收”，辅导券商为国泰海通证券，AI公司上市进程推进。",
+          "url": "https://36kr.com/newsflashes/3856983777383684?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "三星MPW服务或于2027年扩展至2nm",
-          "description": "三星晶圆代工计划将MPW服务扩展至2nm制程，加速先进芯片原型制造，影响全球半导体格局。",
-          "url": "https://36kr.com/newsflashes/3855578729321480?f=rss",
+          "title": "国家超算互联网上线GLM-5.2模型服务",
+          "description": "智谱全新旗舰大模型GLM-5.2开源，国家超算互联网同步上线其API调用服务及模型文件，AI社区已汇集1400余款开源大模型。",
+          "url": "https://36kr.com/newsflashes/3856972887971075?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "阿里云平头哥真武AI芯片在金融行业部署超10万卡",
-          "description": "阿里云披露平头哥自研真武AI芯片已在金融行业部署超10万卡，覆盖150多家机构，显示国产AI芯片快速应用。",
-          "url": "https://36kr.com/newsflashes/3855577828594688?f=rss",
+          "title": "MLCC爆火，这家国产龙头企业要赴港上市",
+          "description": "MLCC市场火热，涨价潮持续，国内MLCC龙头三环集团赴港上市，引发市场关注。",
+          "url": "https://www.huxiu.com/article/4868093.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "恒指收跌1.4%，恒生科技指数跌2.24%",
-          "description": "香港恒生指数及科技指数下跌，反映市场对科技股及整体经济的谨慎情绪。",
-          "url": "https://36kr.com/newsflashes/3855572465800198?f=rss",
+          "title": "百度的“疯狂上半年”：投资量暴增2倍，有24笔押注AI",
+          "description": "2026年上半年百度系投资量同比暴增2倍，其中24笔押注AI领域，成为BAT中AI投资最频繁的公司。",
+          "url": "https://www.huxiu.com/article/4868087.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "SpaceX美股盘前涨超10%，市值有望超越亚马逊",
-          "description": "SpaceX股价大涨，若维持涨幅将使其总市值超越亚马逊，位居全球前五，彰显商业航天公司价值。",
-          "url": "https://36kr.com/newsflashes/3855564239393797?f=rss",
+          "title": "跨界“空壳公司”股价翻倍，监管警示还是罚酒三杯？",
+          "description": "宿迁联盛因跨界概念股价翻倍后遭监管警示，但股价仍持续上涨，引发市场对监管有效性的讨论。",
+          "url": "https://www.huxiu.com/article/4868081.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "理想汽车发布自研5纳米芯片马赫M100，VLA智能驾驶反应速度比人类快40%",
-          "description": "理想汽车在Livis Day发布会上推出自研5纳米芯片马赫M100及VLA智能驾驶系统，加速汽车智能化进程。",
-          "url": "https://www.huxiu.com/article/4867762.html?f=rss",
+          "title": "英伟达完成250亿美元债券定价",
+          "description": "英伟达向SEC提交文件完成250亿美元债券定价，筹资规模远超2021年的50亿美元债券发行。",
+          "url": "https://www.huxiu.com/article/4868055.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -155,37 +155,37 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "ActiveSAM: Image-Conditional Class Pruning for Fast and Accurate Open-Vocabulary Segmentation",
-          "description": "通过图像条件类别剪枝加速SAM 3模型，提升开放词汇语义分割的速度与精度。",
-          "url": "https://arxiv.org/pdf/2606.16996v1",
+          "title": "RubricsTree: Scalable and Evolving Open-Ended Evaluation of Personal Health Agents across Health Memory and Medical Skills",
+          "description": "Proposes a scalable evaluation framework for LLM-powered personal health agents, addressing open-ended assessment across health memory and medical skills.",
+          "url": "https://arxiv.org/pdf/2606.18203v1",
           "stars": null,
           "id": 1
         },
         {
-          "title": "Benchmarking LLM Agents on Meta-Analysis Articles from Nature Portfolio",
-          "description": "构建LLM代理在Nature期刊元分析文章上的基准测试，评估其文献检索与研究选择能力。",
-          "url": "https://arxiv.org/pdf/2606.17041v1",
+          "title": "Group Commit Self-Clocks: Why Tuning Is Unnecessary Above a Device-Set Load Threshold",
+          "description": "Demonstrates that group commit in database systems can eliminate tuning overhead when load exceeds a threshold, relevant for transaction processing in AI training pipelines.",
+          "url": "https://arxiv.org/pdf/2606.18187v1",
           "stars": null,
           "id": 2
         },
         {
-          "title": "Bayesian Inference and Decision Audits for Public Archives of Frontier AI Evaluations",
-          "description": "提出贝叶斯推断与决策审计方法，以分析前沿AI评估的公共存档数据中的选择性偏差。",
-          "url": "https://arxiv.org/pdf/2606.17005v1",
+          "title": "The Multipath Reliable Connection (MRC) Transport",
+          "description": "Introduces an open transport protocol extending RoCEv2 for large-scale AI/ML training over Ethernet, with per-packet multipath and sender-based reliability.",
+          "url": "https://arxiv.org/pdf/2606.18170v1",
           "stars": null,
           "id": 3
         },
         {
-          "title": "Stable Menus of Public Goods: AI-Enabled Progress",
-          "description": "利用AI工作流解决公共物品稳定菜单的经济学开放问题，展示AI与经济学的交叉应用。",
-          "url": "https://arxiv.org/pdf/2606.16989v1",
+          "title": "All Smoke, No Alarm: Oracle Signals in Agent-Authored Test Code",
+          "description": "Analyzes test code generated by AI coding agents in open source PRs, revealing reliability issues in oracle signals for automated testing.",
+          "url": "https://arxiv.org/pdf/2606.18168v1",
           "stars": null,
           "id": 4
         },
         {
-          "title": "From 911 to Hospital: Challenges and Opportunities for AI Integration in Emergency Medical Services",
-          "description": "综述AI在紧急医疗服务（EMS）中从呼叫到医院全程的集成挑战与机遇。",
-          "url": "https://arxiv.org/pdf/2606.16984v1",
+          "title": "The Measurement Gap in the Automation of EU Law: Benchmarking Doctrinal Legal Reasoning under the EU AI Act",
+          "description": "Identifies the lack of benchmarks for evaluating LLMs' doctrinal legal reasoning, specifically in the context of the EU AI Act.",
+          "url": "https://arxiv.org/pdf/2606.18158v1",
           "stars": null,
           "id": 5
         }
@@ -198,39 +198,39 @@
           "title": "netdata/netdata",
           "description": "AI-powered full stack observability platform for lean teams.",
           "url": "https://github.com/netdata/netdata",
-          "stars": 79170,
+          "stars": 79186,
           "id": 1
         },
         {
           "title": "daytonaio/daytona",
           "description": "Secure and elastic infrastructure for running AI-generated code.",
           "url": "https://github.com/daytonaio/daytona",
-          "stars": 72418,
+          "stars": 72413,
           "id": 2
         },
         {
-          "title": "safishamsi/graphify",
-          "description": "AI coding assistant skill for multiple AI tools, turning codebases into structured context.",
-          "url": "https://github.com/safishamsi/graphify",
-          "stars": 67836,
+          "title": "earendil-works/pi",
+          "description": "AI agent toolkit with unified LLM API, agent loop, TUI, and coding agent CLI.",
+          "url": "https://github.com/earendil-works/pi",
+          "stars": 63401,
           "id": 3
         },
         {
-          "title": "virattt/ai-hedge-fund",
-          "description": "An AI-driven hedge fund team for automated trading strategies.",
-          "url": "https://github.com/virattt/ai-hedge-fund",
-          "stars": 60134,
+          "title": "ruvnet/ruflo",
+          "description": "Leading agent meta-harness for Claude, enabling multi-agent swarms and autonomous workflows.",
+          "url": "https://github.com/ruvnet/ruflo",
+          "stars": 59883,
           "id": 4
         },
         {
-          "title": "FlowiseAI/Flowise",
-          "description": "Visual platform to build AI agents and workflows without coding.",
-          "url": "https://github.com/FlowiseAI/Flowise",
-          "stars": 53633,
+          "title": "shanraisshan/claude-code-best-practice",
+          "description": "Best practices for moving from vibe coding to agentic engineering with Claude.",
+          "url": "https://github.com/shanraisshan/claude-code-best-practice",
+          "stars": 58047,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-06-16T16:42:57.230+08:00"
+  "updatedAt": "2026-06-17T16:25:28.348+08:00"
 }
