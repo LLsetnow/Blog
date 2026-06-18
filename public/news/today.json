@@ -1,76 +1,76 @@
 {
-  "date": "2026-06-17",
+  "date": "2026-06-18",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "硬氪专访 | 罗剑岚：机器人真正的Scaling Law，发生在真实部署闭环里",
-          "description": "探讨具身智能领域机器人Scaling Law的实现路径，强调真实部署闭环的重要性。",
-          "url": "https://36kr.com/p/3856871787189252?f=rss",
+          "title": "北大科学家下场做脑机接口，种子轮融了近亿元",
+          "description": "侵入式脑机接口公司芯生视界完成近亿元种子轮融资，由经纬创投领投，用于医疗场景的脑控外设等应用。",
+          "url": "https://36kr.com/p/3855480467543042?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "「逆矩阵」完成超亿美元融资，创始人：通用世界基座模型窗口期已压至18个月",
-          "description": "世界模型公司逆矩阵科技完成超亿美元融资，通用世界基座模型窗口期缩短至18个月。",
-          "url": "https://36kr.com/p/3826129009234824?f=rss",
+          "title": "红杉、阿里押注过的具身大脑公司再融资，上交等投资数亿元",
+          "description": "具身智能企业穹彻智能完成数亿元融资，由无锡数据集团领投，上海交通大学AI未来基金等跟投，推动具身大脑技术发展。",
+          "url": "https://36kr.com/p/3856708724315400?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "融了数亿美金的「大晓机器人」，其创始人揭开了具身行业的割裂一面",
-          "description": "大晓机器人发布世界模型具身大脑，揭示具身智能行业的技术与生态割裂。",
-          "url": "https://36kr.com/p/3855262364488969?f=rss",
+          "title": "浙大系创业者冲港股IPO，仙工智能招股书五大看点",
+          "description": "智能机器人公司仙工智能以18C特专科技公司身份赴港上市，招股价101.60港元，市值约112亿港元。",
+          "url": "https://36kr.com/p/3857011810112521?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "上交所发布人工智能大模型企业适用科创板第五套上市标准审核指引",
-          "description": "上交所发布指引，明确AI大模型企业适用科创板第五套上市标准的具体条件。",
-          "url": "https://36kr.com/newsflashes/3856995692909831?f=rss",
+          "title": "把AI当「电子校医」的大学生，一个人看病不慌了",
+          "description": "报道大学生使用AI工具（如蚂蚁阿福）进行医疗咨询的场景，展示了大模型在健康领域的应用。",
+          "url": "https://36kr.com/p/3856958075802633?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "智谱科创板IPO辅导状态变更为“辅导验收”",
-          "description": "AI大模型公司智谱华章科创板IPO辅导状态变更为辅导验收，上市进程推进。",
-          "url": "https://36kr.com/newsflashes/3856983777383684?f=rss",
+          "title": "工信部等七部门：引导平台企业加强通用大模型、行业大模型和智能体等人工智能领域创新布局",
+          "description": "七部门联合印发行动方案，鼓励平台企业布局通用大模型、行业大模型和智能体，推动AI技术突破和应用推广。",
+          "url": "https://36kr.com/newsflashes/3858352081622273?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "国家超算互联网上线GLM-5.2模型服务",
-          "description": "智谱最新旗舰大模型GLM-5.2开源并上线国家超算互联网，提供API调用服务。",
-          "url": "https://36kr.com/newsflashes/3856972887971075?f=rss",
+          "title": "世界模型的GPT时刻：距离物理AGI出圈，还有多远？",
+          "description": "探讨世界模型的概念、Sora与物理模拟的关系，以及从视频生成到真正世界模型缺失的关键环节。",
+          "url": "https://www.huxiu.com/article/4868449.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "华为鸿蒙不只拼装机量",
-          "description": "华为推出HarmonyOS 7、小艺Agent、OpenPangu等AI能力，构建鸿蒙生态。",
-          "url": "https://www.huxiu.com/article/4868077.html?f=rss",
+          "title": "5位百亿估值具身智能公司CEO的共识与分歧：数据仍是瓶颈，本体阶段性成熟",
+          "description": "具身智能创业公司CEO在智源大会上讨论资本、数据、模型、应用场景等，指出数据仍是主要瓶颈。",
+          "url": "https://www.huxiu.com/article/4868440.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "Cursor1.5T新模型放弃Kimi基座，600亿美元股票换Cursor，马斯克第一刀砍向微软GitHub",
-          "description": "Cursor发布1.5T新模型并放弃Kimi基座，同时提出以600亿美元股票收购Cursor。",
-          "url": "https://www.huxiu.com/article/4868080.html?f=rss",
+          "title": "AI预测不了“佛得角”",
+          "description": "分析AI在世界杯预测中的局限性，以佛得角爆冷为例，讨论机器学习模型难以预测小概率事件。",
+          "url": "https://www.huxiu.com/article/4868430.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "大模型已经够聪明了，为什么95% 的AI 项目还是跑不出ROI？",
-          "description": "分析大模型能力提升与AI项目ROI低下的悖论，探讨落地困境。",
-          "url": "https://www.huxiu.com/article/4868075.html?f=rss",
+          "title": "起跑线还没过呢，香槟就开了",
+          "description": "报道DeepSeek完成超500亿元首轮外部融资，估值突破500亿美元，成为中国AI行业最大单轮融资。",
+          "url": "https://www.huxiu.com/article/4868421.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "AI for Science 的拐点到了吗？",
-          "description": "讨论AI for Science从非共识赛道转变为全球资本和药企集中下注的方向。",
-          "url": "https://www.huxiu.com/article/4868063.html?f=rss",
+          "title": "AI巨头收紧身份验证：ChatGPT和Claude接连开启“刷脸时代”，普通用户怎么办？",
+          "description": "OpenAI和Anthropic要求用户上传身份证件并完成活体检测，加强身份验证以应对安全挑战。",
+          "url": "https://www.huxiu.com/article/4868418.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "深交所发布主动管理ETF业务指引，推动权益类基金产品创新发展",
-          "description": "深交所发布《深圳证券交易所证券投资基金业务指引第5号——主动管理交易型开放式基金》，旨在推动权益类基金产品创新发展，满足中长期资金配置需求。",
-          "url": "https://36kr.com/newsflashes/3856999385437447?f=rss",
+          "title": "国内成品油价两连跌：汽柴油每吨分别下调515元和495元",
+          "description": "发改委宣布自6月18日24时起下调成品油价格，汽柴油每吨分别降515元和495元，主因国际市场油价快速回落。",
+          "url": "https://36kr.com/newsflashes/3858345454965760?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "上交所就科创板企业发行上市申报及推荐暂行规定征求意见",
-          "description": "上交所修订科创板企业发行上市申报及推荐暂行规定，新增“量子”等战略性新兴产业领域二级行业，向市场公开征求意见。",
-          "url": "https://36kr.com/newsflashes/3856997373187073?f=rss",
+          "title": "七部门联合发布平台经济大中小企业协同发展行动方案",
+          "description": "工信部等七部门印发《促进平台经济大中小企业协同发展行动方案（2026—2028年）》，提出规范“内卷式”竞争、推动算力资源开放、引导平台布局AI大模型等。",
+          "url": "https://36kr.com/newsflashes/3858350054118656?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "上交所发布人工智能大模型企业适用科创板第五套上市标准审核指引",
-          "description": "上交所发布AI大模型企业适用科创板第五套上市标准指引，对技术优势、阶段性成果等四方面作出具体规定，支持AI企业上市。",
-          "url": "https://36kr.com/newsflashes/3856995692909831?f=rss",
+          "title": "商务部：中欧经贸领域沟通顺畅，愿通过对话协商管控分歧",
+          "description": "商务部表示中欧贸易投资磋商机制工作推进顺利，近期将举行部长级磋商，双方同意对话解决分歧。",
+          "url": "https://36kr.com/newsflashes/3858362375214082?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "恒指收跌0.74%，恒生科技指数涨0.22%",
-          "description": "港股收盘，恒指下跌0.74%，恒生科技指数上涨0.22%，半导体、传媒板块领涨，南向资金净卖出32.22亿港元。",
-          "url": "https://36kr.com/newsflashes/3856989226145029?f=rss",
+          "title": "中科闻歌港股启动招股，市值超105亿港元",
+          "description": "中科闻歌6月17日招股，发行价60.70港元，募资约9亿港元，预计6月26日港交所上市，成为“通用人工智能第一股”。",
+          "url": "https://36kr.com/p/3857959588418823?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "智谱科创板IPO辅导状态变更为“辅导验收”",
-          "description": "北京智谱华章科技股份有限公司科创板IPO辅导状态变更为“辅导验收”，辅导券商为国泰海通证券，AI公司上市进程推进。",
-          "url": "https://36kr.com/newsflashes/3856983777383684?f=rss",
+          "title": "智谱午后涨超22%创历史新高，股价破2038港元",
+          "description": "智谱（智谱AI）午后涨幅扩大，股价最高报2038.00港元，刷新历史高点，市场情绪高涨。",
+          "url": "https://36kr.com/newsflashes/3858354469327874?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "国家超算互联网上线GLM-5.2模型服务",
-          "description": "智谱全新旗舰大模型GLM-5.2开源，国家超算互联网同步上线其API调用服务及模型文件，AI社区已汇集1400余款开源大模型。",
-          "url": "https://36kr.com/newsflashes/3856972887971075?f=rss",
+          "title": "仙工智能港股招股，以18C特专科技身份赴港上市",
+          "description": "智能机器人公司仙工智能6月15日开始招股，招股价101.60港元，市值112.27亿港元，预计6月挂牌。",
+          "url": "https://36kr.com/p/3857011810112521?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "MLCC爆火，这家国产龙头企业要赴港上市",
-          "description": "MLCC市场火热，涨价潮持续，国内MLCC龙头三环集团赴港上市，引发市场关注。",
-          "url": "https://www.huxiu.com/article/4868093.html?f=rss",
+          "title": "市场监管总局等约谈7家旅游出行平台：规范火车票销售行为",
+          "description": "市场监管总局联合网信办、国家铁路局约谈携程、同程等7家平台，整治不当宣传“候补帮抢”、诱导“买长乘短”等违规行为。",
+          "url": "https://36kr.com/p/3858061678760965?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "百度的“疯狂上半年”：投资量暴增2倍，有24笔押注AI",
-          "description": "2026年上半年百度系投资量同比暴增2倍，其中24笔押注AI领域，成为BAT中AI投资最频繁的公司。",
-          "url": "https://www.huxiu.com/article/4868087.html?f=rss",
+          "title": "宇树科技部分机器狗降价，Go2系列降幅约10%",
+          "description": "宇树科技多款机器狗降价，Go2-Air从9997元降至8997元，Go2-Pro从18600元降至15600元，公司称静默期不便回应。",
+          "url": "https://36kr.com/newsflashes/3858347085501442?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "跨界“空壳公司”股价翻倍，监管警示还是罚酒三杯？",
-          "description": "宿迁联盛因跨界概念股价翻倍后遭监管警示，但股价仍持续上涨，引发市场对监管有效性的讨论。",
-          "url": "https://www.huxiu.com/article/4868081.html?f=rss",
+          "title": "多款知名纸尿裤被检出毒物，致婴幼儿皮肤破溃",
+          "description": "新华社调查指“好奇”“碧芭宝贝”“Babycare”等品牌纸尿裤含毒物，导致红臀、皮肤破溃，可能损伤生殖系统。",
+          "url": "https://www.huxiu.com/article/4868444.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "英伟达完成250亿美元债券定价",
-          "description": "英伟达向SEC提交文件完成250亿美元债券定价，筹资规模远超2021年的50亿美元债券发行。",
-          "url": "https://www.huxiu.com/article/4868055.html?f=rss",
+          "title": "DeepSeek完成首轮外部融资超500亿元，估值突破500亿美元",
+          "description": "中国AI初创公司DeepSeek获超500亿元融资，估值超500亿美元，为国内AI行业最大单轮融资。",
+          "url": "https://www.huxiu.com/article/4868421.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -155,37 +155,37 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "RubricsTree: Scalable and Evolving Open-Ended Evaluation of Personal Health Agents across Health Memory and Medical Skills",
-          "description": "Proposes a scalable evaluation framework for LLM-powered personal health agents, addressing open-ended assessment across health memory and medical skills.",
-          "url": "https://arxiv.org/pdf/2606.18203v1",
+          "title": "Freeing the Law with LOCUS: A Local Ordinance Corpus for the United States",
+          "description": "构建美国地方条例语料库，填补法律AI中地方性法规的空白。",
+          "url": "https://arxiv.org/pdf/2606.19334v1",
           "stars": null,
           "id": 1
         },
         {
-          "title": "Group Commit Self-Clocks: Why Tuning Is Unnecessary Above a Device-Set Load Threshold",
-          "description": "Demonstrates that group commit in database systems can eliminate tuning overhead when load exceeds a threshold, relevant for transaction processing in AI training pipelines.",
-          "url": "https://arxiv.org/pdf/2606.18187v1",
+          "title": "TurboServe: Serving Streaming Video Generation Efficiently and Economically",
+          "description": "提出高效经济的流式视频生成服务方法，适应长会话逐块生成场景。",
+          "url": "https://arxiv.org/pdf/2606.19271v1",
           "stars": null,
           "id": 2
         },
         {
-          "title": "The Multipath Reliable Connection (MRC) Transport",
-          "description": "Introduces an open transport protocol extending RoCEv2 for large-scale AI/ML training over Ethernet, with per-packet multipath and sender-based reliability.",
-          "url": "https://arxiv.org/pdf/2606.18170v1",
+          "title": "Beyond Algorithms: Conceptual Innovation in Medical Imaging AI",
+          "description": "反思医学影像AI中的算法中心主义，呼吁概念创新以推动基准进步。",
+          "url": "https://arxiv.org/pdf/2606.19270v1",
           "stars": null,
           "id": 3
         },
         {
-          "title": "All Smoke, No Alarm: Oracle Signals in Agent-Authored Test Code",
-          "description": "Analyzes test code generated by AI coding agents in open source PRs, revealing reliability issues in oracle signals for automated testing.",
-          "url": "https://arxiv.org/pdf/2606.18168v1",
+          "title": "Detecting Hidden ML Training With Zero-Overhead Telemetry",
+          "description": "利用零开销遥测技术检测隐藏的机器学习训练，确保AI计算可审计。",
+          "url": "https://arxiv.org/pdf/2606.19262v1",
           "stars": null,
           "id": 4
         },
         {
-          "title": "The Measurement Gap in the Automation of EU Law: Benchmarking Doctrinal Legal Reasoning under the EU AI Act",
-          "description": "Identifies the lack of benchmarks for evaluating LLMs' doctrinal legal reasoning, specifically in the context of the EU AI Act.",
-          "url": "https://arxiv.org/pdf/2606.18158v1",
+          "title": "A Multi-Domain Benchmark for Detecting AI-Generated Text-Rich Images from GPT-Image-2",
+          "description": "提出多领域基准测试，用于检测GPT-Image-2生成的含文本图像。",
+          "url": "https://arxiv.org/pdf/2606.19259v1",
           "stars": null,
           "id": 5
         }
@@ -195,42 +195,42 @@
       "name": "AI 开源项目",
       "items": [
         {
-          "title": "netdata/netdata",
-          "description": "AI-powered full stack observability platform for lean teams.",
-          "url": "https://github.com/netdata/netdata",
-          "stars": 79186,
+          "title": "agent-skills",
+          "description": "Production-grade engineering skills for AI coding agents",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "stars": 62525,
           "id": 1
         },
         {
-          "title": "daytonaio/daytona",
-          "description": "Secure and elastic infrastructure for running AI-generated code.",
-          "url": "https://github.com/daytonaio/daytona",
-          "stars": 72413,
+          "title": "mem0",
+          "description": "Universal memory layer for AI Agents",
+          "url": "https://github.com/mem0ai/mem0",
+          "stars": 58830,
           "id": 2
         },
         {
-          "title": "earendil-works/pi",
-          "description": "AI agent toolkit with unified LLM API, agent loop, TUI, and coding agent CLI.",
-          "url": "https://github.com/earendil-works/pi",
-          "stars": 63401,
+          "title": "crewAI",
+          "description": "Framework for orchestrating role-playing, autonomous AI agents",
+          "url": "https://github.com/crewAIInc/crewAI",
+          "stars": 53861,
           "id": 3
         },
         {
-          "title": "ruvnet/ruflo",
-          "description": "Leading agent meta-harness for Claude, enabling multi-agent swarms and autonomous workflows.",
-          "url": "https://github.com/ruvnet/ruflo",
-          "stars": 59883,
+          "title": "goose",
+          "description": "Open source extensible AI agent that goes beyond code suggestions",
+          "url": "https://github.com/aaif-goose/goose",
+          "stars": 49733,
           "id": 4
         },
         {
-          "title": "shanraisshan/claude-code-best-practice",
-          "description": "Best practices for moving from vibe coding to agentic engineering with Claude.",
-          "url": "https://github.com/shanraisshan/claude-code-best-practice",
-          "stars": 58047,
+          "title": "LocalAI",
+          "description": "Open-source AI engine to run any model on any hardware, no GPU required",
+          "url": "https://github.com/mudler/LocalAI",
+          "stars": 46953,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-06-17T16:25:28.348+08:00"
+  "updatedAt": "2026-06-18T15:30:58.582+08:00"
 }
