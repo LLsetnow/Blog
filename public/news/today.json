@@ -1,76 +1,76 @@
 {
-  "date": "2026-06-18",
+  "date": "2026-06-20",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "北大科学家下场做脑机接口，种子轮融了近亿元",
-          "description": "侵入式脑机接口公司芯生视界完成近亿元种子轮融资，由经纬创投领投，用于医疗场景的脑控外设等应用。",
-          "url": "https://36kr.com/p/3855480467543042?f=rss",
+          "title": "硬氪首发|moody前高管搭档大疆骨干入局陪伴机器人，锦秋领投，融资数千万",
+          "description": "AI陪伴机器人公司ZuzuZoos完成数千万元Pre-A轮融资，资金将用于AI大模型迭代和硬件产品扩建。",
+          "url": "https://36kr.com/p/3859926114161665?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "红杉、阿里押注过的具身大脑公司再融资，上交等投资数亿元",
-          "description": "具身智能企业穹彻智能完成数亿元融资，由无锡数据集团领投，上海交通大学AI未来基金等跟投，推动具身大脑技术发展。",
-          "url": "https://36kr.com/p/3856708724315400?f=rss",
+          "title": "蔚来补上“智驾课”，任少卿总结：智驾技术创新将重构竞争",
+          "description": "蔚来向18款车型推送最新版世界模型，实现同一套智驾代码跨代际芯片运行，推动AI智驾技术迭代。",
+          "url": "https://36kr.com/p/3858329994875908?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "浙大系创业者冲港股IPO，仙工智能招股书五大看点",
-          "description": "智能机器人公司仙工智能以18C特专科技公司身份赴港上市，招股价101.60港元，市值约112亿港元。",
-          "url": "https://36kr.com/p/3857011810112521?f=rss",
+          "title": "红杉、阿里押注过的具身大脑公司再融资，上交等投资数亿元｜硬氪首发",
+          "description": "具身智能企业穹彻智能完成数亿元融资，由无锡数据集团领投，上海交通大学等跟投，持续深耕AI机器人大脑。",
+          "url": "https://36kr.com/p/3856708724315400?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "把AI当「电子校医」的大学生，一个人看病不慌了",
-          "description": "报道大学生使用AI工具（如蚂蚁阿福）进行医疗咨询的场景，展示了大模型在健康领域的应用。",
-          "url": "https://36kr.com/p/3856958075802633?f=rss",
+          "title": "诺奖得主转投Anthropic，谷歌48小时连失两大牛，内部信仰崩塌？",
+          "description": "Transformer奠基人Noam Shazeer离开谷歌加入OpenAI，另有AI大牛离职，凸显AI人才争夺激烈。",
+          "url": "https://www.huxiu.com/article/4868831.html?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "工信部等七部门：引导平台企业加强通用大模型、行业大模型和智能体等人工智能领域创新布局",
-          "description": "七部门联合印发行动方案，鼓励平台企业布局通用大模型、行业大模型和智能体，推动AI技术突破和应用推广。",
-          "url": "https://36kr.com/newsflashes/3858352081622273?f=rss",
+          "title": "对话王小川：造医生，战豆包，与无尽的AI 非共识",
+          "description": "百川智能CEO王小川分享AI医疗、大模型竞争等观点，谈及AI技术路线与非共识。",
+          "url": "https://www.huxiu.com/article/4868828.html?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "世界模型的GPT时刻：距离物理AGI出圈，还有多远？",
-          "description": "探讨世界模型的概念、Sora与物理模拟的关系，以及从视频生成到真正世界模型缺失的关键环节。",
-          "url": "https://www.huxiu.com/article/4868449.html?f=rss",
+          "title": "让开关自我消亡：AI 赋能的Feature Flag 全生命周期治理",
+          "description": "快手资深架构师分享AI在软件Feature Flag全生命周期治理中的应用，提升开发效率。",
+          "url": "https://www.huxiu.com/article/4868815.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "5位百亿估值具身智能公司CEO的共识与分歧：数据仍是瓶颈，本体阶段性成熟",
-          "description": "具身智能创业公司CEO在智源大会上讨论资本、数据、模型、应用场景等，指出数据仍是主要瓶颈。",
-          "url": "https://www.huxiu.com/article/4868440.html?f=rss",
+          "title": "花钱雇AI当同事，我的生意怎么样了？",
+          "description": "探讨数字员工（AI Agent）在实际业务中的落地效果与效率提升，反映AIGC应用趋势。",
+          "url": "https://www.huxiu.com/article/4868807.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "AI预测不了“佛得角”",
-          "description": "分析AI在世界杯预测中的局限性，以佛得角爆冷为例，讨论机器学习模型难以预测小概率事件。",
-          "url": "https://www.huxiu.com/article/4868430.html?f=rss",
+          "title": "北大科学家下场做脑机接口，种子轮融了近亿元",
+          "description": "侵入式脑机接口公司芯生视界完成近亿元种子轮融资，由经纬创投领投，技术涉及AI信号解码。",
+          "url": "https://36kr.com/p/3855480467543042?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "起跑线还没过呢，香槟就开了",
-          "description": "报道DeepSeek完成超500亿元首轮外部融资，估值突破500亿美元，成为中国AI行业最大单轮融资。",
-          "url": "https://www.huxiu.com/article/4868421.html?f=rss",
+          "title": "氪星晚报｜BilibiliWorld 2026成国内首个海外售票的综合性ACG展会；让AI走进千家万户，17项举措推进“人工智能+消费”发展；快舟十一号遥十三运载火箭发射成功",
+          "description": "报道包含17项举措推进“人工智能+消费”发展，以及滴滴自动驾驶L4级AI技术落地。",
+          "url": "https://36kr.com/p/3858015526704129?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "AI巨头收紧身份验证：ChatGPT和Claude接连开启“刷脸时代”，普通用户怎么办？",
-          "description": "OpenAI和Anthropic要求用户上传身份证件并完成活体检测，加强身份验证以应对安全挑战。",
-          "url": "https://www.huxiu.com/article/4868418.html?f=rss",
+          "title": "灵动岛，正在成为AI 时代的新门面",
+          "description": "分析灵动岛作为AI交互入口的潜力，探讨AI如何改变手机交互方式。",
+          "url": "https://www.huxiu.com/article/4868813.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "国内成品油价两连跌：汽柴油每吨分别下调515元和495元",
-          "description": "发改委宣布自6月18日24时起下调成品油价格，汽柴油每吨分别降515元和495元，主因国际市场油价快速回落。",
-          "url": "https://36kr.com/newsflashes/3858345454965760?f=rss",
+          "title": "2026下半年全球经济核心变量：美联储沃什首秀暗示年内仍有一次降息可能",
+          "description": "美联储释放鹰派信号，美元走强，黄金承压。新主席沃什主持的首次FOMC会议暗示年内可能还有一次降息，影响全球资产定价。",
+          "url": "https://www.huxiu.com/article/4868818.html",
           "stars": null,
           "id": 1
         },
         {
-          "title": "七部门联合发布平台经济大中小企业协同发展行动方案",
-          "description": "工信部等七部门印发《促进平台经济大中小企业协同发展行动方案（2026—2028年）》，提出规范“内卷式”竞争、推动算力资源开放、引导平台布局AI大模型等。",
-          "url": "https://36kr.com/newsflashes/3858350054118656?f=rss",
+          "title": "金饰克价年内大跌近450元，国际金价持续走弱",
+          "description": "受美元走强及美联储鹰派信号影响，国际金价下跌，国内品牌足金饰品价格跌至约1260元/克，较年内高点下跌近450元。",
+          "url": "https://36kr.com/newsflashes/3861023152444681?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "商务部：中欧经贸领域沟通顺畅，愿通过对话协商管控分歧",
-          "description": "商务部表示中欧贸易投资磋商机制工作推进顺利，近期将举行部长级磋商，双方同意对话解决分歧。",
-          "url": "https://36kr.com/newsflashes/3858362375214082?f=rss",
+          "title": "陕西前五月经济平稳向好，规模以上工业增加值增长4.9%",
+          "description": "陕西省统计局发布前5月经济运行数据，工业生产稳定增长，煤炭开采和洗选业增加值同比增长11.9%，经济延续平稳向好态势。",
+          "url": "https://36kr.com/newsflashes/3860916355601415?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "中科闻歌港股启动招股，市值超105亿港元",
-          "description": "中科闻歌6月17日招股，发行价60.70港元，募资约9亿港元，预计6月26日港交所上市，成为“通用人工智能第一股”。",
-          "url": "https://36kr.com/p/3857959588418823?f=rss",
+          "title": "市场监管总局约谈携程等7家旅游出行平台，整治火车票销售乱象",
+          "description": "市场监管总局联合中央网信办、国家铁路局约谈携程、同程、去哪儿等平台，指出存在不当宣传“候补帮抢”、诱导“买长乘短”等不规范行为。",
+          "url": "https://36kr.com/p/3858061678760965?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "智谱午后涨超22%创历史新高，股价破2038港元",
-          "description": "智谱（智谱AI）午后涨幅扩大，股价最高报2038.00港元，刷新历史高点，市场情绪高涨。",
-          "url": "https://36kr.com/newsflashes/3858354469327874?f=rss",
+          "title": "盛吉盛先进半导体产品孵化与制造中心项目落地无锡",
+          "description": "盛吉盛在无锡惠山建设先进产品孵化中心，先期导入两款先进12英寸薄膜沉积设备，规模量产后年产值预计超1.5亿元，助力半导体国产替代。",
+          "url": "https://36kr.com/newsflashes/3860911711294725?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "仙工智能港股招股，以18C特专科技身份赴港上市",
-          "description": "智能机器人公司仙工智能6月15日开始招股，招股价101.60港元，市值112.27亿港元，预计6月挂牌。",
-          "url": "https://36kr.com/p/3857011810112521?f=rss",
+          "title": "宜信财富百亿类固收产品良性清退，投资者接待中心已设立",
+          "description": "知名财富管理机构宜信财富宣布类固收产品良性清退，并设立新投资者接待中心，涉及百亿级规模，凸显金融产品风险与监管压力。",
+          "url": "https://www.huxiu.com/article/4868825.html",
           "stars": null,
           "id": 6
         },
         {
-          "title": "市场监管总局等约谈7家旅游出行平台：规范火车票销售行为",
-          "description": "市场监管总局联合网信办、国家铁路局约谈携程、同程等7家平台，整治不当宣传“候补帮抢”、诱导“买长乘短”等违规行为。",
-          "url": "https://36kr.com/p/3858061678760965?f=rss",
+          "title": "谷歌48小时失两大AI大牛，诺奖得主转投Anthropic",
+          "description": "Transformer奠基人之一Noam Shazeer等两位AI大牛在不到48小时内离开谷歌，转投OpenAI和Anthropic，凸显AI人才竞争白热化。",
+          "url": "https://www.huxiu.com/article/4868831.html",
           "stars": null,
           "id": 7
         },
         {
-          "title": "宇树科技部分机器狗降价，Go2系列降幅约10%",
-          "description": "宇树科技多款机器狗降价，Go2-Air从9997元降至8997元，Go2-Pro从18600元降至15600元，公司称静默期不便回应。",
-          "url": "https://36kr.com/newsflashes/3858347085501442?f=rss",
+          "title": "17项举措推进“人工智能+消费”发展，AI走进千家万户",
+          "description": "国家层面出台17项措施推动人工智能在消费领域的应用，促进AI技术赋能实体经济，涵盖产品、场景、生态等方向。",
+          "url": "https://36kr.com/p/3858015526704129?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "多款知名纸尿裤被检出毒物，致婴幼儿皮肤破溃",
-          "description": "新华社调查指“好奇”“碧芭宝贝”“Babycare”等品牌纸尿裤含毒物，导致红臀、皮肤破溃，可能损伤生殖系统。",
-          "url": "https://www.huxiu.com/article/4868444.html?f=rss",
+          "title": "快舟十一号遥十三运载火箭发射成功",
+          "description": "快舟十一号遥十三运载火箭成功发射，标志我国商业航天能力进一步提升，助力卫星互联网等基础设施建设。",
+          "url": "https://36kr.com/p/3858015526704129?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "DeepSeek完成首轮外部融资超500亿元，估值突破500亿美元",
-          "description": "中国AI初创公司DeepSeek获超500亿元融资，估值超500亿美元，为国内AI行业最大单轮融资。",
-          "url": "https://www.huxiu.com/article/4868421.html?f=rss",
+          "title": "抖音商城618数据：超12万商家直播成交额同比增长翻倍",
+          "description": "2026年抖音商城618大促数据显示，超过12万商家直播成交额同比增长翻倍，中小达人贡献超80%带货成交额，消费复苏趋势明显。",
+          "url": "https://36kr.com/newsflashes/3861055337157637?f=rss",
           "stars": null,
           "id": 10
         }
@@ -155,37 +155,37 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "Freeing the Law with LOCUS: A Local Ordinance Corpus for the United States",
-          "description": "构建美国地方条例语料库，填补法律AI中地方性法规的空白。",
-          "url": "https://arxiv.org/pdf/2606.19334v1",
+          "title": "Caching for Dollars, Not Hits: An Exact Offline Reference for Cloud-Egress Caching and the Crossover That Decides When It Pays",
+          "description": "提出以云出口成本而非命中率为目标的新型缓存策略，优化云存储的计费开销。",
+          "url": "https://arxiv.org/pdf/2606.20539v1",
           "stars": null,
           "id": 1
         },
         {
-          "title": "TurboServe: Serving Streaming Video Generation Efficiently and Economically",
-          "description": "提出高效经济的流式视频生成服务方法，适应长会话逐块生成场景。",
-          "url": "https://arxiv.org/pdf/2606.19271v1",
+          "title": "Execution-State Capsules: Graph-Bound Execution-State Checkpoint and Restore for Low-Latency, Small-Batch, On-Device Physical-AI Serving",
+          "description": "引入执行状态胶囊技术，实现低延迟、小批量的设备端物理AI服务。",
+          "url": "https://arxiv.org/pdf/2606.20537v1",
           "stars": null,
           "id": 2
         },
         {
-          "title": "Beyond Algorithms: Conceptual Innovation in Medical Imaging AI",
-          "description": "反思医学影像AI中的算法中心主义，呼吁概念创新以推动基准进步。",
-          "url": "https://arxiv.org/pdf/2606.19270v1",
+          "title": "StylisticBias: A Few Human Visual Cues Drive Most Social Biases in MLLMs",
+          "description": "揭示多模态大语言模型中视觉风格线索对社会偏见的主导作用。",
+          "url": "https://arxiv.org/pdf/2606.20527v1",
           "stars": null,
           "id": 3
         },
         {
-          "title": "Detecting Hidden ML Training With Zero-Overhead Telemetry",
-          "description": "利用零开销遥测技术检测隐藏的机器学习训练，确保AI计算可审计。",
-          "url": "https://arxiv.org/pdf/2606.19262v1",
+          "title": "Efficient and Sound Probabilistic Verification for AI Agents",
+          "description": "提出高效且可靠的概率验证方法，用于保障AI Agent在复杂数字环境中的安全。",
+          "url": "https://arxiv.org/pdf/2606.20510v1",
           "stars": null,
           "id": 4
         },
         {
-          "title": "A Multi-Domain Benchmark for Detecting AI-Generated Text-Rich Images from GPT-Image-2",
-          "description": "提出多领域基准测试，用于检测GPT-Image-2生成的含文本图像。",
-          "url": "https://arxiv.org/pdf/2606.19259v1",
+          "title": "How Fragile Are Training-Free AI-Generated Image Detectors? A Controlled Audit of Score Direction, Preprocessing, and Compression",
+          "description": "通过受控审计评估无训练AI生成图像检测器在分数方向、预处理和压缩下的脆弱性。",
+          "url": "https://arxiv.org/pdf/2606.20488v1",
           "stars": null,
           "id": 5
         }
@@ -195,42 +195,42 @@
       "name": "AI 开源项目",
       "items": [
         {
-          "title": "agent-skills",
-          "description": "Production-grade engineering skills for AI coding agents",
-          "url": "https://github.com/addyosmani/agent-skills",
-          "stars": 62525,
+          "title": "netdata",
+          "description": "The fastest path to AI-powered full stack observability, even for lean teams.",
+          "url": "https://github.com/netdata/netdata",
+          "stars": 79322,
           "id": 1
         },
         {
-          "title": "mem0",
-          "description": "Universal memory layer for AI Agents",
-          "url": "https://github.com/mem0ai/mem0",
-          "stars": 58830,
+          "title": "AppFlowy",
+          "description": "Bring projects, wikis, and teams together with AI. AppFlowy is the AI collaborative workspace where you achieve more without losing control of your data.",
+          "url": "https://github.com/AppFlowy-IO/AppFlowy",
+          "stars": 72642,
           "id": 2
         },
         {
-          "title": "crewAI",
-          "description": "Framework for orchestrating role-playing, autonomous AI agents",
-          "url": "https://github.com/crewAIInc/crewAI",
-          "stars": 53861,
+          "title": "OpenBB",
+          "description": "Financial data platform for analysts, quants and AI agents.",
+          "url": "https://github.com/OpenBB-finance/OpenBB",
+          "stars": 69441,
           "id": 3
         },
         {
-          "title": "goose",
-          "description": "Open source extensible AI agent that goes beyond code suggestions",
-          "url": "https://github.com/aaif-goose/goose",
-          "stars": 49733,
+          "title": "agent-skills",
+          "description": "Production-grade engineering skills for AI coding agents.",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "stars": 63593,
           "id": 4
         },
         {
-          "title": "LocalAI",
-          "description": "Open-source AI engine to run any model on any hardware, no GPU required",
-          "url": "https://github.com/mudler/LocalAI",
-          "stars": 46953,
+          "title": "TrendRadar",
+          "description": "AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.",
+          "url": "https://github.com/sansan0/TrendRadar",
+          "stars": 59672,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-06-18T15:30:58.582+08:00"
+  "updatedAt": "2026-06-20T14:57:46.761+08:00"
 }
