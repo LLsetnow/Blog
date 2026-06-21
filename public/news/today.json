@@ -1,76 +1,76 @@
 {
-  "date": "2026-06-20",
+  "date": "2026-06-21",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "硬氪首发|moody前高管搭档大疆骨干入局陪伴机器人，锦秋领投，融资数千万",
-          "description": "AI陪伴机器人公司ZuzuZoos完成数千万元Pre-A轮融资，资金将用于AI大模型迭代和硬件产品扩建。",
+          "title": "moody前高管搭档大疆骨干入局陪伴机器人，锦秋领投，融资数千万",
+          "description": "AI-Native科技潮玩品牌ZuzuZoos完成数千万元Pre-A轮融资，用于AI大模型迭代、硬件产品扩建等。",
           "url": "https://36kr.com/p/3859926114161665?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "蔚来补上“智驾课”，任少卿总结：智驾技术创新将重构竞争",
-          "description": "蔚来向18款车型推送最新版世界模型，实现同一套智驾代码跨代际芯片运行，推动AI智驾技术迭代。",
-          "url": "https://36kr.com/p/3858329994875908?f=rss",
+          "title": "北大科学家下场做脑机接口，种子轮融了近亿元",
+          "description": "侵入式脑机接口公司芯生视界完成近亿元种子轮融资，由经纬创投领投，用于脑机接口技术研发。",
+          "url": "https://36kr.com/p/3855480467543042?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "红杉、阿里押注过的具身大脑公司再融资，上交等投资数亿元｜硬氪首发",
-          "description": "具身智能企业穹彻智能完成数亿元融资，由无锡数据集团领投，上海交通大学等跟投，持续深耕AI机器人大脑。",
+          "title": "红杉、阿里押注过的具身大脑公司再融资，上交等投资数亿元",
+          "description": "具身智能企业穹彻智能完成数亿元新一轮融资，由无锡数据集团领投，上海交大AI基金等跟投。",
           "url": "https://36kr.com/p/3856708724315400?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "诺奖得主转投Anthropic，谷歌48小时连失两大牛，内部信仰崩塌？",
-          "description": "Transformer奠基人Noam Shazeer离开谷歌加入OpenAI，另有AI大牛离职，凸显AI人才争夺激烈。",
-          "url": "https://www.huxiu.com/article/4868831.html?f=rss",
+          "title": "微信AI助手“小微”小范围灰度上线",
+          "description": "微信原生AI助手“小微”开始小范围灰度测试，支持文字或语音对话操作微信功能。",
+          "url": "https://36kr.com/newsflashes/3862458180359424?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "对话王小川：造医生，战豆包，与无尽的AI 非共识",
-          "description": "百川智能CEO王小川分享AI医疗、大模型竞争等观点，谈及AI技术路线与非共识。",
-          "url": "https://www.huxiu.com/article/4868828.html?f=rss",
+          "title": "AI巨头的“Token补贴大战”，快打完了吗？",
+          "description": "探讨AI大模型Token价格战现状，大厂开始限制Token使用，反映行业格局变化。",
+          "url": "https://www.huxiu.com/article/4868933.html?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "让开关自我消亡：AI 赋能的Feature Flag 全生命周期治理",
-          "description": "快手资深架构师分享AI在软件Feature Flag全生命周期治理中的应用，提升开发效率。",
-          "url": "https://www.huxiu.com/article/4868815.html?f=rss",
+          "title": "本周AI 项目推荐：UXBench、MemLens、RoadmapBench…下一代模型，需要下一代Benchmark",
+          "description": "介绍新一代AI基准测试工具，推动大模型评估方法进化。",
+          "url": "https://www.huxiu.com/article/4868930.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "花钱雇AI当同事，我的生意怎么样了？",
-          "description": "探讨数字员工（AI Agent）在实际业务中的落地效果与效率提升，反映AIGC应用趋势。",
-          "url": "https://www.huxiu.com/article/4868807.html?f=rss",
+          "title": "诺奖得主出走DeepMind，为何选择加入这家初创公司？",
+          "description": "AlphaFold核心架构师、诺贝尔奖得主John Jumper离开DeepMind加入Anthropic，引发AI人才震动。",
+          "url": "https://www.huxiu.com/article/4868929.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "北大科学家下场做脑机接口，种子轮融了近亿元",
-          "description": "侵入式脑机接口公司芯生视界完成近亿元种子轮融资，由经纬创投领投，技术涉及AI信号解码。",
-          "url": "https://36kr.com/p/3855480467543042?f=rss",
+          "title": "死磕完几十个一线案例，我们对AI怎么落地营销服有了这些判断",
+          "description": "深度分析AI在营销、客服、销售等场景的落地实践与ROI挑战。",
+          "url": "https://www.huxiu.com/article/4868464.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "氪星晚报｜BilibiliWorld 2026成国内首个海外售票的综合性ACG展会；让AI走进千家万户，17项举措推进“人工智能+消费”发展；快舟十一号遥十三运载火箭发射成功",
-          "description": "报道包含17项举措推进“人工智能+消费”发展，以及滴滴自动驾驶L4级AI技术落地。",
-          "url": "https://36kr.com/p/3858015526704129?f=rss",
+          "title": "具身赛道现状素描：脑子灵，模型好，不是百亿，就是独角",
+          "description": "2026年上半年国内具身智能赛道融资约438亿元，资本涌向机器人“大脑”。",
+          "url": "https://www.huxiu.com/article/4868948.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "灵动岛，正在成为AI 时代的新门面",
-          "description": "分析灵动岛作为AI交互入口的潜力，探讨AI如何改变手机交互方式。",
-          "url": "https://www.huxiu.com/article/4868813.html?f=rss",
+          "title": "苹果没告诉你的事：macOS27这些值得关注的新特性",
+          "description": "macOS 27中AI相关新特性详解，苹果在AI体验上的隐式布局。",
+          "url": "https://www.huxiu.com/article/4868934.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "2026下半年全球经济核心变量：美联储沃什首秀暗示年内仍有一次降息可能",
-          "description": "美联储释放鹰派信号，美元走强，黄金承压。新主席沃什主持的首次FOMC会议暗示年内可能还有一次降息，影响全球资产定价。",
-          "url": "https://www.huxiu.com/article/4868818.html",
+          "title": "高盛大砍黄金目标价",
+          "description": "高盛将2026年年终黄金目标价下调500美元至4900美元/盎司，因美联储今年料不再降息。",
+          "url": "https://36kr.com/newsflashes/3862514491003912?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "金饰克价年内大跌近450元，国际金价持续走弱",
-          "description": "受美元走强及美联储鹰派信号影响，国际金价下跌，国内品牌足金饰品价格跌至约1260元/克，较年内高点下跌近450元。",
-          "url": "https://36kr.com/newsflashes/3861023152444681?f=rss",
+          "title": "印度谋求在美印贸易协定中获取竞争优势",
+          "description": "印度工商部长表示，在取得相较于其他国家的竞争优势前，印度不太可能落实拟议中的美印贸易协定。",
+          "url": "https://36kr.com/newsflashes/3862499085686025?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "陕西前五月经济平稳向好，规模以上工业增加值增长4.9%",
-          "description": "陕西省统计局发布前5月经济运行数据，工业生产稳定增长，煤炭开采和洗选业增加值同比增长11.9%，经济延续平稳向好态势。",
-          "url": "https://36kr.com/newsflashes/3860916355601415?f=rss",
+          "title": "比特币ETF 30天净流出63.5亿美元，创历史新高",
+          "description": "Galaxy Research披露，比特币ETF在过去30天内净流出资金达63.5亿美元，在所有582个30天窗口期内排名第一。",
+          "url": "https://36kr.com/newsflashes/3862494481880322?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "市场监管总局约谈携程等7家旅游出行平台，整治火车票销售乱象",
-          "description": "市场监管总局联合中央网信办、国家铁路局约谈携程、同程、去哪儿等平台，指出存在不当宣传“候补帮抢”、诱导“买长乘短”等不规范行为。",
-          "url": "https://36kr.com/p/3858061678760965?f=rss",
+          "title": "德意志银行上调美国通胀预期，预计2026年加息50个基点",
+          "description": "德意志银行上调美国通胀预期，全面修正美联储政策判断，预计2026年美联储合计加息50个基点，7月或提前加息。",
+          "url": "https://36kr.com/newsflashes/3862484158731266?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "盛吉盛先进半导体产品孵化与制造中心项目落地无锡",
-          "description": "盛吉盛在无锡惠山建设先进产品孵化中心，先期导入两款先进12英寸薄膜沉积设备，规模量产后年产值预计超1.5亿元，助力半导体国产替代。",
-          "url": "https://36kr.com/newsflashes/3860911711294725?f=rss",
+          "title": "富国银行预测标普500指数到2027年底将升至8600-8800点",
+          "description": "富国银行极度看好后市，预测标普500指数到2027年底将升至8600-8800点。",
+          "url": "https://36kr.com/newsflashes/3862376847709189?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "宜信财富百亿类固收产品良性清退，投资者接待中心已设立",
-          "description": "知名财富管理机构宜信财富宣布类固收产品良性清退，并设立新投资者接待中心，涉及百亿级规模，凸显金融产品风险与监管压力。",
-          "url": "https://www.huxiu.com/article/4868825.html",
+          "title": "AI投资热潮向上游扩散，美股多家半导体设备龙头今年翻倍",
+          "description": "美股总市值超百亿美元的9家半导体设备公司，今年以来股价涨幅均已超过75%，其中7家翻倍。",
+          "url": "https://36kr.com/newsflashes/3862419587781894?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "谷歌48小时失两大AI大牛，诺奖得主转投Anthropic",
-          "description": "Transformer奠基人之一Noam Shazeer等两位AI大牛在不到48小时内离开谷歌，转投OpenAI和Anthropic，凸显AI人才竞争白热化。",
-          "url": "https://www.huxiu.com/article/4868831.html",
+          "title": "巴林国家银行正与巴林、科威特相关银行洽谈潜在合并事宜",
+          "description": "巴林国家银行正与巴林、科威特相关银行洽谈潜在合并事宜。",
+          "url": "https://36kr.com/newsflashes/3862597400859913?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "17项举措推进“人工智能+消费”发展，AI走进千家万户",
-          "description": "国家层面出台17项措施推动人工智能在消费领域的应用，促进AI技术赋能实体经济，涵盖产品、场景、生态等方向。",
-          "url": "https://36kr.com/p/3858015526704129?f=rss",
+          "title": "SpaceX上市前被MSCI打最低ESG评级",
+          "description": "MSCI在SpaceX进行750亿美元公开募股前授予其最低级别的ESG评级“CCC”，称其因高风险敞口落后于行业。",
+          "url": "https://36kr.com/newsflashes/3862439214322691?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "快舟十一号遥十三运载火箭发射成功",
-          "description": "快舟十一号遥十三运载火箭成功发射，标志我国商业航天能力进一步提升，助力卫星互联网等基础设施建设。",
-          "url": "https://36kr.com/p/3858015526704129?f=rss",
+          "title": "市场监管总局约谈携程等7家旅游出行平台，规范火车票销售",
+          "description": "市场监管总局联合中央网信办、国家铁路局约谈携程、同程、去哪儿等平台，直指火车票销售存在不当宣传“候补帮抢”等违规行为。",
+          "url": "https://36kr.com/p/3858061678760965?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "抖音商城618数据：超12万商家直播成交额同比增长翻倍",
-          "description": "2026年抖音商城618大促数据显示，超过12万商家直播成交额同比增长翻倍，中小达人贡献超80%带货成交额，消费复苏趋势明显。",
-          "url": "https://36kr.com/newsflashes/3861055337157637?f=rss",
+          "title": "龙江银行压舱石越来越小，投资收益占比超90%引关注",
+          "description": "龙江银行2025年营收中投资收益占比超过90%，利息净收入占比仅约11.23%，面临四大风险。",
+          "url": "https://www.huxiu.com/article/4868955.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -156,35 +156,35 @@
       "items": [
         {
           "title": "Caching for Dollars, Not Hits: An Exact Offline Reference for Cloud-Egress Caching and the Crossover That Decides When It Pays",
-          "description": "提出以云出口成本而非命中率为目标的新型缓存策略，优化云存储的计费开销。",
+          "description": "提出面向云出站成本的缓存策略，以最小化账单开销而非传统命中率，并给出决定其何时有效的精确离线参考。",
           "url": "https://arxiv.org/pdf/2606.20539v1",
           "stars": null,
           "id": 1
         },
         {
           "title": "Execution-State Capsules: Graph-Bound Execution-State Checkpoint and Restore for Low-Latency, Small-Batch, On-Device Physical-AI Serving",
-          "description": "引入执行状态胶囊技术，实现低延迟、小批量的设备端物理AI服务。",
+          "description": "提出执行状态胶囊方法，通过图绑定状态检查点与恢复，实现低延迟小批量的端侧物理AI服务。",
           "url": "https://arxiv.org/pdf/2606.20537v1",
           "stars": null,
           "id": 2
         },
         {
           "title": "StylisticBias: A Few Human Visual Cues Drive Most Social Biases in MLLMs",
-          "description": "揭示多模态大语言模型中视觉风格线索对社会偏见的主导作用。",
+          "description": "揭示多模态大语言模型中少量人类视觉线索驱动大部分社会偏见，为理解模型偏见机制提供新视角。",
           "url": "https://arxiv.org/pdf/2606.20527v1",
           "stars": null,
           "id": 3
         },
         {
           "title": "Efficient and Sound Probabilistic Verification for AI Agents",
-          "description": "提出高效且可靠的概率验证方法，用于保障AI Agent在复杂数字环境中的安全。",
+          "description": "提出高效且可靠的概率验证方法，用于运行时监控和策略执行，保障AI Agent在复杂数字环境中的安全性。",
           "url": "https://arxiv.org/pdf/2606.20510v1",
           "stars": null,
           "id": 4
         },
         {
           "title": "How Fragile Are Training-Free AI-Generated Image Detectors? A Controlled Audit of Score Direction, Preprocessing, and Compression",
-          "description": "通过受控审计评估无训练AI生成图像检测器在分数方向、预处理和压缩下的脆弱性。",
+          "description": "通过受控实验审计无训练AI生成图像检测器的脆弱性，评估分数方向、预处理和压缩的影响。",
           "url": "https://arxiv.org/pdf/2606.20488v1",
           "stars": null,
           "id": 5
@@ -198,39 +198,39 @@
           "title": "netdata",
           "description": "The fastest path to AI-powered full stack observability, even for lean teams.",
           "url": "https://github.com/netdata/netdata",
-          "stars": 79322,
+          "stars": 79330,
           "id": 1
         },
         {
           "title": "AppFlowy",
-          "description": "Bring projects, wikis, and teams together with AI. AppFlowy is the AI collaborative workspace where you achieve more without losing control of your data.",
+          "description": "AI collaborative workspace bringing projects, wikis, and teams together.",
           "url": "https://github.com/AppFlowy-IO/AppFlowy",
-          "stars": 72642,
+          "stars": 72712,
           "id": 2
         },
         {
           "title": "OpenBB",
           "description": "Financial data platform for analysts, quants and AI agents.",
           "url": "https://github.com/OpenBB-finance/OpenBB",
-          "stars": 69441,
+          "stars": 69481,
           "id": 3
         },
         {
-          "title": "agent-skills",
-          "description": "Production-grade engineering skills for AI coding agents.",
-          "url": "https://github.com/addyosmani/agent-skills",
-          "stars": 63593,
+          "title": "pi",
+          "description": "AI agent toolkit with unified LLM API, agent loop, TUI, and coding agent CLI.",
+          "url": "https://github.com/earendil-works/pi",
+          "stars": 64333,
           "id": 4
         },
         {
           "title": "TrendRadar",
           "description": "AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.",
           "url": "https://github.com/sansan0/TrendRadar",
-          "stars": 59672,
+          "stars": 59713,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-06-20T14:57:46.761+08:00"
+  "updatedAt": "2026-06-21T15:29:37.238+08:00"
 }
