@@ -1,76 +1,76 @@
 {
-  "date": "2026-06-21",
+  "date": "2026-06-22",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "moody前高管搭档大疆骨干入局陪伴机器人，锦秋领投，融资数千万",
-          "description": "AI-Native科技潮玩品牌ZuzuZoos完成数千万元Pre-A轮融资，用于AI大模型迭代、硬件产品扩建等。",
-          "url": "https://36kr.com/p/3859926114161665?f=rss",
+          "title": "三星电子向韩国所有员工开放ChatGPT和Codex",
+          "description": "三星电子宣布向韩国所有员工开放ChatGPT和Codex，加速AI工具在内部的应用。",
+          "url": "https://36kr.com/p/3864065855706120?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "北大科学家下场做脑机接口，种子轮融了近亿元",
-          "description": "侵入式脑机接口公司芯生视界完成近亿元种子轮融资，由经纬创投领投，用于脑机接口技术研发。",
-          "url": "https://36kr.com/p/3855480467543042?f=rss",
+          "title": "AI算力中心感知与效能管理方案商完成天使轮融资",
+          "description": "芯感通科技有限公司完成数千万元天使轮融资，由联想之星与险峰联合领投，用于芯片研发和AI算力基础设施效能管理。",
+          "url": "https://36kr.com/p/3863885024973832?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "红杉、阿里押注过的具身大脑公司再融资，上交等投资数亿元",
-          "description": "具身智能企业穹彻智能完成数亿元新一轮融资，由无锡数据集团领投，上海交大AI基金等跟投。",
-          "url": "https://36kr.com/p/3856708724315400?f=rss",
+          "title": "京东全栈开源JoyAI-VL-Interaction",
+          "description": "京东开源全球首个全栈开源实时视频视觉语言交互模型JoyAI-VL-Interaction，并获得vLLM-Omni的day-0原生支持。",
+          "url": "https://36kr.com/newsflashes/3864094453814529?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "微信AI助手“小微”小范围灰度上线",
-          "description": "微信原生AI助手“小微”开始小范围灰度测试，支持文字或语音对话操作微信功能。",
-          "url": "https://36kr.com/newsflashes/3862458180359424?f=rss",
+          "title": "英伟达最新发文详解Rubin全面液冷技术",
+          "description": "英伟达官方博客详解即将量产的Rubin平台所使用的全面液冷技术，Rubin是全球首个实现100%液冷的AI计算平台。",
+          "url": "https://36kr.com/newsflashes/3864090084070403?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "AI巨头的“Token补贴大战”，快打完了吗？",
-          "description": "探讨AI大模型Token价格战现状，大厂开始限制Token使用，反映行业格局变化。",
-          "url": "https://www.huxiu.com/article/4868933.html?f=rss",
+          "title": "智谱半年破万亿，港股股价一度涨超40%",
+          "description": "国产大模型企业智谱在港股大涨，市值突破1.14万亿港元，自今年1月上市以来涨幅超20倍。",
+          "url": "https://www.huxiu.com/article/4869193.html?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "本周AI 项目推荐：UXBench、MemLens、RoadmapBench…下一代模型，需要下一代Benchmark",
-          "description": "介绍新一代AI基准测试工具，推动大模型评估方法进化。",
-          "url": "https://www.huxiu.com/article/4868930.html?f=rss",
+          "title": "互联网招聘进入“AI时间”",
+          "description": "国务院印发规划强调人工智能促进就业，人社部、教育部联合发布通知，鼓励AI在招聘中的应用，互联网招聘平台加速智能化转型。",
+          "url": "https://www.huxiu.com/article/4869131.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "诺奖得主出走DeepMind，为何选择加入这家初创公司？",
-          "description": "AlphaFold核心架构师、诺贝尔奖得主John Jumper离开DeepMind加入Anthropic，引发AI人才震动。",
-          "url": "https://www.huxiu.com/article/4868929.html?f=rss",
+          "title": "谷歌量子AI团队研究椭圆曲线密码学的量子危机与防御",
+          "description": "谷歌量子AI团队最新研究探讨具备密码学能力的量子计算机（CRQC）对当前数字安全体系的威胁，并提出防御策略。",
+          "url": "https://www.huxiu.com/article/4869167.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "死磕完几十个一线案例，我们对AI怎么落地营销服有了这些判断",
-          "description": "深度分析AI在营销、客服、销售等场景的落地实践与ROI挑战。",
-          "url": "https://www.huxiu.com/article/4868464.html?f=rss",
+          "title": "全球缺存储，存储缺什么？一流半导体组织变迁观察",
+          "description": "分析存储半导体市场火爆的原因，包括HBM需求高涨，以及AI计算对存储芯片的拉动作用。",
+          "url": "https://www.huxiu.com/article/4869156.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "具身赛道现状素描：脑子灵，模型好，不是百亿，就是独角",
-          "description": "2026年上半年国内具身智能赛道融资约438亿元，资本涌向机器人“大脑”。",
-          "url": "https://www.huxiu.com/article/4868948.html?f=rss",
+          "title": "海川资本：新地缘格局下算力基建与能源自主",
+          "description": "海川资本创始合伙人曹抒阳在WAVES2026大会中探讨算力基建、能源自主与新本土化浪潮，强调AI算力基础设施的重要性。",
+          "url": "https://36kr.com/p/3863840829576192?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "苹果没告诉你的事：macOS27这些值得关注的新特性",
-          "description": "macOS 27中AI相关新特性详解，苹果在AI体验上的隐式布局。",
-          "url": "https://www.huxiu.com/article/4868934.html?f=rss",
+          "title": "WAVES2026圆桌：AI从技术概念走进产业深水区",
+          "description": "36氪WAVES2026新浪潮大会圆桌讨论指出，AI正从技术概念走进产业深水区，硬科技创业成为主流共识。",
+          "url": "https://36kr.com/p/3864033017549832?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "高盛大砍黄金目标价",
-          "description": "高盛将2026年年终黄金目标价下调500美元至4900美元/盎司，因美联储今年料不再降息。",
-          "url": "https://36kr.com/newsflashes/3862514491003912?f=rss",
+          "title": "财政部：1—5月证券交易印花税1262亿元，同比增长88.8%",
+          "description": "财政部公布2026年1-5月财政收支数据，证券交易印花税同比大幅增长近九成，反映股市活跃度提升。",
+          "url": "https://36kr.com/newsflashes/3864087175173385?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "印度谋求在美印贸易协定中获取竞争优势",
-          "description": "印度工商部长表示，在取得相较于其他国家的竞争优势前，印度不太可能落实拟议中的美印贸易协定。",
-          "url": "https://36kr.com/newsflashes/3862499085686025?f=rss",
+          "title": "财政部：1—5月全国一般公共预算收入100465亿元，同比增长4%",
+          "description": "全国一般公共预算收入保持温和增长，税收收入同比增长4.4%，显示经济基本盘稳定。",
+          "url": "https://36kr.com/newsflashes/3864086640956421?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "比特币ETF 30天净流出63.5亿美元，创历史新高",
-          "description": "Galaxy Research披露，比特币ETF在过去30天内净流出资金达63.5亿美元，在所有582个30天窗口期内排名第一。",
-          "url": "https://36kr.com/newsflashes/3862494481880322?f=rss",
+          "title": "1年期3%，5年期以上3.5%，央行最新公布：LPR继续按兵不动，专家：下半年实施政策性降息的可能性较大",
+          "description": "6月22日LPR报价维持不变，市场预期下半年可能降息，货币政策仍有宽松空间。",
+          "url": "https://www.huxiu.com/article/4869177.html?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "德意志银行上调美国通胀预期，预计2026年加息50个基点",
-          "description": "德意志银行上调美国通胀预期，全面修正美联储政策判断，预计2026年美联储合计加息50个基点，7月或提前加息。",
-          "url": "https://36kr.com/newsflashes/3862484158731266?f=rss",
+          "title": "孙正义警告：日本正面临自“黑船来航”以来最大危机",
+          "description": "孙正义召集商界领袖，警告日本在AI时代落后将面临历史性危机，凸显全球科技竞争与地缘政治格局的紧迫性。",
+          "url": "https://www.huxiu.com/article/4869184.html?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "富国银行预测标普500指数到2027年底将升至8600-8800点",
-          "description": "富国银行极度看好后市，预测标普500指数到2027年底将升至8600-8800点。",
-          "url": "https://36kr.com/newsflashes/3862376847709189?f=rss",
+          "title": "智谱半年破万亿，你敢买吗？",
+          "description": "国产大模型企业智谱港股盘中暴涨超40%，市值突破1万亿港元，半年涨超20倍，引发市场对AI估值泡沫的讨论。",
+          "url": "https://www.huxiu.com/article/4869193.html?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "AI投资热潮向上游扩散，美股多家半导体设备龙头今年翻倍",
-          "description": "美股总市值超百亿美元的9家半导体设备公司，今年以来股价涨幅均已超过75%，其中7家翻倍。",
-          "url": "https://36kr.com/newsflashes/3862419587781894?f=rss",
+          "title": "全球缺存储，存储缺什么？一流半导体组织变迁观察",
+          "description": "存储半导体市场高度景气，HBM等高端产品供不应求，全球产业链面临产能与技术创新瓶颈。",
+          "url": "https://www.huxiu.com/article/4869156.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "巴林国家银行正与巴林、科威特相关银行洽谈潜在合并事宜",
-          "description": "巴林国家银行正与巴林、科威特相关银行洽谈潜在合并事宜。",
-          "url": "https://36kr.com/newsflashes/3862597400859913?f=rss",
+          "title": "英伟达最新发文，详解Rubin全面液冷技术",
+          "description": "英伟达介绍其下一代Rubin平台将实现100%液冷，称其为数据中心历史上最重要的能效突破之一，影响AI算力基础设施走向。",
+          "url": "https://36kr.com/newsflashes/3864090084070403?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "SpaceX上市前被MSCI打最低ESG评级",
-          "description": "MSCI在SpaceX进行750亿美元公开募股前授予其最低级别的ESG评级“CCC”，称其因高风险敞口落后于行业。",
-          "url": "https://36kr.com/newsflashes/3862439214322691?f=rss",
+          "title": "氪星晚报：台积电28nm较年初减产25%",
+          "description": "台积电成熟制程28nm产能持续削减，反映半导体代工市场结构性调整及需求变化。",
+          "url": "https://36kr.com/p/3864065855706120?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "市场监管总局约谈携程等7家旅游出行平台，规范火车票销售",
-          "description": "市场监管总局联合中央网信办、国家铁路局约谈携程、同程、去哪儿等平台，直指火车票销售存在不当宣传“候补帮抢”等违规行为。",
-          "url": "https://36kr.com/p/3858061678760965?f=rss",
+          "title": "“千帆星座”建设与运营主体垣信卫星启动新一轮融资",
+          "description": "中国低轨卫星互联网星座“千帆星座”主体垣信卫星开启新一轮融资，拟募资不超20%股权，加速星座部署与商业化。",
+          "url": "https://36kr.com/newsflashes/3864068382053636?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "龙江银行压舱石越来越小，投资收益占比超90%引关注",
-          "description": "龙江银行2025年营收中投资收益占比超过90%，利息净收入占比仅约11.23%，面临四大风险。",
-          "url": "https://www.huxiu.com/article/4868955.html?f=rss",
+          "title": "追觅踩下急刹车：从200个业务到四大赛道，硬科技公司如何避免“蒙眼狂奔”",
+          "description": "清洁电器头部企业追觅科技全面收缩战线，从200多个业务聚焦至四大赛道，反映硬科技公司在扩张与风险控制之间的战略调整。",
+          "url": "https://www.huxiu.com/article/4869153.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -156,35 +156,35 @@
       "items": [
         {
           "title": "Caching for Dollars, Not Hits: An Exact Offline Reference for Cloud-Egress Caching and the Crossover That Decides When It Pays",
-          "description": "提出面向云出站成本的缓存策略，以最小化账单开销而非传统命中率，并给出决定其何时有效的精确离线参考。",
+          "description": "提出一种针对云对象存储出口成本的精确离线缓存新范式，优化目标从命中率转向成本效益。",
           "url": "https://arxiv.org/pdf/2606.20539v1",
           "stars": null,
           "id": 1
         },
         {
           "title": "Execution-State Capsules: Graph-Bound Execution-State Checkpoint and Restore for Low-Latency, Small-Batch, On-Device Physical-AI Serving",
-          "description": "提出执行状态胶囊方法，通过图绑定状态检查点与恢复，实现低延迟小批量的端侧物理AI服务。",
+          "description": "引入执行状态胶囊机制，实现低延迟、小批量、设备端物理AI服务的图绑定检查点与恢复。",
           "url": "https://arxiv.org/pdf/2606.20537v1",
           "stars": null,
           "id": 2
         },
         {
           "title": "StylisticBias: A Few Human Visual Cues Drive Most Social Biases in MLLMs",
-          "description": "揭示多模态大语言模型中少量人类视觉线索驱动大部分社会偏见，为理解模型偏见机制提供新视角。",
+          "description": "揭示多模态大语言模型中少数视觉线索导致大部分社会偏见的现象。",
           "url": "https://arxiv.org/pdf/2606.20527v1",
           "stars": null,
           "id": 3
         },
         {
           "title": "Efficient and Sound Probabilistic Verification for AI Agents",
-          "description": "提出高效且可靠的概率验证方法，用于运行时监控和策略执行，保障AI Agent在复杂数字环境中的安全性。",
+          "description": "提出一种高效且可靠的概率验证方法，用于保障AI代理在复杂数字环境中的安全性。",
           "url": "https://arxiv.org/pdf/2606.20510v1",
           "stars": null,
           "id": 4
         },
         {
           "title": "How Fragile Are Training-Free AI-Generated Image Detectors? A Controlled Audit of Score Direction, Preprocessing, and Compression",
-          "description": "通过受控实验审计无训练AI生成图像检测器的脆弱性，评估分数方向、预处理和压缩的影响。",
+          "description": "对免训练AI生成图像检测器进行受控审计，评估其在分数方向、预处理和压缩下的脆弱性。",
           "url": "https://arxiv.org/pdf/2606.20488v1",
           "stars": null,
           "id": 5
@@ -195,42 +195,42 @@
       "name": "AI 开源项目",
       "items": [
         {
-          "title": "netdata",
-          "description": "The fastest path to AI-powered full stack observability, even for lean teams.",
-          "url": "https://github.com/netdata/netdata",
-          "stars": 79330,
+          "title": "deer-flow",
+          "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates with sandboxes, memories, tools, and subagents.",
+          "url": "https://github.com/bytedance/deer-flow",
+          "stars": 72879,
           "id": 1
-        },
-        {
-          "title": "AppFlowy",
-          "description": "AI collaborative workspace bringing projects, wikis, and teams together.",
-          "url": "https://github.com/AppFlowy-IO/AppFlowy",
-          "stars": 72712,
-          "id": 2
         },
         {
           "title": "OpenBB",
           "description": "Financial data platform for analysts, quants and AI agents.",
           "url": "https://github.com/OpenBB-finance/OpenBB",
-          "stars": 69481,
-          "id": 3
+          "stars": 69529,
+          "id": 2
         },
         {
           "title": "pi",
-          "description": "AI agent toolkit with unified LLM API, agent loop, TUI, and coding agent CLI.",
+          "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI.",
           "url": "https://github.com/earendil-works/pi",
-          "stars": 64333,
+          "stars": 64583,
+          "id": 3
+        },
+        {
+          "title": "crewAI",
+          "description": "Framework for orchestrating role-playing, autonomous AI agents that collaborate seamlessly.",
+          "url": "https://github.com/crewAIInc/crewAI",
+          "stars": 54116,
           "id": 4
         },
         {
-          "title": "TrendRadar",
-          "description": "AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.",
-          "url": "https://github.com/sansan0/TrendRadar",
-          "stars": 59713,
+          "title": "goose",
+          "description": "An open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM.",
+          "url": "https://github.com/aaif-goose/goose",
+          "stars": 50016,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-06-21T15:29:37.238+08:00"
+  "updatedAt": "2026-06-22T16:54:04.404+08:00"
 }
