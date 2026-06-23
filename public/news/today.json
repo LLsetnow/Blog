@@ -1,76 +1,76 @@
 {
-  "date": "2026-06-22",
+  "date": "2026-06-23",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "三星电子向韩国所有员工开放ChatGPT和Codex",
-          "description": "三星电子宣布向韩国所有员工开放ChatGPT和Codex，加速AI工具在内部的应用。",
-          "url": "https://36kr.com/p/3864065855706120?f=rss",
+          "title": "刚注册就成独角兽，具身创企昆仑行90天融资数十亿元｜36氪独家",
+          "description": "昆仑行机器人注册不到90天完成3轮融资，估值超十亿美元，成为具身智能独角兽，聚焦AI落地终端——机器人。",
+          "url": "https://36kr.com/p/3865188719121668?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "AI算力中心感知与效能管理方案商完成天使轮融资",
-          "description": "芯感通科技有限公司完成数千万元天使轮融资，由联想之星与险峰联合领投，用于芯片研发和AI算力基础设施效能管理。",
-          "url": "https://36kr.com/p/3863885024973832?f=rss",
+          "title": "从用户决策到Agent参与，值得买科技分享AI时代品牌经营新课题",
+          "description": "值得买科技在WAVES大会上分享AI Agent时代消费决策链路的变化，以及品牌营销的一线实践经验。",
+          "url": "https://36kr.com/p/3865177262101513?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "京东全栈开源JoyAI-VL-Interaction",
-          "description": "京东开源全球首个全栈开源实时视频视觉语言交互模型JoyAI-VL-Interaction，并获得vLLM-Omni的day-0原生支持。",
-          "url": "https://36kr.com/newsflashes/3864094453814529?f=rss",
+          "title": "硬氪首发 | 快手系AI芯片公司再融资数亿，销量近十万颗，视频压缩性能超英伟达",
+          "description": "凌川科技完成数亿元A+轮融资，其AI芯片在视频压缩性能上超越英伟达，销量近十万颗。",
+          "url": "https://36kr.com/p/3865136165344516?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "英伟达最新发文详解Rubin全面液冷技术",
-          "description": "英伟达官方博客详解即将量产的Rubin平台所使用的全面液冷技术，Rubin是全球首个实现100%液冷的AI计算平台。",
-          "url": "https://36kr.com/newsflashes/3864090084070403?f=rss",
+          "title": "36氪首发 | 龚虹嘉、陆奇、海外资本下注，北大团队用肌电腕带做新一代数采终端",
+          "description": "雪梦未来获龚虹嘉、陆奇等投资，利用sEMG肌电信号解码技术和自研AI模型构建新一代数据采集终端。",
+          "url": "https://36kr.com/p/3865125383443463?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "智谱半年破万亿，港股股价一度涨超40%",
-          "description": "国产大模型企业智谱在港股大涨，市值突破1.14万亿港元，自今年1月上市以来涨幅超20倍。",
-          "url": "https://www.huxiu.com/article/4869193.html?f=rss",
+          "title": "8点1氪丨SpaceX跌破IPO首日收盘价，市值蒸发4000亿美元；英国首相斯塔默宣布辞职；SK海力士市值首超三星电子",
+          "description": "三星电子向韩国所有员工开放ChatGPT和Codex；港股智谱暴涨，总市值突破1万亿港元。",
+          "url": "https://36kr.com/p/3865001641006081?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "互联网招聘进入“AI时间”",
-          "description": "国务院印发规划强调人工智能促进就业，人社部、教育部联合发布通知，鼓励AI在招聘中的应用，互联网招聘平台加速智能化转型。",
-          "url": "https://www.huxiu.com/article/4869131.html?f=rss",
+          "title": "映界科技：一支00后团队的空间智能“赌注” | 水下项目",
+          "description": "映界科技成立不到三个月，致力于解决具身智能的感知瓶颈，让机器人理解物理环境、推理空间关系。",
+          "url": "https://36kr.com/p/3864071269569540?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "谷歌量子AI团队研究椭圆曲线密码学的量子危机与防御",
-          "description": "谷歌量子AI团队最新研究探讨具备密码学能力的量子计算机（CRQC）对当前数字安全体系的威胁，并提出防御策略。",
-          "url": "https://www.huxiu.com/article/4869167.html?f=rss",
+          "title": "火山引擎总裁谭待：字节内部已大规模落地AI Coding生产流程",
+          "description": "火山引擎总裁披露字节跳动已大规模落地AI Coding，豆包2.1Pro跨过生产级生成门槛。",
+          "url": "https://36kr.com/newsflashes/3865364540331271?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "全球缺存储，存储缺什么？一流半导体组织变迁观察",
-          "description": "分析存储半导体市场火爆的原因，包括HBM需求高涨，以及AI计算对存储芯片的拉动作用。",
-          "url": "https://www.huxiu.com/article/4869156.html?f=rss",
+          "title": "AI音乐时代，唱片公司未来十年会变成什么？",
+          "description": "美国三大唱片公司起诉AI音乐公司Suno和Udio，探讨AI音乐生成对唱片业的冲击与未来。",
+          "url": "https://www.huxiu.com/article/4869506.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "海川资本：新地缘格局下算力基建与能源自主",
-          "description": "海川资本创始合伙人曹抒阳在WAVES2026大会中探讨算力基建、能源自主与新本土化浪潮，强调AI算力基础设施的重要性。",
-          "url": "https://36kr.com/p/3863840829576192?f=rss",
+          "title": "AI大厂开抢电影节编制",
+          "description": "海螺AI成为上海国际电影节独家AI影像战略伙伴，中国AI视频模型首次进入电影节体系。",
+          "url": "https://www.huxiu.com/article/4869504.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "WAVES2026圆桌：AI从技术概念走进产业深水区",
-          "description": "36氪WAVES2026新浪潮大会圆桌讨论指出，AI正从技术概念走进产业深水区，硬科技创业成为主流共识。",
-          "url": "https://36kr.com/p/3864033017549832?f=rss",
+          "title": "比叫板马斯克更精彩的，是他背后那些敢赌敢拼的事",
+          "description": "武汉老板黄立研发出65000通道脑机接口芯片，远超马斯克Neuralink的3000通道，属AI脑机接口技术。",
+          "url": "https://www.huxiu.com/article/4869190.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "财政部：1—5月证券交易印花税1262亿元，同比增长88.8%",
-          "description": "财政部公布2026年1-5月财政收支数据，证券交易印花税同比大幅增长近九成，反映股市活跃度提升。",
-          "url": "https://36kr.com/newsflashes/3864087175173385?f=rss",
+          "title": "日韩股市集体收跌，韩国综指大跌近10%",
+          "description": "日经225指数收跌3.55%，韩国综指收跌9.99%，市场大幅下挫。",
+          "url": "https://36kr.com/newsflashes/3865388056728832?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "财政部：1—5月全国一般公共预算收入100465亿元，同比增长4%",
-          "description": "全国一般公共预算收入保持温和增长，税收收入同比增长4.4%，显示经济基本盘稳定。",
-          "url": "https://36kr.com/newsflashes/3864086640956421?f=rss",
+          "title": "沪深两市成交额突破3万亿元",
+          "description": "沪深两市成交额突破3万亿元，较上一日缩量超3000亿元。",
+          "url": "https://36kr.com/newsflashes/3865377883739393?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "1年期3%，5年期以上3.5%，央行最新公布：LPR继续按兵不动，专家：下半年实施政策性降息的可能性较大",
-          "description": "6月22日LPR报价维持不变，市场预期下半年可能降息，货币政策仍有宽松空间。",
-          "url": "https://www.huxiu.com/article/4869177.html?f=rss",
+          "title": "创业板指跌超4%",
+          "description": "创业板指跌超4%，深成指跌3.32%，沪指跌1.56%，有色金属、盐湖提锂等板块跌幅居前。",
+          "url": "https://36kr.com/newsflashes/3865373485257729?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "孙正义警告：日本正面临自“黑船来航”以来最大危机",
-          "description": "孙正义召集商界领袖，警告日本在AI时代落后将面临历史性危机，凸显全球科技竞争与地缘政治格局的紧迫性。",
-          "url": "https://www.huxiu.com/article/4869184.html?f=rss",
+          "title": "恒生科技指数跌超3%",
+          "description": "港股午后扩大跌幅，恒生科技指数跌超3%，恒生指数跌1.7%。",
+          "url": "https://36kr.com/newsflashes/3865358623396870?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "智谱半年破万亿，你敢买吗？",
-          "description": "国产大模型企业智谱港股盘中暴涨超40%，市值突破1万亿港元，半年涨超20倍，引发市场对AI估值泡沫的讨论。",
-          "url": "https://www.huxiu.com/article/4869193.html?f=rss",
+          "title": "刚注册就成独角兽，具身创企昆仑行90天融资数十亿元",
+          "description": "昆仑行机器人注册不到90天完成3轮融资，累计数十亿元，估值超十亿美元，成为具身智能独角兽。",
+          "url": "https://36kr.com/p/3865188719121668?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "全球缺存储，存储缺什么？一流半导体组织变迁观察",
-          "description": "存储半导体市场高度景气，HBM等高端产品供不应求，全球产业链面临产能与技术创新瓶颈。",
-          "url": "https://www.huxiu.com/article/4869156.html?f=rss",
+          "title": "快手系AI芯片公司再融资数亿，销量近十万颗，视频压缩性能超英伟达",
+          "description": "人工智能芯片公司凌川科技完成数亿元A+轮融资，其视频压缩性能超越英伟达，销量近十万颗。",
+          "url": "https://36kr.com/p/3865136165344516?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "英伟达最新发文，详解Rubin全面液冷技术",
-          "description": "英伟达介绍其下一代Rubin平台将实现100%液冷，称其为数据中心历史上最重要的能效突破之一，影响AI算力基础设施走向。",
-          "url": "https://36kr.com/newsflashes/3864090084070403?f=rss",
+          "title": "龚虹嘉、陆奇、海外资本下注，北大团队用肌电腕带做新一代数采终端",
+          "description": "北大背景团队雪梦未来获得龚虹嘉、陆奇及海外机构投资，开发神经腕带及AI解码模型。",
+          "url": "https://36kr.com/p/3865125383443463?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "氪星晚报：台积电28nm较年初减产25%",
-          "description": "台积电成熟制程28nm产能持续削减，反映半导体代工市场结构性调整及需求变化。",
-          "url": "https://36kr.com/p/3864065855706120?f=rss",
+          "title": "SpaceX跌破IPO首日收盘价，市值蒸发4000亿美元",
+          "description": "SpaceX股价跌破上市首日收盘价，市值蒸发约4000亿美元；纳指收跌1.3%。",
+          "url": "https://36kr.com/p/3865001641006081?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "“千帆星座”建设与运营主体垣信卫星启动新一轮融资",
-          "description": "中国低轨卫星互联网星座“千帆星座”主体垣信卫星开启新一轮融资，拟募资不超20%股权，加速星座部署与商业化。",
-          "url": "https://36kr.com/newsflashes/3864068382053636?f=rss",
+          "title": "韩国将要求所有上市公司披露库存股详情",
+          "description": "韩国金融监管机构要求所有上市公司披露库存股详细信息，并在购后一年内注销。",
+          "url": "https://36kr.com/newsflashes/3865375052993799?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "追觅踩下急刹车：从200个业务到四大赛道，硬科技公司如何避免“蒙眼狂奔”",
-          "description": "清洁电器头部企业追觅科技全面收缩战线，从200多个业务聚焦至四大赛道，反映硬科技公司在扩张与风险控制之间的战略调整。",
-          "url": "https://www.huxiu.com/article/4869153.html?f=rss",
+          "title": "赢创计划全球裁员3200人",
+          "description": "赢创宣布延长增效计划，拟全球裁员约3200人，其中德国本土约2150人，中国区包含在内。",
+          "url": "https://36kr.com/p/3864065855706120?f=rss",
           "stars": null,
           "id": 10
         }
@@ -155,37 +155,37 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "Caching for Dollars, Not Hits: An Exact Offline Reference for Cloud-Egress Caching and the Crossover That Decides When It Pays",
-          "description": "提出一种针对云对象存储出口成本的精确离线缓存新范式，优化目标从命中率转向成本效益。",
-          "url": "https://arxiv.org/pdf/2606.20539v1",
+          "title": "IMAGIN-4D: Image-Guided Controllable Interaction Generation",
+          "description": "提出从单张图像引导生成可控的人-物交互运动的方法，适用于角色动画、机器人、AR/VR和具身AI。",
+          "url": "https://arxiv.org/pdf/2606.23675v1",
           "stars": null,
           "id": 1
         },
         {
-          "title": "Execution-State Capsules: Graph-Bound Execution-State Checkpoint and Restore for Low-Latency, Small-Batch, On-Device Physical-AI Serving",
-          "description": "引入执行状态胶囊机制，实现低延迟、小批量、设备端物理AI服务的图绑定检查点与恢复。",
-          "url": "https://arxiv.org/pdf/2606.20537v1",
+          "title": "PsyBridge: A Hybrid Intelligent Framework for Multi-Dimensional Mental Health Assessment and Decision Support",
+          "description": "提出混合智能框架，整合多维度心理健康评估与决策支持，提高可解释性和多维度集成能力。",
+          "url": "https://arxiv.org/pdf/2606.23673v1",
           "stars": null,
           "id": 2
         },
         {
-          "title": "StylisticBias: A Few Human Visual Cues Drive Most Social Biases in MLLMs",
-          "description": "揭示多模态大语言模型中少数视觉线索导致大部分社会偏见的现象。",
-          "url": "https://arxiv.org/pdf/2606.20527v1",
+          "title": "Statistical Proof as a Window into Human-AI Collaboration: Practical Insights and a Community Agenda",
+          "description": "探讨大语言模型在专家认知工作中的协作影响，分析人类专业知识应如何适应AI辅助的统计证明过程。",
+          "url": "https://arxiv.org/pdf/2606.23666v1",
           "stars": null,
           "id": 3
         },
         {
-          "title": "Efficient and Sound Probabilistic Verification for AI Agents",
-          "description": "提出一种高效且可靠的概率验证方法，用于保障AI代理在复杂数字环境中的安全性。",
-          "url": "https://arxiv.org/pdf/2606.20510v1",
+          "title": "MAS-PromptBench: When Does Prompt Optimization Improve Multi-Agent LLM Systems?",
+          "description": "系统研究提示优化对多智能体大语言模型系统性能的影响，提出评估基准和分析框架。",
+          "url": "https://arxiv.org/pdf/2606.23664v1",
           "stars": null,
           "id": 4
         },
         {
-          "title": "How Fragile Are Training-Free AI-Generated Image Detectors? A Controlled Audit of Score Direction, Preprocessing, and Compression",
-          "description": "对免训练AI生成图像检测器进行受控审计，评估其在分数方向、预处理和压缩下的脆弱性。",
-          "url": "https://arxiv.org/pdf/2606.20488v1",
+          "title": "AI Exposure Scores: what they measure, what they miss, and what comes next",
+          "description": "批判性分析GPTs暴露度分数在评估AI对工作影响时的度量局限，并展望未来研究方向。",
+          "url": "https://arxiv.org/pdf/2606.23633v1",
           "stars": null,
           "id": 5
         }
@@ -195,42 +195,42 @@
       "name": "AI 开源项目",
       "items": [
         {
-          "title": "deer-flow",
-          "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates with sandboxes, memories, tools, and subagents.",
-          "url": "https://github.com/bytedance/deer-flow",
-          "stars": 72879,
+          "title": "netdata/netdata",
+          "description": "AI-powered full stack observability platform for lean teams.",
+          "url": "https://github.com/netdata/netdata",
+          "stars": 79369,
           "id": 1
         },
         {
-          "title": "OpenBB",
+          "title": "OpenBB-finance/OpenBB",
           "description": "Financial data platform for analysts, quants and AI agents.",
           "url": "https://github.com/OpenBB-finance/OpenBB",
-          "stars": 69529,
+          "stars": 69558,
           "id": 2
         },
         {
-          "title": "pi",
-          "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI.",
+          "title": "earendil-works/pi",
+          "description": "AI agent toolkit with unified LLM API, agent loop, TUI and coding agent CLI.",
           "url": "https://github.com/earendil-works/pi",
-          "stars": 64583,
+          "stars": 64850,
           "id": 3
         },
         {
-          "title": "crewAI",
-          "description": "Framework for orchestrating role-playing, autonomous AI agents that collaborate seamlessly.",
-          "url": "https://github.com/crewAIInc/crewAI",
-          "stars": 54116,
+          "title": "sansan0/TrendRadar",
+          "description": "AI-driven public opinion and trend monitor with multi-platform aggregation and smart alerts.",
+          "url": "https://github.com/sansan0/TrendRadar",
+          "stars": 59806,
           "id": 4
         },
         {
-          "title": "goose",
-          "description": "An open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM.",
-          "url": "https://github.com/aaif-goose/goose",
-          "stars": 50016,
+          "title": "upstash/context7",
+          "description": "Platform providing up-to-date code documentation for LLMs and AI code editors.",
+          "url": "https://github.com/upstash/context7",
+          "stars": 57889,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-06-22T16:54:04.404+08:00"
+  "updatedAt": "2026-06-23T14:43:42.452+08:00"
 }
