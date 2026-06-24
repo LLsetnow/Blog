@@ -1,76 +1,76 @@
 {
-  "date": "2026-06-23",
+  "date": "2026-06-24",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "刚注册就成独角兽，具身创企昆仑行90天融资数十亿元｜36氪独家",
-          "description": "昆仑行机器人注册不到90天完成3轮融资，估值超十亿美元，成为具身智能独角兽，聚焦AI落地终端——机器人。",
-          "url": "https://36kr.com/p/3865188719121668?f=rss",
+          "title": "主题演讲：全密态计算，破解AI时代的数据安全难题 | 36氪WAVES2026新浪潮",
+          "description": "探讨全密态计算技术在AI时代如何解决数据安全挑战，属于AI安全方向的技术方案。",
+          "url": "https://36kr.com/p/3866604451845377?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "从用户决策到Agent参与，值得买科技分享AI时代品牌经营新课题",
-          "description": "值得买科技在WAVES大会上分享AI Agent时代消费决策链路的变化，以及品牌营销的一线实践经验。",
-          "url": "https://36kr.com/p/3865177262101513?f=rss",
+          "title": "微信AI助手小微，还有许多做不到的事情｜产品观察",
+          "description": "对微信内测的AI助手“小微”进行实测，该助手基于自研WeLM模型，部分调用DeepSeek，涉及大模型应用和产品体验。",
+          "url": "https://36kr.com/p/3865425714795525?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "硬氪首发 | 快手系AI芯片公司再融资数亿，销量近十万颗，视频压缩性能超英伟达",
-          "description": "凌川科技完成数亿元A+轮融资，其AI芯片在视频压缩性能上超越英伟达，销量近十万颗。",
-          "url": "https://36kr.com/p/3865136165344516?f=rss",
+          "title": "36氪首发 | 同济博士从建筑机器人转战煤矿，押注辅助作业的“结构性蓝海”",
+          "description": "矿山机器人公司随擎机器人完成融资，核心产品为煤矿井下辅助作业机器人，涉及AI和机器人技术在工业场景的应用。",
+          "url": "https://36kr.com/p/3866531692844034?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "36氪首发 | 龚虹嘉、陆奇、海外资本下注，北大团队用肌电腕带做新一代数采终端",
-          "description": "雪梦未来获龚虹嘉、陆奇等投资，利用sEMG肌电信号解码技术和自研AI模型构建新一代数据采集终端。",
-          "url": "https://36kr.com/p/3865125383443463?f=rss",
+          "title": "专访火山引擎谭待：模型好对MaaS是最重要的事，豆包2.1算「上牌桌」了",
+          "description": "火山引擎总裁谭待分享MaaS（模型即服务）战略，豆包2.1模型在性能上的进展，属于大模型服务与技术前沿。",
+          "url": "https://36kr.com/p/3865912900588548?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "8点1氪丨SpaceX跌破IPO首日收盘价，市值蒸发4000亿美元；英国首相斯塔默宣布辞职；SK海力士市值首超三星电子",
-          "description": "三星电子向韩国所有员工开放ChatGPT和Codex；港股智谱暴涨，总市值突破1万亿港元。",
-          "url": "https://36kr.com/p/3865001641006081?f=rss",
+          "title": "即梦AI上线Seedance 2.0 VIP原生4K版本",
+          "description": "即梦AI（字节旗下）视频生成模型Seedance 2.0支持原生4K输出，提升画面细节与光影表现，属于AIGC视频生成技术。",
+          "url": "https://36kr.com/newsflashes/3866757394093312?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "映界科技：一支00后团队的空间智能“赌注” | 水下项目",
-          "description": "映界科技成立不到三个月，致力于解决具身智能的感知瓶颈，让机器人理解物理环境、推理空间关系。",
-          "url": "https://36kr.com/p/3864071269569540?f=rss",
+          "title": "伴侣机器人真的来了",
+          "description": "优必选推出全尺寸超仿真情感陪伴机器人，7天预售3821台，涉及人形机器人、情感AI等技术。",
+          "url": "https://www.huxiu.com/article/4868443.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "火山引擎总裁谭待：字节内部已大规模落地AI Coding生产流程",
-          "description": "火山引擎总裁披露字节跳动已大规模落地AI Coding，豆包2.1Pro跨过生产级生成门槛。",
-          "url": "https://36kr.com/newsflashes/3865364540331271?f=rss",
+          "title": "Claude 刚刚上线“群聊Agent”：Karpathy盛赞的交互新范式，还是打工人的“数字监工”?",
+          "description": "Anthropic为Claude上线群聊Agent功能（Claude Tag），用户可通过Slack @Claude进行交互，是LLM应用的新范式。",
+          "url": "https://www.huxiu.com/article/4869812.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "AI音乐时代，唱片公司未来十年会变成什么？",
-          "description": "美国三大唱片公司起诉AI音乐公司Suno和Udio，探讨AI音乐生成对唱片业的冲击与未来。",
-          "url": "https://www.huxiu.com/article/4869506.html?f=rss",
+          "title": "对话蚂蚁吴伟：训推一体池化调度，如何把GPU用到极限",
+          "description": "蚂蚁集团技术专家分享大模型训练与推理的训推一体池化调度方案，旨在最大化GPU利用率，属于机器学习系统优化。",
+          "url": "https://www.huxiu.com/article/4869799.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "AI大厂开抢电影节编制",
-          "description": "海螺AI成为上海国际电影节独家AI影像战略伙伴，中国AI视频模型首次进入电影节体系。",
-          "url": "https://www.huxiu.com/article/4869504.html?f=rss",
+          "title": "AI × OPC的新可能：一个人，就是一支队伍｜2026WAVES",
+          "description": "圆桌论坛探讨AI时代一人公司（OPC）的生态，涉及AI工具如何赋能个人高效创业和工作，属于AI应用趋势。",
+          "url": "https://36kr.com/p/3866649515938825?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "比叫板马斯克更精彩的，是他背后那些敢赌敢拼的事",
-          "description": "武汉老板黄立研发出65000通道脑机接口芯片，远超马斯克Neuralink的3000通道，属AI脑机接口技术。",
-          "url": "https://www.huxiu.com/article/4869190.html?f=rss",
+          "title": "生物学的编程语言来了：Proto，让科学家像写代码一样设计生命",
+          "description": "介绍Proto语言，它结合AI模型（蛋白质设计、RNA工程等）实现生物系统编程，是AI与合成生物学交叉的前沿技术。",
+          "url": "https://www.huxiu.com/article/4869813.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "日韩股市集体收跌，韩国综指大跌近10%",
-          "description": "日经225指数收跌3.55%，韩国综指收跌9.99%，市场大幅下挫。",
-          "url": "https://36kr.com/newsflashes/3865388056728832?f=rss",
+          "title": "创业板指创年内最大跌幅，失守4200点整数关口",
+          "description": "6月24日创业板指大幅下挫，创年内最大跌幅，市场情绪低迷。",
+          "url": "https://36kr.com/p/3866428592657411",
           "stars": null,
           "id": 1
         },
         {
           "title": "沪深两市成交额突破3万亿元",
-          "description": "沪深两市成交额突破3万亿元，较上一日缩量超3000亿元。",
-          "url": "https://36kr.com/newsflashes/3865377883739393?f=rss",
+          "description": "两市成交额继续维持高位，较上一日缩量超1500亿元。",
+          "url": "https://36kr.com/newsflashes/3866807249065216",
           "stars": null,
           "id": 2
         },
         {
-          "title": "创业板指跌超4%",
-          "description": "创业板指跌超4%，深成指跌3.32%，沪指跌1.56%，有色金属、盐湖提锂等板块跌幅居前。",
-          "url": "https://36kr.com/newsflashes/3865373485257729?f=rss",
+          "title": "新股N臻宝涨幅扩大至1207%，触发临时停牌",
+          "description": "新股上市首日暴涨，盘中触发临时停牌机制。",
+          "url": "https://36kr.com/newsflashes/3866801389163523",
           "stars": null,
           "id": 3
         },
         {
-          "title": "恒生科技指数跌超3%",
-          "description": "港股午后扩大跌幅，恒生科技指数跌超3%，恒生指数跌1.7%。",
-          "url": "https://36kr.com/newsflashes/3865358623396870?f=rss",
+          "title": "券商暂停股票类跨境TRS新增，后续业务规模或将逐步归零",
+          "description": "监管要求券商暂停股票类跨境收益互换新增规模，存量头寸可正常到期。",
+          "url": "https://36kr.com/newsflashes/3866759427527940",
           "stars": null,
           "id": 4
         },
         {
-          "title": "刚注册就成独角兽，具身创企昆仑行90天融资数十亿元",
-          "description": "昆仑行机器人注册不到90天完成3轮融资，累计数十亿元，估值超十亿美元，成为具身智能独角兽。",
-          "url": "https://36kr.com/p/3865188719121668?f=rss",
+          "title": "国家广播电视总局：微短剧按投资额度等分类实行备案公示和发行许可制度",
+          "description": "微短剧管理办法征求意见，分类备案管理，加强内容监管。",
+          "url": "https://36kr.com/newsflashes/3866778662376704",
           "stars": null,
           "id": 5
         },
         {
-          "title": "快手系AI芯片公司再融资数亿，销量近十万颗，视频压缩性能超英伟达",
-          "description": "人工智能芯片公司凌川科技完成数亿元A+轮融资，其视频压缩性能超越英伟达，销量近十万颗。",
-          "url": "https://36kr.com/p/3865136165344516?f=rss",
+          "title": "英伟达压PCB降价10%？胜宏科技：经营正常，客户方案调整是正常现象",
+          "description": "PCB板块大跌源于传闻，胜宏科技回应称公司经营正常。",
+          "url": "https://36kr.com/newsflashes/3866762464334849",
           "stars": null,
           "id": 6
         },
         {
-          "title": "龚虹嘉、陆奇、海外资本下注，北大团队用肌电腕带做新一代数采终端",
-          "description": "北大背景团队雪梦未来获得龚虹嘉、陆奇及海外机构投资，开发神经腕带及AI解码模型。",
-          "url": "https://36kr.com/p/3865125383443463?f=rss",
+          "title": "SK海力士市值超三星，负债才是世界上最好的护城河？",
+          "description": "SK海力士市值超越三星，反映存储芯片行业格局变化。",
+          "url": "https://www.huxiu.com/article/4869835",
           "stars": null,
           "id": 7
         },
         {
-          "title": "SpaceX跌破IPO首日收盘价，市值蒸发4000亿美元",
-          "description": "SpaceX股价跌破上市首日收盘价，市值蒸发约4000亿美元；纳指收跌1.3%。",
-          "url": "https://36kr.com/p/3865001641006081?f=rss",
+          "title": "仙工智能港股上市：暗盘破发7%，首日冲高38%后回落",
+          "description": "仙工智能在港交所上市，盘中振幅巨大，最终收涨13.88%。",
+          "url": "https://36kr.com/p/3866666733835522",
           "stars": null,
           "id": 8
         },
         {
-          "title": "韩国将要求所有上市公司披露库存股详情",
-          "description": "韩国金融监管机构要求所有上市公司披露库存股详细信息，并在购后一年内注销。",
-          "url": "https://36kr.com/newsflashes/3865375052993799?f=rss",
+          "title": "农业农村部：6月24日全国农产品批发市场猪肉平均价格为14.50元/公斤",
+          "description": "猪肉价格小幅上升，反映农产品市场动态。",
+          "url": "https://36kr.com/newsflashes/3866798458131457",
           "stars": null,
           "id": 9
         },
         {
-          "title": "赢创计划全球裁员3200人",
-          "description": "赢创宣布延长增效计划，拟全球裁员约3200人，其中德国本土约2150人，中国区包含在内。",
-          "url": "https://36kr.com/p/3864065855706120?f=rss",
+          "title": "上交所向沪市公司发出“提质增效重回报”2.0专项行动公开倡议",
+          "description": "上交所引导上市公司提升质量，加强投资者回报。",
+          "url": "https://36kr.com/p/3866428592657411",
           "stars": null,
           "id": 10
         }
@@ -155,37 +155,37 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "IMAGIN-4D: Image-Guided Controllable Interaction Generation",
-          "description": "提出从单张图像引导生成可控的人-物交互运动的方法，适用于角色动画、机器人、AR/VR和具身AI。",
-          "url": "https://arxiv.org/pdf/2606.23675v1",
+          "title": "BenchX: Benchmarking AI Models for Cancer Detection and Localization with Demographic and Protocol Biases",
+          "description": "提出了一个用于评估AI模型在癌症检测和定位中受人口统计和协议偏差影响的基准框架。",
+          "url": "https://arxiv.org/pdf/2606.24883v1",
           "stars": null,
           "id": 1
         },
         {
-          "title": "PsyBridge: A Hybrid Intelligent Framework for Multi-Dimensional Mental Health Assessment and Decision Support",
-          "description": "提出混合智能框架，整合多维度心理健康评估与决策支持，提高可解释性和多维度集成能力。",
-          "url": "https://arxiv.org/pdf/2606.23673v1",
+          "title": "First-Order Recoverability Collapse in Self-Referential Information Decoders",
+          "description": "研究了自适应系统中自我指涉信息解码器的一阶可恢复性崩溃现象，从热力学角度建模信息处理。",
+          "url": "https://arxiv.org/pdf/2606.24861v1",
           "stars": null,
           "id": 2
         },
         {
-          "title": "Statistical Proof as a Window into Human-AI Collaboration: Practical Insights and a Community Agenda",
-          "description": "探讨大语言模型在专家认知工作中的协作影响，分析人类专业知识应如何适应AI辅助的统计证明过程。",
-          "url": "https://arxiv.org/pdf/2606.23666v1",
+          "title": "OpenThoughts-Agent: Data Recipes for Agentic Models",
+          "description": "探讨了如何为智能体语言模型策划训练数据，提出了用于广泛能力智能体的数据配方。",
+          "url": "https://arxiv.org/pdf/2606.24855v1",
           "stars": null,
           "id": 3
         },
         {
-          "title": "MAS-PromptBench: When Does Prompt Optimization Improve Multi-Agent LLM Systems?",
-          "description": "系统研究提示优化对多智能体大语言模型系统性能的影响，提出评估基准和分析框架。",
-          "url": "https://arxiv.org/pdf/2606.23664v1",
+          "title": "It's Complicated: On the Design and Evaluation of AI-Powered AAC Interfaces",
+          "description": "讨论了AI增强的辅助与替代通信接口的设计和评估复杂性。",
+          "url": "https://arxiv.org/pdf/2606.24854v1",
           "stars": null,
           "id": 4
         },
         {
-          "title": "AI Exposure Scores: what they measure, what they miss, and what comes next",
-          "description": "批判性分析GPTs暴露度分数在评估AI对工作影响时的度量局限，并展望未来研究方向。",
-          "url": "https://arxiv.org/pdf/2606.23633v1",
+          "title": "Grading the Grader: Lessons from Evaluating an Agentic Data Analysis System",
+          "description": "分享了对智能体数据分析系统进行评估的经验和教训，强调了其输出的复杂性。",
+          "url": "https://arxiv.org/pdf/2606.24839v1",
           "stars": null,
           "id": 5
         }
@@ -196,41 +196,41 @@
       "items": [
         {
           "title": "netdata/netdata",
-          "description": "AI-powered full stack observability platform for lean teams.",
+          "description": "AI-powered full stack observability platform for real-time monitoring and troubleshooting.",
           "url": "https://github.com/netdata/netdata",
-          "stars": 79369,
+          "stars": 79386,
           "id": 1
         },
         {
           "title": "OpenBB-finance/OpenBB",
-          "description": "Financial data platform for analysts, quants and AI agents.",
+          "description": "Financial data platform with AI agent support for analysts and quants.",
           "url": "https://github.com/OpenBB-finance/OpenBB",
-          "stars": 69558,
+          "stars": 69601,
           "id": 2
         },
         {
           "title": "earendil-works/pi",
-          "description": "AI agent toolkit with unified LLM API, agent loop, TUI and coding agent CLI.",
+          "description": "AI agent toolkit providing unified LLM API, agent loop, TUI, and coding agent CLI.",
           "url": "https://github.com/earendil-works/pi",
-          "stars": 64850,
+          "stars": 65175,
           "id": 3
         },
         {
           "title": "sansan0/TrendRadar",
           "description": "AI-driven public opinion and trend monitor with multi-platform aggregation and smart alerts.",
           "url": "https://github.com/sansan0/TrendRadar",
-          "stars": 59806,
+          "stars": 59840,
           "id": 4
         },
         {
           "title": "upstash/context7",
-          "description": "Platform providing up-to-date code documentation for LLMs and AI code editors.",
+          "description": "Platform delivering up-to-date code documentation for LLMs and AI code editors.",
           "url": "https://github.com/upstash/context7",
-          "stars": 57889,
+          "stars": 57947,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-06-23T14:43:42.452+08:00"
+  "updatedAt": "2026-06-24T14:41:02.202+08:00"
 }
