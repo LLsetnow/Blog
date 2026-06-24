@@ -2,9 +2,8 @@ name: Daily News Fetch & Deploy
 
 on:
   schedule:
-    # 11 AM Beijing time (UTC+8) = 3 AM UTC
     - cron: '0 3 * * *'
-  workflow_dispatch:       # Allow manual trigger
+  workflow_dispatch:
 
 jobs:
   fetch-and-deploy:
@@ -71,3 +70,16 @@ jobs:
           rsync -rlgoDzvc --delete \
             -e "ssh -i ~/.ssh/deploy_key" \
             dist/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:/var/www/blog/
+
+      - name: Delete old artifacts (keep last 3)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "清理旧artifact，保留最近3个..."
+          gh api /repos/${{ github.repository }}/actions/artifacts --paginate --jq '.artifacts | sort_by(.created_at) | reverse | .[3:] | .[].id' | while read id; do
+            if [ -n "$id" ]; then
+              echo "删除 artifact: $id"
+              gh api -X DELETE /repos/${{ github.repository }}/actions/artifacts/$id --silent
+            fi
+          done
+          echo "清理完成！"
