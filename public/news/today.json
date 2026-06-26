@@ -1,76 +1,76 @@
 {
-  "date": "2026-06-25",
+  "date": "2026-06-26",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "OpenAI首颗自研芯片“辣椒”问世：9个月光速成功背后，英伟达最怕的事正在发生",
-          "description": "OpenAI发布了其首颗自研智能处理器Jalapeño，专为大模型推理设计，标志着AI芯片领域的重要突破。",
-          "url": "https://www.huxiu.com/article/4870156.html?f=rss",
+          "title": "中科闻歌开盘暴涨81%，北京再增一家硬科技IPO",
+          "description": "6月26日，中科闻歌在港交所上市，开盘涨81.2%，市值190亿港元。该公司专注于AI和大数据领域，是硬科技代表。",
+          "url": "https://36kr.com/p/3869622921041156?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "Midjourney 的第一款AI 硬件",
-          "description": "AI图像生成公司Midjourney推出其首款AI硬件产品，拓展了AIGC从软件到硬件的边界。",
-          "url": "https://www.huxiu.com/article/4870143.html?f=rss",
+          "title": "戴宗宏和他的「工业世界模型」：一人两周，干完百人级定制化“累活”",
+          "description": "基点起源CEO戴宗宏利用AI工业世界模型，实现高效定制化服务，已在手订单数千万元，展示了AI对B端定制化业务的颠覆。",
+          "url": "https://36kr.com/p/3869445453305090?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "车企Agent 的新战事：先赢一局，再谈颠覆",
-          "description": "探讨AI Agent技术在汽车行业的落地应用，以及如何通过小场景实现价值闭环。",
-          "url": "https://www.huxiu.com/article/4870169.html?f=rss",
+          "title": "布局下一代人机交互与具身数据入口，「念象科技」完成近千万元天使轮融资",
+          "description": "专注非侵入式神经接口技术的念象科技完成天使轮融资，其腕戴式产品Omniband旨在构建sEMG数据集，推动人机交互与具身智能。",
+          "url": "https://36kr.com/p/3867943030395913?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "氪星晚报 ｜豆包专业版正式上线",
-          "description": "字节跳动旗下大模型产品豆包专业版正式上线，采用三级阶梯定价方案，推动AIGC商业应用。",
-          "url": "https://36kr.com/p/3867032586867972?f=rss",
+          "title": "OpenAI发布首款AI芯片",
+          "description": "在36氪早报中提及，OpenAI发布了其首款AI芯片，标志着其向硬件领域扩展，进一步强化AI基础设施。",
+          "url": "https://36kr.com/p/3869243269387269?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "峰瑞资本创始合伙人李丰：从资本与流动性视角，看当前AI产业所处周期阶段",
-          "description": "从资本角度分析AI产业当前的发展周期，探讨技术从概念到深水区的演变。",
-          "url": "https://36kr.com/p/3868045479711745?f=rss",
+          "title": "Anthropic进一步抢占OpenAI市场份额：付费收入和用户持续增长",
+          "description": "Anthropic的Claude模型付费用户和收入逐月增长，自2026年1月以来该细分市场收入增长了约...，显示出AI模型市场竞争加剧。",
+          "url": "https://36kr.com/newsflashes/3869577931740417?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "主题圆桌：当所有人都看到泡沫，机器人何时走入真实场景 | 36氪WAVES2026新浪潮",
-          "description": "行业圆桌讨论机器人在真实场景中的落地问题，涉及AI技术实际应用挑战。",
-          "url": "https://36kr.com/p/3867998907667462?f=rss",
+          "title": "DeepSeek发布招聘信息，计划所有部门规模扩大至少一倍，加码Harness人才布局",
+          "description": "DeepSeek计划大幅扩招，重点布局Harness（AI模型辅助系统）人才，旨在提升模型工具调用和数据访问能力。",
+          "url": "https://www.huxiu.com/article/4870572.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "光源资本创始人&CEO、L2F光源创业者基金创始合伙人郑烜乐：拥抱技术爆炸的黎明，AI与未来科技时代的早期投资范式",
-          "description": "分享AI和未来科技时代的早期投资逻辑，聚焦技术爆炸带来的机遇。",
-          "url": "https://36kr.com/p/3866562600227847?f=rss",
+          "title": "小鹏机器人调整：新设九部门，何小鹏兼任产品部负责人",
+          "description": "小鹏机器人中心新设九个二级部门，何小鹏兼任产品部负责人，直接听取具身系统工程、通用基座等部门汇报，加速具身智能布局。",
+          "url": "https://36kr.com/newsflashes/3869565333836805?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "当AI从工具变为“类人”，管理为何更加重要？复旦管院两岸菁英论坛共议产业机遇与时代挑战",
-          "description": "讨论AI从工具向类人智能体演进过程中，管理理论与实践面临的变革。",
-          "url": "https://www.huxiu.com/article/4870153.html?f=rss",
+          "title": "从需求到设计到代码，一个软件全搞定，TRAE Work Design实测来了",
+          "description": "TRAE Work Design是一款AI设计工具，能够从需求到设计再到代码全流程完成，实测表明其提升了设计效率和品牌一致性。",
+          "url": "https://www.huxiu.com/article/4870547.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "AI只是路径，让真实用户声音直达品牌",
-          "description": "探讨AI技术如何帮助企业直接获取用户真实需求，重塑品牌与消费者关系。",
-          "url": "https://www.huxiu.com/article/4870072.html?f=rss",
+          "title": "高考志愿填报，正在变成AI的主场",
+          "description": "百度已有1500万人使用其AI志愿助手填报志愿，AI在高考志愿填报场景中发挥重要作用，替代传统人工咨询。",
+          "url": "https://36kr.com/p/3868502221018370?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "专访美图CPO : 古典产品经理将在AI时代迎来新生",
-          "description": "美图首席产品官访谈，讨论AI时代产品经理的角色变化及产品创新思路。",
-          "url": "https://www.huxiu.com/article/4870149.html?f=rss",
+          "title": "三大运营商的“Token生意经”",
+          "description": "在MWC26上海论坛上，三大运营商探讨从流量经营转向Token经营，拥抱AI驱动的新商业模式，Token成为AI服务计费新单位。",
+          "url": "https://www.huxiu.com/article/4870557.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "券商暂停股票类跨境TRS新增",
-          "description": "券商暂停股票类跨境TRS新增，后续业务规模或将逐步归零。",
-          "url": "https://36kr.com/p/3867827741086728?f=rss",
+          "title": "中科闻歌开盘暴涨81%，北京再增一家硬科技IPO",
+          "description": "6月26日，中科闻歌在港交所主板上市，开盘涨81.2%，市值190亿港元，成为硬科技领域又一重要IPO。",
+          "url": "https://36kr.com/p/3869622921041156?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "SK海力士已提交美国IPO申请",
-          "description": "SK海力士已向美国提交IPO申请，全球半导体巨头加速资本市场布局。",
-          "url": "https://36kr.com/p/3867827741086728?f=rss",
+          "title": "历经13年，二手车交易平台大搜车终于登陆纳斯达克",
+          "description": "大搜车成为2026年首家赴美上市的中国企业，发行300万份ADS，标志中国企业海外上市继续。",
+          "url": "https://36kr.com/p/3869474592363528?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "霍尔木兹海峡对商船完全开放60天，国际油价下跌",
-          "description": "霍尔木兹海峡对商船完全开放60天，国际油价应声下跌，地缘政治缓和影响能源市场。",
-          "url": "https://36kr.com/p/3867827741086728?f=rss",
+          "title": "建设银行：将于7月24日日终清算时起关闭代理上海黄金交易所个人贵金属交易业务功能",
+          "description": "建设银行宣布关闭个人贵金属交易业务，体现金融监管严格化趋势。",
+          "url": "https://36kr.com/p/3869243269387269?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "消息称苹果将于7月量产首款可折叠iPhone",
-          "description": "消息称苹果计划于7月下旬量产首款可折叠iPhone，消费电子行业迎来新变量。",
-          "url": "https://36kr.com/p/3867827741086728?f=rss",
+          "title": "意大利反垄断机构对微软展开调查",
+          "description": "意大利反垄断机构因微软在Microsoft 365订阅中自动接入AI工具且未充分告知消费者展开调查，涉及不正当商业行为。",
+          "url": "https://36kr.com/newsflashes/3869645779522821?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "恒生指数跌破23000点",
-          "description": "香港恒生指数跌破23000点关口，为2025年6月以来首次，日内跌幅扩大至1.77%。",
-          "url": "https://36kr.com/newsflashes/3868168679068936?f=rss",
+          "title": "沪深两市成交额超3万亿",
+          "description": "沪深两市当日成交额突破3万亿元，显示市场交投活跃。",
+          "url": "https://36kr.com/newsflashes/3869605119480834?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "沪深两市成交额超3万亿",
-          "description": "沪深两市成交额超3万亿，较上一日此时放量超2800亿，市场交投活跃。",
-          "url": "https://36kr.com/newsflashes/3868187699467522?f=rss",
+          "title": "美光的好财报，黄金的坏消息",
+          "description": "存储巨头美光科技发布2026财年第三财季财报，收入415亿美元，环比增长74%，同比增长346%，连续第五个季度刷新纪录，毛利率84.9%。",
+          "url": "https://36kr.com/p/3868523068298499?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "建设银行将关闭代理上海黄金交易所个人贵金属交易业务",
-          "description": "建设银行公告将于7月24日日终清算时起关闭代理上金所个人贵金属交易业务，涉及多个品种。",
-          "url": "https://36kr.com/newsflashes/3868215003337731?f=rss",
+          "title": "港股智谱股价跌破2000港元",
+          "description": "港股智谱股价跌破2000港元，跌幅超15%，反映AI股市场波动。",
+          "url": "https://36kr.com/newsflashes/3869635242808327?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "中汽协：5月中国品牌乘用车共销售168.9万辆",
-          "description": "2026年5月中国品牌乘用车销售168.9万辆，同比增长4.2%，市占率达75%。",
-          "url": "https://36kr.com/newsflashes/3868173402330115?f=rss",
+          "title": "Anthropic进一步抢占OpenAI市场份额：付费收入和用户持续增长",
+          "description": "人工智能企业Anthropic的Claude模型付费用户和收入逐月增长，自2026年1月以来收入增长约，显示AI竞争加剧。",
+          "url": "https://36kr.com/newsflashes/3869577931740417?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "寒武纪成交额达200亿元",
-          "description": "寒武纪成交额达200亿元，现涨4.13%，AI芯片概念股受资金追捧。",
-          "url": "https://36kr.com/newsflashes/3868181438059522?f=rss",
+          "title": "DeepSeek发布招聘信息，计划所有部门规模扩大至少一倍",
+          "description": "DeepSeek计划大规模扩招，加码Harness人才布局，体现AI人才竞争白热化。",
+          "url": "https://www.huxiu.com/article/4870572.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "OpenAI首颗自研芯片“辣椒”问世",
-          "description": "OpenAI史上第一颗自研芯片Jalapeño（辣椒）诞生，专为大模型推理设计，从流片到成功仅用9个月。",
-          "url": "https://www.huxiu.com/article/4870156.html?f=rss",
+          "title": "三大运营商的“Token生意经”",
+          "description": "中国电信、移动、联通在MWC论坛上转向Token经营，从流量经营到AI算力经营，反映运营商战略转型。",
+          "url": "https://www.huxiu.com/article/4870557.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -155,37 +155,37 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "Real-Time Voice AI Hears but Does Not Listen",
-          "description": "Evaluates four leading real-time voice AI systems on their ability to process vocal delivery beyond words.",
-          "url": "https://arxiv.org/pdf/2606.26083v1",
+          "title": "CHIA: An open-source framework for principled, agentic AI-driven hardware/software co-design research",
+          "description": "提出了一种基于代理AI的开源框架，用于硬件/软件协同设计研究，涵盖计算机架构、系统、编译器和VLSI等领域。",
+          "url": "https://arxiv.org/pdf/2606.27350v1",
           "stars": null,
           "id": 1
         },
         {
-          "title": "Same Evidence, Different Answer: Auditing Order Sensitivity in Multimodal Large Language Models",
-          "description": "Investigates how shuffling input order affects answers in multimodal LLMs, revealing reliability issues.",
-          "url": "https://arxiv.org/pdf/2606.26079v1",
+          "title": "Jet impingement cooling with multi-stage ducted electroaerodynamic actuators",
+          "description": "研究多级管道电空气动力致动器用于射流冲击冷却，以解决高性能移动电子设备的热管理挑战。",
+          "url": "https://arxiv.org/pdf/2606.27338v1",
           "stars": null,
           "id": 2
         },
         {
-          "title": "The Unfireable Safety Kernel: Execution-Time AI Alignment for AI Agents and Other Escapable AI Systems",
-          "description": "Proposes a safety kernel for AI agents that enforces alignment at execution time, independent of the agent's runtime.",
-          "url": "https://arxiv.org/pdf/2606.26057v1",
+          "title": "AI Healthcare Chatbots as Information Infrastructure: A Large-Scale Study of User-Reported Breakdowns",
+          "description": "对超过15,000个AI医疗健康聊天机器人的用户报告故障进行了大规模研究，分析了其性能和影响。",
+          "url": "https://arxiv.org/pdf/2606.27302v1",
           "stars": null,
           "id": 3
         },
         {
-          "title": "AI translation of literary texts is 'fine', but readers still prefer human translations",
-          "description": "Compares reader experience of AI vs. human literary translations, finding AI adequate but less immersive.",
-          "url": "https://arxiv.org/pdf/2606.26040v1",
+          "title": "Generative Models on Analog Hardware with Dynamics",
+          "description": "探索在模拟硬件（如耦合振荡器和伊辛机）上实现生成模型，利用其低能耗的动态特性。",
+          "url": "https://arxiv.org/pdf/2606.27294v1",
           "stars": null,
           "id": 4
         },
         {
-          "title": "Can Trustless Agents Be Trusted? An Empirical Study of the ERC-8004 Decentralized AI Agent Ecosystem",
-          "description": "Empirically studies trust in decentralized AI agents using the ERC-8004 standard for trustless transactions.",
-          "url": "https://arxiv.org/pdf/2606.26028v1",
+          "title": "Designing Reward Signals for Portable Query Generation: A Case Study in Industrial Semantic Job Search",
+          "description": "提出了一种基于RLAIF的端到端方法，用于生成可迁移的查询信号，并在工业语义职位搜索中进行了案例研究。",
+          "url": "https://arxiv.org/pdf/2606.27291v1",
           "stars": null,
           "id": 5
         }
@@ -195,42 +195,42 @@
       "name": "AI 开源项目",
       "items": [
         {
-          "title": "netdata/netdata",
-          "description": "AI-powered full stack observability platform for real-time monitoring",
+          "title": "netdata",
+          "description": "AI-powered full stack observability platform for lean teams.",
           "url": "https://github.com/netdata/netdata",
-          "stars": 79401,
+          "stars": 79414,
           "id": 1
         },
         {
-          "title": "OpenBB-finance/OpenBB",
-          "description": "Financial data platform for analysts, quants and AI agents",
-          "url": "https://github.com/OpenBB-finance/OpenBB",
-          "stars": 69648,
+          "title": "AppFlowy",
+          "description": "AI collaborative workspace that brings projects, wikis, and teams together.",
+          "url": "https://github.com/AppFlowy-IO/AppFlowy",
+          "stars": 72957,
           "id": 2
         },
         {
-          "title": "earendil-works/pi",
-          "description": "AI agent toolkit with unified LLM API, agent loop, TUI and coding agent CLI",
-          "url": "https://github.com/earendil-works/pi",
-          "stars": 65425,
+          "title": "crawl4ai",
+          "description": "Open-source LLM-friendly web crawler and scraper for AI applications.",
+          "url": "https://github.com/unclecode/crawl4ai",
+          "stars": 69654,
           "id": 3
         },
         {
-          "title": "sansan0/TrendRadar",
-          "description": "AI-driven public opinion and trend monitor with multi-platform aggregation and smart alerts",
-          "url": "https://github.com/sansan0/TrendRadar",
-          "stars": 59887,
+          "title": "oh-my-openagent",
+          "description": "Coding agent harness for complex codebases, optimized for token efficiency.",
+          "url": "https://github.com/code-yeongyu/oh-my-openagent",
+          "stars": 63651,
           "id": 4
         },
         {
-          "title": "zylon-ai/private-gpt",
-          "description": "Interact with documents using GPT, fully private with no data leaks",
-          "url": "https://github.com/zylon-ai/private-gpt",
-          "stars": 57291,
+          "title": "TrendRadar",
+          "description": "AI-driven public opinion and trend monitor with multi-platform aggregation and smart alerts.",
+          "url": "https://github.com/sansan0/TrendRadar",
+          "stars": 59926,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-06-25T14:43:28.180+08:00"
+  "updatedAt": "2026-06-26T14:48:42.505+08:00"
 }
