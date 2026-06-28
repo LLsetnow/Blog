@@ -1,76 +1,76 @@
 {
-  "date": "2026-06-26",
+  "date": "2026-06-28",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "中科闻歌开盘暴涨81%，北京再增一家硬科技IPO",
-          "description": "6月26日，中科闻歌在港交所上市，开盘涨81.2%，市值190亿港元。该公司专注于AI和大数据领域，是硬科技代表。",
-          "url": "https://36kr.com/p/3869622921041156?f=rss",
+          "title": "追赶FSD V14，理想在补哪些课？｜最前线",
+          "description": "文章讨论了智能驾驶行业从硬件竞赛转向端到端、VLA、世界模型等大模型技术路线的竞争，以及理想汽车在追赶FSD V14过程中需要补充的技术能力。",
+          "url": "https://36kr.com/p/3870292939658242?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "戴宗宏和他的「工业世界模型」：一人两周，干完百人级定制化“累活”",
-          "description": "基点起源CEO戴宗宏利用AI工业世界模型，实现高效定制化服务，已在手订单数千万元，展示了AI对B端定制化业务的颠覆。",
-          "url": "https://36kr.com/p/3869445453305090?f=rss",
+          "title": "美国即将允许Anthropic恢复其最新大模型Fable 5访问权限",
+          "description": "据报道，美国政府即将解除对Anthropic最新大模型Fable 5的出口管制，此前因国家安全原因被限制访问。",
+          "url": "https://36kr.com/newsflashes/3872423038080004?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "布局下一代人机交互与具身数据入口，「念象科技」完成近千万元天使轮融资",
-          "description": "专注非侵入式神经接口技术的念象科技完成天使轮融资，其腕戴式产品Omniband旨在构建sEMG数据集，推动人机交互与具身智能。",
-          "url": "https://36kr.com/p/3867943030395913?f=rss",
+          "title": "谷歌对Meta Gemini模型的使用设限，因人工智能需求紧张导致算力吃紧",
+          "description": "由于AI算力紧张，谷歌限制了Meta对Gemini模型的使用，揭示了大型模型间算力竞争的现状。",
+          "url": "https://36kr.com/newsflashes/3872321240700160?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "OpenAI发布首款AI芯片",
-          "description": "在36氪早报中提及，OpenAI发布了其首款AI芯片，标志着其向硬件领域扩展，进一步强化AI基础设施。",
-          "url": "https://36kr.com/p/3869243269387269?f=rss",
+          "title": "Nature: AI医生MIRA首次“全流程上岗”",
+          "description": "AI医生MIRA在Nature期刊上展示首次实现全流程自主医疗诊断，标志着医疗AI的重要进展。",
+          "url": "https://www.huxiu.com/article/4870997.html?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "Anthropic进一步抢占OpenAI市场份额：付费收入和用户持续增长",
-          "description": "Anthropic的Claude模型付费用户和收入逐月增长，自2026年1月以来该细分市场收入增长了约...，显示出AI模型市场竞争加剧。",
-          "url": "https://36kr.com/newsflashes/3869577931740417?f=rss",
+          "title": "省钱，我只服梁文锋",
+          "description": "DeepSeek创始人梁文锋挂名发表新论文《DSpark：基于置信度调度的推测解码与半自回归生成》，旨在优化推理效率、降低服务器成本。",
+          "url": "https://www.huxiu.com/article/4870983.html?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "DeepSeek发布招聘信息，计划所有部门规模扩大至少一倍，加码Harness人才布局",
-          "description": "DeepSeek计划大幅扩招，重点布局Harness（AI模型辅助系统）人才，旨在提升模型工具调用和数据访问能力。",
-          "url": "https://www.huxiu.com/article/4870572.html?f=rss",
+          "title": "太空算力的国产答案：用光子更高效，马斯克和老黄都太绕了",
+          "description": "探讨国产光子计算方案在太空AI算力竞赛中的优势，对比马斯克和英伟达的路线，提出光子计算更高效。",
+          "url": "https://www.huxiu.com/article/4870984.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "小鹏机器人调整：新设九部门，何小鹏兼任产品部负责人",
-          "description": "小鹏机器人中心新设九个二级部门，何小鹏兼任产品部负责人，直接听取具身系统工程、通用基座等部门汇报，加速具身智能布局。",
-          "url": "https://36kr.com/newsflashes/3869565333836805?f=rss",
+          "title": "本周AI 项目推荐：Link、Agentic Wallets、Token Pay......Token支付底座长啥样",
+          "description": "介绍与AI原生支付相关的新项目，包括Link、Agentic Wallets等，探讨Token支付基础设施的构建。",
+          "url": "https://www.huxiu.com/article/4870980.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "从需求到设计到代码，一个软件全搞定，TRAE Work Design实测来了",
-          "description": "TRAE Work Design是一款AI设计工具，能够从需求到设计再到代码全流程完成，实测表明其提升了设计效率和品牌一致性。",
-          "url": "https://www.huxiu.com/article/4870547.html?f=rss",
+          "title": "AI算力链，日本从头卡到尾",
+          "description": "深入分析日本在AI算力关键环节（如高端喷气织布机等）的垄断地位，揭示其对中国AI供应链的制约。",
+          "url": "https://www.huxiu.com/article/4870975.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "高考志愿填报，正在变成AI的主场",
-          "description": "百度已有1500万人使用其AI志愿助手填报志愿，AI在高考志愿填报场景中发挥重要作用，替代传统人工咨询。",
-          "url": "https://36kr.com/p/3868502221018370?f=rss",
+          "title": "世界模型、元宇宙、数字孪生、物理AI：它们是一回事吗？",
+          "description": "厘清世界模型、元宇宙、数字孪生和物理AI等概念的区别与联系，指出世界模型是底层认知操作系统。",
+          "url": "https://www.huxiu.com/article/4870971.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "三大运营商的“Token生意经”",
-          "description": "在MWC26上海论坛上，三大运营商探讨从流量经营转向Token经营，拥抱AI驱动的新商业模式，Token成为AI服务计费新单位。",
-          "url": "https://www.huxiu.com/article/4870557.html?f=rss",
+          "title": "白嫖AI的日子，彻底结束了",
+          "description": "报道字节跳动旗下AI产品豆包推出收费方案，分析AI免费时代的终结和商业化趋势。",
+          "url": "https://www.huxiu.com/article/4870953.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "中科闻歌开盘暴涨81%，北京再增一家硬科技IPO",
-          "description": "6月26日，中科闻歌在港交所主板上市，开盘涨81.2%，市值190亿港元，成为硬科技领域又一重要IPO。",
-          "url": "https://36kr.com/p/3869622921041156?f=rss",
+          "title": "美联储的集权式改革以及沃什的阳谋",
+          "description": "新任美联储主席凯文-沃什首秀，删除前瞻指引、主席不交点阵图、构建五大工作组，货币框架从充裕准备金转向稀缺准备金，引发市场关注。",
+          "url": "https://www.huxiu.com/article/4870973.html?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "历经13年，二手车交易平台大搜车终于登陆纳斯达克",
-          "description": "大搜车成为2026年首家赴美上市的中国企业，发行300万份ADS，标志中国企业海外上市继续。",
-          "url": "https://36kr.com/p/3869474592363528?f=rss",
+          "title": "美国即将允许Anthropic恢复其最新大模型Fable 5访问权限",
+          "description": "美国政府此前以国家安全为由禁止外国访问Anthropic的Fable 5模型，如今即将解禁，市场对AI算力概念股担忧缓解。",
+          "url": "https://36kr.com/newsflashes/3872423038080004?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "建设银行：将于7月24日日终清算时起关闭代理上海黄金交易所个人贵金属交易业务功能",
-          "description": "建设银行宣布关闭个人贵金属交易业务，体现金融监管严格化趋势。",
-          "url": "https://36kr.com/p/3869243269387269?f=rss",
+          "title": "金价大跌，老铺黄金迎来“压力测试”",
+          "description": "黄金价格大幅下跌，老铺黄金产品不再断货，代购和黄牛退潮，黄金消费股面临基本面考验。",
+          "url": "https://www.huxiu.com/article/4870995.html?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "意大利反垄断机构对微软展开调查",
-          "description": "意大利反垄断机构因微软在Microsoft 365订阅中自动接入AI工具且未充分告知消费者展开调查，涉及不正当商业行为。",
-          "url": "https://36kr.com/newsflashes/3869645779522821?f=rss",
+          "title": "钱在挪窝——纳指一周跌4.6%，科技七巨头蒸发6%市值",
+          "description": "美股科技七巨头一周内市值蒸发6%，资金从科技股流出，市场风格切换，宏观环境变化引发投资者避险。",
+          "url": "https://www.huxiu.com/article/4870982.html?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "沪深两市成交额超3万亿",
-          "description": "沪深两市当日成交额突破3万亿元，显示市场交投活跃。",
-          "url": "https://36kr.com/newsflashes/3869605119480834?f=rss",
+          "title": "中科闻歌开盘暴涨81%，北京再增一家硬科技IPO",
+          "description": "中科闻歌6月26日在港交所挂牌，开盘涨81.2%，市值190亿港元，成为北京又一家硬科技上市公司，提振市场信心。",
+          "url": "https://36kr.com/p/3869622921041156?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "美光的好财报，黄金的坏消息",
-          "description": "存储巨头美光科技发布2026财年第三财季财报，收入415亿美元，环比增长74%，同比增长346%，连续第五个季度刷新纪录，毛利率84.9%。",
-          "url": "https://36kr.com/p/3868523068298499?f=rss",
+          "title": "本周13股获南向资金持股量环比增长超20%",
+          "description": "南向资金本周净买入89.24亿港元，低位加仓港股，药捷安康-B、壁仞科技等获资金青睐，显示内资对港股态度转暖。",
+          "url": "https://36kr.com/newsflashes/3872439600043009?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "港股智谱股价跌破2000港元",
-          "description": "港股智谱股价跌破2000港元，跌幅超15%，反映AI股市场波动。",
-          "url": "https://36kr.com/newsflashes/3869635242808327?f=rss",
+          "title": "再添重磅里程碑，三条世界级高性能碳纤维生产线集中投产",
+          "description": "中国建材集团旗下中复神鹰在连云港集中投产三条全球规模最大碳纤维标杆产线，覆盖通用、高强、高模三大品类，标志国产碳纤维产业重大突破。",
+          "url": "https://36kr.com/newsflashes/3872398418039816?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "Anthropic进一步抢占OpenAI市场份额：付费收入和用户持续增长",
-          "description": "人工智能企业Anthropic的Claude模型付费用户和收入逐月增长，自2026年1月以来收入增长约，显示AI竞争加剧。",
-          "url": "https://36kr.com/newsflashes/3869577931740417?f=rss",
+          "title": "AI算力链，日本从头卡到尾",
+          "description": "日本丰田高端喷气织布机垄断全球AI级电子布产能，订单排至2028年，成为AI算力链关键瓶颈，凸显日本在半导体材料等上游设备的控制力。",
+          "url": "https://www.huxiu.com/article/4870975.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "DeepSeek发布招聘信息，计划所有部门规模扩大至少一倍",
-          "description": "DeepSeek计划大规模扩招，加码Harness人才布局，体现AI人才竞争白热化。",
-          "url": "https://www.huxiu.com/article/4870572.html?f=rss",
+          "title": "白嫖AI的日子，彻底结束了",
+          "description": "字节跳动旗下豆包推出专业版收费套餐，保留免费基础版的同时推出68/200/500元月费，标志国内AI产品开始探索商业化收费模式。",
+          "url": "https://www.huxiu.com/article/4870953.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "三大运营商的“Token生意经”",
-          "description": "中国电信、移动、联通在MWC论坛上转向Token经营，从流量经营到AI算力经营，反映运营商战略转型。",
-          "url": "https://www.huxiu.com/article/4870557.html?f=rss",
+          "title": "大秦储能冲港股IPO：锂价50万山顶囤货血泪史，亏本三年才清完",
+          "description": "大秦储能提交港股上市申请，披露曾在锂价50万元/吨高位囤货导致连续三年亏损，反映锂电行业价格剧烈波动和库存风险。",
+          "url": "https://36kr.com/p/3871109381035011?f=rss",
           "stars": null,
           "id": 10
         }
@@ -156,36 +156,36 @@
       "items": [
         {
           "title": "CHIA: An open-source framework for principled, agentic AI-driven hardware/software co-design research",
-          "description": "提出了一种基于代理AI的开源框架，用于硬件/软件协同设计研究，涵盖计算机架构、系统、编译器和VLSI等领域。",
+          "description": "提出一个基于自主AI的硬件/软件协同设计开源框架，旨在加速体系结构、系统、编译器和VLSI领域的创新研究。",
           "url": "https://arxiv.org/pdf/2606.27350v1",
           "stars": null,
           "id": 1
         },
         {
-          "title": "Jet impingement cooling with multi-stage ducted electroaerodynamic actuators",
-          "description": "研究多级管道电空气动力致动器用于射流冲击冷却，以解决高性能移动电子设备的热管理挑战。",
-          "url": "https://arxiv.org/pdf/2606.27338v1",
+          "title": "AI Healthcare Chatbots as Information Infrastructure: A Large-Scale Study of User-Reported Breakdowns",
+          "description": "对超过15,000个用户报告的AI医疗聊天机器人故障进行大规模研究，分析其作为信息基础设施的性能与影响。",
+          "url": "https://arxiv.org/pdf/2606.27302v1",
           "stars": null,
           "id": 2
         },
         {
-          "title": "AI Healthcare Chatbots as Information Infrastructure: A Large-Scale Study of User-Reported Breakdowns",
-          "description": "对超过15,000个AI医疗健康聊天机器人的用户报告故障进行了大规模研究，分析了其性能和影响。",
-          "url": "https://arxiv.org/pdf/2606.27302v1",
+          "title": "Generative Models on Analog Hardware with Dynamics",
+          "description": "利用耦合振荡器和模拟伊辛机等模拟硬件平台，以低能耗执行微分方程，用于高效生成模型。",
+          "url": "https://arxiv.org/pdf/2606.27294v1",
           "stars": null,
           "id": 3
         },
         {
-          "title": "Generative Models on Analog Hardware with Dynamics",
-          "description": "探索在模拟硬件（如耦合振荡器和伊辛机）上实现生成模型，利用其低能耗的动态特性。",
-          "url": "https://arxiv.org/pdf/2606.27294v1",
+          "title": "Designing Reward Signals for Portable Query Generation: A Case Study in Industrial Semantic Job Search",
+          "description": "提出一种端到端RLAIF方法，通过奖励信号设计实现可迁移的查询生成，并应用于工业语义化工作搜索场景。",
+          "url": "https://arxiv.org/pdf/2606.27291v1",
           "stars": null,
           "id": 4
         },
         {
-          "title": "Designing Reward Signals for Portable Query Generation: A Case Study in Industrial Semantic Job Search",
-          "description": "提出了一种基于RLAIF的端到端方法，用于生成可迁移的查询信号，并在工业语义职位搜索中进行了案例研究。",
-          "url": "https://arxiv.org/pdf/2606.27291v1",
+          "title": "Jet impingement cooling with multi-stage ducted electroaerodynamic actuators",
+          "description": "提出采用多级管道电空气动力执行器的射流冲击冷却技术，以应对高性能移动电子设备的散热挑战。",
+          "url": "https://arxiv.org/pdf/2606.27338v1",
           "stars": null,
           "id": 5
         }
@@ -196,41 +196,41 @@
       "items": [
         {
           "title": "netdata",
-          "description": "AI-powered full stack observability platform for lean teams.",
+          "description": "AI驱动的全栈可观测性平台，帮助团队快速监控基础设施和应用性能。",
           "url": "https://github.com/netdata/netdata",
-          "stars": 79414,
+          "stars": 79434,
           "id": 1
         },
         {
-          "title": "AppFlowy",
-          "description": "AI collaborative workspace that brings projects, wikis, and teams together.",
-          "url": "https://github.com/AppFlowy-IO/AppFlowy",
-          "stars": 72957,
+          "title": "graphify",
+          "description": "AI编码助手技能，支持多种AI工具，可处理代码、SQL、脚本等。",
+          "url": "https://github.com/safishamsi/graphify",
+          "stars": 73060,
           "id": 2
         },
         {
-          "title": "crawl4ai",
-          "description": "Open-source LLM-friendly web crawler and scraper for AI applications.",
-          "url": "https://github.com/unclecode/crawl4ai",
-          "stars": 69654,
+          "title": "OpenBB",
+          "description": "面向分析师、量化人员和AI代理的金融数据平台。",
+          "url": "https://github.com/OpenBB-finance/OpenBB",
+          "stars": 69774,
           "id": 3
         },
         {
-          "title": "oh-my-openagent",
-          "description": "Coding agent harness for complex codebases, optimized for token efficiency.",
-          "url": "https://github.com/code-yeongyu/oh-my-openagent",
-          "stars": 63651,
+          "title": "crewAI",
+          "description": "编排自主AI代理的框架，通过协作智能让代理协同工作。",
+          "url": "https://github.com/crewAIInc/crewAI",
+          "stars": 54478,
           "id": 4
         },
         {
-          "title": "TrendRadar",
-          "description": "AI-driven public opinion and trend monitor with multi-platform aggregation and smart alerts.",
-          "url": "https://github.com/sansan0/TrendRadar",
-          "stars": 59926,
+          "title": "exo",
+          "description": "在本地运行前沿AI模型，支持多种硬件。",
+          "url": "https://github.com/exo-explore/exo",
+          "stars": 45690,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-06-26T14:48:42.505+08:00"
+  "updatedAt": "2026-06-28T14:59:00.355+08:00"
 }
