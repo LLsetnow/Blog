@@ -1,76 +1,76 @@
 {
-  "date": "2026-06-28",
+  "date": "2026-06-29",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "追赶FSD V14，理想在补哪些课？｜最前线",
-          "description": "文章讨论了智能驾驶行业从硬件竞赛转向端到端、VLA、世界模型等大模型技术路线的竞争，以及理想汽车在追赶FSD V14过程中需要补充的技术能力。",
-          "url": "https://36kr.com/p/3870292939658242?f=rss",
+          "title": "马斯克：SpaceX计划今年每月发布一个全新的人工智能模型",
+          "description": "马斯克透露Grok 4.5已在SpaceX和特斯拉内部开启Beta测试，并计划每月发布一个全新AI模型。",
+          "url": "https://36kr.com/newsflashes/3873872147272963?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "美国即将允许Anthropic恢复其最新大模型Fable 5访问权限",
-          "description": "据报道，美国政府即将解除对Anthropic最新大模型Fable 5的出口管制，此前因国家安全原因被限制访问。",
-          "url": "https://36kr.com/newsflashes/3872423038080004?f=rss",
+          "title": "一夜收获3000颗星，AI视频的“龙虾时刻”降临了？",
+          "description": "开源项目OpenMontage在GitHub上爆火，作为AI视频生成的Harness工具，可能改变行业格局。",
+          "url": "https://www.huxiu.com/article/4871160.html?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "谷歌对Meta Gemini模型的使用设限，因人工智能需求紧张导致算力吃紧",
-          "description": "由于AI算力紧张，谷歌限制了Meta对Gemini模型的使用，揭示了大型模型间算力竞争的现状。",
-          "url": "https://36kr.com/newsflashes/3872321240700160?f=rss",
+          "title": "GPT-5.6偷偷灰度？有人在Codex 里提前用上了",
+          "description": "有用户发现一种方法可检测Codex中是否已部署GPT-5.6模型，暗示OpenAI可能已灰度推送。",
+          "url": "https://www.huxiu.com/article/4871184.html?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "Nature: AI医生MIRA首次“全流程上岗”",
-          "description": "AI医生MIRA在Nature期刊上展示首次实现全流程自主医疗诊断，标志着医疗AI的重要进展。",
-          "url": "https://www.huxiu.com/article/4870997.html?f=rss",
+          "title": "收购仅一年即“决裂”，创始人贾扬清出走英伟达：黄仁勋不满运营效果",
+          "description": "LeptonAI创始人贾扬清已从英伟达离职，收购后仅一年，20亿美金的AI Infra项目面临质疑。",
+          "url": "https://www.huxiu.com/article/4871177.html?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "省钱，我只服梁文锋",
-          "description": "DeepSeek创始人梁文锋挂名发表新论文《DSpark：基于置信度调度的推测解码与半自回归生成》，旨在优化推理效率、降低服务器成本。",
-          "url": "https://www.huxiu.com/article/4870983.html?f=rss",
+          "title": "港大教授李弘扬创业做通用全身具身大脑，获真格高榕IDG五源等数亿种子轮融资",
+          "description": "源策未来Archon Robotics完成数亿元种子轮融资，聚焦通用全身具身大脑研发。",
+          "url": "https://36kr.com/p/3868055841641476?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "太空算力的国产答案：用光子更高效，马斯克和老黄都太绕了",
-          "description": "探讨国产光子计算方案在太空AI算力竞赛中的优势，对比马斯克和英伟达的路线，提出光子计算更高效。",
-          "url": "https://www.huxiu.com/article/4870984.html?f=rss",
+          "title": "URTOPIA联创做了款智能指环，众筹已破千万元",
+          "description": "AI可穿戴品牌AIVELA完成数百万美元融资，专注于健康数据与AI Agent能力建设。",
+          "url": "https://36kr.com/p/3873710996902912?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "本周AI 项目推荐：Link、Agentic Wallets、Token Pay......Token支付底座长啥样",
-          "description": "介绍与AI原生支付相关的新项目，包括Link、Agentic Wallets等，探讨Token支付基础设施的构建。",
-          "url": "https://www.huxiu.com/article/4870980.html?f=rss",
+          "title": "SK集团董事长崔泰源：到2035年建设15GW AI数据中心",
+          "description": "SK集团计划投资1000万亿韩元建设15GW AI数据中心，打造国家级AI基础设施。",
+          "url": "https://36kr.com/newsflashes/3873873423062278?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "AI算力链，日本从头卡到尾",
-          "description": "深入分析日本在AI算力关键环节（如高端喷气织布机等）的垄断地位，揭示其对中国AI供应链的制约。",
-          "url": "https://www.huxiu.com/article/4870975.html?f=rss",
+          "title": "万能的AI啊，请快些取代掉那些逼我使用AI的领导吧",
+          "description": "探讨职场中被迫使用AI的KPI现象，以及AI应用在企业管理中的异化问题。",
+          "url": "https://www.huxiu.com/article/4870743.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "世界模型、元宇宙、数字孪生、物理AI：它们是一回事吗？",
-          "description": "厘清世界模型、元宇宙、数字孪生和物理AI等概念的区别与联系，指出世界模型是底层认知操作系统。",
-          "url": "https://www.huxiu.com/article/4870971.html?f=rss",
+          "title": "月薪两万的“造脸人”，快被自己造的“脸”淘汰了",
+          "description": "AI短剧爆发导致AI生成角色同质化严重，引发对AI生成内容审美疲劳的讨论。",
+          "url": "https://www.huxiu.com/article/4871189.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "白嫖AI的日子，彻底结束了",
-          "description": "报道字节跳动旗下AI产品豆包推出收费方案，分析AI免费时代的终结和商业化趋势。",
-          "url": "https://www.huxiu.com/article/4870953.html?f=rss",
+          "title": "中国空调在欧洲卖爆了，老外急到用AI跟黄牛抢货",
+          "description": "中国空调在欧洲热销，消费者甚至使用AI agent全天候监控库存来抢购。",
+          "url": "https://www.huxiu.com/article/4871196.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "美联储的集权式改革以及沃什的阳谋",
-          "description": "新任美联储主席凯文-沃什首秀，删除前瞻指引、主席不交点阵图、构建五大工作组，货币框架从充裕准备金转向稀缺准备金，引发市场关注。",
-          "url": "https://www.huxiu.com/article/4870973.html?f=rss",
+          "title": "7月1日起集中调价，近20家半导体企业开启新一轮涨价潮",
+          "description": "全球近20家模拟及功率半导体企业即将于7月1日启动新一轮涨价，年内已呈现多批次阶梯式调价特征。分析指出，本轮涨价的核心动力源于晶圆代工和原材料涨价带来的成本压力，与AI数据中心建设带来的功率芯片需求激增形成共振。",
+          "url": "https://36kr.com/newsflashes/3873920232527109?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "美国即将允许Anthropic恢复其最新大模型Fable 5访问权限",
-          "description": "美国政府此前以国家安全为由禁止外国访问Anthropic的Fable 5模型，如今即将解禁，市场对AI算力概念股担忧缓解。",
-          "url": "https://36kr.com/newsflashes/3872423038080004?f=rss",
+          "title": "银行AIC提速，上半年已投项目超58只",
+          "description": "2026年以来，银行金融资产投资公司（AIC）投资势头提速。仅今年上半年，9家AIC合计投资数量已超58只，接近2024年全年水平。新设基金主要集中在上海、北京、深圳等18个试点城市。",
+          "url": "https://36kr.com/newsflashes/3873914846074116?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "金价大跌，老铺黄金迎来“压力测试”",
-          "description": "黄金价格大幅下跌，老铺黄金产品不再断货，代购和黄牛退潮，黄金消费股面临基本面考验。",
-          "url": "https://www.huxiu.com/article/4870995.html?f=rss",
+          "title": "今年5月中国企业信用指数为161.53，保持平稳运行态势",
+          "description": "市场监管总局数据显示，5月中国企业信用指数为161.53。信用指数排名前5的行业分别为金融业、电力热力燃气及水生产和供应业、居民服务修理和其他服务业、水利环境和公共设施管理业、制造业。",
+          "url": "https://36kr.com/newsflashes/3873910760920327?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "钱在挪窝——纳指一周跌4.6%，科技七巨头蒸发6%市值",
-          "description": "美股科技七巨头一周内市值蒸发6%，资金从科技股流出，市场风格切换，宏观环境变化引发投资者避险。",
-          "url": "https://www.huxiu.com/article/4870982.html?f=rss",
+          "title": "A股三大指数集体收涨，医药股集体走强",
+          "description": "A股三大指数集体收涨，沪指涨1.16%，深成指涨0.19%，创业板指涨0.54%。半导体板块领涨，医药股集体走强，玻璃纤维、培育钻石跌幅居前。",
+          "url": "https://36kr.com/newsflashes/3873906396632072?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "中科闻歌开盘暴涨81%，北京再增一家硬科技IPO",
-          "description": "中科闻歌6月26日在港交所挂牌，开盘涨81.2%，市值190亿港元，成为北京又一家硬科技上市公司，提振市场信心。",
-          "url": "https://36kr.com/p/3869622921041156?f=rss",
+          "title": "美国养老金即将被动调仓，300亿美元卖盘“已在路上”",
+          "description": "随着2026年上半年临近收官，美国大型养老金计划即将启动半年度资产再平衡操作，市场测算预计将有总计300亿美元的美股资产集中在本周一和二两日强制抛售。",
+          "url": "https://36kr.com/newsflashes/3873886149055495?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "本周13股获南向资金持股量环比增长超20%",
-          "description": "南向资金本周净买入89.24亿港元，低位加仓港股，药捷安康-B、壁仞科技等获资金青睐，显示内资对港股态度转暖。",
-          "url": "https://36kr.com/newsflashes/3872439600043009?f=rss",
+          "title": "SK集团董事长崔泰源：到2035年建设15GW AI数据中心，总投资达1000万亿韩元",
+          "description": "韩国SK集团董事长崔泰源表示，集团计划到2035年建成15吉瓦（GW）AI数据中心容量，将其打造为韩国国家级基础设施和“实体AI时代”的核心底座，总投资规模将达到1000万亿韩元。",
+          "url": "https://36kr.com/newsflashes/3873873423062278?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "再添重磅里程碑，三条世界级高性能碳纤维生产线集中投产",
-          "description": "中国建材集团旗下中复神鹰在连云港集中投产三条全球规模最大碳纤维标杆产线，覆盖通用、高强、高模三大品类，标志国产碳纤维产业重大突破。",
-          "url": "https://36kr.com/newsflashes/3872398418039816?f=rss",
+          "title": "大众裁员十万，大象席地而坐",
+          "description": "大众汽车启动“史诗级重组”，裁员十万人。这场变革撕开了整个传统汽车产业在智能化电动化时代转折点上的集体焦虑。",
+          "url": "https://www.huxiu.com/article/4871205.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "AI算力链，日本从头卡到尾",
-          "description": "日本丰田高端喷气织布机垄断全球AI级电子布产能，订单排至2028年，成为AI算力链关键瓶颈，凸显日本在半导体材料等上游设备的控制力。",
-          "url": "https://www.huxiu.com/article/4870975.html?f=rss",
+          "title": "收购仅一年即“决裂”，创始人贾扬清出走英伟达：黄仁勋不满运营效果，20亿美金的AI Infra 突围为何折戟？",
+          "description": "据半导体调研机构SemiAnalysis爆料，LeptonAI创始人兼CEO、英伟达系统软件副总裁贾扬清已从英伟达离职。收购仅一年即出现决裂，引发对AI基础设施领域投资效果的讨论。",
+          "url": "https://www.huxiu.com/article/4871177.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "白嫖AI的日子，彻底结束了",
-          "description": "字节跳动旗下豆包推出专业版收费套餐，保留免费基础版的同时推出68/200/500元月费，标志国内AI产品开始探索商业化收费模式。",
-          "url": "https://www.huxiu.com/article/4870953.html?f=rss",
+          "title": "中国卖家涌向拉美：高增长与合规门槛齐升",
+          "description": "亚马逊全球开店推出“拉美速通计划”，计划2026年内面向3000个中国品牌提供巴西本土公司注册协助、墨西哥RFC税号解决方案等支持，帮助卖家扎根拉美市场。拉美成为跨境电商新热点。",
+          "url": "https://36kr.com/p/3873539789034501?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "大秦储能冲港股IPO：锂价50万山顶囤货血泪史，亏本三年才清完",
-          "description": "大秦储能提交港股上市申请，披露曾在锂价50万元/吨高位囤货导致连续三年亏损，反映锂电行业价格剧烈波动和库存风险。",
-          "url": "https://36kr.com/p/3871109381035011?f=rss",
+          "title": "7月的看点：情绪极度悲观的商品市场，等待下半年FOMC和中国的会议的可能拐点",
+          "description": "六月份商品市场出现共振下跌，情绪指标接近短期悲观极值。市场等待下半年美联储FOMC会议和中国相关会议可能带来的拐点。",
+          "url": "https://www.huxiu.com/article/4871192.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -155,37 +155,37 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "CHIA: An open-source framework for principled, agentic AI-driven hardware/software co-design research",
-          "description": "提出一个基于自主AI的硬件/软件协同设计开源框架，旨在加速体系结构、系统、编译器和VLSI领域的创新研究。",
-          "url": "https://arxiv.org/pdf/2606.27350v1",
+          "title": "Democratic ICAI: Debating Our Way to Steering Principles from Preferences",
+          "description": "提出一种通过辩论从偏好中推导指导原则的民主化对齐方法，解决偏好标注中推理捕捉不足的问题。",
+          "url": "https://arxiv.org/pdf/2606.28294v1",
           "stars": null,
           "id": 1
         },
         {
-          "title": "AI Healthcare Chatbots as Information Infrastructure: A Large-Scale Study of User-Reported Breakdowns",
-          "description": "对超过15,000个用户报告的AI医疗聊天机器人故障进行大规模研究，分析其作为信息基础设施的性能与影响。",
-          "url": "https://arxiv.org/pdf/2606.27302v1",
+          "title": "Agentic Hardware Design as Repository-Level Code Evolution",
+          "description": "介绍HORIZON框架，将硬件设计视为仓库级代码演化的自进化智能体系统。",
+          "url": "https://arxiv.org/pdf/2606.28279v1",
           "stars": null,
           "id": 2
         },
         {
-          "title": "Generative Models on Analog Hardware with Dynamics",
-          "description": "利用耦合振荡器和模拟伊辛机等模拟硬件平台，以低能耗执行微分方程，用于高效生成模型。",
-          "url": "https://arxiv.org/pdf/2606.27294v1",
+          "title": "Towards Automating Scientific Review with Google's Paper Assistant Tool",
+          "description": "探讨利用AI自动化科学评审流程，以应对快速增长的论文审稿需求。",
+          "url": "https://arxiv.org/pdf/2606.28277v1",
           "stars": null,
           "id": 3
         },
         {
-          "title": "Designing Reward Signals for Portable Query Generation: A Case Study in Industrial Semantic Job Search",
-          "description": "提出一种端到端RLAIF方法，通过奖励信号设计实现可迁移的查询生成，并应用于工业语义化工作搜索场景。",
-          "url": "https://arxiv.org/pdf/2606.27291v1",
+          "title": "Agent-Native Immune System: Architecture, Taxonomy, and Engineering",
+          "description": "针对自主智能体面临的安全威胁，提出一种原生免疫系统架构与分类法。",
+          "url": "https://arxiv.org/pdf/2606.28270v1",
           "stars": null,
           "id": 4
         },
         {
-          "title": "Jet impingement cooling with multi-stage ducted electroaerodynamic actuators",
-          "description": "提出采用多级管道电空气动力执行器的射流冲击冷却技术，以应对高性能移动电子设备的散热挑战。",
-          "url": "https://arxiv.org/pdf/2606.27338v1",
+          "title": "Parameter-Efficient Continuous-Variable Photonic Quantum Neural Networks for Edge Quantum AI: Demonstration in Oral Cancer Detection",
+          "description": "设计参数高效的光子量子神经网络，展示其在边缘量子AI场景中用于口腔癌检测的可行性。",
+          "url": "https://arxiv.org/pdf/2606.28252v1",
           "stars": null,
           "id": 5
         }
@@ -196,41 +196,41 @@
       "items": [
         {
           "title": "netdata",
-          "description": "AI驱动的全栈可观测性平台，帮助团队快速监控基础设施和应用性能。",
+          "description": "The fastest path to AI-powered full stack observability",
           "url": "https://github.com/netdata/netdata",
-          "stars": 79434,
+          "stars": 79439,
           "id": 1
         },
         {
           "title": "graphify",
-          "description": "AI编码助手技能，支持多种AI工具，可处理代码、SQL、脚本等。",
+          "description": "AI coding assistant skill for multiple platforms",
           "url": "https://github.com/safishamsi/graphify",
-          "stars": 73060,
+          "stars": 73910,
           "id": 2
         },
         {
           "title": "OpenBB",
-          "description": "面向分析师、量化人员和AI代理的金融数据平台。",
+          "description": "Financial data platform for analysts, quants and AI agents",
           "url": "https://github.com/OpenBB-finance/OpenBB",
-          "stars": 69774,
+          "stars": 69816,
           "id": 3
         },
         {
-          "title": "crewAI",
-          "description": "编排自主AI代理的框架，通过协作智能让代理协同工作。",
-          "url": "https://github.com/crewAIInc/crewAI",
-          "stars": 54478,
+          "title": "ponytail",
+          "description": "Makes AI agents think like lazy senior devs",
+          "url": "https://github.com/DietrichGebert/ponytail",
+          "stars": 65549,
           "id": 4
         },
         {
-          "title": "exo",
-          "description": "在本地运行前沿AI模型，支持多种硬件。",
-          "url": "https://github.com/exo-explore/exo",
-          "stars": 45690,
+          "title": "worldmonitor",
+          "description": "Real-time global intelligence dashboard with AI-powered news aggregation",
+          "url": "https://github.com/koala73/worldmonitor",
+          "stars": 60758,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-06-28T14:59:00.355+08:00"
+  "updatedAt": "2026-06-29T15:25:13.602+08:00"
 }
