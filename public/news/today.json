@@ -1,76 +1,76 @@
 {
-  "date": "2026-07-01",
+  "date": "2026-07-02",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "告别硬件出海上一个十年，前安克CMO做了款AI时代的Memory产品",
-          "description": "前安克CMO王时远创业，打造AI时代的Memory产品，聚焦AI硬件与记忆存储。",
-          "url": "https://36kr.com/p/3867992509125636?f=rss",
+          "title": "专访美图 CEO 吴欣鸿：做 AI 产品，是一场难以提前策划的游戏",
+          "description": "美图CEO分享AI产品扩展市场版图的经验，截至2026年6月中旬其飞行距离超23万公里，横跨亚欧美等地。",
+          "url": "https://36kr.com/p/3877112973733895?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "苏大教授创业做机器人触觉系统，获松禾资本千万级天使轮融资",
-          "description": "感知纪元科技完成千万级天使轮融资，研发多模态智能触觉电子皮肤，用于机器人触觉系统。",
-          "url": "https://36kr.com/p/3874358072710407?f=rss",
+          "title": "OpenAI据悉迎来重大技术突破：系统优化使模型推理成本减半",
+          "description": "OpenAI实现系统优化，将模型推理成本降低一半，可能大幅降低大模型使用门槛。",
+          "url": "https://36kr.com/p/3877746956611847?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "赤子城独家投资：4人创业团队「MobAI」，推出AI互动平台「Lunaverse Stories」",
-          "description": "AI创业公司MobAI完成数百万天使轮融资，其开发的AI互动叙事应用Lunaverse Stories进入测试阶段。",
-          "url": "https://36kr.com/p/3875622047805447?f=rss",
+          "title": "硬氪首发 | 清华系芯片企业再获数千万融资，要以新技术突破AI算力瓶颈",
+          "description": "硅基光子企业灵动芯光完成天使++轮融资，聚焦芯片间光互联核心技术，推进SmartComb多波长密波光源产品化。",
+          "url": "https://36kr.com/p/3877057215393793?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "OpenAI首款硬件曝光",
-          "description": "在8点1氪新闻中提及，OpenAI首款硬件产品信息被曝光，具体细节待公布。",
-          "url": "https://36kr.com/p/3876318522077442?f=rss",
+          "title": "秒悟Meoo上线Night Plan",
+          "description": "阿里云旗下秒悟Meoo推出夜间错峰价，Qwen 3.7-Max夜间折扣最低2折，降低大模型调用成本。",
+          "url": "https://36kr.com/newsflashes/3878124300660995?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "Kimi估值升至315亿美元，ARR突破3亿美元",
-          "description": "大模型公司Kimi估值达到315亿美元，年化经常性收入（ARR）突破3亿美元，体现AI商业化进展。",
-          "url": "https://36kr.com/p/3873626697470985?f=rss",
+          "title": "阿里整合QoderWork、悟空、MuleRun，将推出新的生产力AI产品",
+          "description": "阿里巴巴整合旗下Agent产品线，以QoderWork为基础融合悟空、MuleRun能力，打造面向企业生产力场景的更强AI产品。",
+          "url": "https://36kr.com/newsflashes/3878095243522311?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "万亿市场格局未定：「端侧原生」，一家中国AI公司给物理AI抛了个新解法",
-          "description": "探讨2026年物理AI元年，一家中国AI公司提出端侧原生方案，推动物理AI技术落地。",
-          "url": "https://36kr.com/p/3875047283659777?f=rss",
+          "title": "半年935亿元的资本狂欢，谁在豪赌具身智能？",
+          "description": "2026年上半年中国具身智能产业资本涌入935亿元，头部企业加速落地，腰部厂商聚焦细分赛道。",
+          "url": "https://www.huxiu.com/article/4872074.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "前百度自动驾驶与机器人实验室主任创业，天使轮融资数千万，做机器人“世界通行模型”",
-          "description": "具身智能公司纽娲机器人完成5000万天使轮融资，研发机器人世界通行模型，前百度自动驾驶实验室主任创业。",
-          "url": "https://36kr.com/p/3875059110221064?f=rss",
+          "title": "AI智能体化身硅基科学家，大大加速药物研发",
+          "description": "《自然》发表论文描述两个新系统，利用AI智能体团队生成假设、设计实验并分析数据，大幅缩短研发周期。",
+          "url": "https://www.huxiu.com/article/4872059.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "马斯克宣布Grok4.5开启SpaceX与特斯拉内部私测，性能或超越Claude Opus",
-          "description": "马斯克透露Grok4.5已在SpaceX和特斯拉内部测试，声称性能可能超越Claude Opus。",
-          "url": "https://36kr.com/p/3874911939482880?f=rss",
+          "title": "AI写的书能不能出版？图书编辑没有答案",
+          "description": "雨果奖作家郝景芳透露其新书中AI生成内容占一半，引发关于AIGC版权和出版规范的讨论。",
+          "url": "https://www.huxiu.com/article/4872052.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "为什么说Anthropic是邪恶的？",
-          "description": "文章批评Anthropic公司在AI服务中对用户的地域限制和封号问题，引发对AI伦理的讨论。",
-          "url": "https://www.huxiu.com/article/4871799.html?f=rss",
+          "title": "打破行业融资速度记录，具身黑马踩中物理AI狂热",
+          "description": "千寻智能等具身智能企业获得快速融资，创始人韩峰涛二次创业，踩中物理AI热潮。",
+          "url": "https://www.huxiu.com/article/4872028.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "豆包开始收费，职场人的免费AI时代结束了吗？",
-          "description": "字节跳动AI产品豆包开始收费，引发职场人对免费AI服务是否终结的讨论。",
-          "url": "https://www.huxiu.com/article/4871790.html?f=rss",
+          "title": "AI后半场，小金属上桌？",
+          "description": "AI竞赛从芯片扩展到能源、材料等领域，小金属因AI基础设施需求而成为关键资源。",
+          "url": "https://www.huxiu.com/article/4871771.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "“史上最严电池安全令”正式施行",
-          "description": "2026年7月1日起，被称为“史上最严电池安全令”的法规正式施行，对电池安全标准提出更高要求，涉及新能源汽车、储能等领域。",
-          "url": "https://36kr.com/p/3876318522077442?f=rss",
+          "title": "沪深两市成交额突破3万亿",
+          "description": "7月2日，沪深两市成交额突破3万亿元，较上日此时缩量超2700亿。",
+          "url": "https://36kr.com/newsflashes/3878118277984257?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "A股三大指数收盘涨跌不一",
-          "description": "6月30日A股收盘，沪指涨0.44%，深成指跌0.53%，创业板指跌1.89%，零售、教育、制药领涨，通信设备、半导体走弱。",
-          "url": "https://36kr.com/newsflashes/3876737357312261?f=rss",
+          "title": "苹果据悉今年计划生产1000万部折叠屏iPhone",
+          "description": "据报道，苹果已告知供应商为今年生产约1000万部可折叠iPhone做准备，高于此前预估的700万-800万部。",
+          "url": "https://36kr.com/newsflashes/3878116698845442?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "沪深两市成交额突破3.5万亿元",
-          "description": "截至发稿，沪深两市成交额突破3.5万亿元，市场交投活跃，显示资金博弈激烈。",
-          "url": "https://36kr.com/newsflashes/3876726037508355?f=rss",
+          "title": "三星高管团队到访联想总部，或涉及存储芯片长期供应合作",
+          "description": "7月2日，韩国三星电子高管团队到访联想集团总部，可能涉及存储芯片供应、AI硬件协同等议题。",
+          "url": "https://36kr.com/newsflashes/3878109626544384?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "巴克莱银行：美联储路径不明朗，股市关注焦点转向盈利",
-          "description": "巴克莱策略师表示，因美联储新任主席领导下政策方向不明，市场更关注企业盈利对股价的催化作用。",
-          "url": "https://36kr.com/newsflashes/3876722135904514?f=rss",
+          "title": "阿里整合QoderWork、悟空、MuleRun，将推出新的生产力AI产品",
+          "description": "阿里巴巴正在整合旗下Agent产品线，以QoderWork为基础推出更强大的面向企业生产力的AI产品。",
+          "url": "https://36kr.com/newsflashes/3878095243522311?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "厦门国本国资产业投资基金登记成立，出资额100.01亿元",
-          "description": "厦门国本国资产业投资基金合伙企业成立，执行事务合伙人为厦门国升发展私募基金管理公司，将从事股权投资等业务。",
-          "url": "https://36kr.com/newsflashes/3876718708666377?f=rss",
+          "title": "半年935亿元的资本狂欢，谁在豪赌具身智能？",
+          "description": "2026年上半年，中国具身智能产业迎来资本热潮，头部企业加速落地，融资规模达935亿元。",
+          "url": "https://www.huxiu.com/article/4872074.html?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "美国铝业以56亿美元交易收购South32资产",
-          "description": "美国铝业公司同意收购South32的铝土矿、氧化铝和铝资产，交易价值至多56亿美元，预计2027年上半年完成。",
-          "url": "https://36kr.com/newsflashes/3876716753285125?f=rss",
+          "title": "创新药反弹，趋势能否持续？深度逻辑拆解",
+          "description": "创新药板块近期反弹，分析认为与政策及产品周期相关，但持续性仍需观察。",
+          "url": "https://www.huxiu.com/article/4871746.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "工信部：1-5月份规模以上电子信息制造业增加值同比增长14.6%",
-          "description": "工信部数据显示，1-5月电子信息制造业营业收入7.52万亿元，同比增长17.1%，利润总额4220亿元，同比增长1.04倍。",
-          "url": "https://36kr.com/newsflashes/3876707928813573?f=rss",
+          "title": "华尔街的老狗们翻脸了",
+          "description": "7月1日美股科技股分化，Meta涨8.81%创半年最佳，而美光跌10.57%，市场情绪波动。",
+          "url": "https://www.huxiu.com/article/4872048.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "现货白银日内跌幅扩大至2%，现货黄金跌破4000美元",
-          "description": "现货白银跌2%报57.37美元/盎司，现货黄金跌0.89%报3971.58美元/盎司，贵金属价格承压。",
-          "url": "https://36kr.com/newsflashes/3876685428092931?f=rss",
+          "title": "AI后半场，小金属上桌？",
+          "description": "AI竞赛转向能源和材料领域，小金属等资源成为新的战略焦点，中国拥有一定优势。",
+          "url": "https://www.huxiu.com/article/4871771.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "英国6月Nationwide房价指数同比增长2.2%",
-          "description": "英国6月Nationwide房价指数同比增长2.2%，预期2.4%，显示英国房地产市场增长略低于预期。",
-          "url": "https://36kr.com/newsflashes/3876679975612674?f=rss",
+          "title": "印度坑了苹果",
+          "description": "塔塔电子遭勒索软件泄露文件，包含未发布iPhone 18 Pro关键组件信息，影响苹果供应链安全。",
+          "url": "https://www.huxiu.com/article/4871981.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "精智达等在南京成立新创业投资合伙企业，出资额2亿",
-          "description": "南京精智达清源创业投资合伙企业成立，由精智达等共同出资，经营范围包括创业投资，助力科技企业孵化。",
-          "url": "https://36kr.com/newsflashes/3876669941395718?f=rss",
+          "title": "嘉士伯或已秘密提交印度子公司IPO申请，拟募资至多7亿美元",
+          "description": "丹麦啤酒巨头嘉士伯为其印度业务秘密提交IPO草案，计划募资高达7亿美元，最快今年晚些时候进行。",
+          "url": "https://36kr.com/newsflashes/3878089130914053?f=rss",
           "stars": null,
           "id": 10
         }
@@ -155,37 +155,37 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "CoMet: Context and Multiplicity Decomposition for Multimodal Uncertainty Estimation",
-          "description": "提出用于多模态不确定性估计的上下文与多重性分解方法，帮助AI模型理解自身认知局限。",
-          "url": "https://arxiv.org/pdf/2606.32012v1",
+          "title": "Theoria: Rewrite-Acceptability Verification over Informal Reasoning States",
+          "description": "提出了一种结合形式证明和LLM法官的方法，用于验证AI系统答案的可信度，平衡确定性和覆盖率。",
+          "url": "https://arxiv.org/pdf/2607.01223v1",
           "stars": null,
           "id": 1
         },
         {
-          "title": "World Narrative Model for Highly Controllable Video Generation: A Paradigm Shift from Pixel Sampling to Physical World Orchestration",
-          "description": "提出世界叙事模型，将视频生成从像素采样转向物理世界编排，实现高度可控的视频生成。",
-          "url": "https://arxiv.org/pdf/2606.31946v1",
+          "title": "Linkify: Learning from Interface-Augmented Assembly Graphs",
+          "description": "提出Linkify框架，通过接口增强的装配图学习实现机械装配中的上下文感知零件检索，改进CAD生成式AI。",
+          "url": "https://arxiv.org/pdf/2607.01205v1",
           "stars": null,
           "id": 2
         },
         {
-          "title": "Delegation Rights: Property, Agency, and Investment Incentives in the Age of AI Agents",
-          "description": "探讨AI代理时代委托权引发的财产、代理与投资激励问题，对AI治理具有重要启示。",
-          "url": "https://arxiv.org/pdf/2606.31935v1",
+          "title": "Optimal Resource Utilization for Autonomous Laboratory Orchestrators",
+          "description": "研究了自主实验室中AI代理规划实验时的资源优化问题，提出最大化资源利用率的调度方法。",
+          "url": "https://arxiv.org/pdf/2607.01188v1",
           "stars": null,
           "id": 3
         },
         {
-          "title": "Better Understanding, Understanding Better",
-          "description": "从认识论角度区分知道与理解，为AI系统的深层理解能力提供理论框架。",
-          "url": "https://arxiv.org/pdf/2606.31892v1",
+          "title": "A scheme for topological phases of the Weyl $C^*$-algebra",
+          "description": "基于模型$C^*$-代数的纯态空间拓扑，提出物质拓扑相的分类方案，描述相变与边界态。",
+          "url": "https://arxiv.org/pdf/2607.01183v1",
           "stars": null,
           "id": 4
         },
         {
-          "title": "Low-dimensional topology of deep neural networks",
-          "description": "通过限制层宽度为三维（R^3）研究前馈网络、残差网络和Transformer的低维拓扑结构。",
-          "url": "https://arxiv.org/pdf/2606.31856v1",
+          "title": "The Decode-Work Law: Margin-Governed, Provably-Exact Spatial Joins over Compressed Geometry",
+          "description": "提出解码-工作律，在压缩几何数据上实现受裕度控制、可证明精确的空间连接操作，建模过滤后候选对的解压缩成本。",
+          "url": "https://arxiv.org/pdf/2607.01182v1",
           "stars": null,
           "id": 5
         }
@@ -195,42 +195,42 @@
       "name": "AI 开源项目",
       "items": [
         {
-          "title": "odysseus",
-          "description": "Self-hosted AI workspace.",
-          "url": "https://github.com/pewdiepie-archdaemon/odysseus",
-          "stars": 79752,
+          "title": "netdata/netdata",
+          "description": "AI-powered full stack observability platform for lean teams.",
+          "url": "https://github.com/netdata/netdata",
+          "stars": 79461,
           "id": 1
         },
         {
-          "title": "graphify",
-          "description": "AI coding assistant skill that works with multiple AI coding tools.",
-          "url": "https://github.com/safishamsi/graphify",
-          "stars": 74986,
+          "title": "AppFlowy-IO/AppFlowy",
+          "description": "AI collaborative workspace integrating projects, wikis, and teams.",
+          "url": "https://github.com/AppFlowy-IO/AppFlowy",
+          "stars": 73166,
           "id": 2
         },
         {
-          "title": "OpenBB",
-          "description": "Financial data platform for analysts, quants and AI agents.",
+          "title": "OpenBB-finance/OpenBB",
+          "description": "Financial data platform for analysts, quants, and AI agents.",
           "url": "https://github.com/OpenBB-finance/OpenBB",
-          "stars": 69893,
+          "stars": 69922,
           "id": 3
         },
         {
-          "title": "pi",
-          "description": "AI agent toolkit with unified LLM API, agent loop, and coding agent CLI.",
-          "url": "https://github.com/earendil-works/pi",
-          "stars": 66834,
+          "title": "code-yeongyu/oh-my-openagent",
+          "description": "Coding agent designed for complex codebases and token efficiency.",
+          "url": "https://github.com/code-yeongyu/oh-my-openagent",
+          "stars": 64520,
           "id": 4
         },
         {
-          "title": "worldmonitor",
-          "description": "Real-time global intelligence dashboard with AI-powered news aggregation and geopolitics monitoring.",
-          "url": "https://github.com/koala73/worldmonitor",
-          "stars": 61094,
+          "title": "virattt/ai-hedge-fund",
+          "description": "An AI-powered hedge fund team for automated trading.",
+          "url": "https://github.com/virattt/ai-hedge-fund",
+          "stars": 60733,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-07-01T15:07:17.969+08:00"
+  "updatedAt": "2026-07-02T14:35:32.021+08:00"
 }
