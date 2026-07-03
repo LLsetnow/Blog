@@ -204,7 +204,7 @@ gh pr merge --squash --delete-branch
 
 - **main 禁止直接 push**（GitHub ruleset 强制），所有变更必须走：新分支 → PR → PR Check 通过 → merge。
 - 分支命名：`feat/xxx`、`fix/xxx`、`chore/xxx`、`docs/xxx`。
-- 唯一豁免：GitHub Actions（`fetch-news.yml` 的 news-bot 每日直推 `public/news/today.json` 到 main），**不要移除该豁免**，否则每日新闻任务会挂掉。
+- 唯一豁免：**Deploy keys**（个人仓库无法把 GitHub Actions 设为豁免）。news-bot（`fetch-news.yml`）checkout 时注入 secret `NEWS_BOT_DEPLOY_KEY`（对应写权限 deploy key `news-bot-push`），push 走该 key 绕过保护。**不要删除该豁免、该 deploy key 或该 secret**，否则每日新闻任务会挂掉。
 - 禁止 force push 和删除 main 分支。
 - 规则位置：GitHub → Settings → Rules → Rulesets（名为 `protect-main`）。
 
