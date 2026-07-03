@@ -1,76 +1,76 @@
 {
-  "date": "2026-07-02",
+  "date": "2026-07-03",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "专访美图 CEO 吴欣鸿：做 AI 产品，是一场难以提前策划的游戏",
-          "description": "美图CEO分享AI产品扩展市场版图的经验，截至2026年6月中旬其飞行距离超23万公里，横跨亚欧美等地。",
-          "url": "https://36kr.com/p/3877112973733895?f=rss",
+          "title": "谁能想到，系统流「爽文」最先被AI Agent实现了",
+          "description": "AI Agent赋能网文系统流题材，被拍成职场短剧，展示AI在内容创作中的应用。",
+          "url": "https://36kr.com/p/3878522627518471?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "OpenAI据悉迎来重大技术突破：系统优化使模型推理成本减半",
-          "description": "OpenAI实现系统优化，将模型推理成本降低一半，可能大幅降低大模型使用门槛。",
-          "url": "https://36kr.com/p/3877746956611847?f=rss",
+          "title": "清华、中科院团队联合华西医院研发康养转运机器人，进一步布局居家养老场景",
+          "description": "可立点科技完成战略融资，核心产品为基于AI+机器人的康养转运机器人，用于居家养老。",
+          "url": "https://36kr.com/p/3877863381741577?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "硬氪首发 | 清华系芯片企业再获数千万融资，要以新技术突破AI算力瓶颈",
-          "description": "硅基光子企业灵动芯光完成天使++轮融资，聚焦芯片间光互联核心技术，推进SmartComb多波长密波光源产品化。",
-          "url": "https://36kr.com/p/3877057215393793?f=rss",
+          "title": "因存在植入后门风险，阿里内部全面禁用Claude Code",
+          "description": "因Claude Code被曝存在后门风险，阿里自7月10日起禁止内部使用，并推荐替代品Qoder。",
+          "url": "https://36kr.com/newsflashes/3879528169025542?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "秒悟Meoo上线Night Plan",
-          "description": "阿里云旗下秒悟Meoo推出夜间错峰价，Qwen 3.7-Max夜间折扣最低2折，降低大模型调用成本。",
-          "url": "https://36kr.com/newsflashes/3878124300660995?f=rss",
+          "title": "三星电机计划至2040年在釜山投资15万亿韩元",
+          "description": "三星电机计划投资用于建设人工智能数据中心封装基板与MLCC生产线，支持AI基础设施。",
+          "url": "https://36kr.com/newsflashes/3879519550370051?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "阿里整合QoderWork、悟空、MuleRun，将推出新的生产力AI产品",
-          "description": "阿里巴巴整合旗下Agent产品线，以QoderWork为基础融合悟空、MuleRun能力，打造面向企业生产力场景的更强AI产品。",
-          "url": "https://36kr.com/newsflashes/3878095243522311?f=rss",
+          "title": "韩国推进开发前沿人工智能模型并扩展基础设施",
+          "description": "韩国政府将推进以AI基础设施、物理AI和自主模型能力为核心的大规模项目，今年AI预算增至9.9万亿韩元。",
+          "url": "https://36kr.com/newsflashes/3879510028382209?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "半年935亿元的资本狂欢，谁在豪赌具身智能？",
-          "description": "2026年上半年中国具身智能产业资本涌入935亿元，头部企业加速落地，腰部厂商聚焦细分赛道。",
-          "url": "https://www.huxiu.com/article/4872074.html?f=rss",
+          "title": "优必选等在烟台成立新公司，注册资本3200万",
+          "description": "优必选与烟台深蓝人才发展集团共同成立蔚蓝优智科技公司，业务包括智能机器人研发与制造。",
+          "url": "https://36kr.com/newsflashes/3879506941817095?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "AI智能体化身硅基科学家，大大加速药物研发",
-          "description": "《自然》发表论文描述两个新系统，利用AI智能体团队生成假设、设计实验并分析数据，大幅缩短研发周期。",
-          "url": "https://www.huxiu.com/article/4872059.html?f=rss",
+          "title": "Github Copilot接入开源模型Kimi K2.7",
+          "description": "月之暗面宣布Github Copilot接入第一个开源模型Kimi K2.7，进一步扩展AI辅助编程生态。",
+          "url": "https://36kr.com/newsflashes/3879504555356164?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "AI写的书能不能出版？图书编辑没有答案",
-          "description": "雨果奖作家郝景芳透露其新书中AI生成内容占一半，引发关于AIGC版权和出版规范的讨论。",
-          "url": "https://www.huxiu.com/article/4872052.html?f=rss",
+          "title": "硅谷切片：谷歌，躺平结束与AI搜索",
+          "description": "分析谷歌内部变化及AI搜索的战略调整，探讨大模型对搜索引擎的冲击。",
+          "url": "https://www.huxiu.com/article/4872377.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "打破行业融资速度记录，具身黑马踩中物理AI狂热",
-          "description": "千寻智能等具身智能企业获得快速融资，创始人韩峰涛二次创业，踩中物理AI热潮。",
-          "url": "https://www.huxiu.com/article/4872028.html?f=rss",
+          "title": "五位一线“实干家”，拆解具身智能如何从“进厂”走向“赚钱”",
+          "description": "具身智能和人形机器人赛道面临落地挑战，一线从业者从技术、场景和商业模式角度进行分析。",
+          "url": "https://www.huxiu.com/article/4872320.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "AI后半场，小金属上桌？",
-          "description": "AI竞赛从芯片扩展到能源、材料等领域，小金属因AI基础设施需求而成为关键资源。",
-          "url": "https://www.huxiu.com/article/4871771.html?f=rss",
+          "title": "Fable 5解禁后的众生相",
+          "description": "Anthropic的Fable 5模型在经历出口管制后解禁，引发业界对AI监管和技术开放的讨论。",
+          "url": "https://www.huxiu.com/article/4872318.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "沪深两市成交额突破3万亿",
-          "description": "7月2日，沪深两市成交额突破3万亿元，较上日此时缩量超2700亿。",
-          "url": "https://36kr.com/newsflashes/3878118277984257?f=rss",
+          "title": "上半年国内科创债发行显著扩容，首次发行主体超200家",
+          "description": "2026年上半年，国内科创债发行共991只，规模达9943.73亿元；首次发行主体206家，融资超1000亿元，显示对科技创新的金融支持力度加大。",
+          "url": "https://36kr.com/newsflashes/3879524152504577?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "苹果据悉今年计划生产1000万部折叠屏iPhone",
-          "description": "据报道，苹果已告知供应商为今年生产约1000万部可折叠iPhone做准备，高于此前预估的700万-800万部。",
-          "url": "https://36kr.com/newsflashes/3878116698845442?f=rss",
+          "title": "沪深两市成交额突破2.5万亿",
+          "description": "沪深两市成交额突破2.5万亿元，反映市场交易活跃，股市行情受到广泛关注。",
+          "url": "https://36kr.com/newsflashes/3879495811854340?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "三星高管团队到访联想总部，或涉及存储芯片长期供应合作",
-          "description": "7月2日，韩国三星电子高管团队到访联想集团总部，可能涉及存储芯片供应、AI硬件协同等议题。",
-          "url": "https://36kr.com/newsflashes/3878109626544384?f=rss",
+          "title": "Fable 5解禁后的众生相：Anthropic模型恢复访问",
+          "description": "Anthropic的AI模型Fable 5此前被美国商务部实施出口管制，现已解除管制并恢复访问权限，引发行业对出口管制政策的讨论。",
+          "url": "https://www.huxiu.com/article/4872318.html?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "阿里整合QoderWork、悟空、MuleRun，将推出新的生产力AI产品",
-          "description": "阿里巴巴正在整合旗下Agent产品线，以QoderWork为基础推出更强大的面向企业生产力的AI产品。",
-          "url": "https://36kr.com/newsflashes/3878095243522311?f=rss",
+          "title": "车企巨头，忙着两头下注应对关税战",
+          "description": "美国关税战背景下，全球车企巨头通过调整生产布局、转移供应链等方式应对风险，新车销量同比下降约3%。",
+          "url": "https://www.huxiu.com/article/4872357.html?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "半年935亿元的资本狂欢，谁在豪赌具身智能？",
-          "description": "2026年上半年，中国具身智能产业迎来资本热潮，头部企业加速落地，融资规模达935亿元。",
-          "url": "https://www.huxiu.com/article/4872074.html?f=rss",
+          "title": "证监会同意宇树科技科创板IPO注册",
+          "description": "“具身智能第一股”宇树科技获得证监会科创板IPO注册，即将登陆资本市场，成为机器人领域标志性事件。",
+          "url": "https://36kr.com/p/3878550357946625?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "创新药反弹，趋势能否持续？深度逻辑拆解",
-          "description": "创新药板块近期反弹，分析认为与政策及产品周期相关，但持续性仍需观察。",
-          "url": "https://www.huxiu.com/article/4871746.html?f=rss",
+          "title": "因存在植入后门风险，阿里内部全面禁用Claude Code",
+          "description": "阿里因Claude Code被曝存在植入后门的安全风险，将其列入高风险软件名单，并自7月10日起全面禁止内部使用。",
+          "url": "https://36kr.com/newsflashes/3879528169025542?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "华尔街的老狗们翻脸了",
-          "description": "7月1日美股科技股分化，Meta涨8.81%创半年最佳，而美光跌10.57%，市场情绪波动。",
-          "url": "https://www.huxiu.com/article/4872048.html?f=rss",
+          "title": "韩国推进开发前沿人工智能模型并扩展基础设施",
+          "description": "韩国政府战略性地推进自主AI基础模式建设，今年AI预算提高至9.9万亿韩元，是去年的三倍，目标是跻身全球前三AI强国。",
+          "url": "https://36kr.com/newsflashes/3879510028382209?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "AI后半场，小金属上桌？",
-          "description": "AI竞赛转向能源和材料领域，小金属等资源成为新的战略焦点，中国拥有一定优势。",
-          "url": "https://www.huxiu.com/article/4871771.html?f=rss",
+          "title": "三星电机计划至2040年在釜山投资15万亿韩元",
+          "description": "三星电机计划巨额投资用于建设人工智能数据中心封装基板与MLCC母生产线，显示半导体产业扩张。",
+          "url": "https://36kr.com/newsflashes/3879519550370051?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "印度坑了苹果",
-          "description": "塔塔电子遭勒索软件泄露文件，包含未发布iPhone 18 Pro关键组件信息，影响苹果供应链安全。",
-          "url": "https://www.huxiu.com/article/4871981.html?f=rss",
+          "title": "198倍PE吓退湖北国资？君亭酒店易主失败",
+          "description": "君亭酒店公告终止与湖北文旅的控股权转让协议，历时七个月的交易戛然而止，引发市场对国资收购高估值公司的反思。",
+          "url": "https://www.huxiu.com/article/4872353.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "嘉士伯或已秘密提交印度子公司IPO申请，拟募资至多7亿美元",
-          "description": "丹麦啤酒巨头嘉士伯为其印度业务秘密提交IPO草案，计划募资高达7亿美元，最快今年晚些时候进行。",
-          "url": "https://36kr.com/newsflashes/3878089130914053?f=rss",
+          "title": "中海基金5年缩水62%，国联民生拟清仓，成都国资1.53亿接盘",
+          "description": "国联民生出清中海基金股权，成都国资以1.53亿元接盘，基金规模5年内大幅缩水，反映行业竞争与资本变动。",
+          "url": "https://www.huxiu.com/article/4872349.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -155,37 +155,37 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "Theoria: Rewrite-Acceptability Verification over Informal Reasoning States",
-          "description": "提出了一种结合形式证明和LLM法官的方法，用于验证AI系统答案的可信度，平衡确定性和覆盖率。",
-          "url": "https://arxiv.org/pdf/2607.01223v1",
+          "title": "Distributed Attacks in Persistent-State AI Control",
+          "description": "探讨AI编码代理在持久化代码库中面临的新型攻击面，特别是分布式攻击的威胁。",
+          "url": "https://arxiv.org/pdf/2607.02514v1",
           "stars": null,
           "id": 1
         },
         {
-          "title": "Linkify: Learning from Interface-Augmented Assembly Graphs",
-          "description": "提出Linkify框架，通过接口增强的装配图学习实现机械装配中的上下文感知零件检索，改进CAD生成式AI。",
-          "url": "https://arxiv.org/pdf/2607.01205v1",
+          "title": "Embodied.cpp: A Portable Inference Runtime of Embodied AI Models on Heterogeneous Robots",
+          "description": "提出一个便携式推理运行时，用于在异构机器人上部署具身AI模型，解决碎片化部署问题。",
+          "url": "https://arxiv.org/pdf/2607.02501v1",
           "stars": null,
           "id": 2
         },
         {
-          "title": "Optimal Resource Utilization for Autonomous Laboratory Orchestrators",
-          "description": "研究了自主实验室中AI代理规划实验时的资源优化问题，提出最大化资源利用率的调度方法。",
-          "url": "https://arxiv.org/pdf/2607.01188v1",
+          "title": "Beyond Adam: SOAP and Muon for Faster, Label-Efficient Training of Machine Learning Interatomic Potentials",
+          "description": "介绍SOAP和Muon优化器，实现更快速、标签高效的机器学习原子间势训练。",
+          "url": "https://arxiv.org/pdf/2607.02499v1",
           "stars": null,
           "id": 3
         },
         {
-          "title": "A scheme for topological phases of the Weyl $C^*$-algebra",
-          "description": "基于模型$C^*$-代数的纯态空间拓扑，提出物质拓扑相的分类方案，描述相变与边界态。",
-          "url": "https://arxiv.org/pdf/2607.01183v1",
+          "title": "Seek to Segment: Active Perception for Panoramic Referring Segmentation",
+          "description": "提出主动感知方法用于全景指代分割，增强具身AI在动态环境中的能力。",
+          "url": "https://arxiv.org/pdf/2607.02497v1",
           "stars": null,
           "id": 4
         },
         {
-          "title": "The Decode-Work Law: Margin-Governed, Provably-Exact Spatial Joins over Compressed Geometry",
-          "description": "提出解码-工作律，在压缩几何数据上实现受裕度控制、可证明精确的空间连接操作，建模过滤后候选对的解压缩成本。",
-          "url": "https://arxiv.org/pdf/2607.01182v1",
+          "title": "Human Capital, Not Model Benchmarks, Predicts Hybrid Intelligence in Forecasting",
+          "description": "通过真实货币预测市场实验，发现人力资本而非模型基准是混合智能预测效果的关键因素。",
+          "url": "https://arxiv.org/pdf/2607.02467v1",
           "stars": null,
           "id": 5
         }
@@ -195,42 +195,42 @@
       "name": "AI 开源项目",
       "items": [
         {
-          "title": "netdata/netdata",
-          "description": "AI-powered full stack observability platform for lean teams.",
-          "url": "https://github.com/netdata/netdata",
-          "stars": 79461,
+          "title": "AppFlowy-IO/AppFlowy",
+          "description": "AI collaborative workspace for projects, wikis, and teams.",
+          "url": "https://github.com/AppFlowy-IO/AppFlowy",
+          "stars": 73205,
           "id": 1
         },
         {
-          "title": "AppFlowy-IO/AppFlowy",
-          "description": "AI collaborative workspace integrating projects, wikis, and teams.",
-          "url": "https://github.com/AppFlowy-IO/AppFlowy",
-          "stars": 73166,
+          "title": "OpenBB-finance/OpenBB",
+          "description": "Financial data platform for analysts, quants and AI agents.",
+          "url": "https://github.com/OpenBB-finance/OpenBB",
+          "stars": 69967,
           "id": 2
         },
         {
-          "title": "OpenBB-finance/OpenBB",
-          "description": "Financial data platform for analysts, quants, and AI agents.",
-          "url": "https://github.com/OpenBB-finance/OpenBB",
-          "stars": 69922,
+          "title": "code-yeongyu/oh-my-openagent",
+          "description": "Coding agent for complex codebases, harnessing Codex and OpenCode.",
+          "url": "https://github.com/code-yeongyu/oh-my-openagent",
+          "stars": 64637,
           "id": 3
         },
         {
-          "title": "code-yeongyu/oh-my-openagent",
-          "description": "Coding agent designed for complex codebases and token efficiency.",
-          "url": "https://github.com/code-yeongyu/oh-my-openagent",
-          "stars": 64520,
+          "title": "virattt/ai-hedge-fund",
+          "description": "An AI Hedge Fund Team for automated trading.",
+          "url": "https://github.com/virattt/ai-hedge-fund",
+          "stars": 60762,
           "id": 4
         },
         {
-          "title": "virattt/ai-hedge-fund",
-          "description": "An AI-powered hedge fund team for automated trading.",
-          "url": "https://github.com/virattt/ai-hedge-fund",
-          "stars": 60733,
+          "title": "Fission-AI/OpenSpec",
+          "description": "Spec-driven development (SDD) for AI coding assistants.",
+          "url": "https://github.com/Fission-AI/OpenSpec",
+          "stars": 58456,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-07-02T14:35:32.021+08:00"
+  "updatedAt": "2026-07-03T14:26:20.755+08:00"
 }
