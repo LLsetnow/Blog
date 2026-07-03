@@ -106,7 +106,12 @@ wsl -e zsh -c "source ~/qwen3-tts-venv/bin/activate && cd /mnt/d/github/PROJECT 
 
 #### 5. 提交 Git
 
+> ⚠️ main 分支已开启保护，**禁止直接 push main**，必须走分支 → PR → merge 流程（见下方「Git 维护规则」）。
+
 ```bash
+# 从 main 切新分支（命名：feat/xxx、fix/xxx、chore/xxx）
+git checkout -b feat/xxx
+
 # 查看变更
 git status
 git diff --stat
@@ -115,8 +120,12 @@ git diff --stat
 git add <相关文件>
 git commit -m "feat: 完成 xxx 功能"
 
-# 推送到远程
-git push
+# 推送分支并开 PR
+git push -u origin feat/xxx
+gh pr create --fill
+
+# PR Check（vue-tsc 类型检查）通过后合并
+gh pr merge --squash --delete-branch
 ```
 
 ---
@@ -186,3 +195,29 @@ git push
 | `docs:` | 文档更新 |
 | `chore:` | 杂项（配置、依赖等） |
 | `test:` | 测试相关 |
+
+---
+
+## Git 维护规则（分支保护与 CI/CD）
+
+### 分支保护
+
+- **main 禁止直接 push**（GitHub ruleset 强制），所有变更必须走：新分支 → PR → PR Check 通过 → merge。
+- 分支命名：`feat/xxx`、`fix/xxx`、`chore/xxx`、`docs/xxx`。
+- 唯一豁免：GitHub Actions（`fetch-news.yml` 的 news-bot 每日直推 `public/news/today.json` 到 main），**不要移除该豁免**，否则每日新闻任务会挂掉。
+- 禁止 force push 和删除 main 分支。
+- 规则位置：GitHub → Settings → Rules → Rulesets（名为 `protect-main`）。
+
+### CI/CD 流水线（GitHub Actions）
+
+| Workflow | 触发 | 作用 |
+|:---------|:-----|:-----|
+| `pr-check.yml` | PR 提交/更新 | 运行 `vue-tsc` 类型检查，是合并 PR 的必过检查（required status check：`typecheck`） |
+| `deploy.yml` | push 到 main（含 PR 合并） | `npm ci` → `npm run build`（vue-tsc + 抓取数据 + vite build）→ rsync `dist/` 到阿里云 ECS `/var/www/blog/` |
+| `fetch-news.yml` | 每天 UTC 03:00 + 手动 | 抓取新闻（LLM 摘要）→ 以 news-bot 身份直推 main → 自带部署步骤（bot 的 push 不会触发 deploy.yml） |
+
+### 注意事项
+
+- 类型检查在 PR 阶段（pr-check）和部署构建阶段（deploy 的 build 内）各跑一次；PR 阶段失败则无法合并。
+- 部署没有回滚机制，rsync `--delete` 会让服务器目录与 `dist/` 完全一致；线上出问题时 revert 提交并合并即可触发重新部署。
+- CI 所需 secrets：`DEPLOY_SSH_KEY / DEPLOY_HOST / DEPLOY_USER`（部署）、`BILIBILI_COOKIES`（B站数据）、`LLM_API_KEY / LLM_BASE_URL / LLM_MODEL / ZHIPU_API_KEY`（新闻摘要）。
