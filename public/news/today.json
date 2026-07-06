@@ -1,76 +1,76 @@
 {
-  "date": "2026-07-05",
+  "date": "2026-07-06",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "硬氪首发 | 港大教授成立的忆生科技获数亿天使轮融资，致力于为机器人造一套记忆系统",
-          "description": "忆生科技完成数亿元天使轮融资，致力于从科学第一性原理出发，为机器人打造记忆系统。",
-          "url": "https://36kr.com/p/3882365879005186?f=rss",
+          "title": "千问大模型升级实时语音识别大模型Fun-ASR-Realtime",
+          "description": "千问大模型正式升级实时语音识别大模型Fun-ASR-Realtime，该模型首字延迟控制在百毫秒级别，识别准确率接近离线模型，支持16种方言和30种语言。",
+          "url": "https://36kr.com/newsflashes/3883798757683464?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "硬氪首发 | 清华车辆学院师兄弟创业具身智能，已完成数亿元天使融资，将落地汽车产业",
-          "description": "具身智能公司光象科技完成数亿元天使轮融资，技术将落地汽车产业。",
-          "url": "https://36kr.com/p/3882364132077577?f=rss",
+          "title": "万物皆可世界模型",
+          "description": "世界模型概念在AI投资中热度极高，李飞飞的World Labs和杨立昆的新公司AMI Labs均获得巨额融资，世界模型被认为是AI发展的下一个重要方向。",
+          "url": "https://www.huxiu.com/article/4872894.html?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "硬氪首发 | 小米前高管唐沐创业咖啡机器人，完成数亿融资",
-          "description": "通用餐饮具身机器人公司影智XBOT连续完成数亿元两轮融资，专注于餐饮垂直领域。",
-          "url": "https://36kr.com/p/3882361033322755?f=rss",
+          "title": "世界模型评测的最大盲区，被这个新基准捅破了",
+          "description": "针对世界模型评测中物体恒存等常识能力的缺失，有新基准论文提出改进方法，旨在更全面评估AI对物理世界的理解。",
+          "url": "https://www.huxiu.com/article/4872888.html?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "对话傲鲨创始人徐振华：当科幻机甲成为户外装备，外骨骼如何重新定义人机关系？",
-          "description": "傲鲨外骨骼机器人通过学习用户行走姿态提供助力，正在成为户外装备。",
-          "url": "https://36kr.com/p/3880770270425089?f=rss",
+          "title": "独家对话希捷科技Jason Feist：AI时代，企业正在“删除删除键”",
+          "description": "希捷科技高管在对话中表示，AI时代企业数据存储需求激增，存储架构正在发生根本性变革，传统删除习惯被重新审视。",
+          "url": "https://www.huxiu.com/article/4872911.html?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "9点1氪｜阿里内部全面禁用Claude Code；...",
-          "description": "阿里巴巴内部全面禁用AI代码工具Claude Code，引发对AI辅助编程使用的讨论。",
-          "url": "https://36kr.com/p/3880629882679301?f=rss",
+          "title": "AI，正在替你“养”孩子",
+          "description": "AI技术融入儿童毛绒玩具，能进行对话和记忆互动，形成陪伴式聊天，展示了AI在消费级场景中的新应用。",
+          "url": "https://www.huxiu.com/article/4872896.html?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "秋声 | 袁进辉新公司冲港股IPO，成立不到三年",
-          "description": "AI大模型框架公司创始人袁进辉的新公司（硅基流动）成立不到三年即冲刺港股IPO。",
-          "url": "https://36kr.com/p/3879814941437956?f=rss",
+          "title": "2026戛纳创意节：全球营销决策者都在关心什么？",
+          "description": "戛纳创意节上，AI话题已从小工具升级到智能体工具和智能体营销，成为全球广告行业最关注的方向之一。",
+          "url": "https://www.huxiu.com/article/4872893.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "氪星晚报｜德银：Meta云业务或打开千亿美元级AI投入变现通道",
-          "description": "德意志银行认为Meta向外部出售AI算力及模型访问权限将开启数百亿美元收入通道。",
-          "url": "https://36kr.com/p/3879796756754694?f=rss",
+          "title": "中国半年新增67家独角兽，AI和机器人占多半",
+          "description": "IT桔子数据显示，2026年上半年中国新增67家独角兽企业，其中AI和机器人领域企业占比超过一半，体现了技术驱动的创业趋势。",
+          "url": "https://www.huxiu.com/article/4872900.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "Codex、ChatGPT为何合体？Codex未来何去何从？OpenAI核心leader回应一切",
-          "description": "OpenAI回应Codex与ChatGPT整合原因及未来发展，Codex周活跃用户已达500万。",
-          "url": "https://www.huxiu.com/article/4872739.html?f=rss",
+          "title": "硬氪首发 | 清华车辆学院师兄弟创业具身智能，已完成数亿元天使融资，将落地汽车产业",
+          "description": "具身智能公司光象科技完成数亿元天使轮融资，由多家头部机构参与，资金将用于将AI具身智能技术落地汽车产业。",
+          "url": "https://36kr.com/p/3882364132077577?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "被华为、阿里、美团追捧，这家“Token工厂”为何着急IPO？",
-          "description": "AI基础设施公司硅基流动向港交所递交上市申请，作为Token工厂提供大模型服务。",
-          "url": "https://www.huxiu.com/article/4872736.html?f=rss",
+          "title": "鄂尔多斯、和达金服共同领投，「贻如科技」完成超亿元A轮融资｜36氪首发",
+          "description": "生物基皮革公司贻如科技完成超亿元A轮融资，将依托AI技术加速生物基皮革的技术革新与产品迭代，体现了AI在合成生物学中的应用。",
+          "url": "https://36kr.com/p/3880060701388809?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "赛博菩萨Cloudflare，AI爬虫最严厉的父亲",
-          "description": "Cloudflare宣布自9月15日起默认屏蔽混合用途的AI爬虫，保护网站内容不被AI滥用。",
-          "url": "https://www.huxiu.com/article/4872733.html?f=rss",
+          "title": "野村证券：市场对于“算力过剩”的担忧可能过度了",
+          "description": "野村证券分析师指出，市场对算力过剩担忧过度，实际AI需求引发存储芯片严重短缺，HBM等高带宽内存供不应求。",
+          "url": "https://36kr.com/newsflashes/3883772210917639?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "证监会拟修改再融资规则：锁价定增受限，储架发行登场",
-          "description": "7月3日晚，证监会就修改《上市公司证券发行注册管理办法》公开征求意见，锁价定增被限制，储架发行制度登场，影响上市公司再融资格局。",
-          "url": "https://www.huxiu.com/article/4872738.html",
+          "title": "A股三大指数集体收跌，煤炭股走强",
+          "description": "沪指跌0.06%，深成指跌1.16%，创业板指跌1.77%，建材、通信设备板块领跌，煤炭、农业板块涨幅居前。",
+          "url": "https://36kr.com/newsflashes/3883816090939650?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "车市“成人礼”：一年内82项新国标炸场",
-          "description": "2026年7月1日起，汽车行业迎来规模最大、标准最严的一批强制性国家标准集中落地，涵盖侧面碰撞、动力电池安全、后碰撞安全等。",
-          "url": "https://www.huxiu.com/article/4872735.html",
+          "title": "沪深两市成交额突破3万亿",
+          "description": "沪深两市成交额突破3万亿，较上一个交易日缩量超700亿元。",
+          "url": "https://36kr.com/newsflashes/3883808696447237?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "中金：建议中长期逢低布局农产品多头行情",
-          "description": "中金公司研报指出，2026年全球农产品或迎来周期拐点，价格底部夯实，近期建议中长期逢低布局农产品多头行情。",
-          "url": "https://36kr.com/newsflashes/3882343015444736?f=rss",
+          "title": "A股新版交易规则今起施行",
+          "description": "A股市场新版交易规则于7月6日起正式施行，涉及交易机制等调整。",
+          "url": "https://36kr.com/p/3883400536453381?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "全球最大数据中心建设终止：黑石放弃弗吉尼亚州大型项目",
-          "description": "黑石旗下QTS于7月2日决定放弃参与弗吉尼亚州大型数据中心项目，该原计划为全球最大，引发对科技基础设施投资过热的担忧。",
-          "url": "https://www.huxiu.com/article/4872730.html",
+          "title": "野村证券：市场对于“算力过剩”的担忧可能过度了",
+          "description": "野村分析师认为存储芯片行业距离下行周期还很远，AI需求导致普通DRAM和NAND供应受限。",
+          "url": "https://36kr.com/newsflashes/3883772210917639?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "国产半导体设备企业迎来“黄金大年”",
-          "description": "近期中微公司收购杭州众硅，多家国产半导体设备公司公布扩张计划，三重需求叠加推动产业进入景气周期。",
-          "url": "https://www.huxiu.com/article/4872744.html",
+          "title": "中国半年新增67家独角兽，AI和机器人占多半",
+          "description": "截至2026年7月1日，中国共有517家独角兽企业，总估值约2.39万亿美元，新增独角兽中AI和机器人领域占比超半数。",
+          "url": "https://www.huxiu.com/article/4872900.html?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "2026年上半年155家公司IPO，合计募资2339.85亿元",
-          "description": "2026年上半年中国IPO市场活跃，155家公司成功上市，募资总额2339.85亿元，同比大幅增长，反映资本市场融资回暖。",
-          "url": "https://www.huxiu.com/article/4872734.html",
+          "title": "武汉一季度规模以上工业利润同比增长129%",
+          "description": "武汉一季度工业利润同比飙升129%，断层领先全国万亿级城市，工业增加值增长11.6%。",
+          "url": "https://www.huxiu.com/article/4872101.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "三部门：调整节能汽车、新能源汽车车船税优惠政策",
-          "description": "7月5日，财政部等三部门发布通知，调整节能汽车、新能源汽车车船税优惠政策，持续支持绿色出行。",
-          "url": "https://36kr.com/p/3880629882679301?f=rss",
+          "title": "跨境电商风向转变：新生代不再只拼价格，开始争“定价权”",
+          "description": "亚马逊与福布斯中国发布新生代跨境电商30人评选，强调中国卖家从低价竞争转向品牌和定价权。",
+          "url": "https://36kr.com/p/3883561480876297?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "硅基流动向港交所递表，被华为、阿里、美团追捧",
-          "description": "AI基础设施公司硅基流动向港交所递交上市申请，成立不到三年，获华为、阿里、美团等巨头投资，但尚未盈利。",
-          "url": "https://www.huxiu.com/article/4872736.html",
+          "title": "2026，量子计算迟到的狂欢：能拿订单、奔赴IPO、市值破百亿",
+          "description": "量子计算公司开始获得订单、赴纳斯达克上市，市值突破150亿美元，产业走出寒冬。",
+          "url": "https://36kr.com/p/3883513899380744?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "科技热度正悄然导入楼市：买房新贵增多，土地争夺激烈",
-          "description": "2026年上半年科技行业热度向楼市传导，产业集聚区土地争夺白热化，买房新贵增多，一二线城市成交结构变化。",
-          "url": "https://www.huxiu.com/article/4872743.html",
+          "title": "宁德时代在厦门成立新公司，注册资本100亿",
+          "description": "宁德时代全资持股的零碳科技（厦门）有限公司成立，注册资本100亿，经营范围包括新兴能源技术研发、储能、电池制造等。",
+          "url": "https://36kr.com/newsflashes/3883806713147648?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "豆包、千问下线智能体功能，监管关注软色情",
-          "description": "因涉及软色情等违规内容，字节跳动的豆包和阿里巴巴的千问几乎同时下线智能体功能，引发对AI应用监管的讨论。",
-          "url": "https://www.huxiu.com/article/4872727.html",
+          "title": "中国航天科技集团商业火箭公司增资至41.7亿，增幅约199%",
+          "description": "航天科技集团商业火箭公司注册资本由13.96亿增至约41.7亿，用于火箭控制系统研发和发射服务。",
+          "url": "https://36kr.com/newsflashes/3883786031820804?f=rss",
           "stars": null,
           "id": 10
         }
@@ -156,35 +156,35 @@
       "items": [
         {
           "title": "Distributed Attacks in Persistent-State AI Control",
-          "description": "探讨AI编码代理在跨会话持久性代码库中的新型攻击面，分析未对齐或提示注入攻击的风险。",
+          "description": "Explores a new attack surface where misaligned or prompt-influenced AI coding agents exploit codebase persistence across sessions.",
           "url": "https://arxiv.org/pdf/2607.02514v1",
           "stars": null,
           "id": 1
         },
         {
           "title": "Embodied.cpp: A Portable Inference Runtime of Embodied AI Models on Heterogeneous Robots",
-          "description": "提出一种便携式推理运行时，支持在异构机器人上部署视觉-语言-动作模型和世界-动作模型，解决碎片化问题。",
+          "description": "Proposes a portable runtime for deploying embodied AI models (VLA, WAM) across diverse robots, addressing fragmentation in model-specific stacks.",
           "url": "https://arxiv.org/pdf/2607.02501v1",
           "stars": null,
           "id": 2
         },
         {
           "title": "Beyond Adam: SOAP and Muon for Faster, Label-Efficient Training of Machine Learning Interatomic Potentials",
-          "description": "引入SOAP和Muon优化器，显著加速机器学习原子间势的训练，在标签效率方面超越Adam。",
+          "description": "Introduces SOAP and Muon optimizers to accelerate training and improve label efficiency for machine learning interatomic potentials in scientific simulation.",
           "url": "https://arxiv.org/pdf/2607.02499v1",
           "stars": null,
           "id": 3
         },
         {
           "title": "Seek to Segment: Active Perception for Panoramic Referring Segmentation",
-          "description": "提出主动感知框架，使智能体在未知环境中通过移动视角实现全景指代分割，突破静态图像限制。",
+          "description": "Presents an active perception approach for panoramic referring segmentation, enabling embodied agents to dynamically adjust viewpoints.",
           "url": "https://arxiv.org/pdf/2607.02497v1",
           "stars": null,
           "id": 4
         },
         {
           "title": "Human Capital, Not Model Benchmarks, Predicts Hybrid Intelligence in Forecasting",
-          "description": "通过真实货币预测市场实验，发现人类资本而非模型基准更能预测人机混合智能的预测表现。",
+          "description": "Uses a real-money prediction market to show that human capital, not model benchmarks, determines the effectiveness of human-AI hybrid forecasting.",
           "url": "https://arxiv.org/pdf/2607.02467v1",
           "stars": null,
           "id": 5
@@ -195,42 +195,42 @@
       "name": "AI 开源项目",
       "items": [
         {
-          "title": "netdata/netdata",
-          "description": "AI-powered full stack observability platform for lean teams.",
-          "url": "https://github.com/netdata/netdata",
-          "stars": 79497,
+          "title": "OpenHands",
+          "description": "AI驱动的开发平台，助力自动化编程。",
+          "url": "https://github.com/OpenHands/OpenHands",
+          "stars": 79559,
           "id": 1
         },
         {
-          "title": "DietrichGebert/ponytail",
-          "description": "Makes AI agents adopt laziest senior dev thinking to minimize code writing.",
+          "title": "ponytail",
+          "description": "让AI代理像最懒的高级工程师一样思考，主张不写代码。",
           "url": "https://github.com/DietrichGebert/ponytail",
-          "stars": 74108,
+          "stars": 75222,
           "id": 2
         },
         {
-          "title": "addyosmani/agent-skills",
-          "description": "Production-grade engineering skills for AI coding agents.",
+          "title": "agent-skills",
+          "description": "为AI编码代理提供生产级工程技能。",
           "url": "https://github.com/addyosmani/agent-skills",
-          "stars": 68966,
+          "stars": 70078,
           "id": 3
         },
         {
-          "title": "ruvnet/ruflo",
-          "description": "Agent meta-harness for deploying intelligent multi-agent swarms and workflow automation.",
+          "title": "ruflo",
+          "description": "领先的代理元框架，支持多智能体群组部署与协调。",
           "url": "https://github.com/ruvnet/ruflo",
-          "stars": 63038,
+          "stars": 63198,
           "id": 4
         },
         {
-          "title": "sansan0/TrendRadar",
-          "description": "AI-driven public opinion and trend monitor with multi-platform aggregation and smart alerts.",
+          "title": "TrendRadar",
+          "description": "AI驱动的舆情与趋势监控工具，聚合多平台信息并支持智能提醒。",
           "url": "https://github.com/sansan0/TrendRadar",
-          "stars": 60254,
+          "stars": 60285,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-07-05T14:35:03.238+08:00"
+  "updatedAt": "2026-07-06T15:06:12.314+08:00"
 }
