@@ -1,76 +1,76 @@
 {
-  "date": "2026-07-06",
+  "date": "2026-07-07",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "千问大模型升级实时语音识别大模型Fun-ASR-Realtime",
-          "description": "千问大模型正式升级实时语音识别大模型Fun-ASR-Realtime，该模型首字延迟控制在百毫秒级别，识别准确率接近离线模型，支持16种方言和30种语言。",
-          "url": "https://36kr.com/newsflashes/3883798757683464?f=rss",
+          "title": "“龙虾”为什么这么火？OpenClaw登顶GitHub后，AI Agent时代真的来了？",
+          "description": "OpenClaw以25.2万星标超越React登顶GitHub开源项目历史第一，引发AI Agent时代到来的讨论。",
+          "url": "https://36kr.com/p/3885061350617350?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "万物皆可世界模型",
-          "description": "世界模型概念在AI投资中热度极高，李飞飞的World Labs和杨立昆的新公司AMI Labs均获得巨额融资，世界模型被认为是AI发展的下一个重要方向。",
-          "url": "https://www.huxiu.com/article/4872894.html?f=rss",
+          "title": "用AI“复刻”人类细胞、预判药效，「华源智因」获千万级人民币种子轮融资",
+          "description": "AI虚拟细胞企业华源智因完成千万级种子轮融资，用于多模态测序技术迭代和医院合作。",
+          "url": "https://36kr.com/p/3883943959621634?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "世界模型评测的最大盲区，被这个新基准捅破了",
-          "description": "针对世界模型评测中物体恒存等常识能力的缺失，有新基准论文提出改进方法，旨在更全面评估AI对物理世界的理解。",
-          "url": "https://www.huxiu.com/article/4872888.html?f=rss",
+          "title": "8点1氪丨千问大模型升级实时语音识别大模型Fun-ASR-Realtime",
+          "description": "千问大模型升级推出实时语音识别模型Fun-ASR-Realtime，提升语音交互能力。",
+          "url": "https://36kr.com/p/3884831072514309?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "独家对话希捷科技Jason Feist：AI时代，企业正在“删除删除键”",
-          "description": "希捷科技高管在对话中表示，AI时代企业数据存储需求激增，存储架构正在发生根本性变革，传统删除习惯被重新审视。",
-          "url": "https://www.huxiu.com/article/4872911.html?f=rss",
+          "title": "氪星晚报丨佑驾创新正式发布四轮足机器人；千问大模型升级实时语音识别大模型Fun-ASR-Realtime",
+          "description": "佑驾创新发布四轮足机器人，同时千问大模型升级实时语音识别模型Fun-ASR-Realtime。",
+          "url": "https://36kr.com/p/3884024701874183?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "AI，正在替你“养”孩子",
-          "description": "AI技术融入儿童毛绒玩具，能进行对话和记忆互动，形成陪伴式聊天，展示了AI在消费级场景中的新应用。",
-          "url": "https://www.huxiu.com/article/4872896.html?f=rss",
+          "title": "获DCM Ventures投资数百万美元，APTSell希望成为AI版的首席销售官",
+          "description": "APTSell是一个组合式销售Agent，旨在成为AI版首席销售官，获得DCM投资。",
+          "url": "https://36kr.com/p/3883591654895873?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "2026戛纳创意节：全球营销决策者都在关心什么？",
-          "description": "戛纳创意节上，AI话题已从小工具升级到智能体工具和智能体营销，成为全球广告行业最关注的方向之一。",
-          "url": "https://www.huxiu.com/article/4872893.html?f=rss",
+          "title": "腾讯“吐司” iOS版正式上线",
+          "description": "腾讯旗下AI应用生成及灵感共创平台“吐司”iOS版上线，支持零门槛Vibe Coding生成专属App。",
+          "url": "https://36kr.com/newsflashes/3885205259317511?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "中国半年新增67家独角兽，AI和机器人占多半",
-          "description": "IT桔子数据显示，2026年上半年中国新增67家独角兽企业，其中AI和机器人领域企业占比超过一半，体现了技术驱动的创业趋势。",
-          "url": "https://www.huxiu.com/article/4872900.html?f=rss",
+          "title": "高德打车：已首批接入支付宝AI开放平台",
+          "description": "高德打车接入支付宝AI开放平台，该平台面向生态伙伴开放AI接入能力。",
+          "url": "https://36kr.com/newsflashes/3885195630424072?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "硬氪首发 | 清华车辆学院师兄弟创业具身智能，已完成数亿元天使融资，将落地汽车产业",
-          "description": "具身智能公司光象科技完成数亿元天使轮融资，由多家头部机构参与，资金将用于将AI具身智能技术落地汽车产业。",
-          "url": "https://36kr.com/p/3882364132077577?f=rss",
+          "title": "零一万物推出三款“一号位决策AI”产品",
+          "description": "零一万物发布老板AI、销冠AI、投资官AI三款面向经营、销售和投资决策的AI产品。",
+          "url": "https://36kr.com/newsflashes/3885184582414600?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "鄂尔多斯、和达金服共同领投，「贻如科技」完成超亿元A轮融资｜36氪首发",
-          "description": "生物基皮革公司贻如科技完成超亿元A轮融资，将依托AI技术加速生物基皮革的技术革新与产品迭代，体现了AI在合成生物学中的应用。",
-          "url": "https://36kr.com/p/3880060701388809?f=rss",
+          "title": "杨立昆刚骂完AGI，Anthropic就找到了AGI的证据",
+          "description": "Anthropic在Claude模型中发现名为J-space的区域，该区域控制推理过程，被视为AGI的潜在证据。",
+          "url": "https://www.huxiu.com/article/4873187.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "野村证券：市场对于“算力过剩”的担忧可能过度了",
-          "description": "野村证券分析师指出，市场对算力过剩担忧过度，实际AI需求引发存储芯片严重短缺，HBM等高带宽内存供不应求。",
-          "url": "https://36kr.com/newsflashes/3883772210917639?f=rss",
+          "title": "创具身行业最快百台交付纪录，对话至简动力：如何做“具身时代的手艺人”",
+          "description": "至简动力完成首款全场景机器人i7 Pro百台交付，并落成全球首个CNC智能化具身机器人产线。",
+          "url": "https://www.huxiu.com/article/4873218.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "A股三大指数集体收跌，煤炭股走强",
-          "description": "沪指跌0.06%，深成指跌1.16%，创业板指跌1.77%，建材、通信设备板块领跌，煤炭、农业板块涨幅居前。",
-          "url": "https://36kr.com/newsflashes/3883816090939650?f=rss",
+          "title": "8点1氪丨SK海力士本周五将登陆纳斯达克；99万机器人“伴侣”续航撑不过一晚？优必选回应；青海省博物馆回应“国家一级文物发现TCL字样”",
+          "description": "SK海力士将于10日在纳斯达克上市，华为Mate90系列有望搭载新麒麟芯片，央视曝光滴眼液涉事企业被立案。",
+          "url": "https://36kr.com/p/3884831072514309?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "沪深两市成交额突破3万亿",
-          "description": "沪深两市成交额突破3万亿，较上一个交易日缩量超700亿元。",
-          "url": "https://36kr.com/newsflashes/3883808696447237?f=rss",
+          "title": "商业银行不良处置仍在加速，上半年全行业转让核销合计至少5000亿",
+          "description": "上半年银登中心转让不良1011亿元，前5个月核销4868亿元，商业银行不良资产处置合计超5000亿元。",
+          "url": "https://36kr.com/newsflashes/3885187316920581?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "A股新版交易规则今起施行",
-          "description": "A股市场新版交易规则于7月6日起正式施行，涉及交易机制等调整。",
-          "url": "https://36kr.com/p/3883400536453381?f=rss",
+          "title": "新思科技停产部分传统EDA软件，已通知超10家芯片厂商",
+          "description": "EDA巨头新思科技通知芯片制造商，部分传统分析软件将停产，资源转向高价值产品。",
+          "url": "https://36kr.com/newsflashes/3885189964378372?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "野村证券：市场对于“算力过剩”的担忧可能过度了",
-          "description": "野村分析师认为存储芯片行业距离下行周期还很远，AI需求导致普通DRAM和NAND供应受限。",
-          "url": "https://36kr.com/newsflashes/3883772210917639?f=rss",
+          "title": "上市前夜｜4个月净利润38.4亿元，深圳存储黑马冲港股IPO",
+          "description": "深圳宏芯宇电子向港交所递交招股书，业绩表现突出，拟在港股上市。",
+          "url": "https://36kr.com/p/3883706720727303?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "中国半年新增67家独角兽，AI和机器人占多半",
-          "description": "截至2026年7月1日，中国共有517家独角兽企业，总估值约2.39万亿美元，新增独角兽中AI和机器人领域占比超半数。",
-          "url": "https://www.huxiu.com/article/4872900.html?f=rss",
+          "title": "国家电投、中国康富在天津成立新能源投资合伙企业，出资额约17.9亿",
+          "description": "天津晋电新能源投资合伙企业成立，出资额约17.9亿人民币，由国家电投等共同投资。",
+          "url": "https://36kr.com/newsflashes/3885200558715141?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "武汉一季度规模以上工业利润同比增长129%",
-          "description": "武汉一季度工业利润同比飙升129%，断层领先全国万亿级城市，工业增加值增长11.6%。",
-          "url": "https://www.huxiu.com/article/4872101.html?f=rss",
+          "title": "三星利润超英伟达成全球最赚钱公司，市场却吓了一跳",
+          "description": "三星电子二季度营业利润89.4万亿韩元（约588亿美元），同比增长1810%，受HBM3E和DRAM涨价推动。",
+          "url": "https://www.huxiu.com/article/4873197.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "跨境电商风向转变：新生代不再只拼价格，开始争“定价权”",
-          "description": "亚马逊与福布斯中国发布新生代跨境电商30人评选，强调中国卖家从低价竞争转向品牌和定价权。",
-          "url": "https://36kr.com/p/3883561480876297?f=rss",
+          "title": "韩国企业第一季度持有过剩资金超20.8万亿韩元，创历史新高",
+          "description": "韩国央行数据显示，非金融企业净金融资产达20.8万亿韩元，因半导体出口强劲推动盈利增长。",
+          "url": "https://36kr.com/newsflashes/3885165100560641?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "2026，量子计算迟到的狂欢：能拿订单、奔赴IPO、市值破百亿",
-          "description": "量子计算公司开始获得订单、赴纳斯达克上市，市值突破150亿美元，产业走出寒冬。",
-          "url": "https://36kr.com/p/3883513899380744?f=rss",
+          "title": "广东省新增11款已完成登记的生成式人工智能服务",
+          "description": "截至7月7日，广东省新增11款生成式AI服务登记，累计已有64款服务完成登记。",
+          "url": "https://36kr.com/newsflashes/3885177550156041?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "宁德时代在厦门成立新公司，注册资本100亿",
-          "description": "宁德时代全资持股的零碳科技（厦门）有限公司成立，注册资本100亿，经营范围包括新兴能源技术研发、储能、电池制造等。",
-          "url": "https://36kr.com/newsflashes/3883806713147648?f=rss",
+          "title": "同程收购嘀嗒，不得不做的选择",
+          "description": "同程宣布收购嘀嗒，补齐顺风车与出租车能力，形成“门到门”出行闭环。",
+          "url": "https://www.huxiu.com/article/4873209.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "中国航天科技集团商业火箭公司增资至41.7亿，增幅约199%",
-          "description": "航天科技集团商业火箭公司注册资本由13.96亿增至约41.7亿，用于火箭控制系统研发和发射服务。",
-          "url": "https://36kr.com/newsflashes/3883786031820804?f=rss",
+          "title": "餐饮外企大撤退",
+          "description": "大量国际餐饮品牌总部退出中国市场，由本土企业或投资机构接手运营。",
+          "url": "https://www.huxiu.com/article/4873201.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -155,37 +155,37 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "Distributed Attacks in Persistent-State AI Control",
-          "description": "Explores a new attack surface where misaligned or prompt-influenced AI coding agents exploit codebase persistence across sessions.",
-          "url": "https://arxiv.org/pdf/2607.02514v1",
+          "title": "Deep Learning for Semen Analysis in Male Infertility: Computer Vision, Multimodal Fusion, and Clinical Translation",
+          "description": "该论文综述了深度学习在男性不育症精液分析中的应用，涵盖计算机视觉、多模态融合及临床转化。",
+          "url": "https://arxiv.org/pdf/2607.05311v1",
           "stars": null,
           "id": 1
         },
         {
-          "title": "Embodied.cpp: A Portable Inference Runtime of Embodied AI Models on Heterogeneous Robots",
-          "description": "Proposes a portable runtime for deploying embodied AI models (VLA, WAM) across diverse robots, addressing fragmentation in model-specific stacks.",
-          "url": "https://arxiv.org/pdf/2607.02501v1",
+          "title": "Evaluating and Understanding Model Editing for Medical Vision Language Models",
+          "description": "该论文评估了模型编辑技术在医学视觉语言模型中的效果，探讨了快速修正错误而不需重训练的方法。",
+          "url": "https://arxiv.org/pdf/2607.05310v1",
           "stars": null,
           "id": 2
         },
         {
-          "title": "Beyond Adam: SOAP and Muon for Faster, Label-Efficient Training of Machine Learning Interatomic Potentials",
-          "description": "Introduces SOAP and Muon optimizers to accelerate training and improve label efficiency for machine learning interatomic potentials in scientific simulation.",
-          "url": "https://arxiv.org/pdf/2607.02499v1",
+          "title": "The Exact Worst-Case Tail Probability under Bounded Kurtosis",
+          "description": "该论文精确计算了在峰度有界条件下单侧尾概率的 worst-case 值。",
+          "url": "https://arxiv.org/pdf/2607.05226v1",
           "stars": null,
           "id": 3
         },
         {
-          "title": "Seek to Segment: Active Perception for Panoramic Referring Segmentation",
-          "description": "Presents an active perception approach for panoramic referring segmentation, enabling embodied agents to dynamically adjust viewpoints.",
-          "url": "https://arxiv.org/pdf/2607.02497v1",
+          "title": "Curated retrieval versus open web search in public AI information services: a coverage-trust trade-off",
+          "description": "该论文研究了公共AI信息服务中策展检索与开放网络搜索之间的覆盖-信任权衡。",
+          "url": "https://arxiv.org/pdf/2607.05217v1",
           "stars": null,
           "id": 4
         },
         {
-          "title": "Human Capital, Not Model Benchmarks, Predicts Hybrid Intelligence in Forecasting",
-          "description": "Uses a real-money prediction market to show that human capital, not model benchmarks, determines the effectiveness of human-AI hybrid forecasting.",
-          "url": "https://arxiv.org/pdf/2607.02467v1",
+          "title": "Causal-RetiGraph: Cross-Cohort Retinal Support and Same-Subject Pathway Analysis for Diabetic Retinopathy",
+          "description": "该论文提出了Causal-RetiGraph框架，用于跨队列视网膜支持和同主体通路分析，以辅助糖尿病视网膜病变诊断。",
+          "url": "https://arxiv.org/pdf/2607.05204v1",
           "stars": null,
           "id": 5
         }
@@ -196,41 +196,41 @@
       "items": [
         {
           "title": "OpenHands",
-          "description": "AI驱动的开发平台，助力自动化编程。",
+          "description": "AI-Driven Development platform for building software with AI agents.",
           "url": "https://github.com/OpenHands/OpenHands",
-          "stars": 79559,
+          "stars": 79681,
           "id": 1
         },
         {
           "title": "ponytail",
-          "description": "让AI代理像最懒的高级工程师一样思考，主张不写代码。",
+          "description": "Makes your AI agent think like the laziest senior dev, promoting minimal code generation.",
           "url": "https://github.com/DietrichGebert/ponytail",
-          "stars": 75222,
+          "stars": 76163,
           "id": 2
         },
         {
-          "title": "agent-skills",
-          "description": "为AI编码代理提供生产级工程技能。",
-          "url": "https://github.com/addyosmani/agent-skills",
-          "stars": 70078,
+          "title": "OpenBB",
+          "description": "Open data platform for analysts, quants and AI agents to access financial data.",
+          "url": "https://github.com/OpenBB-finance/OpenBB",
+          "stars": 70201,
           "id": 3
         },
         {
           "title": "ruflo",
-          "description": "领先的代理元框架，支持多智能体群组部署与协调。",
+          "description": "Agent meta-harness for deploying intelligent multi-player swarms and autonomous workflows.",
           "url": "https://github.com/ruvnet/ruflo",
-          "stars": 63198,
+          "stars": 63339,
           "id": 4
         },
         {
           "title": "TrendRadar",
-          "description": "AI驱动的舆情与趋势监控工具，聚合多平台信息并支持智能提醒。",
+          "description": "AI-driven public opinion and trend monitor with multi-platform aggregation and smart alerts.",
           "url": "https://github.com/sansan0/TrendRadar",
-          "stars": 60285,
+          "stars": 60316,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-07-06T15:06:12.314+08:00"
+  "updatedAt": "2026-07-07T14:40:11.550+08:00"
 }
