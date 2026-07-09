@@ -1,76 +1,76 @@
 {
-  "date": "2026-07-08",
+  "date": "2026-07-09",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "AI 视频全面成熟：Seedance 2.0 领衔，6 款主流工具深度横评",
-          "description": "2026年AI视频生成赛道全面爆发，Seedance 2.0 等工具实现分钟级长视频和物理世界精准还原。",
-          "url": "https://36kr.com/p/3886403765596418?f=rss",
+          "title": "自研焊接具身大脑模型，以“智能焊工”切入工业制造具身智能赛道，「昇视唯盛」完成数亿元B轮融资｜36氪首发",
+          "description": "聚焦工业制造具身智能的昇视唯盛完成数亿元B轮融资，资金将用于焊接具身智能大脑与自主小脑运动控制系统的迭代升级。",
+          "url": "https://36kr.com/p/3887871679347208?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "8点1氪丨前华为天才少年吐槽DeepSeek面试，称面试官质疑他抄袭；苹果折叠屏已在量产；特朗普呼吁购买戴尔电脑，引发戴尔暴涨百亿美元",
-          "description": "包含DeepSeek面试争议和SpaceX公布AI等AI相关话题的新闻摘要。",
-          "url": "https://36kr.com/p/3886238403129353?f=rss",
+          "title": "物理AI公司获晶科能源、国投创新等数亿融资，要做全球能源基础设施“大脑”",
+          "description": "物理AI企业深度智控完成数亿元B轮融资，致力于通过AI技术打造全球能源基础设施的智能大脑。",
+          "url": "https://36kr.com/p/3887726503688968?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "「德睿智药」获5200万美元B轮融资，AI设计的减肥药已进入3期临床｜36氪首发",
-          "description": "AI制药公司德睿智药完成B轮融资，其AI平台设计的减肥药已进入3期临床。",
-          "url": "https://36kr.com/p/3885479689465858?f=rss",
+          "title": "8点1氪｜OpenAI首席未来学家宣布离职",
+          "description": "OpenAI首席未来学家宣布离职，引发业界对AI发展方向的关注。",
+          "url": "https://36kr.com/p/3887648675133960?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "瑞为技术暗盘破发，收盘跌17%｜敲钟时刻",
-          "description": "视觉具身智能第一股瑞为技术暗盘破发，反映市场对AI视觉公司的估值变化。",
-          "url": "https://36kr.com/p/3885560015220997?f=rss",
+          "title": "AI 视频全面成熟：Seedance 2.0 领衔，6 款主流工具深度横评",
+          "description": "2026年AI视频生成进入成熟期，Seedance 2.0等工具实现从短碎片到长视频连贯叙事的跨越。",
+          "url": "https://36kr.com/p/3886403765596418?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "易控智驾暗盘破发：盘中一度跌近两成、收涨4%｜敲钟时刻",
-          "description": "全球矿区无人驾驶第一股易控智驾暗盘走势波动，无人驾驶技术公司上市表现。",
-          "url": "https://36kr.com/p/3885481886674951?f=rss",
+          "title": "英伟达将与Hugging Face合作开发机器人开源模型",
+          "description": "英伟达与Hugging Face联手开发机器人开源基础模型，结合GPU生态与模型库降低AI训练门槛。",
+          "url": "https://36kr.com/newsflashes/3887985760631560?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "腾讯宣布OpenAI前研究员田永龙入职，参与VLM研发",
-          "description": "腾讯招揽OpenAI前研究员田永龙，加入大语言模型部负责视觉语言模型VLM研发。",
-          "url": "https://36kr.com/newsflashes/3886501669449729?f=rss",
+          "title": "云深处 vs 宇树科技：四足机器人赛道的“两种活法”",
+          "description": "具身智能迎超级融资周期，宇树科技闪电过会，云深处紧随其后，四足机器人赛道竞争白热化。",
+          "url": "https://www.huxiu.com/article/4873876.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "AI把代码写崩，再花1周1万美元请人用AI修：Vibe Coding的荒诞闭环出现了",
-          "description": "新兴公司Slopfix专门清理AI生成的难以维护的代码，反映出AI编写代码的后续问题。",
-          "url": "https://www.huxiu.com/article/4873527.html?f=rss",
+          "title": "中国“灵晟”超算系统登顶全球超级计算机榜单",
+          "description": "中国超算“灵晟”融合传统计算与AI功能，荣登全球超算榜首，代表科学计算未来方向。",
+          "url": "https://www.huxiu.com/article/4873869.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "姚顺雨和Hy3，能否跨过付费关？",
-          "description": "讨论腾讯AI产品Hy3的付费前景，涉及大模型商业化。",
-          "url": "https://www.huxiu.com/article/4873513.html?f=rss",
+          "title": "Meta“投降”？一场被严重误读的算力恐慌",
+          "description": "Meta计划出售AI算力和模型访问权限，引发行业对算力市场及AI基础设施未来的讨论。",
+          "url": "https://www.huxiu.com/article/4873866.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "赛博伴侣，售价百万：人机恋走到哪一步了？",
-          "description": "优必选人形机器人U1预售火爆，AI机器人的商业化和伦理讨论。",
-          "url": "https://www.huxiu.com/article/4873501.html?f=rss",
+          "title": "Momenta上市了，但“物理AI”这个故事才刚刚开始",
+          "description": "智能驾驶方案商Momenta在港交所上市，其基于物理AI的自动驾驶技术正加速落地。",
+          "url": "https://www.huxiu.com/article/4873862.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "资本疯抢、玩家扎堆，脑机接口真的要来了？",
-          "description": "脑机接口技术进展及商业化前景，涉及AI和机器学习解码信号。",
-          "url": "https://www.huxiu.com/article/4873465.html?f=rss",
+          "title": "地产AI进入落地战，深度智联又甩出一张牌",
+          "description": "深度智联推出地产模数通——企业专属大模型一体机，并发布房地产经纪人智能体，AI在地产行业加速落地。",
+          "url": "https://36kr.com/p/3886709249241349?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "沪深两市成交额突破2万亿",
-          "description": "2026年7月8日，沪深两市成交额突破2万亿元，市场交投活跃。",
-          "url": "https://36kr.com/newsflashes/3886566645198851?f=rss",
+          "title": "沪深两市成交额突破2.5万亿",
+          "description": "今日沪深两市成交额突破2.5万亿，市场交投活跃，显示投资者情绪高涨。",
+          "url": "https://36kr.com/newsflashes/3888024555469317?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "国家外汇管理局：截至6月末中国外汇储备规模34163亿美元",
-          "description": "国家外汇管理局公布数据，截至2026年6月末，中国外汇储备规模为34163亿美元，保持稳定。",
-          "url": "https://36kr.com/p/3886238403129353?f=rss",
+          "title": "科创50指数涨幅扩大至7%",
+          "description": "科创50指数持续拉升大涨7%，成份股仅5只下跌，半导体产业链全线走高。",
+          "url": "https://36kr.com/newsflashes/3888014893545991?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "瑞为技术暗盘破发，收盘跌17%",
-          "description": "视觉具身智能第一股瑞为技术（07656.HK）暗盘收跌16.94%，报17.99港元，较发行价破发。",
-          "url": "https://36kr.com/p/3885560015220997?f=rss",
+          "title": "上半年我国新能源汽车产销量双超700万辆",
+          "description": "2026年上半年我国新能源汽车产销分别完成743.8万辆和744.6万辆，6月销量占比达58.5%。",
+          "url": "https://36kr.com/newsflashes/3888004341037832?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "易控智驾暗盘破发后收涨4%",
-          "description": "全球矿区无人驾驶第一股易控智驾（07687.HK）暗盘盘中一度跌近两成，最终收涨4%，走出V形。",
-          "url": "https://36kr.com/p/3885481886674951?f=rss",
+          "title": "汇丰银行：金价将保持震荡走势，预计年底金价目标为4750美元/盎司",
+          "description": "汇丰银行预测2026年剩余时间内金价在3800-4700美元/盎司区间波动，年底目标4750美元。",
+          "url": "https://36kr.com/newsflashes/3888031226608384?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "潘功胜：香港可抓住有利时机吸引更多主权财富和企业发债融资",
-          "description": "央行行长潘功胜表示，香港可以抓住有利时机，吸引更多主权财富和国际企业到港发债融资，巩固香港国际金融中心地位。",
-          "url": "https://36kr.com/p/3885457443385346?f=rss",
+          "title": "Jupiter旗下基金已清空美国国债，转而投资欧债",
+          "description": "Jupiter Asset Management清空旗下主要债券基金的美国国债，转而购买欧洲政府债券，认为美国经济过热。",
+          "url": "https://36kr.com/newsflashes/3887995628059145?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "韩国上半年生物制药出口额料达45亿美元，创历史同期新高",
-          "description": "韩国上半年生物制药出口额预计为45亿美元，同比增长15.3%，在全部药品出口中占比达86.5%。",
-          "url": "https://36kr.com/newsflashes/3886550781931776?f=rss",
+          "title": "AI投资被美联储列为三大通胀主要风险之一",
+          "description": "美联储纪要显示，官员们越来越多关注AI投资作为通胀来源，这成为货币政策的潜在压力。",
+          "url": "https://www.huxiu.com/article/4873875.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "印度用俄原油炼完再卖回，地缘能源贸易博弈持续",
-          "description": "印度大量进口俄罗斯原油加工后反向出口成品油，利用能源套利并引发地缘政治关注。",
-          "url": "https://www.huxiu.com/article/4873509.html?f=rss",
+          "title": "中国“灵晟”超算系统登顶全球超级计算机榜单",
+          "description": "中国超级计算机“灵晟”融合传统计算与AI功能，近十年来首次登顶全球超算榜首。",
+          "url": "https://www.huxiu.com/article/4873869.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "网传\"新车智驾芯片自主化率不低于70%\"系谣言",
-          "description": "工信部联合市监总局辟谣，传闻中的《新能源汽车车规级AI芯片技术规范》强制新规并不存在。",
-          "url": "https://36kr.com/p/3885457443385346?f=rss",
+          "title": "英伟达将与Hugging Face合作开发机器人开源模型",
+          "description": "英伟达宣布与Hugging Face合作，联合开发用于机器人的开源基础模型，降低AI训练与部署门槛。",
+          "url": "https://36kr.com/newsflashes/3887985760631560?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "五粮液基金领投，国产高端机床企业星合机电获数亿元融资",
-          "description": "上海星合完成数亿元融资，由五粮液基金领投，将用于高端磨齿机、磨床等产品研发及海外市场商业化。",
-          "url": "https://36kr.com/p/3886400975040520?f=rss",
+          "title": "欧盟法院驳回苹果上诉，维持App Store和iOS“看门人”认定",
+          "description": "欧盟法院驳回苹果上诉，维持此前对App Store和iOS的“看门人”认定，监管趋严。",
+          "url": "https://36kr.com/p/3887648675133960?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "腾讯宣布OpenAI前研究员田永龙入职，参与VLM研发",
-          "description": "OpenAI前研究员Yonglong Tian（田永龙）加入腾讯大语言模型部，负责视觉语言模型（VLM）相关研发。",
-          "url": "https://36kr.com/newsflashes/3886501669449729?f=rss",
+          "title": "必和必拓在世界最大铁矿石出口港口的工人将罢工8小时",
+          "description": "必和必拓在澳大利亚黑德兰港的工人将罢工8小时，可能影响全球铁矿石供应链。",
+          "url": "https://36kr.com/p/3886678879727880?f=rss",
           "stars": null,
           "id": 10
         }
@@ -155,32 +155,39 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "Rethinking Indic AI from a Lens of Cultural Heritage Preservation",
-          "description": "探讨人工智能在印度次大陆语言和文化基础中的作用与影响。",
-          "url": "https://arxiv.org/pdf/2607.06544v1",
+          "title": "Institutional Red-Teaming: Deployment Rules, Not Just Models, Causally Shape Multi-Agent AI Safety",
+          "description": "提出机构红队评估方法，通过固定智能体、目标和任务状态，仅改变部署规则来测试多智能体AI的安全性。",
+          "url": "https://arxiv.org/pdf/2607.07695v1",
           "stars": null,
           "id": 1
         },
         {
-          "title": "The Large Cancer Assistant (LCA): A Model-Agnostic Orchestration Framework for Scalable Clinical Decision Support in Oncology",
-          "description": "提出一种与模型无关的编排框架，用于肿瘤学中可扩展的临床决策支持。",
-          "url": "https://arxiv.org/pdf/2607.06531v1",
+          "title": "ECGLight: Compute-Light Framework For Paper ECG Digitization and Myocardial Infarction Screening",
+          "description": "提出轻量计算框架ECGLight，用于纸心电图数字化和心肌梗死筛查，解决远程诊所纸心电图分析限制。",
+          "url": "https://arxiv.org/pdf/2607.07683v1",
           "stars": null,
           "id": 2
         },
         {
-          "title": "Andha-Dhun: A First Look at Audio Descriptions in Hindi",
-          "description": "首次研究印地语音频描述，为盲人和低视力观众提供视觉内容叙述。",
-          "url": "https://arxiv.org/pdf/2607.06457v1",
+          "title": "SkillCenter: A Large-Scale Source-Grounded Skill Library for Autonomous AI Agents",
+          "description": "构建大规模源基础技能库SkillCenter，使自主AI代理能够获取可执行、正确、安全和可维护的操作知识。",
+          "url": "https://arxiv.org/pdf/2607.07676v1",
           "stars": null,
           "id": 3
         },
         {
-          "title": "An Experimental Design Approach to Evaluating Agentic AI's Autonomous Model Discovery",
-          "description": "通过实验设计方法评估自主智能体在数据分析中的模型发现行为。",
-          "url": "https://arxiv.org/pdf/2607.06413v1",
+          "title": "MedPMC: A Systematic Framework for Scaling High-Fidelity Medical Multimodal Data for Foundation Models",
+          "description": "介绍MedPMC框架，系统扩展高保真医学多模态数据，以支持基础模型在医学领域的多模态能力。",
+          "url": "https://arxiv.org/pdf/2607.07673v1",
           "stars": null,
           "id": 4
+        },
+        {
+          "title": "Recursive Self-Improvement in AI: From Bounded Self-Refinement to Autonomous Research Loops",
+          "description": "研究AI递归自我改进，涵盖从有限自我完善到自主研究循环的多种形式，并探讨其安全影响。",
+          "url": "https://arxiv.org/pdf/2607.07663v1",
+          "stars": null,
+          "id": 5
         }
       ]
     },
@@ -188,42 +195,42 @@
       "name": "AI 开源项目",
       "items": [
         {
-          "title": "OpenHands",
-          "description": "AI驱动的开发平台，助力自动化编程与协作",
-          "url": "https://github.com/OpenHands/OpenHands",
-          "stars": 79904,
+          "title": "lobehub/lobehub",
+          "description": "Your Chief Agent Operator, organizing AI agents into 7x24 operations by hiring, scheduling, and reporting on your entire AI team.",
+          "url": "https://github.com/lobehub/lobehub",
+          "stars": 79653,
           "id": 1
         },
         {
-          "title": "deer-flow",
-          "description": "开源的长周期超级Agent框架，支持研究、编码和创造",
-          "url": "https://github.com/bytedance/deer-flow",
-          "stars": 76406,
+          "title": "hiyouga/LlamaFactory",
+          "description": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024).",
+          "url": "https://github.com/hiyouga/LlamaFactory",
+          "stars": 73099,
           "id": 2
         },
         {
-          "title": "ai-agents-for-beginners",
-          "description": "微软推出的12节课程，帮助初学者构建AI Agent",
-          "url": "https://github.com/microsoft/ai-agents-for-beginners",
-          "stars": 68818,
+          "title": "D4Vinci/Scrapling",
+          "description": "An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl.",
+          "url": "https://github.com/D4Vinci/Scrapling",
+          "stars": 68782,
           "id": 3
         },
         {
-          "title": "docling-project",
-          "description": "让文档为生成式AI做好准备，高效提取和转换文档内容",
-          "url": "https://github.com/docling-project/docling",
-          "stars": 62835,
+          "title": "koala73/worldmonitor",
+          "description": "Real-time global intelligence dashboard with AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking.",
+          "url": "https://github.com/koala73/worldmonitor",
+          "stars": 61601,
           "id": 4
         },
         {
-          "title": "mem0",
-          "description": "为AI Agent提供通用记忆层，实现持久化上下文管理",
-          "url": "https://github.com/mem0ai/mem0",
-          "stars": 60345,
+          "title": "Fission-AI/OpenSpec",
+          "description": "Spec-driven development (SDD) for AI coding assistants.",
+          "url": "https://github.com/Fission-AI/OpenSpec",
+          "stars": 59475,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-07-08T13:45:05.021+08:00"
+  "updatedAt": "2026-07-09T14:38:02.804+08:00"
 }
