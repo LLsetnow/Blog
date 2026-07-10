@@ -1,76 +1,76 @@
 {
-  "date": "2026-07-09",
+  "date": "2026-07-10",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "自研焊接具身大脑模型，以“智能焊工”切入工业制造具身智能赛道，「昇视唯盛」完成数亿元B轮融资｜36氪首发",
-          "description": "聚焦工业制造具身智能的昇视唯盛完成数亿元B轮融资，资金将用于焊接具身智能大脑与自主小脑运动控制系统的迭代升级。",
-          "url": "https://36kr.com/p/3887871679347208?f=rss",
+          "title": "他山科技获数亿B轮融资，为英伟达全球首家触觉仿真合作伙伴",
+          "description": "他山科技完成数亿元B轮融资，作为英伟达全球首家触觉仿真合作伙伴，其技术涉及AI触觉仿真。",
+          "url": "https://36kr.com/p/3889141540370949?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "物理AI公司获晶科能源、国投创新等数亿融资，要做全球能源基础设施“大脑”",
-          "description": "物理AI企业深度智控完成数亿元B轮融资，致力于通过AI技术打造全球能源基础设施的智能大脑。",
-          "url": "https://36kr.com/p/3887726503688968?f=rss",
+          "title": "英伟达将与Hugging Face合作开发机器人开源模型",
+          "description": "据36氪8点1氪报道，英伟达将与Hugging Face合作开发机器人开源模型。",
+          "url": "https://36kr.com/p/3889047503354625?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "8点1氪｜OpenAI首席未来学家宣布离职",
-          "description": "OpenAI首席未来学家宣布离职，引发业界对AI发展方向的关注。",
-          "url": "https://36kr.com/p/3887648675133960?f=rss",
+          "title": "万勋科技发布“柔韧充”自动充电通用服务引擎，首创混沌服务",
+          "description": "万勋科技发布自动充电机器人，涉及机器人技术与AI应用。",
+          "url": "https://36kr.com/p/3888567864851204?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "AI 视频全面成熟：Seedance 2.0 领衔，6 款主流工具深度横评",
-          "description": "2026年AI视频生成进入成熟期，Seedance 2.0等工具实现从短碎片到长视频连贯叙事的跨越。",
-          "url": "https://36kr.com/p/3886403765596418?f=rss",
+          "title": "揭秘Momenta：马斯克式CEO、AI执念和量产机器",
+          "description": "自动驾驶公司Momenta的创始人曹旭东对AI的执念，以及公司技术进展。",
+          "url": "https://36kr.com/p/3888180493318921?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "英伟达将与Hugging Face合作开发机器人开源模型",
-          "description": "英伟达与Hugging Face联手开发机器人开源基础模型，结合GPU生态与模型库降低AI训练门槛。",
-          "url": "https://36kr.com/newsflashes/3887985760631560?f=rss",
+          "title": "光合组织AIDC基础设施专委会在郑州成立",
+          "description": "围绕异构算力中心建设，专委会将聚焦AI算力基础设施的协同攻关。",
+          "url": "https://36kr.com/newsflashes/3889436941138694?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "云深处 vs 宇树科技：四足机器人赛道的“两种活法”",
-          "description": "具身智能迎超级融资周期，宇树科技闪电过会，云深处紧随其后，四足机器人赛道竞争白热化。",
-          "url": "https://www.huxiu.com/article/4873876.html?f=rss",
+          "title": "韩蒙经贸高官商定加强关键矿产和AI领域合作",
+          "description": "韩国和蒙古国决定加强在AI技术应用和数据中心建设等方面的合作。",
+          "url": "https://36kr.com/newsflashes/3889410710092547?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "中国“灵晟”超算系统登顶全球超级计算机榜单",
-          "description": "中国超算“灵晟”融合传统计算与AI功能，荣登全球超算榜首，代表科学计算未来方向。",
-          "url": "https://www.huxiu.com/article/4873869.html?f=rss",
+          "title": "《那些我希望有人早就告诉我的事》——关于ChatGPT和AI大模型的思考",
+          "description": "文章探讨了ChatGPT、Gemini、Claude等大模型的进步和Sam Altman的动向。",
+          "url": "https://www.huxiu.com/article/4874208.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "Meta“投降”？一场被严重误读的算力恐慌",
-          "description": "Meta计划出售AI算力和模型访问权限，引发行业对算力市场及AI基础设施未来的讨论。",
-          "url": "https://www.huxiu.com/article/4873866.html?f=rss",
+          "title": "阿里大动作，全面禁止Anthropic",
+          "description": "阿里全面禁用Anthropic，引发AI领域的技术封锁争议。",
+          "url": "https://www.huxiu.com/article/4874143.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "Momenta上市了，但“物理AI”这个故事才刚刚开始",
-          "description": "智能驾驶方案商Momenta在港交所上市，其基于物理AI的自动驾驶技术正加速落地。",
-          "url": "https://www.huxiu.com/article/4873862.html?f=rss",
+          "title": "AI时代最值钱的工作有三种，普通人该如何转型？",
+          "description": "对话硅谷AI创业者曲晓音，讨论AI时代职业转型。",
+          "url": "https://www.huxiu.com/article/4874196.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "地产AI进入落地战，深度智联又甩出一张牌",
-          "description": "深度智联推出地产模数通——企业专属大模型一体机，并发布房地产经纪人智能体，AI在地产行业加速落地。",
-          "url": "https://36kr.com/p/3886709249241349?f=rss",
+          "title": "腾讯减持快手，为什么又买可灵",
+          "description": "腾讯认购可灵AI股权，同时减持快手，涉及AI投资动态。",
+          "url": "https://www.huxiu.com/article/4874191.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "沪深两市成交额突破2.5万亿",
-          "description": "今日沪深两市成交额突破2.5万亿，市场交投活跃，显示投资者情绪高涨。",
-          "url": "https://36kr.com/newsflashes/3888024555469317?f=rss",
+          "title": "沪深两市成交额突破3万亿",
+          "description": "7月10日，沪深两市成交额突破3万亿元，较上一个交易日放量超4300亿元，显示市场交易活跃。",
+          "url": "https://36kr.com/newsflashes/3889450923325956?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "科创50指数涨幅扩大至7%",
-          "description": "科创50指数持续拉升大涨7%，成份股仅5只下跌，半导体产业链全线走高。",
-          "url": "https://36kr.com/newsflashes/3888014893545991?f=rss",
+          "title": "互换通境外投资者数量增至百家",
+          "description": "截至2026年7月，互换通境外投资者数量增至百家，2026年第一季度交易量达1.78万亿元，同比增长26%，体现金融开放深化。",
+          "url": "https://36kr.com/newsflashes/3889431813257734?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "上半年我国新能源汽车产销量双超700万辆",
-          "description": "2026年上半年我国新能源汽车产销分别完成743.8万辆和744.6万辆，6月销量占比达58.5%。",
-          "url": "https://36kr.com/newsflashes/3888004341037832?f=rss",
+          "title": "光合组织AIDC基础设施专委会在郑州成立",
+          "description": "7月10日，光合组织AIDC基础设施专委会在郑州成立，将联合产业链企业围绕异构算力中心建设、适配和运维开展协同攻关。",
+          "url": "https://36kr.com/newsflashes/3889436941138694?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "汇丰银行：金价将保持震荡走势，预计年底金价目标为4750美元/盎司",
-          "description": "汇丰银行预测2026年剩余时间内金价在3800-4700美元/盎司区间波动，年底目标4750美元。",
-          "url": "https://36kr.com/newsflashes/3888031226608384?f=rss",
+          "title": "韩蒙经贸高官商定加强关键矿产和AI领域合作",
+          "description": "韩国副总理兼财政经济部长官具润哲在蒙古国与蒙方高官会晤，商定加强关键矿产供应链和人工智能领域合作。",
+          "url": "https://36kr.com/newsflashes/3889410710092547?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "Jupiter旗下基金已清空美国国债，转而投资欧债",
-          "description": "Jupiter Asset Management清空旗下主要债券基金的美国国债，转而购买欧洲政府债券，认为美国经济过热。",
-          "url": "https://36kr.com/newsflashes/3887995628059145?f=rss",
+          "title": "历史性一落：我国首次实现大型火箭一级回收",
+          "description": "我国新一代大型液体火箭长征十号乙成功首飞并实现一级火箭回收，这是我国首次完成大型火箭一级回收。",
+          "url": "https://www.huxiu.com/article/4874211.html?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "AI投资被美联储列为三大通胀主要风险之一",
-          "description": "美联储纪要显示，官员们越来越多关注AI投资作为通胀来源，这成为货币政策的潜在压力。",
-          "url": "https://www.huxiu.com/article/4873875.html?f=rss",
+          "title": "阿里全面禁止Anthropic，科技监管再起波澜",
+          "description": "阿里巴巴全面禁用Anthropic，而Anthropic反告阿里“窃取数据”，双方争执凸显AI领域的竞争与监管复杂性。",
+          "url": "https://www.huxiu.com/article/4874143.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "中国“灵晟”超算系统登顶全球超级计算机榜单",
-          "description": "中国超级计算机“灵晟”融合传统计算与AI功能，近十年来首次登顶全球超算榜首。",
-          "url": "https://www.huxiu.com/article/4873869.html?f=rss",
+          "title": "上半年车市销量承压，新能源出口成唯一解药",
+          "description": "中汽协公布2026年上半年汽车产销数据，市场整体承压，但新能源汽车出口成为增长亮点。",
+          "url": "https://www.huxiu.com/article/4874220.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "英伟达将与Hugging Face合作开发机器人开源模型",
-          "description": "英伟达宣布与Hugging Face合作，联合开发用于机器人的开源基础模型，降低AI训练与部署门槛。",
-          "url": "https://36kr.com/newsflashes/3887985760631560?f=rss",
+          "title": "小米发布“澎程”增程车，进军增程赛道",
+          "description": "7月9日，雷军公布小米汽车新系列“澎程”，主攻增程赛道，与纯电车型形成差异化布局。",
+          "url": "https://www.huxiu.com/article/4874192.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "欧盟法院驳回苹果上诉，维持App Store和iOS“看门人”认定",
-          "description": "欧盟法院驳回苹果上诉，维持此前对App Store和iOS的“看门人”认定，监管趋严。",
-          "url": "https://36kr.com/p/3887648675133960?f=rss",
+          "title": "腾讯减持快手，认购可灵AI股权",
+          "description": "腾讯在四天内完成两笔方向相反的交易：减持快手股份的同时认购可灵AI股权，显示资本布局调整。",
+          "url": "https://www.huxiu.com/article/4874191.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "必和必拓在世界最大铁矿石出口港口的工人将罢工8小时",
-          "description": "必和必拓在澳大利亚黑德兰港的工人将罢工8小时，可能影响全球铁矿石供应链。",
-          "url": "https://36kr.com/p/3886678879727880?f=rss",
+          "title": "马斯克绘太空蓝图：十年内建成月球城市",
+          "description": "马斯克在最新节目中表示，希望十年内将数万人送往月球基地，五年内实现载人登火星，SpaceX将加速太空殖民。",
+          "url": "https://36kr.com/newsflashes/3889445246466825?f=rss",
           "stars": null,
           "id": 10
         }
@@ -155,37 +155,37 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "Institutional Red-Teaming: Deployment Rules, Not Just Models, Causally Shape Multi-Agent AI Safety",
-          "description": "提出机构红队评估方法，通过固定智能体、目标和任务状态，仅改变部署规则来测试多智能体AI的安全性。",
-          "url": "https://arxiv.org/pdf/2607.07695v1",
+          "title": "OPSD-V: On-Policy Self-Distillation for Post-Training Few-Step Autoregressive Video Generators",
+          "description": "提出一种在线策略自蒸馏方法，用于后训练少步自回归视频生成模型，能生成高质量长视频。",
+          "url": "https://arxiv.org/pdf/2607.08766v1",
           "stars": null,
           "id": 1
         },
         {
-          "title": "ECGLight: Compute-Light Framework For Paper ECG Digitization and Myocardial Infarction Screening",
-          "description": "提出轻量计算框架ECGLight，用于纸心电图数字化和心肌梗死筛查，解决远程诊所纸心电图分析限制。",
-          "url": "https://arxiv.org/pdf/2607.07683v1",
+          "title": "Ideas Have Genomes: Benchmarking Scientific Lineage Reasoning and Lineage-Grounded Idea Generation",
+          "description": "引入科学思想谱系推理基准，模拟思想继承、修复和重组过程，推动相关研究。",
+          "url": "https://arxiv.org/pdf/2607.08758v1",
           "stars": null,
           "id": 2
         },
         {
-          "title": "SkillCenter: A Large-Scale Source-Grounded Skill Library for Autonomous AI Agents",
-          "description": "构建大规模源基础技能库SkillCenter，使自主AI代理能够获取可执行、正确、安全和可维护的操作知识。",
-          "url": "https://arxiv.org/pdf/2607.07676v1",
+          "title": "DegenDetector: Symbolic Recovery of Parameter Degeneracies in Bayesian Posteriors",
+          "description": "开发一个框架，通过互信息筛选和符号方程识别后验分布中的参数简并性。",
+          "url": "https://arxiv.org/pdf/2607.08755v1",
           "stars": null,
           "id": 3
         },
         {
-          "title": "MedPMC: A Systematic Framework for Scaling High-Fidelity Medical Multimodal Data for Foundation Models",
-          "description": "介绍MedPMC框架，系统扩展高保真医学多模态数据，以支持基础模型在医学领域的多模态能力。",
-          "url": "https://arxiv.org/pdf/2607.07673v1",
+          "title": "Using AI-based Learning Assistants in Higher Education: A Large-Scale Descriptive Analysis",
+          "description": "基于7.7万名学生数据，大规模描述分析AI学习助手在高等教育中的应用情况。",
+          "url": "https://arxiv.org/pdf/2607.08748v1",
           "stars": null,
           "id": 4
         },
         {
-          "title": "Recursive Self-Improvement in AI: From Bounded Self-Refinement to Autonomous Research Loops",
-          "description": "研究AI递归自我改进，涵盖从有限自我完善到自主研究循环的多种形式，并探讨其安全影响。",
-          "url": "https://arxiv.org/pdf/2607.07663v1",
+          "title": "Directional AI Advice: Experimental Evidence from Healthcare",
+          "description": "通过医疗实验证明生成式AI的建议具有方向性而非中立性，受设计者和监管者影响。",
+          "url": "https://arxiv.org/pdf/2607.08706v1",
           "stars": null,
           "id": 5
         }
@@ -196,41 +196,41 @@
       "items": [
         {
           "title": "lobehub/lobehub",
-          "description": "Your Chief Agent Operator, organizing AI agents into 7x24 operations by hiring, scheduling, and reporting on your entire AI team.",
+          "description": "AI团队运营代理，可将AI代理组织成7x24小时运作，支持招聘、调度和报告。",
           "url": "https://github.com/lobehub/lobehub",
-          "stars": 79653,
+          "stars": 79687,
           "id": 1
         },
         {
           "title": "hiyouga/LlamaFactory",
-          "description": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024).",
+          "description": "统一高效微调100多种LLM和VLM的框架，ACL 2024。",
           "url": "https://github.com/hiyouga/LlamaFactory",
-          "stars": 73099,
+          "stars": 73120,
           "id": 2
         },
         {
-          "title": "D4Vinci/Scrapling",
-          "description": "An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl.",
-          "url": "https://github.com/D4Vinci/Scrapling",
-          "stars": 68782,
+          "title": "microsoft/ai-agents-for-beginners",
+          "description": "12节课程帮助初学者构建AI代理。",
+          "url": "https://github.com/microsoft/ai-agents-for-beginners",
+          "stars": 68943,
           "id": 3
         },
         {
-          "title": "koala73/worldmonitor",
-          "description": "Real-time global intelligence dashboard with AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking.",
-          "url": "https://github.com/koala73/worldmonitor",
-          "stars": 61601,
+          "title": "shanraisshan/claude-code-best-practice",
+          "description": "从自然语言编码到代理工程的实践指南，旨在使Claude更完美。",
+          "url": "https://github.com/shanraisshan/claude-code-best-practice",
+          "stars": 62373,
           "id": 4
         },
         {
-          "title": "Fission-AI/OpenSpec",
-          "description": "Spec-driven development (SDD) for AI coding assistants.",
-          "url": "https://github.com/Fission-AI/OpenSpec",
-          "stars": 59475,
+          "title": "sansan0/TrendRadar",
+          "description": "AI驱动的舆情与趋势监控工具，聚合多平台热点、RSS订阅和智能警报。",
+          "url": "https://github.com/sansan0/TrendRadar",
+          "stars": 60424,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-07-09T14:38:02.804+08:00"
+  "updatedAt": "2026-07-10T14:38:12.777+08:00"
 }
