@@ -1,76 +1,76 @@
 {
-  "date": "2026-07-10",
+  "date": "2026-07-11",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "他山科技获数亿B轮融资，为英伟达全球首家触觉仿真合作伙伴",
-          "description": "他山科技完成数亿元B轮融资，作为英伟达全球首家触觉仿真合作伙伴，其技术涉及AI触觉仿真。",
-          "url": "https://36kr.com/p/3889141540370949?f=rss",
+          "title": "OpenAI推出ChatGPT智能体",
+          "description": "OpenAI在其ChatGPT中推出了智能体功能，进一步扩展了AI应用场景。",
+          "url": "https://36kr.com/p/3890553690192384?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "英伟达将与Hugging Face合作开发机器人开源模型",
-          "description": "据36氪8点1氪报道，英伟达将与Hugging Face合作开发机器人开源模型。",
-          "url": "https://36kr.com/p/3889047503354625?f=rss",
+          "title": "三个月融三轮，上交大00后博士让具身智能仿生扑翼机器人理解并驾驭流体",
+          "description": "具身智能仿生扑翼机器人公司鹰瞰智翼完成数千万元A轮融资，其技术使机器人能理解并应对复杂流体环境。",
+          "url": "https://36kr.com/p/3889516712065799?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "万勋科技发布“柔韧充”自动充电通用服务引擎，首创混沌服务",
-          "description": "万勋科技发布自动充电机器人，涉及机器人技术与AI应用。",
-          "url": "https://36kr.com/p/3888567864851204?f=rss",
+          "title": "英伟达全球首家触觉仿真合作伙伴再获数亿融资，上半年订单超去年四倍",
+          "description": "他山科技作为英伟达全球首家触觉仿真合作伙伴，完成B轮数亿元融资，订单快速增长。",
+          "url": "https://36kr.com/p/3889141540370949?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "揭秘Momenta：马斯克式CEO、AI执念和量产机器",
-          "description": "自动驾驶公司Momenta的创始人曹旭东对AI的执念，以及公司技术进展。",
-          "url": "https://36kr.com/p/3888180493318921?f=rss",
+          "title": "英伟达将与Hugging Face合作开发机器人开源模型",
+          "description": "英伟达宣布与Hugging Face合作，共同开发面向机器人的开源AI模型。",
+          "url": "https://36kr.com/p/3889047503354625?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "光合组织AIDC基础设施专委会在郑州成立",
-          "description": "围绕异构算力中心建设，专委会将聚焦AI算力基础设施的协同攻关。",
-          "url": "https://36kr.com/newsflashes/3889436941138694?f=rss",
+          "title": "OpenAI：对其他公司的商业秘密不感兴趣，仍专注于打造创新技术",
+          "description": "OpenAI回应苹果硬件商业机密诉讼，强调其不觊觎他人商业秘密，专注自身技术创新。",
+          "url": "https://36kr.com/newsflashes/3890734361377539?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "韩蒙经贸高官商定加强关键矿产和AI领域合作",
-          "description": "韩国和蒙古国决定加强在AI技术应用和数据中心建设等方面的合作。",
-          "url": "https://36kr.com/newsflashes/3889410710092547?f=rss",
+          "title": "FansAI收购OPC公司新映科技",
+          "description": "AI内容公司垚城智能（FansAI）宣布全资收购AI音乐应用新映科技，这是OPC领域的探索性并购。",
+          "url": "https://36kr.com/newsflashes/3890728911354376?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "《那些我希望有人早就告诉我的事》——关于ChatGPT和AI大模型的思考",
-          "description": "文章探讨了ChatGPT、Gemini、Claude等大模型的进步和Sam Altman的动向。",
-          "url": "https://www.huxiu.com/article/4874208.html?f=rss",
+          "title": "仅11天，Claude重写百万行代码，AI史诗级工程却引来愤怒",
+          "description": "编程语言Zig创始人因Bun用Rust重写代码而发怒，事件揭示了AI辅助代码重写的巨大能力与争议。",
+          "url": "https://www.huxiu.com/article/4874482.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "阿里大动作，全面禁止Anthropic",
-          "description": "阿里全面禁用Anthropic，引发AI领域的技术封锁争议。",
-          "url": "https://www.huxiu.com/article/4874143.html?f=rss",
+          "title": "苹果甩出41页PDF怒告OpenAI“偷师”其核心机密",
+          "description": "苹果向法院提交41页诉状，指控OpenAI窃取其硬件商业秘密，双方盟友关系破裂。",
+          "url": "https://www.huxiu.com/article/4874471.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "AI时代最值钱的工作有三种，普通人该如何转型？",
-          "description": "对话硅谷AI创业者曲晓音，讨论AI时代职业转型。",
-          "url": "https://www.huxiu.com/article/4874196.html?f=rss",
+          "title": "实测ChatGPT Work vs Claude Cowork，OpenAI 这次真追上来了",
+          "description": "对OpenAI新桌面应用ChatGPT Work与Claude Cowork进行实测对比，分析两者在AI协作方面的优劣。",
+          "url": "https://www.huxiu.com/article/4874465.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "腾讯减持快手，为什么又买可灵",
-          "description": "腾讯认购可灵AI股权，同时减持快手，涉及AI投资动态。",
-          "url": "https://www.huxiu.com/article/4874191.html?f=rss",
+          "title": "Codex 大改版口碑塌房，GPT-5.6成了Token 刺客",
+          "description": "OpenAI发布GPT-5.6并将Codex并入ChatGPT，用户反馈新版在令牌消耗和性能上引发争议。",
+          "url": "https://www.huxiu.com/article/4874462.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "沪深两市成交额突破3万亿",
-          "description": "7月10日，沪深两市成交额突破3万亿元，较上一个交易日放量超4300亿元，显示市场交易活跃。",
-          "url": "https://36kr.com/newsflashes/3889450923325956?f=rss",
+          "title": "长鑫科技公布承销团阵容，预计7月16日发行",
+          "description": "国产存储第一股长鑫科技披露招股意向书，承销团阵容公布，预计7月16日发行，标志中国半导体存储器领域里程碑。",
+          "url": "https://36kr.com/p/3889047503354625?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "互换通境外投资者数量增至百家",
-          "description": "截至2026年7月，互换通境外投资者数量增至百家，2026年第一季度交易量达1.78万亿元，同比增长26%，体现金融开放深化。",
-          "url": "https://36kr.com/newsflashes/3889431813257734?f=rss",
+          "title": "SK海力士登陆美股，上市首日大涨近13%",
+          "description": "韩国芯片巨头SK海力士在纳斯达克上市，首日涨幅近13%，市值突破万亿美元，华尔街投行佣金总额或达1.4亿美元。",
+          "url": "https://36kr.com/p/3889551814916614?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "光合组织AIDC基础设施专委会在郑州成立",
-          "description": "7月10日，光合组织AIDC基础设施专委会在郑州成立，将联合产业链企业围绕异构算力中心建设、适配和运维开展协同攻关。",
-          "url": "https://36kr.com/newsflashes/3889436941138694?f=rss",
+          "title": "德国大众拟大裁员，最高或裁减12万个岗位",
+          "description": "德国大众汽车计划进行大规模裁员，最高可能裁减12万个岗位，反映欧洲汽车行业面临转型压力。",
+          "url": "https://36kr.com/p/3890553690192384?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "韩蒙经贸高官商定加强关键矿产和AI领域合作",
-          "description": "韩国副总理兼财政经济部长官具润哲在蒙古国与蒙方高官会晤，商定加强关键矿产供应链和人工智能领域合作。",
-          "url": "https://36kr.com/newsflashes/3889410710092547?f=rss",
+          "title": "百亿私募数量达142家，再次刷新历史纪录",
+          "description": "截至2026年7月，中国百亿私募机构数量达到142家，创历史新高，显示私募行业持续扩容。",
+          "url": "https://36kr.com/p/3890553690192384?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "历史性一落：我国首次实现大型火箭一级回收",
-          "description": "我国新一代大型液体火箭长征十号乙成功首飞并实现一级火箭回收，这是我国首次完成大型火箭一级回收。",
-          "url": "https://www.huxiu.com/article/4874211.html?f=rss",
+          "title": "中芯国际市值超越贵州茅台",
+          "description": "中芯国际市值超越贵州茅台，成为A股新市值王，凸显半导体行业在资本市场的重要地位。",
+          "url": "https://36kr.com/p/3889047503354625?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "阿里全面禁止Anthropic，科技监管再起波澜",
-          "description": "阿里巴巴全面禁用Anthropic，而Anthropic反告阿里“窃取数据”，双方争执凸显AI领域的竞争与监管复杂性。",
-          "url": "https://www.huxiu.com/article/4874143.html?f=rss",
+          "title": "9家上市券商发布半年报，最高预增693.5%",
+          "description": "已有9家上市券商发布2026年半年度业绩预告，全部实现高增长，其中天风证券以最高693.5%的增幅领跑，多家券商创历史新高。",
+          "url": "https://36kr.com/newsflashes/3890592761510409?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "上半年车市销量承压，新能源出口成唯一解药",
-          "description": "中汽协公布2026年上半年汽车产销数据，市场整体承压，但新能源汽车出口成为增长亮点。",
-          "url": "https://www.huxiu.com/article/4874220.html?f=rss",
+          "title": "稳定币发行商Circle获银行经营牌照",
+          "description": "美国货币监理署批准Circle设立信托银行，可直接管理稳定币储备资产，USDC流通规模超730亿美元，标志加密货币监管新进展。",
+          "url": "https://36kr.com/newsflashes/3890740672838404?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "小米发布“澎程”增程车，进军增程赛道",
-          "description": "7月9日，雷军公布小米汽车新系列“澎程”，主攻增程赛道，与纯电车型形成差异化布局。",
-          "url": "https://www.huxiu.com/article/4874192.html?f=rss",
+          "title": "欧洲央行管委：人工智能可能加剧通胀波动",
+          "description": "欧洲央行管委Moulin表示，人工智能对通胀的影响难以预测，可能导致价格波动加剧，引发市场对AI宏观影响的关注。",
+          "url": "https://36kr.com/newsflashes/3890739624540680?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "腾讯减持快手，认购可灵AI股权",
-          "description": "腾讯在四天内完成两笔方向相反的交易：减持快手股份的同时认购可灵AI股权，显示资本布局调整。",
-          "url": "https://www.huxiu.com/article/4874191.html?f=rss",
+          "title": "2026年WIPO全球奖揭晓，中国获奖企业数量居首",
+          "description": "世界知识产权组织全球奖颁奖，中国3家企业获奖，数量全球第一，体现中国在知识产权和创新领域的成就。",
+          "url": "https://36kr.com/newsflashes/3890730611374850?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "马斯克绘太空蓝图：十年内建成月球城市",
-          "description": "马斯克在最新节目中表示，希望十年内将数万人送往月球基地，五年内实现载人登火星，SpaceX将加速太空殖民。",
-          "url": "https://36kr.com/newsflashes/3889445246466825?f=rss",
+          "title": "苹果诉OpenAI窃取硬件商业机密，OpenAI回应",
+          "description": "苹果向法院提交41页诉状，指控OpenAI窃取硬件商业机密，OpenAI回应称对其他公司商业秘密不感兴趣，聚焦创新。",
+          "url": "https://www.huxiu.com/article/4874471.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -156,35 +156,35 @@
       "items": [
         {
           "title": "OPSD-V: On-Policy Self-Distillation for Post-Training Few-Step Autoregressive Video Generators",
-          "description": "提出一种在线策略自蒸馏方法，用于后训练少步自回归视频生成模型，能生成高质量长视频。",
+          "description": "提出一种在线策略自蒸馏范式，用于训练后少量步长自回归视频扩散模型，以生成更长的视频。",
           "url": "https://arxiv.org/pdf/2607.08766v1",
           "stars": null,
           "id": 1
         },
         {
           "title": "Ideas Have Genomes: Benchmarking Scientific Lineage Reasoning and Lineage-Grounded Idea Generation",
-          "description": "引入科学思想谱系推理基准，模拟思想继承、修复和重组过程，推动相关研究。",
+          "description": "引入科学思想谱系推理基准，评估从已有工作中继承、修复和重组机制的能力。",
           "url": "https://arxiv.org/pdf/2607.08758v1",
           "stars": null,
           "id": 2
         },
         {
           "title": "DegenDetector: Symbolic Recovery of Parameter Degeneracies in Bayesian Posteriors",
-          "description": "开发一个框架，通过互信息筛选和符号方程识别后验分布中的参数简并性。",
+          "description": "提出DegenDetector框架，通过互信息筛选等方法从后验分布中恢复参数简并性的闭式符号方程。",
           "url": "https://arxiv.org/pdf/2607.08755v1",
           "stars": null,
           "id": 3
         },
         {
           "title": "Using AI-based Learning Assistants in Higher Education: A Large-Scale Descriptive Analysis",
-          "description": "基于7.7万名学生数据，大规模描述分析AI学习助手在高等教育中的应用情况。",
+          "description": "基于7.7万名学生日志数据，对高等教育中AI学习助手Syntea的使用进行大规模描述性分析。",
           "url": "https://arxiv.org/pdf/2607.08748v1",
           "stars": null,
           "id": 4
         },
         {
           "title": "Directional AI Advice: Experimental Evidence from Healthcare",
-          "description": "通过医疗实验证明生成式AI的建议具有方向性而非中立性，受设计者和监管者影响。",
+          "description": "通过医疗领域的实验证据，研究生成式AI提供的方向性建议（非中性）对用户决策的影响。",
           "url": "https://arxiv.org/pdf/2607.08706v1",
           "stars": null,
           "id": 5
@@ -196,41 +196,41 @@
       "items": [
         {
           "title": "lobehub/lobehub",
-          "description": "AI团队运营代理，可将AI代理组织成7x24小时运作，支持招聘、调度和报告。",
+          "description": "LobeHub is your Chief Agent Operator, organizing your agents into 7×24 operations by hiring, scheduling, and reporting on your entire AI team.",
           "url": "https://github.com/lobehub/lobehub",
-          "stars": 79687,
+          "stars": 79727,
           "id": 1
         },
         {
-          "title": "hiyouga/LlamaFactory",
-          "description": "统一高效微调100多种LLM和VLM的框架，ACL 2024。",
-          "url": "https://github.com/hiyouga/LlamaFactory",
-          "stars": 73120,
+          "title": "unclecode/crawl4ai",
+          "description": "Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper.",
+          "url": "https://github.com/unclecode/crawl4ai",
+          "stars": 72275,
           "id": 2
         },
         {
           "title": "microsoft/ai-agents-for-beginners",
-          "description": "12节课程帮助初学者构建AI代理。",
+          "description": "12 Lessons to Get Started Building AI Agents.",
           "url": "https://github.com/microsoft/ai-agents-for-beginners",
-          "stars": 68943,
+          "stars": 68974,
           "id": 3
         },
         {
-          "title": "shanraisshan/claude-code-best-practice",
-          "description": "从自然语言编码到代理工程的实践指南，旨在使Claude更完美。",
-          "url": "https://github.com/shanraisshan/claude-code-best-practice",
-          "stars": 62373,
+          "title": "Leonxlnx/taste-skill",
+          "description": "Taste-Skill gives your AI good taste, stops it from generating boring, generic slop.",
+          "url": "https://github.com/Leonxlnx/taste-skill",
+          "stars": 61850,
           "id": 4
         },
         {
-          "title": "sansan0/TrendRadar",
-          "description": "AI驱动的舆情与趋势监控工具，聚合多平台热点、RSS订阅和智能警报。",
-          "url": "https://github.com/sansan0/TrendRadar",
-          "stars": 60424,
+          "title": "Fission-AI/OpenSpec",
+          "description": "Spec-driven development (SDD) for AI coding assistants.",
+          "url": "https://github.com/Fission-AI/OpenSpec",
+          "stars": 59974,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-07-10T14:38:12.777+08:00"
+  "updatedAt": "2026-07-11T13:34:25.067+08:00"
 }
