@@ -1,76 +1,76 @@
 {
-  "date": "2026-07-11",
+  "date": "2026-07-12",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "OpenAI推出ChatGPT智能体",
-          "description": "OpenAI在其ChatGPT中推出了智能体功能，进一步扩展了AI应用场景。",
-          "url": "https://36kr.com/p/3890553690192384?f=rss",
+          "title": "63道地狱级难题实测，GPT-5.6把其他AI 甩开了一截",
+          "description": "通过63道难题测试，GPT-5.6性能显著领先其他AI模型。",
+          "url": "https://www.huxiu.com/article/4874596.html",
           "stars": null,
           "id": 1
         },
         {
-          "title": "三个月融三轮，上交大00后博士让具身智能仿生扑翼机器人理解并驾驭流体",
-          "description": "具身智能仿生扑翼机器人公司鹰瞰智翼完成数千万元A轮融资，其技术使机器人能理解并应对复杂流体环境。",
-          "url": "https://36kr.com/p/3889516712065799?f=rss",
+          "title": "9点1氪丨“国产存储第一股”长鑫科技公布承销团阵容；SK海力士登陆美股，上市首日大涨近13%；OpenAI推出ChatGPT智能体",
+          "description": "该日报包含OpenAI推出ChatGPT智能体等多项AI相关动态。",
+          "url": "https://36kr.com/p/3890553690192384?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "英伟达全球首家触觉仿真合作伙伴再获数亿融资，上半年订单超去年四倍",
-          "description": "他山科技作为英伟达全球首家触觉仿真合作伙伴，完成B轮数亿元融资，订单快速增长。",
-          "url": "https://36kr.com/p/3889141540370949?f=rss",
+          "title": "刚看到Apple 居然把OpenAI 告了，说后者偷窃商业机密",
+          "description": "苹果起诉OpenAI，指控其窃取商业机密，事件引发科技界关注。",
+          "url": "https://www.huxiu.com/article/4874614.html?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "英伟达将与Hugging Face合作开发机器人开源模型",
-          "description": "英伟达宣布与Hugging Face合作，共同开发面向机器人的开源AI模型。",
-          "url": "https://36kr.com/p/3889047503354625?f=rss",
+          "title": "全网骂Claude变笨，Anthropic下场揭秘：坑你的不是模型",
+          "description": "Anthropic澄清用户对Claude模型变笨的误解，指出问题不在模型本身。",
+          "url": "https://36kr.com/p/3892222176574211?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "OpenAI：对其他公司的商业秘密不感兴趣，仍专注于打造创新技术",
-          "description": "OpenAI回应苹果硬件商业机密诉讼，强调其不觊觎他人商业秘密，专注自身技术创新。",
-          "url": "https://36kr.com/newsflashes/3890734361377539?f=rss",
+          "title": "Token太烧钱，连“不差钱”的银行也扛不住了",
+          "description": "银行在大模型Token成本高企的压力下，开始建立投入产出比评估机制。",
+          "url": "https://www.huxiu.com/article/4874606.html?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "FansAI收购OPC公司新映科技",
-          "description": "AI内容公司垚城智能（FansAI）宣布全资收购AI音乐应用新映科技，这是OPC领域的探索性并购。",
-          "url": "https://36kr.com/newsflashes/3890728911354376?f=rss",
+          "title": "Factory Router，Inworld Router，nexos.ai ...... Router 无处不在",
+          "description": "介绍多个AI项目Router，强调在Agent时代路由技术的重要性。",
+          "url": "https://www.huxiu.com/article/4874598.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "仅11天，Claude重写百万行代码，AI史诗级工程却引来愤怒",
-          "description": "编程语言Zig创始人因Bun用Rust重写代码而发怒，事件揭示了AI辅助代码重写的巨大能力与争议。",
-          "url": "https://www.huxiu.com/article/4874482.html?f=rss",
+          "title": "Manus漂流记：一家中国AI公司如何在Meta、腾讯和监管之间辗转16个月",
+          "description": "中国AI初创公司Manus被Meta收购前后的曲折经历与行业启示。",
+          "url": "https://www.huxiu.com/article/4874591.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "苹果甩出41页PDF怒告OpenAI“偷师”其核心机密",
-          "description": "苹果向法院提交41页诉状，指控OpenAI窃取其硬件商业秘密，双方盟友关系破裂。",
-          "url": "https://www.huxiu.com/article/4874471.html?f=rss",
+          "title": "近百名玩家涌入具身数据 : 一年融资44.7亿，谁能真靠“卖数据”赚钱？",
+          "description": "具身智能数据采集行业兴起，多家企业布局，融资规模庞大。",
+          "url": "https://36kr.com/p/3892027841362694?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "实测ChatGPT Work vs Claude Cowork，OpenAI 这次真追上来了",
-          "description": "对OpenAI新桌面应用ChatGPT Work与Claude Cowork进行实测对比，分析两者在AI协作方面的优劣。",
-          "url": "https://www.huxiu.com/article/4874465.html?f=rss",
+          "title": "独家 | 智谱创始人唐杰发内部信：「GLM 时刻」之后，什么是更重要的事",
+          "description": "智谱创始人唐杰发表内部信，回顾公司高光时刻并展望未来AI发展。",
+          "url": "https://36kr.com/p/3891132709206784?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "Codex 大改版口碑塌房，GPT-5.6成了Token 刺客",
-          "description": "OpenAI发布GPT-5.6并将Codex并入ChatGPT，用户反馈新版在令牌消耗和性能上引发争议。",
-          "url": "https://www.huxiu.com/article/4874462.html?f=rss",
+          "title": "百度AI将携智能体全家桶亮相WAIC 2026",
+          "description": "百度将在WAIC 2026上展示智能体全家桶及全栈AI产品矩阵升级。",
+          "url": "https://36kr.com/newsflashes/3892090766539268?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "长鑫科技公布承销团阵容，预计7月16日发行",
-          "description": "国产存储第一股长鑫科技披露招股意向书，承销团阵容公布，预计7月16日发行，标志中国半导体存储器领域里程碑。",
-          "url": "https://36kr.com/p/3889047503354625?f=rss",
+          "title": "“国产存储第一股”长鑫科技公布承销团阵容",
+          "description": "长鑫科技作为国产存储芯片领军企业，公布IPO承销团阵容，标志其上市进程加速，对半导体产业和资本市场具有重要意义。",
+          "url": "https://36kr.com/p/3890553690192384?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "SK海力士登陆美股，上市首日大涨近13%",
-          "description": "韩国芯片巨头SK海力士在纳斯达克上市，首日涨幅近13%，市值突破万亿美元，华尔街投行佣金总额或达1.4亿美元。",
-          "url": "https://36kr.com/p/3889551814916614?f=rss",
+          "title": "三星李在镕拟于7月底赴美会晤英伟达黄仁勋",
+          "description": "三星电子会长李在镕计划赴美与英伟达CEO黄仁勋会面，探讨AI芯片合作，反映全球科技巨头在AI领域的竞争与合作态势。",
+          "url": "https://36kr.com/p/3890553690192384?f=rss",
           "stars": null,
           "id": 2
         },
         {
           "title": "德国大众拟大裁员，最高或裁减12万个岗位",
-          "description": "德国大众汽车计划进行大规模裁员，最高可能裁减12万个岗位，反映欧洲汽车行业面临转型压力。",
-          "url": "https://36kr.com/p/3890553690192384?f=rss",
+          "description": "德国大众汽车计划大规模裁员，最高可能裁减12万个岗位，凸显欧洲汽车行业面临的转型压力和宏观经济挑战。",
+          "url": "https://36kr.com/p/3889551814916614?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "百亿私募数量达142家，再次刷新历史纪录",
-          "description": "截至2026年7月，中国百亿私募机构数量达到142家，创历史新高，显示私募行业持续扩容。",
-          "url": "https://36kr.com/p/3890553690192384?f=rss",
+          "title": "高盛称套利交易当前处境为2000年以来最佳",
+          "description": "高盛指出当前套利交易环境为2000年以来最佳，反映全球金融市场流动性充沛及息差交易活跃，对投资者有重要参考价值。",
+          "url": "https://36kr.com/p/3889551814916614?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "中芯国际市值超越贵州茅台",
-          "description": "中芯国际市值超越贵州茅台，成为A股新市值王，凸显半导体行业在资本市场的重要地位。",
-          "url": "https://36kr.com/p/3889047503354625?f=rss",
+          "title": "SK海力士登陆美股，上市首日大涨近13%",
+          "description": "韩国芯片巨头SK海力士在纳斯达克上市，首日股价大涨近13%，融资约265亿美元，成为年内最大规模美股IPO之一。",
+          "url": "https://36kr.com/p/3890553690192384?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "9家上市券商发布半年报，最高预增693.5%",
-          "description": "已有9家上市券商发布2026年半年度业绩预告，全部实现高增长，其中天风证券以最高693.5%的增幅领跑，多家券商创历史新高。",
-          "url": "https://36kr.com/newsflashes/3890592761510409?f=rss",
+          "title": "百亿私募数量达142家，再次刷新历史纪录",
+          "description": "中国百亿级私募机构数量增至142家，再创历史新高，反映资管行业规模扩张及市场资金向头部机构集中趋势。",
+          "url": "https://36kr.com/p/3890553690192384?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "稳定币发行商Circle获银行经营牌照",
-          "description": "美国货币监理署批准Circle设立信托银行，可直接管理稳定币储备资产，USDC流通规模超730亿美元，标志加密货币监管新进展。",
-          "url": "https://36kr.com/newsflashes/3890740672838404?f=rss",
+          "title": "银河证券A股策略：建议以业绩为锚，在波动中把握结构性机会",
+          "description": "银河证券发布A股策略，建议投资者以业绩为锚，在震荡市中把握结构性机会，关注半年报预告披露带来的基本面博弈。",
+          "url": "https://36kr.com/newsflashes/3892124086958857?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "欧洲央行管委：人工智能可能加剧通胀波动",
-          "description": "欧洲央行管委Moulin表示，人工智能对通胀的影响难以预测，可能导致价格波动加剧，引发市场对AI宏观影响的关注。",
-          "url": "https://36kr.com/newsflashes/3890739624540680?f=rss",
+          "title": "上半年高频数据折射我国经济稳中向优",
+          "description": "国家信息中心数据显示，上半年线下消费、战略性新兴产业专利授权、AI等领域投资均实现较快增长，经济高质量发展态势延续。",
+          "url": "https://36kr.com/newsflashes/3892125069130504?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "2026年WIPO全球奖揭晓，中国获奖企业数量居首",
-          "description": "世界知识产权组织全球奖颁奖，中国3家企业获奖，数量全球第一，体现中国在知识产权和创新领域的成就。",
-          "url": "https://36kr.com/newsflashes/3890730611374850?f=rss",
+          "title": "面对用电高峰，我国供电保障能力再提升",
+          "description": "我国电源装机、特高压通道及电网调度能力全面升级，47条特高压通道和168项迎峰度夏重点工程投产，有效保障电力供应。",
+          "url": "https://36kr.com/newsflashes/3892132453317121?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "苹果诉OpenAI窃取硬件商业机密，OpenAI回应",
-          "description": "苹果向法院提交41页诉状，指控OpenAI窃取硬件商业机密，OpenAI回应称对其他公司商业秘密不感兴趣，聚焦创新。",
-          "url": "https://www.huxiu.com/article/4874471.html?f=rss",
+          "title": "三星电子计划将龙仁首座芯片工厂的投产时间提前至2029年",
+          "description": "三星电子计划提前龙仁芯片集群首座工厂至2029年投产，以应对全球AI芯片需求增长，投资规模达2.03万亿韩元。",
+          "url": "https://36kr.com/newsflashes/3892091542288904?f=rss",
           "stars": null,
           "id": 10
         }
@@ -156,35 +156,35 @@
       "items": [
         {
           "title": "OPSD-V: On-Policy Self-Distillation for Post-Training Few-Step Autoregressive Video Generators",
-          "description": "提出一种在线策略自蒸馏范式，用于训练后少量步长自回归视频扩散模型，以生成更长的视频。",
+          "description": "提出一种在线自蒸馏范式，用于对少步自回归视频扩散模型进行后训练，以生成长视频。",
           "url": "https://arxiv.org/pdf/2607.08766v1",
           "stars": null,
           "id": 1
         },
         {
           "title": "Ideas Have Genomes: Benchmarking Scientific Lineage Reasoning and Lineage-Grounded Idea Generation",
-          "description": "引入科学思想谱系推理基准，评估从已有工作中继承、修复和重组机制的能力。",
+          "description": "引入一个基准测试，用于评估科学思想的继承与重组推理，以及基于思想谱系的新想法生成。",
           "url": "https://arxiv.org/pdf/2607.08758v1",
           "stars": null,
           "id": 2
         },
         {
           "title": "DegenDetector: Symbolic Recovery of Parameter Degeneracies in Bayesian Posteriors",
-          "description": "提出DegenDetector框架，通过互信息筛选等方法从后验分布中恢复参数简并性的闭式符号方程。",
+          "description": "提出一个框架，通过互信息筛选和符号回归，从贝叶斯后验分布中识别参数简并性并输出封闭形式的符号方程。",
           "url": "https://arxiv.org/pdf/2607.08755v1",
           "stars": null,
           "id": 3
         },
         {
           "title": "Using AI-based Learning Assistants in Higher Education: A Large-Scale Descriptive Analysis",
-          "description": "基于7.7万名学生日志数据，对高等教育中AI学习助手Syntea的使用进行大规模描述性分析。",
+          "description": "基于77,543名学生的日志数据，对高等教育中AI学习助手（Syntea）的使用进行大规模描述性分析。",
           "url": "https://arxiv.org/pdf/2607.08748v1",
           "stars": null,
           "id": 4
         },
         {
           "title": "Directional AI Advice: Experimental Evidence from Healthcare",
-          "description": "通过医疗领域的实验证据，研究生成式AI提供的方向性建议（非中性）对用户决策的影响。",
+          "description": "通过医疗领域的实验证据，研究生成式AI提供方向性（而非中立）建议的影响及其设计者/监管者的选择效应。",
           "url": "https://arxiv.org/pdf/2607.08706v1",
           "stars": null,
           "id": 5
@@ -196,41 +196,41 @@
       "items": [
         {
           "title": "lobehub/lobehub",
-          "description": "LobeHub is your Chief Agent Operator, organizing your agents into 7×24 operations by hiring, scheduling, and reporting on your entire AI team.",
+          "description": "LobeHub是首席AI代理操作员，通过雇佣、调度和报告将代理组织为7×24小时运行。",
           "url": "https://github.com/lobehub/lobehub",
-          "stars": 79727,
+          "stars": 79752,
           "id": 1
         },
         {
           "title": "unclecode/crawl4ai",
-          "description": "Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper.",
+          "description": "Crawl4AI：开源LLM友好的Web爬虫和抓取工具。",
           "url": "https://github.com/unclecode/crawl4ai",
-          "stars": 72275,
+          "stars": 72380,
           "id": 2
         },
         {
           "title": "microsoft/ai-agents-for-beginners",
-          "description": "12 Lessons to Get Started Building AI Agents.",
+          "description": "12节课，帮助初学者开始构建AI代理。",
           "url": "https://github.com/microsoft/ai-agents-for-beginners",
-          "stars": 68974,
+          "stars": 69042,
           "id": 3
         },
         {
-          "title": "Leonxlnx/taste-skill",
-          "description": "Taste-Skill gives your AI good taste, stops it from generating boring, generic slop.",
-          "url": "https://github.com/Leonxlnx/taste-skill",
-          "stars": 61850,
+          "title": "koala73/worldmonitor",
+          "description": "实时全球情报仪表板，集成AI新闻聚合、地缘政治监控和基础设施跟踪。",
+          "url": "https://github.com/koala73/worldmonitor",
+          "stars": 61737,
           "id": 4
         },
         {
-          "title": "Fission-AI/OpenSpec",
-          "description": "Spec-driven development (SDD) for AI coding assistants.",
-          "url": "https://github.com/Fission-AI/OpenSpec",
-          "stars": 59974,
+          "title": "santifer/career-ops",
+          "description": "开源AI求职工具：扫描职位门户、评分清单、定制简历、跟踪申请，可在本地AI编码CLI中运行。",
+          "url": "https://github.com/santifer/career-ops",
+          "stars": 59670,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-07-11T13:34:25.067+08:00"
+  "updatedAt": "2026-07-12T13:50:22.385+08:00"
 }
