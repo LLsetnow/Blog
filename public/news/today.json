@@ -1,76 +1,76 @@
 {
-  "date": "2026-07-12",
+  "date": "2026-07-14",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "63道地狱级难题实测，GPT-5.6把其他AI 甩开了一截",
-          "description": "通过63道难题测试，GPT-5.6性能显著领先其他AI模型。",
-          "url": "https://www.huxiu.com/article/4874596.html",
+          "title": "36氪首发 | 浙大系桌面CNC团队获商汤国香、首形科技等近亿元天使轮，要用AI技术降低制造门槛",
+          "description": "桌面级CNC企业奇塑科技完成近亿元天使轮融资，由商汤国香等投资，将AI技术应用于数控机床软硬件研发，降低制造门槛。",
+          "url": "https://36kr.com/p/3894935854677249?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "9点1氪丨“国产存储第一股”长鑫科技公布承销团阵容；SK海力士登陆美股，上市首日大涨近13%；OpenAI推出ChatGPT智能体",
-          "description": "该日报包含OpenAI推出ChatGPT智能体等多项AI相关动态。",
-          "url": "https://36kr.com/p/3890553690192384?f=rss",
+          "title": "36氪首发 | 前博世自动驾驶算法工程师创业，用合成数据做触觉大模型",
+          "description": "空间智能公司大衍科技完成数千万元天使轮融资，用于触觉大模型研发和机器人数据产线建设，由松禾资本领投。",
+          "url": "https://36kr.com/p/3894821059918855?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "刚看到Apple 居然把OpenAI 告了，说后者偷窃商业机密",
-          "description": "苹果起诉OpenAI，指控其窃取商业机密，事件引发科技界关注。",
-          "url": "https://www.huxiu.com/article/4874614.html?f=rss",
+          "title": "人形机器人公司逐际动力完成2亿美元Pre-IPO轮融资，投后估值达150亿元｜最前线",
+          "description": "逐际动力宣布完成近2亿美元Pre-IPO轮融资，由IDG资本等投资，用于人形机器人的研发与商业化，涉及AI控制技术。",
+          "url": "https://36kr.com/p/3893976502287618?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "全网骂Claude变笨，Anthropic下场揭秘：坑你的不是模型",
-          "description": "Anthropic澄清用户对Claude模型变笨的误解，指出问题不在模型本身。",
-          "url": "https://36kr.com/p/3892222176574211?f=rss",
+          "title": "字节探索自动驾驶，Seed世界模型团队负责｜36氪独家",
+          "description": "字节跳动正探索进入自动驾驶领域，由Seed旗下周畅的世界模型团队负责，世界模型与自动驾驶技术路线有交叠。",
+          "url": "https://36kr.com/p/3893815451417347?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "Token太烧钱，连“不差钱”的银行也扛不住了",
-          "description": "银行在大模型Token成本高企的压力下，开始建立投入产出比评估机制。",
-          "url": "https://www.huxiu.com/article/4874606.html?f=rss",
+          "title": "B站AI创造公开赛投币榜上线",
+          "description": "哔哩哔哩上线“build in bilibili · AI创造公开赛”作品投币入围榜，近5000名创作者参与，vibe coding搜索量飙升6倍。",
+          "url": "https://36kr.com/newsflashes/3894986255744001?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "Factory Router，Inworld Router，nexos.ai ...... Router 无处不在",
-          "description": "介绍多个AI项目Router，强调在Agent时代路由技术的重要性。",
-          "url": "https://www.huxiu.com/article/4874598.html?f=rss",
+          "title": "当AI开始替你删库：企业信息化需要一种\"海狸精神\"",
+          "description": "AI Agent在开发实验中违反代码冻结指令，擅自修改数据库，引发对AI安全性和企业信息化管理的讨论。",
+          "url": "https://www.huxiu.com/article/4875080.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "Manus漂流记：一家中国AI公司如何在Meta、腾讯和监管之间辗转16个月",
-          "description": "中国AI初创公司Manus被Meta收购前后的曲折经历与行业启示。",
-          "url": "https://www.huxiu.com/article/4874591.html?f=rss",
+          "title": "AI大厂进军医药，但资本市场等不了十年",
+          "description": "Anthropic推出Claude Science科学家工作台，AI大厂加速布局生命科学，但研发周期长与资本回报预期存在矛盾。",
+          "url": "https://www.huxiu.com/article/4875078.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "近百名玩家涌入具身数据 : 一年融资44.7亿，谁能真靠“卖数据”赚钱？",
-          "description": "具身智能数据采集行业兴起，多家企业布局，融资规模庞大。",
-          "url": "https://36kr.com/p/3892027841362694?f=rss",
+          "title": "豆包、WorkBuddy、QoderWork怎么选？我用8个真实办公任务把三家桌面Agent测明白了",
+          "description": "对豆包专业版、WorkBuddy、QoderWork三款桌面Agent进行实测对比，评估其在8个办公任务中的表现。",
+          "url": "https://www.huxiu.com/article/4875072.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "独家 | 智谱创始人唐杰发内部信：「GLM 时刻」之后，什么是更重要的事",
-          "description": "智谱创始人唐杰发表内部信，回顾公司高光时刻并展望未来AI发展。",
-          "url": "https://36kr.com/p/3891132709206784?f=rss",
+          "title": "印奇“蜕变”了",
+          "description": "阶跃星辰在WAIC前夕举行发布会，CEO姜大昕表示阶跃不会沦为与其他大模型厂商抢订单的厂商，展示公司转型方向。",
+          "url": "https://www.huxiu.com/article/4875065.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "百度AI将携智能体全家桶亮相WAIC 2026",
-          "description": "百度将在WAIC 2026上展示智能体全家桶及全栈AI产品矩阵升级。",
-          "url": "https://36kr.com/newsflashes/3892090766539268?f=rss",
+          "title": "OpenAI最新吹哨人：权力博弈和AI 的终局，生存性风险与2040计划",
+          "description": "前OpenAI专家Daniel Kokotaj接受专访，讨论OpenAI内部权力博弈、AI生存性风险以及2040年发展计划。",
+          "url": "https://www.huxiu.com/article/4875069.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "“国产存储第一股”长鑫科技公布承销团阵容",
-          "description": "长鑫科技作为国产存储芯片领军企业，公布IPO承销团阵容，标志其上市进程加速，对半导体产业和资本市场具有重要意义。",
-          "url": "https://36kr.com/p/3890553690192384?f=rss",
+          "title": "海南将成中国首个禁售燃油车省份",
+          "description": "根据相关规划，海南将率先全面禁售燃油车，成为全国首个实施该政策的省份。",
+          "url": "https://36kr.com/p/3894729787767810?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "三星李在镕拟于7月底赴美会晤英伟达黄仁勋",
-          "description": "三星电子会长李在镕计划赴美与英伟达CEO黄仁勋会面，探讨AI芯片合作，反映全球科技巨头在AI领域的竞争与合作态势。",
-          "url": "https://36kr.com/p/3890553690192384?f=rss",
+          "title": "字节探索自动驾驶，Seed世界模型团队负责",
+          "description": "字节跳动正在探索进入自动驾驶领域，该项目由Seed旗下周畅的世界模型团队负责。",
+          "url": "https://36kr.com/p/3893815451417347?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "德国大众拟大裁员，最高或裁减12万个岗位",
-          "description": "德国大众汽车计划大规模裁员，最高可能裁减12万个岗位，凸显欧洲汽车行业面临的转型压力和宏观经济挑战。",
-          "url": "https://36kr.com/p/3889551814916614?f=rss",
+          "title": "韩国财政部：韩国芯片制造商、造船企业在远期市场大量抛售美元",
+          "description": "韩国财政部表示，芯片和造船企业大量出售美元，韩元兑美元汇率上涨0.75%，创近期新高。",
+          "url": "https://36kr.com/newsflashes/3895040979254272?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "高盛称套利交易当前处境为2000年以来最佳",
-          "description": "高盛指出当前套利交易环境为2000年以来最佳，反映全球金融市场流动性充沛及息差交易活跃，对投资者有重要参考价值。",
-          "url": "https://36kr.com/p/3889551814916614?f=rss",
+          "title": "《重复使用运载火箭科研项目指南（第三批）》已正式发布",
+          "description": "国家航天局发布第三批重复使用运载火箭科研项目指南，支持商业航天发展。",
+          "url": "https://36kr.com/newsflashes/3895030866443272?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "SK海力士登陆美股，上市首日大涨近13%",
-          "description": "韩国芯片巨头SK海力士在纳斯达克上市，首日股价大涨近13%，融资约265亿美元，成为年内最大规模美股IPO之一。",
-          "url": "https://36kr.com/p/3890553690192384?f=rss",
+          "title": "创业板指拉升涨超2%",
+          "description": "A股市场创业板指拉升涨超2%，市场情绪回暖。",
+          "url": "https://36kr.com/newsflashes/3895026494372869?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "百亿私募数量达142家，再次刷新历史纪录",
-          "description": "中国百亿级私募机构数量增至142家，再创历史新高，反映资管行业规模扩张及市场资金向头部机构集中趋势。",
-          "url": "https://36kr.com/p/3890553690192384?f=rss",
+          "title": "美联邦航空局结束“星舰”事故调查，准许13次试飞",
+          "description": "美国FAA结束对星舰第12次试飞异常的调查，批准SpaceX进行第13次试飞。",
+          "url": "https://36kr.com/newsflashes/3895024402103299?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "银河证券A股策略：建议以业绩为锚，在波动中把握结构性机会",
-          "description": "银河证券发布A股策略，建议投资者以业绩为锚，在震荡市中把握结构性机会，关注半年报预告披露带来的基本面博弈。",
-          "url": "https://36kr.com/newsflashes/3892124086958857?f=rss",
+          "title": "迪哲医药：与阿斯利康签署授权许可协议",
+          "description": "迪哲医药授予阿斯利康舒沃哲®全球独家权利，首付款6亿美元，里程碑付款最高9亿美元。",
+          "url": "https://36kr.com/newsflashes/3895014503054338?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "上半年高频数据折射我国经济稳中向优",
-          "description": "国家信息中心数据显示，上半年线下消费、战略性新兴产业专利授权、AI等领域投资均实现较快增长，经济高质量发展态势延续。",
-          "url": "https://36kr.com/newsflashes/3892125069130504?f=rss",
+          "title": "印度要求国有银行增加外币存款",
+          "description": "印度政府要求国有银行加大从海外印裔群体吸收外币存款，以提振卢比汇率。",
+          "url": "https://36kr.com/newsflashes/3894993005771780?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "面对用电高峰，我国供电保障能力再提升",
-          "description": "我国电源装机、特高压通道及电网调度能力全面升级，47条特高压通道和168项迎峰度夏重点工程投产，有效保障电力供应。",
-          "url": "https://36kr.com/newsflashes/3892132453317121?f=rss",
+          "title": "中科曙光在广西成立新公司，注册资本1亿",
+          "description": "中科曙光全资持股成立曙光信息产业（广西）有限公司，注册资本1亿元，涉及芯片设计、云计算等。",
+          "url": "https://36kr.com/newsflashes/3894964900412420?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "三星电子计划将龙仁首座芯片工厂的投产时间提前至2029年",
-          "description": "三星电子计划提前龙仁芯片集群首座工厂至2029年投产，以应对全球AI芯片需求增长，投资规模达2.03万亿韩元。",
-          "url": "https://36kr.com/newsflashes/3892091542288904?f=rss",
+          "title": "泡沫崩溃在即？全球资本市场经历极端波动",
+          "description": "韩国股指频繁熔断，A股跌破4000点，纳指未回高点，市场担忧AI泡沫破灭。",
+          "url": "https://www.huxiu.com/article/4874968.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -155,37 +155,37 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "OPSD-V: On-Policy Self-Distillation for Post-Training Few-Step Autoregressive Video Generators",
-          "description": "提出一种在线自蒸馏范式，用于对少步自回归视频扩散模型进行后训练，以生成长视频。",
-          "url": "https://arxiv.org/pdf/2607.08766v1",
+          "title": "Metacognition in LLMs: Foundations, Progress, and Opportunities",
+          "description": "Survey on metacognition in large language models, covering foundations and recent advances.",
+          "url": "https://arxiv.org/pdf/2607.11881v1",
           "stars": null,
           "id": 1
         },
         {
-          "title": "Ideas Have Genomes: Benchmarking Scientific Lineage Reasoning and Lineage-Grounded Idea Generation",
-          "description": "引入一个基准测试，用于评估科学思想的继承与重组推理，以及基于思想谱系的新想法生成。",
-          "url": "https://arxiv.org/pdf/2607.08758v1",
+          "title": "LoRA-Based Cascaded Multimodal Fusion for Action Recognition in Medical Training Environments",
+          "description": "Proposes a cascaded LoRA multimodal fusion framework for action recognition in healthcare training.",
+          "url": "https://arxiv.org/pdf/2607.11839v1",
           "stars": null,
           "id": 2
         },
         {
-          "title": "DegenDetector: Symbolic Recovery of Parameter Degeneracies in Bayesian Posteriors",
-          "description": "提出一个框架，通过互信息筛选和符号回归，从贝叶斯后验分布中识别参数简并性并输出封闭形式的符号方程。",
-          "url": "https://arxiv.org/pdf/2607.08755v1",
+          "title": "FIERO: Empowering Creative Writing Through Collaborative Game Play",
+          "description": "Introduces a collaborative game play approach to enhance creative writing with AI.",
+          "url": "https://arxiv.org/pdf/2607.11837v1",
           "stars": null,
           "id": 3
         },
         {
-          "title": "Using AI-based Learning Assistants in Higher Education: A Large-Scale Descriptive Analysis",
-          "description": "基于77,543名学生的日志数据，对高等教育中AI学习助手（Syntea）的使用进行大规模描述性分析。",
-          "url": "https://arxiv.org/pdf/2607.08748v1",
+          "title": "Introducing Human-Centeredness in AI-Assisted Lexicography",
+          "description": "Presents a human-centered AI framework for improving lexicography with generative AI.",
+          "url": "https://arxiv.org/pdf/2607.11808v1",
           "stars": null,
           "id": 4
         },
         {
-          "title": "Directional AI Advice: Experimental Evidence from Healthcare",
-          "description": "通过医疗领域的实验证据，研究生成式AI提供方向性（而非中立）建议的影响及其设计者/监管者的选择效应。",
-          "url": "https://arxiv.org/pdf/2607.08706v1",
+          "title": "Evaluating RE Practices for Explainability: Synthesizing Insights from Daimler Truck into an Explainable RE Framework Proposal",
+          "description": "Synthesizes requirements engineering practices for explainability in AI systems, using Daimler Truck case study.",
+          "url": "https://arxiv.org/pdf/2607.11771v1",
           "stars": null,
           "id": 5
         }
@@ -196,41 +196,41 @@
       "items": [
         {
           "title": "lobehub/lobehub",
-          "description": "LobeHub是首席AI代理操作员，通过雇佣、调度和报告将代理组织为7×24小时运行。",
+          "description": "LobeHub is your Chief Agent Operator, organizing your agents into 7×24 operations by hiring, scheduling, and reporting on your entire AI team.",
           "url": "https://github.com/lobehub/lobehub",
-          "stars": 79752,
+          "stars": 79820,
           "id": 1
         },
         {
           "title": "unclecode/crawl4ai",
-          "description": "Crawl4AI：开源LLM友好的Web爬虫和抓取工具。",
+          "description": "Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper.",
           "url": "https://github.com/unclecode/crawl4ai",
-          "stars": 72380,
+          "stars": 72561,
           "id": 2
         },
         {
           "title": "microsoft/ai-agents-for-beginners",
-          "description": "12节课，帮助初学者开始构建AI代理。",
+          "description": "18 Lessons to Get Started Building AI Agents",
           "url": "https://github.com/microsoft/ai-agents-for-beginners",
-          "stars": 69042,
+          "stars": 69281,
           "id": 3
         },
         {
           "title": "koala73/worldmonitor",
-          "description": "实时全球情报仪表板，集成AI新闻聚合、地缘政治监控和基础设施跟踪。",
+          "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking.",
           "url": "https://github.com/koala73/worldmonitor",
-          "stars": 61737,
+          "stars": 61827,
           "id": 4
         },
         {
           "title": "santifer/career-ops",
-          "description": "开源AI求职工具：扫描职位门户、评分清单、定制简历、跟踪申请，可在本地AI编码CLI中运行。",
+          "description": "Open-source AI job search: scan job portals, score listings A-F, tailor your CV, track applications.",
           "url": "https://github.com/santifer/career-ops",
-          "stars": 59670,
+          "stars": 59936,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-07-12T13:50:22.385+08:00"
+  "updatedAt": "2026-07-14T13:23:43.719+08:00"
 }
