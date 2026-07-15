@@ -1,76 +1,76 @@
 {
-  "date": "2026-07-14",
+  "date": "2026-07-15",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "36氪首发 | 浙大系桌面CNC团队获商汤国香、首形科技等近亿元天使轮，要用AI技术降低制造门槛",
-          "description": "桌面级CNC企业奇塑科技完成近亿元天使轮融资，由商汤国香等投资，将AI技术应用于数控机床软硬件研发，降低制造门槛。",
-          "url": "https://36kr.com/p/3894935854677249?f=rss",
+          "title": "前博世自动驾驶算法工程师创业，用合成数据做触觉大模型",
+          "description": "空间智能公司「大衍科技」完成数千万元天使轮融资，将用于触觉大模型研发、机器人数据产线建设及团队扩张。",
+          "url": "https://36kr.com/p/3894821059918855?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "36氪首发 | 前博世自动驾驶算法工程师创业，用合成数据做触觉大模型",
-          "description": "空间智能公司大衍科技完成数千万元天使轮融资，用于触觉大模型研发和机器人数据产线建设，由松禾资本领投。",
-          "url": "https://36kr.com/p/3894821059918855?f=rss",
+          "title": "浙大系桌面CNC团队获商汤国香等近亿元天使轮，要用AI技术降低制造门槛",
+          "description": "桌面级CNC企业「奇塑科技」完成近亿元天使轮融资，由商汤国香、首形科技等投资，将用AI技术降低制造门槛。",
+          "url": "https://36kr.com/p/3894935854677249?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "人形机器人公司逐际动力完成2亿美元Pre-IPO轮融资，投后估值达150亿元｜最前线",
-          "description": "逐际动力宣布完成近2亿美元Pre-IPO轮融资，由IDG资本等投资，用于人形机器人的研发与商业化，涉及AI控制技术。",
+          "title": "人形机器人公司逐际动力完成2亿美元Pre-IPO轮融资，投后估值达150亿元",
+          "description": "通用人形机器人公司逐际动力完成Pre-IPO轮融资近2亿美元，投资方包括IDG资本、蓝思科技等。",
           "url": "https://36kr.com/p/3893976502287618?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "字节探索自动驾驶，Seed世界模型团队负责｜36氪独家",
-          "description": "字节跳动正探索进入自动驾驶领域，由Seed旗下周畅的世界模型团队负责，世界模型与自动驾驶技术路线有交叠。",
-          "url": "https://36kr.com/p/3893815451417347?f=rss",
+          "title": "微盟旗下AI销售数字员工微盟星拓启动内测",
+          "description": "微盟集团宣布面向B2B场景的AI销售数字员工微盟星拓正式启动内测，覆盖从用户指令到意向加微的全链路。",
+          "url": "https://36kr.com/newsflashes/3896392008714117?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "B站AI创造公开赛投币榜上线",
-          "description": "哔哩哔哩上线“build in bilibili · AI创造公开赛”作品投币入围榜，近5000名创作者参与，vibe coding搜索量飙升6倍。",
-          "url": "https://36kr.com/newsflashes/3894986255744001?f=rss",
+          "title": "元宝与京东AI Agent正式打通小程序生态",
+          "description": "腾讯宣布元宝与京东AI Agent完成小程序生态打通，京东AI Agent成为首个接入元宝的电商垂域合作伙伴。",
+          "url": "https://36kr.com/newsflashes/3896380062647944?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "当AI开始替你删库：企业信息化需要一种\"海狸精神\"",
-          "description": "AI Agent在开发实验中违反代码冻结指令，擅自修改数据库，引发对AI安全性和企业信息化管理的讨论。",
-          "url": "https://www.huxiu.com/article/4875080.html?f=rss",
+          "title": "氪星晚报：智谱完成配售新H股募资约314亿港元；荣耀与阿里将开展AI智能体终端合作",
+          "description": "智谱完成配售新H股募资约314亿港元；荣耀与阿里将开展AI智能体终端合作；小米机器人实现汽车工厂柔性工件的长时作业。",
+          "url": "https://36kr.com/p/3895322613185543?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "AI大厂进军医药，但资本市场等不了十年",
-          "description": "Anthropic推出Claude Science科学家工作台，AI大厂加速布局生命科学，但研发周期长与资本回报预期存在矛盾。",
-          "url": "https://www.huxiu.com/article/4875078.html?f=rss",
+          "title": "8点1氪：DeepSeek梁文锋成全球AI公司领域新首富；小米机器人首次实现汽车工厂柔性工件的长时作业",
+          "description": "DeepSeek梁文锋成为全球AI公司领域新首富；小米机器人实现汽车工厂柔性工件长时作业；苹果将跳过M6 Pro/Max芯片全力押注AI导向的M7系列。",
+          "url": "https://36kr.com/p/3896138695706497?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "豆包、WorkBuddy、QoderWork怎么选？我用8个真实办公任务把三家桌面Agent测明白了",
-          "description": "对豆包专业版、WorkBuddy、QoderWork三款桌面Agent进行实测对比，评估其在8个办公任务中的表现。",
-          "url": "https://www.huxiu.com/article/4875072.html?f=rss",
+          "title": "8点1氪：字节探索自动驾驶，Seed世界模型团队负责；苹果将跳过M6 Pro/Max芯片全力押注AI导向的M7系列",
+          "description": "字节跳动探索自动驾驶，由Seed世界模型团队负责；苹果将跳过M6 Pro/Max芯片全力押注AI导向的M7系列。",
+          "url": "https://36kr.com/p/3894729787767810?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "印奇“蜕变”了",
-          "description": "阶跃星辰在WAIC前夕举行发布会，CEO姜大昕表示阶跃不会沦为与其他大模型厂商抢订单的厂商，展示公司转型方向。",
-          "url": "https://www.huxiu.com/article/4875065.html?f=rss",
+          "title": "马斯克的Grok4.5刚追上Claude，转头就把用户整个代码库偷偷打包带走",
+          "description": "报道指出马斯克的Grok 4.5模型性能追上Claude，但存在将用户整个代码库打包带走的行为。",
+          "url": "https://www.huxiu.com/article/4875404.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "OpenAI最新吹哨人：权力博弈和AI 的终局，生存性风险与2040计划",
-          "description": "前OpenAI专家Daniel Kokotaj接受专访，讨论OpenAI内部权力博弈、AI生存性风险以及2040年发展计划。",
-          "url": "https://www.huxiu.com/article/4875069.html?f=rss",
+          "title": "爱诗科技值多少钱？",
+          "description": "爱诗科技旗下视频生成产品Pixverse在TikTok等平台累计播放量超10亿次，文章探讨其估值。",
+          "url": "https://www.huxiu.com/article/4875402.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "海南将成中国首个禁售燃油车省份",
-          "description": "根据相关规划，海南将率先全面禁售燃油车，成为全国首个实施该政策的省份。",
-          "url": "https://36kr.com/p/3894729787767810?f=rss",
+          "title": "海关总署：中国出口连续11季度保持增长，贸易增量集中于AI领域",
+          "description": "海关总署公布数据显示，中国出口已连续11个季度保持增长，且贸易增量主要来源于人工智能领域。",
+          "url": "https://36kr.com/p/3896138695706497?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "字节探索自动驾驶，Seed世界模型团队负责",
-          "description": "字节跳动正在探索进入自动驾驶领域，该项目由Seed旗下周畅的世界模型团队负责。",
-          "url": "https://36kr.com/p/3893815451417347?f=rss",
+          "title": "国际金价持续回调，后市关注美联储政策路径",
+          "description": "国际金价延续回调趋势，市场密切关注美联储未来政策路径对金价的影响。",
+          "url": "https://36kr.com/p/3896138695706497?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "韩国财政部：韩国芯片制造商、造船企业在远期市场大量抛售美元",
-          "description": "韩国财政部表示，芯片和造船企业大量出售美元，韩元兑美元汇率上涨0.75%，创近期新高。",
-          "url": "https://36kr.com/newsflashes/3895040979254272?f=rss",
+          "title": "科创50指数跌超5%",
+          "description": "科创50指数跌幅扩大至5%，半导体芯片股集体走弱，多只个股跌超10%。",
+          "url": "https://36kr.com/newsflashes/3896453214914178?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "《重复使用运载火箭科研项目指南（第三批）》已正式发布",
-          "description": "国家航天局发布第三批重复使用运载火箭科研项目指南，支持商业航天发展。",
-          "url": "https://36kr.com/newsflashes/3895030866443272?f=rss",
+          "title": "恒指午间休盘涨1.46%，恒生科技指数涨1.39%",
+          "description": "恒生指数午间休盘上涨1.46%，恒生科技指数上涨1.39%，南向资金净买入93.84亿港元。",
+          "url": "https://36kr.com/newsflashes/3896379331790471?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "创业板指拉升涨超2%",
-          "description": "A股市场创业板指拉升涨超2%，市场情绪回暖。",
-          "url": "https://36kr.com/newsflashes/3895026494372869?f=rss",
+          "title": "Stripe与Advent联合提出530亿美元收购PayPal",
+          "description": "支付公司Stripe与私募股权公司Advent International联合提出以每股60.50美元收购PayPal，交易估值超530亿美元，已获约500亿美元融资承诺。",
+          "url": "https://36kr.com/newsflashes/3896382639982464?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "美联邦航空局结束“星舰”事故调查，准许13次试飞",
-          "description": "美国FAA结束对星舰第12次试飞异常的调查，批准SpaceX进行第13次试飞。",
-          "url": "https://36kr.com/newsflashes/3895024402103299?f=rss",
+          "title": "安踏品牌CEO徐阳因家庭原因离职，集团联席CEO赖世贤代理",
+          "description": "安踏集团确认，原安踏品牌CEO徐阳因家庭原因辞任，该职务由集团联席CEO赖世贤代理。",
+          "url": "https://www.huxiu.com/article/4875411.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "迪哲医药：与阿斯利康签署授权许可协议",
-          "description": "迪哲医药授予阿斯利康舒沃哲®全球独家权利，首付款6亿美元，里程碑付款最高9亿美元。",
-          "url": "https://36kr.com/newsflashes/3895014503054338?f=rss",
+          "title": "《扩大消费“十五五”规划》再提“涨工资”、“涨养老金”",
+          "description": "最新发布的《扩大消费“十五五”规划》提出多渠道促进居民增收，明确稳步提高最低工资标准和完善社会保障政策。",
+          "url": "https://www.huxiu.com/article/4875400.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "印度要求国有银行增加外币存款",
-          "description": "印度政府要求国有银行加大从海外印裔群体吸收外币存款，以提振卢比汇率。",
-          "url": "https://36kr.com/newsflashes/3894993005771780?f=rss",
+          "title": "海南将成中国首个禁售燃油车省份",
+          "description": "海南宣布将成为中国首个禁售燃油车的省份，推动新能源汽车全面替代。",
+          "url": "https://36kr.com/p/3894729787767810?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "中科曙光在广西成立新公司，注册资本1亿",
-          "description": "中科曙光全资持股成立曙光信息产业（广西）有限公司，注册资本1亿元，涉及芯片设计、云计算等。",
-          "url": "https://36kr.com/newsflashes/3894964900412420?f=rss",
+          "title": "SK海力士暴跌15%",
+          "description": "韩国半导体巨头SK海力士股价暴跌15%，市场关注其业绩及行业竞争动态。",
+          "url": "https://36kr.com/p/3894729787767810?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "泡沫崩溃在即？全球资本市场经历极端波动",
-          "description": "韩国股指频繁熔断，A股跌破4000点，纳指未回高点，市场担忧AI泡沫破灭。",
-          "url": "https://www.huxiu.com/article/4874968.html?f=rss",
+          "title": "智谱完成配售新H股募资约314亿港元",
+          "description": "智谱公司宣布完成新H股配售，募集资金约314亿港元，资金将用于技术研发及市场拓展。",
+          "url": "https://36kr.com/p/3895322613185543?f=rss",
           "stars": null,
           "id": 10
         }
@@ -155,39 +155,32 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "Metacognition in LLMs: Foundations, Progress, and Opportunities",
-          "description": "Survey on metacognition in large language models, covering foundations and recent advances.",
-          "url": "https://arxiv.org/pdf/2607.11881v1",
+          "title": "Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution",
+          "description": "研究LLM代理在自动执行多步任务时缺乏对任务复杂度的感知，提出复杂度感知推理方法。",
+          "url": "https://arxiv.org/pdf/2607.13034v1",
           "stars": null,
           "id": 1
         },
         {
-          "title": "LoRA-Based Cascaded Multimodal Fusion for Action Recognition in Medical Training Environments",
-          "description": "Proposes a cascaded LoRA multimodal fusion framework for action recognition in healthcare training.",
-          "url": "https://arxiv.org/pdf/2607.11839v1",
+          "title": "Software Supply Chains are Dead: Use-Case-Oriented Regeneration",
+          "description": "批判现代软件开发依赖第三方依赖的维护成本，提出以用例为导向的软件再生方法。",
+          "url": "https://arxiv.org/pdf/2607.13021v1",
           "stars": null,
           "id": 2
         },
         {
-          "title": "FIERO: Empowering Creative Writing Through Collaborative Game Play",
-          "description": "Introduces a collaborative game play approach to enhance creative writing with AI.",
-          "url": "https://arxiv.org/pdf/2607.11837v1",
+          "title": "An Agentic Formalization for Certified Quantum Neural Network Design",
+          "description": "形式化量子神经网络的智能体设计方法，平衡表达性与可训练性。",
+          "url": "https://arxiv.org/pdf/2607.12981v1",
           "stars": null,
           "id": 3
         },
         {
-          "title": "Introducing Human-Centeredness in AI-Assisted Lexicography",
-          "description": "Presents a human-centered AI framework for improving lexicography with generative AI.",
-          "url": "https://arxiv.org/pdf/2607.11808v1",
+          "title": "Robustness of Deep Learning Models for PV Power Forecasting under NWP Forecast Errors: A Spatiotemporal and Physically Interpretable Analysis",
+          "description": "分析深度学习模型在光伏功率预测中对数值天气预测误差的鲁棒性，提出时空可解释分析。",
+          "url": "https://arxiv.org/pdf/2607.12954v1",
           "stars": null,
           "id": 4
-        },
-        {
-          "title": "Evaluating RE Practices for Explainability: Synthesizing Insights from Daimler Truck into an Explainable RE Framework Proposal",
-          "description": "Synthesizes requirements engineering practices for explainability in AI systems, using Daimler Truck case study.",
-          "url": "https://arxiv.org/pdf/2607.11771v1",
-          "stars": null,
-          "id": 5
         }
       ]
     },
@@ -196,41 +189,41 @@
       "items": [
         {
           "title": "lobehub/lobehub",
-          "description": "LobeHub is your Chief Agent Operator, organizing your agents into 7×24 operations by hiring, scheduling, and reporting on your entire AI team.",
+          "description": "将AI代理组织成7×24运营的Agent操作平台",
           "url": "https://github.com/lobehub/lobehub",
-          "stars": 79820,
+          "stars": 79858,
           "id": 1
         },
         {
           "title": "unclecode/crawl4ai",
-          "description": "Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper.",
+          "description": "面向LLM的开源网页爬虫与数据抓取工具",
           "url": "https://github.com/unclecode/crawl4ai",
-          "stars": 72561,
+          "stars": 72679,
           "id": 2
         },
         {
           "title": "microsoft/ai-agents-for-beginners",
-          "description": "18 Lessons to Get Started Building AI Agents",
+          "description": "18节课程帮助初学者构建AI代理",
           "url": "https://github.com/microsoft/ai-agents-for-beginners",
-          "stars": 69281,
+          "stars": 69380,
           "id": 3
         },
         {
-          "title": "koala73/worldmonitor",
-          "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking.",
-          "url": "https://github.com/koala73/worldmonitor",
-          "stars": 61827,
+          "title": "virattt/ai-hedge-fund",
+          "description": "AI驱动的对冲基金团队模拟系统",
+          "url": "https://github.com/virattt/ai-hedge-fund",
+          "stars": 61974,
           "id": 4
         },
         {
-          "title": "santifer/career-ops",
-          "description": "Open-source AI job search: scan job portals, score listings A-F, tailor your CV, track applications.",
-          "url": "https://github.com/santifer/career-ops",
-          "stars": 59936,
+          "title": "MemPalace/mempalace",
+          "description": "性能领先的开源AI记忆系统，免费使用",
+          "url": "https://github.com/MemPalace/mempalace",
+          "stars": 57332,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-07-14T13:23:43.719+08:00"
+  "updatedAt": "2026-07-15T13:25:27.305+08:00"
 }
