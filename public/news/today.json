@@ -1,76 +1,76 @@
 {
-  "date": "2026-07-15",
+  "date": "2026-07-16",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "前博世自动驾驶算法工程师创业，用合成数据做触觉大模型",
-          "description": "空间智能公司「大衍科技」完成数千万元天使轮融资，将用于触觉大模型研发、机器人数据产线建设及团队扩张。",
-          "url": "https://36kr.com/p/3894821059918855?f=rss",
+          "title": "面壁智能端侧大模型将搭载三星手机上市",
+          "description": "独家获悉，面壁智能MiniCPM系列端侧模型将搭载于三星手机上市，覆盖数款旗舰机型。",
+          "url": "https://36kr.com/p/3896830362601351?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "浙大系桌面CNC团队获商汤国香等近亿元天使轮，要用AI技术降低制造门槛",
-          "description": "桌面级CNC企业「奇塑科技」完成近亿元天使轮融资，由商汤国香、首形科技等投资，将用AI技术降低制造门槛。",
-          "url": "https://36kr.com/p/3894935854677249?f=rss",
+          "title": "每天增长100万用户，Codex总算扬眉吐气了",
+          "description": "GPT-5.6发布后，OpenAI的Codex相关产品活跃用户以每天一百万的速度上涨，突破新里程碑。",
+          "url": "https://www.huxiu.com/article/4875744.html?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "人形机器人公司逐际动力完成2亿美元Pre-IPO轮融资，投后估值达150亿元",
-          "description": "通用人形机器人公司逐际动力完成Pre-IPO轮融资近2亿美元，投资方包括IDG资本、蓝思科技等。",
-          "url": "https://36kr.com/p/3893976502287618?f=rss",
+          "title": "鸿蒙看中了极顶数创什么？：一家3D大模型公司的产品逻辑",
+          "description": "探讨3D大模型公司极顶数创的产品逻辑，以及如何被鸿蒙生态看中。",
+          "url": "https://www.huxiu.com/article/4875732.html?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "微盟旗下AI销售数字员工微盟星拓启动内测",
-          "description": "微盟集团宣布面向B2B场景的AI销售数字员工微盟星拓正式启动内测，覆盖从用户指令到意向加微的全链路。",
-          "url": "https://36kr.com/newsflashes/3896392008714117?f=rss",
+          "title": "斯年智驾获3亿元C轮融资，自动驾驶重卡赛道再升温",
+          "description": "斯年智驾完成3亿元C轮融资，资金用于新一代车规级自动驾驶方案研发，自动驾驶重卡赛道显著升温。",
+          "url": "https://36kr.com/p/3895721094842249?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "元宝与京东AI Agent正式打通小程序生态",
-          "description": "腾讯宣布元宝与京东AI Agent完成小程序生态打通，京东AI Agent成为首个接入元宝的电商垂域合作伙伴。",
-          "url": "https://36kr.com/newsflashes/3896380062647944?f=rss",
+          "title": "众筹近400万美金，这家明星AI体育硬件公司做了款多合一教练机器人",
+          "description": "庞伯特在首款网球发球机成功后，推出多合一AI教练机器人，产品在全球拥有超30万用户。",
+          "url": "https://36kr.com/p/3896586337978244?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "氪星晚报：智谱完成配售新H股募资约314亿港元；荣耀与阿里将开展AI智能体终端合作",
-          "description": "智谱完成配售新H股募资约314亿港元；荣耀与阿里将开展AI智能体终端合作；小米机器人实现汽车工厂柔性工件的长时作业。",
-          "url": "https://36kr.com/p/3895322613185543?f=rss",
+          "title": "“要么Fork，要么走人”，Linus怒怼AI反对派：Linux不搞“反AI”",
+          "description": "Linux创始人Linus Torvalds在访谈中明确表态，不支持内核社区对AI的抵制，划下AI路线边界。",
+          "url": "https://www.huxiu.com/article/4875739.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "8点1氪：DeepSeek梁文锋成全球AI公司领域新首富；小米机器人首次实现汽车工厂柔性工件的长时作业",
-          "description": "DeepSeek梁文锋成为全球AI公司领域新首富；小米机器人实现汽车工厂柔性工件长时作业；苹果将跳过M6 Pro/Max芯片全力押注AI导向的M7系列。",
-          "url": "https://36kr.com/p/3896138695706497?f=rss",
+          "title": "深圳市人工智能与机器人研究院丁宁：具身智能就是知行合一",
+          "description": "深圳市人工智能与机器人研究院常务副院长丁宁在演讲中阐述具身智能的核心理念与现实应用。",
+          "url": "https://www.huxiu.com/article/4875731.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "8点1氪：字节探索自动驾驶，Seed世界模型团队负责；苹果将跳过M6 Pro/Max芯片全力押注AI导向的M7系列",
-          "description": "字节跳动探索自动驾驶，由Seed世界模型团队负责；苹果将跳过M6 Pro/Max芯片全力押注AI导向的M7系列。",
-          "url": "https://36kr.com/p/3894729787767810?f=rss",
+          "title": "IDC：百度智能云蝉联中国金融大模型市场份额第一",
+          "description": "据IDC报告，2025年中国金融行业生成式AI市场爆发增长，百度智能云以16%市场份额蝉联第一。",
+          "url": "https://36kr.com/newsflashes/3897829594662536?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "马斯克的Grok4.5刚追上Claude，转头就把用户整个代码库偷偷打包带走",
-          "description": "报道指出马斯克的Grok 4.5模型性能追上Claude，但存在将用户整个代码库打包带走的行为。",
-          "url": "https://www.huxiu.com/article/4875404.html?f=rss",
+          "title": "AI改变的不止是世界杯",
+          "description": "文章探讨AI在2026年世界杯中的应用，包括裁判辅助、战术分析等，展示AI对体育赛事的改变。",
+          "url": "https://www.huxiu.com/article/4875684.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "爱诗科技值多少钱？",
-          "description": "爱诗科技旗下视频生成产品Pixverse在TikTok等平台累计播放量超10亿次，文章探讨其估值。",
-          "url": "https://www.huxiu.com/article/4875402.html?f=rss",
+          "title": "下一代AI原生UGC平台，藏在《蛋仔派对》里",
+          "description": "分析游戏《蛋仔派对》如何借助AI技术构建AI原生UGC平台，推动一人公司（OPC）创作模式。",
+          "url": "https://36kr.com/p/3896755010963333?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "海关总署：中国出口连续11季度保持增长，贸易增量集中于AI领域",
-          "description": "海关总署公布数据显示，中国出口已连续11个季度保持增长，且贸易增量主要来源于人工智能领域。",
-          "url": "https://36kr.com/p/3896138695706497?f=rss",
+          "title": "台积电第二季度净利润达7066亿新台币，超市场预期",
+          "description": "台积电公布第二季度财报，净利润7066亿新台币，市场预期6237.3亿新台币，毛利率67.7%，表现强劲。",
+          "url": "https://36kr.com/newsflashes/3897883855455875?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "国际金价持续回调，后市关注美联储政策路径",
-          "description": "国际金价延续回调趋势，市场密切关注美联储未来政策路径对金价的影响。",
-          "url": "https://36kr.com/p/3896138695706497?f=rss",
+          "title": "沪深两市成交额突破1.5万亿",
+          "description": "沪深两市成交额突破1.5万亿元，显示市场交投活跃。",
+          "url": "https://36kr.com/newsflashes/3897859672606592?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "科创50指数跌超5%",
-          "description": "科创50指数跌幅扩大至5%，半导体芯片股集体走弱，多只个股跌超10%。",
-          "url": "https://36kr.com/newsflashes/3896453214914178?f=rss",
+          "title": "存储芯片股暴跌：美光、SK海力士等重挫",
+          "description": "存储芯片股本周遭遇剧烈震荡，多重利空叠加，美光跌超8%，SK海力士跌近12%，市场担忧AI需求驱动的涨势承压。",
+          "url": "https://www.huxiu.com/article/4875730.html?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "恒指午间休盘涨1.46%，恒生科技指数涨1.39%",
-          "description": "恒生指数午间休盘上涨1.46%，恒生科技指数上涨1.39%，南向资金净买入93.84亿港元。",
-          "url": "https://36kr.com/newsflashes/3896379331790471?f=rss",
+          "title": "金价高台跳水：不到半年狂泻近30%，机构观点分歧",
+          "description": "黄金价格自2026年初高点持续下跌，近半年跌幅近30%，市场对“牛市”是否结束产生激烈争论。",
+          "url": "https://www.huxiu.com/article/4875695.html?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "Stripe与Advent联合提出530亿美元收购PayPal",
-          "description": "支付公司Stripe与私募股权公司Advent International联合提出以每股60.50美元收购PayPal，交易估值超530亿美元，已获约500亿美元融资承诺。",
-          "url": "https://36kr.com/newsflashes/3896382639982464?f=rss",
+          "title": "光刻机霸主阿斯麦Q2业绩超预期，中国市场稳定",
+          "description": "阿斯麦公布第二季度财报，营收同比增长21%至93.3亿欧元，净利润超预期，强调中国市场表现稳健，英特尔订单成为第一。",
+          "url": "https://www.huxiu.com/article/4875723.html?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "安踏品牌CEO徐阳因家庭原因离职，集团联席CEO赖世贤代理",
-          "description": "安踏集团确认，原安踏品牌CEO徐阳因家庭原因辞任，该职务由集团联席CEO赖世贤代理。",
-          "url": "https://www.huxiu.com/article/4875411.html?f=rss",
+          "title": "斯年智驾获3亿元C轮融资，自动驾驶重卡赛道升温",
+          "description": "自动驾驶重卡公司斯年智驾完成3亿元C轮融资，由兴证资本、颐道资本联合投资，用于新一代车规级自动驾驶方案研发。",
+          "url": "https://36kr.com/p/3895721094842249?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "《扩大消费“十五五”规划》再提“涨工资”、“涨养老金”",
-          "description": "最新发布的《扩大消费“十五五”规划》提出多渠道促进居民增收，明确稳步提高最低工资标准和完善社会保障政策。",
-          "url": "https://www.huxiu.com/article/4875400.html?f=rss",
+          "title": "面壁智能端侧大模型将搭载三星手机上市",
+          "description": "端侧大模型公司面壁智能与三星手机达成合作，其MiniCPM系列模型将覆盖数款旗舰机型，同日电苹果AI功能完成备案。",
+          "url": "https://36kr.com/p/3896830362601351?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "海南将成中国首个禁售燃油车省份",
-          "description": "海南宣布将成为中国首个禁售燃油车的省份，推动新能源汽车全面替代。",
-          "url": "https://36kr.com/p/3894729787767810?f=rss",
+          "title": "花样年控股境外债务重组：指定7月30日为生效日期",
+          "description": "花样年控股公告境外债务重组进展，已指定2026年7月30日为重组生效日期，待其余条件达成或豁免。",
+          "url": "https://36kr.com/newsflashes/3897846021834626?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "SK海力士暴跌15%",
-          "description": "韩国半导体巨头SK海力士股价暴跌15%，市场关注其业绩及行业竞争动态。",
-          "url": "https://36kr.com/p/3894729787767810?f=rss",
+          "title": "巴菲特宣布8年内清仓伯克希尔股票",
+          "description": "巴菲特宣布将在8年内清仓其所持伯克希尔股票，引发市场关注。",
+          "url": "https://36kr.com/p/3897553391978371?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "智谱完成配售新H股募资约314亿港元",
-          "description": "智谱公司宣布完成新H股配售，募集资金约314亿港元，资金将用于技术研发及市场拓展。",
-          "url": "https://36kr.com/p/3895322613185543?f=rss",
+          "title": "国行苹果AI功能完成备案",
+          "description": "网信部门公告包括“Apple智能”等7款手机端侧生成式AI服务完成备案，为苹果AI入华铺路。",
+          "url": "https://36kr.com/p/3897553391978371?f=rss",
           "stars": null,
           "id": 10
         }
@@ -155,32 +155,39 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution",
-          "description": "研究LLM代理在自动执行多步任务时缺乏对任务复杂度的感知，提出复杂度感知推理方法。",
-          "url": "https://arxiv.org/pdf/2607.13034v1",
+          "title": "Building Shor's Algorithm in Lean: An Agentic Formalization of Quantum Attacks on RSA-2048 and P-256",
+          "description": "利用LLM辅助的智能体系统在Lean中形式化Shor算法，实现针对RSA-2048和P-256的量子攻击的定理证明。",
+          "url": "https://arxiv.org/pdf/2607.14082v1",
           "stars": null,
           "id": 1
         },
         {
-          "title": "Software Supply Chains are Dead: Use-Case-Oriented Regeneration",
-          "description": "批判现代软件开发依赖第三方依赖的维护成本，提出以用例为导向的软件再生方法。",
-          "url": "https://arxiv.org/pdf/2607.13021v1",
+          "title": "Deep Interaction: An Efficient Human-AI Interaction Method for Large Reasoning Models",
+          "description": "针对大推理模型提出一种高效的人机交互方法，以改进链式推理中的错误处理。",
+          "url": "https://arxiv.org/pdf/2607.14049v1",
           "stars": null,
           "id": 2
         },
         {
-          "title": "An Agentic Formalization for Certified Quantum Neural Network Design",
-          "description": "形式化量子神经网络的智能体设计方法，平衡表达性与可训练性。",
-          "url": "https://arxiv.org/pdf/2607.12981v1",
+          "title": "Earthquaker-AI: A Retrieval-Augmented Generation Framework with Rubric-Based Assessment for Primary School Earthquake Education",
+          "description": "结合检索增强生成和基于量规的评估，构建面向小学地震教育的混合式AI辅助学习框架。",
+          "url": "https://arxiv.org/pdf/2607.14046v1",
           "stars": null,
           "id": 3
         },
         {
-          "title": "Robustness of Deep Learning Models for PV Power Forecasting under NWP Forecast Errors: A Spatiotemporal and Physically Interpretable Analysis",
-          "description": "分析深度学习模型在光伏功率预测中对数值天气预测误差的鲁棒性，提出时空可解释分析。",
-          "url": "https://arxiv.org/pdf/2607.12954v1",
+          "title": "AI-accelerated End-to-End Framework for Rapid Professional Upskilling",
+          "description": "提出一个AI加速的端到端框架，以应对未来大量工人需要技能提升的挑战，缩短技能差距。",
+          "url": "https://arxiv.org/pdf/2607.14044v1",
           "stars": null,
           "id": 4
+        },
+        {
+          "title": "Can an Old Dog Be Taught New Tricks? Taking LLMs Beyond Sentence Level Translation",
+          "description": "探索将LLM从句子级翻译扩展到整文档翻译，通过对比实验评估其效果。",
+          "url": "https://arxiv.org/pdf/2607.14040v1",
+          "stars": null,
+          "id": 5
         }
       ]
     },
@@ -189,41 +196,41 @@
       "items": [
         {
           "title": "lobehub/lobehub",
-          "description": "将AI代理组织成7×24运营的Agent操作平台",
+          "description": "Organizing your AI agents into 7x24 operations by hiring, scheduling, and reporting.",
           "url": "https://github.com/lobehub/lobehub",
-          "stars": 79858,
+          "stars": 79893,
           "id": 1
         },
         {
           "title": "unclecode/crawl4ai",
-          "description": "面向LLM的开源网页爬虫与数据抓取工具",
+          "description": "Open-source LLM friendly web crawler and scraper.",
           "url": "https://github.com/unclecode/crawl4ai",
-          "stars": 72679,
+          "stars": 72835,
           "id": 2
         },
         {
           "title": "microsoft/ai-agents-for-beginners",
-          "description": "18节课程帮助初学者构建AI代理",
+          "description": "18 lessons to get started building AI agents.",
           "url": "https://github.com/microsoft/ai-agents-for-beginners",
-          "stars": 69380,
+          "stars": 69455,
           "id": 3
         },
         {
           "title": "virattt/ai-hedge-fund",
-          "description": "AI驱动的对冲基金团队模拟系统",
+          "description": "An AI Hedge Fund Team.",
           "url": "https://github.com/virattt/ai-hedge-fund",
-          "stars": 61974,
+          "stars": 62151,
           "id": 4
         },
         {
-          "title": "MemPalace/mempalace",
-          "description": "性能领先的开源AI记忆系统，免费使用",
-          "url": "https://github.com/MemPalace/mempalace",
-          "stars": 57332,
+          "title": "headroomlabs-ai/headroom",
+          "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM, reducing token usage.",
+          "url": "https://github.com/headroomlabs-ai/headroom",
+          "stars": 59390,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-07-15T13:25:27.305+08:00"
+  "updatedAt": "2026-07-16T13:34:18.535+08:00"
 }
