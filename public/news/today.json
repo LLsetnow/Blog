@@ -1,76 +1,76 @@
 {
-  "date": "2026-07-16",
+  "date": "2026-07-17",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "面壁智能端侧大模型将搭载三星手机上市",
-          "description": "独家获悉，面壁智能MiniCPM系列端侧模型将搭载于三星手机上市，覆盖数款旗舰机型。",
-          "url": "https://36kr.com/p/3896830362601351?f=rss",
+          "title": "36氪首发 | 港科大博士创业做机器人全身触觉系统，红杉、瓴智、智元共同押注",
+          "description": "模感科技（MoSense）完成数千万元天使轮融资，投资方包括红杉中国、高瓴创投及智元机器人，资金将用于加速研发、团队扩充、算力投入及量产测试体系建设。",
+          "url": "https://36kr.com/p/3899128277452681?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "每天增长100万用户，Codex总算扬眉吐气了",
-          "description": "GPT-5.6发布后，OpenAI的Codex相关产品活跃用户以每天一百万的速度上涨，突破新里程碑。",
-          "url": "https://www.huxiu.com/article/4875744.html?f=rss",
+          "title": "36氪首发 | 前蔚来、华为智驾核心成员联手创业具身世界模型，三个月内完成数亿元融资",
+          "description": "具身智能世界模型公司日冕开物完成连续两轮种子轮融资，合计数亿元人民币，由鼎峰科创、远图未来、百度风投等投资。",
+          "url": "https://36kr.com/p/3899081603483525?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "鸿蒙看中了极顶数创什么？：一家3D大模型公司的产品逻辑",
-          "description": "探讨3D大模型公司极顶数创的产品逻辑，以及如何被鸿蒙生态看中。",
-          "url": "https://www.huxiu.com/article/4875732.html?f=rss",
+          "title": "36氪首发 | 这家人形机器人ODM厂商获千万融资，飞荣达、索辰科技接连下注",
+          "description": "人形机器人ODM方案商半醒具身（BXI Robotics）完成千万元级新一轮融资，投资方为索辰科技，资金用于下一代人形机器人研发及海外市场拓展。",
+          "url": "https://36kr.com/p/3899057634363266?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "斯年智驾获3亿元C轮融资，自动驾驶重卡赛道再升温",
-          "description": "斯年智驾完成3亿元C轮融资，资金用于新一代车规级自动驾驶方案研发，自动驾驶重卡赛道显著升温。",
-          "url": "https://36kr.com/p/3895721094842249?f=rss",
+          "title": "独家 | 智谱 ARR 达到10 亿美元，半年增长 15 倍",
+          "description": "截至2026年7月，智谱的年度经常性收入（ARR）达到10亿美元，成为AI大模型赛道的重要里程碑。",
+          "url": "https://36kr.com/p/3898662052693894?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "众筹近400万美金，这家明星AI体育硬件公司做了款多合一教练机器人",
-          "description": "庞伯特在首款网球发球机成功后，推出多合一AI教练机器人，产品在全球拥有超30万用户。",
-          "url": "https://36kr.com/p/3896586337978244?f=rss",
+          "title": "商汤001号员工创办AI公司：将AI角色引擎做成护城河，获种子轮融资 | 36氪首发",
+          "description": "酷奇奇科技（Coolqq.com）完成数千万元种子轮融资，由浦东人工智能种子基金领投，商汤科技等跟投，专注于AI角色硬件。",
+          "url": "https://36kr.com/p/3898370289846153?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "“要么Fork，要么走人”，Linus怒怼AI反对派：Linux不搞“反AI”",
-          "description": "Linux创始人Linus Torvalds在访谈中明确表态，不支持内核社区对AI的抵制，划下AI路线边界。",
-          "url": "https://www.huxiu.com/article/4875739.html?f=rss",
+          "title": "中专生拍出破亿爆款，影视圈边缘人靠AI改命丨深氪lite",
+          "description": "云南中专生刘梓瑜利用AI创作出全网播放破亿的短片《丧尸清道夫》，获得好莱坞制作人邀请，展现了AIGC在影视领域的潜力。",
+          "url": "https://36kr.com/p/3898151587890824?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "深圳市人工智能与机器人研究院丁宁：具身智能就是知行合一",
-          "description": "深圳市人工智能与机器人研究院常务副院长丁宁在演讲中阐述具身智能的核心理念与现实应用。",
-          "url": "https://www.huxiu.com/article/4875731.html?f=rss",
+          "title": "长安汽车党委副书记谭本宏：自研智驾是为了探索AI技术，完成向科技公司跨越",
+          "description": "长安汽车强调自研智能驾驶的价值在于深入理解AI和大模型，助力企业向科技公司转型。",
+          "url": "https://36kr.com/newsflashes/3899295688640136?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "IDC：百度智能云蝉联中国金融大模型市场份额第一",
-          "description": "据IDC报告，2025年中国金融行业生成式AI市场爆发增长，百度智能云以16%市场份额蝉联第一。",
-          "url": "https://36kr.com/newsflashes/3897829594662536?f=rss",
+          "title": "国家发改委发布《人工智能合作发展行动计划》",
+          "description": "国家发改委发布八项行动，包括优质数据供给、智能算力普惠、开源生态共享等，推动人工智能合作发展。",
+          "url": "https://36kr.com/newsflashes/3899257544656773?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "AI改变的不止是世界杯",
-          "description": "文章探讨AI在2026年世界杯中的应用，包括裁判辅助、战术分析等，展示AI对体育赛事的改变。",
-          "url": "https://www.huxiu.com/article/4875684.html?f=rss",
+          "title": "马斯克连夜开源Grok Build，但84万行代码里还留着上传用户整个代码库的痕迹",
+          "description": "马斯克以Apache 2.0许可证开源AI工具Grok Build，该工具曾被曝收集用户完整代码仓库，引发隐私讨论。",
+          "url": "https://www.huxiu.com/article/4876072.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "下一代AI原生UGC平台，藏在《蛋仔派对》里",
-          "description": "分析游戏《蛋仔派对》如何借助AI技术构建AI原生UGC平台，推动一人公司（OPC）创作模式。",
-          "url": "https://36kr.com/p/3896755010963333?f=rss",
+          "title": "跟Opus4.8打的有来有回？，Kimi K3首测",
+          "description": "Kimi K3模型发布后首测，与Opus 4.8对比表现，显示其在1T参数模型中的竞争力。",
+          "url": "https://www.huxiu.com/article/4876060.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "台积电第二季度净利润达7066亿新台币，超市场预期",
-          "description": "台积电公布第二季度财报，净利润7066亿新台币，市场预期6237.3亿新台币，毛利率67.7%，表现强劲。",
-          "url": "https://36kr.com/newsflashes/3897883855455875?f=rss",
+          "title": "上半年经济成绩单出炉：GDP增速4.7%，体感分层",
+          "description": "上半年GDP增速4.7%，高科技制造业如火如荼，传统行业下滑，数据体面但体感分化。",
+          "url": "https://www.huxiu.com/article/4875897.html?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "沪深两市成交额突破1.5万亿",
-          "description": "沪深两市成交额突破1.5万亿元，显示市场交投活跃。",
-          "url": "https://36kr.com/newsflashes/3897859672606592?f=rss",
+          "title": "恒生科技指数午后跌幅扩大至5%",
+          "description": "恒生科技指数午后跌幅扩大至5%，恒生指数跌超2%，智谱跌超26%，MINIMAX跌超14%。",
+          "url": "https://36kr.com/newsflashes/3899288374773380?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "存储芯片股暴跌：美光、SK海力士等重挫",
-          "description": "存储芯片股本周遭遇剧烈震荡，多重利空叠加，美光跌超8%，SK海力士跌近12%，市场担忧AI需求驱动的涨势承压。",
-          "url": "https://www.huxiu.com/article/4875730.html?f=rss",
+          "title": "科创50、创业板指跌逾6%，近500股跌超9%",
+          "description": "指数走弱，科创50、创业板指下挫跌逾6%，沪指跌2.21%，深成指跌4.60%，算力硬件、半导体芯片等方向跌幅居前。",
+          "url": "https://36kr.com/newsflashes/3899286064187015?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "金价高台跳水：不到半年狂泻近30%，机构观点分歧",
-          "description": "黄金价格自2026年初高点持续下跌，近半年跌幅近30%，市场对“牛市”是否结束产生激烈争论。",
-          "url": "https://www.huxiu.com/article/4875695.html?f=rss",
+          "title": "国家发改委发布《人工智能合作发展行动计划》",
+          "description": "国家发改委发布八项行动，包括优质数据供给、智能算力普惠、开源生态共享、人工智能深度赋能等。",
+          "url": "https://36kr.com/newsflashes/3899257544656773?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "光刻机霸主阿斯麦Q2业绩超预期，中国市场稳定",
-          "description": "阿斯麦公布第二季度财报，营收同比增长21%至93.3亿欧元，净利润超预期，强调中国市场表现稳健，英特尔订单成为第一。",
-          "url": "https://www.huxiu.com/article/4875723.html?f=rss",
+          "title": "越疆科技被前COO实名举报，IPO前夕遭风波",
+          "description": "越疆科技创业板IPO即将上会审议前，前联合创始人、COO宋涛实名举报公司，引发市场关注。",
+          "url": "https://www.huxiu.com/article/4876065.html?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "斯年智驾获3亿元C轮融资，自动驾驶重卡赛道升温",
-          "description": "自动驾驶重卡公司斯年智驾完成3亿元C轮融资，由兴证资本、颐道资本联合投资，用于新一代车规级自动驾驶方案研发。",
-          "url": "https://36kr.com/p/3895721094842249?f=rss",
+          "title": "新易盛据悉提交融资不超过50亿美元的香港上市申请",
+          "description": "光模块制造商新易盛以保密形式提交香港上市申请，或筹集40亿至50亿美元，摩根士丹利等参与。",
+          "url": "https://36kr.com/newsflashes/3899245938689924?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "面壁智能端侧大模型将搭载三星手机上市",
-          "description": "端侧大模型公司面壁智能与三星手机达成合作，其MiniCPM系列模型将覆盖数款旗舰机型，同日电苹果AI功能完成备案。",
-          "url": "https://36kr.com/p/3896830362601351?f=rss",
+          "title": "手术机器人IPO排队，巨头并购，行业穿越死亡谷",
+          "description": "微创医疗旗下骨科业务被天智航收购控股权，手术机器人行业资本整合加速，IPO排队企业众多。",
+          "url": "https://www.huxiu.com/article/4876063.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "花样年控股境外债务重组：指定7月30日为生效日期",
-          "description": "花样年控股公告境外债务重组进展，已指定2026年7月30日为重组生效日期，待其余条件达成或豁免。",
-          "url": "https://36kr.com/newsflashes/3897846021834626?f=rss",
+          "title": "海南禁售燃油车倒计时：2030年禁售，新能源汽车保有量目标45%",
+          "description": "海南发布“十五五”规划，推进2030年禁售燃油车，目标新能源汽车保有量占比提升至45%。",
+          "url": "https://www.huxiu.com/article/4876071.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "巴菲特宣布8年内清仓伯克希尔股票",
-          "description": "巴菲特宣布将在8年内清仓其所持伯克希尔股票，引发市场关注。",
-          "url": "https://36kr.com/p/3897553391978371?f=rss",
+          "title": "车企利润变薄：宁德时代日赚2.3亿，整车行业利润率仅1.5%",
+          "description": "2026年一季度宁德时代净利207.38亿，每天净赚2.3亿，而国内整车行业平均利润率仅约1.5%。",
+          "url": "https://www.huxiu.com/article/4876068.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "国行苹果AI功能完成备案",
-          "description": "网信部门公告包括“Apple智能”等7款手机端侧生成式AI服务完成备案，为苹果AI入华铺路。",
-          "url": "https://36kr.com/p/3897553391978371?f=rss",
+          "title": "智谱ARR达到10亿美元，半年增长15倍",
+          "description": "截至2026年7月，智谱年度经常性收入（ARR）达到10亿美元，AI Coding和视频生成成为造血能力最强赛道。",
+          "url": "https://36kr.com/p/3898662052693894?f=rss",
           "stars": null,
           "id": 10
         }
@@ -155,37 +155,37 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "Building Shor's Algorithm in Lean: An Agentic Formalization of Quantum Attacks on RSA-2048 and P-256",
-          "description": "利用LLM辅助的智能体系统在Lean中形式化Shor算法，实现针对RSA-2048和P-256的量子攻击的定理证明。",
-          "url": "https://arxiv.org/pdf/2607.14082v1",
+          "title": "Beyond the Leaderboard: Design Lessons for Trustworthy Multimodal VQA",
+          "description": "以胃肠道内镜为例，分析多模态视觉问答中可信赖设计的关键经验。",
+          "url": "https://arxiv.org/pdf/2607.15241v1",
           "stars": null,
           "id": 1
         },
         {
-          "title": "Deep Interaction: An Efficient Human-AI Interaction Method for Large Reasoning Models",
-          "description": "针对大推理模型提出一种高效的人机交互方法，以改进链式推理中的错误处理。",
-          "url": "https://arxiv.org/pdf/2607.14049v1",
+          "title": "CRISP: Constrained Refinement via Iterative Squeezing Process for Robust Medical Image Segmentation under Domain Shift",
+          "description": "提出CRISP方法，通过迭代挤压过程实现域偏移下鲁棒的医学图像分割。",
+          "url": "https://arxiv.org/pdf/2607.15231v1",
           "stars": null,
           "id": 2
         },
         {
-          "title": "Earthquaker-AI: A Retrieval-Augmented Generation Framework with Rubric-Based Assessment for Primary School Earthquake Education",
-          "description": "结合检索增强生成和基于量规的评估，构建面向小学地震教育的混合式AI辅助学习框架。",
-          "url": "https://arxiv.org/pdf/2607.14046v1",
+          "title": "Can We Trust Item Response Theory for AI Evaluation?",
+          "description": "质疑项目反应理论在AI评估中的可信度，揭示其潜在偏差与局限性。",
+          "url": "https://arxiv.org/pdf/2607.15190v1",
           "stars": null,
           "id": 3
         },
         {
-          "title": "AI-accelerated End-to-End Framework for Rapid Professional Upskilling",
-          "description": "提出一个AI加速的端到端框架，以应对未来大量工人需要技能提升的挑战，缩短技能差距。",
-          "url": "https://arxiv.org/pdf/2607.14044v1",
+          "title": "Benchmarking Multimodal Large Language Models for Scientific Visualization Literacy",
+          "description": "评估多模态大模型在科学可视化理解上的能力，超越传统图表基准。",
+          "url": "https://arxiv.org/pdf/2607.15176v1",
           "stars": null,
           "id": 4
         },
         {
-          "title": "Can an Old Dog Be Taught New Tricks? Taking LLMs Beyond Sentence Level Translation",
-          "description": "探索将LLM从句子级翻译扩展到整文档翻译，通过对比实验评估其效果。",
-          "url": "https://arxiv.org/pdf/2607.14040v1",
+          "title": "MedFailBench: A Clinician-Built Open-Source Benchmark for Medical AI Safety Boundary Inspection",
+          "description": "提出由临床医生构建的开放基准，用于检查医疗AI的安全边界失效情况。",
+          "url": "https://arxiv.org/pdf/2607.15166v1",
           "stars": null,
           "id": 5
         }
@@ -195,42 +195,42 @@
       "name": "AI 开源项目",
       "items": [
         {
-          "title": "lobehub/lobehub",
-          "description": "Organizing your AI agents into 7x24 operations by hiring, scheduling, and reporting.",
-          "url": "https://github.com/lobehub/lobehub",
-          "stars": 79893,
+          "title": "pi",
+          "description": "AI agent toolkit with unified LLM API, agent loop, TUI, and coding agent CLI",
+          "url": "https://github.com/earendil-works/pi",
+          "stars": 71920,
           "id": 1
         },
         {
-          "title": "unclecode/crawl4ai",
-          "description": "Open-source LLM friendly web crawler and scraper.",
-          "url": "https://github.com/unclecode/crawl4ai",
-          "stars": 72835,
+          "title": "ruflo",
+          "description": "Leading agent meta-harness for deploying intelligent multi-player swarms and coordinating autonomous workflows",
+          "url": "https://github.com/ruvnet/ruflo",
+          "stars": 64714,
           "id": 2
         },
         {
-          "title": "microsoft/ai-agents-for-beginners",
-          "description": "18 lessons to get started building AI agents.",
-          "url": "https://github.com/microsoft/ai-agents-for-beginners",
-          "stars": 69455,
+          "title": "worldmonitor",
+          "description": "Real-time global intelligence dashboard for AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking",
+          "url": "https://github.com/koala73/worldmonitor",
+          "stars": 61942,
           "id": 3
         },
         {
-          "title": "virattt/ai-hedge-fund",
-          "description": "An AI Hedge Fund Team.",
-          "url": "https://github.com/virattt/ai-hedge-fund",
-          "stars": 62151,
+          "title": "context7",
+          "description": "Up-to-date code documentation platform for LLMs and AI code editors",
+          "url": "https://github.com/upstash/context7",
+          "stars": 59223,
           "id": 4
         },
         {
-          "title": "headroomlabs-ai/headroom",
-          "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM, reducing token usage.",
-          "url": "https://github.com/headroomlabs-ai/headroom",
-          "stars": 59390,
+          "title": "BMAD-METHOD",
+          "description": "Breakthrough Method for Agile AI Driven Development",
+          "url": "https://github.com/bmad-code-org/BMAD-METHOD",
+          "stars": 50706,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-07-16T13:34:18.535+08:00"
+  "updatedAt": "2026-07-17T13:35:09.929+08:00"
 }
