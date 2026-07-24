@@ -1,76 +1,76 @@
 {
-  "date": "2026-07-20",
+  "date": "2026-07-24",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "谁还在卷参数？WAIC2026全是能干活的实体AI！",
-          "description": "WAIC2026展示大量实体AI应用，包括具身智能、空间智能等，行业焦点从模型参数转向实际产业落地。",
-          "url": "https://36kr.com/p/3903383663478403?f=rss",
+          "title": "DeepSeek不是理想主义公司，它只是把现实服务于理想",
+          "description": "分析DeepSeek如何用现实问题支撑通向AGI的目标。",
+          "url": "https://36kr.com/p/3909084356433025?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "腾讯云ADP 4.0海外版发布，要把企业级智能体带到全球市场 | 最前线",
-          "description": "腾讯云发布智能体开发平台ADP 4.0海外版，升级智能工作台、Claw模式、Skill广场三大模块，推动企业级Agent出海。",
-          "url": "https://36kr.com/p/3901396207584902?f=rss",
+          "title": "带着AI去前线！36氪逛透WAIC，带你看懂2026全行业AI最真实走向！",
+          "description": "2026世界人工智能大会总结，揭示AI叙事重心变化。",
+          "url": "https://36kr.com/p/3909033052722310?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "从烤披萨到拿快递，满场跑的机器人终于要进你家了｜WAIC 2026全面探展",
-          "description": "WAIC2026上展示了多种具身智能机器人，覆盖披萨制作、快递取送等场景，凸显AI在物理世界的落地进展。",
-          "url": "https://36kr.com/p/3902007640459145?f=rss",
+          "title": "氪星晚报 ｜DeepSeek今年已增资65%；马斯克：FSD是拉动特斯拉汽车需求的核心驱动力",
+          "description": "DeepSeek增资65%并明确通往AGI的主线。",
+          "url": "https://36kr.com/p/3908051015488640?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "红熊AI完成数亿元A+轮融资，基于AI“记忆科学”从To B服务延伸至To C应用｜36氪首发",
-          "description": "红熊AI基于类人大脑的“记忆科学”完成A+轮融资，加速通用大模型研发和To C应用拓展，投后估值接近30亿元。",
-          "url": "https://36kr.com/p/3899612612494976?f=rss",
+          "title": "网格智算：“不堆算力”的AI大脑如何填补林下场景空白",
+          "description": "AI在无人机林下场景的应用，解决计算效率问题。",
+          "url": "https://36kr.com/p/3908027308823684?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "科氪 | 从生命预警到七诊合参，安顿“双核首发”的技术密码",
-          "description": "安顿健康在WAIC首发中国首个生命预警表标准及七诊合参中医机器人，采用天回·AI脉诊算法和三层置信体系。",
-          "url": "https://36kr.com/p/3902428274427525?f=rss",
+          "title": "专访郭列：做出脸萌、FaceU、剪映等爆款后，他第一次阐释如何在AI时代做产品",
+          "description": "郭列分享AI时代产品方法论与创业心得。",
+          "url": "https://36kr.com/p/3907953777120385?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "广州小马智卡科技公司增资至2亿，增幅25%",
-          "description": "小马智卡注册资本增加至2亿元，业务涵盖人工智能硬件销售、软件开发等，持续加码自动驾驶技术。",
-          "url": "https://36kr.com/newsflashes/3903560826832520?f=rss",
+          "title": "独家｜混元多模态理解负责人胡瀚离职创业，原团队或将聚焦世界模型",
+          "description": "腾讯混元多模态负责人离职，创业方向或为世界模型。",
+          "url": "https://36kr.com/p/3907934819521670?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "马斯克称特斯拉FSD会模仿驾驶风格",
-          "description": "马斯克确认特斯拉FSD将从通用驾驶系统转变为个性化驾驶系统，可根据用户驾驶风格进行调整。",
-          "url": "https://36kr.com/newsflashes/3903538833704834?f=rss",
+          "title": "不拼通用能力、聚焦端侧，腾讯副总裁林松涛：Marvis专注做好系统级操作",
+          "description": "腾讯AI Agent产品Marvis聚焦端侧系统级操作。",
+          "url": "https://36kr.com/p/3907676111983745?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "华尔街搬起Kimi砸自己的脚",
-          "description": "月之暗面发布Kimi K3模型引发全球AI股票下跌，业界讨论算力扩张可能见顶，被视为DeepSeek 2.0事件。",
-          "url": "https://www.huxiu.com/article/4876641.html?f=rss",
+          "title": "对话FutureTech张梦钊：从“一个人+一群Agent”到超级个体，AI正在重塑创业范式",
+          "description": "探讨AI Agent如何改变创业模式。",
+          "url": "https://36kr.com/p/3907639172027522?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "Token工厂、世界模型、AI手机，WAIC的三大新风向",
-          "description": "WAIC2026总结三大AI新趋势：Token工厂（算力基础设施）、世界模型（物理世界模拟）和AI手机（端侧智能）。",
-          "url": "https://www.huxiu.com/article/4876630.html?f=rss",
+          "title": "硬氪首发 | 大疆系AI自然探索公司获五源、顺为投资，首创水下光学系统",
+          "description": "水下AI自然探索公司Deeplore完成融资，研发AI潜水面镜。",
+          "url": "https://36kr.com/p/3906474040153220?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "YC掌门人最新分享：AI时代，永远不要做一次性工作",
-          "description": "Y Combinator掌门人Garry Tan分享AI时代创业原则，强调利用AI自动化重复性工作，专注高价值创造。",
-          "url": "https://www.huxiu.com/article/4876622.html?f=rss",
+          "title": "困扰数学界80年的雅可比猜想，被AI推翻了一个维度",
+          "description": "AI模型Claude Fable 5找到雅可比猜想反例，展示AI数学能力。",
+          "url": "https://www.huxiu.com/article/4877609.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "广发证券刘晨明：近期市场调整主要受外部输入性因素影响",
-          "description": "广发证券策略首席分析师刘晨明指出，近期A股回调源于外部输入性因素，属于情绪面和资金面冲击，核心定价因素是内外的流动性冲击，而非国内基本面或产业趋势发生变化。",
-          "url": "https://36kr.com/newsflashes/3903572084164482?f=rss",
+          "title": "大众汽车二季度营业利润34.7亿欧元，低于预期",
+          "description": "大众汽车公布二季度营收824.4亿欧元，营业利润34.7亿欧元，低于市场预期的40.7亿欧元，反映出汽车行业面临的成本压力。",
+          "url": "https://36kr.com/newsflashes/3909214563571076?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "韩国今年人均GDP有望达3.9万美元，增幅7.6%",
-          "description": "得益于半导体旺季推动出口增加，韩国今年人均GDP有望达到3.9164万美元，同比增加2750美元，增幅7.6%，为2021年以来近5年之最。",
-          "url": "https://36kr.com/newsflashes/3903544335550085?f=rss",
+          "title": "网传券商内部发文防范长鑫科技上市炒作",
+          "description": "一份疑似券商内部风控通知要求分支机构提示客户避免参与长鑫科技上市初期炒作，引发市场对科创板新股炒作监管的关注。",
+          "url": "https://36kr.com/newsflashes/3909195638379653?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "泰国拟推出个人投资账户，鼓励居民长期投资",
-          "description": "泰国证券交易委员会表示，计划于今年推出一项新的个人储蓄投资账户制度，并提供税收优惠，以鼓励居民长期投资股票、债券和共同基金，增强退休储蓄能力。",
-          "url": "https://36kr.com/newsflashes/3903551836096128?f=rss",
+          "title": "科创50指数拉升涨超2%",
+          "description": "科创50指数早盘一度跌超2%后拉升涨超2%，中船特气、炬芯科技等芯片股领涨，显示市场情绪波动。",
+          "url": "https://36kr.com/newsflashes/3909188508619912?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "印度央行计划试点发行塑料钞票",
-          "description": "印度多家媒体报道，印度储备银行计划在试点阶段发行面额10卢比和20卢比的塑料钞票，若试点顺利或将推广，旨在减少破损纸币回收销毁的成本。",
-          "url": "https://36kr.com/newsflashes/3903543147103881?f=rss",
+          "title": "印度卢比走高，印度央行干预在岸及离岸外汇市场",
+          "description": "交易员称印度央行在离岸和在岸外汇市场抛售美元以支撑卢比汇率，推动卢比走高，体现新兴市场央行应对汇率波动的干预措施。",
+          "url": "https://36kr.com/newsflashes/3909147279594884?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "三星电子晶圆代工正评估将美国泰勒厂的初期生产规模扩大至原计划的2倍",
-          "description": "据报道，三星电子晶圆代工正评估将美国泰勒厂的初期生产规模扩大至原计划的两倍，此举可能影响全球半导体代工格局。",
-          "url": "https://36kr.com/newsflashes/3903568287434630?f=rss",
+          "title": "摩根大通将30多位量化分析师从中国内地调往新加坡和香港",
+          "description": "摩根大通近几个月将30多位量化分析师调往区域枢纽，以推进电子交易业务并应对非银行竞争对手的挑战，反映外资投行人才布局调整。",
+          "url": "https://36kr.com/newsflashes/3909117791097991?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "波音预计未来20年全球民航服务市场规模达4.9万亿美元",
-          "description": "波音公司发布报告，预计未来20年全球民航服务市场规模将达到4.9万亿美元，并指出行业需新增超240万名民航专业人员以支持机队扩张。",
-          "url": "https://36kr.com/newsflashes/3903580278785669?f=rss",
+          "title": "美股“七巨头”遭遇15个月来最惨烈一天",
+          "description": "受伊朗战事重燃及AI投入担忧影响，美股“七巨头”指数下跌4.8%，总市值蒸发超5000亿美元，创2025年4月以来最大单日跌幅。",
+          "url": "https://www.huxiu.com/article/4877895.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "黑石集团同意投资韩国机器人供应商Futronic",
-          "description": "黑石集团旗下私募股权基金将对韩国机器人供应商Futronic进行“重大投资”，该公司生产用于工业机器人和汽车行业的高精度执行器。",
-          "url": "https://36kr.com/newsflashes/3903531939448453?f=rss",
+          "title": "英特尔营收增长25%但净亏损110亿美元",
+          "description": "英特尔发布财报，营收161亿美元同比增25%，但净亏损110亿美元，创下营收增长与巨额亏损并存的罕见局面，反映其业务转型压力。",
+          "url": "https://www.huxiu.com/article/4877853.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "澜起科技被韩国检方调查",
-          "description": "韩国首尔中央地方检察厅突击搜查了中、日、美三家公司办公室，调查是否在内存接口芯片市场存在价格串通行为，澜起科技在列。",
-          "url": "https://www.huxiu.com/article/4876632.html?f=rss",
+          "title": "DeepSeek今年已增资65%",
+          "description": "据报道，DeepSeek创始人梁文锋在闭门会议中明确公司主线为通用人工智能，天眼查显示其关联公司杭州深度求索今年已增资65%，体现AI赛道融资热度。",
+          "url": "https://36kr.com/p/3908051015488640?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "美国散户，不再“痴迷”七巨头了？",
-          "description": "资金流追踪机构数据显示，美国散户对美股“七巨头”的资金流入正在放缓，转而涌入其他股票，显示散户投资偏好出现变化。",
-          "url": "https://www.huxiu.com/article/4876606.html?f=rss",
+          "title": "染料开启新一轮涨价周期",
+          "description": "国内两家头部染料企业浙江龙盛、闰土股份自7月21日起同步上调价格，本月内已两度提价，成本压力向下游传导，市场关注对印染行业的影响。",
+          "url": "https://36kr.com/newsflashes/3909173007504512?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "开始“收税”！新能源汽车，大洗牌来了",
-          "description": "财政部等多部门发布公告，自今年9月起汽车动力锂电池将按2%缴纳消费税，一年后税率恢复到4%，标志着实施11年的免税政策退出。",
-          "url": "https://www.huxiu.com/article/4876615.html?f=rss",
+          "title": "宝武资源公司增资至202.6亿，增幅约14%",
+          "description": "宝武资源有限公司注册资本由约178.2亿增至约202.6亿，增幅约14%，由中国宝武钢铁集团全资持股，显示国企资源整合与资本运作动向。",
+          "url": "https://36kr.com/newsflashes/3909113408771461?f=rss",
           "stars": null,
           "id": 10
         }
@@ -153,48 +153,84 @@
     },
     {
       "name": "AI 学术论文",
-      "items": []
+      "items": [
+        {
+          "title": "MedGame: Storytelling Gamification Empowered by Large Language Models for Medical Education",
+          "description": "探索大语言模型在医学教育中通过叙事游戏化提升学习体验的方法。",
+          "url": "https://arxiv.org/pdf/2607.21570v1",
+          "stars": null,
+          "id": 1
+        },
+        {
+          "title": "OpenForgeRL: Train Harness-native Agents in Any Environment",
+          "description": "提出一种在任意环境中训练原生智能体的强化学习框架，支持多轮推理和工具使用。",
+          "url": "https://arxiv.org/pdf/2607.21557v1",
+          "stars": null,
+          "id": 2
+        },
+        {
+          "title": "Seeking Help in the Digital Age: A Cross-Platform Analysis of Online Support Systems for Technology-Facilitated Abuse Victims",
+          "description": "跨平台分析在线支持系统如何帮助技术滥用受害者，揭示数字时代求助行为的特点。",
+          "url": "https://arxiv.org/pdf/2607.21549v1",
+          "stars": null,
+          "id": 3
+        },
+        {
+          "title": "The Boundaries of Automation: A Theory of Persistent Human Participation",
+          "description": "提出自动化边界理论，论证人工智能发展过程中人类参与的持久必要性。",
+          "url": "https://arxiv.org/pdf/2607.21547v1",
+          "stars": null,
+          "id": 4
+        },
+        {
+          "title": "Generative AI Availability, Grades, and Student Satisfaction at a Large University",
+          "description": "实证研究生成式AI可用性对大学生成绩和满意度的影响，检验AI替代假设。",
+          "url": "https://arxiv.org/pdf/2607.21534v1",
+          "stars": null,
+          "id": 5
+        }
+      ]
     },
     {
       "name": "AI 开源项目",
       "items": [
         {
-          "title": "earendil-works/pi",
-          "description": "AI agent toolkit with unified LLM API, agent loop, TUI, and coding agent CLI.",
-          "url": "https://github.com/earendil-works/pi",
-          "stars": 72924,
+          "title": "netdata",
+          "description": "AI-powered full stack observability for lean teams.",
+          "url": "https://github.com/netdata/netdata",
+          "stars": 79816,
           "id": 1
         },
         {
-          "title": "Leonxlnx/taste-skill",
-          "description": "Gives AI good taste, preventing boring and generic outputs.",
-          "url": "https://github.com/Leonxlnx/taste-skill",
-          "stars": 65339,
+          "title": "daytona",
+          "description": "Secure and Elastic Infrastructure for Running AI-Generated Code.",
+          "url": "https://github.com/daytonaio/daytona",
+          "stars": 72175,
           "id": 2
         },
         {
-          "title": "koala73/worldmonitor",
-          "description": "Real-time global intelligence dashboard with AI-powered news aggregation and geopolitical monitoring.",
-          "url": "https://github.com/koala73/worldmonitor",
-          "stars": 62063,
+          "title": "taste-skill",
+          "description": "Gives your AI good taste, preventing boring generic outputs.",
+          "url": "https://github.com/Leonxlnx/taste-skill",
+          "stars": 66954,
           "id": 3
         },
         {
-          "title": "headroomlabs-ai/headroom",
-          "description": "Compresses tool outputs, logs, and RAG chunks before LLM processing, reducing token usage significantly.",
-          "url": "https://github.com/headroomlabs-ai/headroom",
-          "stars": 60438,
+          "title": "ai-hedge-fund",
+          "description": "An AI Hedge Fund Team.",
+          "url": "https://github.com/virattt/ai-hedge-fund",
+          "stars": 62387,
           "id": 4
         },
         {
-          "title": "MemPalace/mempalace",
-          "description": "Best-benchmarked open-source AI memory system, free to use.",
-          "url": "https://github.com/MemPalace/mempalace",
-          "stars": 57489,
+          "title": "career-ops",
+          "description": "Open-source AI job search tool that scans and scores listings.",
+          "url": "https://github.com/santifer/career-ops",
+          "stars": 61268,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-07-20T14:10:31.735+08:00"
+  "updatedAt": "2026-07-24T13:44:01.234+08:00"
 }
