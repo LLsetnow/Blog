@@ -1,76 +1,76 @@
 {
-  "date": "2026-07-24",
+  "date": "2026-07-25",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "DeepSeek不是理想主义公司，它只是把现实服务于理想",
-          "description": "分析DeepSeek如何用现实问题支撑通向AGI的目标。",
-          "url": "https://36kr.com/p/3909084356433025?f=rss",
+          "title": "Claude Opus 5 发布，以一半价格逼近Fable5",
+          "description": "Anthropic发布Claude Opus 5模型，具备100万上下文窗口，性能接近Fable5但价格减半，目前已全线可用。",
+          "url": "https://www.huxiu.com/article/4878085.html",
           "stars": null,
           "id": 1
         },
         {
-          "title": "带着AI去前线！36氪逛透WAIC，带你看懂2026全行业AI最真实走向！",
-          "description": "2026世界人工智能大会总结，揭示AI叙事重心变化。",
-          "url": "https://36kr.com/p/3909033052722310?f=rss",
+          "title": "黄仁勋第一次发推，联合微软、Meta等企业给中国开源模型说好话",
+          "description": "英伟达CEO黄仁勋在X平台发布首条推文，联署微软、Meta等25家机构支持开放权重模型，呼吁AI开源生态。",
+          "url": "https://www.huxiu.com/article/4878074.html",
           "stars": null,
           "id": 2
         },
         {
-          "title": "氪星晚报 ｜DeepSeek今年已增资65%；马斯克：FSD是拉动特斯拉汽车需求的核心驱动力",
-          "description": "DeepSeek增资65%并明确通往AGI的主线。",
-          "url": "https://36kr.com/p/3908051015488640?f=rss",
+          "title": "北京专门为智能体开发布会：十条政策追问“任务谁来交付”",
+          "description": "北京市政府为智能体产业召开新闻发布会，发布十条扶持政策，推动智能体落地与交付。",
+          "url": "https://www.huxiu.com/article/4878077.html",
           "stars": null,
           "id": 3
         },
         {
-          "title": "网格智算：“不堆算力”的AI大脑如何填补林下场景空白",
-          "description": "AI在无人机林下场景的应用，解决计算效率问题。",
-          "url": "https://36kr.com/p/3908027308823684?f=rss",
+          "title": "AI重新定义学习范式：是更早看到问题",
+          "description": "从Kimi Team发布的技术报告《Attention Residuals》出发，探讨AI如何改变学习范式。",
+          "url": "https://www.huxiu.com/article/4878073.html",
           "stars": null,
           "id": 4
         },
         {
-          "title": "专访郭列：做出脸萌、FaceU、剪映等爆款后，他第一次阐释如何在AI时代做产品",
-          "description": "郭列分享AI时代产品方法论与创业心得。",
-          "url": "https://36kr.com/p/3907953777120385?f=rss",
+          "title": "你的下一位面试官，可能不是人",
+          "description": "AI面试官越来越普及，超级数字员工可能成为下一个AI落地窗口。",
+          "url": "https://36kr.com/p/3909499179767169",
           "stars": null,
           "id": 5
         },
         {
-          "title": "独家｜混元多模态理解负责人胡瀚离职创业，原团队或将聚焦世界模型",
-          "description": "腾讯混元多模态负责人离职，创业方向或为世界模型。",
-          "url": "https://36kr.com/p/3907934819521670?f=rss",
+          "title": "DeepSeek不是理想主义公司，它只是把现实服务于理想",
+          "description": "深度剖析DeepSeek如何用现实问题支撑宏大AI目标。",
+          "url": "https://36kr.com/p/3909084356433025",
           "stars": null,
           "id": 6
         },
         {
-          "title": "不拼通用能力、聚焦端侧，腾讯副总裁林松涛：Marvis专注做好系统级操作",
-          "description": "腾讯AI Agent产品Marvis聚焦端侧系统级操作。",
-          "url": "https://36kr.com/p/3907676111983745?f=rss",
+          "title": "网格智算：“不堆算力”的AI大脑如何填补林下场景空白",
+          "description": "网格智算利用轻量化AI技术解决林业无人机场景的痛点，不依赖大规模算力。",
+          "url": "https://36kr.com/p/3908027308823684",
           "stars": null,
           "id": 7
         },
         {
-          "title": "对话FutureTech张梦钊：从“一个人+一群Agent”到超级个体，AI正在重塑创业范式",
-          "description": "探讨AI Agent如何改变创业模式。",
-          "url": "https://36kr.com/p/3907639172027522?f=rss",
+          "title": "荣耀换Logo，一场关于AI的“阳谋”",
+          "description": "荣耀更换品牌Logo为“荣耀之环”，彰显AI战略与品牌革新。",
+          "url": "https://www.huxiu.com/article/4878090.html",
           "stars": null,
           "id": 8
         },
         {
-          "title": "硬氪首发 | 大疆系AI自然探索公司获五源、顺为投资，首创水下光学系统",
-          "description": "水下AI自然探索公司Deeplore完成融资，研发AI潜水面镜。",
-          "url": "https://36kr.com/p/3906474040153220?f=rss",
+          "title": "卖模型的人想筑墙，卖算力的人为什么要把门打开",
+          "description": "讨论AI生态中开源模型与闭源模型的博弈，以及英伟达等算力提供商的立场。",
+          "url": "https://www.huxiu.com/article/4878070.html",
           "stars": null,
           "id": 9
         },
         {
-          "title": "困扰数学界80年的雅可比猜想，被AI推翻了一个维度",
-          "description": "AI模型Claude Fable 5找到雅可比猜想反例，展示AI数学能力。",
-          "url": "https://www.huxiu.com/article/4877609.html?f=rss",
+          "title": "对话曾鸣教授：AI时代，企业竞争的关键是构建智能复利",
+          "description": "曾鸣教授在WAIC分享AI时代企业增长、组织变革与智能复利等洞见。",
+          "url": "https://36kr.com/p/3909358392988806",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "大众汽车二季度营业利润34.7亿欧元，低于预期",
-          "description": "大众汽车公布二季度营收824.4亿欧元，营业利润34.7亿欧元，低于市场预期的40.7亿欧元，反映出汽车行业面临的成本压力。",
-          "url": "https://36kr.com/newsflashes/3909214563571076?f=rss",
+          "title": "市场监管总局对携程开出51.79亿元反垄断罚单",
+          "description": "7月25日，市场监管总局对携程处以51.79亿元反垄断罚款，其中罚款35.21亿元。携程回应称诚恳接受、坚决服从。",
+          "url": "https://www.huxiu.com/article/4878110.html",
           "stars": null,
           "id": 1
         },
         {
-          "title": "网传券商内部发文防范长鑫科技上市炒作",
-          "description": "一份疑似券商内部风控通知要求分支机构提示客户避免参与长鑫科技上市初期炒作，引发市场对科创板新股炒作监管的关注。",
-          "url": "https://36kr.com/newsflashes/3909195638379653?f=rss",
+          "title": "市场监管总局：深入整治“内卷式”竞争",
+          "description": "市场监管总局在近期表态中强调，将深入整治“内卷式”竞争，维护市场公平竞争秩序。",
+          "url": "https://36kr.com/p/3909160840451465?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "科创50指数拉升涨超2%",
-          "description": "科创50指数早盘一度跌超2%后拉升涨超2%，中船特气、炬芯科技等芯片股领涨，显示市场情绪波动。",
-          "url": "https://36kr.com/newsflashes/3909188508619912?f=rss",
+          "title": "黄仁勋力挺中国AI开源模型，联合微软、Meta等企业发声",
+          "description": "英伟达CEO黄仁勋首次在X平台发推，联合微软、Meta、IBM等企业联署支持开源AI模型，强调开放的重要性。",
+          "url": "https://www.huxiu.com/article/4878074.html",
           "stars": null,
           "id": 3
         },
         {
-          "title": "印度卢比走高，印度央行干预在岸及离岸外汇市场",
-          "description": "交易员称印度央行在离岸和在岸外汇市场抛售美元以支撑卢比汇率，推动卢比走高，体现新兴市场央行应对汇率波动的干预措施。",
-          "url": "https://36kr.com/newsflashes/3909147279594884?f=rss",
+          "title": "英特尔2026年Q2营收同比增长25%创近15年最快增速",
+          "description": "英特尔公布二季度业绩，营收同比增长25%，数据中心和AI业务表现强劲，但市场对AI投资现金流存在担忧。",
+          "url": "https://www.huxiu.com/article/4878106.html",
           "stars": null,
           "id": 4
         },
         {
-          "title": "摩根大通将30多位量化分析师从中国内地调往新加坡和香港",
-          "description": "摩根大通近几个月将30多位量化分析师调往区域枢纽，以推进电子交易业务并应对非银行竞争对手的挑战，反映外资投行人才布局调整。",
-          "url": "https://36kr.com/newsflashes/3909117791097991?f=rss",
+          "title": "穆迪警告AI投资狂潮冲击科技巨头财务稳健性",
+          "description": "穆迪评级指出，微软、亚马逊等科技巨头因巨额AI投入导致自由现金流承压，资产负债表风险上升。",
+          "url": "https://36kr.com/newsflashes/3910433082545536?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "美股“七巨头”遭遇15个月来最惨烈一天",
-          "description": "受伊朗战事重燃及AI投入担忧影响，美股“七巨头”指数下跌4.8%，总市值蒸发超5000亿美元，创2025年4月以来最大单日跌幅。",
-          "url": "https://www.huxiu.com/article/4877895.html?f=rss",
+          "title": "TCL科技收购广州华星半导体45%股权获深交所审议通过",
+          "description": "7月24日，TCL科技公告收购广州华星半导体45%股权事项已获深交所通过，完成后将持有其100%股权。",
+          "url": "https://36kr.com/newsflashes/3910519718270081?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "英特尔营收增长25%但净亏损110亿美元",
-          "description": "英特尔发布财报，营收161亿美元同比增25%，但净亏损110亿美元，创下营收增长与巨额亏损并存的罕见局面，反映其业务转型压力。",
-          "url": "https://www.huxiu.com/article/4877853.html?f=rss",
+          "title": "北汽集团拟增持旗下三家上市公司股份",
+          "description": "北汽集团宣称坚定看好中国资本市场，拟增持北汽蓝谷、福田汽车、渤海汽车，合计增持金额不低于1.25亿元。",
+          "url": "https://36kr.com/newsflashes/3910437664920964?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "DeepSeek今年已增资65%",
-          "description": "据报道，DeepSeek创始人梁文锋在闭门会议中明确公司主线为通用人工智能，天眼查显示其关联公司杭州深度求索今年已增资65%，体现AI赛道融资热度。",
-          "url": "https://36kr.com/p/3908051015488640?f=rss",
+          "title": "中国电池工业协会与中国汽车工业协会签订战略合作协议",
+          "description": "双方将在产业政策、产业链协同、电池数字身份、行业标准等方面开展深度合作，推动两大产业融合升级。",
+          "url": "https://36kr.com/newsflashes/3910441114703232?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "染料开启新一轮涨价周期",
-          "description": "国内两家头部染料企业浙江龙盛、闰土股份自7月21日起同步上调价格，本月内已两度提价，成本压力向下游传导，市场关注对印染行业的影响。",
-          "url": "https://36kr.com/newsflashes/3909173007504512?f=rss",
+          "title": "2025年我国数字产业收入达39.6万亿元，同比增长8.8%",
+          "description": "国家互联网信息办公室报告显示，2025年数字经济核心产业增加值占GDP超10.5%，数字消费规模达25.3万亿元。",
+          "url": "https://36kr.com/newsflashes/3910502774101383?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "宝武资源公司增资至202.6亿，增幅约14%",
-          "description": "宝武资源有限公司注册资本由约178.2亿增至约202.6亿，增幅约14%，由中国宝武钢铁集团全资持股，显示国企资源整合与资本运作动向。",
-          "url": "https://36kr.com/newsflashes/3909113408771461?f=rss",
+          "title": "A股市场波动加大，量化交易被疑为背后元凶",
+          "description": "7月以来科创50指数剧烈波动，最大跌幅约27%后反弹，市场讨论量化交易对波动的影响。",
+          "url": "https://www.huxiu.com/article/4878089.html",
           "stars": null,
           "id": 10
         }
@@ -156,35 +156,35 @@
       "items": [
         {
           "title": "MedGame: Storytelling Gamification Empowered by Large Language Models for Medical Education",
-          "description": "探索大语言模型在医学教育中通过叙事游戏化提升学习体验的方法。",
+          "description": "利用大型语言模型为医学教育设计故事化游戏化交互系统，突破传统单轮问答局限。",
           "url": "https://arxiv.org/pdf/2607.21570v1",
           "stars": null,
           "id": 1
         },
         {
           "title": "OpenForgeRL: Train Harness-native Agents in Any Environment",
-          "description": "提出一种在任意环境中训练原生智能体的强化学习框架，支持多轮推理和工具使用。",
+          "description": "提出OpenForgeRL框架，支持在任意环境中训练原生使用推理工具链的智能体。",
           "url": "https://arxiv.org/pdf/2607.21557v1",
           "stars": null,
           "id": 2
         },
         {
           "title": "Seeking Help in the Digital Age: A Cross-Platform Analysis of Online Support Systems for Technology-Facilitated Abuse Victims",
-          "description": "跨平台分析在线支持系统如何帮助技术滥用受害者，揭示数字时代求助行为的特点。",
+          "description": "跨平台分析技术滥用受害者在线上寻求支持的机制，揭示数字化支持系统的现状与挑战。",
           "url": "https://arxiv.org/pdf/2607.21549v1",
           "stars": null,
           "id": 3
         },
         {
           "title": "The Boundaries of Automation: A Theory of Persistent Human Participation",
-          "description": "提出自动化边界理论，论证人工智能发展过程中人类参与的持久必要性。",
+          "description": "理论化探讨自动化边界，论证人类参与在AI系统中不可替代的持久价值。",
           "url": "https://arxiv.org/pdf/2607.21547v1",
           "stars": null,
           "id": 4
         },
         {
           "title": "Generative AI Availability, Grades, and Student Satisfaction at a Large University",
-          "description": "实证研究生成式AI可用性对大学生成绩和满意度的影响，检验AI替代假设。",
+          "description": "基于大规模大学数据检验生成式AI普及与成绩、学生满意度之间的关系，质疑AI替代学习假说。",
           "url": "https://arxiv.org/pdf/2607.21534v1",
           "stars": null,
           "id": 5
@@ -195,42 +195,42 @@
       "name": "AI 开源项目",
       "items": [
         {
-          "title": "netdata",
-          "description": "AI-powered full stack observability for lean teams.",
+          "title": "netdata/netdata",
+          "description": "The fastest path to AI-powered full stack observability, even for lean teams.",
           "url": "https://github.com/netdata/netdata",
-          "stars": 79816,
+          "stars": 79835,
           "id": 1
         },
         {
-          "title": "daytona",
-          "description": "Secure and Elastic Infrastructure for Running AI-Generated Code.",
-          "url": "https://github.com/daytonaio/daytona",
-          "stars": 72175,
+          "title": "hiyouga/LlamaFactory",
+          "description": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
+          "url": "https://github.com/hiyouga/LlamaFactory",
+          "stars": 73502,
           "id": 2
         },
         {
-          "title": "taste-skill",
-          "description": "Gives your AI good taste, preventing boring generic outputs.",
-          "url": "https://github.com/Leonxlnx/taste-skill",
-          "stars": 66954,
+          "title": "microsoft/ai-agents-for-beginners",
+          "description": "18 Lessons to Get Started Building AI Agents",
+          "url": "https://github.com/microsoft/ai-agents-for-beginners",
+          "stars": 70289,
           "id": 3
         },
         {
-          "title": "ai-hedge-fund",
-          "description": "An AI Hedge Fund Team.",
-          "url": "https://github.com/virattt/ai-hedge-fund",
-          "stars": 62387,
+          "title": "docling-project/docling",
+          "description": "Get your documents ready for gen AI",
+          "url": "https://github.com/docling-project/docling",
+          "stars": 63748,
           "id": 4
         },
         {
-          "title": "career-ops",
-          "description": "Open-source AI job search tool that scans and scores listings.",
-          "url": "https://github.com/santifer/career-ops",
-          "stars": 61268,
+          "title": "odysseus-dev/odysseus",
+          "description": "Self-hosted AI workspace.",
+          "url": "https://github.com/odysseus-dev/odysseus",
+          "stars": 61914,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-07-24T13:44:01.234+08:00"
+  "updatedAt": "2026-07-25T13:37:45.385+08:00"
 }
