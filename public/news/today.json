@@ -1,76 +1,76 @@
 {
-  "date": "2026-07-25",
+  "date": "2026-07-26",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "Claude Opus 5 发布，以一半价格逼近Fable5",
-          "description": "Anthropic发布Claude Opus 5模型，具备100万上下文窗口，性能接近Fable5但价格减半，目前已全线可用。",
-          "url": "https://www.huxiu.com/article/4878085.html",
+          "title": "硬氪首发 | 复旦教授、前英特尔首席科学家做端侧具身大脑，「眸深智能」完成近亿元Pre-A轮追加融资",
+          "description": "眸深智能完成近亿元Pre-A轮追加融资，专注于端侧具身大脑技术，由复旦教授、前英特尔首席科学家领衔。",
+          "url": "https://36kr.com/p/3911162147640456?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "黄仁勋第一次发推，联合微软、Meta等企业给中国开源模型说好话",
-          "description": "英伟达CEO黄仁勋在X平台发布首条推文，联署微软、Meta等25家机构支持开放权重模型，呼吁AI开源生态。",
-          "url": "https://www.huxiu.com/article/4878074.html",
+          "title": "从月之暗面出走，他用AI技术帮人找对象，徐新投资 | 涌现新项目",
+          "description": "前Kimi AI搜索技术负责人曾歆勋离职创办良配科技，利用AI搜索技术驱动婚恋匹配应用。",
+          "url": "https://36kr.com/p/3910880823202948?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "北京专门为智能体开发布会：十条政策追问“任务谁来交付”",
-          "description": "北京市政府为智能体产业召开新闻发布会，发布十条扶持政策，推动智能体落地与交付。",
-          "url": "https://www.huxiu.com/article/4878077.html",
+          "title": "9点1氪｜宇树科技CEO王兴兴登上《时代》杂志封面；国家反诈中心App可一键检测AI生成痕迹；Claude Opus 5正式发布",
+          "description": "Claude Opus 5正式发布，同时宇树科技CEO登上《时代》封面，国家反诈中心App新增AI生成痕迹检测功能。",
+          "url": "https://36kr.com/p/3910351337821318?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "AI重新定义学习范式：是更早看到问题",
-          "description": "从Kimi Team发布的技术报告《Attention Residuals》出发，探讨AI如何改变学习范式。",
-          "url": "https://www.huxiu.com/article/4878073.html",
+          "title": "AnySearch 面向全球推出 “学生与开发者成长计划”",
+          "description": "AnySearch推出全球学生与开发者成长计划，提供开放的AI搜索平台支持，鼓励AI技术应用与创新。",
+          "url": "https://36kr.com/p/3909565569324163?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "你的下一位面试官，可能不是人",
-          "description": "AI面试官越来越普及，超级数字员工可能成为下一个AI落地窗口。",
-          "url": "https://36kr.com/p/3909499179767169",
+          "title": "氪星晚报 ｜黄仁勋力挺中国AI开源模型；市场监管总局：深入整治“内卷式”竞争",
+          "description": "黄仁勋在采访中力挺中国AI开源模型，认为应继续学习和合作，同时市场监管总局部署整治竞争。",
+          "url": "https://36kr.com/p/3909160840451465?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "DeepSeek不是理想主义公司，它只是把现实服务于理想",
-          "description": "深度剖析DeepSeek如何用现实问题支撑宏大AI目标。",
-          "url": "https://36kr.com/p/3909084356433025",
+          "title": "对话曾鸣教授：AI时代，企业竞争的关键是构建智能复利，让AI真正进入业务流程",
+          "description": "曾鸣教授在WAIC现场接受专访，分享AI时代企业增长、智能复利、AI原生业务等关键洞察。",
+          "url": "https://36kr.com/p/3909358392988806?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "网格智算：“不堆算力”的AI大脑如何填补林下场景空白",
-          "description": "网格智算利用轻量化AI技术解决林业无人机场景的痛点，不依赖大规模算力。",
-          "url": "https://36kr.com/p/3908027308823684",
+          "title": "DeepSeek不是理想主义公司，它只是把现实服务于理想",
+          "description": "深度分析DeepSeek的发展路径，探讨其如何用现实问题支撑远大AI目标。",
+          "url": "https://36kr.com/p/3909084356433025?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "荣耀换Logo，一场关于AI的“阳谋”",
-          "description": "荣耀更换品牌Logo为“荣耀之环”，彰显AI战略与品牌革新。",
-          "url": "https://www.huxiu.com/article/4878090.html",
+          "title": "月之暗面Kimi K3庆功照流出，张予彤疑现身，喊出“冲上月球”口号",
+          "description": "月之暗面为Kimi K3举办庆功活动，流出照片显示团队喊出“冲上月球”口号，定位K3为扩容升级产品。",
+          "url": "https://36kr.com/newsflashes/3911981562270848?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "卖模型的人想筑墙，卖算力的人为什么要把门打开",
-          "description": "讨论AI生态中开源模型与闭源模型的博弈，以及英伟达等算力提供商的立场。",
-          "url": "https://www.huxiu.com/article/4878070.html",
+          "title": "马斯克：未来某个时刻中国极有可能成为AI领导者，美国就算禁用中国模型也挡不住",
+          "description": "马斯克在《经济学人》访谈中表示，中国未来极可能成为AI领导者，美国禁令无法阻止。",
+          "url": "https://36kr.com/newsflashes/3911959974188425?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "对话曾鸣教授：AI时代，企业竞争的关键是构建智能复利",
-          "description": "曾鸣教授在WAIC分享AI时代企业增长、组织变革与智能复利等洞见。",
-          "url": "https://36kr.com/p/3909358392988806",
+          "title": "黄仁勋：杰出的人才总会找到出色的答案，中国注定会产出卓越的AI技术",
+          "description": "黄仁勋在外媒采访中称中国注定产出卓越AI技术，应继续向中国学习与合作。",
+          "url": "https://36kr.com/newsflashes/3911959206827139?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "市场监管总局对携程开出51.79亿元反垄断罚单",
-          "description": "7月25日，市场监管总局对携程处以51.79亿元反垄断罚款，其中罚款35.21亿元。携程回应称诚恳接受、坚决服从。",
-          "url": "https://www.huxiu.com/article/4878110.html",
+          "title": "市场监管总局：深入整治“内卷式”竞争",
+          "description": "市场监管总局表示将深入整治“内卷式”竞争，维护市场秩序，促进公平竞争，这是对当前行业过度竞争行为的监管信号。",
+          "url": "https://36kr.com/p/3909160840451465?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "市场监管总局：深入整治“内卷式”竞争",
-          "description": "市场监管总局在近期表态中强调，将深入整治“内卷式”竞争，维护市场公平竞争秩序。",
-          "url": "https://36kr.com/p/3909160840451465?f=rss",
+          "title": "韩国养老金7月首度净买入KOSPI成分股，为今年首次",
+          "description": "韩国最大机构投资者国民年金公团等养老金本月转为净买入KOSPI股票，结束连续六个月净卖出，金额约684亿韩元，显示资金面积极信号。",
+          "url": "https://36kr.com/newsflashes/3911979618849920?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "黄仁勋力挺中国AI开源模型，联合微软、Meta等企业发声",
-          "description": "英伟达CEO黄仁勋首次在X平台发推，联合微软、Meta、IBM等企业联署支持开源AI模型，强调开放的重要性。",
-          "url": "https://www.huxiu.com/article/4878074.html",
+          "title": "长鑫存储上市在即，市场屏息等待",
+          "description": "长鑫存储即将在创业板上市，市场成交量萎缩，投资者密切关注其对科技股走势和科创板的影响，成为当前股市焦点。",
+          "url": "https://www.huxiu.com/article/4878198.html?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "英特尔2026年Q2营收同比增长25%创近15年最快增速",
-          "description": "英特尔公布二季度业绩，营收同比增长25%，数据中心和AI业务表现强劲，但市场对AI投资现金流存在担忧。",
-          "url": "https://www.huxiu.com/article/4878106.html",
+          "title": "马斯克：未来某个时刻中国极有可能成为AI领导者",
+          "description": "马斯克在《经济学人》访谈中表示，未来中国极有可能成为AI领导者，美国就算禁用中国模型也挡不住，引发对中美AI竞争格局的讨论。",
+          "url": "https://36kr.com/newsflashes/3911959974188425?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "穆迪警告AI投资狂潮冲击科技巨头财务稳健性",
-          "description": "穆迪评级指出，微软、亚马逊等科技巨头因巨额AI投入导致自由现金流承压，资产负债表风险上升。",
-          "url": "https://36kr.com/newsflashes/3910433082545536?f=rss",
+          "title": "黄仁勋：中国注定会产出卓越的AI技术",
+          "description": "黄仁勋在外媒采访中表示，杰出人才总会找到答案，中国注定产出卓越AI技术，应继续向中国学习与合作，体现对华科技合作态度。",
+          "url": "https://36kr.com/newsflashes/3911959206827139?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "TCL科技收购广州华星半导体45%股权获深交所审议通过",
-          "description": "7月24日，TCL科技公告收购广州华星半导体45%股权事项已获深交所通过，完成后将持有其100%股权。",
-          "url": "https://36kr.com/newsflashes/3910519718270081?f=rss",
+          "title": "崔东树：2026年6月中国汽车进口3.8万辆降11%",
+          "description": "乘联分会数据显示，6月进口车进口3.8万辆，同比下降11%，上半年累计进口20万辆，反映出汽车贸易和消费需求的变化。",
+          "url": "https://36kr.com/newsflashes/3911791891993992?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "北汽集团拟增持旗下三家上市公司股份",
-          "description": "北汽集团宣称坚定看好中国资本市场，拟增持北汽蓝谷、福田汽车、渤海汽车，合计增持金额不低于1.25亿元。",
-          "url": "https://36kr.com/newsflashes/3910437664920964?f=rss",
+          "title": "交流会纪要外泄影响DeepSeek融资？内部人士称不可信",
+          "description": "疑似DeepSeek投资者交流会纪要外泄，市场传闻影响新一轮融资，内部人士否认，但创始人梁文锋已决定暂停交易重新评估流程。",
+          "url": "https://36kr.com/newsflashes/3911975571379331?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "中国电池工业协会与中国汽车工业协会签订战略合作协议",
-          "description": "双方将在产业政策、产业链协同、电池数字身份、行业标准等方面开展深度合作，推动两大产业融合升级。",
-          "url": "https://36kr.com/newsflashes/3910441114703232?f=rss",
+          "title": "极氪回应“境外车机网络受限”：已上线“跨境守护”功能",
+          "description": "极氪就境外车机网络受限事件回应，在App上线“跨境守护”功能入口，并开发境外防盗功能开关，用户可自主解锁，涉及数据安全与合规。",
+          "url": "https://36kr.com/newsflashes/3911960881976457?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "2025年我国数字产业收入达39.6万亿元，同比增长8.8%",
-          "description": "国家互联网信息办公室报告显示，2025年数字经济核心产业增加值占GDP超10.5%，数字消费规模达25.3万亿元。",
-          "url": "https://36kr.com/newsflashes/3910502774101383?f=rss",
+          "title": "现代牧业20亿收购中国圣牧要约成为无条件",
+          "description": "现代牧业收购中国圣牧的要约成为无条件，最高花费20亿，蒙牛三任总裁同台，标志着乳业行业整合加速。",
+          "url": "https://www.huxiu.com/article/4878194.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "A股市场波动加大，量化交易被疑为背后元凶",
-          "description": "7月以来科创50指数剧烈波动，最大跌幅约27%后反弹，市场讨论量化交易对波动的影响。",
-          "url": "https://www.huxiu.com/article/4878089.html",
+          "title": "SK崔泰源：韩国需转型为“AI原生”国家",
+          "description": "SK海力士掌门人崔泰源表示韩国必须成为AI原生国家，目标人均至少一个AI智能体，降低AI门槛，反映科技产业政策方向。",
+          "url": "https://36kr.com/newsflashes/3911821420303744?f=rss",
           "stars": null,
           "id": 10
         }
@@ -156,35 +156,35 @@
       "items": [
         {
           "title": "MedGame: Storytelling Gamification Empowered by Large Language Models for Medical Education",
-          "description": "利用大型语言模型为医学教育设计故事化游戏化交互系统，突破传统单轮问答局限。",
+          "description": "利用大语言模型将故事化游戏机制引入医学教育，通过多轮交互提升学习效果。",
           "url": "https://arxiv.org/pdf/2607.21570v1",
           "stars": null,
           "id": 1
         },
         {
           "title": "OpenForgeRL: Train Harness-native Agents in Any Environment",
-          "description": "提出OpenForgeRL框架，支持在任意环境中训练原生使用推理工具链的智能体。",
+          "description": "提出一种通用框架，使强化学习代理能在任意环境中原生训练，支持多步推理和工具使用。",
           "url": "https://arxiv.org/pdf/2607.21557v1",
           "stars": null,
           "id": 2
         },
         {
           "title": "Seeking Help in the Digital Age: A Cross-Platform Analysis of Online Support Systems for Technology-Facilitated Abuse Victims",
-          "description": "跨平台分析技术滥用受害者在线上寻求支持的机制，揭示数字化支持系统的现状与挑战。",
+          "description": "跨平台分析技术滥用受害者的在线支持系统，为设计更有效的AI辅助干预提供依据。",
           "url": "https://arxiv.org/pdf/2607.21549v1",
           "stars": null,
           "id": 3
         },
         {
           "title": "The Boundaries of Automation: A Theory of Persistent Human Participation",
-          "description": "理论化探讨自动化边界，论证人类参与在AI系统中不可替代的持久价值。",
+          "description": "探讨AI自动化趋势下人类参与的必要性，提出持续人类参与的理论框架。",
           "url": "https://arxiv.org/pdf/2607.21547v1",
           "stars": null,
           "id": 4
         },
         {
           "title": "Generative AI Availability, Grades, and Student Satisfaction at a Large University",
-          "description": "基于大规模大学数据检验生成式AI普及与成绩、学生满意度之间的关系，质疑AI替代学习假说。",
+          "description": "实证研究生成式AI对大学生成绩和满意度的影响，检验AI替代学习假设。",
           "url": "https://arxiv.org/pdf/2607.21534v1",
           "stars": null,
           "id": 5
@@ -195,42 +195,42 @@
       "name": "AI 开源项目",
       "items": [
         {
-          "title": "netdata/netdata",
-          "description": "The fastest path to AI-powered full stack observability, even for lean teams.",
+          "title": "netdata",
+          "description": "AI-powered full stack observability platform for lean teams, providing real-time monitoring and insights.",
           "url": "https://github.com/netdata/netdata",
-          "stars": 79835,
+          "stars": 79850,
           "id": 1
         },
         {
-          "title": "hiyouga/LlamaFactory",
-          "description": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
-          "url": "https://github.com/hiyouga/LlamaFactory",
-          "stars": 73502,
+          "title": "worldmonitor",
+          "description": "Real-time global intelligence dashboard with AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking.",
+          "url": "https://github.com/koala73/worldmonitor",
+          "stars": 74271,
           "id": 2
         },
         {
-          "title": "microsoft/ai-agents-for-beginners",
-          "description": "18 Lessons to Get Started Building AI Agents",
-          "url": "https://github.com/microsoft/ai-agents-for-beginners",
-          "stars": 70289,
+          "title": "awesome-claude-skills",
+          "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows.",
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+          "stars": 70693,
           "id": 3
         },
         {
-          "title": "docling-project/docling",
-          "description": "Get your documents ready for gen AI",
+          "title": "docling",
+          "description": "Get your documents ready for gen AI with this document processing tool.",
           "url": "https://github.com/docling-project/docling",
-          "stars": 63748,
+          "stars": 63773,
           "id": 4
         },
         {
-          "title": "odysseus-dev/odysseus",
-          "description": "Self-hosted AI workspace.",
+          "title": "odysseus",
+          "description": "Self-hosted AI workspace for managing and running AI tasks in a unified environment.",
           "url": "https://github.com/odysseus-dev/odysseus",
-          "stars": 61914,
+          "stars": 62022,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-07-25T13:37:45.385+08:00"
+  "updatedAt": "2026-07-26T13:54:34.568+08:00"
 }
