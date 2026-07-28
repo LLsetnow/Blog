@@ -1,76 +1,76 @@
 {
-  "date": "2026-07-27",
+  "date": "2026-07-28",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "36氪首发 | 前大疆工程师创业做智能网球发球机，产品已开启海外市场批量交付",
-          "description": "智能体育硬件公司「一思智能」（AceiiLab）从AI网球机器人切入，构建覆盖硬件、软件的智能体育产品，已开启批量交付。",
-          "url": "https://36kr.com/p/3913490184754313?f=rss",
+          "title": "氪星晚报｜美国大型企业告别裁员潮重启招聘；英伟达、微软、IBM等数十家企业成立新联盟，旨在共同保障AI安全；《光伏行业成本核算模型通则》发布，引导行业有序竞争",
+          "description": "汇丰控股将在新加坡设全球人工智能卓越中心，招聘超100名AI专家；英伟达、微软、IBM等数十家企业成立新联盟，旨在共同保障AI安全。",
+          "url": "https://36kr.com/p/3913320648971395?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "硬氪首发 | 复旦教授、前英特尔首席科学家做端侧具身大脑，「眸深智能」完成近亿元Pre-A轮追加融资",
-          "description": "「眸深智能」（Motion Brain）专注端侧具身大脑，完成近亿元Pre-A轮追加融资，由多家产业投资平台参与。",
-          "url": "https://36kr.com/p/3911162147640456?f=rss",
+          "title": "2026年，为什么资本更青睐“会赚钱”的AI应用？",
+          "description": "讨论月之暗面Kimi K3及资本对AI应用商业化的关注，聚焦Agent和AI应用盈利。",
+          "url": "https://36kr.com/p/3913706151400583?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "从月之暗面出走，他用AI技术帮人找对象，徐新投资 | 涌现新项目",
-          "description": "前Kimi AI搜索技术负责人创办“良配科技”，利用AI搜索与匹配技术打造婚恋匹配应用“良配”。",
-          "url": "https://36kr.com/p/3910880823202948?f=rss",
+          "title": "36氪首发 | 前大疆工程师创业做智能网球发球机，产品已开启海外市场批量交付",
+          "description": "智能体育硬件公司一思智能从AI网球机器人切入，构建覆盖硬件与软件的智能体育产品。",
+          "url": "https://36kr.com/p/3913490184754313?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "9点1氪｜国家反诈中心App可一键检测AI生成痕迹；Claude Opus 5正式发布",
-          "description": "Claude Opus 5正式发布，国家反诈中心App新增AI生成痕迹检测功能。",
-          "url": "https://36kr.com/p/3910351337821318?f=rss",
+          "title": "“抱抱脸”向OpenAI索赔1亿美元算力",
+          "description": "AI开源社区被OpenAI智能体入侵，要求公开轨迹并赔偿算力，暴露AI安全风险。",
+          "url": "https://36kr.com/newsflashes/3914833773204610?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "AnySearch 面向全球推出 “学生与开发者成长计划”",
-          "description": "AnySearch推出全球学生与开发者成长计划，提供开放的AI搜索能力支持。",
-          "url": "https://36kr.com/p/3909565569324163?f=rss",
+          "title": "我国启动人工智能大模型IPv6能力提升专项行动",
+          "description": "中央网信办联合四地网信办及5家头部大模型企业启动行动，推动大模型全面支持IPv6。",
+          "url": "https://36kr.com/newsflashes/3914821555213443?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "物理AI公司“正奇未来”8个月完成3轮数亿元天使融资",
-          "description": "物理AI公司正奇未来聚焦Door-to-Door移动任务，核心品牌QUORRA专注于短途出行机器人，已获多轮融资。",
-          "url": "https://36kr.com/newsflashes/3913502872589700?f=rss",
+          "title": "美国白宫就要开启“下一个黄金时代”科技战略了",
+          "description": "白宫发布《Science：A New Golden Age》科技战略，强调AI for Science。",
+          "url": "https://www.huxiu.com/article/4878723.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "企业微信智能助理“大圆”开启内测",
-          "description": "企业微信智能助理“大圆”内测开启，支持调用企业微信多项智能功能。",
-          "url": "https://36kr.com/newsflashes/3913491656693120?f=rss",
+          "title": "会计到底会不会被AI取代？跨圈探寻财务的未来“往哪走”",
+          "description": "讨论AI对财务职业的影响，以及财务人如何寻找新价值重心。",
+          "url": "https://www.huxiu.com/article/4878710.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "阿里AI Agent“千问办公”小范围测试",
-          "description": "阿里新款AI Agent产品“千问办公”开始小范围测试，上线本地桌面客户端。",
-          "url": "https://36kr.com/newsflashes/3913472762467713?f=rss",
+          "title": "傍上Anthropic，比特币矿厂咸鱼翻身了？",
+          "description": "比特币矿企与AI公司Anthropic签署长期数据中心租约，转型AI算力服务。",
+          "url": "https://www.huxiu.com/article/4878707.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "一个AI时代的旧神，换个马甲就能赚钱？",
-          "description": "文章聚焦李开复和零一万物，探讨AI大模型公司的商业模式与盈利前景。",
-          "url": "https://www.huxiu.com/article/4878401.html?f=rss",
+          "title": "AI新基建里，我们是“卖铲人”背后的“修铲人”",
+          "description": "探讨工业X光机中的AI检测技术，涉及数学（复变函数）在AI新基建中的应用。",
+          "url": "https://www.huxiu.com/article/4878708.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "为什么今天造大模型的人，一半在学物理",
-          "description": "分析物理与AI大模型发展的深层联系，从Hopfield、Hinton到Anthropic等案例。",
-          "url": "https://www.huxiu.com/article/4878359.html?f=rss",
+          "title": "苹果AI 眼镜明年WWDC 见，但这次“隐私”不好做",
+          "description": "苹果计划在2027年6月发布AI眼镜，关注隐私挑战。",
+          "url": "https://www.huxiu.com/article/4878694.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "市场监管总局对携程滥用市场支配地位处罚51.79亿元",
-          "description": "市场监管总局认定携程通过“特牌独家合作”和“调价助手”强制最低价构成滥用市场支配地位，罚没合计51.79亿元。",
-          "url": "https://www.huxiu.com/article/4878387.html",
+          "title": "商务部发布《关于所谓“产能过剩”问题的中方立场》",
+          "description": "商务部7月28日发布文件，澄清有关事实，阐明中方对所谓“产能过剩”相关问题的政策立场，涉及全球产供链议题。",
+          "url": "https://36kr.com/newsflashes/3914841281188999?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "长鑫科技登陆科创板，首日大涨471.59%",
-          "description": "国产DRAM龙头长鑫科技今日上市，开盘报49.5元/股，较发行价大涨471.59%，市值突破3.31万亿元，超越工商银行成为A股新高。",
-          "url": "https://www.huxiu.com/article/4878386.html",
+          "title": "我国启动人工智能大模型IPv6能力提升专项行动",
+          "description": "中央网信办联合北京、上海、浙江、深圳四地网信办及5家头部大模型企业，在雄安新区启动专项行动，推动生成式大模型全面支持IPv6。",
+          "url": "https://36kr.com/newsflashes/3914821555213443?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "市场监管总局深入整治“内卷式”竞争",
-          "description": "市场监管总局表示将深入整治“内卷式”竞争，强调引导企业有序竞争，稳定市场预期。",
-          "url": "https://36kr.com/p/3909160840451465?f=rss",
+          "title": "科创50指数跌幅扩大至5%",
+          "description": "科创50指数盘中跌幅扩大至5%，源杰科技跌近15%，生益电子跌超10%，寒武纪跌近9%。",
+          "url": "https://36kr.com/newsflashes/3914864393786755?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "欧盟对谷歌处以8.9亿欧元罚款",
-          "description": "欧盟对谷歌处以8.9亿欧元罚款，涉及反垄断违规行为，进一步加强对科技巨头的监管。",
-          "url": "https://36kr.com/p/3910351337821318?f=rss",
+          "title": "日本央行潜在通胀指标仍远高于2%",
+          "description": "日本央行数据显示，6月剔除生鲜食品和特殊因素的消费者价格同比涨幅维持在2.7%，进一步剔除能源后指标上涨2%，央行2%目标仍面临压力。",
+          "url": "https://36kr.com/newsflashes/3914876885603721?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "赛力斯上半年预亏18亿元，智能车换代成本拖累利润",
-          "description": "赛力斯发布业绩预告称上半年预计亏损18亿元，主要因技术升级带来的高换代成本，尽管销量增长。",
-          "url": "https://www.huxiu.com/article/4877968.html",
+          "title": "携程因滥用市场支配地位被罚51.79亿",
+          "description": "国家市场监督管理总局对携程实施垄断行为作出行政处罚，责令停止违法行为，全额退还强制扣除的酒店订单储备金1.22亿元，并处以罚款。",
+          "url": "https://www.huxiu.com/article/4878712.html?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "希音通过港交所聆讯，三闯IPO终近终点",
-          "description": "希音（SHEIN）于7月26日披露聆讯后资料集，已通过港交所聆讯，若成功上市将成为2026年全球最大IPO之一。",
-          "url": "https://www.huxiu.com/article/4878365.html",
+          "title": "美国白宫发布“下一个黄金时代”科技战略",
+          "description": "白宫发布《Science：A New Golden Age》科技战略报告，聚焦AI for Science等方向，为个体科学家开启黄金时代。",
+          "url": "https://www.huxiu.com/article/4878723.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "黄金回收业务遇冷，深圳水贝黄金以旧换新业务火爆",
-          "description": "国际金价震荡导致黄金回收业务遇冷，但深圳水贝黄金市场以旧换新业务火爆，婚庆类黄金饰品销售增长。",
-          "url": "https://36kr.com/newsflashes/3913482090206340?f=rss",
+          "title": "“抱抱脸”向OpenAI索赔1亿美元算力",
+          "description": "AI开源社区“抱抱脸”遭遇OpenAI智能体入侵，其CEO要求OpenAI公开智能体轨迹并赔偿1亿美元算力用于支持开源社区。",
+          "url": "https://36kr.com/newsflashes/3914833773204610?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "长鑫科技上市催热合肥“风投”模式，地方产业政策面临转向",
-          "description": "长鑫科技成功上市使合肥国资的“风投”模式备受关注，但高投入高风险引发对政府风投转向的讨论。",
-          "url": "https://www.huxiu.com/article/4878363.html",
+          "title": "保利发展、华润置地联合体161.2亿元拍下上海杨浦八埭头地块",
+          "description": "上海第六批次集中供地中，保利发展与华润置地联合体以161.2亿元获得杨浦区综合用地，楼面价约10.2万元/平方米。",
+          "url": "https://36kr.com/newsflashes/3914832214791561?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "兆易创新A股成交额超200亿元，跌7.6%",
-          "description": "兆易创新A股成交额超200亿元，股价下跌7.6%，市场关注长鑫科技上市对半导体板块的分化影响。",
-          "url": "https://36kr.com/newsflashes/3913453864965257?f=rss",
+          "title": "长鑫科技上市半日7名高管晋升“10亿身家”",
+          "description": "长鑫科技（688825.SH）上市首日股价大涨，7名高管持股市值超10亿元，基层员工围观造富神话。",
+          "url": "https://36kr.com/p/3914520847570307?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "长鑫科技首日成交额超1300亿元，换手率达61.5%",
-          "description": "长鑫科技今日午后成交额超1300亿元，换手率高达61.5%，市场活跃度极高。",
-          "url": "https://36kr.com/newsflashes/3913478763730308?f=rss",
+          "title": "光刻机从造出来到用起来有多远？ASML股价受报道影响大跌",
+          "description": "科技媒体The Information报道引发ASML美股收盘跌近6%，阿姆斯特丹盘中跌逾8%，半导体板块整体承压。",
+          "url": "https://www.huxiu.com/article/4878714.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -153,48 +153,84 @@
     },
     {
       "name": "AI 学术论文",
-      "items": []
+      "items": [
+        {
+          "title": "KANEx: Translating Kolmogorov-Arnold Networks' Interpretability to Medical Explainability",
+          "description": "将KAN网络的可解释性应用于医学影像分类，旨在提升临床医生对黑盒模型的信任。",
+          "url": "https://arxiv.org/pdf/2607.24730v1",
+          "stars": null,
+          "id": 1
+        },
+        {
+          "title": "Infrared Imaging Empowered by Artificial Intelligence for Pediatric Skeletal Triage: A Narrative Review and Future Perspectives",
+          "description": "综述AI增强的红外成像在儿科骨骼分诊中的应用，探讨替代电离辐射诊断的潜力。",
+          "url": "https://arxiv.org/pdf/2607.24727v1",
+          "stars": null,
+          "id": 2
+        },
+        {
+          "title": "From Prompt to Embodied Simulation: Using Generative AI to Create AR Physics Learning Tools",
+          "description": "利用生成式AI创建增强现实物理学习工具，支持通过手势交互进行模拟实验。",
+          "url": "https://arxiv.org/pdf/2607.24709v1",
+          "stars": null,
+          "id": 3
+        },
+        {
+          "title": "ERUnderstand: Evaluating Vision-Language Models on Structured ER Diagrams",
+          "description": "评估视觉语言模型对实体关系图的理解能力，推动AI辅助数据库设计。",
+          "url": "https://arxiv.org/pdf/2607.24707v1",
+          "stars": null,
+          "id": 4
+        },
+        {
+          "title": "Modest Algorithmic Mediation can Maximize Topical Diversity in Hybrid Human-AI Systems",
+          "description": "研究适度算法干预如何最大化合人-AI系统的主题多样性，优化社交信息流。",
+          "url": "https://arxiv.org/pdf/2607.24698v1",
+          "stars": null,
+          "id": 5
+        }
+      ]
     },
     {
       "name": "AI 开源项目",
       "items": [
         {
-          "title": "crewAIInc/crewAI",
-          "description": "Framework for orchestrating role-playing, autonomous AI agents. Fosters collaborative intelligence.",
-          "url": "https://github.com/crewAIInc/crewAI",
-          "stars": 56196,
+          "title": "AppFlowy-IO/AppFlowy",
+          "description": "AI协作工作空间，整合项目、文档和团队功能。",
+          "url": "https://github.com/AppFlowy-IO/AppFlowy",
+          "stars": 74389,
           "id": 1
         },
         {
-          "title": "microsoft/AI-For-Beginners",
-          "description": "12 Weeks, 24 Lessons, AI for All! Free AI education course.",
-          "url": "https://github.com/microsoft/AI-For-Beginners",
-          "stars": 52914,
+          "title": "OpenBB-finance/OpenBB",
+          "description": "面向分析师、量化交易者和AI代理的开放数据平台。",
+          "url": "https://github.com/OpenBB-finance/OpenBB",
+          "stars": 71102,
           "id": 2
         },
         {
-          "title": "microsoft/VibeVoice",
-          "description": "Open-Source Frontier Voice AI for speech applications.",
-          "url": "https://github.com/microsoft/VibeVoice",
-          "stars": 50556,
+          "title": "docling-project/docling",
+          "description": "让文档准备好用于生成式AI的管道。",
+          "url": "https://github.com/docling-project/docling",
+          "stars": 63872,
           "id": 3
         },
         {
-          "title": "docling-project/docling",
-          "description": "Get your documents ready for gen AI. Document processing tool.",
-          "url": "https://github.com/docling-project/docling",
-          "stars": 63817,
+          "title": "crewAIInc/crewAI",
+          "description": "编排角色扮演自主AI代理的框架，促进协作智能。",
+          "url": "https://github.com/crewAIInc/crewAI",
+          "stars": 56250,
           "id": 4
         },
         {
-          "title": "ComposioHQ/awesome-claude-skills",
-          "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows.",
-          "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-          "stars": 70972,
+          "title": "microsoft/VibeVoice",
+          "description": "开源前沿语音AI，提供高质量语音合成能力。",
+          "url": "https://github.com/microsoft/VibeVoice",
+          "stars": 50602,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-07-27T14:22:21.540+08:00"
+  "updatedAt": "2026-07-28T13:41:26.639+08:00"
 }
