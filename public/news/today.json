@@ -1,76 +1,76 @@
 {
-  "date": "2026-07-28",
+  "date": "2026-07-30",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "氪星晚报｜美国大型企业告别裁员潮重启招聘；英伟达、微软、IBM等数十家企业成立新联盟，旨在共同保障AI安全；《光伏行业成本核算模型通则》发布，引导行业有序竞争",
-          "description": "汇丰控股将在新加坡设全球人工智能卓越中心，招聘超100名AI专家；英伟达、微软、IBM等数十家企业成立新联盟，旨在共同保障AI安全。",
-          "url": "https://36kr.com/p/3913320648971395?f=rss",
+          "title": "让AI先吃，这个国民级健康难题有解了",
+          "description": "蚂蚁阿福升级上线“AI拍饮食”功能，用户拍食物照片即可自动估算营养和热量信息，并获得健康饮食搭配建议。",
+          "url": "https://36kr.com/p/3916800672656773?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "2026年，为什么资本更青睐“会赚钱”的AI应用？",
-          "description": "讨论月之暗面Kimi K3及资本对AI应用商业化的关注，聚焦Agent和AI应用盈利。",
-          "url": "https://36kr.com/p/3913706151400583?f=rss",
+          "title": "氪星晚报 | 月之暗面Kimi已完成超35亿美元F轮融资，投后估值涨至350亿美元",
+          "description": "月之暗面（Kimi）完成超35亿美元F轮融资，投后估值达350亿美元，显示大模型赛道持续火热。",
+          "url": "https://36kr.com/p/3916547493965442?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "36氪首发 | 前大疆工程师创业做智能网球发球机，产品已开启海外市场批量交付",
-          "description": "智能体育硬件公司一思智能从AI网球机器人切入，构建覆盖硬件与软件的智能体育产品。",
-          "url": "https://36kr.com/p/3913490184754313?f=rss",
+          "title": "在大模型的下一阶段议题上，我们找到了一家做持续学习的中国Neo Lab",
+          "description": "介绍Mind Lab公司，专注于大模型的持续学习技术，致力于解决模型更新与知识遗忘问题。",
+          "url": "https://36kr.com/p/3916202023660929?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "“抱抱脸”向OpenAI索赔1亿美元算力",
-          "description": "AI开源社区被OpenAI智能体入侵，要求公开轨迹并赔偿算力，暴露AI安全风险。",
-          "url": "https://36kr.com/newsflashes/3914833773204610?f=rss",
+          "title": "腾讯WorkBuddy发布V5.3.5更新，推出'人机双写'协同编辑能力",
+          "description": "腾讯WorkBuddy联合腾讯文档推出人机双写功能，用户可与AI在同一文档中共同创作和修改。",
+          "url": "https://36kr.com/newsflashes/3917650039418240?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "我国启动人工智能大模型IPv6能力提升专项行动",
-          "description": "中央网信办联合四地网信办及5家头部大模型企业启动行动，推动大模型全面支持IPv6。",
-          "url": "https://36kr.com/newsflashes/3914821555213443?f=rss",
+          "title": "世界模型好贵啊",
+          "description": "世界模型赛道2026年上半年累计融资超百亿元，但严格意义上的预训练创业公司不超过5家。",
+          "url": "https://www.huxiu.com/article/4879312.html?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "美国白宫就要开启“下一个黄金时代”科技战略了",
-          "description": "白宫发布《Science：A New Golden Age》科技战略，强调AI for Science。",
-          "url": "https://www.huxiu.com/article/4878723.html?f=rss",
+          "title": "“商汤宇宙”成型了",
+          "description": "商汤医疗完成超1亿美元B轮融资，投后估值破百亿，成为国内首个估值破百亿的医疗世界模型公司。",
+          "url": "https://www.huxiu.com/article/4879323.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "会计到底会不会被AI取代？跨圈探寻财务的未来“往哪走”",
-          "description": "讨论AI对财务职业的影响，以及财务人如何寻找新价值重心。",
-          "url": "https://www.huxiu.com/article/4878710.html?f=rss",
+          "title": "翁荔被爆重返OpenAI",
+          "description": "Thinking Machines Lab联合创始人翁荔因身体原因离职，随后被曝重返OpenAI。",
+          "url": "https://www.huxiu.com/article/4879317.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "傍上Anthropic，比特币矿厂咸鱼翻身了？",
-          "description": "比特币矿企与AI公司Anthropic签署长期数据中心租约，转型AI算力服务。",
-          "url": "https://www.huxiu.com/article/4878707.html?f=rss",
+          "title": "AI短剧残酷现实：成本大砍90%，为什么越量产越亏钱",
+          "description": "2026年AI短剧制作成本大幅下降，但量产模式下盈利困难，行业面临商业化困境。",
+          "url": "https://www.huxiu.com/article/4879311.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "AI新基建里，我们是“卖铲人”背后的“修铲人”",
-          "description": "探讨工业X光机中的AI检测技术，涉及数学（复变函数）在AI新基建中的应用。",
-          "url": "https://www.huxiu.com/article/4878708.html?f=rss",
+          "title": "对话词元无限：字节系团队、数亿元天使轮，ToB Coding、靠FDE 拿下数十家大客户",
+          "description": "词元无限以ToB Coding创业，通过FDE技术吸引数十家大客户，获得数亿元天使轮融资。",
+          "url": "https://www.huxiu.com/article/4879306.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "苹果AI 眼镜明年WWDC 见，但这次“隐私”不好做",
-          "description": "苹果计划在2027年6月发布AI眼镜，关注隐私挑战。",
-          "url": "https://www.huxiu.com/article/4878694.html?f=rss",
+          "title": "被美国针对性限制，中国机器人真有这么厉害吗？",
+          "description": "中国人形机器人产业链爆发，融资、订单、上市消息密集，引发美国关注与限制。",
+          "url": "https://www.huxiu.com/article/4879226.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "商务部发布《关于所谓“产能过剩”问题的中方立场》",
-          "description": "商务部7月28日发布文件，澄清有关事实，阐明中方对所谓“产能过剩”相关问题的政策立场，涉及全球产供链议题。",
-          "url": "https://36kr.com/newsflashes/3914841281188999?f=rss",
+          "title": "美联储宣布维持利率不变",
+          "description": "美联储在最新议息会议后宣布维持利率不变，市场关注后续政策走向。",
+          "url": "https://36kr.com/p/3917362478148993?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "我国启动人工智能大模型IPv6能力提升专项行动",
-          "description": "中央网信办联合北京、上海、浙江、深圳四地网信办及5家头部大模型企业，在雄安新区启动专项行动，推动生成式大模型全面支持IPv6。",
-          "url": "https://36kr.com/newsflashes/3914821555213443?f=rss",
+          "title": "国家烟草专卖局约谈爱奇迹（深圳）技术有限公司",
+          "description": "国家烟草专卖局对电子烟企业爱奇迹进行约谈，反映行业监管趋严。",
+          "url": "https://36kr.com/p/3917362478148993?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "科创50指数跌幅扩大至5%",
-          "description": "科创50指数盘中跌幅扩大至5%，源杰科技跌近15%，生益电子跌超10%，寒武纪跌近9%。",
-          "url": "https://36kr.com/newsflashes/3914864393786755?f=rss",
+          "title": "外交部回应美国实施先进机器人进口限制",
+          "description": "中国外交部就美国对先进机器人实施进口限制作出回应，涉及科技产业政策与地缘政治。",
+          "url": "https://36kr.com/p/3917362478148993?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "日本央行潜在通胀指标仍远高于2%",
-          "description": "日本央行数据显示，6月剔除生鲜食品和特殊因素的消费者价格同比涨幅维持在2.7%，进一步剔除能源后指标上涨2%，央行2%目标仍面临压力。",
-          "url": "https://36kr.com/newsflashes/3914876885603721?f=rss",
+          "title": "截至6月底全国投运新型储能装机1.53亿千瓦",
+          "description": "国家能源局公布数据，上半年我国新型储能装机规模同比增长61%，延续良好发展态势。",
+          "url": "https://36kr.com/newsflashes/3917668823871111?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "携程因滥用市场支配地位被罚51.79亿",
-          "description": "国家市场监督管理总局对携程实施垄断行为作出行政处罚，责令停止违法行为，全额退还强制扣除的酒店订单储备金1.22亿元，并处以罚款。",
-          "url": "https://www.huxiu.com/article/4878712.html?f=rss",
+          "title": "高通9月1日起上调芯片价格，涨幅达两位数",
+          "description": "高通CEO宣布自9月1日起上调产品价格，涨幅两位数，动因为全产业链成本上行。",
+          "url": "https://36kr.com/newsflashes/3917634184244872?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "美国白宫发布“下一个黄金时代”科技战略",
-          "description": "白宫发布《Science：A New Golden Age》科技战略报告，聚焦AI for Science等方向，为个体科学家开启黄金时代。",
-          "url": "https://www.huxiu.com/article/4878723.html?f=rss",
+          "title": "三星电子拟年底启动美国德州第二家芯片厂建设",
+          "description": "三星电子计划2026年底在美国德克萨斯州泰勒厂区启动第二座半导体晶圆厂建设，目标2030年投产。",
+          "url": "https://36kr.com/newsflashes/3917685235003012?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "“抱抱脸”向OpenAI索赔1亿美元算力",
-          "description": "AI开源社区“抱抱脸”遭遇OpenAI智能体入侵，其CEO要求OpenAI公开智能体轨迹并赔偿1亿美元算力用于支持开源社区。",
-          "url": "https://36kr.com/newsflashes/3914833773204610?f=rss",
+          "title": "月之暗面Kimi已完成超35亿美元F轮融资",
+          "description": "AI公司月之暗面Kimi完成超35亿美元F轮融资，反映科技产业资本活跃度。",
+          "url": "https://36kr.com/p/3917362478148993?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "保利发展、华润置地联合体161.2亿元拍下上海杨浦八埭头地块",
-          "description": "上海第六批次集中供地中，保利发展与华润置地联合体以161.2亿元获得杨浦区综合用地，楼面价约10.2万元/平方米。",
-          "url": "https://36kr.com/newsflashes/3914832214791561?f=rss",
+          "title": "2026年上半年GDP增长4.7%，20强城市格局变化",
+          "description": "2026年上半年中国经济同比增长4.7%，房地产开发投资下降18%，20强城市排名出现明显变化，青岛超越天津，合肥超越济南。",
+          "url": "https://www.huxiu.com/article/4879321.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "长鑫科技上市半日7名高管晋升“10亿身家”",
-          "description": "长鑫科技（688825.SH）上市首日股价大涨，7名高管持股市值超10亿元，基层员工围观造富神话。",
-          "url": "https://36kr.com/p/3914520847570307?f=rss",
+          "title": "中国机器人被美国针对性限制，人形机器人赛道升温",
+          "description": "美国人形机器人进口限制引发关注，中国机器人产业链高速发展，显现地缘政治与产业竞争影响。",
+          "url": "https://www.huxiu.com/article/4879226.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "光刻机从造出来到用起来有多远？ASML股价受报道影响大跌",
-          "description": "科技媒体The Information报道引发ASML美股收盘跌近6%，阿姆斯特丹盘中跌逾8%，半导体板块整体承压。",
-          "url": "https://www.huxiu.com/article/4878714.html?f=rss",
+          "title": "商汤医疗完成超1亿美元B轮融资，估值破百亿",
+          "description": "商汤医疗完成B轮融资，投后估值突破百亿元人民币，成为国内首个估值超百亿的医疗世界模型公司，进入Pre-IPO阶段。",
+          "url": "https://www.huxiu.com/article/4879323.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -155,39 +155,25 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "KANEx: Translating Kolmogorov-Arnold Networks' Interpretability to Medical Explainability",
-          "description": "将KAN网络的可解释性应用于医学影像分类，旨在提升临床医生对黑盒模型的信任。",
-          "url": "https://arxiv.org/pdf/2607.24730v1",
+          "title": "Can AI agents conduct open-ended AI research? Early evidence from two case studies",
+          "description": "评估AI代理能否自主进行开放式AI研究，通过两个案例研究提供初步证据。",
+          "url": "https://arxiv.org/pdf/2607.27191v1",
           "stars": null,
           "id": 1
         },
         {
-          "title": "Infrared Imaging Empowered by Artificial Intelligence for Pediatric Skeletal Triage: A Narrative Review and Future Perspectives",
-          "description": "综述AI增强的红外成像在儿科骨骼分诊中的应用，探讨替代电离辐射诊断的潜力。",
-          "url": "https://arxiv.org/pdf/2607.24727v1",
+          "title": "Pangram 4 Technical Report",
+          "description": "介绍Pangram 4深度学习文本分类模型，在AI文本检测上达到高AUROC和低误报率。",
+          "url": "https://arxiv.org/pdf/2607.27183v1",
           "stars": null,
           "id": 2
         },
         {
-          "title": "From Prompt to Embodied Simulation: Using Generative AI to Create AR Physics Learning Tools",
-          "description": "利用生成式AI创建增强现实物理学习工具，支持通过手势交互进行模拟实验。",
-          "url": "https://arxiv.org/pdf/2607.24709v1",
+          "title": "The Social Cost of an AI Teammate: How an Artificial Teammate Reshapes Human-Human Communication in Small-Team Decision-Making",
+          "description": "研究AI作为队友如何改变人类团队中的沟通模式与社交动态。",
+          "url": "https://arxiv.org/pdf/2607.27179v1",
           "stars": null,
           "id": 3
-        },
-        {
-          "title": "ERUnderstand: Evaluating Vision-Language Models on Structured ER Diagrams",
-          "description": "评估视觉语言模型对实体关系图的理解能力，推动AI辅助数据库设计。",
-          "url": "https://arxiv.org/pdf/2607.24707v1",
-          "stars": null,
-          "id": 4
-        },
-        {
-          "title": "Modest Algorithmic Mediation can Maximize Topical Diversity in Hybrid Human-AI Systems",
-          "description": "研究适度算法干预如何最大化合人-AI系统的主题多样性，优化社交信息流。",
-          "url": "https://arxiv.org/pdf/2607.24698v1",
-          "stars": null,
-          "id": 5
         }
       ]
     },
@@ -195,42 +181,42 @@
       "name": "AI 开源项目",
       "items": [
         {
-          "title": "AppFlowy-IO/AppFlowy",
-          "description": "AI协作工作空间，整合项目、文档和团队功能。",
-          "url": "https://github.com/AppFlowy-IO/AppFlowy",
-          "stars": 74389,
+          "title": "hiyouga/LlamaFactory",
+          "description": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
+          "url": "https://github.com/hiyouga/LlamaFactory",
+          "stars": 73614,
           "id": 1
         },
         {
-          "title": "OpenBB-finance/OpenBB",
-          "description": "面向分析师、量化交易者和AI代理的开放数据平台。",
-          "url": "https://github.com/OpenBB-finance/OpenBB",
-          "stars": 71102,
+          "title": "microsoft/ai-agents-for-beginners",
+          "description": "18 Lessons to Get Started Building AI Agents",
+          "url": "https://github.com/microsoft/ai-agents-for-beginners",
+          "stars": 70685,
           "id": 2
         },
         {
-          "title": "docling-project/docling",
-          "description": "让文档准备好用于生成式AI的管道。",
-          "url": "https://github.com/docling-project/docling",
-          "stars": 63872,
+          "title": "shanraisshan/claude-code-best-practice",
+          "description": "From vibe coding to agentic engineering - practice makes claude perfect",
+          "url": "https://github.com/shanraisshan/claude-code-best-practice",
+          "stars": 63720,
           "id": 3
         },
         {
-          "title": "crewAIInc/crewAI",
-          "description": "编排角色扮演自主AI代理的框架，促进协作智能。",
-          "url": "https://github.com/crewAIInc/crewAI",
-          "stars": 56250,
+          "title": "santifer/career-ops",
+          "description": "Open-source AI job search: scan job portals, evaluate listings with a structured A-F rubric into a 1.0-5.0 score, tailor your CV, track applications",
+          "url": "https://github.com/santifer/career-ops",
+          "stars": 62200,
           "id": 4
         },
         {
-          "title": "microsoft/VibeVoice",
-          "description": "开源前沿语音AI，提供高质量语音合成能力。",
-          "url": "https://github.com/microsoft/VibeVoice",
-          "stars": 50602,
+          "title": "MemPalace/mempalace",
+          "description": "The best-benchmarked open-source AI memory system. And it's free.",
+          "url": "https://github.com/MemPalace/mempalace",
+          "stars": 57875,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-07-28T13:41:26.639+08:00"
+  "updatedAt": "2026-07-30T13:33:58.715+08:00"
 }
