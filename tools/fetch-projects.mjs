@@ -19,6 +19,13 @@ const IMAGES_DIR = path.join(OUTPUT_DIR, 'images')
 
 
 const repos = [
+  {
+    id: 'examinai',
+    name: 'Examinai',
+    tech: ['Next.js', 'React', 'TypeScript', 'AI', 'IELTS'],
+    url: 'https://github.com/LLsetnow/examinai',
+    website: 'https://ielts.akai.ink',
+  },
   { id: 'agent-bot',      name: 'AgentBot',     tech: ['Agent', 'ComfyUI', 'AIGC', 'Python'],           url: 'https://github.com/LLsetnow/AgentBot' },
   { id: 'mio-chat',       name: 'MioChat',      tech: ['Python', 'LLM', 'RTS', 'TTS'],                   url: 'https://github.com/LLsetnow/MioChat.git' },
   { id: 'graph-rag',      name: 'GraphRag',     tech: ['RAG', 'GraphRAG', 'LLM', 'Python'],             url: 'https://github.com/LLsetnow/GraphRag.git' },
@@ -187,6 +194,7 @@ async function main() {
         description: info.description ?? '',
         tech: repo.tech,
         url: repo.url,
+        website: repo.website ?? null,
         readme: content,
         _images: tasks, // meta field, stripped before writing JSON
       })
@@ -200,6 +208,7 @@ async function main() {
         description: '',
         tech: repo.tech,
         url: repo.url,
+        website: repo.website ?? null,
         readme: `# ${repo.name}\n\n_Project data temporarily unavailable._`,
         _images: [],
       })
