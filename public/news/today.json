@@ -1,76 +1,76 @@
 {
-  "date": "2026-08-01",
+  "date": "2026-08-02",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "国内唯一做多模态长记忆的公司，融资数千万，押注主动智能｜涌现新项目",
-          "description": "丘脑智能推出原生多模态记忆基座，融资数千万，押注AI从通用走向个性化并最终实现主动智能。",
-          "url": "https://36kr.com/p/3919386961177985?f=rss",
+          "title": "字节跳动发布视频创作模型Seedance 2.5",
+          "description": "36氪今日热点汇总显示，字节跳动发布视频创作模型Seedance 2.5；Anthropic称AI模型在测试期间误侵三家真实机构系统。",
+          "url": "https://36kr.com/p/3920241240419720?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "36氪独家｜曾爱玲入职B站担任AI视频生成业务负责人，向CEO陈睿汇报",
-          "description": "曾爱玲入职B站担任AI视频生成业务负责人，直接向CEO陈睿汇报，B站此前已公开表示AI投入聚焦视频理解、推荐和辅助创作等方向。",
-          "url": "https://36kr.com/p/3910776673064073?f=rss",
+          "title": "国内唯一做多模态长记忆的公司，融资数千万，押注主动智能｜涌现新项目",
+          "description": "丘脑智能推出原生多模态记忆基座，押注AI从通用走向个性化与主动智能，Memory被认为是实现主动智能的关键。",
+          "url": "https://36kr.com/p/3919386961177985?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "滴普科技首份半年报：AI业务收入增长209%，二季度已实现盈利",
-          "description": "企业级大模型AI应用解决方案商滴普科技发布上市后首份中期业绩，上半年营收同比增长115%，AI业务收入增长209%，二季度已实现盈利。",
-          "url": "https://36kr.com/p/3919137999957382?f=rss",
+          "title": "曾爱玲入职B站担任AI视频生成业务负责人，向CEO陈睿汇报",
+          "description": "36氪独家获悉，曾爱玲入职哔哩哔哩担任AI视频生成业务负责人，B站此前已公开表示AI投入聚焦视频理解、视频推荐和辅助视频创作。",
+          "url": "https://36kr.com/p/3910776673064073?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "菜鸟CTO李强创业做Physical AI平台，获云启、商汤超亿元种子轮融资｜硬氪首发",
-          "description": "Physical AI平台公司昆腾动力完成超亿元种子轮融资，由云启资本和商汤科技联合投资，资金将用于Physical AI核心技术研发及全球化市场拓展。",
-          "url": "https://36kr.com/p/3917874427555457?f=rss",
+          "title": "浪潮数据发布自研AI数据操作系统",
+          "description": "在36氪晚报中，浪潮数据发布自研AI数据操作系统，进一步推动企业级AI基础设施落地。",
+          "url": "https://36kr.com/p/3919378312670857?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "报道称OpenAI面临投资者担忧与竞争压力 IPO或推迟至明年",
-          "description": "因投资者担忧现金消耗速度过快，同时Anthropic等竞争对手增长显著，OpenAI的IPO可能推迟至明年。",
-          "url": "https://36kr.com/newsflashes/3920415886061193?f=rss",
+          "title": "滴普科技首份半年报：AI业务收入增长209%，二季度已实现盈利",
+          "description": "企业级大模型AI应用解决方案商滴普科技发布上市后首份中期业绩，AI相关平台解决方案成为核心增长引擎，上半年营收同比增长115%。",
+          "url": "https://36kr.com/p/3919137999957382?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "全世界最强的AI，都在“抄”这群普通人的作业",
-          "description": "文章盘点GPT-6曝光、DeepSeek V4 Flash公测、SD2.5发布、MiniMax多模态开源视频模型发布等AI圈最新动态，并聚焦一位被AI“抄作业”的普通人。",
-          "url": "https://www.huxiu.com/article/4879928.html?f=rss",
+          "title": "银河证券：Kimi K3正式开源重塑大模型商业生态",
+          "description": "Kimi K3上线后48小时请求量打满集群，银河证券认为国产开源模型能力逼近全球顶级闭源模型，建议关注国产超节点及产业链公司。",
+          "url": "https://36kr.com/newsflashes/3921888283848068?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "实测MiniMax H3 VS Seedance 2.5：旗鼓相当，性格迥异",
-          "description": "对同日上线的MiniMax H3和字节Seedance 2.5视频模型进行实测，二者能力旗鼓相当但风格差异明显，MiniMax宣布即将开放权重。",
-          "url": "https://www.huxiu.com/article/4879925.html?f=rss",
+          "title": "长三角（嘉兴）Token运营中心正式启动",
+          "description": "长三角（嘉兴）Token运营中心门户网站上线，企业无需找代码、配环境即可按需调用大模型，平台类似数据模型超市。",
+          "url": "https://36kr.com/newsflashes/3921838043065736?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "互联网流量，崩塌了",
-          "description": "百度App一年减少近7000万月活，文章探讨AI助手对传统互联网流量的冲击，指出“每从AI助手获得一次答案，就有一个网站死了”。",
-          "url": "https://www.huxiu.com/article/4879924.html?f=rss",
+          "title": "从TPU到自我进化的Agent，Jeff Dean如何判断AI的下一步",
+          "description": "在YC Startup School上，Jeff Dean与YC合伙人Diana Hu对谈，讨论了TPU、自我进化的Agent以及AI未来的技术方向。",
+          "url": "https://www.huxiu.com/article/4880039.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "25岁AI大神，百亿美元439%收益，爆仓后：一篇165页AI长文，到底讲透了什么",
-          "description": "25岁德国投资者Leopold Aschenbrenner因近4倍杠杆被迫清仓约160亿美元AI持仓，其165页AI长文引发广泛讨论，深度剖析AI产业趋势。",
-          "url": "https://www.huxiu.com/article/4879923.html?f=rss",
+          "title": "宇树上市在即，世界模型前夕，机器人站在理想与物理世界之间",
+          "description": "宇树科技IPO发行价锚定约420亿元市值，同时谷歌也在同日发布机器人相关进展，行业正处在世界模型与物理世界交汇的关键节点。",
+          "url": "https://www.huxiu.com/article/4880035.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "AI破译梦的密码：你的大脑正在重写现实",
-          "description": "文章探讨AI技术在梦境研究中的应用，分析大脑如何构建梦境以及记忆与现实的关系，展示了AI在神经科学领域的跨界价值。",
-          "url": "https://www.huxiu.com/article/4879915.html?f=rss",
+          "title": "AI短剧取代真人剧，从不跟演员打招呼",
+          "description": "短剧行业在AI生成内容冲击下加速洗牌，AI短剧以周为单位制造爆款，正在改变演员生态和影视生产方式。",
+          "url": "https://www.huxiu.com/article/4880015.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "韩国7月出口飙升至历史第二高，半导体出口暴增近180%",
-          "description": "在存储芯片需求旺盛推动下，韩国7月出口同比飙升近63%至989.9亿美元，创历史第二高单月出口额；半导体出口暴增179%至410亿美元，连续两个月突破400亿美元大关。",
-          "url": "https://36kr.com/newsflashes/3920386651319944?f=rss",
+          "title": "新一代通信网建设加快，千兆光网覆盖超九成国民经济大类",
+          "description": "工信部表示我国正加快新一代通信网建设，千兆光网典型应用已覆盖超九成国民经济大类，与人工智能、云计算等技术加速融合，在智能制造、智慧交通、数字医疗等领域形成可复制推广的成果。",
+          "url": "https://36kr.com/newsflashes/3921943840353668?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "日本干预汇市或实锤，单日或砸8.45万亿日元",
-          "description": "据彭博基于日本央行账户数据分析，日本政府可能于7月31日入市买入日元、抛售美元，干预规模约8.45万亿日元（约528亿美元），当日美元兑日元暴跌近500点。日媒称周五再下场，美国被曝同日出手。",
-          "url": "https://www.huxiu.com/article/4879932.html?f=rss",
+          "title": "住房公积金缴存覆盖面扩大 灵活就业人员可自愿缴纳",
+          "description": "住建部启动《住房公积金管理条例》修订并公开征求意见，明确个体工商户、非全日制从业人员以及其他灵活就业人员可自愿缴存，覆盖范围进一步扩大。",
+          "url": "https://36kr.com/newsflashes/3921921311452807?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "OpenAI面临投资者担忧与竞争压力，IPO或推迟至明年",
-          "description": "据报道，OpenAI可能将IPO推迟至明年。近期大投资者对其现金消耗速度过快表示担忧，而其他投资者通过投资Anthropic对冲风险；Anthropic营收增长近期已超过OpenAI。",
-          "url": "https://36kr.com/newsflashes/3920415886061193?f=rss",
+          "title": "银河证券：Kimi K3正式开源重塑大模型商业生态，建议关注国产超节点及产业链相关公司",
+          "description": "银河证券研报指出，Kimi K3上线48小时请求量打满集群，验证其模型能力突出且算力紧缺；国产开源模型逼近全球顶级闭源模型，建议关注国产超节点及产业链相关公司。",
+          "url": "https://36kr.com/newsflashes/3921888283848068?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "2025年地方养老基金投资收益率为5.76%",
-          "description": "全国社会保障基金理事会发布报告，2025年地方养老基金投资收益额1420.71亿元，投资收益率5.76%，自受托运营以来年均投资收益率5.14%，超过保底收益率约2.51个百分点。",
-          "url": "https://36kr.com/newsflashes/3920417829416325?f=rss",
+          "title": "上半年全国二手房交易占比超新房",
+          "description": "今年上半年全国二手房交易占比达到50.4%，传统以新房销售为主的增量交易格局加快向新房和二手房并举转变，房地产市场进入存量时代。",
+          "url": "https://36kr.com/newsflashes/3921834901974659?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "中国—乌兹别克斯坦AEO互认安排正式实施",
-          "description": "8月1日，中国与乌兹别克斯坦海关“经认证的经营者”（AEO）互认安排正式实施，两国贸易便利化水平进一步提升，AEO企业将享受较低查验率、优先检查等便利措施。",
-          "url": "https://36kr.com/newsflashes/3920416879062662?f=rss",
+          "title": "宇树上市在即，世界模型前夕，机器人站在理想与物理世界之间",
+          "description": "宇树科技IPO发行安排落地，发行价锚定约420亿元市值，而此前一级市场估值还在600亿至1000亿元之间浮动，机器人行业同日还有谷歌发布世界模型等消息。",
+          "url": "https://www.huxiu.com/article/4880035.html?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "蔚来公司7月交付35934台，同比增长71%",
-          "description": "2026年7月，蔚来公司交付新车35934台，同比增长71%，其中蔚来品牌交付20008台，乐道品牌10155台，firefly萤火虫5771台。",
-          "url": "https://36kr.com/newsflashes/3920471544934019?f=rss",
+          "title": "申根签证死于2026？",
+          "description": "非洲移民危机导致欧盟内部出现巨大裂缝，意大利率先恢复从8月1日起对从西班牙乘飞机或轮船抵达的非欧盟旅客实施选择性边检，申根体系面临严峻挑战。",
+          "url": "https://www.huxiu.com/article/4880031.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "北京新规今起施行：快递外卖电动车须悬挂专用号牌",
-          "description": "《北京市快递、外卖行业非机动车管理办法（试行）》正式施行，用于快递外卖服务的电动自行车须登记并悬挂专用号牌，实行“专车专用”，停止用于相关服务的须在30日内变更普通号牌。",
-          "url": "https://36kr.com/newsflashes/3920415204978310?f=rss",
+          "title": "线上接单、线下暗改：谁在打通新能源车外挂电池的“灰色通道”？",
+          "description": "未来8年我国动力电池质保到期的新能源汽车总量将逼近2000万辆，售后维保体系供需矛盾凸显，外挂电池等灰色改装现象引发行业监管关注。",
+          "url": "https://www.huxiu.com/article/4880033.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "上海地铁时隔21年拟全线调价，释放哪些信号？",
-          "description": "上海市发改委拟于9月7日召开优化轨道交通票价机制听证会，这是上海地铁时隔21年拟调整票价。分析称与客流结构变化和运营成本上升有关，上海地铁或进入“存量运营”阶段。",
-          "url": "https://www.huxiu.com/article/4879926.html?f=rss",
+          "title": "商业航天运力的“罗生门”",
+          "description": "商业航天领域关于火箭运力与市场需求的叙事存在多方冲突，各利益方从自身立场出发表述，导致行业真实供给能力难以达成共识。",
+          "url": "https://www.huxiu.com/article/4880026.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "国内航线燃油附加费将再次下调",
-          "description": "据36氪今日热点，国内航线燃油附加费将再次下调，这将降低航空出行成本，对暑运后续客流和民航业构成积极影响。",
-          "url": "https://36kr.com/p/3920241240419720?f=rss",
+          "title": "新势力7月洗牌：零跑独破10万，“蔚小理米”困在3万档",
+          "description": "7月传统车市淡季，乘联会预估国内狭义乘用车零售同比下滑16.8%，新势力分化加剧：零跑单月交付突破10万辆，蔚来、小鹏、理想、小米等仍困在3万辆档位。",
+          "url": "https://www.huxiu.com/article/4880020.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "马斯克回应特斯拉剥离中国业务",
-          "description": "马斯克就“特斯拉剥离中国业务”的传闻作出回应，该话题成为今日热点，涉及特斯拉在华业务前景及外资汽车公司在中国市场的战略调整。",
-          "url": "https://36kr.com/p/3920241240419720?f=rss",
+          "title": "世界车企重新校准方向",
+          "description": "2026年7月全球汽车业出现一系列关联变化：日产反思对销量和市场份额的盲目追逐，法拉利质疑中国车企快速迭代模式，日本车企试图共享底层技术，行业战略集体转向。",
+          "url": "https://www.huxiu.com/article/4880010.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -156,35 +156,35 @@
       "items": [
         {
           "title": "Learning to Trace Seiberg Dualities",
-          "description": "Proposes a machine learning approach to systematically establish Seiberg dualities in physical systems, addressing the computational challenges of identifying dual descriptions.",
+          "description": "利用机器学习方法研究塞伯格对偶，探索物理系统中的对偶关系学习与计算挑战。",
           "url": "https://arxiv.org/pdf/2607.28628v1",
           "stars": null,
           "id": 1
         },
         {
           "title": "ACE-Data-0: Human-Centric Ambient Capture as Embodied Data Engine",
-          "description": "Introduces a large-scale embodied data engine using human-centric ambient capture to address the data bottleneck in embodied AI, integrating first-person perception, motion, manipulation, and multimodal signals.",
+          "description": "构建以人为中心的环境数据采集引擎，为具身智能提供多模态感知与运动训练数据。",
           "url": "https://arxiv.org/pdf/2607.28625v1",
           "stars": null,
           "id": 2
         },
         {
           "title": "AskChem: Claim-Centered Infrastructure for Chemistry Literature Synthesis",
-          "description": "Presents a claim-centered retrieval and synthesis infrastructure for chemistry literature, moving beyond ranked document lists to support efficient extraction of specific scientific findings.",
+          "description": "面向化学文献的声明中心化基础设施，支持从多篇论文中综合特定研究结论。",
           "url": "https://arxiv.org/pdf/2607.28618v1",
           "stars": null,
           "id": 3
         },
         {
           "title": "AISPA: User-Centric System Prompt Auditing for Large Language Model Applications",
-          "description": "Develops a user-centric auditing framework for system prompts in LLM applications, aiming to enhance transparency and accountability in commercial AI products.",
+          "description": "提出以用户为中心的系统提示审计方法，提升大语言模型应用中提示配置的透明度与安全性。",
           "url": "https://arxiv.org/pdf/2607.28617v1",
           "stars": null,
           "id": 4
         },
         {
           "title": "Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering",
-          "description": "Explores recursive self-improvement in AI by training a model focused on machine learning engineering tasks, providing a concrete testbed for AI4AI research.",
+          "description": "训练AI4AI模型以在机器学习工程中实现递归自我改进，探索AI自我提升的可行路径。",
           "url": "https://arxiv.org/pdf/2607.28568v1",
           "stars": null,
           "id": 5
@@ -195,42 +195,42 @@
       "name": "AI 开源项目",
       "items": [
         {
-          "title": "docling-project/docling",
-          "description": "Get your documents ready for generation AI with this open-source document processing tool.",
-          "url": "https://github.com/docling-project/docling",
-          "stars": 64084,
+          "title": "netdata",
+          "description": "The fastest path to AI-powered full stack observability, even for lean teams.",
+          "url": "https://github.com/netdata/netdata",
+          "stars": 79979,
           "id": 1
         },
         {
-          "title": "virattt/ai-hedge-fund",
-          "description": "An AI-powered hedge fund team that uses language models to make investment decisions.",
-          "url": "https://github.com/virattt/ai-hedge-fund",
-          "stars": 62565,
+          "title": "Scrapling",
+          "description": "An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!",
+          "url": "https://github.com/D4Vinci/Scrapling",
+          "stars": 72126,
           "id": 2
         },
         {
-          "title": "mvanhorn/last30days-skill",
-          "description": "AI agent skill that researches topics across Reddit, X, YouTube, HN, Polymarket, and the web, then synthesizes a grounded summary.",
-          "url": "https://github.com/mvanhorn/last30days-skill",
-          "stars": 56336,
+          "title": "docling",
+          "description": "Get your documents ready for gen AI",
+          "url": "https://github.com/docling-project/docling",
+          "stars": 64108,
           "id": 3
         },
         {
-          "title": "aaif-goose/goose",
-          "description": "An open-source, extensible AI agent that goes beyond code suggestions—install, execute, edit, and test with any LLM.",
-          "url": "https://github.com/aaif-goose/goose",
-          "stars": 52043,
+          "title": "career-ops",
+          "description": "Open-source AI job search: scan job portals, evaluate listings with a structured A-F rubric into a 1.0-5.0 score, tailor your CV, track applications.",
+          "url": "https://github.com/santifer/career-ops",
+          "stars": 62489,
           "id": 4
         },
         {
-          "title": "mudler/LocalAI",
-          "description": "Open-source AI engine that runs any model—LLMs, vision, voice, image, video—on any hardware without requiring a GPU.",
-          "url": "https://github.com/mudler/LocalAI",
-          "stars": 48077,
+          "title": "mempalace",
+          "description": "The best-benchmarked open-source AI memory system. And it's free.",
+          "url": "https://github.com/MemPalace/mempalace",
+          "stars": 57951,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-08-01T13:49:24.081+08:00"
+  "updatedAt": "2026-08-02T13:50:45.021+08:00"
 }
