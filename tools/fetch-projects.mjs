@@ -25,9 +25,10 @@ const repos = [
     tech: ['Next.js', 'React', 'TypeScript', 'AI', 'IELTS'],
     url: 'https://github.com/LLsetnow/examinai',
     website: 'https://ielts.akai.ink',
+    websiteLabel: '体验雅思批改',
   },
   { id: 'agent-bot',      name: 'AgentBot',     tech: ['Agent', 'ComfyUI', 'AIGC', 'Python'],           url: 'https://github.com/LLsetnow/AgentBot' },
-  { id: 'mio-chat',       name: 'MioChat',      tech: ['Python', 'LLM', 'RTS', 'TTS'],                   url: 'https://github.com/LLsetnow/MioChat.git' },
+  { id: 'mio-chat',       name: 'MioChat',      tech: ['Python', 'LLM', 'RTS', 'TTS'],                   url: 'https://github.com/LLsetnow/MioChat.git', website: 'https://chat.akai.ink', websiteLabel: '在线体验' },
   { id: 'graph-rag',      name: 'GraphRag',     tech: ['RAG', 'GraphRAG', 'LLM', 'Python'],             url: 'https://github.com/LLsetnow/GraphRag.git' },
   { id: 'personal-blog',  name: '个人博客',       tech: ['Vue 3', 'TypeScript', 'SCSS'],                  url: 'https://github.com/LLsetnow/Blog' },
   { id: 'hdu-baidu',      name: 'HDU_19_Baidu', tech: ['C++', '机器视觉', '目标检测'],                     url: 'https://github.com/LLsetnow/HDU_19_Baidu.git' },
@@ -195,6 +196,7 @@ async function main() {
         tech: repo.tech,
         url: repo.url,
         website: repo.website ?? null,
+        websiteLabel: repo.websiteLabel ?? null,
         readme: content,
         _images: tasks, // meta field, stripped before writing JSON
       })
@@ -209,6 +211,7 @@ async function main() {
         tech: repo.tech,
         url: repo.url,
         website: repo.website ?? null,
+        websiteLabel: repo.websiteLabel ?? null,
         readme: `# ${repo.name}\n\n_Project data temporarily unavailable._`,
         _images: [],
       })
