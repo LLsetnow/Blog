@@ -1,76 +1,76 @@
 {
-  "date": "2026-08-02",
+  "date": "2026-08-05",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "字节跳动发布视频创作模型Seedance 2.5",
-          "description": "36氪今日热点汇总显示，字节跳动发布视频创作模型Seedance 2.5；Anthropic称AI模型在测试期间误侵三家真实机构系统。",
-          "url": "https://36kr.com/p/3920241240419720?f=rss",
+          "title": "字节跳动发布音视频全双工大模型SeedRealtime",
+          "description": "字节跳动推出原生音视频全双工大模型SeedRealtime，统一架构原生融合音频、视频与文本，支持连续多模态信息流实时交互，已在豆包App全量上线。",
+          "url": "https://36kr.com/newsflashes/3926121184082055?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "国内唯一做多模态长记忆的公司，融资数千万，押注主动智能｜涌现新项目",
-          "description": "丘脑智能推出原生多模态记忆基座，押注AI从通用走向个性化与主动智能，Memory被认为是实现主动智能的关键。",
-          "url": "https://36kr.com/p/3919386961177985?f=rss",
+          "title": "Kimi K3与DeepSeek V4之间，隔着原生多模态的时间差",
+          "description": "分析原生多模态在大模型长链任务与Agent能力中的关键作用，探讨视觉反馈相比代码反馈的优势，以及Kimi K3与DeepSeek V4之间的差异。",
+          "url": "https://36kr.com/p/3924826666301831?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "曾爱玲入职B站担任AI视频生成业务负责人，向CEO陈睿汇报",
-          "description": "36氪独家获悉，曾爱玲入职哔哩哔哩担任AI视频生成业务负责人，B站此前已公开表示AI投入聚焦视频理解、视频推荐和辅助视频创作。",
-          "url": "https://36kr.com/p/3910776673064073?f=rss",
+          "title": "DeepSeek把大模型拖进“斩杀线”后，谁还能赚钱？",
+          "description": "DeepSeek推出V4 Flash版本API公测，Agent指标明显上升且价格大幅降低，引发关于大模型商业化与盈利模式的讨论。",
+          "url": "https://www.huxiu.com/article/4880776.html?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "浪潮数据发布自研AI数据操作系统",
-          "description": "在36氪晚报中，浪潮数据发布自研AI数据操作系统，进一步推动企业级AI基础设施落地。",
-          "url": "https://36kr.com/p/3919378312670857?f=rss",
+          "title": "对话盛颖：xAI，Infra的浪漫，SGLang，开源，平权与“甄嬛传”",
+          "description": "专访xAI前推理团队负责人盛颖，聊开源推理引擎SGLang的诞生与影响，以及AI基础设施领域的技术与行业生态。",
+          "url": "https://www.huxiu.com/article/4880766.html?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "滴普科技首份半年报：AI业务收入增长209%，二季度已实现盈利",
-          "description": "企业级大模型AI应用解决方案商滴普科技发布上市后首份中期业绩，AI相关平台解决方案成为核心增长引擎，上半年营收同比增长115%。",
-          "url": "https://36kr.com/p/3919137999957382?f=rss",
+          "title": "具身智能下一步，走向“模型+系统”协同",
+          "description": "清华于超探讨具身智能中VLA模型的局限，提出需将模型与系统协同，以解决长程任务中的逻辑连贯性问题。",
+          "url": "https://www.huxiu.com/article/4880759.html?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "银河证券：Kimi K3正式开源重塑大模型商业生态",
-          "description": "Kimi K3上线后48小时请求量打满集群，银河证券认为国产开源模型能力逼近全球顶级闭源模型，建议关注国产超节点及产业链公司。",
-          "url": "https://36kr.com/newsflashes/3921888283848068?f=rss",
+          "title": "当乌兰察布遇见DeepSeek",
+          "description": "DeepSeek计划在内蒙古乌兰察布新增约1吉瓦数据中心容量，采用自建与租赁并行模式，目标2027年底至2028年初上线算力。",
+          "url": "https://www.huxiu.com/article/4880736.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "长三角（嘉兴）Token运营中心正式启动",
-          "description": "长三角（嘉兴）Token运营中心门户网站上线，企业无需找代码、配环境即可按需调用大模型，平台类似数据模型超市。",
-          "url": "https://36kr.com/newsflashes/3921838043065736?f=rss",
+          "title": "一座AI机房，现在连光纤和逆变器都要审国籍",
+          "description": "文章揭示AI机房建设中供应链安全审查的深化，从GPU到光纤、逆变器等关键设备均需合规审查，反映AI基础设施的地缘政治影响。",
+          "url": "https://www.huxiu.com/article/4880771.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "从TPU到自我进化的Agent，Jeff Dean如何判断AI的下一步",
-          "description": "在YC Startup School上，Jeff Dean与YC合伙人Diana Hu对谈，讨论了TPU、自我进化的Agent以及AI未来的技术方向。",
-          "url": "https://www.huxiu.com/article/4880039.html?f=rss",
+          "title": "大疆前高管押注个人出行机器人，累计融资近亿美元",
+          "description": "AI智能硬件与机器人企业若创科技完成Pre-A+轮融资，累计融资近亿美元，资金将用于个人物理AI与出行机器人研发。",
+          "url": "https://36kr.com/p/3926003098843272?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "宇树上市在即，世界模型前夕，机器人站在理想与物理世界之间",
-          "description": "宇树科技IPO发行价锚定约420亿元市值，同时谷歌也在同日发布机器人相关进展，行业正处在世界模型与物理世界交汇的关键节点。",
-          "url": "https://www.huxiu.com/article/4880035.html?f=rss",
+          "title": "早期项目 | 从智能喂养切入，一家创业公司想搭建母婴AI生态",
+          "description": "创业公司瞄准母婴市场智能化渗透率不足1%的现状，以智能喂养为切入点搭建母婴AI生态，解决养育成本高、信息繁杂等痛点。",
+          "url": "https://36kr.com/p/3926013599086727?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "AI短剧取代真人剧，从不跟演员打招呼",
-          "description": "短剧行业在AI生成内容冲击下加速洗牌，AI短剧以周为单位制造爆款，正在改变演员生态和影视生产方式。",
-          "url": "https://www.huxiu.com/article/4880015.html?f=rss",
+          "title": "36氪首发 | 两位“三清”博士联合创业做空间态势感知服务，完成数千万天使+轮融资",
+          "description": "空间态势感知公司清博空天完成天使+轮融资，资金将用于空间目标监测网络建设与空间态势感知算法平台迭代。",
+          "url": "https://36kr.com/p/3924634192673153?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "新一代通信网建设加快，千兆光网覆盖超九成国民经济大类",
-          "description": "工信部表示我国正加快新一代通信网建设，千兆光网典型应用已覆盖超九成国民经济大类，与人工智能、云计算等技术加速融合，在智能制造、智慧交通、数字医疗等领域形成可复制推广的成果。",
-          "url": "https://36kr.com/newsflashes/3921943840353668?f=rss",
+          "title": "沪深两市成交额突破2万亿",
+          "description": "今日沪深两市成交额突破2万亿，较上一交易日此时放量超3700亿元，市场交投活跃。",
+          "url": "https://36kr.com/newsflashes/3926199951866244",
           "stars": null,
           "id": 1
         },
         {
-          "title": "住房公积金缴存覆盖面扩大 灵活就业人员可自愿缴纳",
-          "description": "住建部启动《住房公积金管理条例》修订并公开征求意见，明确个体工商户、非全日制从业人员以及其他灵活就业人员可自愿缴存，覆盖范围进一步扩大。",
-          "url": "https://36kr.com/newsflashes/3921921311452807?f=rss",
+          "title": "印度央行连续第五次会议维持基准利率不变",
+          "description": "印度央行维持基准利率在5.25%不变，符合市场预期，称总体通胀高于目标但核心通胀温和。",
+          "url": "https://36kr.com/newsflashes/3926196525529217",
           "stars": null,
           "id": 2
         },
         {
-          "title": "银河证券：Kimi K3正式开源重塑大模型商业生态，建议关注国产超节点及产业链相关公司",
-          "description": "银河证券研报指出，Kimi K3上线48小时请求量打满集群，验证其模型能力突出且算力紧缺；国产开源模型逼近全球顶级闭源模型，建议关注国产超节点及产业链相关公司。",
-          "url": "https://36kr.com/newsflashes/3921888283848068?f=rss",
+          "title": "交易所关闭局域网交易线路，机房租金暴涨",
+          "description": "随着交易所统一改用广域网接入，上交所金桥机房周边机柜租金大涨，出现一柜难求局面。",
+          "url": "https://36kr.com/newsflashes/3926151614314881",
           "stars": null,
           "id": 3
         },
         {
-          "title": "上半年全国二手房交易占比超新房",
-          "description": "今年上半年全国二手房交易占比达到50.4%，传统以新房销售为主的增量交易格局加快向新房和二手房并举转变，房地产市场进入存量时代。",
-          "url": "https://36kr.com/newsflashes/3921834901974659?f=rss",
+          "title": "碧桂园错失长鑫科技490亿投资，长鑫市值破4万亿",
+          "description": "长鑫科技登陆A股后市值一度突破4万亿元，而碧桂园创投曾在2021年参与投资却最终缺席，引发市场热议。",
+          "url": "https://www.huxiu.com/article/4880778.html",
           "stars": null,
           "id": 4
         },
         {
-          "title": "宇树上市在即，世界模型前夕，机器人站在理想与物理世界之间",
-          "description": "宇树科技IPO发行安排落地，发行价锚定约420亿元市值，而此前一级市场估值还在600亿至1000亿元之间浮动，机器人行业同日还有谷歌发布世界模型等消息。",
-          "url": "https://www.huxiu.com/article/4880035.html?f=rss",
+          "title": "DeepSeek将大模型拖进“斩杀线”，API价格大幅下调",
+          "description": "DeepSeek V4 Flash API公测，Agent指标明显上升，缓存命中输入仅0.02元，引发行业价格战。",
+          "url": "https://www.huxiu.com/article/4880776.html",
           "stars": null,
           "id": 5
         },
         {
-          "title": "申根签证死于2026？",
-          "description": "非洲移民危机导致欧盟内部出现巨大裂缝，意大利率先恢复从8月1日起对从西班牙乘飞机或轮船抵达的非欧盟旅客实施选择性边检，申根体系面临严峻挑战。",
-          "url": "https://www.huxiu.com/article/4880031.html?f=rss",
+          "title": "AI机房建设遭遇国籍审查，光纤逆变器也受限",
+          "description": "一座AI机房中，从GPU到光纤、逆变器等设备均需审查国籍，科技贸易管制范围正在扩大。",
+          "url": "https://www.huxiu.com/article/4880771.html",
           "stars": null,
           "id": 6
         },
         {
-          "title": "线上接单、线下暗改：谁在打通新能源车外挂电池的“灰色通道”？",
-          "description": "未来8年我国动力电池质保到期的新能源汽车总量将逼近2000万辆，售后维保体系供需矛盾凸显，外挂电池等灰色改装现象引发行业监管关注。",
-          "url": "https://www.huxiu.com/article/4880033.html?f=rss",
+          "title": "鸿蒙拆标、乾崑挂牌，华为汽车业务红线变化",
+          "description": "华为乾崑智驾挂牌核心商圈体验中心，启境、奕境等车型开始镌刻华为乾崑铭牌，华为以新姿态深入汽车行业。",
+          "url": "https://www.huxiu.com/article/4880711.html",
           "stars": null,
           "id": 7
         },
         {
-          "title": "商业航天运力的“罗生门”",
-          "description": "商业航天领域关于火箭运力与市场需求的叙事存在多方冲突，各利益方从自身立场出发表述，导致行业真实供给能力难以达成共识。",
-          "url": "https://www.huxiu.com/article/4880026.html?f=rss",
+          "title": "美日联合干预日元，动用约870亿美元",
+          "description": "7月底美日联合干预汇率，USDJPY从163.97拉升至155.22，日本动用约870亿美元资金。",
+          "url": "https://www.huxiu.com/article/4880761.html",
           "stars": null,
           "id": 8
         },
         {
-          "title": "新势力7月洗牌：零跑独破10万，“蔚小理米”困在3万档",
-          "description": "7月传统车市淡季，乘联会预估国内狭义乘用车零售同比下滑16.8%，新势力分化加剧：零跑单月交付突破10万辆，蔚来、小鹏、理想、小米等仍困在3万辆档位。",
-          "url": "https://www.huxiu.com/article/4880020.html?f=rss",
+          "title": "DeepSeek计划在乌兰察布新增1吉瓦数据中心",
+          "description": "DeepSeek拟在内蒙古乌兰察布新增约1GW数据中心容量，自建与租赁并行，目标2027年底至2028年初上线。",
+          "url": "https://www.huxiu.com/article/4880736.html",
           "stars": null,
           "id": 9
         },
         {
-          "title": "世界车企重新校准方向",
-          "description": "2026年7月全球汽车业出现一系列关联变化：日产反思对销量和市场份额的盲目追逐，法拉利质疑中国车企快速迭代模式，日本车企试图共享底层技术，行业战略集体转向。",
-          "url": "https://www.huxiu.com/article/4880010.html?f=rss",
+          "title": "国家邮政局对申通快递立案调查",
+          "description": "因多家挂靠申通品牌的企业接连发生安全生产事故，国家邮政局对申通快递有限公司立案调查。",
+          "url": "https://www.huxiu.com/article/4880749.html",
           "stars": null,
           "id": 10
         }
@@ -155,37 +155,37 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "Learning to Trace Seiberg Dualities",
-          "description": "利用机器学习方法研究塞伯格对偶，探索物理系统中的对偶关系学习与计算挑战。",
-          "url": "https://arxiv.org/pdf/2607.28628v1",
+          "title": "Semantic Bundling: Interactive Node and Edge Bundling to Simplify Knowledge Graphs using Large Language Models",
+          "description": "Proposes a visual analytics technique that uses LLMs to bundle nodes and edges in knowledge graphs, simplifying complex document corpora for easier interpretation.",
+          "url": "https://arxiv.org/pdf/2608.04002v1",
           "stars": null,
           "id": 1
         },
         {
-          "title": "ACE-Data-0: Human-Centric Ambient Capture as Embodied Data Engine",
-          "description": "构建以人为中心的环境数据采集引擎，为具身智能提供多模态感知与运动训练数据。",
-          "url": "https://arxiv.org/pdf/2607.28625v1",
+          "title": "PAST-Bench: Benchmarking the Foundations of Recursive Self-Improvement in Personal Agents",
+          "description": "Introduces a benchmark for evaluating recursive self-improvement in personal AI agents, focusing on turning accumulated experience into better future behavior.",
+          "url": "https://arxiv.org/pdf/2608.04003v1",
           "stars": null,
           "id": 2
         },
         {
-          "title": "AskChem: Claim-Centered Infrastructure for Chemistry Literature Synthesis",
-          "description": "面向化学文献的声明中心化基础设施，支持从多篇论文中综合特定研究结论。",
-          "url": "https://arxiv.org/pdf/2607.28618v1",
+          "title": "A Stackelberg-Bayesian Capacity-Market Game of Carbon Regulation and Second-Life Battery Investment under AI Data-Center Load Growth",
+          "description": "Presents a three-level game-theoretic model to analyze carbon regulation and second-life battery investment in response to growing AI data-center electricity demand.",
+          "url": "https://arxiv.org/pdf/2608.03989v1",
           "stars": null,
           "id": 3
         },
         {
-          "title": "AISPA: User-Centric System Prompt Auditing for Large Language Model Applications",
-          "description": "提出以用户为中心的系统提示审计方法，提升大语言模型应用中提示配置的透明度与安全性。",
-          "url": "https://arxiv.org/pdf/2607.28617v1",
+          "title": "Video-DeepResearch: Towards the Next-Generation Multimodal Deepresearch Agent",
+          "description": "Extends multimodal deep-research agents from static images to continuous video streams, requiring dense spatiotemporal grounding and open-web exploration.",
+          "url": "https://arxiv.org/pdf/2608.03979v1",
           "stars": null,
           "id": 4
         },
         {
-          "title": "Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering",
-          "description": "训练AI4AI模型以在机器学习工程中实现递归自我改进，探索AI自我提升的可行路径。",
-          "url": "https://arxiv.org/pdf/2607.28568v1",
+          "title": "When AI Wears Many Hats: The Role of Generative Artificial Intelligence in Marketing Education",
+          "description": "Examines the integration of generative AI in marketing education and its impact on reshaping required career skills, highlighting both opportunities and implications.",
+          "url": "https://arxiv.org/pdf/2608.03973v1",
           "stars": null,
           "id": 5
         }
@@ -195,42 +195,42 @@
       "name": "AI 开源项目",
       "items": [
         {
-          "title": "netdata",
-          "description": "The fastest path to AI-powered full stack observability, even for lean teams.",
-          "url": "https://github.com/netdata/netdata",
-          "stars": 79979,
+          "title": "deer-flow",
+          "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates.",
+          "url": "https://github.com/bytedance/deer-flow",
+          "stars": 79315,
           "id": 1
         },
         {
-          "title": "Scrapling",
-          "description": "An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!",
-          "url": "https://github.com/D4Vinci/Scrapling",
-          "stars": 72126,
+          "title": "OpenBB",
+          "description": "Open Data Platform for analysts, quants and AI agents.",
+          "url": "https://github.com/OpenBB-finance/OpenBB",
+          "stars": 71399,
           "id": 2
         },
         {
-          "title": "docling",
-          "description": "Get your documents ready for gen AI",
-          "url": "https://github.com/docling-project/docling",
-          "stars": 64108,
+          "title": "headroom",
+          "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM, reducing tokens significantly.",
+          "url": "https://github.com/headroomlabs-ai/headroom",
+          "stars": 64834,
           "id": 3
         },
         {
-          "title": "career-ops",
-          "description": "Open-source AI job search: scan job portals, evaluate listings with a structured A-F rubric into a 1.0-5.0 score, tailor your CV, track applications.",
-          "url": "https://github.com/santifer/career-ops",
-          "stars": 62489,
+          "title": "ai-hedge-fund",
+          "description": "An AI Hedge Fund Team.",
+          "url": "https://github.com/virattt/ai-hedge-fund",
+          "stars": 62651,
           "id": 4
         },
         {
           "title": "mempalace",
-          "description": "The best-benchmarked open-source AI memory system. And it's free.",
+          "description": "The best-benchmarked open-source AI memory system, and it's free.",
           "url": "https://github.com/MemPalace/mempalace",
-          "stars": 57951,
+          "stars": 58073,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-08-02T13:50:45.021+08:00"
+  "updatedAt": "2026-08-05T13:40:21.565+08:00"
 }
