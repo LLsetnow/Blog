@@ -1,76 +1,76 @@
 {
-  "date": "2026-08-05",
+  "date": "2026-08-06",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "字节跳动发布音视频全双工大模型SeedRealtime",
-          "description": "字节跳动推出原生音视频全双工大模型SeedRealtime，统一架构原生融合音频、视频与文本，支持连续多模态信息流实时交互，已在豆包App全量上线。",
-          "url": "https://36kr.com/newsflashes/3926121184082055?f=rss",
+          "title": "36氪首发 | 清华系物理AI基建初创再融数千万美元，数据设备进入全球化规模交付",
+          "description": "物理AI数据基础设施服务商Ropedia完成数千万美元天使轮融资，将用于全球规模化交付。",
+          "url": "https://36kr.com/p/3927411140425861?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "Kimi K3与DeepSeek V4之间，隔着原生多模态的时间差",
-          "description": "分析原生多模态在大模型长链任务与Agent能力中的关键作用，探讨视觉反馈相比代码反馈的优势，以及Kimi K3与DeepSeek V4之间的差异。",
-          "url": "https://36kr.com/p/3924826666301831?f=rss",
+          "title": "以 AI 赋能名中医传承教育：韩学杰传承工作室与传神素问在京签约",
+          "description": "传神素问与韩学杰传承工作室合作，依托中医大模型与数字孪生技术共建智能传承模型。",
+          "url": "https://36kr.com/p/3926621101422721?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "DeepSeek把大模型拖进“斩杀线”后，谁还能赚钱？",
-          "description": "DeepSeek推出V4 Flash版本API公测，Agent指标明显上升且价格大幅降低，引发关于大模型商业化与盈利模式的讨论。",
-          "url": "https://www.huxiu.com/article/4880776.html?f=rss",
+          "title": "36氪首发 | 大疆前高管押注个人出行机器人，累计融资近亿美元",
+          "description": "AI智能硬件与机器人企业若创科技完成Pre-A+轮融资，累计近亿美元，用于个人物理AI产品研发。",
+          "url": "https://36kr.com/p/3926003098843272?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "对话盛颖：xAI，Infra的浪漫，SGLang，开源，平权与“甄嬛传”",
-          "description": "专访xAI前推理团队负责人盛颖，聊开源推理引擎SGLang的诞生与影响，以及AI基础设施领域的技术与行业生态。",
-          "url": "https://www.huxiu.com/article/4880766.html?f=rss",
+          "title": "豆包接入原生音视频全双工大模型SeedRealtime",
+          "description": "豆包视频通话功能升级，正式接入原生音视频全双工大模型SeedRealtime。",
+          "url": "https://36kr.com/newsflashes/3927564832389248?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "具身智能下一步，走向“模型+系统”协同",
-          "description": "清华于超探讨具身智能中VLA模型的局限，提出需将模型与系统协同，以解决长程任务中的逻辑连贯性问题。",
-          "url": "https://www.huxiu.com/article/4880759.html?f=rss",
+          "title": "细思极恐，Agent学会给自己办假身份了……",
+          "description": "英国AI安全测试中，AI Agent为通过审核而伪造身份，暴露前沿模型的安全漏洞。",
+          "url": "https://www.huxiu.com/article/4881093.html?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "当乌兰察布遇见DeepSeek",
-          "description": "DeepSeek计划在内蒙古乌兰察布新增约1吉瓦数据中心容量，采用自建与租赁并行模式，目标2027年底至2028年初上线算力。",
-          "url": "https://www.huxiu.com/article/4880736.html?f=rss",
+          "title": "谷歌AI大换血，背后究竟发生了什么？",
+          "description": "Google DeepMind领导层调整，Demis Hassabis不再负责日常运营，引发外界关注。",
+          "url": "https://www.huxiu.com/article/4881091.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "一座AI机房，现在连光纤和逆变器都要审国籍",
-          "description": "文章揭示AI机房建设中供应链安全审查的深化，从GPU到光纤、逆变器等关键设备均需合规审查，反映AI基础设施的地缘政治影响。",
-          "url": "https://www.huxiu.com/article/4880771.html?f=rss",
+          "title": "关于DeepSeek API涨价的简短评论",
+          "description": "DeepSeek宣布将整体上调API服务定价，涨幅预计较大，引发市场讨论。",
+          "url": "https://www.huxiu.com/article/4881088.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "大疆前高管押注个人出行机器人，累计融资近亿美元",
-          "description": "AI智能硬件与机器人企业若创科技完成Pre-A+轮融资，累计融资近亿美元，资金将用于个人物理AI与出行机器人研发。",
-          "url": "https://36kr.com/p/3926003098843272?f=rss",
+          "title": "Jeff Dean离职创业，对Gemini有什么影响？",
+          "description": "Jeff Dean宣布离职并与Sanjay Ghemawat共同创业，市场关注其对谷歌Gemini项目的影响。",
+          "url": "https://www.huxiu.com/article/4881087.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "早期项目 | 从智能喂养切入，一家创业公司想搭建母婴AI生态",
-          "description": "创业公司瞄准母婴市场智能化渗透率不足1%的现状，以智能喂养为切入点搭建母婴AI生态，解决养育成本高、信息繁杂等痛点。",
-          "url": "https://36kr.com/p/3926013599086727?f=rss",
+          "title": "物理AI重塑智驾",
+          "description": "物理AI浪潮正重塑智能驾驶演进路径，从被动感知走向主动预判和行动。",
+          "url": "https://www.huxiu.com/article/4881079.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "36氪首发 | 两位“三清”博士联合创业做空间态势感知服务，完成数千万天使+轮融资",
-          "description": "空间态势感知公司清博空天完成天使+轮融资，资金将用于空间目标监测网络建设与空间态势感知算法平台迭代。",
-          "url": "https://36kr.com/p/3924634192673153?f=rss",
+          "title": "一秒两块钱，AI视频贵到普通人用不起？",
+          "description": "MiniMax H3和字节Seedance 2.5等视频模型上线，但高昂定价引发热议。",
+          "url": "https://www.huxiu.com/article/4881035.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "沪深两市成交额突破2万亿",
-          "description": "今日沪深两市成交额突破2万亿，较上一交易日此时放量超3700亿元，市场交投活跃。",
-          "url": "https://36kr.com/newsflashes/3926199951866244",
+          "title": "美国突然出手买入日元：特朗普正在把汇率变成新的地缘武器",
+          "description": "美国财政部长待办事项中惊现“买入日元”，全球金融竞争进入新阶段，汇率正被用作地缘政治武器。",
+          "url": "https://www.huxiu.com/article/4881065.html?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "印度央行连续第五次会议维持基准利率不变",
-          "description": "印度央行维持基准利率在5.25%不变，符合市场预期，称总体通胀高于目标但核心通胀温和。",
-          "url": "https://36kr.com/newsflashes/3926196525529217",
+          "title": "交易所关停局域网行情通道，6大影响",
+          "description": "7月31日晚间，交易所正式关闭机房内局域网行情通道，行情接入统一切换至广域网线路，从物理层面切断部分机构的微秒级行情优势。",
+          "url": "https://www.huxiu.com/article/4881075.html?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "交易所关闭局域网交易线路，机房租金暴涨",
-          "description": "随着交易所统一改用广域网接入，上交所金桥机房周边机柜租金大涨，出现一柜难求局面。",
-          "url": "https://36kr.com/newsflashes/3926151614314881",
+          "title": "昨日，全球“最炸裂资产”：黄金…",
+          "description": "现货黄金价格周三飙升4.1%，创2月3日以来最大单日涨幅，在美元指数和美债收益率等跨资产对比中表现异常突出。",
+          "url": "https://www.huxiu.com/article/4881099.html?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "碧桂园错失长鑫科技490亿投资，长鑫市值破4万亿",
-          "description": "长鑫科技登陆A股后市值一度突破4万亿元，而碧桂园创投曾在2021年参与投资却最终缺席，引发市场热议。",
-          "url": "https://www.huxiu.com/article/4880778.html",
+          "title": "国家能源局：需加强核电参与电力市场的政策机制研究",
+          "description": "国家能源局发布《中国核电发展报告（2026）》，指出核电将逐步进入电力市场，需探索体现核电低碳价值的制度。",
+          "url": "https://36kr.com/newsflashes/3927586789521542?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "DeepSeek将大模型拖进“斩杀线”，API价格大幅下调",
-          "description": "DeepSeek V4 Flash API公测，Agent指标明显上升，缓存命中输入仅0.02元，引发行业价格战。",
-          "url": "https://www.huxiu.com/article/4880776.html",
+          "title": "日本半导体或面临断供，港股IPO数量同比增长132%",
+          "description": "8点1氪汇总：日本半导体或面临断供；今年以来港股IPO数量同比增长132%，科技类公司占比过半；马斯克个人财富大幅缩水等。",
+          "url": "https://36kr.com/p/3925868626360706?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "AI机房建设遭遇国籍审查，光纤逆变器也受限",
-          "description": "一座AI机房中，从GPU到光纤、逆变器等设备均需审查国籍，科技贸易管制范围正在扩大。",
-          "url": "https://www.huxiu.com/article/4880771.html",
+          "title": "长鑫拒绝苹果压价，宇树科技开启科创板IPO询价｜8点1氪",
+          "description": "长鑫存储拒绝苹果压价，坚持报价高于三星电子、SK海力士；宇树科技开启科创板IPO初步询价；韩国宣布进入“国家灾难状态”。",
+          "url": "https://36kr.com/p/3927280128539015?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "鸿蒙拆标、乾崑挂牌，华为汽车业务红线变化",
-          "description": "华为乾崑智驾挂牌核心商圈体验中心，启境、奕境等车型开始镌刻华为乾崑铭牌，华为以新姿态深入汽车行业。",
-          "url": "https://www.huxiu.com/article/4880711.html",
+          "title": "关于DeepSeek API涨价的简短评论",
+          "description": "DeepSeek官宣计划近期整体上调API服务定价，预计涨幅较大，具体方案以正式通知为准。",
+          "url": "https://www.huxiu.com/article/4881088.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "美日联合干预日元，动用约870亿美元",
-          "description": "7月底美日联合干预汇率，USDJPY从163.97拉升至155.22，日本动用约870亿美元资金。",
-          "url": "https://www.huxiu.com/article/4880761.html",
+          "title": "“车企牌”电池相继上车，不只是PK宁德时代",
+          "description": "鸿蒙智行巨鲸电池、理想牌电池、小米龙甲电池等相继发布，车企通过穿透式管理将电池技术标准掌控在自己手中。",
+          "url": "https://36kr.com/p/3925382191708552?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "DeepSeek计划在乌兰察布新增1吉瓦数据中心",
-          "description": "DeepSeek拟在内蒙古乌兰察布新增约1GW数据中心容量，自建与租赁并行，目标2027年底至2028年初上线。",
-          "url": "https://www.huxiu.com/article/4880736.html",
+          "title": "第一批炒具身智能的股票，已经跌惨了",
+          "description": "AIX财经梳理30家具身智能相关公司，指出并非所有公司都受益，不少题材股票已出现大幅下跌。",
+          "url": "https://www.huxiu.com/article/4881052.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "国家邮政局对申通快递立案调查",
-          "description": "因多家挂靠申通品牌的企业接连发生安全生产事故，国家邮政局对申通快递有限公司立案调查。",
-          "url": "https://www.huxiu.com/article/4880749.html",
+          "title": "华为数据存储产品副总裁：存储涨价有一定影响，目前可以保证客户供应",
+          "description": "华为数据存储产品线副总裁吴俊杰表示，全球存储颗粒价格上涨对华为战略有影响，但已与全球客户充分沟通，目前可保证供应。",
+          "url": "https://36kr.com/newsflashes/3927596348520840?f=rss",
           "stars": null,
           "id": 10
         }
@@ -155,37 +155,37 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "Semantic Bundling: Interactive Node and Edge Bundling to Simplify Knowledge Graphs using Large Language Models",
-          "description": "Proposes a visual analytics technique that uses LLMs to bundle nodes and edges in knowledge graphs, simplifying complex document corpora for easier interpretation.",
-          "url": "https://arxiv.org/pdf/2608.04002v1",
+          "title": "Characterizing Visual Accessibility Issues in AI Developer Tools: An Empirical Study",
+          "description": "An empirical study investigating visual accessibility barriers in AI-assisted developer tools, such as chat panels and generated diffs, highlighting challenges for users with visual impairments.",
+          "url": "https://arxiv.org/pdf/2608.05116v1",
           "stars": null,
           "id": 1
         },
         {
-          "title": "PAST-Bench: Benchmarking the Foundations of Recursive Self-Improvement in Personal Agents",
-          "description": "Introduces a benchmark for evaluating recursive self-improvement in personal AI agents, focusing on turning accumulated experience into better future behavior.",
-          "url": "https://arxiv.org/pdf/2608.04003v1",
+          "title": "AI-based single-shot structured-light depth reconstruction for real-time laparoscopic surgical guidance",
+          "description": "Presents an AI-driven single-shot structured-light method for real-time depth reconstruction in laparoscopic surgery, aiming to improve intraoperative guidance for robotic procedures.",
+          "url": "https://arxiv.org/pdf/2608.05109v1",
           "stars": null,
           "id": 2
         },
         {
-          "title": "A Stackelberg-Bayesian Capacity-Market Game of Carbon Regulation and Second-Life Battery Investment under AI Data-Center Load Growth",
-          "description": "Presents a three-level game-theoretic model to analyze carbon regulation and second-life battery investment in response to growing AI data-center electricity demand.",
-          "url": "https://arxiv.org/pdf/2608.03989v1",
+          "title": "CoPlan: A Trustworthy Co-Intelligence Interface for Care Planning through Role-Based Contestable Argument Graphs",
+          "description": "Introduces CoPlan, an AI-supported interface for collaborative care planning that uses contestable argument graphs to enable transparent, role-based decision coordination among clinicians and care teams.",
+          "url": "https://arxiv.org/pdf/2608.05107v1",
           "stars": null,
           "id": 3
         },
         {
-          "title": "Video-DeepResearch: Towards the Next-Generation Multimodal Deepresearch Agent",
-          "description": "Extends multimodal deep-research agents from static images to continuous video streams, requiring dense spatiotemporal grounding and open-web exploration.",
-          "url": "https://arxiv.org/pdf/2608.03979v1",
+          "title": "HexMIL: Hierarchical Attention MIL for Ante-Hoc Explainable Detection of AI-Manipulated CT Volumes",
+          "description": "Proposes HexMIL, a hierarchical attention multiple-instance learning framework for detecting AI-manipulated CT volumes with ante-hoc explainability, addressing limitations of existing medical deepfake detectors.",
+          "url": "https://arxiv.org/pdf/2608.05101v1",
           "stars": null,
           "id": 4
         },
         {
-          "title": "When AI Wears Many Hats: The Role of Generative Artificial Intelligence in Marketing Education",
-          "description": "Examines the integration of generative AI in marketing education and its impact on reshaping required career skills, highlighting both opportunities and implications.",
-          "url": "https://arxiv.org/pdf/2608.03973v1",
+          "title": "Item Response Theory for AI Safety",
+          "description": "Applies item response theory to AI safety benchmarks, offering a principled approach to measure and interpret language model safety behaviors beyond aggregated scores.",
+          "url": "https://arxiv.org/pdf/2608.05086v1",
           "stars": null,
           "id": 5
         }
@@ -196,41 +196,41 @@
       "items": [
         {
           "title": "deer-flow",
-          "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates.",
+          "description": "开源的长时程SuperAgent框架，支持研究、编码和创建，集成沙盒、记忆、工具等。",
           "url": "https://github.com/bytedance/deer-flow",
-          "stars": 79315,
+          "stars": 79383,
           "id": 1
         },
         {
           "title": "OpenBB",
-          "description": "Open Data Platform for analysts, quants and AI agents.",
+          "description": "面向分析师、量化研究员和AI代理的开放数据平台。",
           "url": "https://github.com/OpenBB-finance/OpenBB",
-          "stars": 71399,
+          "stars": 71453,
           "id": 2
         },
         {
-          "title": "headroom",
-          "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM, reducing tokens significantly.",
-          "url": "https://github.com/headroomlabs-ai/headroom",
-          "stars": 64834,
+          "title": "docling",
+          "description": "让文档为生成式AI做好准备的工具。",
+          "url": "https://github.com/docling-project/docling",
+          "stars": 64307,
           "id": 3
         },
         {
-          "title": "ai-hedge-fund",
-          "description": "An AI Hedge Fund Team.",
-          "url": "https://github.com/virattt/ai-hedge-fund",
-          "stars": 62651,
+          "title": "mem0",
+          "description": "为AI代理提供的通用记忆层。",
+          "url": "https://github.com/mem0ai/mem0",
+          "stars": 62630,
           "id": 4
         },
         {
-          "title": "mempalace",
-          "description": "The best-benchmarked open-source AI memory system, and it's free.",
-          "url": "https://github.com/MemPalace/mempalace",
-          "stars": 58073,
+          "title": "private-gpt",
+          "description": "面向本地模型的私有AI应用API层，支持RAG、技能、工具、MCP等。",
+          "url": "https://github.com/zylon-ai/private-gpt",
+          "stars": 57409,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-08-05T13:40:21.565+08:00"
+  "updatedAt": "2026-08-06T13:42:26.876+08:00"
 }
