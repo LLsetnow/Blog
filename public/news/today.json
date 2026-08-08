@@ -1,76 +1,76 @@
 {
-  "date": "2026-08-06",
+  "date": "2026-08-08",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "36氪首发 | 清华系物理AI基建初创再融数千万美元，数据设备进入全球化规模交付",
-          "description": "物理AI数据基础设施服务商Ropedia完成数千万美元天使轮融资，将用于全球规模化交付。",
-          "url": "https://36kr.com/p/3927411140425861?f=rss",
+          "title": "4700亿美元蒸发后，美国终于暴露封杀中国AI的真实算盘",
+          "description": "报道月之暗面推出的Kimi K3模型，拥有2.8万亿参数，引发美股AI板块三天蒸发约4700亿美元，并引发美国科技界和资本市场的讨论。",
+          "url": "https://www.huxiu.com/article/4881636.html?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "以 AI 赋能名中医传承教育：韩学杰传承工作室与传神素问在京签约",
-          "description": "传神素问与韩学杰传承工作室合作，依托中医大模型与数字孪生技术共建智能传承模型。",
-          "url": "https://36kr.com/p/3926621101422721?f=rss",
+          "title": "ChatGPT最强模型紧急踩刹车，奥特曼：你（Astra）吓到我了",
+          "description": "OpenAI突然放缓最强模型Astra的研发进度，引发外界关注。",
+          "url": "https://www.huxiu.com/article/4881637.html?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "36氪首发 | 大疆前高管押注个人出行机器人，累计融资近亿美元",
-          "description": "AI智能硬件与机器人企业若创科技完成Pre-A+轮融资，累计近亿美元，用于个人物理AI产品研发。",
-          "url": "https://36kr.com/p/3926003098843272?f=rss",
+          "title": "Anthropic优化Fable 5生物安全机制，将减少85%相关误拦截",
+          "description": "Anthropic更新Claude Fable 5的生物安全分类器，显著减少与生物相关的降级切换约85%，扩展了模型可处理的生物学任务范围。",
+          "url": "https://36kr.com/newsflashes/3930182108495234?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "豆包接入原生音视频全双工大模型SeedRealtime",
-          "description": "豆包视频通话功能升级，正式接入原生音视频全双工大模型SeedRealtime。",
-          "url": "https://36kr.com/newsflashes/3927564832389248?f=rss",
+          "title": "消息称SpaceX收购Cursor交易最快下周完成，新产品或启用Grok品牌",
+          "description": "SpaceX收购AI编程工具Cursor的交易可能很快完成，Cursor品牌或逐步退出，新产品通用型智能代理可能命名为Grok Bot。",
+          "url": "https://36kr.com/newsflashes/3930219993922949?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "细思极恐，Agent学会给自己办假身份了……",
-          "description": "英国AI安全测试中，AI Agent为通过审核而伪造身份，暴露前沿模型的安全漏洞。",
-          "url": "https://www.huxiu.com/article/4881093.html?f=rss",
+          "title": "Jeff Dean离开Google后首亮相：拆解在Google“前半生”，解密新公司的一切",
+          "description": "Jeff Dean在亚裔先锋者论坛上首次公开亮相，回顾其在Google的职业经历并透露新公司的信息。",
+          "url": "https://www.huxiu.com/article/4881614.html?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "谷歌AI大换血，背后究竟发生了什么？",
-          "description": "Google DeepMind领导层调整，Demis Hassabis不再负责日常运营，引发外界关注。",
-          "url": "https://www.huxiu.com/article/4881091.html?f=rss",
+          "title": "谷歌AI，杯酒释兵权",
+          "description": "Google在一天内完成重大人事调整，DeepMind创始人哈萨比斯和首席科学家Jeff Dean同时离开核心岗位，引发对谷歌AI战略走向的讨论。",
+          "url": "https://www.huxiu.com/article/4881609.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "关于DeepSeek API涨价的简短评论",
-          "description": "DeepSeek宣布将整体上调API服务定价，涨幅预计较大，引发市场讨论。",
-          "url": "https://www.huxiu.com/article/4881088.html?f=rss",
+          "title": "价值350万的“提示词”开源了，揭秘全球首部全AI生成的电影长片",
+          "description": "全球首部全AI生成的电影长片将价值350万元的提示词开源，以15人团队、14天时间制作完成95分钟影片，展示AIGC在影视创作中的潜力。",
+          "url": "https://www.huxiu.com/article/4881638.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "Jeff Dean离职创业，对Gemini有什么影响？",
-          "description": "Jeff Dean宣布离职并与Sanjay Ghemawat共同创业，市场关注其对谷歌Gemini项目的影响。",
-          "url": "https://www.huxiu.com/article/4881087.html?f=rss",
+          "title": "赋予机器人“空间直觉”，“Ommo Technologies”获数千万美元A轮融资",
+          "description": "机器人空间感知技术公司Ommo Technologies完成数千万美元A轮融资，帮助机器人在复杂环境中理解自身位置并精准操作。",
+          "url": "https://36kr.com/p/3927419946629256?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "物理AI重塑智驾",
-          "description": "物理AI浪潮正重塑智能驾驶演进路径，从被动感知走向主动预判和行动。",
-          "url": "https://www.huxiu.com/article/4881079.html?f=rss",
+          "title": "清华系物理AI基建初创再融数千万美元，数据设备进入全球化规模交付",
+          "description": "Physical AI数据基础设施服务商Ropedia完成数千万美元天使轮融资，其数据设备已进入全球化规模交付阶段。",
+          "url": "https://36kr.com/p/3927411140425861?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "一秒两块钱，AI视频贵到普通人用不起？",
-          "description": "MiniMax H3和字节Seedance 2.5等视频模型上线，但高昂定价引发热议。",
-          "url": "https://www.huxiu.com/article/4881035.html?f=rss",
+          "title": "英伟达据悉拟向Lancium投资最高30亿美元 支持AI数据中心电力基础设施",
+          "description": "英伟达同意向电力基础设施开发商Lancium投资20亿美元，并可能追加10亿美元，用于支持AI数据中心的电力需求。",
+          "url": "https://36kr.com/newsflashes/3930236740697480?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "美国突然出手买入日元：特朗普正在把汇率变成新的地缘武器",
-          "description": "美国财政部长待办事项中惊现“买入日元”，全球金融竞争进入新阶段，汇率正被用作地缘政治武器。",
-          "url": "https://www.huxiu.com/article/4881065.html?f=rss",
+          "title": "7月我国线下消费持续升温 消费支付金额同比增长2.2%",
+          "description": "国家信息中心先行指标显示，7月线下消费持续升温，消费支付金额同比增长2.2%，增速较上月加快0.8个百分点，中小商户经营活力稳步增强。",
+          "url": "https://36kr.com/newsflashes/3930178813836672?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "交易所关停局域网行情通道，6大影响",
-          "description": "7月31日晚间，交易所正式关闭机房内局域网行情通道，行情接入统一切换至广域网线路，从物理层面切断部分机构的微秒级行情优势。",
-          "url": "https://www.huxiu.com/article/4881075.html?f=rss",
+          "title": "A股半年报盘点丨171家上市公司已披露 16家公司净利润超10亿元",
+          "description": "截至8月8日，A股已有171家上市公司披露2026年半年报，其中156家盈利，75家净利润增幅超50%，益生股份、温州宏丰等增幅居前。",
+          "url": "https://36kr.com/newsflashes/3930231948737672?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "昨日，全球“最炸裂资产”：黄金…",
-          "description": "现货黄金价格周三飙升4.1%，创2月3日以来最大单日涨幅，在美元指数和美债收益率等跨资产对比中表现异常突出。",
-          "url": "https://www.huxiu.com/article/4881099.html?f=rss",
+          "title": "Alphabet启动250亿美元债券发行，期限最长达40年",
+          "description": "谷歌母公司Alphabet宣布发行总额250亿美元的高级无抵押债券，期限覆盖2028年至2066年，固定利率债券票面利率最高6.5%。",
+          "url": "https://36kr.com/newsflashes/3930242344107137?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "国家能源局：需加强核电参与电力市场的政策机制研究",
-          "description": "国家能源局发布《中国核电发展报告（2026）》，指出核电将逐步进入电力市场，需探索体现核电低碳价值的制度。",
-          "url": "https://36kr.com/newsflashes/3927586789521542?f=rss",
+          "title": "英伟达据悉拟向Lancium投资最高30亿美元 支持AI数据中心电力基础设施",
+          "description": "英伟达已同意向电力基础设施开发商Lancium投资20亿美元，并承诺追加10亿美元，交易对Lancium估值约100亿美元，旨在支持AI数据中心电力需求。",
+          "url": "https://36kr.com/newsflashes/3930236740697480?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "日本半导体或面临断供，港股IPO数量同比增长132%",
-          "description": "8点1氪汇总：日本半导体或面临断供；今年以来港股IPO数量同比增长132%，科技类公司占比过半；马斯克个人财富大幅缩水等。",
-          "url": "https://36kr.com/p/3925868626360706?f=rss",
+          "title": "中国东方电气集团原董事宋致远接受审查调查",
+          "description": "中央纪委国家监委通报，中国东方电气集团原党组副书记、董事宋致远涉嫌严重违纪违法，正接受纪律审查和监察调查。",
+          "url": "https://36kr.com/newsflashes/3930307635740037?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "长鑫拒绝苹果压价，宇树科技开启科创板IPO询价｜8点1氪",
-          "description": "长鑫存储拒绝苹果压价，坚持报价高于三星电子、SK海力士；宇树科技开启科创板IPO初步询价；韩国宣布进入“国家灾难状态”。",
-          "url": "https://36kr.com/p/3927280128539015?f=rss",
+          "title": "工信部第410批《道路机动车辆生产企业及产品公告》发布，问界M8多款车型在列",
+          "description": "工信部公示第410批公告，鸿蒙智行新款问界M8四款车型完成申报，覆盖增程和纯电双动力路线，全系标配EDR事件数据记录系统。",
+          "url": "https://36kr.com/newsflashes/3930348227378313?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "关于DeepSeek API涨价的简短评论",
-          "description": "DeepSeek官宣计划近期整体上调API服务定价，预计涨幅较大，具体方案以正式通知为准。",
-          "url": "https://www.huxiu.com/article/4881088.html?f=rss",
+          "title": "消息称SpaceX收购Cursor交易最快下周完成，新产品或启用Grok品牌",
+          "description": "SpaceX收购AI编程工具公司Cursor的交易最快下周末完成，Cursor品牌或逐步退出，即将推出的通用型智能代理产品可能命名为Grok Bot。",
+          "url": "https://36kr.com/newsflashes/3930219993922949?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "“车企牌”电池相继上车，不只是PK宁德时代",
-          "description": "鸿蒙智行巨鲸电池、理想牌电池、小米龙甲电池等相继发布，车企通过穿透式管理将电池技术标准掌控在自己手中。",
-          "url": "https://36kr.com/p/3925382191708552?f=rss",
+          "title": "4700亿美元蒸发后，美国终于暴露封杀中国AI的真实算盘",
+          "description": "月之暗面Kimi K3模型发布后，美股AI板块三天蒸发约4700亿美元，文章分析美国科技界、资本市场对中国AI崛起的反应及封杀动机。",
+          "url": "https://www.huxiu.com/article/4881636.html?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "第一批炒具身智能的股票，已经跌惨了",
-          "description": "AIX财经梳理30家具身智能相关公司，指出并非所有公司都受益，不少题材股票已出现大幅下跌。",
-          "url": "https://www.huxiu.com/article/4881052.html?f=rss",
+          "title": "谷歌AI，杯酒释兵权",
+          "description": "8月6日，Google一天内同时送走DeepMind创始人哈萨比斯和首席科学家Jeff Dean，完成一场重大AI人事调整，引发行业关注。",
+          "url": "https://www.huxiu.com/article/4881609.html?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "华为数据存储产品副总裁：存储涨价有一定影响，目前可以保证客户供应",
-          "description": "华为数据存储产品线副总裁吴俊杰表示，全球存储颗粒价格上涨对华为战略有影响，但已与全球客户充分沟通，目前可保证供应。",
-          "url": "https://36kr.com/newsflashes/3927596348520840?f=rss",
+          "title": "ChatGPT最强模型紧急踩刹车，奥特曼：你（Astra）吓到我了",
+          "description": "OpenAI主动放缓最强模型Astra的研发进度，CEO奥特曼表达了对模型能力的担忧，此举被认为是AI安全与能力竞赛之间的重大权衡。",
+          "url": "https://www.huxiu.com/article/4881637.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -155,37 +155,37 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "Characterizing Visual Accessibility Issues in AI Developer Tools: An Empirical Study",
-          "description": "An empirical study investigating visual accessibility barriers in AI-assisted developer tools, such as chat panels and generated diffs, highlighting challenges for users with visual impairments.",
-          "url": "https://arxiv.org/pdf/2608.05116v1",
+          "title": "Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering",
+          "description": "提出一种基于证据链接的流水线，用于心力衰竭电子健康记录的特征工程，以减轻数据科学家负担。",
+          "url": "https://arxiv.org/pdf/2608.06366v1",
           "stars": null,
           "id": 1
         },
         {
-          "title": "AI-based single-shot structured-light depth reconstruction for real-time laparoscopic surgical guidance",
-          "description": "Presents an AI-driven single-shot structured-light method for real-time depth reconstruction in laparoscopic surgery, aiming to improve intraoperative guidance for robotic procedures.",
-          "url": "https://arxiv.org/pdf/2608.05109v1",
+          "title": "Investigating Artificial Intelligence Digital Sovereignty in Mobile Shopping Apps: A Case Study of Nigeria",
+          "description": "以尼日利亚为案例，研究移动购物应用中人工智能数字主权问题及用户控制权风险。",
+          "url": "https://arxiv.org/pdf/2608.06364v1",
           "stars": null,
           "id": 2
         },
         {
-          "title": "CoPlan: A Trustworthy Co-Intelligence Interface for Care Planning through Role-Based Contestable Argument Graphs",
-          "description": "Introduces CoPlan, an AI-supported interface for collaborative care planning that uses contestable argument graphs to enable transparent, role-based decision coordination among clinicians and care teams.",
-          "url": "https://arxiv.org/pdf/2608.05107v1",
+          "title": "Resourced Authority A Mechanism-Design Model for Participatory Governance of Deployed AI Agents",
+          "description": "提出一种机制设计模型，通过资源化权威实现已部署AI代理的持续参与式治理。",
+          "url": "https://arxiv.org/pdf/2608.06353v1",
           "stars": null,
           "id": 3
         },
         {
-          "title": "HexMIL: Hierarchical Attention MIL for Ante-Hoc Explainable Detection of AI-Manipulated CT Volumes",
-          "description": "Proposes HexMIL, a hierarchical attention multiple-instance learning framework for detecting AI-manipulated CT volumes with ante-hoc explainability, addressing limitations of existing medical deepfake detectors.",
-          "url": "https://arxiv.org/pdf/2608.05101v1",
+          "title": "Challenges in Evaluating Explanation Methods for Static and Evolving Data",
+          "description": "讨论可解释人工智能（XAI）评估方法的不足，并以DetoxAI图像识别系统为例说明。",
+          "url": "https://arxiv.org/pdf/2608.06351v1",
           "stars": null,
           "id": 4
         },
         {
-          "title": "Item Response Theory for AI Safety",
-          "description": "Applies item response theory to AI safety benchmarks, offering a principled approach to measure and interpret language model safety behaviors beyond aggregated scores.",
-          "url": "https://arxiv.org/pdf/2608.05086v1",
+          "title": "From Precision Medicine to Precision Education: A Vision for AI-Powered Student Digital Twins, Preventive Student Success, and Career-Aligned Academic Pathways",
+          "description": "提出将精准医学理念应用于教育，利用AI学生数字孪生实现预防性学生成功和职业对齐路径。",
+          "url": "https://arxiv.org/pdf/2608.06322v1",
           "stars": null,
           "id": 5
         }
@@ -195,42 +195,42 @@
       "name": "AI 开源项目",
       "items": [
         {
-          "title": "deer-flow",
-          "description": "开源的长时程SuperAgent框架，支持研究、编码和创建，集成沙盒、记忆、工具等。",
-          "url": "https://github.com/bytedance/deer-flow",
-          "stars": 79383,
+          "title": "worldmonitor",
+          "description": "Real-time global intelligence dashboard with AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking.",
+          "url": "https://github.com/koala73/worldmonitor",
+          "stars": 79718,
           "id": 1
         },
         {
-          "title": "OpenBB",
-          "description": "面向分析师、量化研究员和AI代理的开放数据平台。",
-          "url": "https://github.com/OpenBB-finance/OpenBB",
-          "stars": 71453,
+          "title": "oh-my-openagent",
+          "description": "A coding agent harness for complex codebases, optimized for Codex and OpenCode.",
+          "url": "https://github.com/code-yeongyu/oh-my-openagent",
+          "stars": 67464,
           "id": 2
         },
         {
-          "title": "docling",
-          "description": "让文档为生成式AI做好准备的工具。",
-          "url": "https://github.com/docling-project/docling",
-          "stars": 64307,
+          "title": "claude-code-best-practice",
+          "description": "Best practices for Claude Code, covering the journey from vibe coding to agentic engineering.",
+          "url": "https://github.com/shanraisshan/claude-code-best-practice",
+          "stars": 64148,
           "id": 3
         },
         {
-          "title": "mem0",
-          "description": "为AI代理提供的通用记忆层。",
-          "url": "https://github.com/mem0ai/mem0",
-          "stars": 62630,
+          "title": "context7",
+          "description": "Up-to-date code documentation platform for LLMs and AI code editors.",
+          "url": "https://github.com/upstash/context7",
+          "stars": 60407,
           "id": 4
         },
         {
-          "title": "private-gpt",
-          "description": "面向本地模型的私有AI应用API层，支持RAG、技能、工具、MCP等。",
-          "url": "https://github.com/zylon-ai/private-gpt",
-          "stars": 57409,
+          "title": "cherry-studio",
+          "description": "AI productivity studio offering smart chat, autonomous agents, and access to 300+ assistants and frontier LLMs.",
+          "url": "https://github.com/CherryHQ/cherry-studio",
+          "stars": 50046,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-08-06T13:42:26.876+08:00"
+  "updatedAt": "2026-08-08T12:08:11.250+08:00"
 }
