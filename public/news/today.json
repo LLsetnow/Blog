@@ -1,76 +1,76 @@
 {
-  "date": "2026-08-08",
+  "date": "2026-08-11",
   "sections": [
     {
       "name": "AI 技术新闻",
       "items": [
         {
-          "title": "4700亿美元蒸发后，美国终于暴露封杀中国AI的真实算盘",
-          "description": "报道月之暗面推出的Kimi K3模型，拥有2.8万亿参数，引发美股AI板块三天蒸发约4700亿美元，并引发美国科技界和资本市场的讨论。",
-          "url": "https://www.huxiu.com/article/4881636.html?f=rss",
+          "title": "Meta发布轻量化AI模型，单张显卡即可运行",
+          "description": "据36氪8点1氪综合报道，Meta发布了一款轻量化AI模型，可在单张显卡上运行，降低了AI部署门槛。",
+          "url": "https://36kr.com/p/3934369453522313?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "ChatGPT最强模型紧急踩刹车，奥特曼：你（Astra）吓到我了",
-          "description": "OpenAI突然放缓最强模型Astra的研发进度，引发外界关注。",
-          "url": "https://www.huxiu.com/article/4881637.html?f=rss",
+          "title": "扎克伯格发长文定义Meta的AI路线图：要做“个人超级智能”",
+          "description": "扎克伯格发表长文，阐述Meta未来的AI方向，强调超级智能、安全、开源和基础设施，目标是发展个人超级智能。",
+          "url": "https://www.huxiu.com/article/4882137.html?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "Anthropic优化Fable 5生物安全机制，将减少85%相关误拦截",
-          "description": "Anthropic更新Claude Fable 5的生物安全分类器，显著减少与生物相关的降级切换约85%，扩展了模型可处理的生物学任务范围。",
-          "url": "https://36kr.com/newsflashes/3930182108495234?f=rss",
+          "title": "千问开放平台上线",
+          "description": "在36氪晚报中提及，千问开放平台正式上线，进一步开放AI能力。",
+          "url": "https://36kr.com/p/3933544245771395?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "消息称SpaceX收购Cursor交易最快下周完成，新产品或启用Grok品牌",
-          "description": "SpaceX收购AI编程工具Cursor的交易可能很快完成，Cursor品牌或逐步退出，新产品通用型智能代理可能命名为Grok Bot。",
-          "url": "https://36kr.com/newsflashes/3930219993922949?f=rss",
+          "title": "算力厂商都在抢“超节点”，谁最可能坐上铁王座？",
+          "description": "中国算力厂商掀起超节点热潮，华为、中兴、阿里、曙光等争夺AI基础设施主导权。",
+          "url": "https://www.huxiu.com/article/4881951.html?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "Jeff Dean离开Google后首亮相：拆解在Google“前半生”，解密新公司的一切",
-          "description": "Jeff Dean在亚裔先锋者论坛上首次公开亮相，回顾其在Google的职业经历并透露新公司的信息。",
-          "url": "https://www.huxiu.com/article/4881614.html?f=rss",
+          "title": "又融了1亿美金的AI公司，说AlphaFold不是生物世界天花板",
+          "description": "AI制药公司寻明生科创始人表示，AI在生物领域的应用不止于AlphaFold，现阶段AI制药实际上是“增本降效”的游戏。",
+          "url": "https://36kr.com/p/3933494167108738?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "谷歌AI，杯酒释兵权",
-          "description": "Google在一天内完成重大人事调整，DeepMind创始人哈萨比斯和首席科学家Jeff Dean同时离开核心岗位，引发对谷歌AI战略走向的讨论。",
-          "url": "https://www.huxiu.com/article/4881609.html?f=rss",
+          "title": "布局“视触觉+压阻”组合方案，机器人触觉传感企业完成数千万元融资",
+          "description": "模量科技完成Pre-A轮融资，将用于研发团队和产线扩建，其触觉传感器方案助力具身智能产业落地。",
+          "url": "https://36kr.com/p/3934529840659842?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "价值350万的“提示词”开源了，揭秘全球首部全AI生成的电影长片",
-          "description": "全球首部全AI生成的电影长片将价值350万元的提示词开源，以15人团队、14天时间制作完成95分钟影片，展示AIGC在影视创作中的潜力。",
-          "url": "https://www.huxiu.com/article/4881638.html?f=rss",
+          "title": "团结引擎2.0发布会：推出AI Agent“团结Codely”",
+          "description": "Unity中国发布团结引擎2.0，围绕核心能力、跨平台部署、AI原生架构升级，并推出可独立执行游戏开发任务的AI Agent。",
+          "url": "https://36kr.com/p/3934480632462729?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "赋予机器人“空间直觉”，“Ommo Technologies”获数千万美元A轮融资",
-          "description": "机器人空间感知技术公司Ommo Technologies完成数千万美元A轮融资，帮助机器人在复杂环境中理解自身位置并精准操作。",
-          "url": "https://36kr.com/p/3927419946629256?f=rss",
+          "title": "获高瓴等基金数亿元投资，LatentVerse要做具身原生大脑",
+          "description": "具身智能创业公司LatentVerse完成数亿元融资，创始人表示不想被归为世界模型公司，而是专注具身原生大脑。",
+          "url": "https://36kr.com/p/3934484753398918?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "清华系物理AI基建初创再融数千万美元，数据设备进入全球化规模交付",
-          "description": "Physical AI数据基础设施服务商Ropedia完成数千万美元天使轮融资，其数据设备已进入全球化规模交付阶段。",
-          "url": "https://36kr.com/p/3927411140425861?f=rss",
+          "title": "近40亿元融资背后：资本为何看好帕西尼",
+          "description": "帕西尼获近40亿元融资，资本看好其在机器人触觉感知领域的技术积累，大模型与触觉结合是具身智能落地关键。",
+          "url": "https://36kr.com/p/3933515490884744?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "英伟达据悉拟向Lancium投资最高30亿美元 支持AI数据中心电力基础设施",
-          "description": "英伟达同意向电力基础设施开发商Lancium投资20亿美元，并可能追加10亿美元，用于支持AI数据中心的电力需求。",
-          "url": "https://36kr.com/newsflashes/3930236740697480?f=rss",
+          "title": "戚薇授权AI数字分身，演员开始批量生产自己",
+          "description": "演员戚薇发布AI数字分身“韩清夏”，通过亲手调校微表情和声音打造，反映AIGC在数字人领域的应用趋势。",
+          "url": "https://www.huxiu.com/article/4882145.html?f=rss",
           "stars": null,
           "id": 10
         }
@@ -80,72 +80,72 @@
       "name": "时政金融新闻",
       "items": [
         {
-          "title": "7月我国线下消费持续升温 消费支付金额同比增长2.2%",
-          "description": "国家信息中心先行指标显示，7月线下消费持续升温，消费支付金额同比增长2.2%，增速较上月加快0.8个百分点，中小商户经营活力稳步增强。",
-          "url": "https://36kr.com/newsflashes/3930178813836672?f=rss",
+          "title": "日本央行据悉将在9月加息以应对通胀风险",
+          "description": "据知情人士透露，日本央行在6月份加息后，可能于9月17日至18日的下次政策会议上再次加息，以应对不断上升的通胀风险。",
+          "url": "https://36kr.com/newsflashes/3934562585836678?f=rss",
           "stars": null,
           "id": 1
         },
         {
-          "title": "A股半年报盘点丨171家上市公司已披露 16家公司净利润超10亿元",
-          "description": "截至8月8日，A股已有171家上市公司披露2026年半年报，其中156家盈利，75家净利润增幅超50%，益生股份、温州宏丰等增幅居前。",
-          "url": "https://36kr.com/newsflashes/3930231948737672?f=rss",
+          "title": "高盛：全球AI投资今年将突破10000亿美元，美国投资接近6000亿美元",
+          "description": "高盛预计2026年全球AI投资总额将超过10000亿美元，其中美国投资接近6000亿美元，凸显AI基础设施和产业投入的持续加速。",
+          "url": "https://36kr.com/p/3933544245771395?f=rss",
           "stars": null,
           "id": 2
         },
         {
-          "title": "Alphabet启动250亿美元债券发行，期限最长达40年",
-          "description": "谷歌母公司Alphabet宣布发行总额250亿美元的高级无抵押债券，期限覆盖2028年至2066年，固定利率债券票面利率最高6.5%。",
-          "url": "https://36kr.com/newsflashes/3930242344107137?f=rss",
+          "title": "商务部初步认定原产于墨西哥和美国的进口碧根果存在倾销",
+          "description": "商务部公告初步认定原产于墨西哥和美国的进口碧根果存在倾销行为，后续或将采取相应贸易救济措施。",
+          "url": "https://36kr.com/p/3934369453522313?f=rss",
           "stars": null,
           "id": 3
         },
         {
-          "title": "英伟达据悉拟向Lancium投资最高30亿美元 支持AI数据中心电力基础设施",
-          "description": "英伟达已同意向电力基础设施开发商Lancium投资20亿美元，并承诺追加10亿美元，交易对Lancium估值约100亿美元，旨在支持AI数据中心电力需求。",
-          "url": "https://36kr.com/newsflashes/3930236740697480?f=rss",
+          "title": "宇树科技启动网上申购，发行价150.80元对应市值609.93亿元",
+          "description": "宇树科技于8月10日启动网上申购，发行价150.80元，对应市值609.93亿元，成为人形机器人公司中备受关注的IPO。",
+          "url": "https://www.huxiu.com/article/4882187.html?f=rss",
           "stars": null,
           "id": 4
         },
         {
-          "title": "中国东方电气集团原董事宋致远接受审查调查",
-          "description": "中央纪委国家监委通报，中国东方电气集团原党组副书记、董事宋致远涉嫌严重违纪违法，正接受纪律审查和监察调查。",
-          "url": "https://36kr.com/newsflashes/3930307635740037?f=rss",
+          "title": "扎克伯格发长文定义Meta的AI路线图：要做“个人超级智能”",
+          "description": "扎克伯格于8月10日发表长文，提出Meta未来将聚焦“个人超级智能”，并围绕开源、安全与基础设施构建AI发展战略。",
+          "url": "https://www.huxiu.com/article/4882137.html?f=rss",
           "stars": null,
           "id": 5
         },
         {
-          "title": "工信部第410批《道路机动车辆生产企业及产品公告》发布，问界M8多款车型在列",
-          "description": "工信部公示第410批公告，鸿蒙智行新款问界M8四款车型完成申报，覆盖增程和纯电双动力路线，全系标配EDR事件数据记录系统。",
-          "url": "https://36kr.com/newsflashes/3930348227378313?f=rss",
+          "title": "算力厂商都在抢“超节点”，谁最可能坐上铁王座？",
+          "description": "华为、中兴、阿里、曙光等中国算力厂商正掀起“超节点”热潮，争夺AI基础设施主导权，被视为下一代算力竞争的关键。",
+          "url": "https://www.huxiu.com/article/4881951.html?f=rss",
           "stars": null,
           "id": 6
         },
         {
-          "title": "消息称SpaceX收购Cursor交易最快下周完成，新产品或启用Grok品牌",
-          "description": "SpaceX收购AI编程工具公司Cursor的交易最快下周末完成，Cursor品牌或逐步退出，即将推出的通用型智能代理产品可能命名为Grok Bot。",
-          "url": "https://36kr.com/newsflashes/3930219993922949?f=rss",
+          "title": "汽车大省格局洗牌：安徽浙江逆袭，谁在掉队？",
+          "description": "2026年上半年，安徽汽车产量168.67万辆、新能源汽车产量88.18万辆均居全国第一，广东、浙江分列其后，传统汽车大省格局发生显著变化。",
+          "url": "https://www.huxiu.com/article/4882153.html?f=rss",
           "stars": null,
           "id": 7
         },
         {
-          "title": "4700亿美元蒸发后，美国终于暴露封杀中国AI的真实算盘",
-          "description": "月之暗面Kimi K3模型发布后，美股AI板块三天蒸发约4700亿美元，文章分析美国科技界、资本市场对中国AI崛起的反应及封杀动机。",
-          "url": "https://www.huxiu.com/article/4881636.html?f=rss",
+          "title": "A股三大指数午间休盘涨跌不一，创业板指涨1.41%",
+          "description": "8月11日A股午间收盘，沪指跌0.05%，深成指涨0.65%，创业板指涨1.41%；油气、通信设备、制药板块领涨，航天军工、贵金属等跌幅居前。",
+          "url": "https://36kr.com/newsflashes/3934570657906051?f=rss",
           "stars": null,
           "id": 8
         },
         {
-          "title": "谷歌AI，杯酒释兵权",
-          "description": "8月6日，Google一天内同时送走DeepMind创始人哈萨比斯和首席科学家Jeff Dean，完成一场重大AI人事调整，引发行业关注。",
-          "url": "https://www.huxiu.com/article/4881609.html?f=rss",
+          "title": "恒指午间休盘跌0.63%，恒生科技指数跌1.27%",
+          "description": "8月11日恒指午间休盘跌0.63%，恒生科技指数跌1.27%；医药、石油、电气设备领涨，汽车、有色、软件服务跌幅居前，南向资金净买入17.99亿港元。",
+          "url": "https://36kr.com/newsflashes/3934599742176649?f=rss",
           "stars": null,
           "id": 9
         },
         {
-          "title": "ChatGPT最强模型紧急踩刹车，奥特曼：你（Astra）吓到我了",
-          "description": "OpenAI主动放缓最强模型Astra的研发进度，CEO奥特曼表达了对模型能力的担忧，此举被认为是AI安全与能力竞赛之间的重大权衡。",
-          "url": "https://www.huxiu.com/article/4881637.html?f=rss",
+          "title": "南大光电：ArF光刻胶六款产品通过客户验证并实现销售",
+          "description": "南大光电在互动平台表示，公司ArF光刻胶已有六款产品通过客户验证并实现销售，目前50吨产能尚未满产，另有数款产品在客户验证中。",
+          "url": "https://36kr.com/newsflashes/3934606781398147?f=rss",
           "stars": null,
           "id": 10
         }
@@ -155,37 +155,37 @@
       "name": "AI 学术论文",
       "items": [
         {
-          "title": "Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering",
-          "description": "提出一种基于证据链接的流水线，用于心力衰竭电子健康记录的特征工程，以减轻数据科学家负担。",
-          "url": "https://arxiv.org/pdf/2608.06366v1",
+          "title": "Multimodal Model Diffing for Feature Discovery and Control",
+          "description": "针对多模态大语言模型内部特征难以识别与控制的挑战，提出模型差异分析方法以发现和调控特征。",
+          "url": "https://arxiv.org/pdf/2608.09928v1",
           "stars": null,
           "id": 1
         },
         {
-          "title": "Investigating Artificial Intelligence Digital Sovereignty in Mobile Shopping Apps: A Case Study of Nigeria",
-          "description": "以尼日利亚为案例，研究移动购物应用中人工智能数字主权问题及用户控制权风险。",
-          "url": "https://arxiv.org/pdf/2608.06364v1",
+          "title": "Energy-Structured Latent World Models with Neural Time Fields for Physically Consistent Open-World Motion Planning",
+          "description": "提出能量结构潜在世界模型与神经时间场，用于开放世界运动规划，确保生成的轨迹符合物理一致性。",
+          "url": "https://arxiv.org/pdf/2608.09876v1",
           "stars": null,
           "id": 2
         },
         {
-          "title": "Resourced Authority A Mechanism-Design Model for Participatory Governance of Deployed AI Agents",
-          "description": "提出一种机制设计模型，通过资源化权威实现已部署AI代理的持续参与式治理。",
-          "url": "https://arxiv.org/pdf/2608.06353v1",
+          "title": "Safe Start: Configuring Optimization Algorithms for Decision-Making under Extreme Risks",
+          "description": "提出Safe Start方法，配置优化算法以在极端风险下进行决策，不仅优化平均目标，还缓解罕见灾难事件的发生。",
+          "url": "https://arxiv.org/pdf/2608.09872v1",
           "stars": null,
           "id": 3
         },
         {
-          "title": "Challenges in Evaluating Explanation Methods for Static and Evolving Data",
-          "description": "讨论可解释人工智能（XAI）评估方法的不足，并以DetoxAI图像识别系统为例说明。",
-          "url": "https://arxiv.org/pdf/2608.06351v1",
+          "title": "Towards Expert-level Medical AI for Real-time Video Consultations",
+          "description": "面向实时视频问诊的专家级医学AI，利用音视频交互中的非语言线索提升疾病评估能力。",
+          "url": "https://arxiv.org/pdf/2608.09861v1",
           "stars": null,
           "id": 4
         },
         {
-          "title": "From Precision Medicine to Precision Education: A Vision for AI-Powered Student Digital Twins, Preventive Student Success, and Career-Aligned Academic Pathways",
-          "description": "提出将精准医学理念应用于教育，利用AI学生数字孪生实现预防性学生成功和职业对齐路径。",
-          "url": "https://arxiv.org/pdf/2608.06322v1",
+          "title": "Generative AI for Encrypted Traffic Analysis: Synthetic Dataset Generation and Classifier Evaluation",
+          "description": "利用生成式AI合成加密流量数据集以解决数据不平衡和可视性受限问题，并评估分类器性能。",
+          "url": "https://arxiv.org/pdf/2608.09852v1",
           "stars": null,
           "id": 5
         }
@@ -195,42 +195,42 @@
       "name": "AI 开源项目",
       "items": [
         {
-          "title": "worldmonitor",
-          "description": "Real-time global intelligence dashboard with AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking.",
-          "url": "https://github.com/koala73/worldmonitor",
-          "stars": 79718,
+          "title": "deer-flow",
+          "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates, using sandboxes, memories, tools, skills, and subagents.",
+          "url": "https://github.com/bytedance/deer-flow",
+          "stars": 79691,
           "id": 1
         },
         {
-          "title": "oh-my-openagent",
-          "description": "A coding agent harness for complex codebases, optimized for Codex and OpenCode.",
-          "url": "https://github.com/code-yeongyu/oh-my-openagent",
-          "stars": 67464,
+          "title": "awesome-claude-skills",
+          "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows.",
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+          "stars": 72237,
           "id": 2
         },
         {
-          "title": "claude-code-best-practice",
-          "description": "Best practices for Claude Code, covering the journey from vibe coding to agentic engineering.",
-          "url": "https://github.com/shanraisshan/claude-code-best-practice",
-          "stars": 64148,
+          "title": "docling",
+          "description": "Document processing and conversion tool to get your documents ready for generative AI.",
+          "url": "https://github.com/docling-project/docling",
+          "stars": 64571,
           "id": 3
         },
         {
-          "title": "context7",
-          "description": "Up-to-date code documentation platform for LLMs and AI code editors.",
-          "url": "https://github.com/upstash/context7",
-          "stars": 60407,
+          "title": "ai-hedge-fund",
+          "description": "An AI Hedge Fund Team with autonomous agents for financial analysis and trading.",
+          "url": "https://github.com/virattt/ai-hedge-fund",
+          "stars": 62754,
           "id": 4
         },
         {
-          "title": "cherry-studio",
-          "description": "AI productivity studio offering smart chat, autonomous agents, and access to 300+ assistants and frontier LLMs.",
-          "url": "https://github.com/CherryHQ/cherry-studio",
-          "stars": 50046,
+          "title": "impeccable",
+          "description": "A design language that makes your AI harness better at design.",
+          "url": "https://github.com/pbakaus/impeccable",
+          "stars": 57854,
           "id": 5
         }
       ]
     }
   ],
-  "updatedAt": "2026-08-08T12:08:11.250+08:00"
+  "updatedAt": "2026-08-11T12:15:15.824+08:00"
 }
