@@ -221,8 +221,9 @@ function dragHandleStyle(w: WidgetLayout): Record<string, string> {
 <style lang="scss" scoped>
 .home-page {
   min-height: 100vh;
-  background: $bg-gradient;
-  background-attachment: fixed;
+  // Transparent so GradientWaves shows through; the static gradient on <html>
+  // stays as the base layer and the reduced-motion fallback.
+  background: transparent;
   user-select: none;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;

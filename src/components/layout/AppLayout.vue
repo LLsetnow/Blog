@@ -79,8 +79,9 @@ watch(() => route.path, () => {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: $bg-gradient;
-  background-attachment: fixed;
+  // Transparent so FluidBackground shows through; the static gradient on <html>
+  // stays as the base layer and the reduced-motion fallback.
+  background: transparent;
 
   &__header {
     position: sticky;
