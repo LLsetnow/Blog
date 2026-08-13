@@ -76,7 +76,12 @@ export function generateLayoutCode(): string {
   ].join('\n')
 }
 
-export function useLayoutEditor() {
+/**
+ * @param getScale Current canvas scale. Pointer deltas are in screen pixels but
+ *   widget offsets live in the unscaled canvas coordinate space, so drags must
+ *   be divided by it or the widget drifts away from the cursor.
+ */
+export function useLayoutEditor(getScale: () => number = () => 1) {
   const isSettingsOpen = ref(false)
   const isDragMode = ref(false)
   const draggingId = ref<string | null>(null)
@@ -148,16 +153,18 @@ export function useLayoutEditor() {
 
   function onDrag(event: PointerEvent) {
     if (!dragState) return
-    const dx = event.clientX - dragState.startX
-    const dy = event.clientY - dragState.startY
+    const scale = getScale() || 1
+    const dx = (event.clientX - dragState.startX) / scale
+    const dy = (event.clientY - dragState.startY) / scale
     // Direct DOM transform — bypasses Vue reactivity entirely
     dragState.el.style.transform = `translate(${dx}px, ${dy}px)`
   }
 
   function endDrag(event: PointerEvent) {
     if (!dragState) return
-    const dx = event.clientX - dragState.startX
-    const dy = event.clientY - dragState.startY
+    const scale = getScale() || 1
+    const dx = (event.clientX - dragState.startX) / scale
+    const dy = (event.clientY - dragState.startY) / scale
 
     // Commit final offset to Vue state (one single update)
     offsets.value = {
