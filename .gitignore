@@ -8,3 +8,6 @@ cookies.txt
 .env
 .env.*
 !.env.example
+
+# Playwright MCP artifacts — page snapshots/console logs from local browser debugging
+.playwright-mcp/
