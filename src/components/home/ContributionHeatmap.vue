@@ -260,13 +260,15 @@ onMounted(async () => {
       background: transparent;
     }
 
-    // Ramp built from the site accent rather than GitHub's greens, so the
-    // widget still reads as part of this page.
+    // One blue hue darkening step by step, rather than GitHub's greens.
+    // Opaque values rather than alpha over the glass: alpha steps bottom out at
+    // the card's own lightness, which is why the previous ramp had to reach for
+    // a second hue to find a dark end.
     &--l0 { background: rgba(255, 255, 255, 0.45); }
-    &--l1 { background: rgba($accent-primary, 0.4); }
-    &--l2 { background: rgba($accent-primary, 0.65); }
-    &--l3 { background: rgba($accent-primary, 0.9); }
-    &--l4 { background: $accent-secondary; }
+    &--l1 { background: #cfe8f5; }
+    &--l2 { background: #93cde6; }
+    &--l3 { background: #4a9fc9; }
+    &--l4 { background: #1f5f8b; }
   }
 
   &__legend {
