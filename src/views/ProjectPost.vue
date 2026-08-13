@@ -158,6 +158,25 @@ function onKeydown(e: KeyboardEvent) {
   }
 }
 
+/** Deepest heading level shown in the sidebar TOC. */
+const TOC_MAX_LEVEL = 3
+
+/**
+ * Flatten a heading's inline HTML back to plain text for the TOC, which renders
+ * with `{{ }}` and would otherwise show `<code>` tags literally.
+ * `&amp;` is decoded last so `&amp;lt;` doesn't turn into `<`.
+ */
+function stripInlineHtml(html: string): string {
+  return html
+    .replace(/<[^>]+>/g, '')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&amp;/g, '&')
+    .trim()
+}
+
 // Slug function that handles Chinese text
 function slugify(text: string): string {
   return text
@@ -168,48 +187,35 @@ function slugify(text: string): string {
 }
 
 function parseAndRender(markdown: string) {
-  // First pass: extract headings for TOC
+  // The renderer is the single source of truth for both the TOC and the heading
+  // IDs it links to. Scanning the raw markdown separately used to pick up `#`
+  // comments inside fenced code blocks as headings, and because that extra pass
+  // ran its own de-duplication counter, the suffixes it produced drifted out of
+  // sync with the ones the renderer assigned to genuinely repeated headings.
   const items: TocItem[] = []
-  const slugCount: Record<string, number> = {}
-
-  const lines = markdown.split('\n')
-  for (const line of lines) {
-    const match = line.match(/^(#{1,3})\s+(.+)$/)
-    if (match) {
-      const level = match[1].length
-      const text = match[2].trim()
-      let id = slugify(text)
-      if (slugCount[id] !== undefined) {
-        slugCount[id]++
-        id = `${id}-${slugCount[id]}`
-      } else {
-        slugCount[id] = 0
-      }
-      items.push({ id, text, level })
-    }
-  }
-
-  tocItems.value = items
-
-  // Render markdown with custom heading IDs matching the TOC
   const dupCount: Record<string, number> = {}
+
   const marked = new Marked({
     gfm: true,
     renderer: {
       heading(text: string, level: number) {
-        let id = slugify(text)
+        // `text` is already inline-rendered HTML, e.g. `预设音色（<code>--x</code>）`
+        const plain = stripInlineHtml(text)
+        let id = slugify(plain)
         if (dupCount[id] !== undefined) {
           dupCount[id]++
           id = `${id}-${dupCount[id]}`
         } else {
           dupCount[id] = 0
         }
+        if (level <= TOC_MAX_LEVEL) items.push({ id, text: plain, level })
         return `<h${level} id="${id}">${text}</h${level}>`
       },
     } as any,
   })
 
   const raw = marked.parse(markdown) as string
+  tocItems.value = items
   const sanitized = DOMPurify.sanitize(raw)
   // Prepend BASE_URL to absolute image paths (adapts to GitHub Pages subpath)
   let html = sanitized.replace(
