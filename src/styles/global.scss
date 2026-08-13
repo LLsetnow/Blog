@@ -37,6 +37,26 @@ a {
   }
 }
 
+/**
+ * Keyboard focus ring.
+ *
+ * `:focus-visible` rather than `:focus` so the ring appears for keyboard and
+ * assistive-tech users without drawing an outline every time a mouse user
+ * clicks a card. The double ring — dark line plus white halo — is what keeps it
+ * legible against both the pale gradient and the darker gallery thumbnails.
+ */
+:focus-visible {
+  outline: 2px solid $text-primary;
+  outline-offset: 3px;
+  border-radius: $radius-sm;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.85);
+}
+
+/** Browser default focus rings are suppressed only where ours takes over. */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
 #app {
   min-height: 100vh;
 }
