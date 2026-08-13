@@ -44,7 +44,7 @@ async function copy() {
 
 <style lang="scss" scoped>
 .wechat-widget {
-  @include glass-card;
+  @include glass-card($radius-round);
   display: flex;
   flex-direction: column;
   align-items: center;

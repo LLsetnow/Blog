@@ -135,7 +135,7 @@ onBeforeUnmount(() => {
 
 <style lang="scss" scoped>
 .status {
-  @include glass-card;
+  @include glass-card($radius-soft);
   width: 100%;
   height: 100%;
   display: flex;
