@@ -19,6 +19,7 @@ const IMAGES_DIR = path.join(OUTPUT_DIR, 'images')
 
 
 const repos = [
+  { id: 'opc',            name: 'OPC',          tech: ['Python', 'CLI', 'AIGC', 'TTS', 'ASR', 'ComfyUI'], url: 'https://github.com/LLsetnow/OPC' },
   { id: 'video-make',     name: 'VideoMake',    tech: ['AIGC', 'Video', 'Python'],                       url: 'https://github.com/LLsetnow/VideoMake', videoUrl: 'https://space.bilibili.com/39493006/upload/video' },
   {
     id: 'examinai',
