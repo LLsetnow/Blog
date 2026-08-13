@@ -14,8 +14,11 @@ concurrency:
 jobs:
   fetch-and-deploy:
     runs-on: ubuntu-latest
+    # 声明 permissions 会把未列出的 scope 置为 none，此前缺 actions: write
+    # 导致末尾的 artifact 清理无权删除（仓库 artifact 一直 ≤3 个，故未暴露）。
     permissions:
       contents: write
+      actions: write
     steps:
       # ssh-key 让后续 git push 走 deploy key（main 分支保护对 Deploy keys 豁免）
       - uses: actions/checkout@v4

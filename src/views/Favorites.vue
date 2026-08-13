@@ -68,7 +68,7 @@
           <a
             v-for="video in paginatedVideos"
             :key="video.id"
-            :href="video.link"
+            :href="safeHref(video.link)"
             target="_blank"
             rel="noopener noreferrer"
             class="favorites__card glass-card"
@@ -176,6 +176,7 @@
 <script setup lang="ts">
 import { ref, computed, watch, onMounted } from 'vue'
 import AppLayout from '@/components/layout/AppLayout.vue'
+import { safeHref } from '@/utils/url'
 
 interface BilibiliVideo {
   id: string

@@ -12,6 +12,10 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    # 只读代码；actions: write 供末尾的 artifact 清理步骤删除旧产物
+    permissions:
+      contents: read
+      actions: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

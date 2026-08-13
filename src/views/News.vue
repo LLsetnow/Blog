@@ -43,7 +43,7 @@
         <a
           v-for="item in filteredItems"
           :key="item.id"
-          :href="item.url"
+          :href="safeHref(item.url)"
           target="_blank"
           rel="noopener noreferrer"
           class="news__card glass-card"
@@ -67,6 +67,7 @@
 import { ref, computed, onMounted } from 'vue'
 import type { NewsData, NewsItem } from '@/types'
 import AppLayout from '@/components/layout/AppLayout.vue'
+import { safeHref } from '@/utils/url'
 
 interface NewsItemWithSection extends NewsItem {
   sectionName: string
