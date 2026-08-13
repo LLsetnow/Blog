@@ -5,6 +5,12 @@ on:
     - cron: '0 3 * * *'
   workflow_dispatch:
 
+# 本 workflow 自带 rsync --delete 部署步骤，与 deploy.yml 目标目录相同，
+# 因此共用同一个并发组，避免两者同时同步 /var/www/blog/。
+concurrency:
+  group: deploy-ecs
+  cancel-in-progress: false
+
 jobs:
   fetch-and-deploy:
     runs-on: ubuntu-latest

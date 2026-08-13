@@ -3,3 +3,8 @@ dist/
 .DS_Store
 *.local
 cookies.txt
+
+# Local credentials — tools/ reads GITHUB_TOKEN, ZHIPU_API_KEY etc. from here
+.env
+.env.*
+!.env.example
