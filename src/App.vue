@@ -54,8 +54,16 @@ const isMini = ref(false)
 
 const { isPlaying } = useMusicPlayer()
 
-/** Home always shows it; elsewhere only while audio is actually playing. */
-const showPlayer = computed(() => route.path === '/' || isPlaying.value)
+/**
+ * Home always shows it; elsewhere only while audio is actually playing.
+ *
+ * The now playing route is the exception: that page is the player, so the
+ * corner widget would just be a second copy of the same controls.
+ */
+const showPlayer = computed(() => {
+  if (route.path === '/now-playing') return false
+  return route.path === '/' || isPlaying.value
+})
 
 const POS = {
   cornerW: 160,
