@@ -1,12 +1,12 @@
 import { createRouter, createWebHashHistory, type RouteRecordRaw } from 'vue-router'
 import HomePage from '@/views/HomePage.vue'
-import BlogList from '@/views/BlogList.vue'
-import BlogPost from '@/views/BlogPost.vue'
-import Projects from '@/views/Projects.vue'
-import ProjectPost from '@/views/ProjectPost.vue'
-import About from '@/views/About.vue'
-import Favorites from '@/views/Favorites.vue'
 
+/**
+ * Only the home page is bundled eagerly — it is the landing route, so deferring
+ * it would just add a round trip. Everything else is split out: statically
+ * importing them pulled the whole site, including `marked` and `DOMPurify`,
+ * into the entry chunk for visitors who never leave the home page.
+ */
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
@@ -16,27 +16,27 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/favorites',
     name: 'Favorites',
-    component: Favorites,
+    component: () => import('@/views/Favorites.vue'),
   },
   {
     path: '/blog',
     name: 'BlogList',
-    component: BlogList,
+    component: () => import('@/views/BlogList.vue'),
   },
   {
     path: '/blog/:id',
     name: 'BlogPost',
-    component: BlogPost,
+    component: () => import('@/views/BlogPost.vue'),
   },
   {
     path: '/projects',
     name: 'Projects',
-    component: Projects,
+    component: () => import('@/views/Projects.vue'),
   },
   {
     path: '/projects/:id',
     name: 'ProjectPost',
-    component: ProjectPost,
+    component: () => import('@/views/ProjectPost.vue'),
   },
   {
     path: '/news',
@@ -46,7 +46,7 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/about',
     name: 'About',
-    component: About,
+    component: () => import('@/views/About.vue'),
   },
 ]
 
