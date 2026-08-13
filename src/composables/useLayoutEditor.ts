@@ -6,7 +6,6 @@ export const WIDGETS: WidgetLayout[] = [
   { id: 'calendar'   , label: '日历'      , left:  -217, top:   289, width:  420, height:  450 },
   { id: 'github'     , label: 'GitHub'  , left:   -84, top:   823, width:  100, height:  100 },
   { id: 'clock'      , label: '时钟'      , left:   709, top:   112, width:  230, height:  200 },
-  { id: 'live2d'     , label: '看板娘'     , left:   218, top:   219, width:  200, height:  520 },
   { id: 'music'      , label: '音乐播放器'   , left:   461, top:   449, width:  470, height:  160 },
   { id: 'gallery'    , label: '图片画廊'    , left:   404, top:   696, width:  590, height:  310 },
   { id: 'nav'        , label: '导航菜单'    , left:  1040, top:   391, width:  190, height:  360 },
