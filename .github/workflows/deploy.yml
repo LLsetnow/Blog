@@ -2,6 +2,13 @@ name: Deploy to Alibaba Cloud ECS
 on:
   push:
     branches: [main]
+
+# Deploy 用 rsync --delete 同步整个 /var/www/blog/，并发运行会互相删对方的产物。
+# 串行排队而非取消：每个 commit 都要真正部署到，取消会让先合并的改动丢失。
+concurrency:
+  group: deploy-ecs
+  cancel-in-progress: false
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
