@@ -11,10 +11,24 @@ export interface BlogPost {
 /** Music track for the player */
 export interface MusicTrack {
   id: string
+  /** NetEase song id; empty for local-only tracks. */
+  neteaseId?: string
   title: string
   artist: string
-  cover?: string
+  album?: string | null
+  cover?: string | null
+  /** Seconds, from NetEase metadata. */
+  duration?: number | null
+  /** Local fallback file, used when NetEase has no playable URL. */
   src: string
+  lyrics?: LyricLine[]
+}
+
+/** One timed lyric line, with its translation when NetEase provides one. */
+export interface LyricLine {
+  time: number
+  text: string
+  trans: string | null
 }
 
 /** GitHub repository info */
