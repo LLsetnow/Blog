@@ -19,6 +19,7 @@ const IMAGES_DIR = path.join(OUTPUT_DIR, 'images')
 
 
 const repos = [
+  { id: 'video-make',     name: 'VideoMake',    tech: ['AIGC', 'Video', 'Python'],                       url: 'https://github.com/LLsetnow/VideoMake', videoUrl: 'https://space.bilibili.com/39493006/upload/video' },
   {
     id: 'examinai',
     name: 'Examinai',
@@ -197,6 +198,7 @@ async function main() {
         url: repo.url,
         website: repo.website ?? null,
         websiteLabel: repo.websiteLabel ?? null,
+        videoUrl: repo.videoUrl ?? null,
         readme: content,
         _images: tasks, // meta field, stripped before writing JSON
       })
@@ -212,6 +214,7 @@ async function main() {
         url: repo.url,
         website: repo.website ?? null,
         websiteLabel: repo.websiteLabel ?? null,
+        videoUrl: repo.videoUrl ?? null,
         readme: `# ${repo.name}\n\n_Project data temporarily unavailable._`,
         _images: [],
       })
