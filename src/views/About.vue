@@ -35,14 +35,24 @@
         </div>
 
         <div class="about__links">
-          <a
-            href="https://github.com/LLsetnow"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="about__link"
-          >
-            GitHub
-          </a>
+          <div class="about__links-row">
+            <a
+              href="https://github.com/LLsetnow"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="about__link"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://space.bilibili.com/39493006"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="about__link about__link--bilibili"
+            >
+              Bilibili
+            </a>
+          </div>
           <span class="about__link-placeholder">更多链接即将上线...</span>
         </div>
       </div>
@@ -179,6 +189,15 @@ const skills: string[] = [
     gap: $spacing-sm;
   }
 
+  // Links sit side by side; the wrapper above stays a column so the
+  // placeholder keeps its own line beneath them.
+  &__links-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $spacing-sm;
+  }
+
   &__link {
     display: inline-block;
     padding: $spacing-sm $spacing-lg;
@@ -192,6 +211,10 @@ const skills: string[] = [
 
     &:hover {
       opacity: 0.85;
+    }
+
+    &--bilibili {
+      background: $bilibili-gradient;
     }
   }
 

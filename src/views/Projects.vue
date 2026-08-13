@@ -260,7 +260,7 @@ onMounted(async () => {
     }
 
     &--video {
-      background: #fb7299;
+      background: $bilibili-gradient;
     }
   }
 

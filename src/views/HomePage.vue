@@ -32,6 +32,11 @@
             <WeChatWidget />
           </TiltEffect>
         </div>
+        <div class="home-page__cell" :style="getWidgetStyle('bilibili')">
+          <TiltEffect :disabled="isDragMode">
+            <BilibiliWidget />
+          </TiltEffect>
+        </div>
       </div>
 
       <!-- Nav (horizontal on mobile) -->
@@ -121,6 +126,7 @@ import ImageGallery from '@/components/home/ImageGallery.vue'
 
 import EmailWidget from '@/components/home/EmailWidget.vue'
 import WeChatWidget from '@/components/home/WeChatWidget.vue'
+import BilibiliWidget from '@/components/home/BilibiliWidget.vue'
 import TiltEffect from '@/components/common/TiltEffect.vue'
 import LayoutSettings from '@/components/home/LayoutSettings.vue'
 import ToastNotification from '@/components/common/ToastNotification.vue'
