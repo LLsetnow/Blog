@@ -8,10 +8,10 @@
         </TiltEffect>
       </div>
 
-      <!-- Calendar (hidden on mobile) -->
-      <div v-if="!isMobile" class="home-page__cell" data-widget="calendar" :style="getWidgetStyle('calendar')">
+      <!-- Contribution heatmap (hidden on mobile) -->
+      <div v-if="!isMobile" class="home-page__cell" data-widget="contributions" :style="getWidgetStyle('contributions')">
         <TiltEffect :disabled="isDragMode">
-          <CalendarWidget />
+          <ContributionHeatmap />
         </TiltEffect>
       </div>
 
@@ -119,7 +119,7 @@ import { useRoute } from 'vue-router'
 import type { WidgetLayout } from '@/types'
 import GreetingCard from '@/components/home/GreetingCard.vue'
 import ClockWidget from '@/components/home/ClockWidget.vue'
-import CalendarWidget from '@/components/home/CalendarWidget.vue'
+import ContributionHeatmap from '@/components/home/ContributionHeatmap.vue'
 import NavMenu from '@/components/home/NavMenu.vue'
 import GitHubCard from '@/components/home/GitHubCard.vue'
 import ImageGallery from '@/components/home/ImageGallery.vue'
@@ -143,7 +143,7 @@ import { useLayoutEditor } from '@/composables/useLayoutEditor'
  *
  * Derived from WIDGETS: recompute both constants whenever the layout moves.
  */
-const CANVAS_WIDTH = 1534
+const CANVAS_WIDTH = 1382
 const CANVAS_HEIGHT = 1090
 /** Layout height the container reserves: min-height 800 + 40/100 padding. */
 const CANVAS_LAYOUT_HEIGHT = 940
