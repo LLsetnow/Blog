@@ -18,24 +18,56 @@ const OUTPUT_DIR = path.resolve(__dirname, '../public/projects-data')
 const IMAGES_DIR = path.join(OUTPUT_DIR, 'images')
 
 
+/**
+ * Card tags come from each repo's GitHub topics — edit them on GitHub, not here.
+ * `fallbackTech` is only used when the API call fails or the repo has no topics.
+ */
 const repos = [
-  { id: 'opc',            name: 'OPC',          tech: ['Python', 'CLI', 'AIGC', 'TTS', 'ASR', 'ComfyUI'], url: 'https://github.com/LLsetnow/OPC' },
-  { id: 'video-make',     name: 'VideoMake',    tech: ['AIGC', 'Video', 'Python'],                       url: 'https://github.com/LLsetnow/VideoMake', videoUrl: 'https://space.bilibili.com/39493006/upload/video' },
+  { id: 'opc',            name: 'OPC',          fallbackTech: ['Python', 'CLI', 'AIGC', 'TTS', 'ASR', 'ComfyUI'], url: 'https://github.com/LLsetnow/OPC' },
+  { id: 'video-make',     name: 'VideoMake',    fallbackTech: ['AIGC', 'Video', 'Python'],                       url: 'https://github.com/LLsetnow/VideoMake', videoUrl: 'https://space.bilibili.com/39493006/upload/video' },
   {
     id: 'examinai',
     name: 'Examinai',
-    tech: ['Next.js', 'React', 'TypeScript', 'AI', 'IELTS'],
+    fallbackTech: ['Next.js', 'React', 'TypeScript', 'AI', 'IELTS'],
     url: 'https://github.com/LLsetnow/examinai',
     website: 'https://ielts.akai.ink',
     websiteLabel: '体验雅思批改',
   },
-  { id: 'agent-bot',      name: 'AgentBot',     tech: ['Agent', 'ComfyUI', 'AIGC', 'Python'],           url: 'https://github.com/LLsetnow/AgentBot' },
-  { id: 'mio-chat',       name: 'MioChat',      tech: ['Python', 'LLM', 'RTS', 'TTS'],                   url: 'https://github.com/LLsetnow/MioChat.git', website: 'https://chat.akai.ink', websiteLabel: '在线体验' },
-  { id: 'graph-rag',      name: 'GraphRag',     tech: ['RAG', 'GraphRAG', 'LLM', 'Python'],             url: 'https://github.com/LLsetnow/GraphRag.git' },
-  { id: 'personal-blog',  name: '个人博客',       tech: ['Vue 3', 'TypeScript', 'SCSS'],                  url: 'https://github.com/LLsetnow/Blog' },
-  { id: 'hdu-baidu',      name: 'HDU_19_Baidu', tech: ['C++', '机器视觉', '目标检测'],                     url: 'https://github.com/LLsetnow/HDU_19_Baidu.git' },
-  { id: 'todolist-web',   name: 'TodoListWeb',  tech: ['全栈', 'MongoDB', 'Vue 3', 'Express'],         url: 'https://github.com/LLsetnow/TodoListWeb.git' },
+  { id: 'agent-bot',      name: 'AgentBot',     fallbackTech: ['Agent', 'ComfyUI', 'AIGC', 'Python'],           url: 'https://github.com/LLsetnow/AgentBot' },
+  { id: 'mio-chat',       name: 'MioChat',      fallbackTech: ['Python', 'LLM', 'ASR', 'TTS'],                   url: 'https://github.com/LLsetnow/MioChat.git', website: 'https://chat.akai.ink', websiteLabel: '在线体验' },
+  { id: 'graph-rag',      name: 'GraphRag',     fallbackTech: ['RAG', 'GraphRAG', 'LLM', 'Python'],             url: 'https://github.com/LLsetnow/GraphRag.git' },
+  { id: 'personal-blog',  name: '个人博客',       fallbackTech: ['Vue 3', 'TypeScript', 'SCSS'],                  url: 'https://github.com/LLsetnow/Blog' },
+  { id: 'hdu-baidu',      name: 'HDU_19_Baidu', fallbackTech: ['C++', '机器视觉', '目标检测'],                     url: 'https://github.com/LLsetnow/HDU_19_Baidu.git' },
+  { id: 'todolist-web',   name: 'TodoListWeb',  fallbackTech: ['全栈', 'MongoDB', 'Vue 3', 'Express'],         url: 'https://github.com/LLsetnow/TodoListWeb.git' },
 ]
+
+/**
+ * GitHub topics are lowercase ASCII with hyphens, which reads poorly on a card.
+ * Map the ones whose display form can't be derived; everything else falls back
+ * to title-casing the hyphen-separated words (`machine-learning` → Machine Learning).
+ */
+const TOPIC_LABELS = {
+  ai: 'AI',
+  aigc: 'AIGC',
+  asr: 'ASR',
+  cli: 'CLI',
+  comfyui: 'ComfyUI',
+  cpp: 'C++',
+  'computer-vision': '机器视觉',
+  fullstack: '全栈',
+  graphrag: 'GraphRAG',
+  ielts: 'IELTS',
+  javascript: 'JavaScript',
+  llm: 'LLM',
+  mongodb: 'MongoDB',
+  nextjs: 'Next.js',
+  'object-detection': '目标检测',
+  rag: 'RAG',
+  scss: 'SCSS',
+  tts: 'TTS',
+  typescript: 'TypeScript',
+  vue3: 'Vue 3',
+}
 
 // ---------- helpers ----------
 
@@ -57,6 +89,14 @@ async function apiJson(url) {
   })
   if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`)
   return res.json()
+}
+
+function formatTopic(topic) {
+  if (TOPIC_LABELS[topic]) return TOPIC_LABELS[topic]
+  return topic
+    .split('-')
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(' ')
 }
 
 function decodeBase64Utf8(base64) {
@@ -84,19 +124,26 @@ async function optimizeImage(filePath) {
   if (!['.png', '.jpg', '.jpeg'].includes(ext)) return
 
   const webpPath = filePath.replace(ext, '.webp')
+  const tmpPath = filePath + '.tmp'
   const pipeline = sharp(filePath).resize(1200, 1200, { fit: 'inside', withoutEnlargement: true })
 
-  await Promise.all([
-    // Compress original format in-place
-    ext === '.png'
-      ? pipeline.clone().png({ quality: 80 }).toFile(filePath + '.tmp')
-      : pipeline.clone().jpeg({ quality: 80 }).toFile(filePath + '.tmp'),
-    // WebP variant
-    pipeline.clone().webp({ quality: 75 }).toFile(webpPath),
-  ])
+  try {
+    await Promise.all([
+      // Compress original format in-place
+      ext === '.png'
+        ? pipeline.clone().png({ quality: 80 }).toFile(tmpPath)
+        : pipeline.clone().jpeg({ quality: 80 }).toFile(tmpPath),
+      // WebP variant
+      pipeline.clone().webp({ quality: 75 }).toFile(webpPath),
+    ])
+  } catch (e) {
+    // Don't leave a half-written .tmp behind — CI commits this directory
+    fs.rmSync(tmpPath, { force: true })
+    throw e
+  }
 
   // Replace original with compressed version
-  fs.renameSync(filePath + '.tmp', filePath)
+  fs.renameSync(tmpPath, filePath)
 
   const { size: origSize } = fs.statSync(filePath)
   const { size: webpSize } = fs.statSync(webpPath)
@@ -173,8 +220,12 @@ async function main() {
     const { owner, repoName } = parsed
 
     try {
-      // 1. repo info (name + description)
+      // 1. repo info (name + description + topics)
       const info = await apiJson(`https://api.github.com/repos/${owner}/${repoName}`)
+
+      // Topics are the source of truth for card tags; fall back if the repo has none
+      const topics = info.topics ?? []
+      const tech = topics.length ? topics.map(formatTopic) : repo.fallbackTech
 
       // 2. README
       let readme = ''
@@ -195,7 +246,7 @@ async function main() {
         id: repo.id,
         name: info.name,
         description: info.description ?? '',
-        tech: repo.tech,
+        tech,
         url: repo.url,
         website: repo.website ?? null,
         websiteLabel: repo.websiteLabel ?? null,
@@ -204,14 +255,14 @@ async function main() {
         _images: tasks, // meta field, stripped before writing JSON
       })
 
-      console.log(`✓ ${info.name}`)
+      console.log(`✓ ${info.name}  [${tech.join(', ')}]${topics.length ? '' : ' (fallback tags)'}`)
     } catch (e) {
       console.log(`✗ ${e.message}`)
       projects.push({
         id: repo.id,
         name: repo.name,
         description: '',
-        tech: repo.tech,
+        tech: repo.fallbackTech,
         url: repo.url,
         website: repo.website ?? null,
         websiteLabel: repo.websiteLabel ?? null,
