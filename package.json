@@ -5,15 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prebuild": "(node tools/fetch-news.mjs || true) && (node tools/fetch-projects.mjs || true) && (node tools/fetch-bilibili-fav.mjs || true) && node tools/generate-thumbnails.mjs && node tools/optimize-live2d.mjs",
+    "prebuild": "(node tools/fetch-news.mjs || true) && (node tools/fetch-projects.mjs || true) && (node tools/fetch-bilibili-fav.mjs || true) && node tools/generate-thumbnails.mjs",
     "build": "vue-tsc && npm run prebuild && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "dompurify": "^3.4.2",
-    "easy-live2d": "^0.4.4",
     "marked": "^12.0.0",
-    "pixi.js": "^8.18.1",
     "vue": "^3.4.0",
     "vue-router": "^4.3.0"
   },
