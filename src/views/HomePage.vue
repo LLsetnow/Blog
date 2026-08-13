@@ -46,10 +46,10 @@
         </TiltEffect>
       </div>
 
-      <!-- Clock (hidden on mobile) -->
-      <div v-if="!isMobile" class="home-page__cell" :style="getWidgetStyle('clock')">
+      <!-- Service status (hidden on mobile) -->
+      <div v-if="!isMobile" class="home-page__cell" :style="getWidgetStyle('status')">
         <TiltEffect :disabled="isDragMode">
-          <ClockWidget />
+          <ServiceStatus />
         </TiltEffect>
       </div>
 
@@ -118,7 +118,7 @@ import { computed, onBeforeUnmount, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import type { WidgetLayout } from '@/types'
 import GreetingCard from '@/components/home/GreetingCard.vue'
-import ClockWidget from '@/components/home/ClockWidget.vue'
+import ServiceStatus from '@/components/home/ServiceStatus.vue'
 import ContributionHeatmap from '@/components/home/ContributionHeatmap.vue'
 import NavMenu from '@/components/home/NavMenu.vue'
 import GitHubCard from '@/components/home/GitHubCard.vue'
