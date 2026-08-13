@@ -1,5 +1,19 @@
 [
   {
+    "id": "video-make",
+    "name": "VideoMake",
+    "description": "AI 视频生成项目，探索多模态模型在视频创作场景中的应用。",
+    "tech": [
+      "AIGC",
+      "Video",
+      "Python"
+    ],
+    "url": "https://github.com/LLsetnow/VideoMake",
+    "website": null,
+    "videoUrl": "https://space.bilibili.com/39493006/upload/video",
+    "readme": ""
+  },
+  {
     "id": "examinai",
     "name": "examinai",
     "description": "AI-powered IELTS Writing Task 1 & 2 assessment with Cambridge question support and local report history.",

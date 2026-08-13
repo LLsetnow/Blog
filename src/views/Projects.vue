@@ -67,6 +67,16 @@
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>
               {{ project.websiteLabel || '在线体验' }}
             </a>
+            <a
+              v-if="project.videoUrl"
+              :href="project.videoUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="projects__card-link projects__card-link--video"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              视频案例
+            </a>
           </div>
         </div>
       </div>
@@ -86,6 +96,7 @@ interface ProjectData {
   url: string
   website?: string | null
   websiteLabel?: string | null
+  videoUrl?: string | null
   readme: string
 }
 
@@ -246,6 +257,10 @@ onMounted(async () => {
 
     &--website {
       background: $accent-primary;
+    }
+
+    &--video {
+      background: #fb7299;
     }
   }
 
