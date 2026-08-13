@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prebuild": "(node tools/fetch-news.mjs || true) && (node tools/fetch-projects.mjs || true) && (node tools/fetch-bilibili-fav.mjs || true) && (node tools/fetch-contributions.mjs || true) && node tools/generate-thumbnails.mjs",
+    "prebuild": "(node tools/fetch-news.mjs || true) && (node tools/fetch-projects.mjs || true) && (node tools/fetch-bilibili-fav.mjs || true) && (node tools/fetch-contributions.mjs || true) && (node tools/fetch-netease.mjs || true) && node tools/generate-thumbnails.mjs",
     "build": "vue-tsc && npm run prebuild && vite build",
     "preview": "vite preview"
   },

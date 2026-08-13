@@ -17,7 +17,15 @@ const pendingPlay = ref(false)
 let fadeRAF: number | null = null
 const FADE_DURATION = 400
 
-const currentTrack = computed<MusicTrack>(() => musicList[currentIndex.value] ?? musicList[0])
+/**
+ * Starts as the list bundled in music.ts and is replaced once the build-time
+ * NetEase metadata arrives. Keeping the bundled copy as the initial value means
+ * the player renders a title immediately instead of flashing empty, and still
+ * works if the JSON is missing.
+ */
+const tracks = ref<MusicTrack[]>(musicList)
+
+const currentTrack = computed<MusicTrack>(() => tracks.value[currentIndex.value] ?? tracks.value[0])
 
 const progressPercent = computed(() => {
   if (duration.value === 0) return 0
@@ -31,6 +39,23 @@ const volumePercent = computed(() => (isMuted.value ? 0 : volume.value) * 100)
 let audio: HTMLAudioElement | null = null
 
 const baseUrl = (import.meta as any).env?.BASE_URL || '/'
+
+/** Fetched once per page load; failures leave the bundled list in place. */
+let trackDataLoaded = false
+
+async function loadTrackData() {
+  if (trackDataLoaded) return
+  trackDataLoaded = true
+  try {
+    const res = await fetch(`${baseUrl}music-data/tracks.json`)
+    if (!res.ok) return
+    const data = await res.json()
+    if (Array.isArray(data.tracks) && data.tracks.length > 0) tracks.value = data.tracks
+  } catch {
+    /* keep the bundled list */
+  }
+}
+loadTrackData()
 
 function initAudio() {
   if (audio) return
@@ -64,6 +89,9 @@ function initAudio() {
     }
   })
   audio.addEventListener('error', () => {
+    // Try the bundled file before surfacing an error; this fires for VIP and
+    // region-locked songs, which the NetEase endpoint refuses outright.
+    if (fallbackToLocal()) return
     if (pendingPlay.value || isLoading.value) return
     hasError.value = true
     isLoading.value = false
@@ -99,10 +127,48 @@ function fadeVolume(from: number, to: number, onDone?: () => void) {
   fadeRAF = requestAnimationFrame(step)
 }
 
+/** Local file for a track, resolved against BASE_URL. */
+function localSrc(track: MusicTrack): string {
+  return `${baseUrl}${track.src.replace(/^\//, '')}`
+}
+
+/**
+ * NetEase's public redirect endpoint. It answers over https and 302s to an
+ * http CDN host; browsers auto-upgrade mixed audio to https and that host
+ * serves it, so this plays on the https site without any backend.
+ *
+ * Not resolved at build time on purpose — the CDN link it redirects to carries
+ * a timestamp and expires within hours.
+ */
+function neteaseSrc(track: MusicTrack): string | null {
+  return track.neteaseId ? `https://music.163.com/song/media/outer/url?id=${track.neteaseId}.mp3` : null
+}
+
+/** Set when playing from NetEase, so an error can retry the local file once. */
+let triedFallback = false
+
 function updateSrc() {
   if (!audio) return
-  const src = `${baseUrl}${currentTrack.value.src.replace(/^\//, '')}`
-  audio.src = src
+  triedFallback = false
+  audio.src = neteaseSrc(currentTrack.value) ?? localSrc(currentTrack.value)
+}
+
+/**
+ * Swap to the bundled file after NetEase fails. VIP and region-locked songs
+ * get a 404 from the redirect endpoint, and the endpoint is unofficial enough
+ * to stop answering at any point.
+ */
+function fallbackToLocal(): boolean {
+  if (!audio || triedFallback || !currentTrack.value.neteaseId) return false
+  triedFallback = true
+  const wantsPlay = pendingPlay.value || isPlaying.value
+  audio.src = localSrc(currentTrack.value)
+  audio.load()
+  if (wantsPlay) {
+    pendingPlay.value = true
+    isLoading.value = true
+  }
+  return true
 }
 
 function togglePlay() {
@@ -192,6 +258,7 @@ export function useMusicPlayer() {
 
   return {
     // State
+    tracks,
     isPlaying,
     currentIndex,
     currentTime,
