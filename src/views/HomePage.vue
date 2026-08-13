@@ -1,6 +1,6 @@
 <template>
   <div class="home-page">
-    <div class="home-page__container">
+    <div class="home-page__container" :style="canvasStyle">
       <!-- Greeting -->
       <div class="home-page__cell" :style="getWidgetStyle('greeting')">
         <TiltEffect :disabled="isDragMode">
@@ -127,6 +127,33 @@ import ToastNotification from '@/components/common/ToastNotification.vue'
 import { useToast } from '@/composables/useToast'
 import { useLayoutEditor } from '@/composables/useLayoutEditor'
 
+/**
+ * Viewport the hand-positioned canvas was laid out against.
+ *
+ * Widgets sit at absolute coordinates that overhang the 1100px container, so a
+ * centred container needs 1100 + 2x the wider overhang to clear its widest
+ * side. Below that the canvas is scaled down rather than clipped — several
+ * widgets used to end up outside the viewport with no way to scroll to them.
+ *
+ * Derived from WIDGETS: recompute both constants whenever the layout moves.
+ */
+const CANVAS_WIDTH = 1534
+const CANVAS_HEIGHT = 1090
+/** Layout height the container reserves: min-height 800 + 40/100 padding. */
+const CANVAS_LAYOUT_HEIGHT = 940
+
+const canvasScale = ref(1)
+
+const canvasStyle = computed(() => {
+  if (canvasScale.value === 1) return {}
+  return {
+    transform: `scale(${canvasScale.value})`,
+    // Reclaim the layout space the transform no longer paints into, otherwise
+    // the shrunken canvas leaves a gap and the page still scrolls.
+    marginBottom: `${-(1 - canvasScale.value) * CANVAS_LAYOUT_HEIGHT}px`,
+  }
+})
+
 const {
   isSettingsOpen,
   isDragMode,
@@ -143,7 +170,7 @@ const {
   closeSettings,
   enterDragMode,
   cancelDrag,
-} = useLayoutEditor()
+} = useLayoutEditor(() => canvasScale.value)
 
 const { toasts } = useToast()
 
@@ -152,7 +179,13 @@ const isMobile = ref(window.innerWidth < 768)
 
 function onResize() {
   isMobile.value = window.innerWidth < 768
+  // Below the mobile breakpoint the canvas gives way to a flex column, which
+  // reflows on its own and must not be scaled.
+  canvasScale.value = isMobile.value
+    ? 1
+    : Math.min(1, window.innerWidth / CANVAS_WIDTH, window.innerHeight / CANVAS_HEIGHT)
 }
+onResize()
 window.addEventListener('resize', onResize)
 
 onBeforeUnmount(() => {
@@ -211,6 +244,9 @@ function dragHandleStyle(w: WidgetLayout): Record<string, string> {
     margin: 0 auto;
     padding: 40px 0 100px;
     min-height: 800px;
+    // Scale factor comes from JS (see canvasStyle); anchoring at the top keeps
+    // the canvas from drifting upward as it shrinks.
+    transform-origin: top center;
   }
 
   &__cell {
