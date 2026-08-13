@@ -29,7 +29,11 @@
 
   <router-view />
 
-  <div class="player-wrapper" ref="playerRef">
+  <!-- Off the home page the player only exists as the corner mini widget, and
+       only while something is playing — an idle player following the reader
+       around every page is noise. On the home page it stays regardless, since
+       it occupies a slot in the canvas layout. -->
+  <div v-if="showPlayer" class="player-wrapper" ref="playerRef">
     <TiltEffect :disabled="isMini">
       <MusicPlayer :mini="isMini" />
     </TiltEffect>
@@ -37,15 +41,21 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch, onMounted, onUnmounted } from 'vue'
+import { computed, nextTick, ref, watch, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
 import MusicPlayer from '@/components/home/MusicPlayer.vue'
 import TiltEffect from '@/components/common/TiltEffect.vue'
 import GradientWaves from '@/components/common/GradientWaves.vue'
+import { useMusicPlayer } from '@/composables/useMusicPlayer'
 
 const route = useRoute()
 const playerRef = ref<HTMLElement | null>(null)
 const isMini = ref(false)
+
+const { isPlaying } = useMusicPlayer()
+
+/** Home always shows it; elsewhere only while audio is actually playing. */
+const showPlayer = computed(() => route.path === '/' || isPlaying.value)
 
 const POS = {
   cornerW: 160,
@@ -97,6 +107,17 @@ watch(() => route.path, (path) => {
   } else {
     syncToCorner()
   }
+})
+
+/**
+ * The wrapper is conditionally rendered, so when playback starts away from the
+ * home page it mounts unpositioned. Without this it would appear at the top
+ * left until the next route change or resize moved it.
+ */
+watch(showPlayer, async (visible) => {
+  if (!visible) return
+  await nextTick()
+  initPosition()
 })
 
 function retrySyncGrid() {
