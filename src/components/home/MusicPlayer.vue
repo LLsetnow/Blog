@@ -42,10 +42,14 @@
           <img :src="`${baseUrl}assets/音乐.svg`" alt="music" class="music-player__icon-svg" />
         </div>
 
-        <div class="music-player__info">
+        <router-link
+          to="/now-playing"
+          class="music-player__info"
+          title="打开播放页"
+        >
           <span class="music-player__title">{{ currentTrack.title }}</span>
           <span class="music-player__artist">{{ currentTrack.artist }}</span>
-        </div>
+        </router-link>
 
         <div class="music-player__actions">
           <!-- Prev -->
@@ -354,6 +358,12 @@ function endSeek(_event: PointerEvent) {
     min-width: 0;
     overflow: hidden;
     user-select: none;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover .music-player__title {
+      color: $accent-primary;
+    }
   }
 
   &__title {

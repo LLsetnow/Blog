@@ -196,19 +196,19 @@ function togglePlay() {
 
 function nextTrack() {
   initAudio()
-  if (musicList.length === 0) return
-  if (musicList.length === 1) {
+  if (tracks.value.length === 0) return
+  if (tracks.value.length === 1) {
     if (audio) audio.currentTime = 0
     return
   }
-  currentIndex.value = (currentIndex.value + 1) % musicList.length
+  currentIndex.value = (currentIndex.value + 1) % tracks.value.length
   resetAndPlay()
 }
 
 function prevTrack() {
   initAudio()
-  if (musicList.length === 0) return
-  currentIndex.value = (currentIndex.value - 1 + musicList.length) % musicList.length
+  if (tracks.value.length === 0) return
+  currentIndex.value = (currentIndex.value - 1 + tracks.value.length) % tracks.value.length
   resetAndPlay()
 }
 
