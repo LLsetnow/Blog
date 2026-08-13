@@ -3,7 +3,7 @@ import type { WidgetLayout, WidgetOffset } from '@/types'
 
 export const WIDGETS: WidgetLayout[] = [
   { id: 'greeting'   , label: '问候卡'     , left:     7, top:    59, width:  480, height:  170 },
-  { id: 'calendar'   , label: '日历'      , left:  -217, top:   289, width:  420, height:  450 },
+  { id: 'contributions', label: 'GitHub 贡献', left:  -141, top:   368, width:  450, height:  220 },
   { id: 'github'     , label: 'GitHub'  , left:   -84, top:   823, width:  100, height:  100 },
   { id: 'clock'      , label: '时钟'      , left:   709, top:   112, width:  230, height:  200 },
   { id: 'music'      , label: '音乐播放器'   , left:   461, top:   449, width:  470, height:  160 },
