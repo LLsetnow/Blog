@@ -20,16 +20,32 @@
         <aside v-if="tocItems.length > 0" class="project-post__toc">
           <nav>
             <div class="project-post__toc-title">目录</div>
-            <a
-              v-for="item in tocItems"
+            <div
+              v-for="item in visibleTocItems"
               :key="item.id"
-              :href="'#' + item.id"
-              class="project-post__toc-item"
-              :class="'project-post__toc-item--h' + item.level"
-              @click.prevent="scrollToHeading(item.id)"
+              class="project-post__toc-row"
+              :class="'project-post__toc-row--h' + item.level"
             >
-              {{ item.text }}
-            </a>
+              <button
+                v-if="item.hasChildren"
+                type="button"
+                class="project-post__toc-toggle"
+                :class="{ 'project-post__toc-toggle--collapsed': collapsedIds.has(item.id) }"
+                :aria-expanded="!collapsedIds.has(item.id)"
+                :aria-label="(collapsedIds.has(item.id) ? '展开' : '折叠') + '「' + item.text + '」'"
+                @click="toggleSection(item.id)"
+              >
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9" /></svg>
+              </button>
+              <span v-else class="project-post__toc-spacer" />
+              <a
+                :href="'#' + item.id"
+                class="project-post__toc-item"
+                @click.prevent="scrollToHeading(item.id)"
+              >
+                {{ item.text }}
+              </a>
+            </div>
           </nav>
         </aside>
 
@@ -125,6 +141,48 @@ interface TocItem {
 }
 
 const tocItems = ref<TocItem[]>([])
+
+/** Heading levels visible before the reader expands anything (h1 + h2). */
+const TOC_DEFAULT_DEPTH = 2
+
+/** IDs of sections whose children are hidden. */
+const collapsedIds = ref<Set<string>>(new Set())
+
+/**
+ * The TOC stays a flat list — nesting only needs to be known, not rendered — so
+ * each entry is annotated with its parent and whether anything nests under it.
+ */
+const tocTree = computed(() => {
+  const ancestors: TocItem[] = []
+  return tocItems.value.map((item, i) => {
+    while (ancestors.length && ancestors[ancestors.length - 1].level >= item.level) {
+      ancestors.pop()
+    }
+    const parentId = ancestors.length ? ancestors[ancestors.length - 1].id : null
+    ancestors.push(item)
+    const next = tocItems.value[i + 1]
+    return { ...item, parentId, hasChildren: !!next && next.level > item.level }
+  })
+})
+
+/** An entry shows only when every one of its ancestors is expanded. */
+const visibleTocItems = computed(() => {
+  const parentOf = new Map(tocTree.value.map(item => [item.id, item.parentId]))
+  return tocTree.value.filter(item => {
+    for (let id = item.parentId; id; id = parentOf.get(id) ?? null) {
+      if (collapsedIds.value.has(id)) return false
+    }
+    return true
+  })
+})
+
+function toggleSection(id: string) {
+  // Replace rather than mutate so the change is unambiguously reactive.
+  const next = new Set(collapsedIds.value)
+  if (!next.delete(id)) next.add(id)
+  collapsedIds.value = next
+}
+
 const renderedContent = ref('')
 const lightboxSrc = ref<string | null>(null)
 const lightboxAlt = ref('')
@@ -216,6 +274,17 @@ function parseAndRender(markdown: string) {
 
   const raw = marked.parse(markdown) as string
   tocItems.value = items
+
+  // Start with only TOC_DEFAULT_DEPTH levels showing: collapse any entry at or
+  // below that depth that actually has something nested under it.
+  const collapsed = new Set<string>()
+  items.forEach((item, i) => {
+    const next = items[i + 1]
+    if (next && next.level > item.level && item.level >= TOC_DEFAULT_DEPTH) {
+      collapsed.add(item.id)
+    }
+  })
+  collapsedIds.value = collapsed
   const sanitized = DOMPurify.sanitize(raw)
   // Prepend BASE_URL to absolute image paths (adapts to GitHub Pages subpath)
   let html = sanitized.replace(
@@ -310,8 +379,53 @@ function scrollToHeading(id: string) {
     letter-spacing: 0.05em;
   }
 
+  // Every row reserves the same toggle-sized gutter, so labels stay aligned
+  // whether or not the entry has children. Indents are one step narrower than
+  // the gutter-less layout to keep deep entries inside the 200px sidebar.
+  &__toc-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+
+    &--h2 {
+      padding-left: $spacing-sm;
+    }
+
+    &--h3 {
+      padding-left: $spacing-lg;
+    }
+  }
+
+  &__toc-toggle,
+  &__toc-spacer {
+    flex-shrink: 0;
+    width: 14px;
+  }
+
+  &__toc-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    padding: 0;
+    border: none;
+    background: none;
+    color: $text-muted;
+    cursor: pointer;
+    transition: transform $transition-fast, color $transition-fast;
+
+    &:hover {
+      color: $accent-primary;
+    }
+
+    &--collapsed {
+      transform: rotate(-90deg);
+    }
+  }
+
   &__toc-item {
-    display: block;
+    flex: 1;
+    min-width: 0;
     text-decoration: none;
     color: $text-secondary;
     font-size: $font-size-sm;
@@ -322,14 +436,6 @@ function scrollToHeading(id: string) {
 
     &:hover {
       color: $accent-primary;
-    }
-
-    &--h2 {
-      padding-left: $spacing-md;
-    }
-
-    &--h3 {
-      padding-left: $spacing-xl;
     }
   }
 
