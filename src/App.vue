@@ -27,7 +27,14 @@
     />
   </div>
 
-  <router-view />
+  <!-- out-in rather than overlapping: the home page is an absolutely
+       positioned canvas and the others are normal flow, so cross-fading them
+       in place would have them fight over the same space. -->
+  <router-view v-slot="{ Component }">
+    <Transition name="page" mode="out-in" @after-enter="initPosition">
+      <component :is="Component" :key="route.path" />
+    </Transition>
+  </router-view>
 
   <!-- Off the home page the player only exists as the corner mini widget, and
        only while something is playing — an idle player following the reader
@@ -136,6 +143,12 @@ function retrySyncGrid() {
 
 // ── Initialise ──
 
+/**
+ * Also runs from the route transition's after-enter hook. The route watcher
+ * fires while the incoming page is still mid-transform, so measuring the music
+ * widget's slot then captures the animation's offset rather than its resting
+ * position — the player would settle 12px low, exactly the enter translation.
+ */
 function initPosition() {
   if (route.path === '/') {
     retrySyncGrid()

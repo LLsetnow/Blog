@@ -88,9 +88,51 @@ a {
   @include glass-card;
 }
 
+/**
+ * Route transition.
+ *
+ * Global rather than scoped to App.vue: these classes land on each page's own
+ * root element, and keeping them here makes that ownership obvious.
+ *
+ * Leaving is deliberately quicker than entering — a slow exit makes navigation
+ * feel gated behind an animation, while a slower entrance reads as the page
+ * settling into place. The incoming page uses the expo curve so it decelerates
+ * instead of arriving at a constant speed.
+ */
+.page-enter-active {
+  transition: opacity 0.26s ease, transform 0.26s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.page-leave-active {
+  transition: opacity 0.16s ease, transform 0.16s ease;
+}
+
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
 // Mobile tap highlight suppression
 @media (max-width: $breakpoint-md) {
   button, a, [role="button"] {
     -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-enter-active,
+  .page-leave-active {
+    transition: none;
+  }
+
+  .page-enter-from,
+  .page-leave-to {
+    opacity: 1;
+    transform: none;
   }
 }
