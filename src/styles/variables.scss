@@ -21,6 +21,12 @@ $text-muted: #9a9ab0;
 $accent-primary: #7ec8e3;
 $accent-gradient: linear-gradient(135deg, #7ec8e3, #a78bfa);
 
+// Bilibili brand — official pink and blue, shared by the about page button,
+// the projects page video link and the homepage icon.
+$bilibili-pink: #fb7299;
+$bilibili-blue: #00aeec;
+$bilibili-gradient: linear-gradient(135deg, $bilibili-pink, $bilibili-blue);
+
 // Legacy (kept for compatibility)
 $bg-secondary: #f0f4ff;
 $bg-card: rgba(255, 255, 255, 0.25);

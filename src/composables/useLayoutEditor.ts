@@ -11,6 +11,7 @@ export const WIDGETS: WidgetLayout[] = [
   { id: 'nav'        , label: '导航菜单'    , left:  1040, top:   391, width:  190, height:  360 },
   { id: 'email'      , label: '邮箱'      , left:    26, top:   823, width:  100, height:  100 },
   { id: 'wechat'     , label: '微信'      , left:   136, top:   823, width:  100, height:  100 },
+  { id: 'bilibili'   , label: 'Bilibili', left:   246, top:   823, width:  100, height:  100 },
 ]
 
 const STORAGE_KEY_OFFSETS = 'blog-layout-offsets'
