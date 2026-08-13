@@ -16,7 +16,7 @@
 
 <style lang="scss" scoped>
 .bilibili-widget {
-  @include glass-card;
+  @include glass-card($radius-round);
   display: flex;
   align-items: center;
   justify-content: center;
