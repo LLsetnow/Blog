@@ -1,4 +1,32 @@
 <template>
+  <!-- Fixed host: GradientWaves fills its container, so the container is what
+       pins it behind the page. pointer-events stays off or it would swallow
+       every click; the shader tracks the cursor via a window listener. -->
+  <div class="site-backdrop">
+    <GradientWaves
+      horizon-color="#c8d8ff"
+      wave-color="#7ec8e3"
+      crest-color="#FFFFFF"
+      :speed="0.4"
+      :amplitude="2.5"
+      :wave-scale="0.6"
+      :wave-ratio="0.9"
+      :swell="35"
+      :turbulence="20"
+      :tilt="1.11"
+      :zoom="1.0"
+      :height="2.0"
+      :fog-depth="35"
+      detail="medium"
+      :brightness="1.0"
+      :opacity="1.0"
+      :mouse-interaction="true"
+      :parallax-strength="0.5"
+      :grain="true"
+      :grain-intensity="0.05"
+    />
+  </div>
+
   <router-view />
 
   <div class="player-wrapper" ref="playerRef">
@@ -13,6 +41,7 @@ import { ref, watch, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
 import MusicPlayer from '@/components/home/MusicPlayer.vue'
 import TiltEffect from '@/components/common/TiltEffect.vue'
+import GradientWaves from '@/components/common/GradientWaves.vue'
 
 const route = useRoute()
 const playerRef = ref<HTMLElement | null>(null)
@@ -120,6 +149,13 @@ function onScroll() {
 </script>
 
 <style lang="scss" scoped>
+.site-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
 .player-wrapper {
   position: fixed;
   z-index: 260;
