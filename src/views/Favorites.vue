@@ -356,7 +356,6 @@ onMounted(async () => {
     -webkit-backdrop-filter: blur(10px);
     color: $text-primary;
     font-size: $font-size-sm;
-    outline: none;
     transition: background 0.2s ease, box-shadow 0.2s ease;
 
     &::placeholder {

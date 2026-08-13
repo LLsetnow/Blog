@@ -277,7 +277,6 @@ function endSeek(_event: PointerEvent) {
   background: $accent-gradient;
   color: white;
   cursor: pointer;
-  outline: none;
   transition: all 0.2s ease;
 
   &:hover {
@@ -395,7 +394,6 @@ function endSeek(_event: PointerEvent) {
     background: transparent;
     color: $text-secondary;
     cursor: pointer;
-    outline: none;
     transition: all $transition-fast;
 
     &:hover {
@@ -447,7 +445,6 @@ function endSeek(_event: PointerEvent) {
     width: 48px;
     cursor: pointer;
     padding: 4px 0;
-    outline: none;
   }
 
   &__volume-track {
