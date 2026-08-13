@@ -220,6 +220,17 @@ onMounted(async () => {
     color: $text-secondary;
     font-size: $font-size-base;
     line-height: 1.6;
+    // Descriptions come from each repo's GitHub blurb and run from a few words
+    // to a full paragraph, which was dragging whole grid rows taller. Clamp to
+    // three lines and let the browser add the ellipsis.
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+    // Reserve the full three lines so the tech tags and buttons below still
+    // line up across cards whose descriptions are shorter.
+    min-height: calc(3em * 1.6);
   }
 
   &__card-techs {
