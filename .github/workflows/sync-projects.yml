@@ -1,0 +1,47 @@
+name: Sync Project Data
+
+on:
+  schedule:
+    # 05:00 UTC，与 fetch-news.yml (03:00) 错开，避免两个任务同时 push main
+    - cron: '0 5 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: sync-projects
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      # ssh-key 让后续 git push 走 deploy key（main 分支保护对 Deploy keys 豁免）。
+      # 该 push 会触发 deploy.yml 完成构建与发布，所以这里不重复 build/rsync。
+      - uses: actions/checkout@v4
+        with:
+          ssh-key: ${{ secrets.NEWS_BOT_DEPLOY_KEY }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      # 卡片标签取自各仓库的 GitHub topics，同时刷新 README 和截图
+      - name: Fetch project data from GitHub
+        run: node tools/fetch-projects.mjs
+        timeout-minutes: 10
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit project data to repo
+        run: |
+          git config user.name "news-bot"
+          git config user.email "news-bot@users.noreply.github.com"
+          git add public/projects-data
+          if git diff --cached --quiet; then
+            echo "No project changes to commit"
+          else
+            git commit -m "chore: sync project data from GitHub"
+            git push
+          fi
