@@ -61,22 +61,23 @@ a {
   min-height: 100vh;
 }
 
-// Scrollbar styling
-::-webkit-scrollbar {
-  width: 6px;
+/**
+ * Hide scrollbars everywhere while leaving scrolling itself untouched.
+ *
+ * `overflow` is deliberately not changed: the elements still scroll by wheel,
+ * trackpad, touch, keyboard and programmatic calls — only the visual track is
+ * gone. Applied to the universal selector rather than just the page, so nested
+ * scrollers such as the lyrics panel and the TOC sidebar match.
+ */
+* {
+  // Firefox
+  scrollbar-width: none;
+  // Legacy Edge and IE
+  -ms-overflow-style: none;
 }
 
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 3px;
-
-  &:hover {
-    background: rgba(0, 0, 0, 0.2);
-  }
+*::-webkit-scrollbar {
+  display: none;
 }
 
 // Utility classes
