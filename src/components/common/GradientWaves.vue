@@ -302,6 +302,17 @@ onMounted(() => {
   let raf = 0
   let isVisible = true
   let isPageVisible = !document.hidden
+  /**
+   * Window focus, tracked separately from tab visibility.
+   *
+   * `document.hidden` only goes true when the tab is switched away from or the
+   * window is minimised — switching to another application leaves it false, so
+   * the shader kept running at full rate behind whatever the reader moved on
+   * to. That is expensive here: a raymarch of this depth across a retina
+   * canvas at 120Hz is real GPU load to be spending on a window nobody is
+   * looking at.
+   */
+  let isFocused = document.hasFocus()
   const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
   const t0 = performance.now()
 
@@ -322,7 +333,7 @@ onMounted(() => {
 
   const tryStart = () => {
     if (motionQuery.matches) return
-    if (isVisible && isPageVisible && raf === 0) raf = requestAnimationFrame(loop)
+    if (isVisible && isPageVisible && isFocused && raf === 0) raf = requestAnimationFrame(loop)
   }
   const tryStop = () => {
     if (raf !== 0) {
@@ -346,6 +357,17 @@ onMounted(() => {
   }
   document.addEventListener('visibilitychange', onVisibility)
 
+  const onFocus = () => {
+    isFocused = true
+    tryStart()
+  }
+  const onBlur = () => {
+    isFocused = false
+    tryStop()
+  }
+  window.addEventListener('focus', onFocus)
+  window.addEventListener('blur', onBlur)
+
   const onMotionChange = () => {
     if (motionQuery.matches) {
       tryStop()
@@ -357,13 +379,17 @@ onMounted(() => {
   motionQuery.addEventListener('change', onMotionChange)
 
   tryStart()
-  if (motionQuery.matches) renderer.render({ scene: mesh })
+  // Paint one frame regardless, so an unfocused or reduced-motion load still
+  // shows the waves rather than an empty page.
+  renderer.render({ scene: mesh })
 
   disposeAll = () => {
     tryStop()
     ro.disconnect()
     io.disconnect()
     document.removeEventListener('visibilitychange', onVisibility)
+    window.removeEventListener('focus', onFocus)
+    window.removeEventListener('blur', onBlur)
     motionQuery.removeEventListener('change', onMotionChange)
     window.removeEventListener('pointermove', onPointerMove)
     document.removeEventListener('pointerleave', onPointerLeave)
