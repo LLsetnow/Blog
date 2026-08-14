@@ -31,7 +31,7 @@
        positioned canvas and the others are normal flow, so cross-fading them
        in place would have them fight over the same space. -->
   <router-view v-slot="{ Component }">
-    <Transition name="page" mode="out-in" @after-enter="initPosition">
+    <Transition name="page" mode="out-in" @after-enter="onPageEntered">
       <component :is="Component" :key="route.path" />
     </Transition>
   </router-view>
@@ -157,16 +157,47 @@ function initPosition() {
   }
 }
 
+/**
+ * Follow the music widget's slot when the layout editor moves it.
+ *
+ * The player lives here rather than in the canvas, and repositions on route
+ * change, resize, scroll and page transitions — none of which fire when a
+ * widget is dragged. Committing a drag rewrote the slot's inline style and the
+ * player stayed where it was, so every other widget moved and this one did not.
+ *
+ * Watching the anchor's own style attribute keeps App unaware of drag mode,
+ * which it has no other reason to know about.
+ */
+let anchorObserver: MutationObserver | null = null
+
+function observeAnchor() {
+  anchorObserver?.disconnect()
+  const anchor = document.querySelector<HTMLElement>('[data-widget="music"]')
+  if (!anchor) return
+  anchorObserver = new MutationObserver(() => {
+    if (route.path === '/') syncToGrid()
+  })
+  anchorObserver.observe(anchor, { attributes: true, attributeFilter: ['style'] })
+}
+
+/** The anchor is a fresh element after every route change, so re-bind to it. */
+function onPageEntered() {
+  initPosition()
+  observeAnchor()
+}
+
 onMounted(() => {
   window.addEventListener('resize', onResize)
   // capture: true — 首页实际滚动发生在 .home-page 内部容器上，scroll 不冒泡，只能在捕获阶段收到
   window.addEventListener('scroll', onScroll, { passive: true, capture: true })
   initPosition()
+  observeAnchor()
 })
 
 onUnmounted(() => {
   window.removeEventListener('resize', onResize)
   window.removeEventListener('scroll', onScroll, { capture: true })
+  anchorObserver?.disconnect()
 })
 
 // ── Resize / Scroll ──
