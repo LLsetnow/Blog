@@ -46,14 +46,14 @@
 
         <div class="now-playing__controls">
           <button type="button" aria-label="上一首" @click="prevTrack">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z" /></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z" /></svg>
           </button>
           <button class="now-playing__play" type="button" :aria-label="isPlaying ? '暂停' : '播放'" @click="togglePlay">
-            <svg v-if="isPlaying" width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1" /><rect x="14" y="5" width="4" height="14" rx="1" /></svg>
-            <svg v-else width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
+            <svg v-if="isPlaying" width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1" /><rect x="14" y="5" width="4" height="14" rx="1" /></svg>
+            <svg v-else width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
           </button>
           <button type="button" aria-label="下一首" @click="nextTrack">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M16 6h2v12h-2zM6 18l8.5-6L6 6z" /></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M16 6h2v12h-2zM6 18l8.5-6L6 6z" /></svg>
           </button>
         </div>
       </section>
@@ -252,13 +252,19 @@ watch(currentTrack, () => {
     }
   }
 
+  // Sized against the viewport rather than a fixed cap, so a large display
+  // gets a large stage instead of a small one floating in the middle. The
+  // ceilings stop it from stretching absurdly wide on ultrawide monitors.
   &__stage {
     display: grid;
-    grid-template-columns: minmax(280px, 380px) minmax(0, 520px);
-    gap: $spacing-3xl;
+    // The cover is square and sized by this column, so the width is capped
+    // against the viewport height too — on a wide, short screen 34vw alone
+    // would make it tall enough to push the transport off the bottom.
+    grid-template-columns: minmax(320px, min(34vw, 52vh)) minmax(0, 44vw);
+    gap: clamp($spacing-2xl, 5vw, 96px);
     align-items: center;
     width: 100%;
-    max-width: 1040px;
+    max-width: min(1560px, 92vw);
   }
 
   // ── Left column ──
@@ -305,7 +311,7 @@ watch(currentTrack, () => {
   }
 
   &__title {
-    font-size: $font-size-xl;
+    font-size: clamp($font-size-xl, 2vw, 38px);
     font-weight: 700;
     color: $text-primary;
     line-height: 1.25;
@@ -314,7 +320,7 @@ watch(currentTrack, () => {
 
   &__artist {
     margin-top: 2px;
-    font-size: $font-size-sm;
+    font-size: clamp($font-size-sm, 1.05vw, 18px);
     color: $text-secondary;
   }
 
@@ -331,48 +337,64 @@ watch(currentTrack, () => {
     font-variant-numeric: tabular-nums;
   }
 
+  // Padded rather than simply taller: the track stays visually slim while the
+  // clickable area covers the full row, which is what makes scrubbing land
+  // where you aim.
   &__bar {
     flex: 1;
-    height: 4px;
-    border-radius: 2px;
+    height: 8px;
+    padding: 8px 0;
     background: rgba(255, 255, 255, 0.55);
+    background-clip: content-box;
+    border-radius: 4px;
+    box-sizing: content-box;
     cursor: pointer;
+
+    &:hover .now-playing__bar-fill {
+      background: $accent-primary;
+    }
   }
 
   &__bar-fill {
-    height: 100%;
-    border-radius: 2px;
+    height: 8px;
+    border-radius: 4px;
     background: $text-primary;
-    transition: width 0.15s linear;
+    transition: width 0.15s linear, background $transition-fast;
   }
 
   &__controls {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: $spacing-lg;
+    gap: $spacing-xl;
 
     button {
       display: flex;
       align-items: center;
       justify-content: center;
+      // 44px keeps the skip buttons at a comfortable target size; they were
+      // barely larger than their icon before.
+      width: 44px;
+      height: 44px;
       border: none;
+      border-radius: $radius-round;
       background: none;
       color: $text-secondary;
       cursor: pointer;
-      padding: 4px;
-      transition: color $transition-fast, transform $transition-fast;
+      padding: 0;
+      transition: color $transition-fast, transform $transition-fast, background $transition-fast;
 
       &:hover {
         color: $text-primary;
+        background: rgba(255, 255, 255, 0.35);
         transform: scale(1.08);
       }
     }
   }
 
   &__play {
-    width: 52px;
-    height: 52px;
+    width: 64px !important;
+    height: 64px !important;
     border-radius: $radius-round;
     background: rgba(255, 255, 255, 0.55) !important;
     color: $text-primary !important;
@@ -386,7 +408,7 @@ watch(currentTrack, () => {
 
   // ── Right column ──
   &__lyrics {
-    height: min(72vh, 620px);
+    height: 78vh;
     overflow-y: auto;
     scrollbar-width: none;
     // The panel fades at both ends so lines enter and leave rather than
@@ -437,9 +459,11 @@ watch(currentTrack, () => {
     }
   }
 
+  // Scaled with the panel: at a fixed size the lines looked lost once the
+  // column grew.
   &__line-text {
     display: block;
-    font-size: $font-size-lg;
+    font-size: clamp($font-size-lg, 1.55vw, 28px);
     font-weight: 600;
     line-height: 1.5;
   }
@@ -447,7 +471,7 @@ watch(currentTrack, () => {
   &__line-trans {
     display: block;
     margin-top: 2px;
-    font-size: $font-size-sm;
+    font-size: clamp($font-size-sm, 1.05vw, 19px);
     color: $text-muted;
     line-height: 1.5;
   }
