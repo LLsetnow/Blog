@@ -88,6 +88,16 @@ function hexToRgb(hex: string): [number, number, number] {
   ]
 }
 
+/**
+ * Render ceiling, independent of the display's refresh rate.
+ *
+ * Uncapped this follows the monitor, so a 120Hz panel doubles the GPU cost of
+ * an already deep raymarch for motion this slow — the waves drift at a pace
+ * where the extra frames are not visible.
+ */
+const TARGET_FPS = 60
+const FRAME_INTERVAL_MS = 1000 / TARGET_FPS
+
 function detailToSteps(detail: Props['detail']): number {
   if (detail === 'low') return 40.0
   if (detail === 'high') return 110.0
@@ -316,7 +326,18 @@ onMounted(() => {
   const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
   const t0 = performance.now()
 
+  let lastFrame = 0
+
   const loop = (t: number) => {
+    // Scheduled first so skipped frames still keep the loop alive.
+    raf = requestAnimationFrame(loop)
+
+    // Drop frames above the target rate. The tolerance is not cosmetic: on a
+    // 120Hz display frames arrive 8.33ms apart, so a 16.66ms gap would lose to
+    // a bare 16.67ms threshold and the effective rate would halve again to 40.
+    if (t - lastFrame < FRAME_INTERVAL_MS - 1) return
+    lastFrame = t
+
     program.value!.uniforms.iTime.value = (t - t0) * 0.001
     // Read the prop directly: upstream needed a ref to escape the effect's
     // stale closure, Vue's reactive props object is always current.
@@ -328,7 +349,6 @@ onMounted(() => {
     m[0] = currentMouse[0]
     m[1] = currentMouse[1]
     renderer.render({ scene: mesh })
-    raf = requestAnimationFrame(loop)
   }
 
   const tryStart = () => {
