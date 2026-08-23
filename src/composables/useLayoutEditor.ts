@@ -6,6 +6,7 @@ export const WIDGETS: WidgetLayout[] = [
   { id: 'contributions', label: 'GitHub 贡献', left:  -141, top:   368, width:  450, height:  220 },
   { id: 'github'     , label: 'GitHub'  , left:   -84, top:   823, width:  100, height:  100 },
   { id: 'status'     , label: '服务状态'    , left:   709, top:   112, width:  230, height:  200 },
+  { id: 'cron'       , label: '定时任务'    , left:   949, top:   112, width:  230, height:  200 },
   { id: 'music'      , label: '音乐播放器'   , left:   461, top:   449, width:  470, height:  160 },
   { id: 'gallery'    , label: '图片画廊'    , left:   404, top:   696, width:  590, height:  310 },
   { id: 'nav'        , label: '导航菜单'    , left:  1040, top:   391, width:  190, height:  360 },
