@@ -36,44 +36,19 @@
     </Transition>
   </router-view>
 
-  <!-- Off the home page the player only exists as the corner mini widget, and
-       only while something is playing — an idle player following the reader
-       around every page is noise. On the home page it stays regardless, since
-       it occupies a slot in the canvas layout. -->
-  <div v-if="showPlayer" class="player-wrapper" ref="playerRef">
-    <MusicPlayer :mini="isMini" />
+  <div v-if="route.path === '/'" class="player-wrapper" ref="playerRef">
+    <MusicPlayer />
   </div>
 </template>
 
 <script setup lang="ts">
-import { computed, nextTick, ref, watch, onMounted, onUnmounted } from 'vue'
+import { ref, watch, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
 import MusicPlayer from '@/components/home/MusicPlayer.vue'
 import GradientWaves from '@/components/common/GradientWaves.vue'
-import { useMusicPlayer } from '@/composables/useMusicPlayer'
 
 const route = useRoute()
 const playerRef = ref<HTMLElement | null>(null)
-const isMini = ref(false)
-
-const { isPlaying } = useMusicPlayer()
-
-/**
- * Home always shows it; elsewhere only while audio is actually playing.
- *
- * The now playing route is the exception: that page is the player, so the
- * corner widget would just be a second copy of the same controls.
- */
-const showPlayer = computed(() => {
-  if (route.path === '/now-playing') return false
-  return route.path === '/' || isPlaying.value
-})
-
-const POS = {
-  cornerW: 160,
-  cornerH: 56,
-  margin: 24,
-}
 
 function applyStyle(styles: Partial<CSSStyleDeclaration>) {
   const e = playerRef.value
@@ -85,9 +60,9 @@ function applyStyle(styles: Partial<CSSStyleDeclaration>) {
 
 function syncToGrid() {
   const anchor = document.querySelector<HTMLElement>('[data-widget="music"]')
-  if (!anchor) return false
+  const player = playerRef.value
+  if (!anchor || !player) return false
   const r = anchor.getBoundingClientRect()
-  isMini.value = false
   applyStyle({
     transform: `translate3d(${r.left}px, ${r.top}px, 0)`,
     width: r.width + 'px',
@@ -99,7 +74,7 @@ function syncToGrid() {
 
 function syncGridTransform() {
   const anchor = document.querySelector<HTMLElement>('[data-widget="music"]')
-  if (!anchor) return false
+  if (!anchor || !playerRef.value) return false
   const r = anchor.getBoundingClientRect()
   applyStyle({
     transform: `translate3d(${r.left}px, ${r.top}px, 0)`,
@@ -107,35 +82,10 @@ function syncGridTransform() {
   return true
 }
 
-function syncToCorner() {
-  isMini.value = true
-  applyStyle({
-    transform: `translate3d(${window.innerWidth - POS.cornerW - POS.margin}px, ${window.innerHeight - POS.cornerH - POS.margin}px, 0)`,
-    width: POS.cornerW + 'px',
-    height: POS.cornerH + 'px',
-    zIndex: '260',
-  })
-}
-
 // ── Route watcher ──
 
 watch(() => route.path, (path) => {
-  if (path === '/') {
-    retrySyncGrid()
-  } else {
-    syncToCorner()
-  }
-})
-
-/**
- * The wrapper is conditionally rendered, so when playback starts away from the
- * home page it mounts unpositioned. Without this it would appear at the top
- * left until the next route change or resize moved it.
- */
-watch(showPlayer, async (visible) => {
-  if (!visible) return
-  await nextTick()
-  initPosition()
+  if (path === '/') retrySyncGrid()
 })
 
 function retrySyncGrid() {
@@ -153,11 +103,7 @@ function retrySyncGrid() {
  * position — the player would settle 12px low, exactly the enter translation.
  */
 function initPosition() {
-  if (route.path === '/') {
-    retrySyncGrid()
-  } else {
-    syncToCorner()
-  }
+  if (route.path === '/') retrySyncGrid()
 }
 
 /**
@@ -206,11 +152,7 @@ onUnmounted(() => {
 // ── Resize / Scroll ──
 
 function onResize() {
-  if (route.path === '/') {
-    syncToGrid()
-  } else {
-    syncToCorner()
-  }
+  if (route.path === '/') syncToGrid()
 }
 
 let scrollRaf = 0
@@ -240,7 +182,4 @@ function onScroll() {
   will-change: transform;
 }
 
-.player-wrapper :deep(.music-player--mini) {
-  border-radius: 40px;
-}
 </style>
