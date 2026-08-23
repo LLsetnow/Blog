@@ -17,6 +17,7 @@ Baseline commit: `4a90369` on branch `codex/animations-optimize`.
 | 011 | Give the layout settings modal an enter and exit transition | MEDIUM | DONE | — |
 | 012 | Make image lightboxes reversible instead of one-way keyframes | MEDIUM | DONE | — |
 | 013 | Move gallery loading shimmer onto the compositor | MEDIUM | DONE | — |
+| 014 | Restore selective low-amplitude 3D tilt for showcase cards | MEDIUM | DONE | 009 |
 
 ## Recommended execution order
 
@@ -39,6 +40,8 @@ order after the completed 001–008 set:
 3. 010 — add a small, trigger-originated transition to the mobile popover.
 4. 011 — add modal entry/exit feedback without delaying the settings action.
 5. 012 — make image lightboxes reversible, including their close path.
+6. 014 — restore restrained depth only to the greeting, GitHub, and gallery
+   showcase cards; it deliberately keeps 009's control-stability gains.
 
 The audit also found two lower-priority polish candidates not turned into plans:
 standardise music-control press depth (`scale(0.97)`) and avoid interpolating
