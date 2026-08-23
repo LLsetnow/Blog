@@ -544,7 +544,7 @@ function endSeek(_event: PointerEvent) {
 
   &__progress-thumb {
     position: absolute;
-    top: 50%;
+    top: 0;
     transform: translate(-50%, -50%);
     width: 10px;
     height: 10px;

@@ -145,6 +145,16 @@ a {
     transform: none !important;
   }
 
+  .image-gallery__item img,
+  .favorites__card,
+  .now-playing__controls button,
+  .music-player__mini-btn,
+  .home-page__settings-btn,
+  .layout-settings__btn {
+    transition: none !important;
+    transform: none !important;
+  }
+
   .image-gallery__skeleton,
   .image-gallery__spinner,
   .favorites__spinner,
@@ -161,5 +171,19 @@ a {
   .project-post__lightbox,
   .project-post__lightbox-img {
     animation: none !important;
+  }
+
+  .toast-enter-active,
+  .toast-leave-active {
+    transition: opacity 120ms ease !important;
+  }
+
+  .toast-move {
+    transition: none !important;
+  }
+
+  .toast-enter-from,
+  .toast-leave-to {
+    transform: none !important;
   }
 }
