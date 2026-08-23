@@ -53,6 +53,13 @@
         </TiltEffect>
       </div>
 
+      <!-- Scheduled task status (hidden on mobile with service status) -->
+      <div v-if="!isMobile" class="home-page__cell" :style="getWidgetStyle('cron')">
+        <TiltEffect :disabled="isDragMode">
+          <CronTasks />
+        </TiltEffect>
+      </div>
+
       <!-- Gallery -->
       <div class="home-page__cell" :style="getWidgetStyle('gallery')">
         <TiltEffect :disabled="isDragMode">
@@ -118,6 +125,7 @@ import { computed, onBeforeUnmount, ref } from 'vue'
 import type { WidgetLayout } from '@/types'
 import GreetingCard from '@/components/home/GreetingCard.vue'
 import ServiceStatus from '@/components/home/ServiceStatus.vue'
+import CronTasks from '@/components/home/CronTasks.vue'
 import ContributionHeatmap from '@/components/home/ContributionHeatmap.vue'
 import NavMenu from '@/components/home/NavMenu.vue'
 import GitHubCard from '@/components/home/GitHubCard.vue'
