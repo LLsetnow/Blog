@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { onMounted, onUnmounted, ref } from 'vue'
 
 interface TiltEffectProps {
   maxTilt?: number
@@ -26,9 +26,30 @@ const props = withDefaults(defineProps<TiltEffectProps>(), {
 })
 
 const tiltRef = ref<HTMLElement | null>(null)
+const prefersReducedMotion = ref(false)
+let motionQuery: MediaQueryList | null = null
+
+function updateReducedMotion(event?: MediaQueryListEvent): void {
+  prefersReducedMotion.value = event?.matches ?? motionQuery?.matches ?? false
+  if (prefersReducedMotion.value && tiltRef.value) {
+    tiltRef.value.style.transition = 'none'
+    tiltRef.value.style.transform = 'none'
+  }
+}
+
+onMounted(() => {
+  motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
+  updateReducedMotion()
+  motionQuery.addEventListener('change', updateReducedMotion)
+})
+
+onUnmounted(() => {
+  motionQuery?.removeEventListener('change', updateReducedMotion)
+  motionQuery = null
+})
 
 function onMouseMove(event: MouseEvent): void {
-  if (props.disabled) return
+  if (props.disabled || prefersReducedMotion.value) return
   const element = tiltRef.value
   if (!element) return
 
@@ -48,7 +69,7 @@ function onMouseMove(event: MouseEvent): void {
 }
 
 function onMouseLeave(): void {
-  if (props.disabled) return
+  if (props.disabled || prefersReducedMotion.value) return
   const element = tiltRef.value
   if (!element) return
   element.style.transition = 'transform 0.5s ease'

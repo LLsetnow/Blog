@@ -447,10 +447,15 @@ onMounted(async () => {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 
     &:hover {
-      transform: translateY(-4px);
       box-shadow:
         inset 0 0 0 1px rgba(255, 255, 255, 0.6),
         0 16px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        transform: translateY(-4px);
+      }
     }
 
     &:active {
@@ -563,7 +568,10 @@ onMounted(async () => {
     color: $text-secondary;
     font-size: $font-size-sm;
     cursor: pointer;
-    transition: all 0.15s ease;
+    transition: background 0.15s ease,
+                color 0.15s ease,
+                opacity 0.15s ease,
+                transform 0.15s ease;
 
     &:hover:not(:disabled) {
       background: rgba(255, 255, 255, 0.25);

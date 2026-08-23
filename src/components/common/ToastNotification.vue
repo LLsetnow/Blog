@@ -47,11 +47,17 @@ defineProps<{
 }
 
 .toast-enter-active {
-  transition: all 0.3s ease;
+  transition: opacity 180ms cubic-bezier(0.23, 1, 0.32, 1),
+              transform 180ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .toast-leave-active {
-  transition: all 0.2s ease;
+  transition: opacity 140ms cubic-bezier(0.23, 1, 0.32, 1),
+              transform 140ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.toast-move {
+  transition: transform 180ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .toast-enter-from {

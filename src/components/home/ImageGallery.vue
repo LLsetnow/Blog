@@ -179,8 +179,10 @@ function onPreviewMouseLeave() {
       transition: transform 0.3s ease;
     }
 
-    &:hover img {
-      transform: scale(1.1);
+    @media (hover: hover) and (pointer: fine) {
+      &:hover img {
+        transform: scale(1.1);
+      }
     }
   }
 

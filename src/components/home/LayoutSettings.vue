@@ -274,7 +274,9 @@ async function doExport(): Promise<void> {
     font-size: $font-size-base;
     font-weight: 600;
     cursor: pointer;
-    transition: all $transition-fast;
+    transition: background $transition-fast,
+                opacity $transition-fast,
+                transform $transition-fast;
 
     &--drag {
       background: $accent-gradient;
@@ -282,7 +284,12 @@ async function doExport(): Promise<void> {
 
       &:hover {
         opacity: 0.9;
-        transform: translateY(-1px);
+      }
+
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          transform: translateY(-1px);
+        }
       }
     }
 
@@ -293,7 +300,12 @@ async function doExport(): Promise<void> {
 
       &:hover {
         background: rgba(255, 255, 255, 0.6);
-        transform: translateY(-1px);
+      }
+
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          transform: translateY(-1px);
+        }
       }
     }
   }

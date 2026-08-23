@@ -104,7 +104,7 @@
             </button>
             <div class="music-player__volume-slider" @click="onVolumeClick">
               <div class="music-player__volume-track">
-                <div class="music-player__volume-fill" :style="{ width: volumePercent + '%' }" />
+                <div class="music-player__volume-fill" :style="{ transform: `scaleX(${volumePercent / 100})` }" />
               </div>
             </div>
           </div>
@@ -121,8 +121,13 @@
         @pointercancel="endSeek"
       >
         <div class="music-player__progress-track">
-          <div class="music-player__progress-fill" :style="{ width: progressPercent + '%' }" />
-          <div class="music-player__progress-thumb" :style="{ left: progressPercent + '%' }" />
+          <div class="music-player__progress-fill" :style="{ transform: `scaleX(${progressPercent / 100})` }" />
+          <div
+            class="music-player__progress-thumb-track"
+            :style="{ transform: `translateX(${progressPercent}%)` }"
+          >
+            <div class="music-player__progress-thumb" />
+          </div>
         </div>
       </div>
 
@@ -281,11 +286,16 @@ function endSeek(_event: PointerEvent) {
   background: $accent-gradient;
   color: white;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 
   &:hover {
     opacity: 0.85;
-    transform: scale(1.05);
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
   &:active {
@@ -316,7 +326,7 @@ function endSeek(_event: PointerEvent) {
   user-select: none;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
-  transition: all $transition-base;
+  transition: background $transition-base, box-shadow $transition-base;
 
   &:hover {
     background: $bg-card-hover;
@@ -404,7 +414,9 @@ function endSeek(_event: PointerEvent) {
     background: transparent;
     color: $text-secondary;
     cursor: pointer;
-    transition: all $transition-fast;
+    transition: background $transition-fast,
+                color $transition-fast,
+                transform $transition-fast;
 
     &:hover {
       background: rgba(255, 255, 255, 0.35);
@@ -466,10 +478,12 @@ function endSeek(_event: PointerEvent) {
   }
 
   &__volume-fill {
+    width: 100%;
     height: 100%;
     background: $accent-primary;
     border-radius: 2px;
-    transition: width 0.1s ease;
+    transform-origin: left center;
+    transition: transform 0.1s ease;
   }
 
   &__time-row {
@@ -510,16 +524,27 @@ function endSeek(_event: PointerEvent) {
   }
 
   &__progress-fill {
+    width: 100%;
     height: 100%;
     background: $accent-gradient;
     border-radius: 2px;
-    transition: width 0.2s linear;
+    transform-origin: left center;
+    transition: transform 0.2s linear;
     position: relative;
+  }
+
+  &__progress-thumb-track {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    pointer-events: none;
   }
 
   &__progress-thumb {
     position: absolute;
-    top: 50%;
+    top: 0;
     transform: translate(-50%, -50%);
     width: 10px;
     height: 10px;

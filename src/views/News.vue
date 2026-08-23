@@ -178,7 +178,9 @@ function formatDateTime(dateStr: string): string {
     font-size: $font-size-sm;
     font-weight: 500;
     cursor: pointer;
-    transition: all $transition-fast;
+    transition: background $transition-fast,
+                color $transition-fast,
+                border-color $transition-fast;
 
     &:hover {
       background: rgba(255, 255, 255, 0.4);

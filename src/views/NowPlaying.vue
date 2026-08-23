@@ -39,7 +39,7 @@
             @click="onSeek"
             @keydown="onBarKey"
           >
-            <div class="now-playing__bar-fill" :style="{ width: `${progressPercent}%` }" />
+            <div class="now-playing__bar-fill" :style="{ transform: `scaleX(${progressPercent / 100})` }" />
           </div>
           <span class="now-playing__time">{{ formatTime(duration) }}</span>
         </div>
@@ -281,7 +281,7 @@ watch(currentTrack, () => {
     overflow: hidden;
     box-shadow: 0 24px 64px rgba(45, 45, 58, 0.28);
     // Shrinks slightly while paused, the way a record player winds down.
-    transition: transform 0.6s $transition-base, box-shadow 0.6s ease;
+    transition: transform $transition-base, box-shadow $transition-base;
 
     img {
       width: 100%;
@@ -356,10 +356,12 @@ watch(currentTrack, () => {
   }
 
   &__bar-fill {
+    width: 100%;
     height: 8px;
     border-radius: 4px;
     background: $text-primary;
-    transition: width 0.15s linear, background $transition-fast;
+    transform-origin: left center;
+    transition: transform 0.15s linear, background $transition-fast;
   }
 
   &__controls {
@@ -387,7 +389,12 @@ watch(currentTrack, () => {
       &:hover {
         color: $text-primary;
         background: rgba(255, 255, 255, 0.35);
-        transform: scale(1.08);
+      }
+
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          transform: scale(1.08);
+        }
       }
     }
   }
