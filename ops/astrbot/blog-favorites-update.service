@@ -1,0 +1,16 @@
+[Unit]
+Description=Update blog Bilibili favorites
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=root
+Group=root
+WorkingDirectory=/home/admin/Blog
+EnvironmentFile=/var/OPC/.env
+Environment="PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+ExecStart=/usr/local/libexec/blog-favorites-update.py
+
+[Install]
+WantedBy=multi-user.target
