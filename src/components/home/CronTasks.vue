@@ -12,7 +12,7 @@
         <span
           class="cron-tasks__frequency"
           :aria-label="`${task.frequency}（${task.timezone}）`"
-        >{{ task.frequency }}（{{ task.timezone }}）</span>
+        >{{ task.frequency }}</span>
       </li>
     </ul>
   </section>
