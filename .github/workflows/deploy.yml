@@ -32,7 +32,8 @@ jobs:
           chmod 600 ~/.ssh/deploy_key
           ssh-keyscan -H ${{ secrets.DEPLOY_HOST }} >> ~/.ssh/known_hosts
           # AstrBot systemd timers 管理新闻、项目和收藏数据，部署时保留这些文件。
-          rsync -rlgoDzvc --delete \
+          # 不保留组，避免部署用户无权修改定时器管理目录的组。
+          rsync -rloDzvc --delete \
             --exclude='news/today.json' \
             --exclude='projects-data/projects.json' \
             --exclude='projects-data/images/' \
