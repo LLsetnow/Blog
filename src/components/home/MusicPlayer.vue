@@ -1,42 +1,8 @@
 <template>
   <div
-    class="music-player"
-    :class="{
-      'music-player--glass': !mini,
-      'music-player--mini': mini,
-    }"
+    class="music-player music-player--glass"
   >
-    <!-- Mini mode: compact floating layout -->
-    <template v-if="mini">
-      <div class="music-player__mini-icon">
-        <img :src="`${baseUrl}assets/音乐.svg`" alt="music" class="music-player__icon-svg" />
-      </div>
-      <div class="music-player__mini-info">
-        <span class="music-player__mini-title">{{ currentTrack.title }}</span>
-        <span class="music-player__mini-artist">{{ currentTrack.artist }}</span>
-      </div>
-      <button
-        class="music-player__mini-btn"
-        :class="{ 'music-player__btn--loading': isLoading }"
-        :disabled="hasError"
-        @click="togglePlay"
-      >
-        <svg v-if="isLoading" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="music-player__spinner">
-          <circle cx="12" cy="12" r="10" stroke-dasharray="31.4 31.4" stroke-linecap="round" />
-        </svg>
-        <svg v-else-if="isPlaying" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <rect x="6" y="4" width="4" height="16" rx="1" />
-          <rect x="14" y="4" width="4" height="16" rx="1" />
-        </svg>
-        <svg v-else width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polygon points="6 3 20 12 6 21 6 3" />
-        </svg>
-      </button>
-    </template>
-
-    <!-- Full mode: original layout -->
-    <template v-else>
-      <!-- Top row: info + controls -->
+    <!-- Top row: info + controls -->
       <div class="music-player__row">
         <div class="music-player__icon">
           <img :src="`${baseUrl}assets/音乐.svg`" alt="music" class="music-player__icon-svg" />
@@ -141,7 +107,6 @@
       <div v-if="hasError && !isLoading" class="music-player__error">
         无法加载音频文件
       </div>
-    </template>
   </div>
 </template>
 
@@ -150,8 +115,6 @@ import { ref } from 'vue'
 import { useMusicPlayer } from '@/composables/useMusicPlayer'
 
 const baseUrl = import.meta.env.BASE_URL || '/'
-
-defineProps<{ mini?: boolean }>()
 
 const {
   isPlaying,
@@ -213,107 +176,7 @@ function endSeek(_event: PointerEvent) {
 </script>
 
 <style lang="scss" scoped>
-// ===== Mini floating mode =====
-.music-player--mini {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 16px;
-  border-radius: 40px;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(16px);
-  box-shadow:
-    0 4px 24px rgba(0, 0, 0, 0.12),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.6);
-  user-select: none;
-  -webkit-user-select: none;
-
-  &:hover {
-    background: rgba(255, 255, 255, 0.92);
-    box-shadow:
-      0 6px 32px rgba(0, 0, 0, 0.16),
-      inset 0 0 0 1px rgba(255, 255, 255, 0.7);
-  }
-}
-
-.music-player__mini-icon {
-  flex-shrink: 0;
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  .music-player__icon-svg {
-    width: 26px;
-    height: 26px;
-  }
-}
-
-.music-player__mini-info {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  max-width: 120px;
-}
-
-.music-player__mini-title {
-  font-size: 13px;
-  font-weight: 600;
-  color: $text-primary;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.music-player__mini-artist {
-  font-size: 11px;
-  color: $text-secondary;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.music-player__mini-btn {
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border: none;
-  border-radius: 50%;
-  background: $accent-gradient;
-  color: white;
-  cursor: pointer;
-  transition: opacity 0.2s ease, transform 0.2s ease;
-
-  &:hover {
-    opacity: 0.85;
-  }
-
-  @media (hover: hover) and (pointer: fine) {
-    &:hover {
-      transform: scale(1.05);
-    }
-  }
-
-  &:active {
-    transform: scale(0.95);
-  }
-
-  &:disabled {
-    opacity: 0.4;
-    cursor: not-allowed;
-    transform: none;
-  }
-
-  &.music-player__btn--loading {
-    pointer-events: none;
-  }
-}
-
-// ===== Full glass mode (original) =====
+// ===== Glass mode =====
 .music-player--glass {
   @include glass;
   border-radius: $radius-xl;
