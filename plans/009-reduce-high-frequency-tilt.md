@@ -1,5 +1,5 @@
 # 009 — Remove decorative tilt from high-frequency home cards
-- **Status**: TODO
+- **Status**: DONE
 - **Commit**: 3887f53
 - **Severity**: HIGH
 - **Category**: Purpose & frequency / Performance

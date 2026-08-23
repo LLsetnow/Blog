@@ -1,64 +1,66 @@
 <template>
   <Teleport to="body">
-    <div class="layout-settings-overlay" @click.self="$emit('close')">
-      <div class="layout-settings glass-card">
-        <div class="layout-settings__header">
-          <h2 class="layout-settings__title">布局设置</h2>
-          <button class="layout-settings__close" @click="$emit('close')">&times;</button>
-        </div>
+    <Transition name="layout-settings">
+      <div v-if="open" class="layout-settings-overlay" @click.self="$emit('close')">
+        <div class="layout-settings glass-card">
+          <div class="layout-settings__header">
+            <h2 class="layout-settings__title">布局设置</h2>
+            <button class="layout-settings__close" @click="$emit('close')">&times;</button>
+          </div>
 
-        <div class="layout-settings__list">
-          <div
-            v-for="widget in widgets"
-            :key="widget.id"
-            class="layout-settings__item"
-          >
-            <span class="layout-settings__label">{{ widget.label }}</span>
-            <div class="layout-settings__inputs">
-              <label class="layout-settings__field">
-                宽
-                <div class="layout-settings__number">
-                  <button class="layout-settings__step" @click="emit('updateSize', widget.id, Math.max(50, widget.width - 10), widget.height)">−</button>
-                  <input
-                    type="number"
-                    :min="50"
-                    :max="1100"
-                    :value="widget.width"
-                    class="layout-settings__input"
-                    @change="onWidthChange(widget.id, ($event.target as HTMLInputElement).value, widget.height)"
-                  />
-                  <button class="layout-settings__step" @click="emit('updateSize', widget.id, Math.min(1100, widget.width + 10), widget.height)">+</button>
-                </div>
-              </label>
-              <label class="layout-settings__field">
-                高
-                <div class="layout-settings__number">
-                  <button class="layout-settings__step" @click="emit('updateSize', widget.id, widget.width, Math.max(50, widget.height - 10))">−</button>
-                  <input
-                    type="number"
-                    :min="50"
-                    :max="800"
-                    :value="widget.height"
-                    class="layout-settings__input"
-                    @change="onHeightChange(widget.id, ($event.target as HTMLInputElement).value, widget.width)"
-                  />
-                  <button class="layout-settings__step" @click="emit('updateSize', widget.id, widget.width, Math.min(800, widget.height + 10))">+</button>
-                </div>
-              </label>
+          <div class="layout-settings__list">
+            <div
+              v-for="widget in widgets"
+              :key="widget.id"
+              class="layout-settings__item"
+            >
+              <span class="layout-settings__label">{{ widget.label }}</span>
+              <div class="layout-settings__inputs">
+                <label class="layout-settings__field">
+                  宽
+                  <div class="layout-settings__number">
+                    <button class="layout-settings__step" @click="emit('updateSize', widget.id, Math.max(50, widget.width - 10), widget.height)">−</button>
+                    <input
+                      type="number"
+                      :min="50"
+                      :max="1100"
+                      :value="widget.width"
+                      class="layout-settings__input"
+                      @change="onWidthChange(widget.id, ($event.target as HTMLInputElement).value, widget.height)"
+                    />
+                    <button class="layout-settings__step" @click="emit('updateSize', widget.id, Math.min(1100, widget.width + 10), widget.height)">+</button>
+                  </div>
+                </label>
+                <label class="layout-settings__field">
+                  高
+                  <div class="layout-settings__number">
+                    <button class="layout-settings__step" @click="emit('updateSize', widget.id, widget.width, Math.max(50, widget.height - 10))">−</button>
+                    <input
+                      type="number"
+                      :min="50"
+                      :max="800"
+                      :value="widget.height"
+                      class="layout-settings__input"
+                      @change="onHeightChange(widget.id, ($event.target as HTMLInputElement).value, widget.width)"
+                    />
+                    <button class="layout-settings__step" @click="emit('updateSize', widget.id, widget.width, Math.min(800, widget.height + 10))">+</button>
+                  </div>
+                </label>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="layout-settings__actions">
-          <button class="layout-settings__btn layout-settings__btn--drag" @click="$emit('drag')">
-            拖拽布局
-          </button>
-          <button class="layout-settings__btn layout-settings__btn--export" @click="doExport">
-            {{ copied ? '已复制!' : '导出布局到代码' }}
-          </button>
+          <div class="layout-settings__actions">
+            <button class="layout-settings__btn layout-settings__btn--drag" @click="$emit('drag')">
+              拖拽布局
+            </button>
+            <button class="layout-settings__btn layout-settings__btn--export" @click="doExport">
+              {{ copied ? '已复制!' : '导出布局到代码' }}
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+    </Transition>
   </Teleport>
 </template>
 
@@ -68,6 +70,7 @@ import type { WidgetLayout } from '@/types'
 import { generateLayoutCode } from '@/composables/useLayoutEditor'
 
 interface LayoutSettingsProps {
+  open: boolean
   widgets: WidgetLayout[]
 }
 
@@ -308,6 +311,53 @@ async function doExport(): Promise<void> {
         }
       }
     }
+  }
+}
+
+.layout-settings-enter-active {
+  transition: opacity 220ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.layout-settings-leave-active {
+  transition: opacity 160ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.layout-settings-enter-active .layout-settings,
+.layout-settings-leave-active .layout-settings {
+  transition: opacity 220ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 220ms cubic-bezier(0.23, 1, 0.32, 1);
+  transform-origin: center;
+}
+
+.layout-settings-enter-from,
+.layout-settings-leave-to {
+  opacity: 0;
+}
+
+.layout-settings-enter-from .layout-settings {
+  opacity: 0;
+  transform: scale(0.97);
+}
+
+.layout-settings-leave-to .layout-settings {
+  opacity: 0;
+  transform: scale(0.98);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .layout-settings-enter-active,
+  .layout-settings-leave-active {
+    transition: opacity 120ms ease;
+  }
+
+  .layout-settings-enter-active .layout-settings,
+  .layout-settings-leave-active .layout-settings {
+    transition: opacity 120ms ease;
+  }
+
+  .layout-settings-enter-from .layout-settings,
+  .layout-settings-leave-to .layout-settings {
+    transform: none;
   }
 }
 </style>

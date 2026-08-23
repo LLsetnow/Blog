@@ -1,5 +1,5 @@
 # 010 — Animate the mobile navigation popover from its trigger
-- **Status**: TODO
+- **Status**: DONE
 - **Commit**: 3887f53
 - **Severity**: MEDIUM
 - **Category**: Missed opportunities / Physicality & origin

@@ -1,5 +1,5 @@
 # 012 — Make image lightboxes reversible instead of one-way keyframes
-- **Status**: TODO
+- **Status**: DONE
 - **Commit**: 3887f53
 - **Severity**: MEDIUM
 - **Category**: Interruptibility / Missed opportunities

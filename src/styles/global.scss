@@ -139,7 +139,6 @@ a {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .tilt-effect,
   .image-gallery__preview-image {
     transition: none !important;
     transform: none !important;
@@ -156,6 +155,7 @@ a {
   }
 
   .image-gallery__skeleton,
+  .image-gallery__skeleton::after,
   .image-gallery__spinner,
   .favorites__spinner,
   .service-status__spin,
@@ -171,6 +171,27 @@ a {
   .project-post__lightbox,
   .project-post__lightbox-img {
     animation: none !important;
+  }
+
+  .gallery-preview-enter-active,
+  .gallery-preview-leave-active,
+  .project-lightbox-enter-active,
+  .project-lightbox-leave-active {
+    transition: opacity 120ms ease !important;
+  }
+
+  .gallery-preview-enter-active .image-gallery__preview-frame,
+  .gallery-preview-leave-active .image-gallery__preview-frame,
+  .project-lightbox-enter-active .project-post__lightbox-frame,
+  .project-lightbox-leave-active .project-post__lightbox-frame {
+    transition: opacity 120ms ease !important;
+  }
+
+  .gallery-preview-enter-from .image-gallery__preview-frame,
+  .gallery-preview-leave-to .image-gallery__preview-frame,
+  .project-lightbox-enter-from .project-post__lightbox-frame,
+  .project-lightbox-leave-to .project-post__lightbox-frame {
+    transform: none !important;
   }
 
   .toast-enter-active,

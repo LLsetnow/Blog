@@ -3,68 +3,48 @@
     <div class="home-page__container" :style="canvasStyle">
       <!-- Greeting -->
       <div class="home-page__cell" :style="getWidgetStyle('greeting')">
-        <TiltEffect :disabled="isDragMode">
-          <GreetingCard />
-        </TiltEffect>
+        <GreetingCard />
       </div>
 
       <!-- Contribution heatmap (hidden on mobile) -->
       <div v-if="!isMobile" class="home-page__cell" data-widget="contributions" :style="getWidgetStyle('contributions')">
-        <TiltEffect :disabled="isDragMode">
-          <ContributionHeatmap />
-        </TiltEffect>
+        <ContributionHeatmap />
       </div>
 
       <!-- GitHub + Email + WeChat (horizontal row on mobile) -->
       <div class="home-page__icon-row">
         <div class="home-page__cell" :style="getWidgetStyle('github')">
-          <TiltEffect :disabled="isDragMode">
-            <GitHubCard />
-          </TiltEffect>
+          <GitHubCard />
         </div>
         <div class="home-page__cell" :style="getWidgetStyle('email')">
-          <TiltEffect :disabled="isDragMode">
-            <EmailWidget />
-          </TiltEffect>
+          <EmailWidget />
         </div>
         <div class="home-page__cell" :style="getWidgetStyle('wechat')">
-          <TiltEffect :disabled="isDragMode">
-            <WeChatWidget />
-          </TiltEffect>
+          <WeChatWidget />
         </div>
         <div class="home-page__cell" :style="getWidgetStyle('bilibili')">
-          <TiltEffect :disabled="isDragMode">
-            <BilibiliWidget />
-          </TiltEffect>
+          <BilibiliWidget />
         </div>
       </div>
 
       <!-- Nav (horizontal on mobile) -->
       <div class="home-page__cell home-page__nav-cell" data-widget="nav" :style="getWidgetStyle('nav')">
-        <TiltEffect :disabled="isDragMode">
-          <NavMenu />
-        </TiltEffect>
+        <NavMenu />
       </div>
 
       <!-- Service status (hidden on mobile) -->
       <div v-if="!isMobile" class="home-page__cell" :style="getWidgetStyle('status')">
-        <TiltEffect :disabled="isDragMode">
-          <ServiceStatus />
-        </TiltEffect>
+        <ServiceStatus />
       </div>
 
       <!-- Scheduled task status (hidden on mobile with service status) -->
       <div v-if="!isMobile" class="home-page__cell" :style="getWidgetStyle('cron')">
-        <TiltEffect :disabled="isDragMode">
-          <CronTasks />
-        </TiltEffect>
+        <CronTasks />
       </div>
 
       <!-- Gallery -->
       <div class="home-page__cell" :style="getWidgetStyle('gallery')">
-        <TiltEffect :disabled="isDragMode">
-          <ImageGallery />
-        </TiltEffect>
+        <ImageGallery />
       </div>
 
       <!-- Music Player (position anchor for global player) -->
@@ -111,7 +91,7 @@
 
     <!-- Settings modal -->
     <LayoutSettings
-      v-if="isSettingsOpen"
+      :open="isSettingsOpen"
       :widgets="layouts"
       @close="closeSettings"
       @drag="enterDragMode"
@@ -134,7 +114,6 @@ import ImageGallery from '@/components/home/ImageGallery.vue'
 import EmailWidget from '@/components/home/EmailWidget.vue'
 import WeChatWidget from '@/components/home/WeChatWidget.vue'
 import BilibiliWidget from '@/components/home/BilibiliWidget.vue'
-import TiltEffect from '@/components/common/TiltEffect.vue'
 import LayoutSettings from '@/components/home/LayoutSettings.vue'
 import ToastNotification from '@/components/common/ToastNotification.vue'
 import { useToast } from '@/composables/useToast'

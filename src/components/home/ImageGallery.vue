@@ -25,27 +25,31 @@
 
     <!-- Lightbox overlay -->
     <Teleport to="body">
-      <div
-        v-if="previewIndex !== null"
-        class="image-gallery__preview"
-        @click="closePreview"
-      >
-        <div v-if="previewLoading" class="image-gallery__spinner" />
+      <Transition name="gallery-preview">
         <div
-          ref="previewRef"
-          class="image-gallery__preview-image"
-          :class="{ 'image-gallery__preview-image--visible': !previewLoading }"
-          @mousemove="onPreviewMouseMove"
-          @mouseleave="onPreviewMouseLeave"
-          @click.stop
+          v-if="previewIndex !== null"
+          class="image-gallery__preview"
+          @click="closePreview"
         >
-          <img
-            :src="images[previewIndex].full"
-            :alt="images[previewIndex].alt"
-            @load="onPreviewLoaded"
-          />
+          <div v-if="previewLoading" class="image-gallery__spinner" />
+          <div class="image-gallery__preview-frame">
+            <div
+              ref="previewRef"
+              class="image-gallery__preview-image"
+              :class="{ 'image-gallery__preview-image--visible': !previewLoading }"
+              @mousemove="onPreviewMouseMove"
+              @mouseleave="onPreviewMouseLeave"
+              @click.stop
+            >
+              <img
+                :src="images[previewIndex].full"
+                :alt="images[previewIndex].alt"
+                @load="onPreviewLoaded"
+              />
+            </div>
+          </div>
         </div>
-      </div>
+      </Transition>
     </Teleport>
   </div>
 </template>
@@ -189,20 +193,23 @@ function onPreviewMouseLeave() {
   &__skeleton {
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.04) 25%,
-      rgba(255, 255, 255, 0.08) 50%,
-      rgba(255, 255, 255, 0.04) 75%
-    );
-    background-size: 200% 100%;
-    animation: shimmer 1.2s ease-in-out infinite;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.04);
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      width: 50%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
+      transform: translateX(-200%);
+      animation: gallery-shimmer 1.2s linear infinite;
+    }
   }
 }
 
-@keyframes shimmer {
-  0% { background-position: 200% 0; }
-  100% { background-position: -200% 0; }
+@keyframes gallery-shimmer {
+  to { transform: translateX(300%); }
 }
 
 // Lightbox overlay (Teleported to body, unscoped)
@@ -217,6 +224,12 @@ function onPreviewMouseLeave() {
   align-items: center;
   justify-content: center;
   cursor: zoom-out;
+
+  .image-gallery__preview-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   .image-gallery__preview-image {
     max-width: 75vw;
@@ -241,6 +254,36 @@ function onPreviewMouseLeave() {
       object-fit: contain;
     }
   }
+}
+
+.gallery-preview-enter-active {
+  transition: opacity 200ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.gallery-preview-leave-active {
+  transition: opacity 160ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.gallery-preview-enter-active .image-gallery__preview-frame,
+.gallery-preview-leave-active .image-gallery__preview-frame {
+  transition: opacity 220ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 220ms cubic-bezier(0.23, 1, 0.32, 1);
+  transform-origin: center;
+}
+
+.gallery-preview-enter-from,
+.gallery-preview-leave-to {
+  opacity: 0;
+}
+
+.gallery-preview-enter-from .image-gallery__preview-frame {
+  opacity: 0;
+  transform: scale(0.97);
+}
+
+.gallery-preview-leave-to .image-gallery__preview-frame {
+  opacity: 0;
+  transform: scale(0.98);
 }
 
 .image-gallery__spinner {

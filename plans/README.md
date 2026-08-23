@@ -12,11 +12,11 @@ Baseline commit: `4a90369` on branch `codex/animations-optimize`.
 | 006 | Gate transform hover effects to pointer devices | MEDIUM | DONE | 001 |
 | 007 | Animate toast stacking with explicit move transitions | MEDIUM | DONE | 001, 005 |
 | 008 | Move the floating player with transforms during scroll | MEDIUM | DONE | — |
-| 009 | Remove decorative tilt from high-frequency home cards | HIGH | TODO | — |
-| 010 | Animate the mobile navigation popover from its trigger | MEDIUM | TODO | — |
-| 011 | Give the layout settings modal an enter and exit transition | MEDIUM | TODO | — |
-| 012 | Make image lightboxes reversible instead of one-way keyframes | MEDIUM | TODO | — |
-| 013 | Move gallery loading shimmer onto the compositor | MEDIUM | TODO | — |
+| 009 | Remove decorative tilt from high-frequency home cards | HIGH | DONE | — |
+| 010 | Animate the mobile navigation popover from its trigger | MEDIUM | DONE | — |
+| 011 | Give the layout settings modal an enter and exit transition | MEDIUM | DONE | — |
+| 012 | Make image lightboxes reversible instead of one-way keyframes | MEDIUM | DONE | — |
+| 013 | Move gallery loading shimmer onto the compositor | MEDIUM | DONE | — |
 
 ## Recommended execution order
 
