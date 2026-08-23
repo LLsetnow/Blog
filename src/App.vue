@@ -92,9 +92,7 @@ function syncToGrid() {
   const r = anchor.getBoundingClientRect()
   isMini.value = false
   applyStyle({
-    position: 'fixed',
-    left: r.left + 'px',
-    top: r.top + 'px',
+    transform: `translate3d(${r.left}px, ${r.top}px, 0)`,
     width: r.width + 'px',
     height: r.height + 'px',
     zIndex: '260',
@@ -102,12 +100,20 @@ function syncToGrid() {
   return true
 }
 
+function syncGridTransform() {
+  const anchor = document.querySelector<HTMLElement>('[data-widget="music"]')
+  if (!anchor) return false
+  const r = anchor.getBoundingClientRect()
+  applyStyle({
+    transform: `translate3d(${r.left}px, ${r.top}px, 0)`,
+  })
+  return true
+}
+
 function syncToCorner() {
   isMini.value = true
   applyStyle({
-    position: 'fixed',
-    left: (window.innerWidth - POS.cornerW - POS.margin) + 'px',
-    top: (window.innerHeight - POS.cornerH - POS.margin) + 'px',
+    transform: `translate3d(${window.innerWidth - POS.cornerW - POS.margin}px, ${window.innerHeight - POS.cornerH - POS.margin}px, 0)`,
     width: POS.cornerW + 'px',
     height: POS.cornerH + 'px',
     zIndex: '260',
@@ -216,7 +222,7 @@ function onScroll() {
   if (scrollRaf) return
   scrollRaf = requestAnimationFrame(() => {
     scrollRaf = 0
-    syncToGrid()
+    syncGridTransform()
   })
 }
 </script>
@@ -231,8 +237,10 @@ function onScroll() {
 
 .player-wrapper {
   position: fixed;
+  left: 0;
+  top: 0;
   z-index: 260;
-  will-change: left, top, width, height;
+  will-change: transform;
 }
 
 .player-wrapper :deep(.music-player--mini) {

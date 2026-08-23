@@ -24,7 +24,7 @@
   cursor: pointer;
   width: 100%;
   height: 100%;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
 
   &:hover {
     color: #7ec8e3;

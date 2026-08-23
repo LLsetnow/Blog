@@ -40,9 +40,9 @@
       </div>
 
       <!-- Nav (horizontal on mobile) -->
-      <div v-if="!navCollapsed" class="home-page__cell home-page__nav-cell" data-widget="nav" :style="getWidgetStyle('nav')">
+      <div class="home-page__cell home-page__nav-cell" data-widget="nav" :style="getWidgetStyle('nav')">
         <TiltEffect :disabled="isDragMode">
-          <NavMenu @collapse="navCollapsed = true" />
+          <NavMenu />
         </TiltEffect>
       </div>
 
@@ -64,7 +64,7 @@
       <div data-widget="music" class="home-page__cell" :style="getWidgetStyle('music')" />
 
       <!-- Settings button (hidden on mobile) -->
-      <button v-if="!navCollapsed && !isMobile" class="home-page__settings-btn" @click="openSettings">
+      <button v-if="!isMobile" class="home-page__settings-btn" @click="openSettings">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="12" cy="12" r="3"/>
           <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
@@ -114,8 +114,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onBeforeUnmount, ref, watch } from 'vue'
-import { useRoute } from 'vue-router'
+import { computed, onBeforeUnmount, ref } from 'vue'
 import type { WidgetLayout } from '@/types'
 import GreetingCard from '@/components/home/GreetingCard.vue'
 import ServiceStatus from '@/components/home/ServiceStatus.vue'
@@ -180,7 +179,6 @@ const {
 
 const { toasts } = useToast()
 
-const navCollapsed = ref(false)
 const isMobile = ref(window.innerWidth < 768)
 
 function onResize() {
@@ -196,14 +194,6 @@ window.addEventListener('resize', onResize)
 
 onBeforeUnmount(() => {
   window.removeEventListener('resize', onResize)
-})
-
-// Reset nav when returning to home page
-const route = useRoute()
-watch(() => route.path, (path) => {
-  if (path === '/') {
-    navCollapsed.value = false
-  }
 })
 
 /** Compute drag handle inline style from widget base + offset */
@@ -280,7 +270,10 @@ function dragHandleStyle(w: WidgetLayout): Record<string, string> {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all $transition-fast;
+    transition: background $transition-fast,
+                box-shadow $transition-fast,
+                color $transition-fast,
+                transform $transition-fast;
 
     &:hover {
       background: rgba(255, 255, 255, 0.6);
@@ -288,7 +281,12 @@ function dragHandleStyle(w: WidgetLayout): Record<string, string> {
         inset 0 0 0 1px rgba(255, 255, 255, 0.8),
         inset 0 0 12px 3px rgba(255, 255, 255, 0.2);
       color: $text-primary;
-      transform: rotate(30deg);
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        transform: rotate(30deg);
+      }
     }
   }
 
@@ -340,7 +338,9 @@ function dragHandleStyle(w: WidgetLayout): Record<string, string> {
     font-size: $font-size-base;
     font-weight: 600;
     cursor: pointer;
-    transition: all $transition-fast;
+    transition: background $transition-fast,
+                opacity $transition-fast,
+                transform $transition-fast;
 
     &--save {
       background: $accent-gradient;

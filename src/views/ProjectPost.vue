@@ -460,7 +460,10 @@ function scrollToHeading(id: string) {
     font-size: $font-size-sm;
     font-weight: 500;
     text-decoration: none;
-    transition: all $transition-fast;
+    transition: background $transition-fast,
+                color $transition-fast,
+                border-color $transition-fast,
+                transform $transition-fast;
 
     &:hover {
       background: rgba(255, 255, 255, 0.3);

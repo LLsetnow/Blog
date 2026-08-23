@@ -269,7 +269,7 @@ watch(() => route.path, () => {
     font-size: 15px;
     font-weight: 500;
     border-radius: 12px;
-    transition: all $transition-fast;
+    transition: background $transition-fast, color $transition-fast;
     white-space: nowrap;
 
     &:active {

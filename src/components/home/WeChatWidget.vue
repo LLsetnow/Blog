@@ -55,7 +55,7 @@ async function copy() {
   cursor: pointer;
   text-decoration: none;
   color: #07c160;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease, opacity 0.3s ease;
   padding: $spacing-md;
 
   &:hover {
