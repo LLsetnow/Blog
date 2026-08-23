@@ -116,6 +116,12 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
+.hover-tilt {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+}
+
 @media (hover: hover) and (pointer: fine) {
   .hover-tilt {
     transform-style: preserve-3d;
