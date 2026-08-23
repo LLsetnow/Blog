@@ -12,6 +12,11 @@ Baseline commit: `4a90369` on branch `codex/animations-optimize`.
 | 006 | Gate transform hover effects to pointer devices | MEDIUM | DONE | 001 |
 | 007 | Animate toast stacking with explicit move transitions | MEDIUM | DONE | 001, 005 |
 | 008 | Move the floating player with transforms during scroll | MEDIUM | DONE | — |
+| 009 | Remove decorative tilt from high-frequency home cards | HIGH | TODO | — |
+| 010 | Animate the mobile navigation popover from its trigger | MEDIUM | TODO | — |
+| 011 | Give the layout settings modal an enter and exit transition | MEDIUM | TODO | — |
+| 012 | Make image lightboxes reversible instead of one-way keyframes | MEDIUM | TODO | — |
+| 013 | Move gallery loading shimmer onto the compositor | MEDIUM | TODO | — |
 
 ## Recommended execution order
 
@@ -23,6 +28,22 @@ Baseline commit: `4a90369` on branch `codex/animations-optimize`.
 6. 006 — gate touch-sensitive hover transforms.
 7. 007 — make toast stacking interruptible.
 8. 005 — apply reduced-motion coverage after the final motion selectors are in place.
+
+## Supplemental opportunities (2026-08-24)
+
+The current audit adds five independent follow-up plans. Execute them in this
+order after the completed 001–008 set:
+
+1. 009 — remove the highest-frequency decorative motion and its pointer work.
+2. 013 — keep eight concurrent loading placeholders compositor-friendly.
+3. 010 — add a small, trigger-originated transition to the mobile popover.
+4. 011 — add modal entry/exit feedback without delaying the settings action.
+5. 012 — make image lightboxes reversible, including their close path.
+
+The audit also found two lower-priority polish candidates not turned into plans:
+standardise music-control press depth (`scale(0.97)`) and avoid interpolating
+glass-card shadows on high-frequency hover. They can be revisited after real
+device feel checks of the five plans above.
 
 Plans are intentionally independent at the source level except where noted.
 The executor must stop if the cited code has drifted from the baseline instead
