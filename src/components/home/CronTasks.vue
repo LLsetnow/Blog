@@ -8,11 +8,11 @@
     <ul class="cron-tasks__list" aria-label="定时任务列表">
       <li v-for="task in tasks" :key="task.id" class="cron-tasks__row">
         <span class="cron-tasks__indicator" aria-hidden="true" />
-        <div class="cron-tasks__details">
-          <span class="cron-tasks__name">{{ task.name }}</span>
-          <span class="cron-tasks__frequency">{{ task.frequency }}（{{ task.timezone }}）</span>
-        </div>
-        <span class="cron-tasks__status">{{ task.status }}</span>
+        <span class="cron-tasks__name">{{ task.name }}</span>
+        <span
+          class="cron-tasks__frequency"
+          :aria-label="`${task.frequency}（${task.timezone}）`"
+        >{{ task.frequency }}</span>
       </li>
     </ul>
   </section>
@@ -24,7 +24,6 @@ interface ScheduledTask {
   name: string
   frequency: string
   timezone: string
-  status: string
 }
 
 /** Static, server-verified task metadata; this card does not probe the server. */
@@ -34,21 +33,18 @@ const tasks: readonly ScheduledTask[] = [
     name: '每日新闻更新',
     frequency: '每天 11:00',
     timezone: '北京时间',
-    status: '已启用',
   },
   {
     id: 'blog-projects-update',
     name: '项目数据更新',
     frequency: '每周日 11:30',
     timezone: '北京时间',
-    status: '已启用',
   },
   {
     id: 'blog-favorites-update',
     name: '收藏数据更新',
     frequency: '每周日 12:00',
     timezone: '北京时间',
-    status: '已启用',
   },
 ]
 </script>
@@ -115,36 +111,25 @@ const tasks: readonly ScheduledTask[] = [
     box-shadow: 0 0 0 3px rgba(56, 199, 147, 0.22);
   }
 
-  &__details {
+  &__name {
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: $spacing-xs;
     min-width: 0;
-  }
-
-  &__name,
-  &__frequency {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-  }
-
-  &__name {
     font-size: $font-size-sm;
     color: $text-secondary;
   }
 
   &__frequency {
+    flex: 0 1 48%;
+    min-width: 0;
+    overflow: hidden;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     font-size: $font-size-xs;
     color: $text-muted;
-  }
-
-  &__status {
-    flex-shrink: 0;
-    font-size: $font-size-xs;
-    color: #2eaa7b;
-    white-space: nowrap;
   }
 }
 </style>
