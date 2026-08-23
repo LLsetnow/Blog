@@ -29,14 +29,16 @@
               <svg v-else width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
             </span>
           </button>
-          <nav v-show="menuOpen" class="app-layout__nav-dropdown">
-            <router-link to="/" class="app-layout__nav-dropdown-item">首页</router-link>
-            <router-link to="/blog" class="app-layout__nav-dropdown-item">博客</router-link>
-            <router-link to="/projects" class="app-layout__nav-dropdown-item">项目</router-link>
-            <router-link to="/news" class="app-layout__nav-dropdown-item">新闻</router-link>
-            <router-link to="/about" class="app-layout__nav-dropdown-item">关于</router-link>
-            <router-link to="/favorites" class="app-layout__nav-dropdown-item">收藏</router-link>
-          </nav>
+          <Transition name="mobile-nav">
+            <nav v-if="menuOpen" class="app-layout__nav-dropdown">
+              <router-link to="/" class="app-layout__nav-dropdown-item">首页</router-link>
+              <router-link to="/blog" class="app-layout__nav-dropdown-item">博客</router-link>
+              <router-link to="/projects" class="app-layout__nav-dropdown-item">项目</router-link>
+              <router-link to="/news" class="app-layout__nav-dropdown-item">新闻</router-link>
+              <router-link to="/about" class="app-layout__nav-dropdown-item">关于</router-link>
+              <router-link to="/favorites" class="app-layout__nav-dropdown-item">收藏</router-link>
+            </nav>
+          </Transition>
         </div>
       </div>
     </header>
@@ -258,6 +260,7 @@ watch(() => route.path, () => {
       0 1px 4px rgba(0, 0, 0, 0.06);
     padding: 6px;
     z-index: $z-dropdown;
+    transform-origin: top right;
   }
 
   &__nav-dropdown-item {
@@ -281,6 +284,34 @@ watch(() => route.path, () => {
       color: $text-primary;
       background: rgba($accent-primary, 0.15);
     }
+  }
+}
+
+.mobile-nav-enter-active {
+  transition: opacity 180ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 180ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.mobile-nav-leave-active {
+  transition: opacity 140ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 140ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.mobile-nav-enter-from,
+.mobile-nav-leave-to {
+  opacity: 0;
+  transform: translateY(-8px) scale(0.98);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mobile-nav-enter-active,
+  .mobile-nav-leave-active {
+    transition: opacity 120ms ease;
+  }
+
+  .mobile-nav-enter-from,
+  .mobile-nav-leave-to {
+    transform: none;
   }
 }
 

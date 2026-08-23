@@ -81,25 +81,29 @@
 
         <!-- Image lightbox -->
         <Teleport to="body">
-          <div
-            v-if="lightboxSrc"
-            class="project-post__lightbox"
-            @click="closeLightbox"
-            @wheel.prevent="onLightboxWheel"
-          >
-            <button class="project-post__lightbox-close" @click="closeLightbox" title="关闭">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
-              </svg>
-            </button>
-            <img
-              :src="lightboxSrc"
-              :alt="lightboxAlt"
-              class="project-post__lightbox-img"
-              :style="{ transform: `scale(${lightboxScale})` }"
-              @click.stop
-            />
-          </div>
+          <Transition name="project-lightbox" @after-leave="afterLightboxLeave">
+            <div
+              v-if="lightboxOpen"
+              class="project-post__lightbox"
+              @click="closeLightbox"
+              @wheel.prevent="onLightboxWheel"
+            >
+              <button class="project-post__lightbox-close" @click="closeLightbox" title="关闭">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+              </button>
+              <div class="project-post__lightbox-frame">
+                <img
+                  :src="lightboxSrc"
+                  :alt="lightboxAlt"
+                  class="project-post__lightbox-img"
+                  :style="{ transform: `scale(${lightboxScale})` }"
+                  @click.stop
+                />
+              </div>
+            </div>
+          </Transition>
         </Teleport>
       </div>
     </div>
@@ -187,6 +191,7 @@ const renderedContent = ref('')
 const lightboxSrc = ref<string | null>(null)
 const lightboxAlt = ref('')
 const lightboxScale = ref(1)
+const lightboxOpen = ref(false)
 const MIN_SCALE = 0.5
 const MAX_SCALE = 5
 const ZOOM_STEP = 0.15
@@ -197,9 +202,14 @@ function onContentClick(e: MouseEvent) {
   lightboxSrc.value = (target as HTMLImageElement).src
   lightboxAlt.value = (target as HTMLImageElement).alt
   lightboxScale.value = 1
+  lightboxOpen.value = true
 }
 
 function closeLightbox() {
+  lightboxOpen.value = false
+}
+
+function afterLightboxLeave() {
   lightboxSrc.value = null
   lightboxAlt.value = ''
   lightboxScale.value = 1
@@ -211,7 +221,7 @@ function onLightboxWheel(e: WheelEvent) {
 }
 
 function onKeydown(e: KeyboardEvent) {
-  if (e.key === 'Escape' && lightboxSrc.value) {
+  if (e.key === 'Escape' && lightboxOpen.value) {
     closeLightbox()
   }
 }
@@ -628,7 +638,6 @@ function scrollToHeading(id: string) {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: pj-lb-fadein 0.2s ease;
   }
 
   &__lightbox-close {
@@ -659,17 +668,12 @@ function scrollToHeading(id: string) {
     object-fit: contain;
     border-radius: $radius-md;
     box-shadow: 0 16px 64px rgba(0, 0, 0, 0.3);
-    animation: pj-lb-zoomin 0.25s ease;
   }
 
-  @keyframes pj-lb-fadein {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-
-  @keyframes pj-lb-zoomin {
-    from { opacity: 0; transform: scale(0.92); }
-    to { opacity: 1; transform: scale(1); }
+  &__lightbox-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__github-btn {
@@ -707,5 +711,35 @@ function scrollToHeading(id: string) {
       opacity: 0.85;
     }
   }
+}
+
+.project-lightbox-enter-active {
+  transition: opacity 200ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.project-lightbox-leave-active {
+  transition: opacity 160ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.project-lightbox-enter-active .project-post__lightbox-frame,
+.project-lightbox-leave-active .project-post__lightbox-frame {
+  transition: opacity 220ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 220ms cubic-bezier(0.23, 1, 0.32, 1);
+  transform-origin: center;
+}
+
+.project-lightbox-enter-from,
+.project-lightbox-leave-to {
+  opacity: 0;
+}
+
+.project-lightbox-enter-from .project-post__lightbox-frame {
+  opacity: 0;
+  transform: scale(0.97);
+}
+
+.project-lightbox-leave-to .project-post__lightbox-frame {
+  opacity: 0;
+  transform: scale(0.98);
 }
 </style>

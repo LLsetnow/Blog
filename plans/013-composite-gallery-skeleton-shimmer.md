@@ -1,5 +1,5 @@
 # 013 — Move gallery loading shimmer onto the compositor
-- **Status**: TODO
+- **Status**: DONE
 - **Commit**: 3887f53
 - **Severity**: MEDIUM
 - **Category**: Performance

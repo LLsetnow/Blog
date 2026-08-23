@@ -1,5 +1,5 @@
 # 011 — Give the layout settings modal an enter and exit transition
-- **Status**: TODO
+- **Status**: DONE
 - **Commit**: 3887f53
 - **Severity**: MEDIUM
 - **Category**: Missed opportunities / Purpose

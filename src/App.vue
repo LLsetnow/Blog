@@ -41,9 +41,7 @@
        around every page is noise. On the home page it stays regardless, since
        it occupies a slot in the canvas layout. -->
   <div v-if="showPlayer" class="player-wrapper" ref="playerRef">
-    <TiltEffect :disabled="isMini">
-      <MusicPlayer :mini="isMini" />
-    </TiltEffect>
+    <MusicPlayer :mini="isMini" />
   </div>
 </template>
 
@@ -51,7 +49,6 @@
 import { computed, nextTick, ref, watch, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
 import MusicPlayer from '@/components/home/MusicPlayer.vue'
-import TiltEffect from '@/components/common/TiltEffect.vue'
 import GradientWaves from '@/components/common/GradientWaves.vue'
 import { useMusicPlayer } from '@/composables/useMusicPlayer'
 
