@@ -204,7 +204,7 @@ gh pr merge --squash --delete-branch
 
 - **main 禁止直接 push**（GitHub ruleset 强制），所有变更必须走：新分支 → PR → PR Check 通过 → merge。
 - 分支命名：`feat/xxx`、`fix/xxx`、`chore/xxx`、`docs/xxx`。
-- 唯一豁免：**Deploy keys**（个人仓库无法把 GitHub Actions 设为豁免）。news-bot（`fetch-news.yml`）checkout 时注入 secret `NEWS_BOT_DEPLOY_KEY`（对应写权限 deploy key `news-bot-push`），push 走该 key 绕过保护。**不要删除该豁免、该 deploy key 或该 secret**，否则每日新闻任务会挂掉。
+- 唯一豁免：**Deploy keys**（个人仓库无法把 GitHub Actions 设为豁免）。项目同步 bot（`sync-projects.yml`）checkout 时注入 secret `NEWS_BOT_DEPLOY_KEY`（对应写权限 deploy key `news-bot-push`），push 走该 key 绕过保护。**不要删除该豁免、该 deploy key 或该 secret**，否则项目同步任务会挂掉。
 - 禁止 force push 和删除 main 分支。
 - 规则位置：GitHub → Settings → Rules → Rulesets（名为 `protect-main`）。
 
@@ -213,11 +213,16 @@ gh pr merge --squash --delete-branch
 | Workflow | 触发 | 作用 |
 |:---------|:-----|:-----|
 | `pr-check.yml` | PR 提交/更新 | 运行 `vue-tsc` 类型检查，是合并 PR 的必过检查（required status check：`typecheck`） |
-| `deploy.yml` | push 到 main（含 PR 合并） | `npm ci` → `npm run build`（vue-tsc + 抓取数据 + vite build）→ rsync `dist/` 到阿里云 ECS `/var/www/blog/` |
-| `fetch-news.yml` | 每天 UTC 03:00 + 手动 | 抓取新闻（LLM 摘要）→ 以 news-bot 身份直推 main → 自带部署步骤（bot 的 push 不会触发 deploy.yml） |
+| `deploy.yml` | push 到 main（含 PR 合并） | `npm ci` → `npm run build`（不再抓取新闻）→ rsync `dist/` 到阿里云 ECS `/var/www/blog/` |
+
+### 每日新闻更新（AstrBot）
+
+- 每日新闻不再由 GitHub Actions workflow 生成；由 AstrBot 服务器上的 systemd `blog-news-update.timer` 每天 03:00 UTC 运行。
+- timer 调用 `blog-news-update.service`，更新 `/var/www/blog/news/today.json`；普通 `deploy.yml` build 不会隐式抓取新闻。
+- 新闻更新所需 secrets 仅放在 AstrBot 服务器的 `/var/OPC/.env`，不得提交到仓库。安装与运维命令见 `ops/astrbot/README.md`。
 
 ### 注意事项
 
 - 类型检查在 PR 阶段（pr-check）和部署构建阶段（deploy 的 build 内）各跑一次；PR 阶段失败则无法合并。
 - 部署没有回滚机制，rsync `--delete` 会让服务器目录与 `dist/` 完全一致；线上出问题时 revert 提交并合并即可触发重新部署。
-- CI 所需 secrets：`DEPLOY_SSH_KEY / DEPLOY_HOST / DEPLOY_USER`（部署）、`BILIBILI_COOKIES`（B站数据）、`LLM_API_KEY / LLM_BASE_URL / LLM_MODEL / ZHIPU_API_KEY`（新闻摘要）。
+- CI 所需 secrets：`DEPLOY_SSH_KEY / DEPLOY_HOST / DEPLOY_USER`（部署）、`BILIBILI_COOKIES`（B站数据/构建）、`NEWS_BOT_DEPLOY_KEY`（sync-projects 写回 main，仍需保留）。新闻抓取所需 secrets 已迁移到 AstrBot 服务器的 `/var/OPC/.env`。

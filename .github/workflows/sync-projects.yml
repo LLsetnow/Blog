@@ -2,7 +2,7 @@ name: Sync Project Data
 
 on:
   schedule:
-    # 05:00 UTC，与 fetch-news.yml (03:00) 错开，避免两个任务同时 push main
+    # 该任务每天 05:00 UTC 运行
     - cron: '0 5 * * *'
   workflow_dispatch:
 
