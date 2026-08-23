@@ -36,6 +36,20 @@ const tasks: readonly ScheduledTask[] = [
     timezone: '北京时间',
     status: '已启用',
   },
+  {
+    id: 'blog-projects-update',
+    name: '项目数据更新',
+    frequency: '每周日 11:30',
+    timezone: '北京时间',
+    status: '已启用',
+  },
+  {
+    id: 'blog-favorites-update',
+    name: '收藏数据更新',
+    frequency: '每周日 12:00',
+    timezone: '北京时间',
+    status: '已启用',
+  },
 ]
 </script>
 
@@ -74,7 +88,10 @@ const tasks: readonly ScheduledTask[] = [
   &__list {
     flex: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: $spacing-sm;
     margin: 0;
     padding: 0;
     list-style: none;

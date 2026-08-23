@@ -22,10 +22,6 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
-      - name: Setup fetch credentials
-        run: echo "${{ secrets.BILIBILI_COOKIES }}" > cookies.txt
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: npm run build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -35,9 +31,12 @@ jobs:
           echo "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
           ssh-keyscan -H ${{ secrets.DEPLOY_HOST }} >> ~/.ssh/known_hosts
-          # AstrBot systemd timer 管理 news/today.json，部署时保留该文件。
+          # AstrBot systemd timers 管理新闻、项目和收藏数据，部署时保留这些文件。
           rsync -rlgoDzvc --delete \
             --exclude='news/today.json' \
+            --exclude='projects-data/projects.json' \
+            --exclude='projects-data/images/' \
+            --exclude='bilibili-fav/favorites.json' \
             -e "ssh -i ~/.ssh/deploy_key" \
             dist/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:/var/www/blog/
 

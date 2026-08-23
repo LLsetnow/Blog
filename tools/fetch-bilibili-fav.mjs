@@ -4,7 +4,8 @@
  * Usage:  node tools/fetch-bilibili-fav.mjs
  * Output: public/bilibili-fav/favorites.json
  *
- * Requires cookies.txt in Netscape format in the project root.
+ * Reads YT_DLP_COOKIES first, then BILIBILI_COOKIES, as a path to a Netscape
+ * cookie file. Falls back to cookies.txt in the project root.
  * Fault-tolerant: keeps existing data on any failure.
  */
 
@@ -16,7 +17,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const ROOT_DIR = path.resolve(__dirname, '..')
 const OUTPUT_DIR = path.join(ROOT_DIR, 'public/bilibili-fav')
 const OUTPUT_FILE = path.join(OUTPUT_DIR, 'favorites.json')
-const COOKIE_PATH = path.join(ROOT_DIR, 'cookies.txt')
+const COOKIE_PATH = process.env.YT_DLP_COOKIES || process.env.BILIBILI_COOKIES || path.join(ROOT_DIR, 'cookies.txt')
 
 const USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
 const REFERER = 'https://www.bilibili.com/'
@@ -85,7 +86,7 @@ async function apiJson(url, cookies, params = {}) {
 async function main() {
   // Check cookies
   if (!fs.existsSync(COOKIE_PATH)) {
-    if (keepExisting('cookies.txt 未找到')) return
+    if (keepExisting('cookie 文件未找到')) return
     writeEmpty()
     return
   }
@@ -95,7 +96,7 @@ async function main() {
   try {
     cookies = parseNetscapeCookies(COOKIE_PATH)
   } catch (e) {
-    if (keepExisting('cookies.txt 解析失败')) return
+    if (keepExisting('cookie 文件解析失败')) return
     writeEmpty()
     return
   }
@@ -106,7 +107,6 @@ async function main() {
     writeEmpty()
     return
   }
-  console.log(`  uid: ${uid}`)
 
   // Step 1: get favorite folder list
   console.log('\nFetching favorite folders …')
