@@ -3,7 +3,9 @@
     <div class="home-page__container" :style="canvasStyle">
       <!-- Greeting -->
       <div class="home-page__cell" :style="getWidgetStyle('greeting')">
-        <GreetingCard />
+        <HoverTilt>
+          <GreetingCard />
+        </HoverTilt>
       </div>
 
       <!-- Contribution heatmap (hidden on mobile) -->
@@ -14,7 +16,9 @@
       <!-- GitHub + Email + WeChat (horizontal row on mobile) -->
       <div class="home-page__icon-row">
         <div class="home-page__cell" :style="getWidgetStyle('github')">
-          <GitHubCard />
+          <HoverTilt>
+            <GitHubCard />
+          </HoverTilt>
         </div>
         <div class="home-page__cell" :style="getWidgetStyle('email')">
           <EmailWidget />
@@ -44,7 +48,9 @@
 
       <!-- Gallery -->
       <div class="home-page__cell" :style="getWidgetStyle('gallery')">
-        <ImageGallery />
+        <HoverTilt>
+          <ImageGallery />
+        </HoverTilt>
       </div>
 
       <!-- Music Player (position anchor for global player) -->
@@ -115,6 +121,7 @@ import EmailWidget from '@/components/home/EmailWidget.vue'
 import WeChatWidget from '@/components/home/WeChatWidget.vue'
 import BilibiliWidget from '@/components/home/BilibiliWidget.vue'
 import LayoutSettings from '@/components/home/LayoutSettings.vue'
+import HoverTilt from '@/components/common/HoverTilt.vue'
 import ToastNotification from '@/components/common/ToastNotification.vue'
 import { useToast } from '@/composables/useToast'
 import { useLayoutEditor } from '@/composables/useLayoutEditor'
