@@ -149,6 +149,7 @@ onMounted(() => {
   window.addEventListener('resize', onResize)
   // capture: true — 首页实际滚动发生在 .home-page 内部容器上，scroll 不冒泡，只能在捕获阶段收到
   window.addEventListener('scroll', onScroll, { passive: true, capture: true })
+  initPosition()
   observeAnchor()
 })
 
