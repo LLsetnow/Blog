@@ -1,0 +1,16 @@
+[Unit]
+Description=Update blog daily news
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=root
+Group=root
+WorkingDirectory=/var/OPC
+EnvironmentFile=-/var/OPC/.env
+Environment="PATH=/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+ExecStart=/usr/local/libexec/blog-news-update.py
+
+[Install]
+WantedBy=multi-user.target

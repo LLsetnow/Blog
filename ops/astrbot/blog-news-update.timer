@@ -1,0 +1,10 @@
+[Unit]
+Description=Run blog daily news update at 03:00 UTC
+
+[Timer]
+OnCalendar=*-*-* 03:00:00 UTC
+Persistent=true
+Unit=blog-news-update.service
+
+[Install]
+WantedBy=timers.target
