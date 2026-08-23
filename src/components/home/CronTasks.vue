@@ -30,19 +30,19 @@ interface ScheduledTask {
 const tasks: readonly ScheduledTask[] = [
   {
     id: 'blog-news-update',
-    name: '每日新闻更新',
+    name: '新闻更新',
     frequency: '每天 11:00',
     timezone: '北京时间',
   },
   {
     id: 'blog-projects-update',
-    name: '项目数据更新',
+    name: '项目更新',
     frequency: '每周日 11:30',
     timezone: '北京时间',
   },
   {
     id: 'blog-favorites-update',
-    name: '收藏数据更新',
+    name: '收藏更新',
     frequency: '每周日 12:00',
     timezone: '北京时间',
   },
