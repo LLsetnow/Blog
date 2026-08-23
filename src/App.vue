@@ -36,7 +36,12 @@
     </Transition>
   </router-view>
 
-  <div v-if="route.path === '/'" class="player-wrapper" ref="playerRef">
+  <div
+    v-if="route.path === '/'"
+    class="player-wrapper"
+    ref="playerRef"
+    :style="{ visibility: isPlayerPositioned ? 'visible' : 'hidden' }"
+  >
     <MusicPlayer />
   </div>
 </template>
@@ -49,6 +54,7 @@ import GradientWaves from '@/components/common/GradientWaves.vue'
 
 const route = useRoute()
 const playerRef = ref<HTMLElement | null>(null)
+const isPlayerPositioned = ref(false)
 
 function applyStyle(styles: Partial<CSSStyleDeclaration>) {
   const e = playerRef.value
@@ -85,13 +91,17 @@ function syncGridTransform() {
 // ── Route watcher ──
 
 watch(() => route.path, (path) => {
+  isPlayerPositioned.value = false
   if (path === '/') retrySyncGrid()
 })
 
-function retrySyncGrid() {
-  if (!syncToGrid()) {
-    if (route.path === '/') requestAnimationFrame(retrySyncGrid)
+function retrySyncGrid(reveal = false) {
+  if (route.path !== '/') return
+  if (syncToGrid()) {
+    if (reveal) isPlayerPositioned.value = true
+    return
   }
+  requestAnimationFrame(() => retrySyncGrid(reveal))
 }
 
 // ── Initialise ──
@@ -103,7 +113,7 @@ function retrySyncGrid() {
  * position — the player would settle 12px low, exactly the enter translation.
  */
 function initPosition() {
-  if (route.path === '/') retrySyncGrid()
+  if (route.path === '/') retrySyncGrid(true)
 }
 
 /**
@@ -139,7 +149,6 @@ onMounted(() => {
   window.addEventListener('resize', onResize)
   // capture: true — 首页实际滚动发生在 .home-page 内部容器上，scroll 不冒泡，只能在捕获阶段收到
   window.addEventListener('scroll', onScroll, { passive: true, capture: true })
-  initPosition()
   observeAnchor()
 })
 
