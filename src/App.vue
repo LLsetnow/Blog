@@ -107,17 +107,42 @@ function syncGridTransform() {
 // ── Route watcher ──
 
 watch(() => route.path, (path) => {
+  cancelGridSyncRetry()
   isPlayerPositioned.value = false
   if (path === '/') retrySyncGrid()
 })
 
+const MAX_GRID_SYNC_RETRIES = 120
+let gridSyncRetryRaf: number | null = null
+let gridSyncRetryCount = 0
+
+function cancelGridSyncRetry() {
+  if (gridSyncRetryRaf !== null) {
+    cancelAnimationFrame(gridSyncRetryRaf)
+    gridSyncRetryRaf = null
+  }
+  gridSyncRetryCount = 0
+}
+
 function retrySyncGrid() {
-  if (route.path !== '/') return
+  if (route.path !== '/') {
+    cancelGridSyncRetry()
+    return
+  }
+
   if (syncToGrid()) {
+    cancelGridSyncRetry()
     isPlayerPositioned.value = true
     return
   }
-  requestAnimationFrame(retrySyncGrid)
+
+  if (gridSyncRetryRaf !== null || gridSyncRetryCount >= MAX_GRID_SYNC_RETRIES) return
+
+  gridSyncRetryRaf = requestAnimationFrame(() => {
+    gridSyncRetryRaf = null
+    gridSyncRetryCount += 1
+    retrySyncGrid()
+  })
 }
 
 // ── Initialise ──
@@ -172,6 +197,7 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener('resize', onResize)
   window.removeEventListener('scroll', onScroll, { capture: true })
+  cancelGridSyncRetry()
   anchorObserver?.disconnect()
 })
 
