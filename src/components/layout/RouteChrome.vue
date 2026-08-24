@@ -122,18 +122,15 @@
     overflow: hidden;
     color: #18343c;
     text-decoration: none;
-    background: rgba(126, 200, 227, 0.08);
-    border: 1px solid rgba(94, 170, 194, 0.28);
+    background: transparent;
+    border: 1px solid transparent;
     border-radius: 10px;
     box-shadow: 0 6px 18px rgba(33, 89, 105, 0.14);
-    backdrop-filter: blur(14px) saturate(125%);
-    -webkit-backdrop-filter: blur(14px) saturate(125%);
     transform: translateX(var(--task-offset)) rotate(var(--task-rotate)) skewX(var(--task-skew));
     transform-origin: right center;
     transition:
       width 220ms ease,
       height 220ms ease,
-      border-color 180ms ease,
       box-shadow 180ms ease,
       transform 220ms ease;
 
@@ -175,7 +172,6 @@
 
     &:hover {
       width: 116px;
-      border-color: rgba(94, 180, 204, 0.42);
       box-shadow:
         0 9px 22px rgba(33, 89, 105, 0.2);
     }
@@ -183,25 +179,22 @@
     &:focus-visible {
       outline: 3px solid #167d9c;
       outline-offset: 3px;
-      // Override global.scss's white focus halo while keeping a card shadow.
-      box-shadow: 0 9px 22px rgba(33, 89, 105, 0.2);
+      box-shadow: none;
     }
 
     &.router-link-active,
     &.route-chrome__task-card--exact-active {
       width: 150px;
       height: 72px;
-      background: rgba(126, 200, 227, 0.22);
-      border-color: rgba(91, 177, 204, 0.56);
+      background: transparent;
+      border-color: transparent;
       box-shadow:
         0 12px 28px rgba(25, 91, 111, 0.32);
     }
 
     &.router-link-active:focus-visible,
     &.route-chrome__task-card--exact-active:focus-visible {
-      // Keep the active card's stronger shadow, but never restore the global
-      // white focus halo.
-      box-shadow: 0 12px 28px rgba(25, 91, 111, 0.32);
+      box-shadow: none;
     }
 
     &:hover .route-chrome__task-label,
@@ -268,12 +261,10 @@
       gap: 4px;
       width: auto;
       padding: 5px;
-      background: rgba(126, 164, 218, 0.08);
-      border: 1px solid rgba(94, 170, 194, 0.3);
+      background: transparent;
+      border: 1px solid transparent;
       border-radius: 14px;
       box-shadow: 0 8px 24px rgba(33, 89, 105, 0.2);
-      backdrop-filter: blur(14px) saturate(125%);
-      -webkit-backdrop-filter: blur(14px) saturate(125%);
       transform: none;
     }
 
@@ -284,8 +275,8 @@
       min-width: 0;
       height: 54px;
       min-height: 44px;
-      background: rgba(126, 200, 227, 0.08);
-      border-color: rgba(94, 170, 194, 0.28);
+      background: transparent;
+      border-color: transparent;
       box-shadow: 0 5px 12px rgba(33, 89, 105, 0.14);
       transform: none;
     }
@@ -296,8 +287,8 @@
       min-width: 0;
       height: 54px;
       min-height: 44px;
-      background: rgba(126, 200, 227, 0.22);
-      border-color: rgba(91, 177, 204, 0.56);
+      background: transparent;
+      border-color: transparent;
       box-shadow: 0 8px 18px rgba(25, 91, 111, 0.26);
       transform: none;
     }
@@ -305,11 +296,12 @@
     &__task-card:focus-visible {
       outline: 2px solid #167d9c;
       outline-offset: 1px;
+      box-shadow: none;
     }
 
     &__task-card.router-link-active:focus-visible,
     &__task-card.route-chrome__task-card--exact-active:focus-visible {
-      box-shadow: 0 8px 18px rgba(25, 91, 111, 0.26);
+      box-shadow: none;
     }
 
     &__task-content {
