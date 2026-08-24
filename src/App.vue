@@ -31,10 +31,12 @@
        positioned canvas and the others are normal flow, so cross-fading them
        in place would have them fight over the same space. -->
   <router-view v-slot="{ Component }">
-    <Transition name="page" mode="out-in" @after-enter="onPageEntered">
+    <Transition :name="isHomeRoute ? 'page-home' : 'page'" mode="out-in" @after-enter="onPageEntered">
       <component :is="Component" :key="route.path" />
     </Transition>
   </router-view>
+
+  <RouteChrome v-if="showRouteChrome" />
 
   <div
     v-if="route.path === '/'"
@@ -47,12 +49,26 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch, onMounted, onUnmounted } from 'vue'
+import { computed, ref, watch, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
 import MusicPlayer from '@/components/home/MusicPlayer.vue'
 import GradientWaves from '@/components/common/GradientWaves.vue'
+import RouteChrome from '@/components/layout/RouteChrome.vue'
 
 const route = useRoute()
+const isHomeRoute = computed(() => route.path === '/')
+const contentRouteNames = new Set([
+  'Favorites',
+  'BlogList',
+  'BlogPost',
+  'Projects',
+  'ProjectPost',
+  'News',
+  'About',
+])
+const showRouteChrome = computed(() => (
+  typeof route.name === 'string' && contentRouteNames.has(route.name)
+))
 const playerRef = ref<HTMLElement | null>(null)
 const isPlayerPositioned = ref(false)
 
@@ -95,13 +111,13 @@ watch(() => route.path, (path) => {
   if (path === '/') retrySyncGrid()
 })
 
-function retrySyncGrid(reveal = false) {
+function retrySyncGrid() {
   if (route.path !== '/') return
   if (syncToGrid()) {
-    if (reveal) isPlayerPositioned.value = true
+    isPlayerPositioned.value = true
     return
   }
-  requestAnimationFrame(() => retrySyncGrid(reveal))
+  requestAnimationFrame(retrySyncGrid)
 }
 
 // ── Initialise ──
@@ -113,7 +129,7 @@ function retrySyncGrid(reveal = false) {
  * position — the player would settle 12px low, exactly the enter translation.
  */
 function initPosition() {
-  if (route.path === '/') retrySyncGrid(true)
+  if (route.path === '/') retrySyncGrid()
 }
 
 /**

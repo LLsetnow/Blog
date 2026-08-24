@@ -93,7 +93,9 @@ a {
  * Route transition.
  *
  * Global rather than scoped to App.vue: these classes land on each page's own
- * root element, and keeping them here makes that ownership obvious.
+ * root element, and keeping them here makes that ownership obvious. The home
+ * page uses a fade-only variant so its fixed music player can measure the
+ * final anchor position on its first successful sync.
  *
  * Leaving is deliberately quicker than entering — a slow exit makes navigation
  * feel gated behind an animation, while a slower entrance reads as the page
@@ -118,6 +120,19 @@ a {
   transform: translateY(-8px);
 }
 
+.page-home-enter-active {
+  transition: opacity 0.26s ease;
+}
+
+.page-home-leave-active {
+  transition: opacity 0.16s ease;
+}
+
+.page-home-enter-from,
+.page-home-leave-to {
+  opacity: 0;
+}
+
 // Mobile tap highlight suppression
 @media (max-width: $breakpoint-md) {
   button, a, [role="button"] {
@@ -127,12 +142,16 @@ a {
 
 @media (prefers-reduced-motion: reduce) {
   .page-enter-active,
-  .page-leave-active {
+  .page-leave-active,
+  .page-home-enter-active,
+  .page-home-leave-active {
     transition: none;
   }
 
   .page-enter-from,
-  .page-leave-to {
+  .page-leave-to,
+  .page-home-enter-from,
+  .page-home-leave-to {
     opacity: 1;
     transform: none;
   }
