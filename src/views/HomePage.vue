@@ -135,7 +135,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, nextTick, onBeforeUnmount, onMounted, ref } from 'vue'
+import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import type { WidgetLayout } from '@/types'
 import GreetingCard from '@/components/home/GreetingCard.vue'
 import ServiceStatus from '@/components/home/ServiceStatus.vue'
@@ -239,6 +239,13 @@ const socialConnectionFrame = ref<SocialConnectionFrame>({
 })
 let socialFrame: number | null = null
 let socialResizeObserver: ResizeObserver | null = null
+const socialReducedMotion = ref(
+  typeof window !== 'undefined' &&
+  typeof window.matchMedia === 'function' &&
+  window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+)
+let socialMotionQuery: MediaQueryList | null = null
+let socialMotionListener: ((event: MediaQueryListEvent) => void) | null = null
 
 function socialControls(): HTMLElement[] {
   return Array.from(socialRow.value?.querySelectorAll<HTMLElement>('[data-liquid-social]') ?? [])
@@ -312,12 +319,17 @@ function bridgePath(first: SocialControlBox, second: SocialControlBox, frame: So
   const length = Math.hypot(dx, dy)
   if (length < 1) return ''
 
-  const direction = { x: dx / length, y: dy / length }
+  const isHorizontal = Math.abs(dx) >= Math.abs(dy)
+  const direction = isHorizontal ? { x: Math.sign(dx), y: 0 } : { x: 0, y: Math.sign(dy) }
   const perpendicular = { x: -direction.y, y: direction.x }
   const firstRadius = (first.width * Math.abs(direction.x) + first.height * Math.abs(direction.y)) / 2
   const secondRadius = (second.width * Math.abs(direction.x) + second.height * Math.abs(direction.y)) / 2
-  const halfWidth = Math.min(first.width, first.height, second.width, second.height) * 0.22
-  const overlap = Math.min(halfWidth * 0.35, 5)
+  const diameter = Math.min(first.width, first.height, second.width, second.height)
+  // The bridge is deliberately broad at the two attachment points and narrows
+  // only in the middle, so the gap reads as one soft organic silhouette.
+  const endpointHalfWidth = diameter * 0.27
+  const neckHalfWidth = diameter * 0.19
+  const overlap = clamp(diameter * 0.2, 15, 25)
   const start = {
     x: first.centerX + direction.x * (firstRadius - overlap),
     y: first.centerY + direction.y * (firstRadius - overlap),
@@ -326,34 +338,55 @@ function bridgePath(first: SocialControlBox, second: SocialControlBox, frame: So
     x: second.centerX - direction.x * (secondRadius - overlap),
     y: second.centerY - direction.y * (secondRadius - overlap),
   }
-  const cap = halfWidth * 0.552
   const local = (point: { x: number; y: number }) => ({
     x: point.x - frame.left,
     y: point.y - frame.top,
   })
   const startTop = local({
-    x: start.x + perpendicular.x * halfWidth,
-    y: start.y + perpendicular.y * halfWidth,
+    x: start.x + perpendicular.x * endpointHalfWidth,
+    y: start.y + perpendicular.y * endpointHalfWidth,
   })
   const endTop = local({
-    x: end.x + perpendicular.x * halfWidth,
-    y: end.y + perpendicular.y * halfWidth,
+    x: end.x + perpendicular.x * endpointHalfWidth,
+    y: end.y + perpendicular.y * endpointHalfWidth,
   })
   const endBottom = local({
-    x: end.x - perpendicular.x * halfWidth,
-    y: end.y - perpendicular.y * halfWidth,
+    x: end.x - perpendicular.x * endpointHalfWidth,
+    y: end.y - perpendicular.y * endpointHalfWidth,
   })
   const startBottom = local({
-    x: start.x - perpendicular.x * halfWidth,
-    y: start.y - perpendicular.y * halfWidth,
+    x: start.x - perpendicular.x * endpointHalfWidth,
+    y: start.y - perpendicular.y * endpointHalfWidth,
   })
   const point = (value: { x: number; y: number }) => `${value.x.toFixed(2)} ${value.y.toFixed(2)}`
-  const control = (value: { x: number; y: number }, sign: number) => point({
-    x: value.x + direction.x * cap * sign,
-    y: value.y + direction.y * cap * sign,
+  const at = (progress: number, offset: number) => ({
+    x: start.x + (end.x - start.x) * progress + perpendicular.x * offset - frame.left,
+    y: start.y + (end.y - start.y) * progress + perpendicular.y * offset - frame.top,
   })
+  const offsetPoint = (center: { x: number; y: number }, along: number, across: number) => point({
+    x: center.x + direction.x * along + perpendicular.x * across - frame.left,
+    y: center.y + direction.y * along + perpendicular.y * across - frame.top,
+  })
+  const control = (progress: number, offset: number) => point(at(progress, offset))
 
-  return `M ${point(startTop)} L ${point(endTop)} C ${control(endTop, 1)}, ${control(endBottom, 1)}, ${point(endBottom)} L ${point(startBottom)} C ${control(startBottom, -1)}, ${control(startTop, -1)}, ${point(startTop)} Z`
+  const neckShoulder = neckHalfWidth * 1.06
+  const upperBulge = endpointHalfWidth * 0.98
+  const lowerBulge = endpointHalfWidth * 0.94
+  const capDepth = Math.min(endpointHalfWidth, overlap)
+
+  return [
+    `M ${point(startTop)}`,
+    `C ${control(0.12, upperBulge)}, ${control(0.2, neckShoulder)}, ${control(0.34, neckHalfWidth)}`,
+    `C ${control(0.42, neckHalfWidth * 0.92)}, ${control(0.58, neckHalfWidth * 0.92)}, ${control(0.66, neckHalfWidth)}`,
+    `C ${control(0.8, neckShoulder)}, ${control(0.88, upperBulge)}, ${point(endTop)}`,
+    // These two caps reach the card edges while the centerline endpoint stays
+    // inside each sphere, hiding the original circular seam at the join.
+    `C ${offsetPoint(end, -capDepth, endpointHalfWidth)}, ${offsetPoint(end, -capDepth, -endpointHalfWidth)}, ${point(endBottom)}`,
+    `C ${control(0.88, -lowerBulge)}, ${control(0.8, -neckShoulder)}, ${control(0.66, -neckHalfWidth)}`,
+    `C ${control(0.58, -neckHalfWidth * 0.92)}, ${control(0.42, -neckHalfWidth * 0.92)}, ${control(0.34, -neckHalfWidth)}`,
+    `C ${control(0.2, -neckShoulder)}, ${control(0.12, -lowerBulge)}, ${point(startBottom)}`,
+    `C ${offsetPoint(start, capDepth, -endpointHalfWidth)}, ${offsetPoint(start, capDepth, endpointHalfWidth)}, ${point(startTop)} Z`,
+  ].join(' ')
 }
 
 function updateSocialConnectionPath() {
@@ -418,13 +451,14 @@ function animateSocialMotion() {
 }
 
 function scheduleSocialMotion() {
+  if (socialReducedMotion.value) return
   if (socialFrame === null) {
     socialFrame = requestAnimationFrame(animateSocialMotion)
   }
 }
 
 function onSocialPointerMove(event: PointerEvent) {
-  if (event.pointerType === 'touch') return
+  if (event.pointerType === 'touch' || socialReducedMotion.value) return
 
   for (const control of socialControls()) {
     const rect = control.getBoundingClientRect()
@@ -445,6 +479,7 @@ function onSocialPointerMove(event: PointerEvent) {
 }
 
 function onSocialPointerLeave() {
+  if (socialReducedMotion.value) return
   for (const control of socialControls()) {
     socialTargets.set(control, { x: 0, y: 0, pull: 0 })
   }
@@ -463,7 +498,35 @@ function onResize() {
 onResize()
 window.addEventListener('resize', onResize)
 
+// Saved offsets and size edits update absolute positions without necessarily
+// changing the observed container size, so recalculate the local bridge frame
+// after Vue applies those layout changes.
+watch([offsets, layouts], () => {
+  void nextTick(updateSocialConnectionPath)
+})
+
 onMounted(() => {
+  if (typeof window.matchMedia === 'function') {
+    socialMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
+    const onMotionPreferenceChange = (event: MediaQueryListEvent) => {
+      socialReducedMotion.value = event.matches
+      if (event.matches) {
+        if (socialFrame !== null) cancelAnimationFrame(socialFrame)
+        socialFrame = null
+        for (const control of socialControls()) {
+          socialTargets.set(control, { x: 0, y: 0, pull: 0 })
+          socialCurrent.set(control, { x: 0, y: 0, pull: 0 })
+          control.style.setProperty('--liquid-x', '0px')
+          control.style.setProperty('--liquid-y', '0px')
+          control.style.setProperty('--liquid-pull', '0')
+        }
+        updateSocialConnectionPath()
+      }
+    }
+    socialMotionListener = onMotionPreferenceChange
+    socialMotionQuery.addEventListener?.('change', socialMotionListener)
+  }
+
   nextTick(() => {
     updateSocialConnectionPath()
     const container = socialRow.value
@@ -480,6 +543,7 @@ onMounted(() => {
 onBeforeUnmount(() => {
   window.removeEventListener('resize', onResize)
   socialResizeObserver?.disconnect()
+  if (socialMotionQuery && socialMotionListener) socialMotionQuery.removeEventListener?.('change', socialMotionListener)
   if (socialFrame !== null) {
     cancelAnimationFrame(socialFrame)
   }
@@ -542,12 +606,16 @@ function dragHandleStyle(w: WidgetLayout): Record<string, string> {
 
   &__social-connection {
     position: absolute;
-    z-index: 1;
+    // Sit over the card seams so the shared fill visually fuses into each
+    // sphere; pointer-events remain disabled and the icon centers stay clear.
+    z-index: 3;
     pointer-events: none;
   }
 
   &__social-connection-bridge {
-    fill: rgba(255, 255, 255, 0.24);
+    // Use the existing hover-glass token for a visible but still transparent
+    // local join; the page background remains visible through the shape.
+    fill: $bg-card-hover;
     pointer-events: none;
   }
 
@@ -686,7 +754,7 @@ function dragHandleStyle(w: WidgetLayout): Record<string, string> {
   }
 
   .home-page__social-connection-bridge {
-    fill: rgba(255, 255, 255, 0.16);
+    fill: $bg-card-hover;
   }
 }
 
