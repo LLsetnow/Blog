@@ -37,6 +37,28 @@
         </div>
       </div>
 
+      <!-- Decorative glass bridge connecting the four social controls. -->
+      <svg
+        v-if="socialConnectionPath"
+        class="home-page__social-connection"
+        :viewBox="`0 0 ${socialConnectionSize.width} ${socialConnectionSize.height}`"
+        :style="{ height: `${socialConnectionCssHeight}px` }"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <path
+          class="home-page__social-connection-fill"
+          :d="socialConnectionPath"
+          :style="{ strokeWidth: `${socialConnectionStrokeWidth}px` }"
+        />
+        <path
+          class="home-page__social-connection-highlight"
+          :d="socialConnectionPath"
+          :style="{ strokeWidth: `${Math.max(1, socialConnectionStrokeWidth * 0.035)}px` }"
+        />
+      </svg>
+
       <!-- Nav (horizontal on mobile) -->
       <div class="home-page__cell home-page__nav-cell" data-widget="nav" :style="getWidgetStyle('nav')">
         <NavMenu />
@@ -113,7 +135,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onBeforeUnmount, ref } from 'vue'
+import { computed, nextTick, onBeforeUnmount, onMounted, ref } from 'vue'
 import type { WidgetLayout } from '@/types'
 import GreetingCard from '@/components/home/GreetingCard.vue'
 import ServiceStatus from '@/components/home/ServiceStatus.vue'
@@ -190,7 +212,12 @@ type SocialMotionState = {
 const socialRow = ref<HTMLElement | null>(null)
 const socialTargets = new Map<HTMLElement, SocialMotionState>()
 const socialCurrent = new Map<HTMLElement, SocialMotionState>()
+const socialConnectionPath = ref('')
+const socialConnectionStrokeWidth = ref(42)
+const socialConnectionSize = ref({ width: 1100, height: 940 })
+const socialConnectionCssHeight = ref(940)
 let socialFrame: number | null = null
+let socialResizeObserver: ResizeObserver | null = null
 
 function socialControls(): HTMLElement[] {
   return Array.from(socialRow.value?.querySelectorAll<HTMLElement>('[data-liquid-social]') ?? [])
@@ -198,6 +225,50 @@ function socialControls(): HTMLElement[] {
 
 function clamp(value: number, min: number, max: number): number {
   return Math.min(max, Math.max(min, value))
+}
+
+function updateSocialConnectionPath() {
+  const container = socialRow.value
+  const controls = socialControls()
+  if (!container || controls.length < 2) return
+
+  const containerRect = container.getBoundingClientRect()
+  const scale = container.clientWidth > 0
+    ? containerRect.width / container.clientWidth
+    : 1
+  const width = container.clientWidth
+  const points = controls.map((control) => {
+    const rect = control.getBoundingClientRect()
+    return {
+      x: (rect.left + rect.width / 2 - containerRect.left) / scale,
+      y: (rect.top + rect.height / 2 - containerRect.top) / scale,
+    }
+  })
+
+  const smallestControl = controls.reduce((smallest, control) => {
+    const rect = control.getBoundingClientRect()
+    return Math.min(smallest, rect.width / scale, rect.height / scale)
+  }, Number.POSITIVE_INFINITY)
+  const strokeWidth = clamp(smallestControl * 0.68, 28, 72)
+  const height = Math.max(
+    container.clientHeight,
+    ...points.map((point) => point.y + strokeWidth / 2 + 8),
+  )
+
+  socialConnectionSize.value = { width, height }
+  socialConnectionStrokeWidth.value = strokeWidth
+  // The SVG lives inside the scaled canvas, so its CSS height stays in the
+  // canvas coordinate system and receives the same parent transform.
+  socialConnectionCssHeight.value = height
+  socialConnectionPath.value = points.reduce((path, point, index) => {
+    if (index === 0) return `M ${point.x.toFixed(2)} ${point.y.toFixed(2)}`
+
+    const previous = points[index - 1]
+    const dx = point.x - previous.x
+    const dy = point.y - previous.y
+    const tension = 0.42
+    return `${path} C ${(previous.x + dx * tension).toFixed(2)} ${(previous.y + dy * 0.08).toFixed(2)}, ${(point.x - dx * tension).toFixed(2)} ${(point.y - dy * 0.08).toFixed(2)}, ${point.x.toFixed(2)} ${point.y.toFixed(2)}`
+  }, '')
 }
 
 function animateSocialMotion() {
@@ -225,6 +296,8 @@ function animateSocialMotion() {
       isSettled = false
     }
   }
+
+  updateSocialConnectionPath()
 
   if (!isSettled) {
     socialFrame = requestAnimationFrame(animateSocialMotion)
@@ -277,8 +350,23 @@ function onResize() {
 onResize()
 window.addEventListener('resize', onResize)
 
+onMounted(() => {
+  nextTick(() => {
+    updateSocialConnectionPath()
+    const container = socialRow.value
+    if (!container || typeof ResizeObserver === 'undefined') return
+
+    socialResizeObserver = new ResizeObserver(updateSocialConnectionPath)
+    socialResizeObserver.observe(container)
+    for (const control of socialControls()) {
+      socialResizeObserver.observe(control)
+    }
+  })
+})
+
 onBeforeUnmount(() => {
   window.removeEventListener('resize', onResize)
+  socialResizeObserver?.disconnect()
   if (socialFrame !== null) {
     cancelAnimationFrame(socialFrame)
   }
@@ -336,6 +424,34 @@ function dragHandleStyle(w: WidgetLayout): Record<string, string> {
 
   &__cell {
     position: absolute;
+    z-index: 2;
+  }
+
+  &__social-connection {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    pointer-events: none;
+  }
+
+  &__social-connection-fill,
+  &__social-connection-highlight {
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    pointer-events: none;
+  }
+
+  &__social-connection-fill {
+    stroke: rgba(255, 255, 255, 0.34);
+    filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.12));
+  }
+
+  &__social-connection-highlight {
+    stroke: rgba(255, 255, 255, 0.58);
   }
 
   :deep(.home-social-control) {
@@ -484,7 +600,7 @@ function dragHandleStyle(w: WidgetLayout): Record<string, string> {
 
     &__container {
       width: 100%;
-      position: static;
+      position: relative;
       display: flex;
       flex-direction: column;
       gap: 14px;
