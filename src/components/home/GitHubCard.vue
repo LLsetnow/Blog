@@ -3,7 +3,8 @@
     href="https://github.com/LLsetnow"
     target="_blank"
     rel="noopener noreferrer"
-    class="github-card glass-card"
+    class="github-card glass-card home-social-control"
+    data-liquid-social
   >
     <span class="github-card__icon">
       <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
@@ -16,6 +17,7 @@
 <style lang="scss" scoped>
 .github-card {
   @include glass-card($radius-round);
+  border-radius: 43% 57% 48% 52% / 54% 44% 56% 46%;
   display: flex;
   align-items: center;
   justify-content: center;

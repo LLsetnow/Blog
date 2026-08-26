@@ -1,5 +1,10 @@
 <template>
-  <div class="wechat-widget glass-card" :class="{ 'wechat-widget--copied': copied }" @click="copy">
+  <div
+    class="wechat-widget glass-card home-social-control"
+    data-liquid-social
+    :class="{ 'wechat-widget--copied': copied }"
+    @click="copy"
+  >
     <img :src="`${baseUrl}assets/微信.svg`" alt="微信" class="wechat-widget__icon" width="36" height="36" />
   </div>
 </template>
@@ -45,6 +50,7 @@ async function copy() {
 <style lang="scss" scoped>
 .wechat-widget {
   @include glass-card($radius-round);
+  border-radius: 55% 45% 52% 48% / 43% 53% 47% 57%;
   display: flex;
   flex-direction: column;
   align-items: center;
