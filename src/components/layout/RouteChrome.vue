@@ -123,7 +123,7 @@
     color: #18343c;
     text-decoration: none;
     background: transparent;
-    border: 1px solid transparent;
+    border: 1px solid rgba($accent-primary, 0.28);
     border-radius: 10px;
     box-shadow: 0 6px 18px rgba(33, 89, 105, 0.14);
     transform: translateX(var(--task-offset)) rotate(var(--task-rotate)) skewX(var(--task-skew));
@@ -172,7 +172,9 @@
 
     &:hover {
       width: 116px;
+      border-color: rgba($accent-primary, 0.72);
       box-shadow:
+        0 0 12px rgba($accent-primary, 0.24),
         0 9px 22px rgba(33, 89, 105, 0.2);
     }
 
@@ -187,8 +189,9 @@
       width: 150px;
       height: 72px;
       background: transparent;
-      border-color: transparent;
+      border-color: rgba($accent-primary, 0.9);
       box-shadow:
+        0 0 16px rgba($accent-primary, 0.32),
         0 12px 28px rgba(25, 91, 111, 0.32);
     }
 
@@ -276,9 +279,16 @@
       height: 54px;
       min-height: 44px;
       background: transparent;
-      border-color: transparent;
+      border-color: rgba($accent-primary, 0.34);
       box-shadow: 0 5px 12px rgba(33, 89, 105, 0.14);
       transform: none;
+    }
+
+    &__task-card:hover {
+      border-color: rgba($accent-primary, 0.72);
+      box-shadow:
+        0 0 12px rgba($accent-primary, 0.24),
+        0 5px 12px rgba(33, 89, 105, 0.14);
     }
 
     &__task-card.router-link-active,
@@ -288,8 +298,10 @@
       height: 54px;
       min-height: 44px;
       background: transparent;
-      border-color: transparent;
-      box-shadow: 0 8px 18px rgba(25, 91, 111, 0.26);
+      border-color: rgba($accent-primary, 0.9);
+      box-shadow:
+        0 0 16px rgba($accent-primary, 0.32),
+        0 8px 18px rgba(25, 91, 111, 0.26);
       transform: none;
     }
 
