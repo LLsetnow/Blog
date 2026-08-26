@@ -11,7 +11,7 @@
         aria-label="首页"
       >
         <span class="route-chrome__task-content">
-          <svg class="route-chrome__task-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <svg class="route-chrome__task-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M3 11.5 12 4l9 7.5" />
             <path d="M5.5 10.5V20h13v-9.5M9.5 20v-6h5v6" />
           </svg>
@@ -21,9 +21,12 @@
 
       <router-link to="/blog" class="route-chrome__task-card" aria-label="博客">
         <span class="route-chrome__task-content">
-          <svg class="route-chrome__task-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M5 4.5h11a3 3 0 0 1 3 3V20H7a2 2 0 0 1-2-2Z" />
-            <path d="M7 4.5v12.8M9.5 9H16M9.5 13H16" />
+          <svg class="route-chrome__task-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+            <polyline points="14 2 14 8 20 8" />
+            <line x1="16" y1="13" x2="8" y2="13" />
+            <line x1="16" y1="17" x2="8" y2="17" />
+            <polyline points="10 9 9 9 8 9" />
           </svg>
           <span class="route-chrome__task-label">博客</span>
         </span>
@@ -31,9 +34,11 @@
 
       <router-link to="/projects" class="route-chrome__task-card" aria-label="项目">
         <span class="route-chrome__task-content">
-          <svg class="route-chrome__task-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M3.5 7.5h17v12h-17z" />
-            <path d="M8 7.5V5h8v2.5M3.5 12h17M10 12v2h4v-2" />
+          <svg class="route-chrome__task-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="3" width="7" height="7" />
+            <rect x="14" y="3" width="7" height="7" />
+            <rect x="14" y="14" width="7" height="7" />
+            <rect x="3" y="14" width="7" height="7" />
           </svg>
           <span class="route-chrome__task-label">项目</span>
         </span>
@@ -41,9 +46,10 @@
 
       <router-link to="/news" class="route-chrome__task-card" aria-label="新闻">
         <span class="route-chrome__task-content">
-          <svg class="route-chrome__task-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M4 5h13v15H6a2 2 0 0 1-2-2Z" />
-            <path d="M17 8h3v10a2 2 0 0 1-2 2M7.5 9h6M7.5 12.5h6M7.5 16h3.5" />
+          <svg class="route-chrome__task-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 11a9 9 0 0 1 9 9" />
+            <path d="M4 4a16 16 0 0 1 16 16" />
+            <circle cx="5" cy="19" r="1" />
           </svg>
           <span class="route-chrome__task-label">新闻</span>
         </span>
@@ -51,9 +57,10 @@
 
       <router-link to="/about" class="route-chrome__task-card" aria-label="关于">
         <span class="route-chrome__task-content">
-          <svg class="route-chrome__task-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="12" cy="12" r="9" />
-            <path d="M12 10.5V17M12 7.2v.3" />
+          <svg class="route-chrome__task-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" />
+            <line x1="12" y1="16" x2="12" y2="12" />
+            <line x1="12" y1="8" x2="12.01" y2="8" />
           </svg>
           <span class="route-chrome__task-label">关于</span>
         </span>
@@ -61,8 +68,8 @@
 
       <router-link to="/favorites" class="route-chrome__task-card" aria-label="收藏">
         <span class="route-chrome__task-content">
-          <svg class="route-chrome__task-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="m12 4 2.35 4.76 5.25.76-3.8 3.71.9 5.23L12 16l-4.7 2.46.9-5.23-3.8-3.71 5.25-.76Z" />
+          <svg class="route-chrome__task-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
           </svg>
           <span class="route-chrome__task-label">收藏</span>
         </span>
@@ -218,7 +225,7 @@
     flex: 0 0 25px;
     fill: none;
     stroke: currentColor;
-    stroke-width: 1.8;
+    stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
   }
