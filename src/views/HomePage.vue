@@ -14,7 +14,12 @@
       </div>
 
       <!-- GitHub + Email + WeChat (horizontal row on mobile) -->
-      <div class="home-page__icon-row">
+      <div
+        ref="socialRow"
+        class="home-page__icon-row"
+        @pointermove="onSocialPointerMove"
+        @pointerleave="onSocialPointerLeave"
+      >
         <div class="home-page__cell" :style="getWidgetStyle('github')">
           <HoverTilt>
             <GitHubCard />
@@ -175,6 +180,91 @@ const { toasts } = useToast()
 
 const isMobile = ref(window.innerWidth < 768)
 
+type SocialMotionState = {
+  x: number
+  y: number
+  pull: number
+}
+
+const socialRow = ref<HTMLElement | null>(null)
+const socialTargets = new Map<HTMLElement, SocialMotionState>()
+const socialCurrent = new Map<HTMLElement, SocialMotionState>()
+let socialFrame: number | null = null
+
+function socialControls(): HTMLElement[] {
+  return Array.from(socialRow.value?.querySelectorAll<HTMLElement>('[data-liquid-social]') ?? [])
+}
+
+function clamp(value: number, min: number, max: number): number {
+  return Math.min(max, Math.max(min, value))
+}
+
+function animateSocialMotion() {
+  socialFrame = null
+  let isSettled = true
+
+  for (const control of socialControls()) {
+    const target = socialTargets.get(control) ?? { x: 0, y: 0, pull: 0 }
+    const current = socialCurrent.get(control) ?? { x: 0, y: 0, pull: 0 }
+
+    current.x += (target.x - current.x) * 0.18
+    current.y += (target.y - current.y) * 0.18
+    current.pull += (target.pull - current.pull) * 0.18
+    socialCurrent.set(control, current)
+
+    control.style.setProperty('--liquid-x', `${current.x.toFixed(3)}px`)
+    control.style.setProperty('--liquid-y', `${current.y.toFixed(3)}px`)
+    control.style.setProperty('--liquid-pull', current.pull.toFixed(3))
+
+    if (
+      Math.abs(target.x - current.x) > 0.01 ||
+      Math.abs(target.y - current.y) > 0.01 ||
+      Math.abs(target.pull - current.pull) > 0.01
+    ) {
+      isSettled = false
+    }
+  }
+
+  if (!isSettled) {
+    socialFrame = requestAnimationFrame(animateSocialMotion)
+  }
+}
+
+function scheduleSocialMotion() {
+  if (socialFrame === null) {
+    socialFrame = requestAnimationFrame(animateSocialMotion)
+  }
+}
+
+function onSocialPointerMove(event: PointerEvent) {
+  if (event.pointerType === 'touch') return
+
+  for (const control of socialControls()) {
+    const rect = control.getBoundingClientRect()
+    const deltaX = event.clientX - (rect.left + rect.width / 2)
+    const deltaY = event.clientY - (rect.top + rect.height / 2)
+    const distance = Math.hypot(deltaX, deltaY)
+    const influenceRadius = Math.max(rect.width * 2.8, 180)
+    const pull = clamp(1 - distance / influenceRadius, 0, 1)
+
+    socialTargets.set(control, {
+      x: clamp(deltaX * 0.06 * pull, -5, 5),
+      y: clamp(deltaY * 0.06 * pull, -5, 5),
+      pull,
+    })
+  }
+
+  scheduleSocialMotion()
+}
+
+function onSocialPointerLeave() {
+  for (const control of socialControls()) {
+    socialTargets.set(control, { x: 0, y: 0, pull: 0 })
+  }
+
+  scheduleSocialMotion()
+}
+
 function onResize() {
   isMobile.value = window.innerWidth < 768
   // Below the mobile breakpoint the canvas gives way to a flex column, which
@@ -188,6 +278,9 @@ window.addEventListener('resize', onResize)
 
 onBeforeUnmount(() => {
   window.removeEventListener('resize', onResize)
+  if (socialFrame !== null) {
+    cancelAnimationFrame(socialFrame)
+  }
 })
 
 /** Compute drag handle inline style from widget base + offset */
@@ -242,6 +335,19 @@ function dragHandleStyle(w: WidgetLayout): Record<string, string> {
 
   &__cell {
     position: absolute;
+  }
+
+  :deep(.home-social-control) {
+    --liquid-x: 0px;
+    --liquid-y: 0px;
+    --liquid-pull: 0;
+    transform: translate3d(var(--liquid-x), var(--liquid-y), 0)
+      rotate(calc(var(--liquid-pull) * 2deg));
+    transition: transform 180ms cubic-bezier(0.22, 1, 0.36, 1),
+                color 0.3s ease,
+                opacity 0.3s ease,
+                box-shadow 0.3s ease;
+    will-change: transform;
   }
 
   // Settings gear button (fixed position, always visible)
@@ -355,6 +461,14 @@ function dragHandleStyle(w: WidgetLayout): Record<string, string> {
         background: rgba(255, 255, 255, 0.8);
       }
     }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-page :deep(.home-social-control) {
+    transform: none !important;
+    transition: none !important;
+    will-change: auto;
   }
 }
 

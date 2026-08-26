@@ -3,7 +3,8 @@
     href="https://space.bilibili.com/39493006"
     target="_blank"
     rel="noopener noreferrer"
-    class="bilibili-widget glass-card"
+    class="bilibili-widget glass-card home-social-control"
+    data-liquid-social
     aria-label="Bilibili 主页"
   >
     <span class="bilibili-widget__icon">
@@ -17,6 +18,7 @@
 <style lang="scss" scoped>
 .bilibili-widget {
   @include glass-card($radius-round);
+  border-radius: 46% 54% 58% 42% / 57% 47% 53% 43%;
   display: flex;
   align-items: center;
   justify-content: center;
