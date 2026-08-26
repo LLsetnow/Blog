@@ -39,23 +39,23 @@
 
       <!-- Decorative glass bridge connecting the four social controls. -->
       <svg
-        v-if="socialConnectionPath"
+        v-if="socialConnectionPaths.length"
         class="home-page__social-connection"
-        :viewBox="`0 0 ${socialConnectionSize.width} ${socialConnectionSize.height}`"
-        :style="{ height: `${socialConnectionCssHeight}px` }"
-        preserveAspectRatio="none"
+        :viewBox="`0 0 ${socialConnectionFrame.width} ${socialConnectionFrame.height}`"
+        :style="{
+          left: `${socialConnectionFrame.left}px`,
+          top: `${socialConnectionFrame.top}px`,
+          width: `${socialConnectionFrame.width}px`,
+          height: `${socialConnectionFrame.height}px`,
+        }"
         aria-hidden="true"
         focusable="false"
       >
         <path
-          class="home-page__social-connection-fill"
-          :d="socialConnectionPath"
-          :style="{ strokeWidth: `${socialConnectionStrokeWidth}px` }"
-        />
-        <path
-          class="home-page__social-connection-highlight"
-          :d="socialConnectionPath"
-          :style="{ strokeWidth: `${Math.max(1, socialConnectionStrokeWidth * 0.035)}px` }"
+          v-for="(path, index) in socialConnectionPaths"
+          :key="`social-bridge-${index}`"
+          class="home-page__social-connection-bridge"
+          :d="path"
         />
       </svg>
 
@@ -209,13 +209,34 @@ type SocialMotionState = {
   pull: number
 }
 
+type SocialControlBox = {
+  left: number
+  top: number
+  right: number
+  bottom: number
+  width: number
+  height: number
+  centerX: number
+  centerY: number
+}
+
+type SocialConnectionFrame = {
+  left: number
+  top: number
+  width: number
+  height: number
+}
+
 const socialRow = ref<HTMLElement | null>(null)
 const socialTargets = new Map<HTMLElement, SocialMotionState>()
 const socialCurrent = new Map<HTMLElement, SocialMotionState>()
-const socialConnectionPath = ref('')
-const socialConnectionStrokeWidth = ref(42)
-const socialConnectionSize = ref({ width: 1100, height: 940 })
-const socialConnectionCssHeight = ref(940)
+const socialConnectionPaths = ref<string[]>([])
+const socialConnectionFrame = ref<SocialConnectionFrame>({
+  left: 0,
+  top: 0,
+  width: 1,
+  height: 1,
+})
 let socialFrame: number | null = null
 let socialResizeObserver: ResizeObserver | null = null
 
@@ -227,48 +248,133 @@ function clamp(value: number, min: number, max: number): number {
   return Math.min(max, Math.max(min, value))
 }
 
-function updateSocialConnectionPath() {
+function controlBoxes(): SocialControlBox[] {
   const container = socialRow.value
   const controls = socialControls()
-  if (!container || controls.length < 2) return
+  if (!container || controls.length < 2) return []
 
   const containerRect = container.getBoundingClientRect()
   const scale = container.clientWidth > 0
     ? containerRect.width / container.clientWidth
     : 1
-  const width = container.clientWidth
-  const points = controls.map((control) => {
+  return controls.map((control) => {
     const rect = control.getBoundingClientRect()
     return {
-      x: (rect.left + rect.width / 2 - containerRect.left) / scale,
-      y: (rect.top + rect.height / 2 - containerRect.top) / scale,
+      left: (rect.left - containerRect.left) / scale,
+      top: (rect.top - containerRect.top) / scale,
+      right: (rect.right - containerRect.left) / scale,
+      bottom: (rect.bottom - containerRect.top) / scale,
+      width: rect.width / scale,
+      height: rect.height / scale,
+      centerX: (rect.left + rect.width / 2 - containerRect.left) / scale,
+      centerY: (rect.top + rect.height / 2 - containerRect.top) / scale,
+    }
+  })
+}
+
+function connectionPairs(boxes: SocialControlBox[]): Array<[SocialControlBox, SocialControlBox]> {
+  const pairs = new Map<string, [SocialControlBox, SocialControlBox]>()
+
+  boxes.forEach((box, index) => {
+    const right = boxes
+      .map((candidate, candidateIndex) => ({ candidate, candidateIndex }))
+      .filter(({ candidate, candidateIndex }) => {
+        if (candidateIndex === index || candidate.centerX <= box.centerX) return false
+        return Math.abs(candidate.centerY - box.centerY) <= Math.max(box.height, candidate.height) * 0.72
+      })
+      .sort(({ candidate: a }, { candidate: b }) => a.centerX - b.centerX)[0]
+
+    if (right) {
+      const key = [index, boxes.indexOf(right.candidate)].sort().join(':')
+      pairs.set(key, [box, right.candidate])
+    }
+
+    const below = boxes
+      .map((candidate, candidateIndex) => ({ candidate, candidateIndex }))
+      .filter(({ candidate, candidateIndex }) => {
+        if (candidateIndex === index || candidate.centerY <= box.centerY) return false
+        return Math.abs(candidate.centerX - box.centerX) <= Math.max(box.width, candidate.width) * 0.72
+      })
+      .sort(({ candidate: a }, { candidate: b }) => a.centerY - b.centerY)[0]
+
+    if (below) {
+      const key = [index, boxes.indexOf(below.candidate)].sort().join(':')
+      pairs.set(key, [box, below.candidate])
     }
   })
 
-  const smallestControl = controls.reduce((smallest, control) => {
-    const rect = control.getBoundingClientRect()
-    return Math.min(smallest, rect.width / scale, rect.height / scale)
-  }, Number.POSITIVE_INFINITY)
-  const strokeWidth = clamp(smallestControl * 0.68, 28, 72)
-  const height = Math.max(
-    container.clientHeight,
-    ...points.map((point) => point.y + strokeWidth / 2 + 8),
-  )
+  return Array.from(pairs.values())
+}
 
-  socialConnectionSize.value = { width, height }
-  socialConnectionStrokeWidth.value = strokeWidth
-  // The SVG lives inside the scaled canvas, so its CSS height stays in the
-  // canvas coordinate system and receives the same parent transform.
-  socialConnectionCssHeight.value = height
-  socialConnectionPath.value = points.reduce((path, point, index) => {
-    if (index === 0) return `M ${point.x.toFixed(2)} ${point.y.toFixed(2)}`
+function bridgePath(first: SocialControlBox, second: SocialControlBox, frame: SocialConnectionFrame): string {
+  const dx = second.centerX - first.centerX
+  const dy = second.centerY - first.centerY
+  const length = Math.hypot(dx, dy)
+  if (length < 1) return ''
 
-    const previous = points[index - 1]
-    const dx = point.x - previous.x
-    const dy = point.y - previous.y
-    const tension = 0.42
-    return `${path} C ${(previous.x + dx * tension).toFixed(2)} ${(previous.y + dy * 0.08).toFixed(2)}, ${(point.x - dx * tension).toFixed(2)} ${(point.y - dy * 0.08).toFixed(2)}, ${point.x.toFixed(2)} ${point.y.toFixed(2)}`
-  }, '')
+  const direction = { x: dx / length, y: dy / length }
+  const perpendicular = { x: -direction.y, y: direction.x }
+  const firstRadius = (first.width * Math.abs(direction.x) + first.height * Math.abs(direction.y)) / 2
+  const secondRadius = (second.width * Math.abs(direction.x) + second.height * Math.abs(direction.y)) / 2
+  const halfWidth = Math.min(first.width, first.height, second.width, second.height) * 0.22
+  const overlap = Math.min(halfWidth * 0.35, 5)
+  const start = {
+    x: first.centerX + direction.x * (firstRadius - overlap),
+    y: first.centerY + direction.y * (firstRadius - overlap),
+  }
+  const end = {
+    x: second.centerX - direction.x * (secondRadius - overlap),
+    y: second.centerY - direction.y * (secondRadius - overlap),
+  }
+  const cap = halfWidth * 0.552
+  const local = (point: { x: number; y: number }) => ({
+    x: point.x - frame.left,
+    y: point.y - frame.top,
+  })
+  const startTop = local({
+    x: start.x + perpendicular.x * halfWidth,
+    y: start.y + perpendicular.y * halfWidth,
+  })
+  const endTop = local({
+    x: end.x + perpendicular.x * halfWidth,
+    y: end.y + perpendicular.y * halfWidth,
+  })
+  const endBottom = local({
+    x: end.x - perpendicular.x * halfWidth,
+    y: end.y - perpendicular.y * halfWidth,
+  })
+  const startBottom = local({
+    x: start.x - perpendicular.x * halfWidth,
+    y: start.y - perpendicular.y * halfWidth,
+  })
+  const point = (value: { x: number; y: number }) => `${value.x.toFixed(2)} ${value.y.toFixed(2)}`
+  const control = (value: { x: number; y: number }, sign: number) => point({
+    x: value.x + direction.x * cap * sign,
+    y: value.y + direction.y * cap * sign,
+  })
+
+  return `M ${point(startTop)} L ${point(endTop)} C ${control(endTop, 1)}, ${control(endBottom, 1)}, ${point(endBottom)} L ${point(startBottom)} C ${control(startBottom, -1)}, ${control(startTop, -1)}, ${point(startTop)} Z`
+}
+
+function updateSocialConnectionPath() {
+  const boxes = controlBoxes()
+  if (boxes.length < 2) {
+    socialConnectionPaths.value = []
+    return
+  }
+
+  const frame = {
+    left: Math.min(...boxes.map((box) => box.left)),
+    top: Math.min(...boxes.map((box) => box.top)),
+    width: Math.max(...boxes.map((box) => box.right)) - Math.min(...boxes.map((box) => box.left)),
+    height: Math.max(...boxes.map((box) => box.bottom)) - Math.min(...boxes.map((box) => box.top)),
+  }
+  const paths = connectionPairs(boxes)
+    .map(([first, second]) => bridgePath(first, second, frame))
+    .filter(Boolean)
+
+  socialConnectionFrame.value = frame
+  socialConnectionPaths.value = paths
 }
 
 function animateSocialMotion() {
@@ -282,17 +388,24 @@ function animateSocialMotion() {
     current.x += (target.x - current.x) * 0.18
     current.y += (target.y - current.y) * 0.18
     current.pull += (target.pull - current.pull) * 0.18
+
+    const settled =
+      Math.abs(target.x - current.x) <= 0.01 &&
+      Math.abs(target.y - current.y) <= 0.01 &&
+      Math.abs(target.pull - current.pull) <= 0.01
+    if (settled) {
+      current.x = target.x
+      current.y = target.y
+      current.pull = target.pull
+    }
+
     socialCurrent.set(control, current)
 
     control.style.setProperty('--liquid-x', `${current.x.toFixed(3)}px`)
     control.style.setProperty('--liquid-y', `${current.y.toFixed(3)}px`)
     control.style.setProperty('--liquid-pull', current.pull.toFixed(3))
 
-    if (
-      Math.abs(target.x - current.x) > 0.01 ||
-      Math.abs(target.y - current.y) > 0.01 ||
-      Math.abs(target.pull - current.pull) > 0.01
-    ) {
+    if (!settled) {
       isSettled = false
     }
   }
@@ -429,29 +542,13 @@ function dragHandleStyle(w: WidgetLayout): Record<string, string> {
 
   &__social-connection {
     position: absolute;
-    inset: 0;
     z-index: 1;
-    width: 100%;
-    height: 100%;
-    overflow: visible;
     pointer-events: none;
   }
 
-  &__social-connection-fill,
-  &__social-connection-highlight {
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+  &__social-connection-bridge {
+    fill: rgba(255, 255, 255, 0.24);
     pointer-events: none;
-  }
-
-  &__social-connection-fill {
-    stroke: rgba(255, 255, 255, 0.34);
-    filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.12));
-  }
-
-  &__social-connection-highlight {
-    stroke: rgba(255, 255, 255, 0.58);
   }
 
   :deep(.home-social-control) {
@@ -586,6 +683,10 @@ function dragHandleStyle(w: WidgetLayout): Record<string, string> {
     transform: none !important;
     transition: none !important;
     will-change: auto;
+  }
+
+  .home-page__social-connection-bridge {
+    fill: rgba(255, 255, 255, 0.16);
   }
 }
 
