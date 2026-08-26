@@ -37,25 +37,41 @@
         </div>
       </div>
 
-      <!-- Shared liquid silhouette connecting the four social controls. -->
+      <!-- Local gooey layer: only the four real social controls feed the filter. -->
       <svg
-        v-if="socialUnionPath"
-        class="home-page__social-connection"
-        :viewBox="`0 0 ${socialConnectionFrame.width} ${socialConnectionFrame.height}`"
+        v-if="socialLobes.length"
+        class="home-page__social-liquid"
+        :viewBox="`0 0 ${socialVisualFrame.width} ${socialVisualFrame.height}`"
         :style="{
-          left: `${socialConnectionFrame.left}px`,
-          top: `${socialConnectionFrame.top}px`,
-          width: `${socialConnectionFrame.width}px`,
-          height: `${socialConnectionFrame.height}px`,
+          left: `${socialVisualFrame.left}px`,
+          top: `${socialVisualFrame.top}px`,
+          width: `${socialVisualFrame.width}px`,
+          height: `${socialVisualFrame.height}px`,
         }"
         aria-hidden="true"
         focusable="false"
       >
-        <path
-          class="home-page__social-connection-silhouette"
-          :d="socialUnionPath"
-          fill-rule="nonzero"
-        />
+        <defs>
+          <filter id="social-gooey" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix
+              in="blur"
+              type="matrix"
+              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -8"
+            />
+          </filter>
+        </defs>
+        <g class="home-page__social-liquid-lobes" filter="url(#social-gooey)">
+          <ellipse
+            v-for="lobe in socialLobes"
+            :key="lobe.id"
+            :cx="lobe.cx"
+            :cy="lobe.cy"
+            :rx="lobe.rx"
+            :ry="lobe.ry"
+            fill="white"
+          />
+        </g>
       </svg>
 
       <!-- Nav (horizontal on mobile) -->
@@ -226,11 +242,19 @@ type SocialConnectionFrame = {
   height: number
 }
 
+type SocialLobe = {
+  id: number
+  cx: number
+  cy: number
+  rx: number
+  ry: number
+}
+
 const socialRow = ref<HTMLElement | null>(null)
 const socialTargets = new Map<HTMLElement, SocialMotionState>()
 const socialCurrent = new Map<HTMLElement, SocialMotionState>()
-const socialUnionPath = ref('')
-const socialConnectionFrame = ref<SocialConnectionFrame>({
+const socialLobes = ref<SocialLobe[]>([])
+const socialVisualFrame = ref<SocialConnectionFrame>({
   left: 0,
   top: 0,
   width: 1,
@@ -278,157 +302,28 @@ function controlBoxes(): SocialControlBox[] {
   })
 }
 
-function connectionPairs(boxes: SocialControlBox[]): Array<[SocialControlBox, SocialControlBox]> {
-  const pairs = new Map<string, [SocialControlBox, SocialControlBox]>()
-
-  boxes.forEach((box, index) => {
-    const right = boxes
-      .map((candidate, candidateIndex) => ({ candidate, candidateIndex }))
-      .filter(({ candidate, candidateIndex }) => {
-        if (candidateIndex === index || candidate.centerX <= box.centerX) return false
-        return Math.abs(candidate.centerY - box.centerY) <= Math.max(box.height, candidate.height) * 0.72
-      })
-      .sort(({ candidate: a }, { candidate: b }) => a.centerX - b.centerX)[0]
-
-    if (right) {
-      const key = [index, boxes.indexOf(right.candidate)].sort().join(':')
-      pairs.set(key, [box, right.candidate])
-    }
-
-    const below = boxes
-      .map((candidate, candidateIndex) => ({ candidate, candidateIndex }))
-      .filter(({ candidate, candidateIndex }) => {
-        if (candidateIndex === index || candidate.centerY <= box.centerY) return false
-        return Math.abs(candidate.centerX - box.centerX) <= Math.max(box.width, candidate.width) * 0.72
-      })
-      .sort(({ candidate: a }, { candidate: b }) => a.centerY - b.centerY)[0]
-
-    if (below) {
-      const key = [index, boxes.indexOf(below.candidate)].sort().join(':')
-      pairs.set(key, [box, below.candidate])
-    }
-  })
-
-  return Array.from(pairs.values())
-}
-
-function lobePath(box: SocialControlBox, frame: SocialConnectionFrame, index: number): string {
-  const size = Math.min(box.width, box.height)
-  const expansion = clamp(size * 0.035, 2, 4)
-  const left = box.left - expansion - frame.left
-  const top = box.top - expansion - frame.top
-  const right = box.right + expansion - frame.left
-  const bottom = box.bottom + expansion - frame.top
-  const width = right - left
-  const height = bottom - top
-  const radius = Math.min(width, height) * 0.28
-  const variations = [1, 0.92, 1.08, 0.96]
-  const variation = variations[index % variations.length]
-  const topLeft = clamp(radius * variation, 10, Math.min(width, height) / 2)
-  const topRight = clamp(radius * (2 - variation), 10, Math.min(width, height) / 2)
-  const bottomRight = clamp(radius * (0.96 + variation * 0.08), 10, Math.min(width, height) / 2)
-  const bottomLeft = clamp(radius * (1.04 - variation * 0.08), 10, Math.min(width, height) / 2)
-  const point = (x: number, y: number) => `${x.toFixed(2)} ${y.toFixed(2)}`
-  const topStart = { x: left + topLeft, y: top }
-  const topEnd = { x: right - topRight, y: top }
-  const rightTop = { x: right, y: top + topRight }
-  const rightBottom = { x: right, y: bottom - bottomRight }
-  const bottomEnd = { x: right - bottomRight, y: bottom }
-  const bottomStart = { x: left + bottomLeft, y: bottom }
-  const leftBottom = { x: left, y: bottom - bottomLeft }
-  const leftTop = { x: left, y: top + topLeft }
-
-  return [
-    `M ${point(topStart.x, topStart.y)}`,
-    `L ${point(topEnd.x, topEnd.y)}`,
-    `C ${point(topEnd.x + topRight * 0.55, topEnd.y)} ${point(rightTop.x, rightTop.y - topRight * 0.45)} ${point(rightTop.x, rightTop.y)}`,
-    `L ${point(rightBottom.x, rightBottom.y)}`,
-    `C ${point(rightBottom.x, rightBottom.y + bottomRight * 0.45)} ${point(bottomEnd.x + bottomRight * 0.55, bottomEnd.y)} ${point(bottomEnd.x, bottomEnd.y)}`,
-    `L ${point(bottomStart.x, bottomStart.y)}`,
-    `C ${point(bottomStart.x - bottomLeft * 0.55, bottomStart.y)} ${point(leftBottom.x, leftBottom.y + bottomLeft * 0.45)} ${point(leftBottom.x, leftBottom.y)}`,
-    `L ${point(leftTop.x, leftTop.y)}`,
-    `C ${point(leftTop.x, leftTop.y - topLeft * 0.45)} ${point(topStart.x - topLeft * 0.55, topStart.y)} ${point(topStart.x, topStart.y)}`,
-    'Z',
-  ].join(' ')
-}
-
-function liquidNeckPath(first: SocialControlBox, second: SocialControlBox, frame: SocialConnectionFrame): string {
-  const dx = second.centerX - first.centerX
-  const dy = second.centerY - first.centerY
-  const length = Math.hypot(dx, dy)
-  if (length < 1) return ''
-
-  const isHorizontal = Math.abs(dx) >= Math.abs(dy)
-  const direction = isHorizontal ? { x: Math.sign(dx), y: 0 } : { x: 0, y: Math.sign(dy) }
-  const perpendicular = { x: -direction.y, y: direction.x }
-  const firstRadius = (first.width * Math.abs(direction.x) + first.height * Math.abs(direction.y)) / 2
-  const secondRadius = (second.width * Math.abs(direction.x) + second.height * Math.abs(direction.y)) / 2
-  const diameter = Math.min(first.width, first.height, second.width, second.height)
-  // The bridge is deliberately broad at the two attachment points and narrows
-  // only in the middle, so the gap reads as one soft organic silhouette.
-  const endpointHalfWidth = diameter * 0.39
-  const neckHalfWidth = diameter * 0.29
-  const overlap = clamp(diameter * 0.34, 20, 32)
-  const start = {
-    x: first.centerX + direction.x * (firstRadius - overlap),
-    y: first.centerY + direction.y * (firstRadius - overlap),
-  }
-  const end = {
-    x: second.centerX - direction.x * (secondRadius - overlap),
-    y: second.centerY - direction.y * (secondRadius - overlap),
-  }
-  const point = (value: { x: number; y: number }) => `${value.x.toFixed(2)} ${value.y.toFixed(2)}`
-  const at = (progress: number, offset: number) => ({
-    x: start.x + (end.x - start.x) * progress + perpendicular.x * offset - frame.left,
-    y: start.y + (end.y - start.y) * progress + perpendicular.y * offset - frame.top,
-  })
-  const offsetPoint = (center: { x: number; y: number }, along: number, across: number) => point({
-    x: center.x + direction.x * along + perpendicular.x * across - frame.left,
-    y: center.y + direction.y * along + perpendicular.y * across - frame.top,
-  })
-  const control = (progress: number, offset: number) => point(at(progress, offset))
-
-  const neckShoulder = neckHalfWidth * 1.14
-  const upperBulge = endpointHalfWidth * 1.02
-  const lowerBulge = endpointHalfWidth * 1.02
-  const capDepth = Math.min(endpointHalfWidth, overlap * 1.2)
-
-  return [
-    `M ${offsetPoint(start, 0, endpointHalfWidth)}`,
-    `C ${control(0.12, upperBulge)}, ${control(0.2, neckShoulder)}, ${control(0.34, neckHalfWidth)}`,
-    `C ${control(0.42, neckHalfWidth * 0.92)}, ${control(0.58, neckHalfWidth * 0.92)}, ${control(0.66, neckHalfWidth)}`,
-    `C ${control(0.8, neckShoulder)}, ${control(0.88, upperBulge)}, ${offsetPoint(end, 0, endpointHalfWidth)}`,
-    // These two caps reach the card edges while the centerline endpoint stays
-    // inside each sphere, hiding the original circular seam at the join.
-    `C ${offsetPoint(end, -capDepth, endpointHalfWidth)}, ${offsetPoint(end, -capDepth, -endpointHalfWidth)}, ${offsetPoint(end, 0, -endpointHalfWidth)}`,
-    `C ${control(0.88, -lowerBulge)}, ${control(0.8, -neckShoulder)}, ${control(0.66, -neckHalfWidth)}`,
-    `C ${control(0.58, -neckHalfWidth * 0.92)}, ${control(0.42, -neckHalfWidth * 0.92)}, ${control(0.34, -neckHalfWidth)}`,
-    `C ${control(0.2, -neckShoulder)}, ${control(0.12, -lowerBulge)}, ${offsetPoint(start, 0, -endpointHalfWidth)}`,
-    `C ${offsetPoint(start, capDepth, -endpointHalfWidth)}, ${offsetPoint(start, capDepth, endpointHalfWidth)}, ${offsetPoint(start, 0, endpointHalfWidth)} Z`,
-  ].join(' ')
-}
-
-function updateSocialConnectionPath() {
+function updateSocialLobes() {
   const boxes = controlBoxes()
-  if (boxes.length < 2) {
-    socialUnionPath.value = ''
+  if (boxes.length === 0) {
+    socialLobes.value = []
     return
   }
 
-  const padding = 5
+  const padding = 16
   const frame = {
     left: Math.min(...boxes.map((box) => box.left)) - padding,
     top: Math.min(...boxes.map((box) => box.top)) - padding,
     width: Math.max(...boxes.map((box) => box.right)) - Math.min(...boxes.map((box) => box.left)) + padding * 2,
     height: Math.max(...boxes.map((box) => box.bottom)) - Math.min(...boxes.map((box) => box.top)) + padding * 2,
   }
-  const lobes = boxes.map((box, index) => lobePath(box, frame, index))
-  const necks = connectionPairs(boxes)
-    .map(([first, second]) => liquidNeckPath(first, second, frame))
-    .filter(Boolean)
-
-  socialConnectionFrame.value = frame
-  socialUnionPath.value = [...lobes, ...necks].join(' ')
+  socialVisualFrame.value = frame
+  socialLobes.value = boxes.map((box, index) => ({
+    id: index,
+    cx: box.centerX - frame.left,
+    cy: box.centerY - frame.top,
+    rx: box.width / 2 + 1,
+    ry: box.height / 2 + 1,
+  }))
 }
 
 function animateSocialMotion() {
@@ -464,7 +359,7 @@ function animateSocialMotion() {
     }
   }
 
-  updateSocialConnectionPath()
+  updateSocialLobes()
 
   if (!isSettled) {
     socialFrame = requestAnimationFrame(animateSocialMotion)
@@ -520,10 +415,10 @@ onResize()
 window.addEventListener('resize', onResize)
 
 // Saved offsets and size edits update absolute positions without necessarily
-// changing the observed container size, so recalculate the local bridge frame
+// changing the observed container size, so recalculate the local visual frame
 // after Vue applies those layout changes.
 watch([offsets, layouts], () => {
-  void nextTick(updateSocialConnectionPath)
+  void nextTick(updateSocialLobes)
 })
 
 onMounted(() => {
@@ -541,7 +436,7 @@ onMounted(() => {
           control.style.setProperty('--liquid-y', '0px')
           control.style.setProperty('--liquid-pull', '0')
         }
-        updateSocialConnectionPath()
+        updateSocialLobes()
       }
     }
     socialMotionListener = onMotionPreferenceChange
@@ -549,11 +444,11 @@ onMounted(() => {
   }
 
   nextTick(() => {
-    updateSocialConnectionPath()
+    updateSocialLobes()
     const container = socialRow.value
     if (!container || typeof ResizeObserver === 'undefined') return
 
-    socialResizeObserver = new ResizeObserver(updateSocialConnectionPath)
+    socialResizeObserver = new ResizeObserver(updateSocialLobes)
     socialResizeObserver.observe(container)
     for (const control of socialControls()) {
       socialResizeObserver.observe(control)
@@ -625,19 +520,18 @@ function dragHandleStyle(w: WidgetLayout): Record<string, string> {
     z-index: 2;
   }
 
-  &__social-connection {
+  &__social-liquid {
     position: absolute;
-    // Sit over the card seams so the shared fill visually fuses into each
-    // sphere; pointer-events remain disabled and the icon centers stay clear.
+    // The frame hugs the four sources and their small blur halo. It never
+    // covers the page background outside this social area.
     z-index: 3;
     pointer-events: none;
   }
 
-  &__social-connection-silhouette {
-    // The single fill owns both the lobes and the necks.  Keeping the controls
-    // transparent below prevents four independent glass borders from cutting
-    // the silhouette back into separate cards.
-    fill: $glass-bg;
+  &__social-liquid-lobes {
+    // White sources plus the final group opacity reproduce $glass-bg while
+    // keeping the filter's alpha threshold stable.
+    opacity: 0.15;
     pointer-events: none;
   }
 
@@ -786,8 +680,8 @@ function dragHandleStyle(w: WidgetLayout): Record<string, string> {
     box-shadow: none !important;
   }
 
-  .home-page__social-connection-silhouette {
-    fill: $glass-bg;
+  .home-page__social-liquid-lobes {
+    opacity: 0.15;
   }
 }
 
