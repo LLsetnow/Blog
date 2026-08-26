@@ -1,6 +1,12 @@
 <template>
   <div class="home-page">
-    <div class="home-page__container" :style="canvasStyle">
+    <div
+      ref="socialRow"
+      class="home-page__container"
+      :style="canvasStyle"
+      @pointermove="onSocialPointerMove"
+      @pointerleave="onSocialPointerLeave"
+    >
       <!-- Greeting -->
       <div class="home-page__cell" :style="getWidgetStyle('greeting')">
         <HoverTilt>
@@ -14,12 +20,7 @@
       </div>
 
       <!-- GitHub + Email + WeChat (horizontal row on mobile) -->
-      <div
-        ref="socialRow"
-        class="home-page__icon-row"
-        @pointermove="onSocialPointerMove"
-        @pointerleave="onSocialPointerLeave"
-      >
+      <div class="home-page__icon-row">
         <div class="home-page__cell" :style="getWidgetStyle('github')">
           <HoverTilt>
             <GitHubCard />
