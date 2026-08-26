@@ -37,9 +37,9 @@
         </div>
       </div>
 
-      <!-- Decorative glass bridge connecting the four social controls. -->
+      <!-- Shared liquid silhouette connecting the four social controls. -->
       <svg
-        v-if="socialConnectionPaths.length"
+        v-if="socialUnionPath"
         class="home-page__social-connection"
         :viewBox="`0 0 ${socialConnectionFrame.width} ${socialConnectionFrame.height}`"
         :style="{
@@ -52,10 +52,9 @@
         focusable="false"
       >
         <path
-          v-for="(path, index) in socialConnectionPaths"
-          :key="`social-bridge-${index}`"
-          class="home-page__social-connection-bridge"
-          :d="path"
+          class="home-page__social-connection-silhouette"
+          :d="socialUnionPath"
+          fill-rule="nonzero"
         />
       </svg>
 
@@ -230,7 +229,7 @@ type SocialConnectionFrame = {
 const socialRow = ref<HTMLElement | null>(null)
 const socialTargets = new Map<HTMLElement, SocialMotionState>()
 const socialCurrent = new Map<HTMLElement, SocialMotionState>()
-const socialConnectionPaths = ref<string[]>([])
+const socialUnionPath = ref('')
 const socialConnectionFrame = ref<SocialConnectionFrame>({
   left: 0,
   top: 0,
@@ -313,7 +312,47 @@ function connectionPairs(boxes: SocialControlBox[]): Array<[SocialControlBox, So
   return Array.from(pairs.values())
 }
 
-function bridgePath(first: SocialControlBox, second: SocialControlBox, frame: SocialConnectionFrame): string {
+function lobePath(box: SocialControlBox, frame: SocialConnectionFrame, index: number): string {
+  const size = Math.min(box.width, box.height)
+  const expansion = clamp(size * 0.035, 2, 4)
+  const left = box.left - expansion - frame.left
+  const top = box.top - expansion - frame.top
+  const right = box.right + expansion - frame.left
+  const bottom = box.bottom + expansion - frame.top
+  const width = right - left
+  const height = bottom - top
+  const radius = Math.min(width, height) * 0.28
+  const variations = [1, 0.92, 1.08, 0.96]
+  const variation = variations[index % variations.length]
+  const topLeft = clamp(radius * variation, 10, Math.min(width, height) / 2)
+  const topRight = clamp(radius * (2 - variation), 10, Math.min(width, height) / 2)
+  const bottomRight = clamp(radius * (0.96 + variation * 0.08), 10, Math.min(width, height) / 2)
+  const bottomLeft = clamp(radius * (1.04 - variation * 0.08), 10, Math.min(width, height) / 2)
+  const point = (x: number, y: number) => `${x.toFixed(2)} ${y.toFixed(2)}`
+  const topStart = { x: left + topLeft, y: top }
+  const topEnd = { x: right - topRight, y: top }
+  const rightTop = { x: right, y: top + topRight }
+  const rightBottom = { x: right, y: bottom - bottomRight }
+  const bottomEnd = { x: right - bottomRight, y: bottom }
+  const bottomStart = { x: left + bottomLeft, y: bottom }
+  const leftBottom = { x: left, y: bottom - bottomLeft }
+  const leftTop = { x: left, y: top + topLeft }
+
+  return [
+    `M ${point(topStart.x, topStart.y)}`,
+    `L ${point(topEnd.x, topEnd.y)}`,
+    `C ${point(topEnd.x + topRight * 0.55, topEnd.y)} ${point(rightTop.x, rightTop.y - topRight * 0.45)} ${point(rightTop.x, rightTop.y)}`,
+    `L ${point(rightBottom.x, rightBottom.y)}`,
+    `C ${point(rightBottom.x, rightBottom.y + bottomRight * 0.45)} ${point(bottomEnd.x + bottomRight * 0.55, bottomEnd.y)} ${point(bottomEnd.x, bottomEnd.y)}`,
+    `L ${point(bottomStart.x, bottomStart.y)}`,
+    `C ${point(bottomStart.x - bottomLeft * 0.55, bottomStart.y)} ${point(leftBottom.x, leftBottom.y + bottomLeft * 0.45)} ${point(leftBottom.x, leftBottom.y)}`,
+    `L ${point(leftTop.x, leftTop.y)}`,
+    `C ${point(leftTop.x, leftTop.y - topLeft * 0.45)} ${point(topStart.x - topLeft * 0.55, topStart.y)} ${point(topStart.x, topStart.y)}`,
+    'Z',
+  ].join(' ')
+}
+
+function liquidNeckPath(first: SocialControlBox, second: SocialControlBox, frame: SocialConnectionFrame): string {
   const dx = second.centerX - first.centerX
   const dy = second.centerY - first.centerY
   const length = Math.hypot(dx, dy)
@@ -327,9 +366,9 @@ function bridgePath(first: SocialControlBox, second: SocialControlBox, frame: So
   const diameter = Math.min(first.width, first.height, second.width, second.height)
   // The bridge is deliberately broad at the two attachment points and narrows
   // only in the middle, so the gap reads as one soft organic silhouette.
-  const endpointHalfWidth = diameter * 0.27
-  const neckHalfWidth = diameter * 0.19
-  const overlap = clamp(diameter * 0.2, 15, 25)
+  const endpointHalfWidth = diameter * 0.39
+  const neckHalfWidth = diameter * 0.29
+  const overlap = clamp(diameter * 0.34, 20, 32)
   const start = {
     x: first.centerX + direction.x * (firstRadius - overlap),
     y: first.centerY + direction.y * (firstRadius - overlap),
@@ -338,26 +377,6 @@ function bridgePath(first: SocialControlBox, second: SocialControlBox, frame: So
     x: second.centerX - direction.x * (secondRadius - overlap),
     y: second.centerY - direction.y * (secondRadius - overlap),
   }
-  const local = (point: { x: number; y: number }) => ({
-    x: point.x - frame.left,
-    y: point.y - frame.top,
-  })
-  const startTop = local({
-    x: start.x + perpendicular.x * endpointHalfWidth,
-    y: start.y + perpendicular.y * endpointHalfWidth,
-  })
-  const endTop = local({
-    x: end.x + perpendicular.x * endpointHalfWidth,
-    y: end.y + perpendicular.y * endpointHalfWidth,
-  })
-  const endBottom = local({
-    x: end.x - perpendicular.x * endpointHalfWidth,
-    y: end.y - perpendicular.y * endpointHalfWidth,
-  })
-  const startBottom = local({
-    x: start.x - perpendicular.x * endpointHalfWidth,
-    y: start.y - perpendicular.y * endpointHalfWidth,
-  })
   const point = (value: { x: number; y: number }) => `${value.x.toFixed(2)} ${value.y.toFixed(2)}`
   const at = (progress: number, offset: number) => ({
     x: start.x + (end.x - start.x) * progress + perpendicular.x * offset - frame.left,
@@ -369,45 +388,47 @@ function bridgePath(first: SocialControlBox, second: SocialControlBox, frame: So
   })
   const control = (progress: number, offset: number) => point(at(progress, offset))
 
-  const neckShoulder = neckHalfWidth * 1.06
-  const upperBulge = endpointHalfWidth * 0.98
-  const lowerBulge = endpointHalfWidth * 0.94
-  const capDepth = Math.min(endpointHalfWidth, overlap)
+  const neckShoulder = neckHalfWidth * 1.14
+  const upperBulge = endpointHalfWidth * 1.02
+  const lowerBulge = endpointHalfWidth * 1.02
+  const capDepth = Math.min(endpointHalfWidth, overlap * 1.2)
 
   return [
-    `M ${point(startTop)}`,
+    `M ${offsetPoint(start, 0, endpointHalfWidth)}`,
     `C ${control(0.12, upperBulge)}, ${control(0.2, neckShoulder)}, ${control(0.34, neckHalfWidth)}`,
     `C ${control(0.42, neckHalfWidth * 0.92)}, ${control(0.58, neckHalfWidth * 0.92)}, ${control(0.66, neckHalfWidth)}`,
-    `C ${control(0.8, neckShoulder)}, ${control(0.88, upperBulge)}, ${point(endTop)}`,
+    `C ${control(0.8, neckShoulder)}, ${control(0.88, upperBulge)}, ${offsetPoint(end, 0, endpointHalfWidth)}`,
     // These two caps reach the card edges while the centerline endpoint stays
     // inside each sphere, hiding the original circular seam at the join.
-    `C ${offsetPoint(end, -capDepth, endpointHalfWidth)}, ${offsetPoint(end, -capDepth, -endpointHalfWidth)}, ${point(endBottom)}`,
+    `C ${offsetPoint(end, -capDepth, endpointHalfWidth)}, ${offsetPoint(end, -capDepth, -endpointHalfWidth)}, ${offsetPoint(end, 0, -endpointHalfWidth)}`,
     `C ${control(0.88, -lowerBulge)}, ${control(0.8, -neckShoulder)}, ${control(0.66, -neckHalfWidth)}`,
     `C ${control(0.58, -neckHalfWidth * 0.92)}, ${control(0.42, -neckHalfWidth * 0.92)}, ${control(0.34, -neckHalfWidth)}`,
-    `C ${control(0.2, -neckShoulder)}, ${control(0.12, -lowerBulge)}, ${point(startBottom)}`,
-    `C ${offsetPoint(start, capDepth, -endpointHalfWidth)}, ${offsetPoint(start, capDepth, endpointHalfWidth)}, ${point(startTop)} Z`,
+    `C ${control(0.2, -neckShoulder)}, ${control(0.12, -lowerBulge)}, ${offsetPoint(start, 0, -endpointHalfWidth)}`,
+    `C ${offsetPoint(start, capDepth, -endpointHalfWidth)}, ${offsetPoint(start, capDepth, endpointHalfWidth)}, ${offsetPoint(start, 0, endpointHalfWidth)} Z`,
   ].join(' ')
 }
 
 function updateSocialConnectionPath() {
   const boxes = controlBoxes()
   if (boxes.length < 2) {
-    socialConnectionPaths.value = []
+    socialUnionPath.value = ''
     return
   }
 
+  const padding = 5
   const frame = {
-    left: Math.min(...boxes.map((box) => box.left)),
-    top: Math.min(...boxes.map((box) => box.top)),
-    width: Math.max(...boxes.map((box) => box.right)) - Math.min(...boxes.map((box) => box.left)),
-    height: Math.max(...boxes.map((box) => box.bottom)) - Math.min(...boxes.map((box) => box.top)),
+    left: Math.min(...boxes.map((box) => box.left)) - padding,
+    top: Math.min(...boxes.map((box) => box.top)) - padding,
+    width: Math.max(...boxes.map((box) => box.right)) - Math.min(...boxes.map((box) => box.left)) + padding * 2,
+    height: Math.max(...boxes.map((box) => box.bottom)) - Math.min(...boxes.map((box) => box.top)) + padding * 2,
   }
-  const paths = connectionPairs(boxes)
-    .map(([first, second]) => bridgePath(first, second, frame))
+  const lobes = boxes.map((box, index) => lobePath(box, frame, index))
+  const necks = connectionPairs(boxes)
+    .map(([first, second]) => liquidNeckPath(first, second, frame))
     .filter(Boolean)
 
   socialConnectionFrame.value = frame
-  socialConnectionPaths.value = paths
+  socialUnionPath.value = [...lobes, ...necks].join(' ')
 }
 
 function animateSocialMotion() {
@@ -612,11 +633,16 @@ function dragHandleStyle(w: WidgetLayout): Record<string, string> {
     pointer-events: none;
   }
 
-  &__social-connection-bridge {
-    // Use the existing hover-glass token for a visible but still transparent
-    // local join; the page background remains visible through the shape.
-    fill: $bg-card-hover;
+  &__social-connection-silhouette {
+    // The single fill owns both the lobes and the necks.  Keeping the controls
+    // transparent below prevents four independent glass borders from cutting
+    // the silhouette back into separate cards.
+    fill: $glass-bg;
     pointer-events: none;
+  }
+
+  &__icon-row .home-page__cell {
+    z-index: 4;
   }
 
   :deep(.home-social-control) {
@@ -630,6 +656,11 @@ function dragHandleStyle(w: WidgetLayout): Record<string, string> {
                 opacity 0.3s ease,
                 box-shadow 0.3s ease;
     will-change: transform;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
   }
 
   // Settings gear button (fixed position, always visible)
@@ -751,10 +782,12 @@ function dragHandleStyle(w: WidgetLayout): Record<string, string> {
     transform: none !important;
     transition: none !important;
     will-change: auto;
+    background: transparent !important;
+    box-shadow: none !important;
   }
 
-  .home-page__social-connection-bridge {
-    fill: $bg-card-hover;
+  .home-page__social-connection-silhouette {
+    fill: $glass-bg;
   }
 }
 
