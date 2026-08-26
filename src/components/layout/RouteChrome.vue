@@ -123,9 +123,11 @@
     color: #18343c;
     text-decoration: none;
     background: transparent;
-    border: 1px solid rgba($accent-primary, 0.28);
+    border: 1px solid transparent;
     border-radius: 10px;
-    box-shadow: 0 6px 18px rgba(33, 89, 105, 0.14);
+    box-shadow:
+      inset 0 0 0 2px rgba(255, 255, 255, 0.65),
+      0 6px 18px rgba(33, 89, 105, 0.14);
     transform: translateX(var(--task-offset)) rotate(var(--task-rotate)) skewX(var(--task-skew));
     transform-origin: right center;
     transition:
@@ -172,16 +174,14 @@
 
     &:hover {
       width: 116px;
-      border-color: rgba($accent-primary, 0.72);
       box-shadow:
-        0 0 12px rgba($accent-primary, 0.24),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.8),
         0 9px 22px rgba(33, 89, 105, 0.2);
     }
 
     &:focus-visible {
-      outline: 3px solid #167d9c;
-      outline-offset: 3px;
-      box-shadow: none;
+      outline: none;
+      outline-offset: 0;
     }
 
     &.router-link-active,
@@ -189,15 +189,9 @@
       width: 150px;
       height: 72px;
       background: transparent;
-      border-color: rgba($accent-primary, 0.9);
       box-shadow:
-        0 0 16px rgba($accent-primary, 0.32),
+        inset 0 0 0 2px rgba(255, 255, 255, 0.8),
         0 12px 28px rgba(25, 91, 111, 0.32);
-    }
-
-    &.router-link-active:focus-visible,
-    &.route-chrome__task-card--exact-active:focus-visible {
-      box-shadow: none;
     }
 
     &:hover .route-chrome__task-label,
@@ -279,15 +273,16 @@
       height: 54px;
       min-height: 44px;
       background: transparent;
-      border-color: rgba($accent-primary, 0.34);
-      box-shadow: 0 5px 12px rgba(33, 89, 105, 0.14);
+      border-color: transparent;
+      box-shadow:
+        inset 0 0 0 2px rgba(255, 255, 255, 0.65),
+        0 5px 12px rgba(33, 89, 105, 0.14);
       transform: none;
     }
 
     &__task-card:hover {
-      border-color: rgba($accent-primary, 0.72);
       box-shadow:
-        0 0 12px rgba($accent-primary, 0.24),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.8),
         0 5px 12px rgba(33, 89, 105, 0.14);
     }
 
@@ -298,22 +293,11 @@
       height: 54px;
       min-height: 44px;
       background: transparent;
-      border-color: rgba($accent-primary, 0.9);
+      border-color: transparent;
       box-shadow:
-        0 0 16px rgba($accent-primary, 0.32),
+        inset 0 0 0 2px rgba(255, 255, 255, 0.8),
         0 8px 18px rgba(25, 91, 111, 0.26);
       transform: none;
-    }
-
-    &__task-card:focus-visible {
-      outline: 2px solid #167d9c;
-      outline-offset: 1px;
-      box-shadow: none;
-    }
-
-    &__task-card.router-link-active:focus-visible,
-    &__task-card.route-chrome__task-card--exact-active:focus-visible {
-      box-shadow: none;
     }
 
     &__task-content {
