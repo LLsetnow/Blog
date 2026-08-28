@@ -236,7 +236,6 @@ function onRouteChange(path: string): void {
   }
 
   if (path === '/') {
-    visualMode.value = 'home'
     scheduleHomeSync(props.pageEnteredVersion + 1)
     return
   }
