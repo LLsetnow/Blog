@@ -66,6 +66,8 @@ const isHomeRoute = computed(() => route.path === '/')
 const contentRouteNames = new Set([
   'Favorites',
   'BlogList',
+  'BlogNew',
+  'BlogEdit',
   'BlogPost',
   'Projects',
   'ProjectPost',
