@@ -1,5 +1,14 @@
 <template>
   <div class="app-layout">
+    <header class="app-layout__header">
+      <div class="app-layout__container">
+        <router-link to="/" class="app-layout__logo">
+          <span class="app-layout__logo-text">Akai's Blog</span>
+        </router-link>
+
+      </div>
+    </header>
+
     <main class="app-layout__main">
       <slot />
     </main>
@@ -29,29 +38,66 @@ const currentYear: number = new Date().getFullYear()
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  // Transparent so FluidBackground shows through; the static gradient on <html>
+  // stays as the base layer and the reduced-motion fallback.
   background: transparent;
 
-  &__main {
-    box-sizing: border-box;
-    flex: 1;
-    width: 100%;
-    max-width: 1376px;
+  &__header {
+    position: sticky;
+    top: 0;
+    z-index: $z-sticky;
+    @include glass;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+  }
+
+  &__container {
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 88px 176px 100px $spacing-lg;
+    padding: $spacing-md $spacing-lg;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: $spacing-sm;
+    text-decoration: none;
+    color: $text-primary;
+  }
+
+  &__logo-text {
+    font-size: $font-size-lg;
+    font-weight: 700;
+    background: $accent-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  &__main {
+    flex: 1;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: $spacing-xl $spacing-lg 100px;
   }
 
   &__footer {
-    box-sizing: border-box;
-    padding: $spacing-lg 176px $spacing-lg $spacing-lg;
+    text-align: center;
+    padding: $spacing-lg;
     color: $text-muted;
     font-size: $font-size-sm;
-    text-align: center;
   }
 
   &__beian {
     margin-top: $spacing-sm;
-    color: #666;
     font-size: 12px;
+    color: #666;
 
     a {
       color: #666;
@@ -59,12 +105,6 @@ const currentYear: number = new Date().getFullYear()
 
       &:hover {
         color: $text-primary;
-      }
-
-      &:focus-visible {
-        border-radius: 3px;
-        outline: 2px solid #167d9c;
-        outline-offset: 3px;
       }
     }
 
@@ -75,20 +115,21 @@ const currentYear: number = new Date().getFullYear()
     &-icon {
       width: 16px;
       height: 16px;
-      margin-right: 2px;
       vertical-align: -3px;
+      margin-right: 2px;
     }
   }
+
 }
 
-@media (max-width: 767px) {
+@media (max-width: $breakpoint-md) {
   .app-layout {
-    box-sizing: border-box;
-    padding-bottom: 96px;
+    &__container {
+      padding: $spacing-sm $spacing-md;
+    }
 
     &__main {
-      max-width: 1200px;
-      padding: 76px $spacing-md $spacing-lg;
+      padding: $spacing-md $spacing-md 60px;
     }
 
     &__footer {
