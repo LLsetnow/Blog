@@ -36,7 +36,12 @@
     </Transition>
   </router-view>
 
-  <RouteChrome v-if="showRouteChrome" />
+  <RouteChrome v-if="showRouteChrome" :show-navigation="false" />
+
+  <RouteNavigation
+    v-if="route.path !== '/now-playing'"
+    :page-entered-version="pageEnteredVersion"
+  />
 
   <div
     v-if="route.path === '/'"
@@ -54,6 +59,7 @@ import { useRoute } from 'vue-router'
 import MusicPlayer from '@/components/home/MusicPlayer.vue'
 import GradientWaves from '@/components/common/GradientWaves.vue'
 import RouteChrome from '@/components/layout/RouteChrome.vue'
+import RouteNavigation from '@/components/layout/RouteNavigation.vue'
 
 const route = useRoute()
 const isHomeRoute = computed(() => route.path === '/')
@@ -71,6 +77,7 @@ const showRouteChrome = computed(() => (
 ))
 const playerRef = ref<HTMLElement | null>(null)
 const isPlayerPositioned = ref(false)
+const pageEnteredVersion = ref(0)
 
 function applyStyle(styles: Partial<CSSStyleDeclaration>) {
   const e = playerRef.value
@@ -184,6 +191,7 @@ function observeAnchor() {
 function onPageEntered() {
   initPosition()
   observeAnchor()
+  pageEnteredVersion.value += 1
 }
 
 onMounted(() => {
