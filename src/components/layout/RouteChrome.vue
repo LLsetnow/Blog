@@ -2,7 +2,7 @@
   <div class="route-chrome">
     <router-link to="/" class="route-chrome__brand">Akai's Blog</router-link>
 
-    <nav class="route-chrome__task-rail" aria-label="主要导航">
+    <nav class="route-chrome__task-rail" data-widget="nav" aria-label="主要导航">
       <router-link
         to="/"
         class="route-chrome__task-card"

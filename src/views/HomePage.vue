@@ -1,6 +1,12 @@
 <template>
   <div class="home-page">
-    <div class="home-page__container" :style="canvasStyle">
+    <div
+      ref="socialRow"
+      class="home-page__container"
+      :style="canvasStyle"
+      @pointermove="onSocialPointerMove"
+      @pointerleave="onSocialPointerLeave"
+    >
       <!-- Greeting -->
       <div class="home-page__cell" :style="getWidgetStyle('greeting')">
         <HoverTilt>
@@ -31,13 +37,47 @@
         </div>
       </div>
 
-      <!-- Persistent RouteNavigation uses this cell as its measured home target. -->
-      <div
-        class="home-page__cell home-page__nav-cell"
-        data-widget="nav"
+      <!-- Local gooey layer: only the four real social controls feed the filter. -->
+      <svg
+        v-if="socialLobes.length"
+        class="home-page__social-liquid"
+        :viewBox="`0 0 ${socialVisualFrame.width} ${socialVisualFrame.height}`"
+        :style="{
+          left: `${socialVisualFrame.left}px`,
+          top: `${socialVisualFrame.top}px`,
+          width: `${socialVisualFrame.width}px`,
+          height: `${socialVisualFrame.height}px`,
+        }"
         aria-hidden="true"
-        :style="getWidgetStyle('nav')"
-      />
+        focusable="false"
+      >
+        <defs>
+          <filter id="social-gooey" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix
+              in="blur"
+              type="matrix"
+              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -8"
+            />
+          </filter>
+        </defs>
+        <g class="home-page__social-liquid-lobes" filter="url(#social-gooey)">
+          <ellipse
+            v-for="lobe in socialLobes"
+            :key="lobe.id"
+            :cx="lobe.cx"
+            :cy="lobe.cy"
+            :rx="lobe.rx"
+            :ry="lobe.ry"
+            fill="white"
+          />
+        </g>
+      </svg>
+
+      <!-- Nav (horizontal on mobile) -->
+      <div class="home-page__cell home-page__nav-cell" data-widget="nav" :style="getWidgetStyle('nav')">
+        <NavMenu />
+      </div>
 
       <!-- Service status (hidden on mobile) -->
       <div v-if="!isMobile" class="home-page__cell" :style="getWidgetStyle('status')">
@@ -110,12 +150,13 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onBeforeUnmount, ref } from 'vue'
+import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import type { WidgetLayout } from '@/types'
 import GreetingCard from '@/components/home/GreetingCard.vue'
 import ServiceStatus from '@/components/home/ServiceStatus.vue'
 import CronTasks from '@/components/home/CronTasks.vue'
 import ContributionHeatmap from '@/components/home/ContributionHeatmap.vue'
+import NavMenu from '@/components/home/NavMenu.vue'
 import GitHubCard from '@/components/home/GitHubCard.vue'
 import ImageGallery from '@/components/home/ImageGallery.vue'
 
@@ -177,6 +218,191 @@ const { toasts } = useToast()
 
 const isMobile = ref(window.innerWidth < 768)
 
+type SocialMotionState = {
+  x: number
+  y: number
+  pull: number
+}
+
+type SocialControlBox = {
+  left: number
+  top: number
+  right: number
+  bottom: number
+  width: number
+  height: number
+  centerX: number
+  centerY: number
+}
+
+type SocialConnectionFrame = {
+  left: number
+  top: number
+  width: number
+  height: number
+}
+
+type SocialLobe = {
+  id: number
+  cx: number
+  cy: number
+  rx: number
+  ry: number
+}
+
+const socialRow = ref<HTMLElement | null>(null)
+const socialTargets = new Map<HTMLElement, SocialMotionState>()
+const socialCurrent = new Map<HTMLElement, SocialMotionState>()
+const socialLobes = ref<SocialLobe[]>([])
+const socialVisualFrame = ref<SocialConnectionFrame>({
+  left: 0,
+  top: 0,
+  width: 1,
+  height: 1,
+})
+let socialFrame: number | null = null
+let socialResizeObserver: ResizeObserver | null = null
+const socialReducedMotion = ref(
+  typeof window !== 'undefined' &&
+  typeof window.matchMedia === 'function' &&
+  window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+)
+let socialMotionQuery: MediaQueryList | null = null
+let socialMotionListener: ((event: MediaQueryListEvent) => void) | null = null
+
+function socialControls(): HTMLElement[] {
+  return Array.from(socialRow.value?.querySelectorAll<HTMLElement>('[data-liquid-social]') ?? [])
+}
+
+function clamp(value: number, min: number, max: number): number {
+  return Math.min(max, Math.max(min, value))
+}
+
+function controlBoxes(): SocialControlBox[] {
+  const container = socialRow.value
+  const controls = socialControls()
+  if (!container || controls.length < 2) return []
+
+  const containerRect = container.getBoundingClientRect()
+  const scale = container.clientWidth > 0
+    ? containerRect.width / container.clientWidth
+    : 1
+  return controls.map((control) => {
+    const rect = control.getBoundingClientRect()
+    return {
+      left: (rect.left - containerRect.left) / scale,
+      top: (rect.top - containerRect.top) / scale,
+      right: (rect.right - containerRect.left) / scale,
+      bottom: (rect.bottom - containerRect.top) / scale,
+      width: rect.width / scale,
+      height: rect.height / scale,
+      centerX: (rect.left + rect.width / 2 - containerRect.left) / scale,
+      centerY: (rect.top + rect.height / 2 - containerRect.top) / scale,
+    }
+  })
+}
+
+function updateSocialLobes() {
+  const boxes = controlBoxes()
+  if (boxes.length === 0) {
+    socialLobes.value = []
+    return
+  }
+
+  const padding = 16
+  const frame = {
+    left: Math.min(...boxes.map((box) => box.left)) - padding,
+    top: Math.min(...boxes.map((box) => box.top)) - padding,
+    width: Math.max(...boxes.map((box) => box.right)) - Math.min(...boxes.map((box) => box.left)) + padding * 2,
+    height: Math.max(...boxes.map((box) => box.bottom)) - Math.min(...boxes.map((box) => box.top)) + padding * 2,
+  }
+  socialVisualFrame.value = frame
+  socialLobes.value = boxes.map((box, index) => ({
+    id: index,
+    cx: box.centerX - frame.left,
+    cy: box.centerY - frame.top,
+    rx: box.width / 2 + 1,
+    ry: box.height / 2 + 1,
+  }))
+}
+
+function animateSocialMotion() {
+  socialFrame = null
+  let isSettled = true
+
+  for (const control of socialControls()) {
+    const target = socialTargets.get(control) ?? { x: 0, y: 0, pull: 0 }
+    const current = socialCurrent.get(control) ?? { x: 0, y: 0, pull: 0 }
+
+    current.x += (target.x - current.x) * 0.18
+    current.y += (target.y - current.y) * 0.18
+    current.pull += (target.pull - current.pull) * 0.18
+
+    const settled =
+      Math.abs(target.x - current.x) <= 0.01 &&
+      Math.abs(target.y - current.y) <= 0.01 &&
+      Math.abs(target.pull - current.pull) <= 0.01
+    if (settled) {
+      current.x = target.x
+      current.y = target.y
+      current.pull = target.pull
+    }
+
+    socialCurrent.set(control, current)
+
+    control.style.setProperty('--liquid-x', `${current.x.toFixed(3)}px`)
+    control.style.setProperty('--liquid-y', `${current.y.toFixed(3)}px`)
+    control.style.setProperty('--liquid-pull', current.pull.toFixed(3))
+
+    if (!settled) {
+      isSettled = false
+    }
+  }
+
+  updateSocialLobes()
+
+  if (!isSettled) {
+    socialFrame = requestAnimationFrame(animateSocialMotion)
+  }
+}
+
+function scheduleSocialMotion() {
+  if (socialReducedMotion.value) return
+  if (socialFrame === null) {
+    socialFrame = requestAnimationFrame(animateSocialMotion)
+  }
+}
+
+function onSocialPointerMove(event: PointerEvent) {
+  if (event.pointerType === 'touch' || socialReducedMotion.value) return
+
+  for (const control of socialControls()) {
+    const rect = control.getBoundingClientRect()
+    const deltaX = event.clientX - (rect.left + rect.width / 2)
+    const deltaY = event.clientY - (rect.top + rect.height / 2)
+    const distance = Math.hypot(deltaX, deltaY)
+    const influenceRadius = Math.max(rect.width * 2.8, 180)
+    const pull = clamp(1 - distance / influenceRadius, 0, 1)
+
+    socialTargets.set(control, {
+      x: clamp(deltaX * 0.06 * pull, -5, 5),
+      y: clamp(deltaY * 0.06 * pull, -5, 5),
+      pull,
+    })
+  }
+
+  scheduleSocialMotion()
+}
+
+function onSocialPointerLeave() {
+  if (socialReducedMotion.value) return
+  for (const control of socialControls()) {
+    socialTargets.set(control, { x: 0, y: 0, pull: 0 })
+  }
+
+  scheduleSocialMotion()
+}
+
 function onResize() {
   isMobile.value = window.innerWidth < 768
   // Below the mobile breakpoint the canvas gives way to a flex column, which
@@ -188,8 +414,55 @@ function onResize() {
 onResize()
 window.addEventListener('resize', onResize)
 
+// Saved offsets and size edits update absolute positions without necessarily
+// changing the observed container size, so recalculate the local visual frame
+// after Vue applies those layout changes.
+watch([offsets, layouts], () => {
+  void nextTick(updateSocialLobes)
+})
+
+onMounted(() => {
+  if (typeof window.matchMedia === 'function') {
+    socialMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
+    const onMotionPreferenceChange = (event: MediaQueryListEvent) => {
+      socialReducedMotion.value = event.matches
+      if (event.matches) {
+        if (socialFrame !== null) cancelAnimationFrame(socialFrame)
+        socialFrame = null
+        for (const control of socialControls()) {
+          socialTargets.set(control, { x: 0, y: 0, pull: 0 })
+          socialCurrent.set(control, { x: 0, y: 0, pull: 0 })
+          control.style.setProperty('--liquid-x', '0px')
+          control.style.setProperty('--liquid-y', '0px')
+          control.style.setProperty('--liquid-pull', '0')
+        }
+        updateSocialLobes()
+      }
+    }
+    socialMotionListener = onMotionPreferenceChange
+    socialMotionQuery.addEventListener?.('change', socialMotionListener)
+  }
+
+  nextTick(() => {
+    updateSocialLobes()
+    const container = socialRow.value
+    if (!container || typeof ResizeObserver === 'undefined') return
+
+    socialResizeObserver = new ResizeObserver(updateSocialLobes)
+    socialResizeObserver.observe(container)
+    for (const control of socialControls()) {
+      socialResizeObserver.observe(control)
+    }
+  })
+})
+
 onBeforeUnmount(() => {
   window.removeEventListener('resize', onResize)
+  socialResizeObserver?.disconnect()
+  if (socialMotionQuery && socialMotionListener) socialMotionQuery.removeEventListener?.('change', socialMotionListener)
+  if (socialFrame !== null) {
+    cancelAnimationFrame(socialFrame)
+  }
 })
 
 /** Compute drag handle inline style from widget base + offset */
@@ -244,6 +517,44 @@ function dragHandleStyle(w: WidgetLayout): Record<string, string> {
 
   &__cell {
     position: absolute;
+    z-index: 2;
+  }
+
+  &__social-liquid {
+    position: absolute;
+    // The frame hugs the four sources and their small blur halo. It never
+    // covers the page background outside this social area.
+    z-index: 3;
+    pointer-events: none;
+  }
+
+  &__social-liquid-lobes {
+    // White sources plus the final group opacity reproduce $glass-bg while
+    // keeping the filter's alpha threshold stable.
+    opacity: 0.15;
+    pointer-events: none;
+  }
+
+  &__icon-row .home-page__cell {
+    z-index: 4;
+  }
+
+  :deep(.home-social-control) {
+    --liquid-x: 0px;
+    --liquid-y: 0px;
+    --liquid-pull: 0;
+    transform: translate3d(var(--liquid-x), var(--liquid-y), 0)
+      rotate(calc(var(--liquid-pull) * 2deg));
+    transition: transform 180ms cubic-bezier(0.22, 1, 0.36, 1),
+                color 0.3s ease,
+                opacity 0.3s ease,
+                box-shadow 0.3s ease;
+    will-change: transform;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
   }
 
   // Settings gear button (fixed position, always visible)
@@ -360,6 +671,20 @@ function dragHandleStyle(w: WidgetLayout): Record<string, string> {
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .home-page :deep(.home-social-control) {
+    transform: none !important;
+    transition: none !important;
+    will-change: auto;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .home-page__social-liquid-lobes {
+    opacity: 0.15;
+  }
+}
+
 // Mobile: switch from absolute canvas to flex column
 @media (max-width: $breakpoint-md) {
   .home-page {
@@ -371,7 +696,7 @@ function dragHandleStyle(w: WidgetLayout): Record<string, string> {
 
     &__container {
       width: 100%;
-      position: static;
+      position: relative;
       display: flex;
       flex-direction: column;
       gap: 14px;
@@ -404,12 +729,24 @@ function dragHandleStyle(w: WidgetLayout): Record<string, string> {
       min-height: 160px;
     }
 
-    // The persistent RouteNavigation is positioned above this empty anchor;
-    // preserve the height the former inline mobile menu provided.
-    &__nav-cell {
-      min-height: 84px;
+    &__nav-cell :deep(.nav-menu) {
+      flex-direction: row;
+      padding: 6px;
+      gap: 4px;
     }
 
+    &__nav-cell :deep(.nav-menu__item) {
+      flex: 1;
+      padding: 12px 4px;
+      border-radius: 14px;
+      justify-content: center;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    &__nav-cell :deep(.nav-menu__label) {
+      font-size: 13px;
+    }
   }
 }
 </style>

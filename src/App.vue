@@ -31,57 +31,53 @@
        positioned canvas and the others are normal flow, so cross-fading them
        in place would have them fight over the same space. -->
   <router-view v-slot="{ Component }">
-    <Transition name="page" mode="out-in" @after-enter="onPageEntered">
+    <Transition :name="isHomeRoute ? 'page-home' : 'page'" mode="out-in" @after-enter="onPageEntered">
       <component :is="Component" :key="route.path" />
     </Transition>
   </router-view>
 
-  <!-- Persistent navigation shell shared by the home canvas and AppLayout. -->
+  <RouteChrome v-if="showRouteChrome" />
+
   <RouteNavigation
     v-if="route.path !== '/now-playing'"
     :page-entered-version="pageEnteredVersion"
   />
 
-  <!-- Off the home page the player only exists as the corner mini widget, and
-       only while something is playing — an idle player following the reader
-       around every page is noise. On the home page it stays regardless, since
-       it occupies a slot in the canvas layout. -->
-  <div v-if="showPlayer" class="player-wrapper" ref="playerRef">
-    <MusicPlayer :mini="isMini" />
+  <div
+    v-if="route.path === '/'"
+    class="player-wrapper"
+    ref="playerRef"
+    :style="{ visibility: isPlayerPositioned ? 'visible' : 'hidden' }"
+  >
+    <MusicPlayer />
   </div>
 </template>
 
 <script setup lang="ts">
-import { computed, nextTick, ref, watch, onMounted, onUnmounted } from 'vue'
+import { computed, ref, watch, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
 import MusicPlayer from '@/components/home/MusicPlayer.vue'
 import GradientWaves from '@/components/common/GradientWaves.vue'
+import RouteChrome from '@/components/layout/RouteChrome.vue'
 import RouteNavigation from '@/components/layout/RouteNavigation.vue'
-import { useMusicPlayer } from '@/composables/useMusicPlayer'
 
 const route = useRoute()
+const isHomeRoute = computed(() => route.path === '/')
+const contentRouteNames = new Set([
+  'Favorites',
+  'BlogList',
+  'BlogPost',
+  'Projects',
+  'ProjectPost',
+  'News',
+  'About',
+])
+const showRouteChrome = computed(() => (
+  typeof route.name === 'string' && contentRouteNames.has(route.name)
+))
 const playerRef = ref<HTMLElement | null>(null)
-const isMini = ref(false)
+const isPlayerPositioned = ref(false)
 const pageEnteredVersion = ref(0)
-
-const { isPlaying } = useMusicPlayer()
-
-/**
- * Home always shows it; elsewhere only while audio is actually playing.
- *
- * The now playing route is the exception: that page is the player, so the
- * corner widget would just be a second copy of the same controls.
- */
-const showPlayer = computed(() => {
-  if (route.path === '/now-playing') return false
-  return route.path === '/' || isPlaying.value
-})
-
-const POS = {
-  cornerW: 160,
-  cornerH: 56,
-  margin: 24,
-}
 
 function applyStyle(styles: Partial<CSSStyleDeclaration>) {
   const e = playerRef.value
@@ -93,9 +89,9 @@ function applyStyle(styles: Partial<CSSStyleDeclaration>) {
 
 function syncToGrid() {
   const anchor = document.querySelector<HTMLElement>('[data-widget="music"]')
-  if (!anchor) return false
+  const player = playerRef.value
+  if (!anchor || !player) return false
   const r = anchor.getBoundingClientRect()
-  isMini.value = false
   applyStyle({
     transform: `translate3d(${r.left}px, ${r.top}px, 0)`,
     width: r.width + 'px',
@@ -107,7 +103,7 @@ function syncToGrid() {
 
 function syncGridTransform() {
   const anchor = document.querySelector<HTMLElement>('[data-widget="music"]')
-  if (!anchor) return false
+  if (!anchor || !playerRef.value) return false
   const r = anchor.getBoundingClientRect()
   applyStyle({
     transform: `translate3d(${r.left}px, ${r.top}px, 0)`,
@@ -115,41 +111,45 @@ function syncGridTransform() {
   return true
 }
 
-function syncToCorner() {
-  isMini.value = true
-  applyStyle({
-    transform: `translate3d(${window.innerWidth - POS.cornerW - POS.margin}px, ${window.innerHeight - POS.cornerH - POS.margin}px, 0)`,
-    width: POS.cornerW + 'px',
-    height: POS.cornerH + 'px',
-    zIndex: '260',
-  })
-}
-
 // ── Route watcher ──
 
 watch(() => route.path, (path) => {
-  if (path === '/') {
-    retrySyncGrid()
-  } else {
-    syncToCorner()
-  }
+  cancelGridSyncRetry()
+  isPlayerPositioned.value = false
+  if (path === '/') retrySyncGrid()
 })
 
-/**
- * The wrapper is conditionally rendered, so when playback starts away from the
- * home page it mounts unpositioned. Without this it would appear at the top
- * left until the next route change or resize moved it.
- */
-watch(showPlayer, async (visible) => {
-  if (!visible) return
-  await nextTick()
-  initPosition()
-})
+const MAX_GRID_SYNC_RETRIES = 120
+let gridSyncRetryRaf: number | null = null
+let gridSyncRetryCount = 0
+
+function cancelGridSyncRetry() {
+  if (gridSyncRetryRaf !== null) {
+    cancelAnimationFrame(gridSyncRetryRaf)
+    gridSyncRetryRaf = null
+  }
+  gridSyncRetryCount = 0
+}
 
 function retrySyncGrid() {
-  if (!syncToGrid()) {
-    if (route.path === '/') requestAnimationFrame(retrySyncGrid)
+  if (route.path !== '/') {
+    cancelGridSyncRetry()
+    return
   }
+
+  if (syncToGrid()) {
+    cancelGridSyncRetry()
+    isPlayerPositioned.value = true
+    return
+  }
+
+  if (gridSyncRetryRaf !== null || gridSyncRetryCount >= MAX_GRID_SYNC_RETRIES) return
+
+  gridSyncRetryRaf = requestAnimationFrame(() => {
+    gridSyncRetryRaf = null
+    gridSyncRetryCount += 1
+    retrySyncGrid()
+  })
 }
 
 // ── Initialise ──
@@ -161,11 +161,7 @@ function retrySyncGrid() {
  * position — the player would settle 12px low, exactly the enter translation.
  */
 function initPosition() {
-  if (route.path === '/') {
-    retrySyncGrid()
-  } else {
-    syncToCorner()
-  }
+  if (route.path === '/') retrySyncGrid()
 }
 
 /**
@@ -209,17 +205,14 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener('resize', onResize)
   window.removeEventListener('scroll', onScroll, { capture: true })
+  cancelGridSyncRetry()
   anchorObserver?.disconnect()
 })
 
 // ── Resize / Scroll ──
 
 function onResize() {
-  if (route.path === '/') {
-    syncToGrid()
-  } else {
-    syncToCorner()
-  }
+  if (route.path === '/') syncToGrid()
 }
 
 let scrollRaf = 0
@@ -249,7 +242,4 @@ function onScroll() {
   will-change: transform;
 }
 
-.player-wrapper :deep(.music-player--mini) {
-  border-radius: 40px;
-}
 </style>
