@@ -76,7 +76,7 @@
 
       <!-- Nav (horizontal on mobile) -->
       <div class="home-page__cell home-page__nav-cell" data-widget="nav" :style="getWidgetStyle('nav')">
-        <NavMenu />
+        <!-- RouteNavigation renders the visible nav; keep this cell as its editable target. -->
       </div>
 
       <!-- Service status (hidden on mobile) -->
@@ -156,7 +156,6 @@ import GreetingCard from '@/components/home/GreetingCard.vue'
 import ServiceStatus from '@/components/home/ServiceStatus.vue'
 import CronTasks from '@/components/home/CronTasks.vue'
 import ContributionHeatmap from '@/components/home/ContributionHeatmap.vue'
-import NavMenu from '@/components/home/NavMenu.vue'
 import GitHubCard from '@/components/home/GitHubCard.vue'
 import ImageGallery from '@/components/home/ImageGallery.vue'
 
@@ -727,6 +726,10 @@ function dragHandleStyle(w: WidgetLayout): Record<string, string> {
 
     [data-widget="music"] {
       min-height: 160px;
+    }
+
+    &__nav-cell {
+      min-height: 84px;
     }
 
     &__nav-cell :deep(.nav-menu) {

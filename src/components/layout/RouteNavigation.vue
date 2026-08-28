@@ -6,19 +6,27 @@
       'route-navigation--tracking': !animatePosition,
     }"
     :style="shellStyle"
-    aria-hidden="true"
   >
-    <div class="route-navigation__shell" />
+    <NavMenu v-if="visualMode === 'home'" />
+    <RouteChrome
+      v-else
+      :show-brand="false"
+      embedded
+    />
   </div>
 </template>
 
 <script setup lang="ts">
 import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
+import NavMenu from '@/components/home/NavMenu.vue'
+import RouteChrome from '@/components/layout/RouteChrome.vue'
 
 interface Props {
   pageEnteredVersion: number
 }
+
+type NavigationMode = 'home' | 'page'
 
 interface NavigationTarget {
   x: number
@@ -27,9 +35,15 @@ interface NavigationTarget {
   height: number
 }
 
+const MOBILE_BREAKPOINT = 768
+const PAGE_RAIL_WIDTH = 154
+const PAGE_RAIL_HEIGHT = 472
+const MOBILE_RAIL_HEIGHT = 64
+const HOME_SYNC_FALLBACK_MS = 500
+
 const route = useRoute()
 const props = defineProps<Props>()
-
+const visualMode = ref<NavigationMode>(route.path === '/' ? 'home' : 'page')
 const isReady = ref(false)
 const animatePosition = ref(false)
 const target = ref<NavigationTarget>({ x: 0, y: 0, width: 0, height: 0 })
@@ -40,13 +54,42 @@ const shellStyle = computed<Record<string, string>>(() => ({
   transform: `translate3d(${target.value.x}px, ${target.value.y}px, 0)`,
 }))
 
-let navSyncPending = false
-let pendingNavSyncVersion = 0
-let navSyncTimeout: ReturnType<typeof window.setTimeout> | null = null
-let navMountObserver: MutationObserver | null = null
-let observedNavAnchor: HTMLElement | null = null
+let homeSyncPending = false
+let pendingHomeSyncVersion = 0
+let homeSyncTimeout: ReturnType<typeof window.setTimeout> | null = null
+let homeMountObserver: MutationObserver | null = null
+let homeAnchorObserver: MutationObserver | null = null
+let observedHomeAnchor: HTMLElement | null = null
 
-function measureNavAnchor(): { anchor: HTMLElement; target: NavigationTarget } | null {
+function isMobile(): boolean {
+  return window.innerWidth <= MOBILE_BREAKPOINT
+}
+
+function setTarget(nextTarget: NavigationTarget, animate: boolean): void {
+  animatePosition.value = animate
+  target.value = nextTarget
+  isReady.value = true
+}
+
+function getPageFallbackTarget(): NavigationTarget {
+  if (isMobile()) {
+    return {
+      x: 8,
+      y: window.innerHeight - 8 - MOBILE_RAIL_HEIGHT,
+      width: Math.max(0, window.innerWidth - 16),
+      height: MOBILE_RAIL_HEIGHT,
+    }
+  }
+
+  return {
+    x: window.innerWidth - 18 - PAGE_RAIL_WIDTH,
+    y: Math.max(16, (window.innerHeight - PAGE_RAIL_HEIGHT) / 2),
+    width: PAGE_RAIL_WIDTH,
+    height: PAGE_RAIL_HEIGHT,
+  }
+}
+
+function measureHomeAnchor(): { anchor: HTMLElement; target: NavigationTarget } | null {
   const anchor = document.querySelector<HTMLElement>('[data-widget="nav"]')
   if (!anchor) return null
 
@@ -62,132 +105,191 @@ function measureNavAnchor(): { anchor: HTMLElement; target: NavigationTarget } |
   }
 }
 
-function setTarget(nextTarget: NavigationTarget, animate: boolean): void {
-  animatePosition.value = animate
-  target.value = nextTarget
-  isReady.value = true
+function measurePageRail(): NavigationTarget | null {
+  const rail = document.querySelector<HTMLElement>('.route-navigation [data-widget="nav-page"]')
+  if (!rail) return null
+
+  const rect = rail.getBoundingClientRect()
+  const fallback = getPageFallbackTarget()
+  const width = rect.width || fallback.width
+  const height = rect.height || fallback.height
+  return isMobile()
+    ? {
+        x: 8,
+        y: window.innerHeight - 8 - height,
+        width,
+        height,
+      }
+    : {
+        x: window.innerWidth - 18 - width,
+        y: Math.max(16, (window.innerHeight - height) / 2),
+        width,
+        height,
+      }
 }
 
-function cancelNavSync(): void {
-  navSyncPending = false
-  pendingNavSyncVersion = 0
-  if (navSyncTimeout !== null) {
-    window.clearTimeout(navSyncTimeout)
-    navSyncTimeout = null
-  }
-  navMountObserver?.disconnect()
-  navMountObserver = null
-}
+function observeHomeAnchor(anchor: HTMLElement | null): void {
+  if (anchor === observedHomeAnchor) return
 
-function observeNavMount(): void {
-  if (navMountObserver || !document.body) return
+  homeAnchorObserver?.disconnect()
+  homeAnchorObserver = null
+  observedHomeAnchor = anchor
+  if (!anchor) return
 
-  navMountObserver = new MutationObserver(() => {
-    flushNavSync()
+  homeAnchorObserver = new MutationObserver(() => {
+    if (route.path === '/') syncHomeAnchor(false)
   })
-  navMountObserver.observe(document.body, { childList: true, subtree: true })
+  homeAnchorObserver.observe(anchor, { attributes: true, attributeFilter: ['style'] })
 }
 
-function observeNavAnchor(anchor: HTMLElement | null): void {
-  if (anchor === observedNavAnchor) return
-  observedNavAnchor = anchor
-}
+function syncHomeAnchor(animate: boolean): boolean {
+  if (route.path !== '/') return false
 
-function syncNavAnchor(animate: boolean): boolean {
-  const measured = measureNavAnchor()
+  const measured = measureHomeAnchor()
   if (!measured) return false
 
-  const { anchor, target: nextTarget } = measured
-  observeNavAnchor(anchor)
-  setTarget(nextTarget, animate)
+  observeHomeAnchor(measured.anchor)
+  visualMode.value = 'home'
+  setTarget(measured.target, animate)
   return true
 }
 
-function clearNavSyncTracking(): void {
-  navSyncPending = false
-  pendingNavSyncVersion = 0
-  if (navSyncTimeout !== null) {
-    window.clearTimeout(navSyncTimeout)
-    navSyncTimeout = null
+function syncPageRail(animate: boolean): boolean {
+  if (route.path === '/' || route.path === '/now-playing') return false
+
+  const measured = measurePageRail()
+  if (!measured) return false
+
+  setTarget(measured, animate)
+  return true
+}
+
+function cancelHomeSync(): void {
+  homeSyncPending = false
+  pendingHomeSyncVersion = 0
+  if (homeSyncTimeout !== null) {
+    window.clearTimeout(homeSyncTimeout)
+    homeSyncTimeout = null
   }
-  navMountObserver?.disconnect()
-  navMountObserver = null
+  homeMountObserver?.disconnect()
+  homeMountObserver = null
+}
+
+function observeHomeMount(): void {
+  if (homeMountObserver || !document.body) return
+
+  homeMountObserver = new MutationObserver(() => {
+    flushHomeSync()
+  })
+  homeMountObserver.observe(document.body, { childList: true, subtree: true })
+}
+
+function clearHomeSyncTracking(): void {
+  homeSyncPending = false
+  pendingHomeSyncVersion = 0
+  if (homeSyncTimeout !== null) {
+    window.clearTimeout(homeSyncTimeout)
+    homeSyncTimeout = null
+  }
+  homeMountObserver?.disconnect()
+  homeMountObserver = null
   animatePosition.value = true
 }
 
-function scheduleNavSync(expectedVersion: number): void {
-  cancelNavSync()
-  navSyncPending = true
-  pendingNavSyncVersion = expectedVersion
-  observeNavMount()
-  navSyncTimeout = window.setTimeout(() => {
-    navSyncTimeout = null
-    if (route.path === '/now-playing') return
+function scheduleHomeSync(expectedVersion: number): void {
+  cancelHomeSync()
+  homeSyncPending = true
+  pendingHomeSyncVersion = expectedVersion
+  observeHomeMount()
+  homeSyncTimeout = window.setTimeout(() => {
+    homeSyncTimeout = null
+    if (route.path !== '/') return
+
     requestAnimationFrame(() => {
-      if (route.path === '/now-playing') return
-      if (!syncNavAnchor(false)) {
-        observeNavMount()
-        return
-      }
-      clearNavSyncTracking()
+      if (route.path !== '/') return
+      if (syncHomeAnchor(isReady.value)) clearHomeSyncTracking()
     })
-  }, 500)
+  }, HOME_SYNC_FALLBACK_MS)
 }
 
-function flushNavSync(): void {
-  if (!navSyncPending) return
-  if (props.pageEnteredVersion < pendingNavSyncVersion) {
-    observeNavMount()
+function flushHomeSync(): void {
+  if (!homeSyncPending || route.path !== '/') return
+  if (props.pageEnteredVersion < pendingHomeSyncVersion) return
+
+  if (syncHomeAnchor(isReady.value)) clearHomeSyncTracking()
+}
+
+async function syncPageAfterRender(animate: boolean): Promise<void> {
+  await nextTick()
+  requestAnimationFrame(() => {
+    if (!syncPageRail(animate)) setTarget(getPageFallbackTarget(), animate)
+  })
+}
+
+function onRouteChange(path: string): void {
+  cancelHomeSync()
+  observeHomeAnchor(null)
+
+  if (path === '/now-playing') {
+    isReady.value = false
     return
   }
 
-  if (!syncNavAnchor(false)) {
-    observeNavMount()
+  if (path === '/') {
+    visualMode.value = 'home'
+    scheduleHomeSync(props.pageEnteredVersion + 1)
     return
   }
 
-  clearNavSyncTracking()
+  visualMode.value = 'page'
+  setTarget(getPageFallbackTarget(), true)
+  void syncPageAfterRender(true)
 }
+
+function onResize(): void {
+  if (route.path === '/') {
+    syncHomeAnchor(false)
+  } else if (route.path !== '/now-playing') {
+    setTarget(getPageFallbackTarget(), false)
+    void syncPageAfterRender(false)
+  }
+}
+
+function onScroll(): void {
+  if (route.path === '/') syncHomeAnchor(false)
+}
+
+watch(() => route.path, onRouteChange)
 
 watch(
   () => props.pageEnteredVersion,
   async () => {
-    if (route.path === '/now-playing') return
+    if (route.path !== '/') return
     await nextTick()
-    if (!syncNavAnchor(false)) {
-      scheduleNavSync(props.pageEnteredVersion)
-      return
-    }
-    clearNavSyncTracking()
-  },
-)
-
-watch(
-  () => route.path,
-  () => {
-    if (route.path === '/now-playing') {
-      cancelNavSync()
-      isReady.value = false
-      return
-    }
-
-    scheduleNavSync(Math.max(1, props.pageEnteredVersion))
+    if (syncHomeAnchor(isReady.value)) clearHomeSyncTracking()
   },
 )
 
 onMounted(async () => {
   await nextTick()
-  if (route.path === '/now-playing') return
-
-  if (!syncNavAnchor(false)) {
-    scheduleNavSync(Math.max(1, props.pageEnteredVersion))
-    return
+  if (route.path === '/') {
+    if (!syncHomeAnchor(false)) scheduleHomeSync(Math.max(1, props.pageEnteredVersion))
+    else clearHomeSyncTracking()
+  } else if (route.path !== '/now-playing') {
+    visualMode.value = 'page'
+    setTarget(getPageFallbackTarget(), false)
+    await syncPageAfterRender(false)
   }
-  clearNavSyncTracking()
+
+  window.addEventListener('resize', onResize)
+  window.addEventListener('scroll', onScroll, { passive: true, capture: true })
 })
 
 onBeforeUnmount(() => {
-  cancelNavSync()
+  cancelHomeSync()
+  observeHomeAnchor(null)
+  window.removeEventListener('resize', onResize)
+  window.removeEventListener('scroll', onScroll, { capture: true })
 })
 </script>
 
@@ -201,10 +303,12 @@ onBeforeUnmount(() => {
   opacity: 0;
   visibility: hidden;
   will-change: transform;
-  transition: transform 260ms cubic-bezier(0.23, 1, 0.32, 1),
-              opacity 180ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition:
+    transform 260ms cubic-bezier(0.23, 1, 0.32, 1),
+    opacity 180ms cubic-bezier(0.23, 1, 0.32, 1);
 
   &--ready {
+    pointer-events: auto;
     opacity: 1;
     visibility: visible;
   }
@@ -213,23 +317,20 @@ onBeforeUnmount(() => {
     transition: none;
   }
 
-  &__shell {
+  :deep(.nav-menu),
+  :deep(.route-chrome--embedded) {
     width: 100%;
     height: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.42);
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow:
-      inset 0 0 0 1px rgba(255, 255, 255, 0.24),
-      0 8px 24px rgba(33, 89, 105, 0.14);
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .route-navigation {
     transition: opacity 120ms ease;
+
+    &--tracking {
+      transition: opacity 120ms ease;
+    }
   }
 }
 </style>

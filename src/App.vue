@@ -36,7 +36,7 @@
     </Transition>
   </router-view>
 
-  <RouteChrome v-if="showRouteChrome" />
+  <RouteChrome v-if="showRouteChrome" :show-navigation="false" />
 
   <RouteNavigation
     v-if="route.path !== '/now-playing'"

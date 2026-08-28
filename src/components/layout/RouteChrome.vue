@@ -1,8 +1,13 @@
 <template>
-  <div class="route-chrome">
-    <router-link to="/" class="route-chrome__brand">Akai's Blog</router-link>
+  <div class="route-chrome" :class="{ 'route-chrome--embedded': embedded }">
+    <router-link v-if="showBrand" to="/" class="route-chrome__brand">Akai's Blog</router-link>
 
-    <nav class="route-chrome__task-rail" data-widget="nav" aria-label="主要导航">
+    <nav
+      v-if="showNavigation"
+      class="route-chrome__task-rail"
+      :data-widget="embedded ? 'nav-page' : undefined"
+      aria-label="主要导航"
+    >
       <router-link
         to="/"
         class="route-chrome__task-card"
@@ -78,8 +83,36 @@
   </div>
 </template>
 
+<script setup lang="ts">
+interface Props {
+  showBrand?: boolean
+  showNavigation?: boolean
+  embedded?: boolean
+}
+
+withDefaults(defineProps<Props>(), {
+  showBrand: true,
+  showNavigation: true,
+  embedded: false,
+})
+</script>
+
 <style lang="scss" scoped>
 .route-chrome {
+  &--embedded {
+    position: absolute;
+    inset: 0;
+
+    .route-chrome__task-rail {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: auto;
+      left: auto;
+      transform: none;
+    }
+  }
+
   &__brand {
     position: fixed;
     top: 22px;
@@ -331,6 +364,16 @@
       font-size: 10px;
       opacity: 1;
       transform: none;
+    }
+
+    &--embedded {
+      .route-chrome__task-rail {
+        top: 0;
+        right: 0;
+        bottom: auto;
+        left: 0;
+        width: 100%;
+      }
     }
   }
 }
