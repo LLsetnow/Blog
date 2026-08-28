@@ -55,7 +55,6 @@ const shellStyle = computed<Record<string, string>>(() => ({
 }))
 
 let homeSyncPending = false
-let pendingHomeSyncVersion = 0
 let homeSyncTimeout: ReturnType<typeof window.setTimeout> | null = null
 let homeMountObserver: MutationObserver | null = null
 let homeAnchorObserver: MutationObserver | null = null
@@ -166,7 +165,6 @@ function syncPageRail(animate: boolean): boolean {
 
 function cancelHomeSync(): void {
   homeSyncPending = false
-  pendingHomeSyncVersion = 0
   if (homeSyncTimeout !== null) {
     window.clearTimeout(homeSyncTimeout)
     homeSyncTimeout = null
@@ -186,7 +184,6 @@ function observeHomeMount(): void {
 
 function clearHomeSyncTracking(): void {
   homeSyncPending = false
-  pendingHomeSyncVersion = 0
   if (homeSyncTimeout !== null) {
     window.clearTimeout(homeSyncTimeout)
     homeSyncTimeout = null
@@ -196,10 +193,9 @@ function clearHomeSyncTracking(): void {
   animatePosition.value = true
 }
 
-function scheduleHomeSync(expectedVersion: number): void {
+function scheduleHomeSync(): void {
   cancelHomeSync()
   homeSyncPending = true
-  pendingHomeSyncVersion = expectedVersion
   observeHomeMount()
   homeSyncTimeout = window.setTimeout(() => {
     homeSyncTimeout = null
@@ -214,7 +210,6 @@ function scheduleHomeSync(expectedVersion: number): void {
 
 function flushHomeSync(): void {
   if (!homeSyncPending || route.path !== '/') return
-  if (props.pageEnteredVersion < pendingHomeSyncVersion) return
 
   if (syncHomeAnchor(isReady.value)) clearHomeSyncTracking()
 }
@@ -236,7 +231,7 @@ function onRouteChange(path: string): void {
   }
 
   if (path === '/') {
-    scheduleHomeSync(props.pageEnteredVersion + 1)
+    scheduleHomeSync()
     return
   }
 
@@ -272,7 +267,7 @@ watch(
 onMounted(async () => {
   await nextTick()
   if (route.path === '/') {
-    if (!syncHomeAnchor(false)) scheduleHomeSync(Math.max(1, props.pageEnteredVersion))
+    if (!syncHomeAnchor(false)) scheduleHomeSync()
     else clearHomeSyncTracking()
   } else if (route.path !== '/now-playing') {
     visualMode.value = 'page'
