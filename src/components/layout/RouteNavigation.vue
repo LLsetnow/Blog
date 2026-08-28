@@ -59,6 +59,7 @@ let homeSyncTimeout: ReturnType<typeof window.setTimeout> | null = null
 let homeMountObserver: MutationObserver | null = null
 let homeAnchorObserver: MutationObserver | null = null
 let observedHomeAnchor: HTMLElement | null = null
+let cachedHomeTarget: NavigationTarget | null = null
 
 function isMobile(): boolean {
   return window.innerWidth <= MOBILE_BREAKPOINT
@@ -68,6 +69,10 @@ function setTarget(nextTarget: NavigationTarget, animate: boolean): void {
   animatePosition.value = animate
   target.value = nextTarget
   isReady.value = true
+}
+
+function cloneTarget(nextTarget: NavigationTarget): NavigationTarget {
+  return { ...nextTarget }
 }
 
 function getPageFallbackTarget(): NavigationTarget {
@@ -148,8 +153,9 @@ function syncHomeAnchor(animate: boolean): boolean {
   if (!measured) return false
 
   observeHomeAnchor(measured.anchor)
+  cachedHomeTarget = cloneTarget(measured.target)
   visualMode.value = 'home'
-  setTarget(measured.target, animate)
+  setTarget(cloneTarget(measured.target), animate)
   return true
 }
 
@@ -231,6 +237,10 @@ function onRouteChange(path: string): void {
   }
 
   if (path === '/') {
+    if (cachedHomeTarget) {
+      visualMode.value = 'home'
+      setTarget(cloneTarget(cachedHomeTarget), true)
+    }
     scheduleHomeSync()
     return
   }
