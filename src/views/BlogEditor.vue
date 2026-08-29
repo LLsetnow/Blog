@@ -8,7 +8,7 @@
             {{ isEditing ? '编辑文章' : '新建文章' }}
           </h1>
           <p class="blog-editor__intro">
-            本地演示：内容保存于此浏览器；线上安全密码和真正写入 .md 文件需要后端 API。
+            通过服务器会话保护编辑权限，Markdown 内容由服务端安全写入文章文件。
           </p>
         </div>
 
@@ -16,6 +16,14 @@
           <router-link to="/blog" class="blog-editor__secondary-action">
             返回列表
           </router-link>
+          <button
+            v-if="isUnlocked"
+            type="button"
+            class="blog-editor__secondary-action"
+            @click="lockEditor"
+          >
+            退出编辑
+          </button>
         </div>
       </header>
 
@@ -23,9 +31,7 @@
         <div class="blog-editor__gate-copy">
           <h2 class="blog-editor__section-title">输入匹配密码解锁</h2>
           <p class="blog-editor__gate-note">
-            默认本地演示口令是 <code>blog-local-demo</code>；如果设置了
-            <code>VITE_BLOG_EDITOR_PASSWORD</code>，则以环境变量为准。解锁状态仅保存在当前标签页的
-            sessionStorage。
+            密码只会通过 HTTPS 提交给服务器校验，不会写入浏览器存储；解锁后使用安全会话 Cookie。
           </p>
         </div>
 
@@ -45,8 +51,8 @@
             {{ passwordError }}
           </p>
 
-          <button type="submit" class="blog-editor__primary-action">
-            解锁编辑器
+          <button type="submit" class="blog-editor__primary-action" :disabled="isAuthLoading">
+            {{ isAuthLoading ? '正在验证…' : '解锁编辑器' }}
           </button>
         </form>
       </div>
@@ -54,10 +60,9 @@
       <div v-else class="blog-editor__workspace">
         <aside class="blog-editor__notice glass-card">
           <div class="blog-editor__notice-copy">
-            <strong>本地演示模式</strong>
+            <strong>服务端安全编辑模式</strong>
             <p>
-              这里的保存只写入当前浏览器的 localStorage。要做真正的线上写入和安全校验，
-              还需要后端 API。
+              内容写入服务器 Markdown 文件；会话、CSRF 校验和文章字段验证均由服务端处理。
             </p>
           </div>
           <div class="blog-editor__notice-badge">
@@ -65,7 +70,12 @@
           </div>
         </aside>
 
-        <div v-if="loadError" class="blog-editor__error glass-card">
+        <div v-if="isPostsLoading" class="blog-editor__error glass-card">
+          <h2>正在加载文章</h2>
+          <p>正在从博客服务读取 Markdown 内容…</p>
+        </div>
+
+        <div v-else-if="loadError" class="blog-editor__error glass-card">
           <h2>文章不存在</h2>
           <p>{{ loadError }}</p>
           <div class="blog-editor__error-actions">
@@ -174,8 +184,8 @@
             </p>
 
             <div class="blog-editor__actions">
-              <button type="submit" class="blog-editor__primary-action">
-                保存文章
+              <button type="submit" class="blog-editor__primary-action" :disabled="isSaving">
+                {{ isSaving ? '正在保存…' : '保存文章' }}
               </button>
               <button type="button" class="blog-editor__secondary-action" @click="cancelEdit">
                 取消
@@ -235,27 +245,34 @@ const route = useRoute()
 const router = useRouter()
 const marked = new Marked()
 const { show, toasts } = useToast()
-const { getPost, upsertPost } = useBlogPosts()
-
-const DEMO_PASSWORD = 'blog-local-demo'
-const configuredPassword = String(import.meta.env.VITE_BLOG_EDITOR_PASSWORD ?? '').trim()
-const editorPassword = configuredPassword || DEMO_PASSWORD
-const UNLOCK_STORAGE_KEY = 'blog-editor-unlocked'
+const {
+  getPost,
+  isAuthenticated,
+  isAuthLoading,
+  isPostsLoading,
+  loadPosts,
+  refreshSession,
+  login,
+  logout,
+  createPost,
+  updatePost,
+} = useBlogPosts()
 
 const passwordInputRef = ref<HTMLInputElement | null>(null)
 const passwordInput = ref('')
 const passwordError = ref('')
 const saveError = ref('')
 const newTag = ref('')
-const isUnlocked = ref(readUnlockState())
+const isSaving = ref(false)
 const slugTouched = ref(false)
 
 const currentId = computed(() => (typeof route.params.id === 'string' ? route.params.id : ''))
 const isEditing = computed(() => route.name === 'BlogEdit')
+const isUnlocked = computed(() => isAuthenticated.value)
 const existingPost = computed(() => (isEditing.value ? getPost(currentId.value) : undefined))
 const loadError = computed(() => {
-  if (!isEditing.value) return ''
-  return existingPost.value ? '' : '这篇文章在当前浏览器里还不存在，可能还没有保存过。'
+  if (!isEditing.value || isPostsLoading.value) return ''
+  return existingPost.value ? '' : '这篇文章在服务器上不存在，可能还没有保存过。'
 })
 
 const draft = reactive<BlogDraft>(createBlankDraft())
@@ -313,34 +330,6 @@ function slugify(value: string): string {
     .replace(/[^a-z0-9\u4e00-\u9fa5]+/g, '-')
     .replace(/-+/g, '-')
     .replace(/^-|-$/g, '')
-}
-
-/**
- * Read the unlock flag from sessionStorage. This is intentionally tab-local.
- */
-function readUnlockState(): boolean {
-  if (typeof window === 'undefined') return false
-
-  try {
-    return window.sessionStorage.getItem(UNLOCK_STORAGE_KEY) === '1'
-  } catch {
-    return false
-  }
-}
-
-/**
- * Persist the current tab's unlock state.
- */
-function writeUnlockState(value: boolean): void {
-  try {
-    if (value) {
-      window.sessionStorage.setItem(UNLOCK_STORAGE_KEY, '1')
-    } else {
-      window.sessionStorage.removeItem(UNLOCK_STORAGE_KEY)
-    }
-  } catch {
-    // Session storage can be disabled; the editor still works for this tab.
-  }
 }
 
 /**
@@ -415,27 +404,43 @@ function removeTag(tag: string): void {
 }
 
 /**
- * Unlock the editor only when the submitted password matches the configured
- * password or the local demo fallback.
+ * Ask the backend to verify the submitted password and establish a session.
  */
-function unlockEditor(): void {
+async function unlockEditor(): Promise<void> {
   const submitted = passwordInput.value.trim()
-  if (submitted !== editorPassword) {
+  if (!submitted) {
     passwordError.value = '密码不匹配，请再试一次。'
     return
   }
 
   passwordError.value = ''
-  isUnlocked.value = true
-  writeUnlockState(true)
-  passwordInput.value = ''
-  show('编辑器已解锁')
+  try {
+    await login(submitted)
+    passwordInput.value = ''
+    show('编辑器已解锁')
+  } catch (error) {
+    passwordError.value = error instanceof Error ? error.message : '密码不匹配，请再试一次。'
+  }
 }
 
 /**
- * Save the draft back into the shared local store and jump to the article.
+ * End the server session without touching the draft currently on screen.
+ */
+async function lockEditor(): Promise<void> {
+  try {
+    await logout()
+  } catch {
+    show('本地已退出编辑模式，服务器会话将在过期后失效。')
+    return
+  }
+  show('已退出编辑模式')
+}
+
+/**
+ * Save the draft through the authenticated API and jump to the article.
  */
 async function saveDraft(): Promise<void> {
+  if (isSaving.value) return
   saveError.value = ''
 
   const nextDraft: BlogDraft = {
@@ -463,9 +468,18 @@ async function saveDraft(): Promise<void> {
     return
   }
 
-  const saved = upsertPost(nextDraft)
-  show(`已保存《${saved.title}》`)
-  await router.push(`/blog/${saved.id}`)
+  isSaving.value = true
+  try {
+    const saved = isEditing.value
+      ? await updatePost(nextDraft)
+      : await createPost(nextDraft)
+    show(`已保存《${saved.title}》`)
+    await router.push(`/blog/${saved.id}`)
+  } catch (error) {
+    saveError.value = error instanceof Error ? error.message : '保存失败，请稍后再试。'
+  } finally {
+    isSaving.value = false
+  }
 }
 
 /**
@@ -496,7 +510,8 @@ watch(
   },
 )
 
-onMounted(() => {
+onMounted(async () => {
+  await Promise.all([loadPosts(), refreshSession()])
   if (!isUnlocked.value) {
     void nextTick(() => {
       passwordInputRef.value?.focus()
@@ -581,6 +596,12 @@ onMounted(() => {
       background: rgba($accent-primary, 0.16);
       color: $accent-primary;
       transform: translateY(-1px);
+    }
+
+    &:disabled {
+      cursor: wait;
+      opacity: 0.62;
+      transform: none;
     }
   }
 

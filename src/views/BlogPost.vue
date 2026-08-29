@@ -1,9 +1,13 @@
 <template>
   <AppLayout>
     <div class="blog-post">
-      <div v-if="!post" class="blog-post__not-found glass-card">
+      <div v-if="isPostsLoading" class="blog-post__not-found glass-card">
+        <p>正在加载文章…</p>
+      </div>
+
+      <div v-else-if="!post" class="blog-post__not-found glass-card">
         <h1>文章不存在</h1>
-        <p>这篇文章可能还没有保存到本地存储。</p>
+        <p>{{ postsError || '这篇文章可能还没有发布。' }}</p>
         <div class="blog-post__not-found-actions">
           <router-link to="/blog" class="blog-post__action">返回文章列表</router-link>
           <router-link to="/blog/new" class="blog-post__action blog-post__action--primary">新建文章</router-link>
@@ -42,7 +46,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { Marked } from 'marked'
 import DOMPurify from 'dompurify'
@@ -52,7 +56,7 @@ import type { BlogPost } from '@/types'
 
 const route = useRoute()
 const marked = new Marked()
-const { getPost } = useBlogPosts()
+const { getPost, isPostsLoading, postsError, loadPosts } = useBlogPosts()
 
 const post = computed<BlogPost | undefined>(() => {
   return typeof route.params.id === 'string' ? getPost(route.params.id) : undefined
@@ -63,6 +67,10 @@ const renderedContent = computed<string>(() => {
 
   const raw = marked.parse(post.value.content) as string
   return DOMPurify.sanitize(raw)
+})
+
+onMounted(() => {
+  void loadPosts()
 })
 </script>
 

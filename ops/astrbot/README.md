@@ -46,6 +46,39 @@ YT_DLP_COOKIES=/var/OPC/auth/www.bilibili.com_cookies.txt
 
 cookie 文件应限制为 `600`。脚本不会打印 cookie 内容。新闻仍可通过 `OPC_BIN` 和 `NEWS_OUTPUT_FILE` 覆盖默认路径。
 
+## 博客安全编辑 API
+
+博客编辑权限由服务器端 API 提供，不再使用前端 `VITE_*` 密码或浏览器存储作为认证依据。API 运行在 `127.0.0.1:8787`，由 Nginx 将 `/api/blog/` 代理到该服务；文章保存在 `/var/lib/blog-editor/` 下的 Markdown 文件中。
+
+首次安装或更新 API 时，在仓库根目录执行：
+
+```bash
+sudo install -D -m 0755 ops/blog-editor-api/server.py /opt/blog-editor-api/server.py
+sudo install -m 0644 ops/blog-editor-api/seed_posts.json /opt/blog-editor-api/seed_posts.json
+sudo install -m 0644 ops/astrbot/blog-editor-api.service /etc/systemd/system/blog-editor-api.service
+sudo useradd --system --home-dir /var/lib/blog-editor --shell /usr/sbin/nologin blog-editor 2>/dev/null || true
+sudo install -d -m 0750 -o blog-editor -g blog-editor /var/lib/blog-editor
+sudo systemctl daemon-reload
+sudo systemctl enable --now blog-editor-api.service
+```
+
+`/var/OPC/.env` 需要设置以下服务端变量：
+
+```dotenv
+BLOG_EDITOR_PASSWORD_HASH=<bcrypt hash, never store the plaintext password>
+BLOG_EDITOR_SESSION_SECRET=<long random server-only value>
+BLOG_EDITOR_DATA_DIR=/var/lib/blog-editor
+BLOG_EDITOR_ALLOWED_ORIGINS=https://blog.akai.ink
+```
+
+密码哈希和会话密钥只保存在服务器，并将通过 `HttpOnly`、`Secure`、`SameSite=Strict` Cookie 建立会话。更新 Nginx 的 `blog.akai.ink` HTTPS server 时，将 `ops/astrbot/blog-editor-nginx-location.conf` 中的 location 加入配置，再执行：
+
+```bash
+sudo nginx -t && sudo systemctl reload nginx
+```
+
+`blog-editor-api.service` 使用低权限 `blog-editor` 用户运行，不能写入网站静态目录；部署静态文件时不会覆盖 `/var/lib/blog-editor/`。
+
 ## 检查与手动执行
 
 ```bash
