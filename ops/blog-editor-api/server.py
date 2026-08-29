@@ -23,6 +23,8 @@ from pathlib import Path
 from typing import Any
 from urllib.parse import unquote, urlparse
 
+from github_backup import GitHubBackupError, GitHubMarkdownBackup
+
 import bcrypt
 
 
@@ -66,6 +68,12 @@ class Settings:
     allowed_origins: frozenset[str]
     host: str
     port: int
+    github_repository: str
+    github_branch: str
+    github_worktree: Path
+    github_ssh_key: Path
+    github_known_hosts: Path
+    github_sync_interval_seconds: int
 
     @classmethod
     def from_environment(cls) -> "Settings":
@@ -84,6 +92,14 @@ class Settings:
         if not allowed_origins:
             raise RuntimeError("BLOG_EDITOR_ALLOWED_ORIGINS is required")
 
+        github_repository = os.environ.get("BLOG_EDITOR_GITHUB_REPOSITORY", "").strip()
+        github_ssh_key = os.environ.get("BLOG_EDITOR_GITHUB_SSH_KEY", "").strip()
+        if bool(github_repository) != bool(github_ssh_key):
+            raise RuntimeError(
+                "BLOG_EDITOR_GITHUB_REPOSITORY and BLOG_EDITOR_GITHUB_SSH_KEY "
+                "must be configured together"
+            )
+
         return cls(
             password_hash=password_hash.encode("ascii"),
             session_secret=session_secret,
@@ -93,6 +109,25 @@ class Settings:
             allowed_origins=allowed_origins,
             host=os.environ.get("BLOG_EDITOR_HOST", "127.0.0.1"),
             port=int(os.environ.get("BLOG_EDITOR_PORT", "8787")),
+            github_repository=github_repository,
+            github_branch=os.environ.get("BLOG_EDITOR_GITHUB_BRANCH", "main").strip(),
+            github_worktree=Path(
+                os.environ.get(
+                    "BLOG_EDITOR_GITHUB_WORKTREE",
+                    str(Path(os.environ.get("BLOG_EDITOR_DATA_DIR", "/var/lib/blog-editor")) / "github-backup"),
+                )
+            ),
+            github_ssh_key=Path(github_ssh_key),
+            github_known_hosts=Path(
+                os.environ.get(
+                    "BLOG_EDITOR_GITHUB_KNOWN_HOSTS",
+                    "/var/lib/blog-editor/.ssh/known_hosts",
+                )
+            ),
+            github_sync_interval_seconds=max(
+                15,
+                int(os.environ.get("BLOG_EDITOR_GITHUB_SYNC_INTERVAL_SECONDS", "60")),
+            ),
         )
 
 
@@ -225,8 +260,50 @@ class BlogStore:
         os.chmod(self.data_dir, 0o750)
         self.db_path = self.data_dir / "sessions.sqlite3"
         self._lock = threading.RLock()
+        self.backup = self._create_backup()
         self._initialize_database()
         self._seed_if_empty()
+
+    def _create_backup(self) -> GitHubMarkdownBackup | None:
+        if not self.settings.github_repository:
+            logging.warning("GitHub Markdown backup is disabled")
+            return None
+        return GitHubMarkdownBackup(
+            data_dir=self.data_dir,
+            repository=self.settings.github_repository,
+            branch=self.settings.github_branch,
+            worktree=self.settings.github_worktree,
+            ssh_key=self.settings.github_ssh_key,
+            known_hosts=self.settings.github_known_hosts,
+            interval_seconds=self.settings.github_sync_interval_seconds,
+        )
+
+    def start_backup(self) -> None:
+        """Perform the startup sync, then enable retries for later failures."""
+
+        if not self.backup:
+            return
+        self.backup.sync_now()
+        self.backup.start()
+
+    def stop_backup(self) -> None:
+        """Stop the backup worker when the API is shutting down."""
+
+        if self.backup:
+            self.backup.stop()
+
+    def _sync_backup_or_report_failure(self) -> None:
+        if not self.backup:
+            return
+        try:
+            self.backup.sync_now()
+        except GitHubBackupError as error:
+            self.backup.request_retry()
+            logging.error("Blog saved locally but GitHub backup failed: %s", error)
+            raise ApiError(
+                HTTPStatus.SERVICE_UNAVAILABLE,
+                "文章已保存到服务器，但 GitHub 备份暂时失败，系统会自动重试。",
+            ) from error
 
     def _connect(self) -> sqlite3.Connection:
         connection = sqlite3.connect(self.db_path, timeout=10)
@@ -291,6 +368,7 @@ class BlogStore:
             if path.exists():
                 raise DuplicatePostError()
             self._atomic_write(path, validated)
+            self._sync_backup_or_report_failure()
         return validated
 
     def update_post(self, post_id: str, post: dict[str, Any]) -> dict[str, Any]:
@@ -300,6 +378,7 @@ class BlogStore:
             if not path.exists():
                 raise ApiError(HTTPStatus.NOT_FOUND, "文章不存在。")
             self._atomic_write(path, validated)
+            self._sync_backup_or_report_failure()
         return validated
 
     def _atomic_write(self, path: Path, post: dict[str, Any]) -> None:
@@ -622,6 +701,7 @@ def main() -> None:
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
     settings = Settings.from_environment()
     store = BlogStore(settings)
+    store.start_backup()
     server = ThreadingHTTPServer((settings.host, settings.port), BlogApiHandler)
     server.daemon_threads = True
     server.settings = settings  # type: ignore[attr-defined]
@@ -633,6 +713,7 @@ def main() -> None:
     except KeyboardInterrupt:
         logging.info("Stopping blog editor API")
     finally:
+        store.stop_backup()
         server.server_close()
 
 
