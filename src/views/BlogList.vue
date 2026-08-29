@@ -6,7 +6,7 @@
           <p class="blog-list__eyebrow">Markdown 博客</p>
           <h1 class="blog-list__title">博客文章</h1>
           <p class="blog-list__intro">
-            本地演示：内容保存于此浏览器；线上安全密码和真正写入 .md 文件需要后端 API。
+            文章以 Markdown 形式由博客服务统一管理，编辑操作需要服务器会话授权。
           </p>
         </div>
 
@@ -15,14 +15,22 @@
         </router-link>
       </header>
 
-      <div v-if="posts.length === 0" class="blog-list__empty glass-card">
+      <div v-if="isPostsLoading && posts.length === 0" class="blog-list__empty glass-card">
+        <p>正在加载文章…</p>
+      </div>
+
+      <div v-else-if="posts.length === 0" class="blog-list__empty glass-card">
         <p>暂无文章</p>
         <router-link to="/blog/new" class="blog-list__primary-action">
           新建第一篇
         </router-link>
       </div>
 
-      <div v-else class="blog-list__items">
+      <p v-if="postsError" class="blog-list__error" role="status">
+        {{ postsError }} 当前显示内置文章；编辑和保存需要连接博客服务。
+      </p>
+
+      <div v-if="posts.length > 0" class="blog-list__items">
         <article
           v-for="post in orderedPosts"
           :key="post.id"
@@ -68,17 +76,21 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, onMounted } from 'vue'
 import AppLayout from '@/components/layout/AppLayout.vue'
 import { useBlogPosts } from '@/composables/useBlogPosts'
 
-const { posts } = useBlogPosts()
+const { posts, isPostsLoading, postsError, loadPosts } = useBlogPosts()
 
 const orderedPosts = computed(() => {
   return [...posts.value].sort((a, b) => {
     const dateDiff = b.date.localeCompare(a.date)
     return dateDiff !== 0 ? dateDiff : a.title.localeCompare(b.title)
   })
+})
+
+onMounted(() => {
+  void loadPosts()
 })
 </script>
 
@@ -156,6 +168,13 @@ const orderedPosts = computed(() => {
     gap: $spacing-lg;
     padding: $spacing-2xl;
     color: $text-secondary;
+  }
+
+  &__error {
+    margin: -$spacing-sm 0 0;
+    color: $text-muted;
+    font-size: $font-size-sm;
+    line-height: 1.6;
   }
 
   &__items {
