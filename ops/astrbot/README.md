@@ -54,6 +54,7 @@ cookie 文件应限制为 `600`。脚本不会打印 cookie 内容。新闻仍�
 
 ```bash
 sudo install -D -m 0755 ops/blog-editor-api/server.py /opt/blog-editor-api/server.py
+sudo install -m 0644 ops/blog-editor-api/github_backup.py /opt/blog-editor-api/github_backup.py
 sudo install -m 0644 ops/blog-editor-api/seed_posts.json /opt/blog-editor-api/seed_posts.json
 sudo install -m 0644 ops/astrbot/blog-editor-api.service /etc/systemd/system/blog-editor-api.service
 sudo useradd --system --home-dir /var/lib/blog-editor --shell /usr/sbin/nologin blog-editor 2>/dev/null || true
@@ -69,6 +70,14 @@ BLOG_EDITOR_PASSWORD_HASH=<bcrypt hash, never store the plaintext password>
 BLOG_EDITOR_SESSION_SECRET=<long random server-only value>
 BLOG_EDITOR_DATA_DIR=/var/lib/blog-editor
 BLOG_EDITOR_ALLOWED_ORIGINS=https://blog.akai.ink
+
+# GitHub 备份（使用只对该私有仓库有效的 Deploy Key）
+BLOG_EDITOR_GITHUB_REPOSITORY=LLsetnow/blog-content-backup
+BLOG_EDITOR_GITHUB_BRANCH=main
+BLOG_EDITOR_GITHUB_WORKTREE=/var/lib/blog-editor/github-backup
+BLOG_EDITOR_GITHUB_SSH_KEY=/var/lib/blog-editor/.ssh/github_backup
+BLOG_EDITOR_GITHUB_KNOWN_HOSTS=/var/lib/blog-editor/.ssh/known_hosts
+BLOG_EDITOR_GITHUB_SYNC_INTERVAL_SECONDS=60
 ```
 
 密码哈希和会话密钥只保存在服务器，并将通过 `HttpOnly`、`Secure`、`SameSite=Strict` Cookie 建立会话。更新 Nginx 的 `blog.akai.ink` HTTPS server 时，将 `ops/astrbot/blog-editor-nginx-location.conf` 中的 location 加入配置，再执行：
@@ -78,6 +87,22 @@ sudo nginx -t && sudo systemctl reload nginx
 ```
 
 `blog-editor-api.service` 使用低权限 `blog-editor` 用户运行，不能写入网站静态目录；部署静态文件时不会覆盖 `/var/lib/blog-editor/`。
+
+### GitHub Markdown 备份
+
+博客编辑 API 将 Astrbot 的 `/var/lib/blog-editor/*.md` 作为内容主数据源。每次新建或编辑成功后，服务会把 Markdown 镜像到私有仓库 `LLsetnow/blog-content-backup` 的 `posts/` 目录，创建一条备份提交并推送到 `main`。备份仓库不参与网站静态部署，因此不会形成 GitHub 网站代码和服务器文章之间的覆盖循环。
+
+服务器使用仓库专属的 SSH Deploy Key，不把 GitHub Token 写入文章目录或 Git remote URL。请在服务器上生成密钥并将公钥添加到该私有仓库的 Settings → Deploy keys，启用写入权限：
+
+```bash
+sudo install -d -m 0700 -o blog-editor -g blog-editor /var/lib/blog-editor/.ssh
+sudo -u blog-editor ssh-keygen -t ed25519 -N '' -f /var/lib/blog-editor/.ssh/github_backup -C 'blog-editor@astrbot'
+sudo -u blog-editor ssh-keyscan -H github.com > /var/lib/blog-editor/.ssh/known_hosts
+sudo chown blog-editor:blog-editor /var/lib/blog-editor/.ssh/known_hosts
+sudo chmod 0644 /var/lib/blog-editor/.ssh/known_hosts
+```
+
+保存失败时，Markdown 仍会保存在服务器，但接口会提示 GitHub 备份失败；服务会在后台自动重试，并在下次启动时先完成一次同步再提供 API。定期备份私有仓库本身，避免把 GitHub 作为唯一的灾备副本。
 
 ## 检查与手动执行
 
