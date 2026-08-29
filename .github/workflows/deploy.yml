@@ -25,6 +25,7 @@ jobs:
       - run: npm run build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VITE_BLOG_EDITOR_PASSWORD: ${{ secrets.VITE_BLOG_EDITOR_PASSWORD }}
       - name: Deploy to ECS
         run: |
           mkdir -p ~/.ssh
