@@ -36,6 +36,6 @@ timer 时间、部署排除项和项目页面不需要修改。
 
 ## 验证与上线
 
-必要验证包括：新增 Topic 能出现、清空 Topics 能变空、单仓库 API 失败时线上文件不变、图片请求抛错后 Topics 仍更新、全量成功时标签保持一致。Topics 模式前后比较其他 JSON 字段和图片文件哈希，确认缓存不变；并完成项目类型检查及页面筛选检查。
+本地自动化测试覆盖新增 Topic、清空 Topics、单仓库 API 失败时线上文件不变、Topics 成功而全量刷新失败时保留现有 README/图片、全量成功合并 Topics 和公开文件权限；项目类型检查及页面筛选检查通过。
 
-用户确认后委托实现、测试和代码审查，按项目要求分次提交，走分支 → PR → required `typecheck` → merge。随后更新服务器 updater，备份现有线上 JSON，手动执行一次既有 service，核对 Topics、JSON 更新时间、service 结果和页面；保留每周日 11:30 自动计划。实施前不得执行这些上线动作。
+PR #67、#68 已合并，required `typecheck` 和部署均通过。项目更新 service 已手动运行并返回成功；线上 9 个项目的 Topics 与 GitHub 当前 Topics 一致，项目 timer 保持启用，每周日 11:30 CST 运行。全量 README/图片刷新发出警告，现有内容和资源已保留，等待下次重试。
