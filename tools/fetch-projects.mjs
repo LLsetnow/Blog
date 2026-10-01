@@ -16,11 +16,13 @@ import sharp from 'sharp'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const OUTPUT_DIR = path.resolve(__dirname, '../public/projects-data')
 const IMAGES_DIR = path.join(OUTPUT_DIR, 'images')
+const API_TIMEOUT_MS = 30_000
 
 
 /**
  * Card tags come from each repo's GitHub topics — edit them on GitHub, not here.
- * `fallbackTech` is only used when the API call fails or the repo has no topics.
+ * `fallbackTech` is a full-refresh fallback for unavailable or empty topic data.
+ * Topics-only mode requires valid topic data and treats an empty list as a clear.
  */
 const repos = [
   { id: 'opc',            name: 'OPC',          fallbackTech: ['Python', 'CLI', 'AIGC', 'TTS', 'ASR', 'ComfyUI'], url: 'https://github.com/LLsetnow/OPC' },
@@ -86,13 +88,24 @@ function authHeaders() {
 async function apiJson(url) {
   const res = await fetch(url, {
     headers: { 'User-Agent': 'fetch-projects-script', ...authHeaders() },
+    signal: AbortSignal.timeout(API_TIMEOUT_MS),
   })
-  if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`)
-  return res.json()
+  if (!res.ok) {
+    const error = new Error(`HTTP ${res.status} ${res.statusText}`)
+    error.name = 'HttpStatusError'
+    throw error
+  }
+  try {
+    return await res.json()
+  } catch {
+    const error = new Error('Invalid JSON response')
+    error.name = 'InvalidResponseError'
+    throw error
+  }
 }
 
 function formatTopic(topic) {
-  if (TOPIC_LABELS[topic]) return TOPIC_LABELS[topic]
+  if (Object.hasOwn(TOPIC_LABELS, topic)) return TOPIC_LABELS[topic]
   return topic
     .split('-')
     .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
@@ -107,12 +120,132 @@ function decodeBase64Utf8(base64) {
 }
 
 async function downloadFile(url, destPath) {
-  const res = await fetch(url)
+  const res = await fetch(url, { signal: AbortSignal.timeout(API_TIMEOUT_MS) })
   if (!res.ok) return false
   const buf = await res.arrayBuffer()
   fs.mkdirSync(path.dirname(destPath), { recursive: true })
   fs.writeFileSync(destPath, Buffer.from(buf))
   return true
+}
+
+/** A sanitized failure raised by the Topics-only refresh. */
+class TopicSyncError extends Error {
+  /** @param {string} repoId @param {string} phase @param {string} category */
+  constructor(repoId, phase, category) {
+    super(`topics_sync_failed repo=${repoId} phase=${phase} category=${category}`)
+    this.name = 'TopicSyncError'
+  }
+}
+
+/** Create a Topics error that contains only safe diagnostic fields. */
+function topicFailure(repoId, phase, category) {
+  return new TopicSyncError(repoId, phase, category)
+}
+
+/** Map request failures to a safe diagnostic category. */
+function topicErrorCategory(error) {
+  if (error?.name === 'TimeoutError' || error?.name === 'AbortError') return 'timeout'
+  if (error?.name === 'HttpStatusError') return 'http'
+  if (error?.name === 'InvalidResponseError') return 'invalid_response'
+  return 'network'
+}
+
+/** Parse the optional Topics-only paths from process arguments. */
+function parseTopicArguments(args) {
+  if (args.length === 0) return null
+  if (args[0] !== '--topics-only') throw topicFailure('all', 'input', 'input')
+
+  const options = new Map()
+  for (let index = 1; index < args.length; index += 2) {
+    const flag = args[index]
+    const value = args[index + 1]
+    if (!['--input-json', '--output-json'].includes(flag) || !value || options.has(flag)) {
+      throw topicFailure('all', 'input', 'input')
+    }
+    options.set(flag, value)
+  }
+
+  const inputPath = options.get('--input-json')
+  const outputPath = options.get('--output-json')
+  if (!inputPath || !outputPath || path.resolve(inputPath) === path.resolve(outputPath)) {
+    throw topicFailure('all', 'input', 'input')
+  }
+  return { inputPath: path.resolve(inputPath), outputPath: path.resolve(outputPath) }
+}
+
+/** Validate the input list and index projects by their unique IDs. */
+function topicProjectIndex(projects) {
+  if (!Array.isArray(projects)) throw topicFailure('all', 'input', 'input')
+  const index = new Map()
+  for (const project of projects) {
+    if (!project || typeof project !== 'object' || Array.isArray(project)
+      || typeof project.id !== 'string' || !project.id.trim() || index.has(project.id)) {
+      throw topicFailure('all', 'input', 'input')
+    }
+    index.set(project.id, project)
+  }
+
+  for (const repo of repos) {
+    const project = index.get(repo.id)
+    if (!project || !Array.isArray(project.tech) || !project.tech.every((label) => typeof label === 'string')) {
+      throw topicFailure(repo.id, 'input', 'input')
+    }
+  }
+  return index
+}
+
+/** Write JSON through a sibling file while preserving the requested mode. */
+function writeJsonAtomically(outputPath, value, mode) {
+  const directory = path.dirname(outputPath)
+  const temporaryPath = `${outputPath}.${process.pid}.${Date.now()}.tmp`
+  try {
+    fs.mkdirSync(directory, { recursive: true })
+    fs.writeFileSync(temporaryPath, JSON.stringify(value, null, 2), { flag: 'wx', mode })
+    fs.chmodSync(temporaryPath, mode)
+    fs.renameSync(temporaryPath, outputPath)
+  } finally {
+    fs.rmSync(temporaryPath, { force: true })
+  }
+}
+
+/** Refresh only configured repository topics into a separate candidate file. */
+async function runTopicsOnly({ inputPath, outputPath }) {
+  let projects
+  let inputMode
+  try {
+    projects = JSON.parse(fs.readFileSync(inputPath, 'utf8'))
+    inputMode = fs.statSync(inputPath).mode & 0o777
+  } catch {
+    throw topicFailure('all', 'input', 'input')
+  }
+  const projectsById = topicProjectIndex(projects)
+
+  for (const repo of repos) {
+    const parsed = parseGitHubUrl(repo.url)
+    if (!parsed) throw topicFailure(repo.id, 'repo-info', 'input')
+
+    let info
+    try {
+      info = await apiJson(`https://api.github.com/repos/${parsed.owner}/${parsed.repoName}`)
+    } catch (error) {
+      throw topicFailure(repo.id, 'repo-info', topicErrorCategory(error))
+    }
+    if (!info || typeof info !== 'object' || Array.isArray(info)
+      || !Array.isArray(info.topics)
+      || !info.topics.every((topic) => typeof topic === 'string' && topic.trim().length > 0)) {
+      throw topicFailure(repo.id, 'repo-info', 'invalid_response')
+    }
+
+    // An empty GitHub topics list is authoritative and clears the card labels.
+    projectsById.get(repo.id).tech = info.topics.map(formatTopic)
+  }
+
+  try {
+    writeJsonAtomically(outputPath, projects, inputMode)
+  } catch {
+    throw topicFailure('all', 'output', 'io')
+  }
+  console.log(`topics_sync_candidate_ready repositories=${repos.length}`)
 }
 
 /**
@@ -208,6 +341,9 @@ function collectAndRewriteImages(content, owner, repoName, projectId) {
 // ---------- main ----------
 
 async function main() {
+  const topicsOnlyOptions = parseTopicArguments(process.argv.slice(2))
+  if (topicsOnlyOptions) return runTopicsOnly(topicsOnlyOptions)
+
   console.log('Fetching project data from GitHub …\n')
 
   const projects = []
@@ -234,7 +370,9 @@ async function main() {
         readme = decodeBase64Utf8(readmeData.content)
       } catch {
         // fallback to raw
-        const raw = await fetch(`https://raw.githubusercontent.com/${owner}/${repoName}/main/README.md`)
+        const raw = await fetch(`https://raw.githubusercontent.com/${owner}/${repoName}/main/README.md`, {
+          signal: AbortSignal.timeout(API_TIMEOUT_MS),
+        })
         if (raw.ok) readme = await raw.text()
       }
 
@@ -316,4 +454,8 @@ async function main() {
   console.log('\nDone.')
 }
 
-main().catch((e) => { console.error(e); process.exit(1) })
+main().catch((error) => {
+  if (error instanceof TopicSyncError) console.error(error.message)
+  else console.error(error)
+  process.exitCode = 1
+})
