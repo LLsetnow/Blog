@@ -72,6 +72,36 @@ class ProjectUpdaterTopicsTests(unittest.TestCase):
             self.assertEqual((target / "projects.json").read_text(encoding="utf-8"), "[]")
             self.assertFalse((target / "old.json").exists())
 
+    def test_publish_directory_keeps_new_data_when_backup_cleanup_fails(self) -> None:
+        with tempfile.TemporaryDirectory(prefix="blog-project-backup-cleanup-test-") as temporary_dir:
+            root = Path(temporary_dir)
+            source = root / "source" / "projects-data"
+            target = root / "live" / "projects-data"
+            source.mkdir(parents=True, mode=0o755)
+            target.mkdir(parents=True, mode=0o755)
+            (source / "projects.json").write_text("new data", encoding="utf-8")
+            (target / "projects.json").write_text("old data", encoding="utf-8")
+            original_remove_path = UPDATER.remove_path
+
+            def fail_backup_cleanup(path: Path) -> None:
+                if path.name.startswith(f".{target.name}.backup-"):
+                    raise OSError("mock backup cleanup failure")
+                original_remove_path(path)
+
+            stderr = io.StringIO()
+            with (
+                mock.patch.object(UPDATER, "remove_path", side_effect=fail_backup_cleanup),
+                contextlib.redirect_stderr(stderr),
+            ):
+                UPDATER.publish_directory(source, target)
+
+            self.assertEqual((target / "projects.json").read_text(encoding="utf-8"), "new data")
+            backups = list(target.parent.glob(f".{target.name}.backup-*"))
+            self.assertEqual(len(backups), 1)
+            self.assertEqual((backups[0] / "projects.json").read_text(encoding="utf-8"), "old data")
+            self.assertIn("backup cleanup warning", stderr.getvalue())
+            self.assertIn("old data retained", stderr.getvalue())
+
     def test_topics_publish_survives_full_fetch_failure_and_keeps_live_assets(self) -> None:
         with tempfile.TemporaryDirectory(prefix="blog-project-updater-test-") as temporary_dir:
             root = Path(temporary_dir)
