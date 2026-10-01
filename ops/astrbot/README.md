@@ -38,6 +38,10 @@ sudo systemctl enable --now blog-favorites-update.timer
 
 服务以 root 运行，源代码固定为 `/home/admin/Blog`，网站目录固定为 `/var/www/blog`。每次执行会安全快进同步 `origin/main`，不会运行 `git clean` 删除 `node_modules/`；定时任务不会无条件重复执行 `npm ci`。如果 Node/npm 或依赖缺失，服务会失败并在日志中提示维护人员运行 `npm ci`。
 
+项目更新会先读取线上 `projects-data/projects.json`，逐个查询配置仓库的 GitHub Topics，并只更新对应项目的 `tech` 标签。候选 JSON 通过字段与项目 ID 校验后才会原子发布；GitHub 返回空 Topics 会清空该项目的标签。任一仓库请求超时、失败或返回格式异常时，整个 Topics 阶段失败，线上项目数据保持不变；日志只记录仓库、阶段和错误类别。
+
+Topics 发布成功后，服务再刷新 README 和图片。全量刷新成功时，会把刚验证的 Topics 合并进完整数据后发布；全量刷新失败时，服务会记录 README/图片警告，并保留已发布 Topics、原有 README 和图片。此时 service 以 Topics 同步成功结束，警告可通过 `journalctl -u blog-projects-update.service` 查看。
+
 所有 secrets 只放在服务器的 `/var/OPC/.env`，不要写入或提交仓库。收藏脚本优先读取其中的 `YT_DLP_COOKIES`，兼容 `BILIBILI_COOKIES`；变量值应是 Netscape cookie 文件的绝对路径，例如：
 
 ```dotenv
