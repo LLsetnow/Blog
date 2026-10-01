@@ -6,6 +6,7 @@ import contextlib
 import importlib.util
 import io
 import json
+import stat
 import tempfile
 import unittest
 from pathlib import Path
@@ -20,6 +21,57 @@ SPEC.loader.exec_module(UPDATER)
 
 
 class ProjectUpdaterTopicsTests(unittest.TestCase):
+    def test_merge_topics_snapshot_preserves_public_json_mode(self) -> None:
+        with tempfile.TemporaryDirectory(prefix="blog-project-json-mode-test-") as temporary_dir:
+            source_data = Path(temporary_dir) / "projects-data"
+            source_data.mkdir(mode=0o755)
+            projects = [
+                {"id": project_id, "name": project_id, "tech": ["Old Topic"]}
+                for project_id in sorted(UPDATER.TOPICS_PROJECT_IDS)
+            ]
+            projects_path = source_data / "projects.json"
+            projects_path.write_text(json.dumps(projects), encoding="utf-8")
+            projects_path.chmod(0o644)
+            topics_by_id = {
+                project_id: (["New Topic"] if project_id == "opc" else [])
+                for project_id in UPDATER.TOPICS_PROJECT_IDS
+            }
+
+            with mock.patch.object(UPDATER, "SOURCE_DATA", source_data):
+                UPDATER.merge_topics_snapshot(topics_by_id)
+
+            mode = stat.S_IMODE(projects_path.stat().st_mode)
+            self.assertEqual(mode, 0o644)
+            published = {
+                project["id"]: project
+                for project in json.loads(projects_path.read_text(encoding="utf-8"))
+            }
+            self.assertEqual(published["opc"]["tech"], ["New Topic"])
+            self.assertEqual(published["video-make"]["tech"], [])
+
+    def test_publish_directory_preserves_public_directory_and_file_modes(self) -> None:
+        with tempfile.TemporaryDirectory(prefix="blog-project-directory-mode-test-") as temporary_dir:
+            root = Path(temporary_dir)
+            source = root / "source" / "projects-data"
+            target = root / "live" / "projects-data"
+            source.mkdir(parents=True, mode=0o755)
+            target.mkdir(parents=True, mode=0o755)
+            (target / "old.json").write_text("old", encoding="utf-8")
+            (target / "old.json").chmod(0o644)
+            projects_path = source / "projects.json"
+            projects_path.write_text("[]", encoding="utf-8")
+            projects_path.chmod(0o644)
+            target.chmod(0o755)
+
+            UPDATER.publish_directory(source, target)
+
+            directory_mode = stat.S_IMODE(target.stat().st_mode)
+            file_mode = stat.S_IMODE((target / "projects.json").stat().st_mode)
+            self.assertEqual(directory_mode, 0o755)
+            self.assertEqual(file_mode, 0o644)
+            self.assertEqual((target / "projects.json").read_text(encoding="utf-8"), "[]")
+            self.assertFalse((target / "old.json").exists())
+
     def test_topics_publish_survives_full_fetch_failure_and_keeps_live_assets(self) -> None:
         with tempfile.TemporaryDirectory(prefix="blog-project-updater-test-") as temporary_dir:
             root = Path(temporary_dir)
